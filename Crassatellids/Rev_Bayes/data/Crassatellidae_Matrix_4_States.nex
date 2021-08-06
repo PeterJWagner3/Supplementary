@@ -1,0 +1,19 @@
+#NEXUS
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=11 NCHAR=4;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = " 0 1 2 3 ";
+	MATRIX
+	Crassatella_vadosa           211(012)
+	Crassatella_carolinensis     0000
+	Crassatella_hodgei           0101
+	Crassatella_tumidula         3002
+	Crassatella_aquiana          1000
+	Spissatella_trailli          3131
+	Scambula_perplana            1201
+	Bathytormus_pteropsis        1323
+	Bathytormus_alaeformis       0331
+	Bathytormus_protextus        0131
+	Bathytormus_clarkensis       3101
+;
+END;
