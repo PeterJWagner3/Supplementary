@@ -1,0 +1,664 @@
+#NEXUS
+[written Wed Jul 28 14:43:24 CDT 2021 by Mesquite  version 3.6 (build 917) at Wagners_Dark_Tower/10.0.1.87]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=85;
+	TAXLABELS
+		Abakolia_minutus Abakolia_pauca Acidiscus_birdi Acidiscus_theristes Acimetopus_bilobatus Alaskadiscus_spinosus Analox_bipunctata Bathydiscus_dolichometopus Bolboparia_superba Calodiscus_lobatus Cephalopyge_notabilis Chelediscus_acifer Chelediscus_chathamensis Cobboldites_comleyensis Cobboldites_itsariensis Dawsonia_bohemicus Dawsonia_dawsoni Delgadella_caudatus Delgadella_lenaicus Delgadella_amouslekensis Dicerodiscus_tsunyiensis Egyngolia_willochra Egyngolia_obtusa Egyngolia_zaicevi Ekwipagetia_marginata Ekwipagetia_plicofimbria Eodiscus_borealis Eodiscus_scanicus Hebediscina_sardoa Hebediscina_blagonravovi Hebediscina_yuqingensis Hebediscus_attleborensis Helepagetia_bitruncula Jinghediscus_nummularius Kiskinella_cristata Korobovia_ocellata Lenadiscus_unicus Leptochilodiscus_punculatus Leptochilodiscus_succinctus Litometopus_longispinus Luvsanodiscus_gammatus Macannaia_maladensis Mallagnostus_desideratus Mallagnostus_limbatus Mallagnostus_llarenai Meniscuchus_menetus Meniscuchus_nanus Natalina_incita Natalina_dilata Neocobboldia_dentata Neopagetina_rjonsnitzkii Ninadiscus_strobulatus Oodiscus_subgranulatus Opsidiscus_bilobatus Opsidiscus_microspinus Opsidiscus_longispinus Pagetia_bootes Pagetia_prolata Pagetides_elegans Pagetides_fragum Pseudocobboldia_pulchra Runcinodiscus_index Semadiscus_sollennis Serrodiscus_speciosus Serrodiscus_gravestocki Serrodiscus_daedalus Serrodiscus_ctenoa Sinodiscus_shipaiensis Sinodiscus_subquadratus Sinopagetia_jinnanensis Stigmadiscus_stenometopus Tannudiscus_altus Tannudiscus_balanus Tchernyshevioides_ninae Tsunyidiscus_niutitangensis Tsunyidiscus_kaiyangensis Tsunyidiscus_aclis Tsunyidiscus_orientalis Tsunyidiscus_longquanensis Weymouthia_nobilis Yukonia_intermedia Yukonides_lacrinus Condylopyge_amitina Peronopsis_roddyi Ptychagnostus_gibbus 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=125;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9";
+	CHARSTATELABELS 
+		1 Cephalon,
+		2 Cephalon,
+		3 Cephalon,
+		4 Cephalon,
+		5 Cephalon,
+		6 Cephalon,
+		7 Cephalon,
+		8 Cephalon,
+		9 Cephalon,
+		10 Cephalon,
+		11 Cephalon,
+		12 Cephalon,
+		13 Cephalon,
+		14 Cephalon,
+		15 Cephalon,
+		16 Cephalon,
+		17 Cephalon,
+		18 Cephalon,
+		19 Cephalon,
+		20 Cephalon,
+		21 Cephalon,
+		22 Cephalon,
+		23 Cephalon,
+		24 Cephalon,
+		25 Cephalon,
+		26 Cephalon,
+		27 Cephalon,
+		28 Cephalon,
+		29 Cephalon,
+		30 Cephalon,
+		31 Cephalon,
+		32 Cephalon,
+		33 Cephalon,
+		34 Cephalon,
+		35 Cephalon,
+		36 Cephalon,
+		37 Cephalon,
+		38 Cephalon,
+		39 Cephalon,
+		40 Cephalon,
+		41 Cephalon,
+		42 Cephalon,
+		43 Cephalon,
+		44 Cephalon,
+		45 Cephalon,
+		46 Cephalon,
+		47 Cephalon,
+		48 Cephalon,
+		49 Cephalon,
+		50 Cephalon,
+		51 Cephalon,
+		52 Cephalon,
+		53 Cephalon,
+		54 Cephalon,
+		55 Cephalon,
+		56 Cephalon,
+		57 Cephalon,
+		58 Cephalon,
+		59 Cephalon,
+		60 Cephalon,
+		61 Cephalon,
+		62 Cephalon,
+		63 Cephalon,
+		64 Cephalon,
+		65 Cephalon,
+		66 Cephalon,
+		67 Cephalon,
+		68 Cephalon,
+		69 Cephalon,
+		70 Cephalon,
+		71 Cephalon,
+		72 Cephalon,
+		73 Cephalon,
+		74 Cephalon,
+		75 Cephalon,
+		76 Cephalon,
+		77 Cephalon,
+		78 Cephalon,
+		79 Cephalon,
+		80 Cephalon,
+		81 Thorax,
+		82 Thorax,
+		83 Thorax,
+		84 Thorax,
+		85 Thorax,
+		86 Pygidium,
+		87 Pygidium,
+		88 Pygidium,
+		89 Pygidium,
+		90 Pygidium,
+		91 Pygidium,
+		92 Pygidium,
+		93 Pygidium,
+		94 Pygidium,
+		95 Pygidium,
+		96 Pygidium,
+		97 Pygidium,
+		98 Pygidium,
+		99 Pygidium,
+		100 Pygidium,
+		101 Pygidium,
+		102 Pygidium,
+		103 Pygidium,
+		104 Pygidium,
+		105 Pygidium,
+		106 Pygidium,
+		107 Pygidium,
+		108 Pygidium,
+		109 Pygidium,
+		110 Pygidium,
+		111 Pygidium,
+		112 Pygidium,
+		113 Pygidium,
+		114 Pygidium,
+		115 Pygidium,
+		116 Body,
+		117 Body,
+		118 Thorax,
+		119 Thorax,
+		120 Pygidium,
+		121 Pygidium,
+		122 Cephalon,
+		123 Pygidium,
+		124 FA /  'Cm(Atda)' 'Cm_(Boto)' 'Cm(Tojo)' 'Cm(lMid)' 'Cm(mMid)' 'Cm(uMid)',
+		125 LA /  'Cm(Atda)' 'Cm_(Boto)' 'Cm(Tojo)' 'Cm(lMid)' 'Cm(mMid)' 'Cm(uMid)' ; 
+	MATRIX
+	Abakolia_minutus             1--0-(0 1)010200-----000(1 2)0-1100010000111001011--------0-(1 2)1012201?0001000?000001-110101000110000-00000000050000---1001000000000013
+	Abakolia_pauca               1--0-(0 1)00--00-----000(2 3)1110000(0 1)0000110000011--------11(2 3)10122?100001000?000001-100(0 1)?????220000-00000(0 1)000(3 4)0000---10010000??000?11
+	Acidiscus_birdi              00011200--011200000010-110003000010-000011--------0-22001(0 1)-0-0110-001000010-0001?????0(0 1)0001010000200080000---11-10000??000?11
+	Acidiscus_theristes          00111200--011100000020-100003000010-000011--------0-(1 2)20000-0-0110-001000010-00010??100(1 2)0001010000(1 2)000(7 8)0001?0-11-1000000000011
+	Acimetopus_bilobatus         0000-200--00-----000(1 2)0-100003000010-000011--------0-320120-000100-00110020210001?????000000-0000030015001100-01-10001??000?11
+	Alaskadiscus_spinosus        1--0-(0 1)00--00-----00000-0-000100020--0000000002(2 3)20011220122001000100000010?0-100110-002100011000002100(2 3)11?110-0021000000000012
+	Analox_bipunctata            1--0-(0 1)00--00-----001413???00300?00--001111--------0-3(1 2)0120-001100-00110010110000?????000000-11000(2 3)00050010---01-11010??000?11
+	Bathydiscus_dolichometopus   0100-(0 1)00--00-----0001110-010310000--000011--------0-4(2 3)010200-0000-000001010-1002?????0(1 2)0000-111004100?1010---01-10000??000?11
+	Bolboparia_superba           0000-200--0100020?00212???0020000110001111--------0-(1 2)20000-0-0100-001000000-1100?????00000101000020009000100-01-11001??000?11
+	Calodiscus_lobatus           1--0-000--00-----00010-0-000(1 2)000(1 2)0--000010???0030111(2 3)(1 2)0000-0-0000-100000(0 1)0(0 1)0?0010????1(2 3)00011000003000(1 2)0000---0001000000000001
+	Cephalopyge_notabilis        1--0-(0 1)00--00-----001??????10(1 2)000?10-000?11--------0-(1 2)31100-0-2000-000001010-100000-00001000-000014010?1010---01-1001000000000
+	Chelediscus_acifer           0000-2011000-----00000-0-010(2 3)0010112000011--------0-120120-000000-010001002-110010-00000000-110004000(2 3)0010---11-1000000000011
+	Chelediscus_chathamensis     00?0-(0 1)011100-----00010-0-010(2 3)0010112000011--------0-(1 2)20120-0000?0-01?001001-1100???????0?00-11000300020010---11-10000??000?11
+	Cobboldites_comleyensis      1--0-(0 1)00--00-----00010-10000100000--000011--------0-430?0???-2000-?00001010-10000????100000-00000(3 4)01041110---01-1101000000011
+	Cobboldites_itsariensis      1--0-(0 1)00--00-----000(0 1)0-10000(1 2)00000--000011--------0-(3 4)(2 3)0100-0-(1 2)000-000001010-1001?????000000-000003010?10?0---01-11000??000?11
+	Dawsonia_bohemicus           1--0-(0 1)012200-----00020-10000100000--001011--------0-2101220?0000110000000?0-110(0 1)1????210000-00000300120000---0001000100000033
+	Dawsonia_dawsoni             1--0-(0 1)012200-----00030-10000(1 2)00000--001011--------0-2101220?0000110000000?0-110110-00110000-00000100130000---0001000100000033
+	Delgadella_caudatus          1--0-(0 1)00--00-----000(0 1)0-120003000110-00000011-23(1 2)000-?31?0???-2?00-?00001010-?11(0 1)00-00010000-000011000?1000---01-1000000000000
+	Delgadella_lenaicus          1--0-(0 1)00--00-----00000-100002000110-00000011-1?1000-331000-0-2000-100001010-011000-00010000-00001?00071000---01-1100000000022
+	Delgadella_amouslekensis     1--0-(0 1)00--00-----00000-0-0001000110-00000011-1?1000-331?0???-2?00-?00001010-0110?????010000-00001(2 3)000?1000---01-10000??000?11
+	Dicerodiscus_tsunyiensis     1--10(0 1)00--00-----00030-11000010020--0000101001010110220000-0-(1 2)010-10?0010?0-1110???????0000-00000??000???0---?00?0000??000?11
+	Egyngolia_willochra          1--0-(0 1)00--00-----000211110001000111100100000001(1 2)0?111(1 2)012211100011000010001-1011?????2(1 2)0001100000100030000---10200000??000?00
+	Egyngolia_obtusa             1--0-(0 1)00--00-----00000-10000(0 1 2)000(1 2)1110010000000020111(0 1)(1 2)01221110001?00?010001-101100-?0220000-00000(0 1)00030000---1000?00000000000
+	Egyngolia_zaicevi            1--0-(0 1)00--00-----00000-0-0002000211100?011--------11(0 1)10122111000??00?010001-?011???????????????????????????????????00????0?00
+	Ekwipagetia_marginata        1--0-(0 1)00--10-----00020-10000200010--0010001001(2 3)(0 1)0011(1 2)2012200100010000000000-1?01?????(1 2)10001100000(2 3)0002010112000200000??000?00
+	Ekwipagetia_plicofimbria     1--0-(0 1)00--10-----00020-0-100(2 3)00010--001000100(1 2)2000111(1 2)012200100010000000000-1001?????110001100000(2 3)0001100112000200000??000?00
+	Eodiscus_borealis            1--0-(0 1)012(1 2)00-----00010-1000020001112001011--------0-1101220??0001000?000000-110100-10(0 1)10000-00000(0 1)00030000---1001000000000024
+	Eodiscus_scanicus            (0 1)000-(0 1)010100-----00000-0-000(1 2)0001112001011--------0-(0 1)101220100001000000000(0 1)-11010??00(0 1)(0 1)0000-00000(0 1)000(6 7 8)0000---11-1001000000011
+	Hebediscina_sardoa           1--0-(0 1)00--00-----00021010000(2 3)00020--0000000002110020(1 2)1012201000010000000000-1001?????0(1 2)0001100000(2 3)00020000---10100000??000?11
+	Hebediscina_blagonravovi     1--0-(0 1)00--00-----000(0 1)0-0-?00(1 2)000211?001000100(1 2)?(2 3)00101101220010001?00?00000?-1001?????130001100000(0 1)00020000---1?2?0000??000?00
+	Hebediscina_yuqingensis      1--0-(0 1)0???00-----000(2 3)101100020001110001000100(0 1)(1 2)10011(1 2)10122?1000011000000000-1001?????020001100000200040000---10100000??000?11
+	Hebediscus_attleborensis     1--0-(0 1)00--00-----00020-120003???10--00000001-112?1(1 2)0230000-0-2010-000001010-1011??????20000-00001?010?10?0---01-10000??000?11
+	Helepagetia_bitruncula       1--0-(0 1)011100-----00000-0-100(1 2)100011000101011-1(3 4)(0 1)000-2(1 2)012200000010000000001-1101?????(1 2)10000-0000020010000122110110001??000?55
+	Jinghediscus_nummularius     1--0-(0 1)0110010?020000(0 1)0-0-1003001010-100011--------0-(0 1)20120-001000-00?00?002-0000?????030100-000004100(8 9)1010---01-10000??000?44
+	Kiskinella_cristata          1--0-(0 1)012200-----00040-1200010000110001000101111001131012200?000??000001010-1000?????010000-00000100130000---00010000??000?44
+	Korobovia_ocellata           1--0-(0 1)00--00-----00010-0-000(1 2)00020--0010000000130111210000-0-0000-100001002-1001?????130001100000(3 4)00010000---10010100??000?11
+	Lenadiscus_unicus            0000-(0 1)00--00-----00010-10000(2 3)000010-010000000100112000012??0?0001000000????-0001?????1(2 3)0010-00000(2 3)10010100---01-10000??000?11
+	Leptochilodiscus_punculatus  1--0-(0 1)10--00-----00000-0-101(2 3)100010-000011--------0-320100-0-0000-100001010-0101?????000001010010(3 4)000(6 7)1110---01-11010??000?11
+	Leptochilodiscus_succinctus  1--0-(0 1)10--010?02000000-0-100(2 3)10000--000111--------0-4(2 3)1100-0-0110-000001010-110110-00000001010011(3 4)000(8 9)1010---11-1101000000011
+	Litometopus_longispinus      0010-200--00-----00020-11010100000--000011--------0-420101-0-0000-000001010-0001?????1(0 1)00010110003000?1010---01-10010??000?11
+	Luvsanodiscus_gammatus       1--0-(0 1)00--00-----00010-11000200020--00000011-22100102(2 3)0000-0-1010-100000000-101100-00(0 1)20001100000200040100---0010100000000011
+	Macannaia_maladensis         1--0-(0 1)010200-----000(1 2)0-11000(2 3)000111200100011-1(3 4)10011(1 2)101221?100011000000000-110111100120000-000001001301011201020000000000024
+	Mallagnostus_desideratus     1--0-(0 1)00--00-----00010-???003001010-100011--------0-020?0???-2?00-000001010-1001?????0?????????????????????????????00????0?11
+	Mallagnostus_limbatus        1--0-(0 1)00--00-----00010-0-100(2 3)001110-100011--------0-110100-0-0000-00?001010-10010????030100-00000(2 3)10070010---01-10000??000?22
+	Mallagnostus_llarenai        1--0-(0 1)00--0112020000(1 2)0-0-000(2 3)001010-000011--------0-120100-0-0000-001000000-1001?????030100-00000(2 3)?00(7 8)0010---11-1000000000011
+	Meniscuchus_menetus          1--0-(0 1)00--00-----010(2 3)0-11000201000--001111--------(0 1)13201220000000-00100020200000?????010000-11100(3 4)01140000---11-10000??000?11
+	Meniscuchus_nanus            1--0-(0 1)00--00-----01021112000301000--001111--------0-3201220000000-00?00010100000?????000000-???00401040000---11-10000??000?11
+	Natalina_incita              1--0-(0 1)00--00-----000412100003?0?11100010001001?100??2(1 2)000(0 1)-0-(1 2)?00-100001010-1001?????030000-000001010(3 4)0000---?0(1 2)10000??000?11
+	Natalina_dilata              1--0-(0 1)00--00-----00021110000(2 3)000111000100011-1?100101(1 2)0??2?????00-?00001010-1001?????130000-00000200030000---??2?0000??000?11
+	Neocobboldia_dentata         1--0-(0 1)00--00-----00000-12000200020--00?000?00111000-120000-0-0000-100001010-101100-?02300011000003000(0 1)0000---01-1000000000012
+	Neopagetina_rjonsnitzkii     1--0-(0 1)010200-----000(1 2)1211000100011110010001001(3 4)2001121012211000011000000001-1?01?????110000-00000000040000---10000000??000?12
+	Ninadiscus_strobulatus       1--0-(0 1)00--0101101100(3 4)1112000(1 2)00000--001111--------0-3(1 2)0120-000000-00?00010201000?????00000?0??000(1 2)00170000---11-11000??000?11
+	Oodiscus_subgranulatus       01010200--00-----00000-0-0103100010-000011--------0-33012(1 2)?000000-000001010-1002?????020000-000003100?1010---01-10000??000?11
+	Opsidiscus_bilobatus         1--0-(0 1)011100-----000(0 1)0-0-1001100011(0 1)001010?1-12(1 2)10111101220??0001000?000002-1101?????(0 1)(1 2)0000-000001000(1 2)0000---10110000??000?55
+	Opsidiscus_microspinus       1--0-(0 1)011(1 2)00-----00010-110001100011(1 2)00101011-2?11011(1 2)1012200000010000000001-110111100(1 2)10000-00000100010000---1011000000000055
+	Opsidiscus_longispinus       1--0-(0 1)00--00-----00000-0-1000100011000101001-10(1 2)101110012200000010000001002-1002???????????????????????????????????00????0?55
+	Pagetia_bootes               1--0-(0 1)011200-----00020-100002000011200100011-1?1001112012200000010000000001-110111100110000-000001001(2 3)000122101-1000000000045
+	Pagetia_prolata              1--0-0011210-----000(1 2)0-110001000011100100011-131001111012200000010000000001-110111100110000-00000(0 1)00?(1 2)00012211020000000000056
+	Pagetides_elegans            1--0-0010200-----000(2 3)1111000(2 3)00011110010001001(3 4)(0 1)00112(1 2)012211000011000000001-1101?1100(0 1)10000-00000100040000---1020000000000011
+	Pagetides_fragum             1--0-(0 1)010(1 2)00-----000211110002000(0 1)11000100011-11(1 2)00112(1 2)012210000011000000000-1101?????110000-00000100030000---10000000??000?11
+	Pseudocobboldia_pulchra      1--0-(0 1)00--00-----00020-11000100010--00001000000200103(1 2)0000-0-0000-000001010-1000?????(1 2)20001100000(2 3)?0000100---002?0000??000?23
+	Runcinodiscus_index          1--0-(0 1)00--011200000000-100003000110-000011--------0-331100-0-2000-000001010-0000?????0000010100014000(6 7)1010---01-11000??000?11
+	Semadiscus_sollennis         1--0-(0 1)00--00-----00020-120002000110-000011--------0-320100-0-0010-000001010-0001???????????????????????????????????00????0?11
+	Serrodiscus_speciosus        1--0-(0 1)00--013(1 2)01000020-120002000(0 1)10-000011--------0-320100-0-1000-0000001?(0 1)0000000-000100011100003000(6 7)0000---11-1000000000011
+	Serrodiscus_gravestocki      1--0-(0 1)00--012111000020-11000300010--000011--------0-32012(0 1)-000000-00110020200000?????000001110000(3 4)000(5 6)00?100-?1-1?000??000?11
+	Serrodiscus_daedalus         1--0-(0 1)00--0120100100(2 3)0-110002001010-000011--------0-(2 3)(1 2)01220000000-00110020200000?????020100-00000?00070000---?1-10000??000?11
+	Serrodiscus_ctenoa           0000-100--011200100010-0-000200000--000011--------0-(3 4)20100-0-(1 2)000-000001010-000100-00000001110000(3 4)00050110---01-1100000000022
+	Sinodiscus_shipaiensis       1--0-(0 1)00--00-----00000-0-000100010--0000000001130120310000-0-0000-0000002020000000-00120000-00000(3 4)10010000---0000000100000000
+	Sinodiscus_subquadratus      1--0-(0 1)00--00-----00000-0-000100010--0000000002230120(2 3)(1 2)0000-0-0000-00000020200001?????130000-00000(3 4)10010000---00000000??000?00
+	Sinopagetia_jinnanensis      1--0-(0 1)011200-----00030-120002000011000100011-2?2001?2201220000000-000001010-1000?????010000-00000100020000---01-10000??000?44
+	Stigmadiscus_stenometopus    0100-(0 1)00--00-----00010-100001000010-000011--------0-2(1 2)0111-0-0110-001010000-0001???????0?011100003???90011?1-10010000??000?11
+	Tannudiscus_altus            1--0-(0 1)00--00-----000(0 1)0-0-010(2 3)001010-000011--------0-(2 3)(2 3)0120-000000-00?000002-0001?????030100-00000(2 3)000?1000---01-10000??000?22
+	Tannudiscus_balanus          0100-100--00-----0001110-110310100--000011--------0-(2 3)30120-000000-001001002-000100-10030100-00000(3 4)000(4 5)0110---01-1000000000022
+	Tchernyshevioides_ninae      0010-(0 1)00--00-----0002100-000000000--0000000001130120320000-0-0010-100000000-1000?????2(1 2)0000-00000(0 1)00030000---00010000??000?44
+	Tsunyidiscus_niutitangensis  0000-(0 1)00--11(1 2)000010020-0-0001000010-000000100152001?200120-010000-0011001010000000-00220000-000000100(3 4)1000---0001000000000000
+	Tsunyidiscus_kaiyangensis    0000-(0 1)00--11?0000?0020-0-0002000010-000000100251001?(2 3)1012??01(1 2)000-001100(0 1)010000000-00(1 2)10000-000000100(2 3)1000---1021000000000000
+	Tsunyidiscus_aclis           0010-(0 1)00--11(2 3)010010020-0-0002000(0 1)10-00000011-252001?20012??011000-001100(0 1)0100001?????000001100000000040100---?021000000000000
+	Tsunyidiscus_orientalis      0000-(0 1)00--00-----000(0 1)0-100003000110-000000100250001?210120-010000-0011001010000000-00110000-000000100(1 2 3)0000---11-1000000000000
+	Tsunyidiscus_longquanensis   1--0-000--00-----000(1 2)100-0001000010-000000100252000-(2 3)1012(0 1)-011000-0011001010000000-00210001100000010040100---0001000000000000
+	Weymouthia_nobilis           1--0-(0 1)00--0112?2000010-100003000(0 1)?0-000011--------0-??1?0???-2??0-?00001010-??0?00-?002000??????1?????10?0---01-1000000000000
+	Yukonia_intermedia           1--0-(0 1)00--00-----00000-0-000000010--0010100010030111(1 2)1012200000010000001010-110100-012(2 3)0001100000(1 2)100(1 2 3)0101?0-00(1 2)0000000000000
+	Yukonides_lacrinus           1--0-(0 1)011000-----000(0 1)0-0-0002000(1 2)0--00001000100200111101221100001?000000000-1001?????(0 1)20001100000(1 2)100(2 3 4)0000---10200000??000?00
+	Condylopyge_amitina          0000-000--00-----00010-0-0103101010-000011--------0-(2 3)(2 3)0120-000010-011001002-000110-10030100-000004100?1111?0-01-1000011100125
+	Peronopsis_roddyi            1--0-(0 1)00--00-----00000-0-1103101(0 1)10-000011--------0-(1 2)20120-000000-011000002-100110-00020000-000004100?0111?0-01-1000011101145
+	Ptychagnostus_gibbus         0010-(0 1)00--00-----00000-0-01031010112000011--------0-2(1 2)0120-000000-011000002-110111010020000-000003100?001110-01-1000011110144
+
+;
+
+END;
+BEGIN SETS;
+	TAXSET Outgroup  =  83 -  85;
+
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS DEFTYPE = unord PolyTcount = MINSTEPS;
+	TYPESET * UNTITLED   =  unord:  1- 125;
+
+	WTSET * UNTITLED  =  1: 1 -  123, 0: 124 -  125 ;
+
+END;
+
+BEGIN TREES;
+	Title 'Trees from "Agnostoidea_Cotton_&_Fortey_2005.nex"';
+	ID 017ac71c737f2;
+	LINK Taxa = Taxa;
+	TRANSLATE
+[0] 		1 Abakolia_minutus,
+[1] 		2 Abakolia_pauca,
+[2] 		3 Acidiscus_birdi,
+[3] 		4 Acidiscus_theristes,
+[4] 		5 Acimetopus_bilobatus,
+[5] 		6 Alaskadiscus_spinosus,
+[6] 		7 Analox_bipunctata,
+[7] 		8 Bathydiscus_dolichometopus,
+[8] 		9 Bolboparia_superba,
+[9] 		10 Calodiscus_lobatus,
+[10] 		11 Cephalopyge_notabilis,
+[11] 		12 Chelediscus_acifer,
+[12] 		13 Chelediscus_chathamensis,
+[13] 		14 Cobboldites_comleyensis,
+[14] 		15 Cobboldites_itsariensis,
+[15] 		16 Dawsonia_bohemicus,
+[16] 		17 Dawsonia_dawsoni,
+[17] 		18 Delgadella_caudatus,
+[18] 		19 Delgadella_lenaicus,
+[19] 		20 Delgadella_amouslekensis,
+[20] 		21 Dicerodiscus_tsunyiensis,
+[21] 		22 Egyngolia_willochra,
+[22] 		23 Egyngolia_obtusa,
+[23] 		24 Egyngolia_zaicevi,
+[24] 		25 Ekwipagetia_marginata,
+[25] 		26 Ekwipagetia_plicofimbria,
+[26] 		27 Eodiscus_borealis,
+[27] 		28 Eodiscus_scanicus,
+[28] 		29 Hebediscina_sardoa,
+[29] 		30 Hebediscina_blagonravovi,
+[30] 		31 Hebediscina_yuqingensis,
+[31] 		32 Hebediscus_attleborensis,
+[32] 		33 Helepagetia_bitruncula,
+[33] 		34 Jinghediscus_nummularius,
+[34] 		35 Kiskinella_cristata,
+[35] 		36 Korobovia_ocellata,
+[36] 		37 Lenadiscus_unicus,
+[37] 		38 Leptochilodiscus_punculatus,
+[38] 		39 Leptochilodiscus_succinctus,
+[39] 		40 Litometopus_longispinus,
+[40] 		41 Luvsanodiscus_gammatus,
+[41] 		42 Macannaia_maladensis,
+[42] 		43 Mallagnostus_desideratus,
+[43] 		44 Mallagnostus_limbatus,
+[44] 		45 Mallagnostus_llarenai,
+[45] 		46 Meniscuchus_menetus,
+[46] 		47 Meniscuchus_nanus,
+[47] 		48 Natalina_incita,
+[48] 		49 Natalina_dilata,
+[49] 		50 Neocobboldia_dentata,
+[50] 		51 Neopagetina_rjonsnitzkii,
+[51] 		52 Ninadiscus_strobulatus,
+[52] 		53 Oodiscus_subgranulatus,
+[53] 		54 Opsidiscus_bilobatus,
+[54] 		55 Opsidiscus_microspinus,
+[55] 		56 Opsidiscus_longispinus,
+[56] 		57 Pagetia_bootes,
+[57] 		58 Pagetia_prolata,
+[58] 		59 Pagetides_elegans,
+[59] 		60 Pagetides_fragum,
+[60] 		61 Pseudocobboldia_pulchra,
+[61] 		62 Runcinodiscus_index,
+[62] 		63 Semadiscus_sollennis,
+[63] 		64 Serrodiscus_speciosus,
+[64] 		65 Serrodiscus_gravestocki,
+[65] 		66 Serrodiscus_daedalus,
+[66] 		67 Serrodiscus_ctenoa,
+[67] 		68 Sinodiscus_shipaiensis,
+[68] 		69 Sinodiscus_subquadratus,
+[69] 		70 Sinopagetia_jinnanensis,
+[70] 		71 Stigmadiscus_stenometopus,
+[71] 		72 Tannudiscus_altus,
+[72] 		73 Tannudiscus_balanus,
+[73] 		74 Tchernyshevioides_ninae,
+[74] 		75 Tsunyidiscus_niutitangensis,
+[75] 		76 Tsunyidiscus_kaiyangensis,
+[76] 		77 Tsunyidiscus_aclis,
+[77] 		78 Tsunyidiscus_orientalis,
+[78] 		79 Tsunyidiscus_longquanensis,
+[79] 		80 Weymouthia_nobilis,
+[80] 		81 Yukonia_intermedia,
+[81] 		82 Yukonides_lacrinus,
+[82] 		83 Condylopyge_amitina,
+[83] 		84 Peronopsis_roddyi,
+[84] 		85 Ptychagnostus_gibbus;
+	TREE MacClade = ((((((((11,(14,15)),(40,(39,38))),(((83,(84,85)),(13,12)),(45,(34,(44,43))))),((50,((49,48),(32,(18,(20,19))))),(((53,8),(52,(47,46))),(35,(((29,31),((24,(23,22)),(30,(6,(26,25))))),(2,((17,16),((28,27),(1,(33,((58,(55,(54,56))),((42,(60,(59,51))),(57,(70,((74,((75,(77,76)),(78,(79,(80,(81,82)))))),(((71,(73,72)),(5,((7,9),(4,3)))),(((69,68),(66,65)),(61,(63,(64,(67,62))))))))))))))))))))),37),(21,41)),36),10);
+	TREE Parsimony_Strat_Rooted = (80,((11,(62,(20,(18,19)))),(32,((14,15),((8,53),(((43,44),(45,(72,(73,(34,(12,13)))))),((67,((40,(38,39)),(63,((71,(9,(3,4))),(64,((66,(5,65)),((7,52),(46,47)))))))),(50,(((10,36),(74,((68,69),(37,(78,(79,(77,(75,76)))))))),((21,41),(61,((6,81),((25,26),((30,(82,(24,(22,23)))),((29,31),((49,(48,(35,70))),(((27,28),((1,2),(16,17))),((42,(60,(51,59))),(57,(58,(55,(33,(54,56)))))))))))))))))))))));
+
+END;
+
+
+BEGIN NOTES;
+
+	TEXT   TAXON = 15 CHARACTER = 44 TEXT = was_?;
+	TEXT   TAXON = 30 CHARACTER = 44 TEXT = ?;
+	TEXT   TAXON = 37 CHARACTER = 44 TEXT = ?;
+
+	TEXT   TAXON = 54 CHARACTER = 45 TEXT = 0;
+	TEXT   TAXON = 55 CHARACTER = 45 TEXT = 0;
+	TEXT   TAXON = 56 CHARACTER = 45 TEXT = 0;
+	TEXT   TAXON = 57 CHARACTER = 45 TEXT = 0;
+	TEXT   TAXON = 58 CHARACTER = 45 TEXT = 0;
+	TEXT   TAXON = 70 CHARACTER = 45 TEXT = 0;
+
+	TEXT   TAXON = 53 CHARACTER = 59 TEXT = '-';
+
+	TEXT   TAXON = 1 CHARACTER = 124 TEXT = Cm_Boto;
+	TEXT   TAXON = 2 CHARACTER = 124 TEXT = Cm_Boto;
+	TEXT   TAXON = 3 CHARACTER = 124 TEXT = Cm_Boto;
+	TEXT   TAXON = 4 CHARACTER = 124 TEXT = Cm_Boto;
+	TEXT   TAXON = 5 CHARACTER = 124 TEXT = 'Cm(Boto)';
+	TEXT   TAXON = 6 CHARACTER = 124 TEXT = 'Cm(Boto)';
+	TEXT   TAXON = 7 CHARACTER = 124 TEXT = 'Cm(Boto)';
+	TEXT   TAXON = 10 CHARACTER = 124 TEXT = 'Cm(Atda-u)';
+	TEXT   TAXON = 11 CHARACTER = 124 TEXT = 'Cm(Atda-l)';
+	TEXT   TAXON = 12 CHARACTER = 124 TEXT = 'Cm(Boto-u)';
+	TEXT   TAXON = 13 CHARACTER = 124 TEXT = 'Cm(Boto-u)';
+	TEXT   TAXON = 17 CHARACTER = 124 TEXT = 'Cm(lMid-l)_(Acadoparadoxides_harlani_interval)';
+	TEXT   TAXON = 18 CHARACTER = 124 TEXT = 'Cm(Atda-l)';
+	TEXT   TAXON = 21 CHARACTER = 124 TEXT = 'Cm(Boto-l)';
+	TEXT   TAXON = 22 CHARACTER = 124 TEXT = 'Cm(Atda-u)';
+	TEXT   TAXON = 23 CHARACTER = 124 TEXT = 'Cm(Atda-u)';
+	TEXT   TAXON = 24 CHARACTER = 124 TEXT = 'Cm(Atda-u)';
+	TEXT   TAXON = 25 CHARACTER = 124 TEXT = 'Cm(Atda-u)';
+	TEXT   TAXON = 26 CHARACTER = 124 TEXT = 'Cm(Atda-u)';
+	TEXT   TAXON = 30 CHARACTER = 124 TEXT = 'Cm(Atda-u';
+	TEXT   TAXON = 33 CHARACTER = 124 TEXT = 'Cm_uMid-m';
+	TEXT   TAXON = 34 CHARACTER = 124 TEXT = 'Cm(mMid)';
+	TEXT   TAXON = 36 CHARACTER = 124 TEXT = 'Cm(Boto-u)';
+	TEXT   TAXON = 37 CHARACTER = 124 TEXT = 'Cm_Boto-l';
+	TEXT   TAXON = 38 CHARACTER = 124 TEXT = 'Cm_Boto-l';
+	TEXT   TAXON = 39 CHARACTER = 124 TEXT = 'Cm_Boto-l';
+	TEXT   TAXON = 41 CHARACTER = 124 TEXT = 'Egyngolskaya_Formation_Fm,_NW_Mongolia';
+	TEXT   TAXON = 42 CHARACTER = 124 TEXT = 'Cm_Tojo-u';
+	TEXT   TAXON = 43 CHARACTER = 124 TEXT = 'Elliptocephala_assemblage,_Cm_Boto-u';
+	TEXT   TAXON = 44 CHARACTER = 124 TEXT = Purley_Shales_of_Warwickshir;
+	TEXT   TAXON = 50 CHARACTER = 124 TEXT = 'Cm_Boto-l';
+	TEXT   TAXON = 51 CHARACTER = 124 TEXT = 'Cm_Boto-l';
+	TEXT   TAXON = 53 CHARACTER = 124 TEXT = Cm_Boto;
+	TEXT   TAXON = 54 CHARACTER = 124 TEXT = 'Cm_uMid-u';
+	TEXT   TAXON = 55 CHARACTER = 124 TEXT = 'Cm_uMid-u';
+	TEXT   TAXON = 56 CHARACTER = 124 TEXT = 'Kap_Stanton,_upper_Middle_Cambrian_(final_zones)';
+	TEXT   TAXON = 58 CHARACTER = 124 TEXT = Delamaran;
+	TEXT   TAXON = 59 CHARACTER = 124 TEXT = 'Elliptocephala_assemblage,_Cm_Boto-u';
+	TEXT   TAXON = 60 CHARACTER = 124 TEXT = Cymbric_Vale_fauna;
+	TEXT   TAXON = 61 CHARACTER = 124 TEXT = 'Cm_Tojo-l';
+	TEXT   TAXON = 62 CHARACTER = 124 TEXT = 'Cm_Boto-u';
+	TEXT   TAXON = 63 CHARACTER = 124 TEXT = 'Cm_Boto-l';
+	TEXT   TAXON = 64 CHARACTER = 124 TEXT = 'Cm_Boto-l';
+	TEXT   TAXON = 65 CHARACTER = 124 TEXT = 'Mernmerna_Formation,_Oraparinna_Shale_Transition_Zone,_Bunyeroo_Gorge,_Flinders_Ranges,_South_Australia';
+	TEXT   TAXON = 66 CHARACTER = 124 TEXT = 'Cm_Boto-u';
+	TEXT   TAXON = 67 CHARACTER = 124 TEXT = 'Cm_Boto-u';
+	TEXT   TAXON = 68 CHARACTER = 124 TEXT = 'Cm_Atda-u';
+	TEXT   TAXON = 69 CHARACTER = 124 TEXT = 'Cm_Atda-u';
+	TEXT   TAXON = 75 CHARACTER = 124 TEXT = 'Shuijingtuo_Fm,_Qiongzhusian,_Cm_Atda-u';
+	TEXT   TAXON = 80 CHARACTER = 124 TEXT = 'Cm_Atda-l';
+	TEXT   TAXON = 81 CHARACTER = 124 TEXT = 'Co-ocurrs_with_archaeocyathids';
+	TEXT   TAXON = 82 CHARACTER = 124 TEXT = 'Cm_Atda-u';
+	TEXT   TAXON = 83 CHARACTER = 124 TEXT = 'Cm(Tojo)';
+	TEXT   TAXON = 84 CHARACTER = 124 TEXT = 'Cm(mMid-u)';
+	TEXT   TAXON = 85 CHARACTER = 124 TEXT = 'Cm(uMid-m)';
+
+	TEXT   TAXON = 1 CHARACTER = 125 TEXT = Cm_lMid;
+	TEXT   TAXON = 2 CHARACTER = 125 TEXT = Cm_lMid;
+	TEXT   TAXON = 3 CHARACTER = 125 TEXT = Cm_Boto;
+	TEXT   TAXON = 4 CHARACTER = 125 TEXT = Cm_Boto;
+	TEXT   TAXON = 5 CHARACTER = 125 TEXT = 'Cm(Boto)';
+	TEXT   TAXON = 6 CHARACTER = 125 TEXT = 'Cm(Tojo)';
+	TEXT   TAXON = 7 CHARACTER = 125 TEXT = 'Cm(Boto)';
+	TEXT   TAXON = 10 CHARACTER = 125 TEXT = 'Cm(Boto-l)';
+	TEXT   TAXON = 11 CHARACTER = 125 TEXT = 'Cm(Atda-l)';
+	TEXT   TAXON = 12 CHARACTER = 125 TEXT = 'Cm(Boto-u)';
+	TEXT   TAXON = 13 CHARACTER = 125 TEXT = 'Cm(Boto-u)';
+	TEXT   TAXON = 17 CHARACTER = 125 TEXT = 'Cm(lMid-l)_(Acadoparadoxides_harlani_interval)';
+	TEXT   TAXON = 19 CHARACTER = 125 TEXT = 'Cm(Tojo-l)';
+	TEXT   TAXON = 22 CHARACTER = 125 TEXT = 'Cm(Atda-u)';
+	TEXT   TAXON = 23 CHARACTER = 125 TEXT = 'Cm(Atda-u)';
+	TEXT   TAXON = 24 CHARACTER = 125 TEXT = 'Cm(Atda-u)';
+	TEXT   TAXON = 25 CHARACTER = 125 TEXT = 'Cm(Atda-u)';
+	TEXT   TAXON = 26 CHARACTER = 125 TEXT = 'Cm(Atda-u)';
+	TEXT   TAXON = 27 CHARACTER = 125 TEXT = 'Cm_uMid-m';
+	TEXT   TAXON = 31 CHARACTER = 125 TEXT = 'Cm(Boto-u)';
+	TEXT   TAXON = 32 CHARACTER = 125 TEXT = 'Cm_(Boto-u)';
+	TEXT   TAXON = 33 CHARACTER = 125 TEXT = 'Cm_uMid-u';
+	TEXT   TAXON = 37 CHARACTER = 125 TEXT = 'Cm_Boto-l';
+	TEXT   TAXON = 38 CHARACTER = 125 TEXT = 'Cm_Boto-l';
+	TEXT   TAXON = 39 CHARACTER = 125 TEXT = 'Cm_Boto-l';
+	TEXT   TAXON = 42 CHARACTER = 125 TEXT = 'Cm_mMid-l';
+	TEXT   TAXON = 50 CHARACTER = 125 TEXT = 'Cm_Tojo-l';
+	TEXT   TAXON = 51 CHARACTER = 125 TEXT = 'Cm_Tojo-u';
+	TEXT   TAXON = 53 CHARACTER = 125 TEXT = Cm_Boto;
+	TEXT   TAXON = 61 CHARACTER = 125 TEXT = Cm_lMid;
+	TEXT   TAXON = 62 CHARACTER = 125 TEXT = 'Cm_Boto-u';
+	TEXT   TAXON = 63 CHARACTER = 125 TEXT = 'Cm_Boto-l';
+	TEXT   TAXON = 64 CHARACTER = 125 TEXT = 'Cm_Boto-l';
+	TEXT   TAXON = 65 CHARACTER = 125 TEXT = 'Mernmerna_Formation,_Oraparinna_Shale_Transition_Zone,_Bunyeroo_Gorge,_Flinders_Ranges,_South_Australia';
+	TEXT   TAXON = 67 CHARACTER = 125 TEXT = 'Cm_Boto-u';
+	TEXT   TAXON = 68 CHARACTER = 125 TEXT = 'Cm_Atda-u';
+	TEXT   TAXON = 69 CHARACTER = 125 TEXT = 'Cm_Atda-u';
+	TEXT   TAXON = 75 CHARACTER = 125 TEXT = 'Shuijingtuo_Fm,_Qiongzhusian,_Cm_Atda-u';
+	TEXT   TAXON = 80 CHARACTER = 125 TEXT = 'Cm_Atda-u';
+	TEXT   TAXON = 83 CHARACTER = 125 TEXT = 'Cm(uMid-m)';
+	TEXT   TAXON = 84 CHARACTER = 125 TEXT = 'Cm(uMid-u)';
+	TEXT   TAXON = 85 CHARACTER = 125 TEXT = 'Cm(uMid-m)';
+
+END;
+
+BEGIN MacClade;
+	Version 4.0 87;
+	LastModified -845394651;
+	FileSettings treewindow '1' '1' '124' '1';
+	Singles 000;
+	Editor 00011001111111100100010010 '0' '24' Gadget '12' '162' '1' all;
+	EditorPosition '57' '463' '852' '571';
+	TreeWindowPosition '46' '6' '935' '1413';
+	ListWindow Characters open Gadget '12' '486' '892' '253' '525' 000;
+	ListWindow Taxa open Gadget '12' '50' '25' '270' '376' 100000000;
+	ListWindow Trees open Gadget '12' '50' '10' '134' '387';
+	ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow ExSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow TaxSets closed Gadget '12' '50' '10' '134' '185';
+	ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	TextWindow AboutFile '50' '25' '280' '445' Gadget '12' ( normal ) 1;
+	ChartWindowPosition '52' '30' '686' '964';
+	StateNamesSymbols open Gadget '12' '10' '806' '123' '203' '246';
+	WindowOrder List Trees Tree List Taxa List Characters States Text AboutFile;
+	OtherSymbols & / 00 ? -;
+	Correlation '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile '2';
+	ExportHTML _ MOSS '100' 110000;
+	PrettyPrint 10;
+	CharLegendPosition '841' '1318' '121' '85';
+	TreeLegendPosition '874' '1220' '88' '93';
+	EditorToolsPosition '470' '1441' '115' '165';
+	TreeToolsPosition '576' '6' '126' '138';
+	TreeWindowProgram 10;
+	TreeWindow 0000;
+	Continuous '0' '3' 1;
+	Calculations 1000101;
+	SummaryMode '0' '0' 0;
+	Charts Gadget '12' ( normal ) 0010;
+	NexusOptions '0' '0' '50' 001011001;
+	TipLabel '1';
+	TreeFont Gadget '12' ( normal );
+	TreeShape 1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax '0';
+	TraceAllChangesDisplay '1' 1;
+	BarsOnBranchesDisplay '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation '3' 1;
+	PrintTree 10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Gadget '9' ( normal ) Gadget '10' ( normal ) Gadget '9' ( normal ) Gadget '9' ( normal ) Gadget '9' ( bold ) Gadget '9' ( normal ) Gadget '9' ( normal ) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '12' '0' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 00;
+	TreeTools '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools '1';
+
+END;
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 125;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1627501404174;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 143893731286261236;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 5402353360074700579;
+			mqVersion 360;
+			checksumv 0 3 3732531027 null  getNumChars 125 numChars 125 getNumTaxa 85 numTaxa 85   short true   bits 1023   states 1023   sumSquaresStatesOnly 2537582.0 sumSquares 2537582.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 175;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1052 723;
+			setLocation 8 23;
+			setFont Gadget;
+			setFontSize 14;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #5402353360074700579 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 211;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 877 651;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

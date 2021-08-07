@@ -1,0 +1,230 @@
+#NEXUS
+[written Wed Dec 04 21:01:25 ART 2019 by Mesquite  version 3.10 (build 765) at Apples-MacBook-Pro.local/172.18.147.93]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX=72;
+	TAXLABELS
+		Myinda_uriconii Myindella_crux Hanchungolithus_richthofeni Ningkianolithus_welleri_ Reedolithus_quebecensis Protoincaia_ancestor Tretaspis_ceryx Stapeleyella_inconstans Bancroftolithus_hughesi Pragolithus_praecedens Trinucleus_fimbriatus Cryptolithus_tesselatus Deanaspis_goldfussii Onnia_s._superba Marrolithus_bureaui Dionide_mareki Trinucleoides_reussi Ampyxella_edgelli Globampyx_trinucleoides Damghanampyx_ginteri Raphioampyx_sinankylosus Rhombampyx_glaber Raphiophorus_parvulus Cnemidopyge_costatus Lonchodomas_tenuis Ampyx_nasutus Mendolaspis_sanjuaninus Nambeetella_fitzroyensis Pseudampyxina_trisegmentata Lehnertia_nawisapa Pyrimetopus_pyrifrons Orometopus_elatifrons Araiopleura_reticulata Hapalopleura_clavata Seleneceme_acuticaudata Skljarella_cracens Joshuaspis_parvus Doremataspis_ornata Gibbura_lepida Liostracina_simesi Liostracina_volens Liostracina_tangwangzhaiensis Nepea_narinosa Norwoodia_boninoi Glaphyraspis_parva Aphelaspis_brachyphasis Ptychoparia_striata Elrathia_kingii Altikolia_kurshabica Bolaspidella_housensis Kochaspis_liliana Gunnia_fava Modocia_whiteleyi Hardyoides_minor 'Asaphus (Asaphus) expansus' 'Megistaspis (Megistaspis) limbata' Asaphellus_homfrayi Tsinania_canens Liomegalaspides_hupeiensis Taihungshania_shui Nileus_armadillo Remopleurides_xiazhenensis Pterocephalia_norfordi Maladioides_coreanicus Ivshinaspis_reticulata Haniwa_quadrata Abharella_sp. Ceratopyge_forficuloides Proceratopyge_cf._p._lata Parabolina_acanthura Olenellus_gilberti Redlichia_takooensis
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	DIMENSIONS  NCHAR=75;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2 3";
+	MATRIX
+	Myinda_uriconii                22121-1100??10010100001?011-210??1011212???010?????????????????????????????
+	Myindella_crux                 21111-1100111001000?0011011-210??101121111?01011?1010000102021010100000010?
+	Hanchungolithus_richthofeni    20201-010011100100000011111-20111101101111?010??2?010000101021010101011110?
+	Ningkianolithus_welleri_       20201-0100111001000000111?1-2011110110?111?010?????????????????????????????
+	Reedolithus_quebecensis        10111-010010100101000011101-200111011123111011312?010001?01021010101011110?
+	Protoincaia_ancestor           21011-010010100100000000111--01110------1?1011312????????01021210101011110?
+	Tretaspis_ceryx                10011-010010100100000000101--00?10------1??011212102000010102111010?0111?0?
+	Stapeleyella_inconstans        20111-010010100100010011101--00??0------1??011312??20????00121020101011110?
+	Bancroftolithus_hughesi        21111-010010100101000011101-2001110111231110113121020000101121020101011110?
+	Pragolithus_praecedens         21111-010010100101010011101--00??0------1??011??2????????01111020101011110?
+	Trinucleus_fimbriatus          21111-010010100101001001101--00??0------1??011312100000010221122010101111??
+	Cryptolithus_tesselatus        21101-010010112---001011101--00100------11101131210000011022101201010101101
+	Deanaspis_goldfussii           11111-010010112---001011101--00?00------1??01131210000011002101201010100?0?
+	Onnia_s._superba               21211-010010112---001011101--10100------11101121210000011002102201010000?0?
+	Marrolithus_bureaui            21201-010010112---001011101--11100------111011212100000110021022010?000010?
+	Dionide_mareki                 10011-010010002---012000002--10100------1110102121000001011201220110000001?
+	Trinucleoides_reussi           20001-011010002---012000002--10?00------1??01031?1000001012101220110000001?
+	Ampyxella_edgelli              22010-00101100111211-001102--10??0------1??10-???000000101120022011001000??
+	Globampyx_trinucleoides        21200-00101010111111-000002--101?0------11100-31?0000001012201120110000001?
+	Damghanampyx_ginteri           10000-001010101110012000102--10??0------1??00-212002000101100112011000000??
+	Raphioampyx_sinankylosus       21000-00111000001110-001102--12??0------1??10-???????????0100000100?0211???
+	Rhombampyx_glaber              12100-00111100001010-001102--121?0------10110-???????????000000010000211???
+	Raphiophorus_parvulus          22100-00111000101210-001102--12100------10110-312002000100200000?000021101?
+	Cnemidopyge_costatus           11200-00111100001110-001102--121?0------10110-???????????0220020101000000??
+	Lonchodomas_tenuis             11200-00111100001210-001102--121?0------10110-???????????022002010100100???
+	Ampyx_nasutus                  21100-00111100100210-000102--12??0------1??10-???????????0220020?00001010??
+	Mendolaspis_sanjuaninus        20100-00111000101010-0?1102--12??0------1???0-???????????012002010000001???
+	Nambeetella_fitzroyensis       10100-00111010100111-011112--10100------10100-???????????0111112110001010??
+	Pseudampyxina_trisegmentata    12100-00111011100111-011102--10??0------1??00-???????????000110211000101???
+	Lehnertia_nawisapa             10100-00111010100011-011102-2101?1011--110110-312?0200011010110211000111011
+	Pyrimetopus_pyrifrons          10111001001010010111-0110002210??10111110??00-11?1021100112?0??1020001001??
+	Orometopus_elatifrons          10111001011110010011-01100022101010112110??00-11?????????1210011020001001??
+	Araiopleura_reticulata         10121001001000010011-0110002200??10102010??00-31?30210001120000202000100?0?
+	Hapalopleura_clavata           12011001001000010111-0100002210??10101010??00-31?30210001101002202000100?0?
+	Seleneceme_acuticaudata        12111001031000???111-010000?-10??0------0??10-31230211201????????????????0?
+	Skljarella_cracens             11011001031000010211-0100002200??10101100??00-3123021120110000020200000000?
+	Joshuaspis_parvus              01121011022000010111-0100101210??10123000??00-21?????????10??????????????0?
+	Doremataspis_ornata            02121001022000010111-11000001000?10112230??01-210????????11000020100010?0??
+	Gibbura_lepida                 02121011022000010011-110000000001101132300?00-?????????????????????????????
+	Liostracina_simesi             02121011022000010011-110000021001101131100100-110????????120000201000001?0?
+	Liostracina_volens             02121011022000010011-11000001100?101132300100-112??????????????????????????
+	Liostracina_tangwangzhaiensis  02121011022000010011-11000021100?101132200100-??2????????120000201000001100
+	Nepea_narinosa                 02021011020010010211-11100021100?101130100000-10030011001??????????????0?0?
+	Norwoodia_boninoi              01021001020010010211-1110000010??10111030??00-10?3011100112100020100100010?
+	Glaphyraspis_parva             02121001020010010211-11100012100?101130100?00-???????????1110012011010001?0
+	Aphelaspis_brachyphasis        02121001020010010211-11100000100?101111200?00-100????????121001201101000100
+	Ptychoparia_striata            01121111020011010211-1110000210??101121200000-1003001100112100120110100010?
+	Elrathia_kingii                 01021101020010010211-1110000010??10111120??00-1003001100112100120110100010?
+	Altikolia_kurshabica           01111111020010010211-11101021100?10101210??00-??0????000?1200002010010001??
+	Bolaspidella_housensis         01011111020010010211-111110211001101011100000-10030111000120000201001000100
+	Kochaspis_liliana              01011111020011010211-1111?0111001101020100000-100????????1200002010010001??
+	Gunnia_fava                    01011101020010010211-111110201001101021200000-100????????1200002010010001??
+	Modocia_whiteleyi              01011101020010010211-11100000100?101001200?00-10?3001100012000020100100010?
+	Hardyoides_minor               01011001020010010?11-1110001110??10102000??00-1?03001100012000020100100010?
+	'Asaphus (Asaphus) expansus'        00000-00001010010211-00010001100?110-2210??00-00?2100121011201101010110001?
+	'Megistaspis (Megistaspis) limbata'     02221101031010010211-0001000110??110-2220??00-00?????????12201201010110001?
+	Asaphellus_homfrayi            22101001021000010211-0000000110??1?0-0110??00-00?2100121011100200000010011?
+	Tsinania_canens                2?101001030000010111-000000001001110-12100?00-001?1??????1110020000001001?1
+	Liomegalaspides_hupeiensis     21100-000310002--111-100000011001110-0210??00-00?2100121012200200010120101?
+	Taihungshania_shui             01110-000310002--211-100000011001110-02000?00-001????????122002000101201011
+	Nileus_armadillo               020000000310002--111-100000001001110-02100000-00?1100001011100100000120001?
+	Remopleurides_xiazhenensis     12000-000100002--?11-100000?11001110-02000000-1??310110101000???0???1?0000?
+	Pterocephalia_norfordi         02021001020000010211-10000001100?111122300?00-10130001010121011001001201001
+	Maladioides_coreanicus         02011001020000010111-100000001001110-11100000-101????????1210110010011000??
+	Ivshinaspis_reticulata         02021001030000010211-1000000010??110-1120??00-???????????1210112?110110?0??
+	Haniwa_quadrata                02021001030000010211-10000000100?110-11200000-10131??101011000?00???1?000??
+	Abharella_sp.                  02021101022000010211-10000000100?110-11300000-10?????????1100000010011000??
+	Ceratopyge_forficuloides       01021101031000000211-1100000010??110-1220??00-10?????????120000211001100???
+	Proceratopyge_cf._p._lata      02121101031000000211-111000001001110-11100000-1??????????1200002110011000?0
+	Parabolina_acanthura           21010001032000010211-11000002100?11100000??00-1003111101012000020110000000?
+	Olenellus_gilberti             02210101032000010211-110000001000112-02200?00-0003111100011100120010000010?
+	Redlichia_takooensis           02100101032000010211-11100000100?112-02300?00-1003111101012100000010?00010?
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1 -  75;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1 -  75;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1575504090855;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 6416751477543237080;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 7850939567939523558;
+			mqVersion 310;
+			checksumv 0 3 1570981062 null  getNumChars 75 numChars 75 getNumTaxa 72 numTaxa 72   short true   bits 15   states 15   sumSquaresStatesOnly 19326.0 sumSquares 19326.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 222;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 700 500;
+			setLocation 8 23;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #7850939567939523558 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 478 428;
+					setLocation 8 23;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;

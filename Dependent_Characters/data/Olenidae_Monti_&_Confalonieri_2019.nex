@@ -1,0 +1,296 @@
+#NEXUS
+[written Thu Apr 30 11:54:10 CDT 2020 by Mesquite  version 3.6 (build 917) at Wagners_Dark_Tower/10.0.1.29]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=65;
+	TAXLABELS
+		Cedaria_minor Aphelaspis_australis Andrarina_costata Asaphiscus_wheeleri Dokimocephalus_pernasutus Orygmaspis_contracta Pterocephalia_norfordi Olenus_gibbosus Olenus_alpha 'Parabolina (Parabolina) spinulosa' 'Parabolina (Parabolina) acanthura' 'Parabolina (Neoparabolina) lobata' 'Parabolina (Neoparabolina) argentina' Angelina_sedgwickii Angelina_hyeronimi Angelina_kayseri Angelina_punctolineata Angelina_sp. Parabolinella_limitis Parabolinella_coelatifrons Parabolinella_pompadouris Parabolinella_clarisae Parabolinella_argentinensis Parabolinella_triarthroides Beltella_depressa Beltella_ulrichi Leptoplastides_salteri Leptoplastides_argentinensis Leptoplastides_granulosus Protopeltura_praecursor Protopeltura_mesembria Peltura_scaraboides Peltocare_norvegicum Acerocare_ecorne Acerocarina_micropyga Jujuyaspis_keideli Saltaspis_steinmanni Saltaspis_sp._nov. Psilocara_comma Psilocara_lillae Plicatolina_kindlei Plicatolina_scalpta Plicatolinella_oculta Bienvillia_corax Bienvillia_parchaensis Bienvillia_tetragonalis Bienvillia_rectifrons Bienvillia_cf._shinetonensis Bienvillia_jana Bienvillia_kichka Bienvillia_chaya Triarthrus_becki Triarthrus_jachalensis Porterfieldia_caecigena Porterfieldia_cuadrata Porterfieldia_turneri Porterfieldia_acava Porterfieldia_maanssonae Hypermecaspis_armata Hypermecaspis_inermis Hypermercaspis_chamarrensis Hypermercaspis_occidentalis Hypermecaspis_sp. Hypermecaspis_edselbrussai Tropidopyge_alveus 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=62;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8";
+	MATRIX
+	Cedaria_minor                         22101120000011000000000-00011001000001100010001212002000000100
+	Aphelaspis_australis                  ????1100220011100000000-0000???????0000???????021000?1011000??
+	Andrarina_costata                     12??212002001110000-----10202000000100010010000211003?01110000
+	Asaphiscus_wheeleri                   0010102001100000010-----202010100-1011110000001210002000000100
+	Dokimocephalus_pernasutus             ????10202100110000000011200020110111111????????????????01???0?
+	Orygmaspis_contracta                  00102020110201100000001112101010001101001000100210002000000000
+	Pterocephalia_norfordi                20102020012-0110000000102021101000110102-020000111011201041110
+	Olenus_gibbosus                       00000000000000000000000000000100000000000000000001003101010000
+	Olenus_alpha                          ????11201100100000002111211011010000000???????102120??0102000?
+	'Parabolina (Parabolina) spinulosa'   00001011100011000000110102001100000200001000010001201201010000
+	'Parabolina (Parabolina) acanthura'   ????2120100011010000111112011100010000001110000111203201120000
+	'Parabolina (Neoparabolina) lobata'   00002000000011000000330102101101010000101110110001103?01110000
+	'Parabolina (Neoparabolina) argentina'00001100000000000000330010102001011010101111110020103201120000
+	Angelina_sedgwickii                   0010100011120100000-----20102000000002-00100001010201?02110000
+	Angelina_hyeronimi                    0010110010220{0 1}000000001-20102001000002-10100000010001202120000
+	Angelina_kayseri                      001011{0 1}011020{0 1}000000001-20102000001002-10100000010001202120000
+	Angelina_punctolineata                ????1?001-22200000000???20102??????002-???????????????021?????
+	Angelina_sp.                          ????1?0011120101000-----2000???????002-???????????????021?????
+	Parabolinella_limitis                 ????0?211001110100012200010011000000001101100?????????010???00
+	Parabolinella_coelatifrons            21101100010101000001200201112100001100010110010000101201020000
+	Parabolinella_pompadouris             011000210001000100012013010111000?010010011000??????12010???00
+	Parabolinella_clarisae                0110002100010000000120030111100100000010011001??????12010???00
+	Parabolinella_argentinensis           00100021000110010001210301111101000100000110011020101201000000
+	Parabolinella_triarthroides           0110000100012{0 1}01000120130210????0101?00?00100???????1?010???00
+	Beltella_depressa                     002011{0 2}211100110100-----20102010011102-2-110001-00213?01110000
+	Beltella_ulrichi                      00211120111001000000000-10002000010202-2-110000120103201120000
+	Leptoplastides_salteri                00211122111011100000001-30101000010200110010020020102201120000
+	Leptoplastides_argentinensis          0000111211121101000-----2010200001000011011000??????0?011???00
+	Leptoplastides_granulosus             00202012111221010000001-20102000010000110110000010200?01120000
+	Protopeltura_praecursor               1010201232002100000022120110?10000?110000010000210201?02020000
+	Protopeltura_mesembria                10211012110211000000000-3000120001020001001002????????010???00
+	Peltura_scaraboides                   10202012310021000000111-102021101-0011000110000020211?01000000
+	Peltocare_norvegicum                  202121123-2-0101000-----200022001-0002-2-110001210011204-00000
+	Acerocare_ecorne                      102110031110100{0 1}00001110001012101-000002-010011020112?01100000
+	Acerocarina_micropyga                 002120123---200{0 1}0000----0000121?1-0012-2-000011020212?04-10000
+	Jujuyaspis_keideli                    002111{0 1}311101100000-----201-23101-0002-01110101001013201010000
+	Saltaspis_steinmanni                  ????10030-2-1101000-----2000230001020?????????020110?204-1000?
+	Saltaspis_sp._nov.                    002111031-2-1100000-----20002300010202-10111000011001204-10000
+	Psilocara_comma                       ????2002020021110000111-10111210111012-???????111020?20103100?
+	Psilocara_lillae                      1{0 1}2121{0 1}2011001111100110-10{0 1}022101-0202-2-01000-010211201031000
+	Plicatolina_kindlei                   100000021?00100100001101021{0 1}110?0000?010011001??????0?010???00
+	Plicatolina_scalpta                   1000002210002{0 1}01001010000110110?010000110110010010002201020000
+	Plicatolinella_oculta                 ????201000001001000000001010????0??0001???????113120??0104100?
+	Bienvillia_corax                      ????2?1010012103000033010010???????0111????????????????10?????
+	Bienvillia_parchaensis                10102102200011020000110-0200220001000012-100010011100201031001
+	Bienvillia_tetragonalis               101021001000100{1 2}0000110-02002210010000120100010010100?01031001
+	Bienvillia_rectifrons                 1010211210012{0 1}0{1 2}000011021010220001?002-10110021010100?01031001
+	Bienvillia_cf._shinetonensis          0???2112120000020000111-0000?20101?00012-0110200?0100?0?031001
+	Bienvillia_jana                       10002112100020110100110-1010221?00?00102-110021010100201031001
+	Bienvillia_kichka                     10002112100010130000000-1010220001020112-01101(0 1)021100?01031000
+	Bienvillia_chaya                      20102110100001030000110-20002200100002-110110110????0201031001
+	Triarthrus_becki                      12102?121-2-11030000110-0010?2001-0012-2-010011021201204-31001
+	Triarthrus_jachalensis                121020121-2-00020000110100100200011210110110011001??0204-31001
+	Porterfieldia_caecigena               20102102120121010000110-000-?2?11-?21??0011001001??01?130?????
+	Porterfieldia_cuadrata                ????21221001110{1 2}0000010-001022??01?2?011001?????????02030?????
+	Porterfieldia_turneri                 ????2?221001110300000001000012010102101???????020111?21103100?
+	Porterfieldia_acava                   ????2?12100011030000000-00101210011202-10000010021010213031000
+	Porterfieldia_maanssonae              ????2?221001110300000001000012010002101???????02200??21103100?
+	Hypermecaspis_armata                  01002000011010100011221301101011001012-10010000111200?01031100
+	Hypermecaspis_inermis                 112021130?10000000112203211020101-1002-10100001113201201041110
+	Hypermercaspis_chamarrensis           211021230000110300112203?110?01?000?02--00100010112?0?01031100
+	Hypermercaspis_occidentalis           ????0?2300001100001122030111???????002--??????01-321??010411??
+	Hypermecaspis_sp.                     ????2?1302001000101122000110???????0000???????????????010?????
+	Hypermecaspis_edselbrussai            1???0?232110010000102200011120?010?002-00000001113213201042100
+	Tropidopyge_alveus                    ????01230010010100112103021110101-?0001???????112321??01041110
+
+;
+
+END;
+BEGIN MacClade;
+	Version 4.0 87;
+	LastModified -890844114;
+	FileSettings editor '1' '1' '21' '1';
+	Singles 010;
+	Editor 00011011111111100100010010 '0' '72' Gadget '12' '236' '1' all;
+	EditorPosition '46' '6' '597' '1005';
+	TreeWindowPosition '71' '206' '670' '804';
+	ListWindow Characters open Gadget '12' '564' '100' '406' '374' 000;
+	ListWindow Taxa closed Gadget '12' '50' '10' '270' '402' 100000000;
+	ListWindow Trees closed Gadget '12' '90' '65' '134' '387';
+	ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow ExSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow TaxSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	TextWindow AboutFile '50' '25' '280' '445' Gadget '12' ( normal ) 1;
+	ChartWindowPosition '52' '30' '968' '1620';
+	StateNamesSymbols open Gadget '12' '9' '639' '552' '186' '220';
+	WindowOrder Data List Characters States Text AboutFile;
+	OtherSymbols & / 00 ? -;
+	Correlation '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile '2';
+	ExportHTML _ MOSS '100' 110000;
+	PrettyPrint 10;
+	EditorToolsPosition '771' '46' '115' '165';
+	TreeToolsPosition '866' '9' '126' '138';
+	TreeWindowProgram 10;
+	TreeWindow 0000;
+	Continuous '0' '3' 1;
+	Calculations 1000101;
+	SummaryMode '0' '0' 0;
+	Charts Gadget '12' ( normal ) 0010;
+	NexusOptions '0' '0' '50' 001011001;
+	TipLabel '1';
+	TreeFont Gadget '12' ( normal );
+	TreeShape 1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax '0';
+	TraceAllChangesDisplay '1' 1;
+	BarsOnBranchesDisplay '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation '3' 1;
+	PrintTree 10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Gadget '12' ( normal ) Geneva '10' ( normal ) Gadget '12' ( normal ) Gadget '12' ( normal ) Gadget '12' ( bold ) Gadget '12' ( normal ) Gadget '12' ( normal ) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '0' '2' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 00;
+	TreeTools '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools '1';
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 62;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 62;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1588265650615;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 4848185765477801742;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 4728086045215751474;
+			mqVersion 360;
+			checksumv 0 3 122437972 null  getNumChars 62 numChars 62 getNumTaxa 65 numTaxa 65   short true   bits 2305843009213693983   states 31   sumSquaresStatesOnly 20510.0 sumSquares -8.301034833169298E19 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1373 776;
+			setLocation 8 23;
+			setFont Gadget;
+			setFontSize 14;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #4728086045215751474 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 276;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1273 704;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+
