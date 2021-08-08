@@ -1,0 +1,30 @@
+#NEXUS
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=13 NCHAR=1;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "   0 1 2 3 ";
+	MATRIX
+	Parabolinella_prolata          0
+	Parabolinella_tumifrons        0
+	Cloacaspis_senilis             2
+	Cloacaspis_tesselata           0
+	Cloacaspis_ekphymosa           3
+	Cloacaspis_dejecta             2
+	Balnibarbi_ceryx_ceryx         1
+	Balnibarbi_ceryx_anataphra     0
+	Balnibarbi_pulvurea            3
+	Balnibarbi_tholia              3
+	Balnibarbi_erugata             3
+	Balnibarbi_sombrero            0
+	Balnibarbi_scimitar            0
+;
+END;
+begin mrbayes;
+	set autoclose=yes nowarn=yes;
+	lset nst=6 rates=invgamma;
+	unlink statefreq=(all) revmat=(all) shape=(all) pinvar=(all); 
+	prset applyto=(all) ratepr=variable;
+	mcmcp ngen= 100000000 relburnin=yes burninfrac=0.25 printfreq=10000  samplefreq=10000 nchains=4 savebrlens=yes;
+	mcmc;
+	sumt;
+end;

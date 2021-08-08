@@ -1,0 +1,30 @@
+#NEXUS
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=13 NCHAR=42;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP =  -  MISSING =  ?  SYMBOLS = " 0 1 2 3 4 5 6 7 8 9 A B C ";
+	MATRIX
+	Parabolinella_prolata          00000011?01001000220010?00??10010?????????
+	Parabolinella_tumifrons        2(048)011001101001000220010?00??1001??????????
+	Cloacaspis_senilis             112020100000101212201001101?01101222001001
+	Cloacaspis_tesselata           01002110?00010121?21101110?10110121111?000
+	Cloacaspis_ekphymosa           2130?110?00?10121220100?111?0????2110??000
+	Cloacaspis_dejecta             19212110?01?10121221200?00??011011111?0010
+	Balnibarbi_ceryx_ceryx         1B110212011001121110200?00?101100101001110
+	Balnibarbi_ceryx_anataphra     060002120?1000121110200?00?101100?????????
+	Balnibarbi_pulvurea            1B3102120011112200012000100?02010000011110
+	Balnibarbi_tholia              013112121011011101?1200?10??0??????00??100
+	Balnibarbi_erugata             06310201002001110001200?00?00?000000000110
+	Balnibarbi_sombrero            06010201002001110001200?00?00?????????????
+	Balnibarbi_scimitar            29010201002001110011200?00?00?110100000110
+;
+END;
+begin mrbayes;
+	set autoclose=yes nowarn=yes;
+	lset nst=6 rates=invgamma;
+	unlink statefreq=(all) revmat=(all) shape=(all) pinvar=(all); 
+	prset applyto=(all) ratepr=variable;
+	mcmcp ngen= 100000000 relburnin=yes burninfrac=0.25 printfreq=10000  samplefreq=10000 nchains=4 savebrlens=yes;
+	mcmc;
+	sumt;
+end;

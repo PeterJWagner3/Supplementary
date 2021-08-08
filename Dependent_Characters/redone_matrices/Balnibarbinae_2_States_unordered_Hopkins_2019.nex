@@ -1,0 +1,30 @@
+#NEXUS
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=13 NCHAR=26;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "   0 1 ";
+	MATRIX
+	Parabolinella_prolata          01?00010010?00??1010??????
+	Parabolinella_tumifrons        10100010010?00??101???????
+	Cloacaspis_senilis             010001010001101?0101001001
+	Cloacaspis_tesselata           01?00101101110?1010111?000
+	Cloacaspis_ekphymosa           01?0?101000?111?0???0??000
+	Cloacaspis_dejecta             11?0?101100?00??01011?0010
+	Balnibarbi_ceryx_ceryx         11010011000?00?10100001110
+	Balnibarbi_ceryx_anataphra     010?0001000?00?10100??????
+	Balnibarbi_pulvurea            110011101000100?0010011110
+	Balnibarbi_tholia              11101010100?10??0???0??100
+	Balnibarbi_erugata             10000010100?00?00000000110
+	Balnibarbi_sombrero            10000010100?00?00?????????
+	Balnibarbi_scimitar            10000010100?00?00110000110
+;
+END;
+begin mrbayes;
+	set autoclose=yes nowarn=yes;
+	lset nst=6 rates=invgamma;
+	unlink statefreq=(all) revmat=(all) shape=(all) pinvar=(all); 
+	prset applyto=(all) ratepr=variable;
+	mcmcp ngen= 100000000 relburnin=yes burninfrac=0.25 printfreq=10000  samplefreq=10000 nchains=4 savebrlens=yes;
+	mcmc;
+	sumt;
+end;
