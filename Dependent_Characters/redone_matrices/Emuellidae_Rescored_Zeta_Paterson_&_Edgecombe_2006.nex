@@ -1,0 +1,44 @@
+#NEXUS
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=27 NCHAR=1;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP =  -  MISSING =  ?  SYMBOLS = "   0 1 2 ";
+	MATRIX
+	Emuella_polymera               2
+	Balcoracania_dailyi            -11
+	Redlichia_takooensis           1
+	Eoredlichia_intermediata       2
+	Lemdadella_antarcticae         2
+	Dolerolenus_zoppii             1
+	Yinites_wanshougongensis       2
+	Abadiella_huoi                 2
+	Eccaparadoxides_pusillus       2
+	Anabaraspis_splendens          2
+	Xystridura_templetonensis      2
+	Bigotina_bivallata             2
+	Estaingia_bilobata             2
+	Ichangia_ichangensis           2
+	Ellipsocephalus_gripi          2
+	Olenellus_fowleri              0
+	Bristolia_anteros              -11
+	Nephrolenellus_geniculatus     -11
+	Wanneria_walcottana            1
+	Elliptocephala_asaphoides      1
+	Holmia_kjerulfi                1
+	Fallotaspis_bondoni            1
+	Daguinaspis_ambroggii          0
+	Archaeaspis_macropleuron       -11
+	Repinaella_sibirica            -11
+	Judomia_tera                   2
+	Nevadia_weeksi                 2
+;
+END;
+begin mrbayes;
+	set autoclose=yes nowarn=yes;
+	lset nst=6 rates=invgamma;
+	unlink statefreq=(all) revmat=(all) shape=(all) pinvar=(all); 
+	prset applyto=(all) ratepr=variable;
+	mcmcp ngen= 100000000 relburnin=yes burninfrac=0.25 printfreq=10000  samplefreq=10000 nchains=4 savebrlens=yes;
+	mcmc;
+	sumt;
+end;

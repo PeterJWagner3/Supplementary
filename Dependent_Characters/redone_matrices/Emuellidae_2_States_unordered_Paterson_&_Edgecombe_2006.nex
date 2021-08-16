@@ -1,0 +1,44 @@
+#NEXUS
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=27 NCHAR=27;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "   0 1 ";
+	MATRIX
+	Emuella_polymera               111010110101000111100110010
+	Balcoracania_dailyi            111010110101000111100110010
+	Redlichia_takooensis           111110100001001000101111000
+	Eoredlichia_intermediata       111100100101001000101111000
+	Lemdadella_antarcticae         1111001001000???????0111010
+	Dolerolenus_zoppii             110000000100011000000??????
+	Yinites_wanshougongensis       1111000001010?10?0100111000
+	Abadiella_huoi                 1000001001010?1010100??????
+	Eccaparadoxides_pusillus       111110000000001000000101001
+	Anabaraspis_splendens          11(01)(01)00000000001000000??????
+	Xystridura_templetonensis      11(01)(01)00000000001000000101001
+	Bigotina_bivallata             1100001001010??0??1?0?01000
+	Estaingia_bilobata             1100000001010?1010101101010
+	Ichangia_ichangensis           11000000110?0???????0101011
+	Ellipsocephalus_gripi          1100000011010?1010100101011
+	Olenellus_fowleri              0000010000111?0000010011101
+	Bristolia_anteros              0000010001011????0???011101
+	Nephrolenellus_geniculatus     0000010001011?000000?011101
+	Wanneria_walcottana            000001000100??1000000??????
+	Elliptocephala_asaphoides      0000010000001?100000?011101
+	Holmia_kjerulfi                000001000011101000100??????
+	Fallotaspis_bondoni            0100001000001?1001100?11?0?
+	Daguinaspis_ambroggii          0100001000001?1001100011001
+	Archaeaspis_macropleuron       0100001000011??00000???????
+	Repinaella_sibirica            0100001000001???001????????
+	Judomia_tera                   0100000000000?1000000??????
+	Nevadia_weeksi                 0000000001001?0000010??????
+;
+END;
+begin mrbayes;
+	set autoclose=yes nowarn=yes;
+	lset nst=6 rates=invgamma;
+	unlink statefreq=(all) revmat=(all) shape=(all) pinvar=(all); 
+	prset applyto=(all) ratepr=variable;
+	mcmcp ngen= 100000000 relburnin=yes burninfrac=0.25 printfreq=10000  samplefreq=10000 nchains=4 savebrlens=yes;
+	mcmc;
+	sumt;
+end;
