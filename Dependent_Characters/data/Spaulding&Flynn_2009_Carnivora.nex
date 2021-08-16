@@ -1,0 +1,431 @@
+#NEXUS
+[written Sat Jul 10 14:06:23 MDT 2021 by Mesquite  version 3.6 (build 917) at DESKTOP-HJI4EG6/192.168.0.17]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=51;
+	TAXLABELS
+		Leptictis Hyaenodon Thinocyon_sp Echinosorex_gymnurus Erinaceus_europaeus Oodectes_herpestoides Vulpavus_profectus Vulpavus_palustris Vulpavus_ovatus Miacis_parvivorus Dawsonicyon_isami Miacis_petilus Miacis_washakius Miacis_sylvestris Procynodictis_vulpiceps Miacis_uintensis Tapocyon_robustus Quercygale Protictis_schaffi Viverravus_acutus Viverravus_minutus Viverravus_gracilis Didymictis_protenus Didymictis_vancleveae Hesperocyon_gregarious Otarocyon Daphoenus_sp. Miacis_cognitus Canis_latrans Mephitis_mephitis Gulo_gulo Ursus Otariidae Pteronarctos_goedertae Procyon_lotor Ailurus_fulgens Hoplophoneus Dinictis Nandinia_binotata Hyaena_hyaena Civettictis_civetta Felis_concolor Herpestes Zodiolestes Palaeoprionodon Stenogale Proailurus Herpestides_antiquus Miacis_exiguus Miacis_medius PM_3868 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  'Matrix in file "mbank_X855_7-10-2021_165_no_notes.nex"';
+	DIMENSIONS  NCHAR=216;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4";
+	CHARSTATELABELS 
+		1 Lacrimal_facial_process /  broad_rostral_flange 'small, present on face' not_present_on_face orbital_flange_reduced_to_area_around_lacrimal_foramen,
+		2 'Ventral exposure of premaxilla posterior extent of premaxilla, lateral to palatal foramen' /  lateral_to_canine anterior_to_canine,
+		3 Shape_of_infraorbital_foramen /  elongate round,
+		4 Position_of_infraorbital_foramen /  positioned_above_P3 positioned_above_anterior_edge_of_P4 'positioned above mid-posterior portion of P4',
+		5 'Length of palate - position of the posterior edge of palatinemidline relative to tooth row (modified from Bryant1991. character 2)' /  posterior_to_upper_tooth_row anterior_or_equal_to_upper_tooth_row,
+		6 'Palatine canal primary anterior opening (Bryant 1991 character 3)' /  opening_through_palatine 'at maxilla-palatine suture' opening_through_maxilla,
+		7 Relative_length_of_frontal_and_parietal_atmidline /  parietal_greater_than_frontal parietal_equal_or_subequal_to_frontal frontal_midline_much_longer_than_parietal,
+		8 Postorbital_process /  prominent 'small, reduced',
+		9 Paroccipital_process_size /  'well-developed' reduced,
+		10 Paroccipital_process_shape /  simple_process 'laterally flattened, thin but is distinct process' 'cupped around bulla, process not distinct' absent,
+		11 Placement_of_postglenoid_foramen /  medially_placed 'more lateral, external, very near edge of skull',
+		12 Postglenoid_foramen /  present 'greatly reduced, or missing.',
+		13 Shape_of_mastoid_process /  'forming a distinct process, extending out farther than paroccipital process, or subequal' 'blunt, rounded, does not protrude significantly, more a swelling of the mastoid' 'thin plate, no distinct process.',
+		14 Direction_of_mastoid_process_extention /  'lateral -ventral' ventral lateral 'none, or only swelling.',
+		15 'Condyloid (hypoglossal) foramen position relative to postlacerate foramen' /  Distant 'close (less than thediameter of the hypoglossal foramen away)' conjoined_with_posterior_lacerate_foramen.,
+		16 'Condyloid (hypoglossal) foramen position relative to groove between the occipital condyle and the paroccipital process' /  inline_or_within_groove anterior_to_groove.,
+		17 Posterior_lacerate_foramen /  present_as_a_vacuity_between_the_promontorium_and_the_basioccipital present_as_an_individual_foramen,
+		18 'Fenestra cochleae (rotunda) position relative to mastoidtubercle' /  posterior_to_mastoid_tubercle 'anterior, subequal to mastoid tubercle',
+		19 Relative_distance_between_the_foramen_ovale_and_the_alisphenoid_canal /  separated_by_at_least_the_diameter_of_the_alisphenoid_canal separated_only_by_a_thin_wall no_alisphenoid_canal_present,
+		20 Ossification_of_tegmen_tympani /  facial_nerve_exposed_ventrally facial_nerve_partially_embedded_within_tegmentympani_and_floored_in_anteromedial_segment facial_nerve_beneath_a_bony_sheath_that_defines_the_fossafor_tensor_tympani_muscle,
+		21 Contact_of_promontorium_and_basioccipital /  promontorium_isolated promontorium_in_contact_with_basioccipital,
+		22 Composition_of_mastoid_tubercle /  mastoid_tubercle_formed_by_petrosal mastoid_tubercle_formed_by_squamosal,
+		23 Anterior_loop_of_internal_carotid_artery_ /  lack_of_an_anterior_loop_of_the_internal_carotid_artery 'presence of the loop - excavation in basisphenoid' 'presence of loop - but extrabullar',
+		24 'Suprameatal fossa (fossa on squamosal anterior tomastoid' /  absent small 'large, well developed',
+		25 Position_of_internal_carotid_artery /  'internal carotidartery laterally positioned, transpromontorial,runs close to margin of fenestra cochlea, presence ofa promontory artery, groove for stapedial artery mayor may not be present' 'internal carotid artery transpromontorialbut medially positioned, course far fromfenestra cochlea' 'internal carotid artery medial, extrabullar,inside a bony canal formed by the caudalentotympanic',
+		26 Apron_shelf_on_promontorium_posterior_to_fenestra_cochleae_for_entotympanic_attachment /  absent 'blunt - surface presentposterior to fenestra cochleae, but no extensive attachmentpossible' 'extended, large area for attachment,may roof posterior bullar chamber.',
+		27 Ventral_process_of_promontorium /  absent 'present, medially positionedon promontorium' 'present, anteriorly positioned.',
+		28 'Shape of the promontorium, anterior extension' /  'elongate,apron extension tapers to a point anteriorly, almondlikein appearance' 'elongate, rounded anteriorly' 'blunt, quickly truncating' 'elongate, apron is broad,flat extension, not almond-shaped and not blunt.',
+		29 Facet_on_promontorium_indicative_of_ectotympanic_contact /  absent present,
+		30 'Surface of the anterior-medial promontorium or tympanic wing of basisphenoid' /  smooth 'roughenedsurface associated with attachment of rostral entotympanic,or rostral entotympanic present.',
+		31 Inferior_petrosal_sinus /  inferior_petrosal_sinus_small inferior_petrosal_sinus_greatly_enlarged excavation_into_basioccipitalextremely_deep,
+		32 'A deep, well developed fossa or pit on the squamosal alisphenoid recording the contact with the anterior crus or anterior face of the ectotympanic' /  'absent, may have slight shallow indentation' 'present, well developed, or bulla present andfully ossified.',
+		33 Shelf_between_mastoid_process_and_paroccipital_process /  'laterally wide, curved trough with smooth surface' 'laterally wide, could have flat surface, rugose orbulbous, no smoothed out trough' 'very thin, outsideedge could be raised' no_shelf_present,
+		34 Extent_of_flange_on_basiocciptal_lateral_edge_bordering_auditory_region /  absent 'small, nascent' welldeveloped_when_compared_to_basal_miacids_.,
+		35 Evidence_on_basisphenoid_and_basioccipital_for_marked_medial_inflation_of_the_entotympanic /  absent 'present - inflation ofentotympanic pushing medially onto and over the basioccipital.',
+		36 Evidence_of_marked_posterior_inflation_of_the_entotympanic_entotympanic_attached_during_life_to_paroccipital_process_or_to_extensive_area_posterior_to_the_petrosal /  absent present,
+		37 Fossa_for_the_stapedius_muscle /  borders_tightly_definedand_anteriorly_bound_by_the_mastoid 'general area ofmuscle insertion, open, less defined.',
+		38 Epitympanic_wing_of_the_petrosal_forms_ventral_floor_to_the_anterior_medial_corner_of_the_fossa_for_the_tensor_tympani_muscle /  absent present_but_relatively_flat_and_horizontal 'ventral floorpresent, but not horizontal, instead it forms a delicate tube , the bony floor is not an extension of thepetrosal.',
+		39 'Fossa for the tensor tympani muscle, defined and deep, excavating well dorsal of the level of the fenestra vestibuli' /  'absent, fossa for the tensor tympanimuscle shallow, not strongly defined' 'present, defined and deep' 'shallow absent - tensor tympani inserts oneustachian canal',
+		40 Placement_of_middle_lacerate_foramen /  'foramen a vacuity- not defined anteriorlynor posteriorly, positioned directly anterior to petrosal' 'foramen anteriorly defined, posteriorly bordered bypetrosal - positioned equal or posterior to basisphenoid basioccipital suture' 'foramen defined anteriorly,petrosal may be undefined posterior border, foramenpositioned in basisphenoid (or edge of alisphenoid)just anterior to basisphenoid basioccipital suture' 'foramen defined anteriorly and posteriorly completelybordered by basisphenoid, foramen positioned far anteriorto basisphenoid basioccipital suture',
+		41 'M1, a defined cingulum continuous around the lingual face of the protocone' /  absent complete_cingulumpresent anterior_segment_of_cingulae_absent_or_smallerthan_posterior_cingulae,
+		42 'M1, protocone height relative to paracone' /  protoconeshorter_than_paracone protocone_equal_or_subequalto_height_of_paracone.,
+		43 'M1, metastyle projects farther labially than parastyle' /  present 'absent metastyle equal, or projects lesslabially than parastyle..',
+		44 'M1, parastyle projects farther labially than metastyle' /  absent present,
+		45 'M1, parastyle direction' /  buccally_with_anterior_direction buccally no_parastyle_present,
+		46 'M1, size' /  'well-developed' markedly_reduced.,
+		47 'M1, size of posterior lingual cingular shelf at base of protocone' /  posterior_lingual_cingular_shelf_equal_orsubequal_to_anterior_cingulum 'posterior lingual cingularshelf more pronounced, larger than anterior cingulum.',
+		48 'M1, relative height of paracone and metacone' /  paracone_equal_or_subequal_to_metacone paracone_greaterthan_metacone.,
+		49 'M1, relative height of paraconule and metaconule' /  paraconule_greater_than_metaconule paraconuleequal_or_subequal_to_metaconule both_absent 'metaconule enlarged, greater than paraconule.',
+		50 'M1, presence of hypocone' /  absent 'present (distinctcusp)' 'present, formed by swelling of entire cingulumridge',
+		51 'M1, width of parastylar shelf' /  lack_of_a_shelf broad 'narrow, consisting mainly of ridge.',
+		52 Presence_of_M2 /  present reduced_to_half_size_of_M1_or_more absent,
+		53 Presence_of_M3 /  present absent,
+		54 P4_m1_carnassial_shear /  absent present,
+		55 'P4, size of parastyle cusp' /  absent 'well-developed,defined cusp' 'present as bulge on cingulum, reduced.',
+		56 'P4, protocone' /  'large, well developed' reduced_or_absent,
+		57 'P4, size of metastylar blade' /  short elongate,
+		58 Posterior_accessory_cusps_on_P3 /  one two none,
+		59 m2_talonid_morphology /  'high trigonid with extremely elongate talonid due to large hypoconulid, tooth elongateoval outline' 'talonid not elongate, tooth oval outline,no enlarged hypoconulid' 'low trigonid, extremelyelongate with low, well developed talonid cusps' absent,
+		60 'Palatine, relative size' /  midline_length_of_palatine_lessthan_midline_length_of_maxilla midline_length_greaterthan_midline_length_of_maxilla,
+		61 'Posterior width of palate (versus width betweencanines' /  wider_than_width_at_canines 'nearly equal(resulting in nearly parallel tooth rows)',
+		62 Turbinal_bones /  simple_development_of_maxilloturbinals_in_nasal_cavity 'maxilloturbinals large and branching, excluding nasoturbinals from narial opening.',
+		63 Posterior_projection_of_nasals /  'nasals terminate anterior to, or in extreme anterior region of, orbit, projecting at most slightly between frontals' 'nasals project deeply between frontals, far posterior of anterior orbital rim' 'nasals with W-shaped termination' nasals_with_flat_termination.,
+		64 Jugal /  'jugal reaches lacrimal, or is separated from it by only thin sliver of maxilla' 'jugal widely separated from lacrimal, maxilla broadly laps posteriorly over anterior orbital rim',
+		65 Anterior_extent_of_palatine_in_orbit /  broadly_contacts_lacrimal fails_to_contact_lacrimal.,
+		66 Postorbital_constriction /  'just anterior of frontoparietal suture, near posterior margin of frontal' 'braincase expanded, with frontals making much greater contribution, fronto parietal suture located more anteriorly in frontal.',
+		67 Posterior_entrance_of_carotid_artery_into_auditory_capsule /  'posterior entry, artery not enclosed in osseous tube' 'posterior entry, artery enclosed in tube' 'anteriorentry, artery enclosed in osseous tube' 'anteriorentry, artery not enclosed in tube',
+		68 Entotympanic /  'fails to ossify, or is only weakly attachedto auditory capsule' 'ossified at least partially,and firmly fused to the skull.',
+		69 Ectotympanic_contributes_to_external_auditory_meatal_tube /  no yes,
+		70 Ectotympanic_septum /  absent present,
+		71 Entotympanic_septum /  absent present,
+		72 Fenestra_cochleae /  'approximately equal in size to fenestra ovalis, cochlear fossula not developed' 'at leastthree times the area of oval window, cochlear fossulawell developed.',
+		73 'Malleus, muscular process' /  present absent,
+		74 'Malleus, processus gracilis and anterior lamina' /  well_developed reduced,
+		75 Major_a2_arterial_shunt /  small 'large, intracranialrete',
+		76 Major_a4_arterial_shunt /  absent present 'present, intracranial rete',
+		77 Major_anastomosis_x /  absent present,
+		78 i1 /  present absent,
+		79 P1 /  present absent,
+		80 P3_lingual_cusp /  absent present,
+		81 P4_metastyle /  V_or_slit_shaped_notch absent,
+		82 P4_protocone /  medial_or_posterior_to_paracone anterior_to_paracone,
+		83 P4_hypocone /  absent present,
+		84 p1_1 /  present absent,
+		85 m1_talonid /  present absent,
+		86 Lower_molars /  subequal_in_size 'm1 much larger tahn m-3 and progress decrease in size from m1-3',
+		87 M2_hypocone /  absent present,
+		88 m3 /  present absent,
+		89 Baculum /  Small_and_simple_or_absent long_and_stylized,
+		90 'Scapula, postscapular fossa' /  absent present,
+		91 Tail /  long reduced,
+		92 Scaphoid_and_lunate /  unfused fused,
+		93 Hallux /  present greatly_reduced_or_absent,
+		94 'Femur, third trocanter' /  present absent,
+		95 'Cowper''s gland' /  present absent,
+		96 Prostate_gland /  small_vestigial 'large, ampulla, bilobed',
+		97 Kidneys /  simple conglomeratic,
+		98 Anal_glands /  simple enlarged_and_having_enlarged_anal_sac,
+		99 Terminal_phalanges /  fissured simple,
+		100 'Scapula "“  supraglenoid tubercle morphology ' /  'expands out over the glenoid fossa (Didymictis)' 'Blunt, does not extend over the glenoid fossa (Vulpavus)',
+		101 'Scapula - acromion process angle.' /  'process angles dorsally (Vulpavus)' 'process remains in same plane as the scapular spine (Canis) ',
+		102 'Scapula "“ acromion process length ' /  'process extends past glenoid fossa (Vulpavus)' 'process terminates before or at glenoid fossa (Gulo)',
+		103 'Scapula "“ coracoid process ' /  'present, as a large clearly projecting process (Felis)' 'extremely small or absent (Canis)',
+		104 'Scapula "“ scapular spine morphology ' /  'spine forms one continuous, smooth, downward curve (OÃ¶dectes)' 'spine has a dip or embayment in the curve (Herpestes)' 'spine has a sharply angled drop rather than a smooth downward slope (Mephitis)',
+		105 'Scapula "“ metacromion process ' /  'present and well developed (Herpestes)' 'weak or absent (Otariidae)',
+		106 'Humerus "“ indentation on the anterior surface of the capitulum ' /  'present (Hyeanodon)' 'absent (Vulpavus)',
+		107 'Humerus "“ olecranon fossa shape ' /  'shallow and round (Vulpavus)' ' deep and slot-like (Miacis uintensis)' 'perforated (Didymictis) ',
+		108 'Humerus "“ medial edge of posterior trochlea' /  'Vertical  (Vulpavus)' 'slanted (OÃ¶dectes)',
+		109 'Humerus "“ delto-pectoral crest' /  'present (Vulpavus)' 'absent (Didymictis)',
+		110 'Humerus "“  medial epicondyle' /  'ends with a well rounded head (Vulpavus)' 'poorly defined, appearing more like a blunt tubercle (Didymictis)',
+		111 'Humerus "“ medial epicondyle orientation' /  ' lacks curvature (is straight) (OÃ¶dectes)' 'curves anteriorly (Vulpavus)' 'curves posteriorly (Didymictis) ',
+		112 'Humerus "“ greater tuberosity height' /  'extends past head (Didymictis)' 'flush with head in height (Vulpavus)',
+		113 'Humerus "“ posterior trochlea' /  'not bound by high ridges (OÃ¶dectes)' 'bound by high ridges (Canis)',
+		114 'Humerus "“ brachial flange ' /  'present and large, extending out from the body of the bone as a flat surface (Vulpavus)' 'small, nothing but but a small raised line of bone (Didymictis)',
+		115 'Humerus "“ lesser tuberosity with a crest or ridge of bone leading from this feature down the shaft' /  'present (Didymictis)' 'absent (Canis)',
+		116 'Humerus "“ trochlea extent' /  'extends distally past capitulum when viewed anteriorly (Didymictis)' 'two articular surfaces are more inline (Vulpavus)',
+		117 'Humerus "“ epicondylar foramen ' /  'absent (Canis)' 'present and round (Hyaenodon)' 'present and elongated (Vulpavus)',
+		118 'Humerus "“ distal L-shaped ridge of bone on capitulum in distal view ' /  'present (Vulpavus)' 'absent (Felis)',
+		119 'Humerus "“ orientation of bone on the lateral distal margin ' /  'faces laterally (Hyaenodon)' 'faces posteriorly (Vulpavus)',
+		120 'Humerus "“ ulnar collateral ligament insertion site size ' /  'very large, forming a distinct circular pit (Didymictis)' 'small, forming only a shallow depression (Vulpavus)',
+		121 'Humerus "“ greater tuberosity angle' /  'greater tuberosity angled away from head; smooth arch is not formed with lesser tuberosity (Didymictis)' 'greater tuberosity more flush with head (Vulpavus)',
+		122 'Humerus "“ prominence of bicipital groove ' /  'groove is very noticeable and deep (Nandinia)' 'groove is very subtle if noticeable at all (Civetticits)',
+		123 'Humerus "“ capitulum shape' /  'flat for the whole length with a uniform distal margin (Thinocyon)' 'rounded (Vulpavus)',
+		124 'Humerus - Tricipital line ' /  'large and distinctive (Didymictis)' 'reduced (Nandinia)',
+		125 'Ulna "“ semi-lunar notch distal border morphology ' /  'W-shaped distal border; an indentation occurs between the articular surface with the radius and the rest of the facet (OÃ¶dectes) ' 'indentation lacking (Canis)',
+		126 'Ulna "“ semi-lunar notch proximal border extent' /  'proximal ridge extends far from shaft surface (Hyeanodon)' '"“ proximal ridge flush with shaft surface (OÃ¶dectes)',
+		127 'Ulna "“ m. bracialis insertion site' /  'present (Vulpavus)' 'absent (Ailurus)',
+		128 'Ulna "“ m. bracialis insertion site position' /  'on anterior surface of ulna (Vulpavus)' 'on the lateral margin of the shaft (OÃ¶dectes)',
+		129 'Ulna "“ radial notch curvature' /  'absent (Vulpavus)' 'present (Ailurus)',
+		130 'Ulna "“ flange presence on distal region of the shaft ' /  'two flanges present and well defined (Vulpavus)' 'flanges absent (Ailurus)',
+		131 'Ulna "“ deep tendon groove on proximal end of ulna' /  'present (Hyaenodon)' 'absent (Vulpavus)',
+		132 'Ulna "“ olecranon process shape' /  'medio-laterally robust, square in shape (Vulpavus)' ' medio-laterally compressed (Felis)',
+		133 'Ulna "“ anconeal process extent ' /  'projecting from the shaft, shelf like (Didymictis)' 'flush with shaft (Vulpavus)',
+		134 'Ulna "“ proximal border of semi-lunar notch, position ' /  'lateral to the shaft (Hyaenodon)' 'centered with respect to the shaft (OÃ¶dectes)',
+		135 'Ulna "“ anteriormedial protuberuance development ' /  'well developed (Nandinia)' 'small (Canis)',
+		136 'Ulna "“ groove on lateral side of shaft' /  'present (Hyaenodon)' 'absent (Vulpavus)',
+		137 'Ulna shape "“ sigmoidal ' /  'sigmoidal (Vulpavus)' 'straight (Canis)',
+		138 'Ulna "“ radial notch orientation ' /  'faces anteriorly (Didymictis)' 'faces more laterally (Vulpavus)',
+		139 'Radius "“ radial head shape ' /  'round (Vulpavus)' 'oval (Didymictis)',
+		140 'Radius "“ distal articular surface shape ' /  ' round; if any elongation is present, it is oriented antero-posteriorly (Didymictis)' 'elongated medio-laterally (Vulpavus)',
+		141 'Radius "“ large scaphoid articulation surface ' /  'present (Didymictis)' 'surface small (Vulpavus)',
+		142 'Radius "“ capitular eminence of radial head development ' /  'small (Vulpavus)' 'large, disrupts radial rim (Canis)',
+		143 'Radius "“ distal articulation surface shape ' /  'with a deep sulcus (Erinaceus)' 'smooth, lacks a deep sulcus (Vulpavus)',
+		144 'Carpus "“ cuneiform shape in proximal view' /  'triangular (Nandinia)' 'rectangular (Vulpavus)',
+		145 'Carpus "“ proximal surface of scapholunar, curvature ' /  'fully convex (Nandinia' 'convex and concave (Herpestes)',
+		146 'Carpus- unciform width ' /  'as wide as trapezoid and magnum combined (Canis)' 'small, only as wide as magnum alone (Nandinia)',
+		147 'Carpus "“ trapezium position ' /  'on the posterior surface of the trapezoid (Canis)' 'on the radial surface of the trapezoid (Felis)',
+		148 'Carpus "“ metacarpal III overlaps IV proximally ' /  'absent (Canis)' 'present (Vulpavus)',
+		149 'Carpus "“ distal surface of scapholunar shape' /  'relatively smooth/even (Canis) ' 'a sharp projection exists between the magnum and trapezoid (Ursus)',
+		150 'Carpus "“ cuneiform articulation with ulna, position ' /  'on medial (radial) margin (Felis)' 'on distal surface of ulna (Ursus)',
+		151 'Carpus "“ metacarpal II strongly overlaps III proximally ' /  'overlap small or absent (Canis)' 'overlap present and substantial (Felis)',
+		152 'Carpus "“ metacarpal length' /  'metacarpal lengths are equivalent to sum of phalanges (Vulpavus)' 'metacarpals are much longer than sum of phalangeal lengths (Canis)' 'phalanges are longer than metacarpals (Otariidae)',
+		153 'Carpus "“ medial phalanx distal articular surface symmetry' /  'symmetrical (Vulpavus)' 'asymmetrical (Felis)',
+		154 'Carpus "“ proximal phalanges compressed dorso-ventrally' /  'absent (Vulpavus)' 'present (Hoplophoneus)',
+		155 'Carpus "“ lateral excavation of the medial phalanx ' /  'absent (Vulpavus)' 'present (Felis)',
+		156 'Femur - lesser trochanter orientation ' /  'projects posteriorly (Didymictis)' 'projects medially (Vulpavus)',
+		157 'Femur "“ intertrochanteric crest extent ' /  'extends to lesser trochanter (Didymictis)' 'becomes flush with shaft before reaching the lesser trochanter (Vulpavus)',
+		158 'Femur - position of lesser trochanter relative to the third trochanter ' /  'third trochanter is lower (Vulpavus)' 'third trochanter is roughly at the same level (Didymictis) ',
+		159 'Femur - third trochanter development ' /  'a prominent feature that juts out from the lateral boundary of the shaft both proximally and distally (Didymictis)' 'a more "''shelf-like"'' feature that is smoothly connected to the greater trochanter proximally, only jutting out from the boarder of the shaft distally (Vulpavus) ',
+		160 'Femur - supracondylar tuberosities ' /  'absent (Vulpavus)' 'presence of two or more raised tuberosities just proximal to the condyles of the femur on the posterior shaft (Canis)',
+		161 'Femur - height of greater trochanter relative to head of femur' /  'greater trochanter is higher or sub-equal (Vulpavus)' 'greater trochanter is lower than head of femur (Ursus)',
+		162 'Femur - medial condyle morphology ' /  'proximal edge of the articular surface of condyles are flush with the shaft, due to the lack of development of a condylar neck (Vulpavus)' 'proximal edge of the articular surface of condyles are not flush with the shaft, due to the development of a condylar neck (Canis)',
+		163 'Femur - lesser trochanter development ' /  ' strong, prominently projecting feature (Vulpavus)' 'small, barely more than a small bump or ridge on the shaft (Ursus)',
+		164 'Femur - greater trochanter broadest surface, orientation ' /  'faces laterally (Vulpavus)' 'faces posteriorly (Canis)',
+		165 'Femur - ridge of bone connecting greater trochanter and head, shape ' /  'thin and curved (Didymictis)' 'thick and straight (Vulpavus)',
+		166 'Femur "“ patellar groove shape ' /  'deep and narrow (Didymictis)' 'wide and flat (Vulpavus)',
+		167 'Femur "“ position of greater trochanter relative to shaft ' /  'greater trochanter over distal midline (Erinaceus)' '"“ greater trochanter lateral to midline (Didymictis)',
+		168 'Tibia - tibia and fibula fusion' /  'fusion present (Erinaceus)' 'fusion absent (Didymictis)',
+		169 'Tibia - deep groove on the posterior surface of the tibia ' /  'present (Vulpavus)' 'absent (Canis)',
+		170 'Tibia "“ posterior bone spur on distal tibia ' /  'presence of a prominent bone spur on the posterior margin (Vulpavus)' 'spur absent (Nandinia)',
+		171 'Tibia - contact of inner borders of condyles ' /  'in contact (Vulpavus)' 'separate (Canis)',
+		172 'Tibia "“ internal malleolus morphology ' /  ' forms a clear and distinct well-defined point (Vulpavus)' 'indistinct, forming a general extension of the medial surface of the tibia (Civettictis)',
+		173 'Pes "“ astragalus "“length of medial border of astragalar tibial trochlea' /  'shorter than lateral (Erinaceus)' 'longer than lateral (Vulpavus)',
+		174 'Pes "“ dorsal surface of astragalus, shape ' /  'smooth (Vulpavus)' 'grooved (Canis)',
+		175 'Pes "“ astragalus "“ height of fibular facet' /  'height subequal to length, resulting in a roughly square shaped facet (Vulpavus)' 'height much less than length, resulting in a more crescent shaped feature (Canis)',
+		176 'Pes "“ astragalar head shape when viewed dorsally ' /  'rounded (Vulpavus)' 'flattened (Canis)',
+		177 'Pes "“ height of astragalar head when viewed distally ' /  'apex of astragalar head even with or higher than articular surface (Didymictis)' 'apex of astragalar head very low, does not rise above astragalar neck (head flattened) (Vulpavus)' 'apex of astragalar head rises inbetween astragalar neck and articular surface of astragalar body (Canis)',
+		178 'Pes "“ astragalus fossa, on the lateral edge, posterior ventral quadrant ' /  'present (Didymictis)' 'absent (Vulpavus)',
+		179 'Pes "“ astragalus lateral margin, anterior ventral edge expansion ' /  'lateral expansion present (Vulpavus)' 'expansion absent, creating a much smoother margin (Procyon)',
+		180 'Pes "“ astragalar head medial articulation surface extent ' /  'extends backwards a great distance, past the border of the sustentacular facet (Hyaenodon)' 'short, does not extend past the start of the neck (Vulpavus)',
+		181 'Pes "“ astragalus sustentacular facet shape ' /  'has clear edges, is somewhat convex, and does not extend into gully (Vulpavus)' 'is more flat than convex and extends into gully (Canis)',
+		182 'Pes "“ astragalar foramen ' /  'present and dorsally positioned (Vulpavus)' 'present and posteriorly positioned (Hyaenodon)' 'absent (Canis)',
+		183 'Pes "“ astragalus, posterior ridge for ligament attachments, presence ' /  'present, high (Vulpavus)' 'low or absent (Felis)',
+		184 'Pes "“ astragalus, orientation of posterior ridge for ligament attachments ' /  'orientated at an oblique angle relative to the long axis of the astragalar trochlea (Vulpavus)' 'orientated in line with the trochlea (Canis)',
+		185 'Pes "“ astragalus-tibia articulation surface, extent ' /  'covers entire posterior dorsal surface (Canis)' 'restricted, fails to cover entire posterior dorsal surface, leaving a gap in the lateral posterior quadrant (Vulpavus)',
+		186 'Pes "“  astragalus border heights ' /  'lateral border subequal in height to medial border (Thinocyon)' 'lateral border raised relative to medial border (Hyaenodon)' 'medial border higher (Erinaceus)',
+		187 'Pes "“ astragalus, cotylar fossa presence ' /  'present (Didymictis)' 'absent (Vulpavus)',
+		188 'Pes "“ Calcaneus, sustentaculum position ' /  'far from anterior border, roughly in the middle of the calcaneus (Didymictis)' 'close to anterior border (Vulpavus)',
+		189 'Pes "“ Calcaneus, peroneal tubercle development ' /  'weakly developed, little more than a ridge (Didymictis)' 'well developed (Vulpavus)',
+		190 'Pes "“ astragalus neck development ' /  'absent (lacks a clearly defined neck of astragalus) (Erinaceus)' 'present (Vulpavus)',
+		191 'Pes "“ calcaneus, cuboid facet shape ' /  'irregularly shaped (Didymictis)' 'round (Vulpavus)',
+		192 'Pes "“  calcaneus, cuboid facet orientation ' /  'angled somewhat dorsally (Vulpavus)' 'in planes other than dorsal (Didymictis)',
+		193 'Pes "“ calcaneus, fibular facet ' /  'present (Didymictis)' 'absent (Vulpavus)',
+		194 'Pes "“ calcaneus, dorsal facet morphology' /  'smooth (Vulpavus)' 'clearly defined, sharp corner (rather than a smooth curve) (Canis)',
+		195 'Pes "“ cuboid, contact with metatarsal V ' /  'small (less than 40%) articular surface for metatarsal V (Dinictis)' 'large, articular surface for metatarsal V at least 40% of distal surface (Canis)',
+		196 'Pes "“ cuboid shape' /  'relatively rectangular (Didymictis)' 'wider proximally than distally (Vulpavus)',
+		197 'Pes "“ cuboid, tubercle for the long plantar ligament, position ' /  'distal to the ectocuneiform articulation facet (Didymictis)' 'even with the ectocuneiform articulation facet (Vulpavus)',
+		198 'Pes "“  cuboid/astragalus contact ' /  'present (Thinocyon)' 'absent (Vulpavus)',
+		199 'Pes "“ navicular height ' /  'height less than width (Vulpavus)' 'height roughly equal to or greater than width (Canis)',
+		200 'Pelvis "“ilium, anterior expansion ' /  'not expanded (Felis)' 'expanded dorsal-ventrally (Canis)',
+		201 'Pelvis "“ ischial spine position ' /  'located just posterior of the border of the acetabulum (Didymictis)' 'far posterior from acetabulum (Vulpavus)' 'spine absent (Erinaceus)',
+		202 'Pelvis "“ dorsal margin of acetabulum, position ' /  'even with or above dorsal surface of pelvis (Vulpavus)' 'ventral to dorsal surface of pelvis (Canis)',
+		203 'Pelvis "“ angle at pubic symphysis ' /  '"''U"'' like (Canis)' ' ''V'' like (Felis)',
+		204 'Pelvis "“ ilium, anterior region morphology' /  'broad and flat (Canis)' 'divided by a distinct ridge running antero-posteriorly (Vulpavus)',
+		205 'Pelvis "“ ilium, ventral surface morphology ' /  'broad and flat (Thinocyon)' 'narrow (Vulpavus)',
+		206 'Atlas "“ posterior transverse foramen position' /  'dorsal to the transverse processes (Canis)' 'in line with or ventral to the transverse processes (Felis)',
+		207 'Atlas "“ alar foramen ' /  'absent, only a notch is present (Canis)' 'present, confluent with lateral vertebral foramen (Herpestes)' 'present, separate from lateral vertebral foramen (Procyon)',
+		208 'Atlas "“ transverse processes, orientation ' /  'projects at right angle from the body (Canis)' 'xtends posteriorly at an acute angle to the body (Nandinia)',
+		209 'Atlas "“ ventral arch length ' /  'equal to or shorter than dens of axis (Canis)' 'longer than dens of axis (Civettictis)',
+		210 'Axis "“ body length' /  'roughly as long as it is wide (Vulpavus)' 'elongated relative to its width (Felis)',
+		211 'Cervical vertebrae "“  keel ' /  'large ventral keel present (Nandinia)' 'ventral keel absent (Dinictis)',
+		212 'Cervical vertebrae "“  spinous processes, size' /  'large (Canis)' 'small (Felis)',
+		213 'Cervical vertebrae "“ dorsal lateral margin shape ' /  'concave (OÃ¶dectes)' 'convex (Felis)',
+		214 'Lumbar vertebrae "“ "''wrapping"'' interlocking zygopophyses ' /  'present (Hyaenodon)' 'absent (Vulpavus)',
+		215 'Sacrum "“ size compared to pelvis ' /  'small, does not reach border of acetabulum (Canis)' 'large, reaches border of acetabulum (Felis)',
+		216 'Sacrum "“ neural spines ' /  'clear and distinct from one another (Nandinia)' 'fused to one another, appearing as one long keel (Canis)' 'spines very small, hardly more than small bumps on the sacrum (Ursus)' ; 
+	MATRIX
+	Leptictis                11??100110001010000?100000000001000000010?00000?000000?000001?0000000000?????000?0000000???0?0?????0110?1???1???0?1??????????1???1????1?1?1?????????????????????????????????????????????????????????????????????????????
+	Hyaenodon                00?00000??0001000???0??00?0?????3000?0?00????0002000100100?00000000000000000000(0 1)00000000000000000000??0??02010200110110?00100001100100101011011?10???1?00000000???001011?100110000000100010101010????0???????1???????0??
+	Thinocyon_sp             0?00??000000000100?100000000000000000000000000000000100100000000000000000000000(0 1)00000000000000000000??01111110000110100?000000001?0100?0?011011????0??0000000010000010110010100000000100000111010?01?00?10?10???????????
+	Echinosorex_gymnurus     11120?211000020000021000000100010000000111000010110000000210100000000000?????00110100010??0000?????01100002100000110?01?0010????????????1??????????????????10010010?1000????????????????????????????????2010011000010?11
+	Erinaceus_europaeus      0101001100001000100110000000000110100002100000102100000002101?0000010000?????01100110110??1100?????0?100002111?10111001?0010000111000111101?10011000110000010010100?1100111?001011?00101021100010?00??0?20?00?2?00110?11
+	Oodectes_herpestoides    1011100000001000110210010001010000000010001000010010010002100?0000000??0?????00001000100??0?00????110000010100010001201111110101001011011101111????????????100100000111100001000110110001011110110?????01011111???010?10
+	Vulpavus_profectus       11101??10000100101100100000101000000101010100011111001200210??0000000??0?????00001000110??0000????11?????10000110001201?1111?100001011010101101100?11100000????0?0?????10000100011010000101111101011?10??????????0???1??
+	Vulpavus_palustris       ?1111???????????????????????????????????10100011111001200?1??????????????????00?010?01?0??0??0?????1??????0000110001201?1110(0 1)100001011010101101?????????00011010000011110000100011010000101111101??111??????????????????
+	Vulpavus_ovatus          11111100000010001101100101010100?0000011111000101010012002?0??0000000??0?????00001000100??0000????1??????10?00?100?12???1?1?????????????0?0??01????????????1?010?00??1110???10???????0??????????????????????????????????
+	Miacis_parvivorus        ?011??????0013??0101100000010100000?00101011001100100101121????00?000??0?????00001000100??0?0?????1??????101000?00?1201???0011000010110111111?1????????????1?010000?10110?00?????????????????????????????0?11??????1????
+	Dawsonicyon_isami        ?011???0??00????????????0???????????????1011001102100121101??????0???????????00001000110??00?0?????0000??10100210001201?110111000?101101?101111?????????001010100000111100001000110100001111111110?111??10?11?????0??1??
+	Miacis_petilus           ?????????????????????????????????????????????????????1????1????????????????????????001?0??0??0???????????10?002?00?12011??0?010100?01111?1?????????????????11010000011110000?????????????????????????????0??1?????0?????
+	Miacis_washakius         ?????????????????1??10??000101?????????1201110110011?1????1??????????????????0?????00100?????????????????110?0210100201?0101?1??0??01111?011?11????????????????0?0???0??????????????????????????????????????????????????
+	Miacis_sylvestris        ??001??00?0011010112101100010101010000101011100110100101121????00?000??0?????00001000100??0?0?????1?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+	Procynodictis_vulpiceps  1?10??0000001111011?1?1100010101010000101011101110100101111????00?000??0?????00001000100??0?0?????10110?01111121010020010?001101110101?11111111?????????0010101101001011000011101101121011110111?001110?1????110010?????
+	Miacis_uintensis         1??0???0000011?111121?110001010001000?11?01100?1???0?1011?1????0?00?0??0????????010?01?0??0??0?????1?00??1100??101002010??000100001101?1110??1??????????0?101010010?10110010100001011000101101111001111??0????????0?0???
+	Tapocyon_robustus        101001?00000100101121010010101000001001?2011100110210101101?0????0000??0?????00001000100??0?0?????10100??1100020000020010100010111100101?111111??0?1??1?1?11?010010011110000?0?01??1?1001?11?1??1?0??10?????????????????
+	Quercygale               1001120000001001?10110110101010000000010101110010011112110100?0000000??0?????00000000101????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+	Protictis_schaffi        ?10101?110100000?002100000000000010000010111000?001011101?00??000?000??0?????00001000101??0?0?????1?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+	Viverravus_acutus        ??0001?11010000000?2101000000000?1001001011100000010111011000100?0000000?????00001000101??0??0?????0?????0?110?000?02???111??1??011?11??101????????????????1?1000?0?1?110?1?????????????????????????????00??????????????
+	Viverravus_minutus       ??0101?1??10?0000002100000000000210010010111001020?011?01?0?0??000000??0?????0?001000101??0?0?????1?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+	Viverravus_gracilis      ????0??10010000100??1?00000000000100100101110010202011101?0?0??000000??0?????0?001000101??0?0?????1?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+	Didymictis_protenus      ????????????????????????????????????????01110001001011101?0?????????????????????010?0101??0??0????1(0 1)??0?002111200100200001101100001101?01010011?0???????000001000000001100001000000010001100(0 1)1010?1001??00??0???????????
+	Didymictis_vancleveae    ????0??1100002000?0?1000000?0010011010000111000110101110100????000000??0?????0?0010?0101??0000????1?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+	Hesperocyon_gregarious   101111?110001211100210112103010112000111201110111200110111100?0001010010?????00001000100??0?00????11?1??012011?00000200000001101000101011111011????????000000??1010110110110111121110110100111111??111?0101111???0000100
+	Otarocyon                101111100000101110021?2122030101120101112011001112001121101???????????????????????????????????????????????2011?010?020000?101101100100011111011?????????000????????????1?1?011112101?211000?11?1?????10??????000??1?????
+	Daphoenus_sp.            10010(0 1)01000013110012101(0 1)?101012111011?101011001112101101101?1100011(0 1)1000?????00001000110?10101????100010011000200000200001001101110100111011011000???1?100001??1010011110110111021111211010111111?11110?????1?????0??1??
+	Miacis_cognitus          10100??1??001311100210102101010011001010201100111210010112?00?000?000??0?????0000100010???0?0?????1?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+	Canis_latrans            100111110000101110121?2(0 1)21030101120101112011101112001101101001000101001000011000010001101001010000101110102011?0111001010110100111011111101101111000000100000??1011110111110111121011201021001011110?1110100100001000101
+	Mephitis_mephitis        10121211101002001?221?02210301011101?11121111010201211001211010001211000000010101101010110010100011111?2011111?1011101110000110011100111111100110010010?00010??0001011111110100120010101011101111011?1000010010000110101
+	Gulo_gulo                201101111000000110221?02210301011201011111111110201211011211010001211000000110001100010110010100011011?001?011?1101020000110010011000011101101111010?10000000??0010011111110111110111200011111101111?1001010011000100110
+	Ursus                    300201110000121000121?10210301211200?11110102010200011000211110001111000100000000010011011110100101111?010111020101101110000001?11111001101101110010110000000??010101111111011112101121002011111100011010110111100110?12
+	Otariidae                2012022113?113010?021?002?0??1111200??211??????????011???21011211111100111???100???0?0?110110100101111?0110?01?0?10001010100??1?11110111101100110010100200001??0001?11110110110021?10111020111101010?10001?0002000010?11
+	Pteronarctos_goedertae   201?0221100112011?021??02?0?0?111101?101??1110?12011110110100?2?1111100101???1000100?101??1101????1?11??1???0??1??0??????????????????????????????????????????????????????????????????????????????????????????0000???????
+	Procyon_lotor            201201111000000110221?02210301011200011121102010310011100221010001211000000110000110010111010100001111?0012011?1101020000001011?1100011111110011000?11?0000?1??000101111111011002011020101011100110111000010012000110?10
+	Ailurus_fulgens          301201?10000120010121?012103010112000111211020103100111000210100011110000000001101100111110101000010010001211021101020000011001?11111011111100110010010000011??0001011111110111010111211010111111001110001100000001?0?12
+	Hoplophoneus             1?1112101001010100011?10?10211110210?01?00111101202211111????00001010010?????0?001011101?00101????1001?000?100200010?01100111100111101011111011?0??1??1?11101010010011110100100010011111100101111?0???00101111???0110?10
+	Dinictis                 1010121011010101000(0 1 2)1?00?10211?10210?0100111110120221111101??00001010010?????0?001011101?00101????100100011100200010201101000100001101011111011?1??1??1?111000100000111101001010100111111001?111100??10??????100011?????
+	Nandinia_binotata        2010021001011301000210001112010112000012011110002011110110100000013000000001000001000101000101110011111001101001000120110001011?00010101010100100111100011111??000101111011011101101121101011110110111001010111101001?10
+	Hyaena_hyaena            2000021002?1232110021?00122201012211?0130111100020111110101000000131111000120000010011010001011101101110112011?0111101010110001?11010111101100111100100110100??001101011111111102000121101010111111011011100111101010?01
+	Civettictis_civetta      201(0 1)02110201232100021?0012221101220100120111100110101110101000000131011000010000010001010001011100101110112011?0101020010110000111010101101100111101100????00??001101011111111102001121101001111110111011100111111010?10
+	Felis_concolor           200001000201012101221?0012020101211100130111110?20121111103000000131011000120010010111010001111100101100011111?0110021010110111?11010101101100110111101111100??001101011111011102010?21101000101110111001100110001111?10
+	Herpestes                100002101201232100021?00222201012201?213011100002021111010110000012111100001000101000101000101110110111101201020001021010010001?1101010110110111111?11?000000??001001011111011102001121100001101000111001110111101000?10
+	Zodiolestes              10(0 1)1010100001101102210122103011112000111201110112011110112101?0001210000?????00001000111??01?0????1?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+	Palaeoprionodon          20101211?1012311000111001212110121000012???????????1112?1?1?0?000?300??0?????00001001101??0???????1?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+	Stenogale                2?10020101??13110002110012221101221000130111110120121111121?0?000?300??0?????00001001101??0???????1?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+	Proailurus               ?01002??010113110002110012221101221100130111110120121111111?0?000?300??0?????00001001101??0???????1?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+	Herpestides_antiquus     2010020002011311000210011212110122110012211110012011111?10??0?0001210110?????00101000101??0???????1?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+	Miacis_exiguus           ????????????????????????????????????????10110001001001211???0??????????????????0010?010???0????????000??0??????????????????????????????????????????????????????0?0???0???????????????????????????????????0?11????00???1?
+	Miacis_medius            ?0?0???1????????????????????????????????1011001100100100101??????0?????????????001000100?????????????????110002?00?0201???0?????????????????????????????????????????????????????????????????????????????????????????????
+	PM_3868                  ????????????????????????????????????????????????????????????????????????????????????????????????????00??01??00210??02?????0???01???????????????????????????????0?0??????????????????????????????????????????????????????
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 216;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 216;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1625947583979;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 216566672461659961;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 2219123771084005666;
+			mqVersion 360;
+			checksumv 0 3 4182119374 null  getNumChars 216 numChars 216 getNumTaxa 51 numTaxa 51   short true   bits 15   states 15   sumSquaresStatesOnly 23306.0 sumSquares 23306.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 700 464;
+			setLocation 8 8;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #2219123771084005666 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 600 392;
+					setLocation 8 8;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+
