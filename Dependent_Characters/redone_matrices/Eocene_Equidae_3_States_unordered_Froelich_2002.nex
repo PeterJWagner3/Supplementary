@@ -1,0 +1,65 @@
+#NEXUS
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=48 NCHAR=40;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "   0 1 2 ";
+	MATRIX
+	Phenacodontidae                              1021000(01)020000110000000020010(01)????100000
+	Radinskya                                    10?100000000001000000???????????????????
+	Phenacolophidae                              ??2000001200110220100000200101200???0000
+	Tethytheres                                  0001000120000210002020212000102020001110
+	Hyracoidea                                   00010121221011100020201000101120202(12)1110
+	Hallensia                                    2211101001000011001110202010112000110120
+	Hyracotherium_leporinum                      2??111120100001010011?????2?10??????????
+	Palaeosyops                                  2022122212101111111020002221102020110?20
+	Lambdotherium                                2000122202101111111020112021102120110120
+	Palaeotheriidae                              2210121?010001111101202020111?2010110120
+	Ceratomorpha                                 20201?2?00222021021202022012221202102210
+	Ancylopoda                                   20201221?201220?102120?02220102020????20
+	Isectolophus                                 ?020222?00022020021201022002221202???210
+	Homogalax                                    2022122120001200012120112120102120??0120
+	Cardiolophus                                 2022022110001210012120102110102110??????
+	Orientolophus                                ?????2111000110000202?????20102100??????
+	Cymbalophus                                  ?????1111000110000201?101021102111??????
+	Systemodon_tapirinus                         ??00?11110001100002010101021102111??????
+	Systemodon                                   ??00?11110001100002010101021102111??????
+	Sifrhippus_sandrae                           ??01000100000010101010101021100000???121
+	Arenahippus_grangeri                         2101000100000010101010101120010000?1?121
+	Arenahippus_pernix                           ??01100200000010101010101?2001(01)010????21
+	Minippus_jicarillai                          ????????????????????1?101020110000??????
+	Minippus_index                               ?????00200000010101?1?101020110100??????
+	Arenahippus_aemulor                          2101100200000010101010101120010010?1?121
+	Xenicohippus_craspedotum                     ??00100200000010101010111120010100????21
+	"Xenicohippus craspedotum (Bighorn large)"   ??00?0020000001010101?111120010100??????
+	"Xenicohippus craspedotum (Kihm sp. D)"      ?????0020000001010101?111120010100??????
+	Xenicohippus_grangeri                        ??00100200000010101011112120010110??????
+	Xenicohippus_osborni                         2100100200000010101011112120010110120121
+	Eohippus_angustidens                         2201110200000010101010101120010110???121
+	Hyracotherium_seekinsi                       ???????2??????????101?????20010?????????
+	"Arenahippus cf. grangeri"                   ???1100200000010101010101120010000??????
+	"Minippus <Kihm sp. B>"                      ????????????????????1?1?1020110000??????
+	"Eohippus cf. angustidens"                   ??0111020000001010101010112001(01)110??????
+	"Minippus cf. index"                         ??????????????????????101020010110??????
+	"Protorohippus <Kihm sp. F>"                 ???1110201001110102010101120101120??????
+	Pliolophus_vulpiceps                         2201110200000010101010101020010010????21
+	Protorohippus_montanum                       2?0111020000001010201010112010(01)110????21
+	"Protorohippus cf. venticolum"               2201110201001110102010101120101120??0122
+	Protorohippus_venticolum                     2201110201001110102010101120101120120122
+	Equidae_<Wind_River_medium_Lysite>           2201110201001110102010101120101120???122
+	Equidae_<Wind_River_medium_LC>               2201110201001110102010101120101120???122
+	Equidae_<Wind_River_small>                   ?????00200000010101?1?101020110100??????
+	"Protorohippus aff. venticolum"              2201110201001110102010102120101120120122
+	Orohippus_major                              ??00111201001011102010112220111020????2?
+	Orohippus_pumilus                            2200111202001111102010112220101020120122
+	Epihippus                                    2200211102001111102010112220001020????22
+;
+END;
+begin mrbayes;
+	set autoclose=yes nowarn=yes;
+	lset nst=6 rates=invgamma;
+	unlink statefreq=(all) revmat=(all) shape=(all) pinvar=(all); 
+	prset applyto=(all) ratepr=variable;
+	mcmcp ngen= 100000000 relburnin=yes burninfrac=0.25 printfreq=10000  samplefreq=10000 nchains=4 savebrlens=yes;
+	mcmc;
+	sumt;
+end;

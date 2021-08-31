@@ -1,0 +1,65 @@
+#NEXUS
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=48 NCHAR=1;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP =  -  MISSING =  ?  SYMBOLS = " 0 1 2 3 4 5 6 7 8 9 ";
+	MATRIX
+	Phenacodontidae                              2
+	Radinskya                                    -11
+	Phenacolophidae                              0
+	Tethytheres                                  1
+	Hyracoidea                                   1
+	Hallensia                                    5
+	Hyracotherium_leporinum                      -11
+	Palaeosyops                                  8
+	Lambdotherium                                9
+	Palaeotheriidae                              5
+	Ceratomorpha                                 -11
+	Ancylopoda                                   6
+	Isectolophus                                 7
+	Homogalax                                    2
+	Cardiolophus                                 2
+	Orientolophus                                5
+	Cymbalophus                                  5
+	Systemodon_tapirinus                         8
+	Systemodon                                   8
+	Sifrhippus_sandrae                           5
+	Arenahippus_grangeri                         1
+	Arenahippus_pernix                           1
+	Minippus_jicarillai                          1
+	Minippus_index                               1
+	Arenahippus_aemulor                          1
+	Xenicohippus_craspedotum                     1
+	"Xenicohippus craspedotum (Bighorn large)"   1
+	"Xenicohippus craspedotum (Kihm sp. D)"      1
+	Xenicohippus_grangeri                        1
+	Xenicohippus_osborni                         1
+	Eohippus_angustidens                         1
+	Hyracotherium_seekinsi                       1
+	"Arenahippus cf. grangeri"                   1
+	"Minippus <Kihm sp. B>"                      1
+	"Eohippus cf. angustidens"                   1
+	"Minippus cf. index"                         1
+	"Protorohippus <Kihm sp. F>"                 1
+	Pliolophus_vulpiceps                         1
+	Protorohippus_montanum                       1
+	"Protorohippus cf. venticolum"               1
+	Protorohippus_venticolum                     1
+	Equidae_<Wind_River_medium_Lysite>           1
+	Equidae_<Wind_River_medium_LC>               1
+	Equidae_<Wind_River_small>                   1
+	"Protorohippus aff. venticolum"              1
+	Orohippus_major                              1
+	Orohippus_pumilus                            1
+	Epihippus                                    1
+;
+END;
+begin mrbayes;
+	set autoclose=yes nowarn=yes;
+	lset nst=6 rates=invgamma;
+	unlink statefreq=(all) revmat=(all) shape=(all) pinvar=(all); 
+	prset applyto=(all) ratepr=variable;
+	mcmcp ngen= 100000000 relburnin=yes burninfrac=0.25 printfreq=10000  samplefreq=10000 nchains=4 savebrlens=yes;
+	mcmc;
+	sumt;
+end;

@@ -1,0 +1,65 @@
+#NEXUS
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=48 NCHAR=14;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "   0 1 2 3 ";
+	MATRIX
+	Phenacodontidae                              12001021(01)?0110
+	Radinskya                                    ?000?????????0
+	Phenacolophidae                              03300022210121
+	Tethytheres                                  10321302(12)20123
+	Hyracoidea                                   12300312110122
+	Hallensia                                    20011?02111121
+	Hyracotherium_leporinum                      2101???1111??1
+	Palaeosyops                                  12121310222222
+	Lambdotherium                                22120200222222
+	Palaeotheriidae                              21?11211211121
+	Ceratomorpha                                 2313203101311?
+	Ancylopoda                                   23321202331113
+	Isectolophus                                 0303313002330?
+	Homogalax                                    10321203222033
+	Cardiolophus                                 10321203212033
+	Orientolophus                                ?022???3111122
+	Cymbalophus                                  20220?12211122
+	Systemodon_tapirinus                         20220212211222
+	Systemodon                                   20220212211222
+	Sifrhippus_sandrae                           20120112101121
+	Arenahippus_grangeri                         30020102101121
+	Arenahippus_pernix                           ?0020102101121
+	Minippus_jicarillai                          ????0112101121
+	Minippus_index                               ?002??12101121
+	Arenahippus_aemulor                          30020102101121
+	Xenicohippus_craspedotum                     30021301100131
+	"Xenicohippus craspedotum (Bighorn large)"   ?0021301100131
+	"Xenicohippus craspedotum (Kihm sp. D)"      ?0021301100131
+	Xenicohippus_grangeri                        ?0021302101131
+	Xenicohippus_osborni                         20021302101131
+	Eohippus_angustidens                         30020202101121
+	Hyracotherium_seekinsi                       ??0?????1011?1
+	"Arenahippus cf. grangeri"                   30020102101121
+	"Minippus <Kihm sp. B>"                      ????0102101121
+	"Eohippus cf. angustidens"                   30020102101121
+	"Minippus cf. index"                         ????0112101121
+	"Protorohippus <Kihm sp. F>"                 ?1121201201121
+	Pliolophus_vulpiceps                         21020202101121
+	Protorohippus_montanum                       31120202101121
+	"Protorohippus cf. venticolum"               31121201200121
+	Protorohippus_venticolum                     31121201200121
+	Equidae_<Wind_River_medium_Lysite>           31121201200121
+	Equidae_<Wind_River_medium_LC>               31121201200121
+	Equidae_<Wind_River_small>                   ?002??12101121
+	"Protorohippus aff. venticolum"              31121201200121
+	Orohippus_major                              ?1121301200111
+	Orohippus_pumilus                            32121300200111
+	Epihippus                                    32121300200111
+;
+END;
+begin mrbayes;
+	set autoclose=yes nowarn=yes;
+	lset nst=6 rates=invgamma;
+	unlink statefreq=(all) revmat=(all) shape=(all) pinvar=(all); 
+	prset applyto=(all) ratepr=variable;
+	mcmcp ngen= 100000000 relburnin=yes burninfrac=0.25 printfreq=10000  samplefreq=10000 nchains=4 savebrlens=yes;
+	mcmc;
+	sumt;
+end;
