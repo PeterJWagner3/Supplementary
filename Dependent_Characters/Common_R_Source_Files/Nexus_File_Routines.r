@@ -36,6 +36,7 @@ nexus_line <- gsub("\xfc\xbe\x98\x93\xa0\xbc","ae",nexus_line);
 nexus_line <- gsub("\xfc\xbe\x99\x83\xa0\xbc","c",nexus_line);
 nexus_line <- gsub("\xfc\xbe\x98\x96\x8c\xbc","",nexus_line);
 nexus_line <- gsub("\xfc\xbe\x8c\x93\xa4\xbc","\'",nexus_line);
+nexus_line <- gsub("\xfc\xbe\x98\xb3\xa0\xbc","",nexus_line);
 nexus_line <- gsub("\'\'\'","\'\"",nexus_line);
 nexus_line <- gsub("\'\' ","\" ",nexus_line);
 nexus_line <- gsub("\xac","",nexus_line);
@@ -794,7 +795,7 @@ accersi_data_from_RData <- function(matrix_name, character_database, polymorphs=
 # INAP: value substituting for gap ("-")
 # rate_partitions: nameof CHARPARTITION that you want to use for dividing characters into general rate classes.
 nexus <- accersi_matrix_data_from_RData(matrix_name=matrix_name,character_database);
-output <- accersi_data_from_nexus_vector(nexus, polymorphs=polymorphs, UNKNOWN=UNKNOWN, INAP=INAP, rate_partitions=rate_partitions, trend_partitions=trend_partitions);
+output <- accersi_data_from_nexus_vector(nexus=as.character(nexus), polymorphs=polymorphs, UNKNOWN=UNKNOWN, INAP=INAP, rate_partitions=rate_partitions, trend_partitions=trend_partitions);
 return(output);
 }
 
@@ -1154,152 +1155,207 @@ return(minstates);
 #### FIND & RECODE DEPENDENT - INDEPENDENT SETS ####
 find_independent_character <- function(dchar,independents,chmatrix,UNKNOWN,INAP)	{
 pre_indies <- independents[independents < dchar];
-p_inds <- length(pre_indies);
+pi <- p_inds <- length(pre_indies);
 ind_char <- 0;
 for (pi in p_inds:1)	{
 	ic <- pre_indies[pi];
 	unique_combos <- unique(chmatrix[,c(ic,dchar)]);
 	unique_combos <- unique_combos[!unique_combos[,1] %in% c(UNKNOWN,INAP),];
+	if (!is.matrix(unique_combos))	unique_combos <- array(unique_combos,dim=c(1,2))
 	unique_combos <- unique_combos[!unique_combos[,2] %in% UNKNOWN,];
+	if (!is.matrix(unique_combos))	unique_combos <- array(unique_combos,dim=c(1,2))
 	poly_combos <- subset(unique_combos,unique_combos[,1]<0);
-	pc <- 0;
-	while (pc<0)	{
-		pc <- pc+1;
-		poly_states <- unravel_polymorph_badass(poly_combos[pc,1]);
-		ps <- match_vector_to_matrix_row(poly_combos[pc,],unique_combos);
-		unique_combos[ps,1] <- poly_states[1];
-		new_combos <- array(0,dim=c(length(poly_states)-1,2));
-		new_combos[,2] <- poly_combos[pc,2];
-		new_combos[,1] <- poly_states[2:length(poly_states)];
-		unique_combos <- unique(rbind(unique_combos,new_combos));
-		}
+	unique_combos <- unique_combos[unique_combos[,1] >= 0,];
+#	pc <- 0;
+#	while (pc<nrow(poly_combos))	{
+#		pc <- pc+1;
+#		poly_states <- unravel_polymorph_badass(poly_combos[pc,1]);
+#		ps <- match_vector_to_matrix_row(poly_combos[pc,],unique_combos);
+#		unique_combos[ps,1] <- poly_states[1];
+#		new_combos <- array(0,dim=c(length(poly_states)-1,2));
+#		new_combos[,2] <- poly_combos[pc,2];
+#		new_combos[,1] <- poly_states[2:length(poly_states)];
+#		unique_combos <- unique(rbind(unique_combos,new_combos));
+#		}
 #	if (is.matrix(unique_combos))	unique_combos <- unique_combos[!unique_combos[,2] %in% UNKNOWN,];
 	if (is.matrix(unique_combos))	{
 		g_c <- unique_combos[unique_combos[,2]==INAP,];
 		gapped_combos <- array(g_c,dim=c((length(g_c)/2),2));
 		ungapped_combos <- array(unique_combos[!unique_combos[,2] %in% INAP,],dim=c((length(unique_combos[!unique_combos[,2] %in% INAP,])/2),2));
-		if ((length(unique(gapped_combos[,1]))==1 || length(unique(gapped_combos[,2]))==1) && sum(ungapped_combos[,1]==gapped_combos[1,1])==0)	{
+#		if ((length(unique(gapped_combos[,1]))==1 || length(unique(gapped_combos[,2]))==1) && sum(ungapped_combos[,1]==gapped_combos[1,1])==0)	{
+		if (length(unique(gapped_combos[,1]))==1 && sum(ungapped_combos[,1]==gapped_combos[1,1])==0)	{
 			ind_char <- ic;
 			return(ind_char);
 			pi <- 1;
 			}
+		} else if (unique_combos[1]>=0 && unique_combos[2]==INAP)	{
+		ind_char <- ic;
+		pi <- 1;
 		}
 	}
 return(ind_char);
 }
 
-transmogrify_additive_dependents_to_multistate <- function(ind_char,dep_chars,chmatrix,INAP,UNKNOWN,multichanges=F,theoretical=F,unknown_inap_sep=F)	{
+#transmogrify_additive_dependents_to_multistate <- function(ind_char,dep_chars,chmatrix,INAP,UNKNOWN,multichanges=F,theoretical=F,unknown_inap_sep=F)	{
+transmogrify_additive_dependents_to_multistate <- function(ind_char,dep_chars,chmatrix,secondary_dependencies,INAP=-22,UNKNOWN=-11,theoretical=T)	{
+# theortical: if T, then Q matrix & recoding allows for all theoretically possible combinations
+# unknown_inap_sep: code unknowns separately; this is a bad idea that I regret and that we'll cut
 notu <- nrow(chmatrix);
 combos <- chmatrix[,c(ind_char,dep_chars)];
+combos <- combos[!(rowMaxs(combos)==UNKNOWN & rowMins(combos)==UNKNOWN),];
 combos <- combos[combos[,2]!=INAP,];
-# get rid of missing examples
-combos <- combos[!(1:nrow(combos)) %in% unique(which(combos==UNKNOWN,arr.ind = T)[,1]),];
-secondaries <- unique(which(combos==INAP,arr.ind = T)[,2]);
-
-nchars <- ncol(combos);
-dchars <- length(dep_chars);
-missing_combos <- unique(combos)[sort(unique(which(unique(combos)==UNKNOWN,arr.ind = T)[,1])),];
-nstates <- count_states(combos);
-nstates[secondaries] <- nstates[secondaries]+1;
-if (!theoretical)	{
-	unq_combos <- unique(combos);
-	for (cu in ncol(unq_combos):1)	unq_combos <- unq_combos[order(abs(unq_combos[,cu])),];
-	unq_combos <- unq_combos[(1:nrow(unq_combos))[!(1:nrow(unq_combos)) %in% which(unq_combos==UNKNOWN,arr.ind=T)[,1]],];
-	} else	{
-	unq_combos <- array(0,dim=c(prod(nstates),length(nstates)));
-	unq_combos[,1] <- unique(unique(combos)[,1]);
-	# make sure that secondary dependents get inapplicable in the combos
-	# should the Q-matrix for the "wrong" independent character reflect this?
-	#which(unique(combos)==INAP,arr.ind=T);
-#	for (ds in 1:dchars)	{
-	dc <- nchars+1;
-	while (dc > 1)	{
-		dc <- dc-1;
-		if (dc<nchars)	{
-			this_char_states <- c();
-			for (dss in 1:nstates[dc])	#{
-				this_char_states <- c(this_char_states,rep(dss-1,prod(nstates[(dc+1):nchars])));
-#				if (dss==nstates[dc] && (dc %in% secondaries))	{
-#					this_char_states <- c(this_char_states,rep(INAP,prod(nstates[(dc+1):dchars])));
-#					this_char_states <- c(this_char_states,rep(INAP,nstates[dc-1]));
-#					} else	{
-#					this_char_states <- c(this_char_states,rep(dss-1,nstates[dc-1]));
-#					}
-#				}
-			} else	{
-			this_char_states <- (1:nstates[dc])-1;
+if (length(combos)>0)	{
+	# get rid of missing examples
+	combos <- combos[!(1:nrow(combos)) %in% unique(which(combos==UNKNOWN,arr.ind = T)[,1]),];
+	# get secondary dependents
+	secondaries <- unique(which(combos==INAP,arr.ind = T)[,2]);
+	semi_indies <- secondary_dependencies[secondary_dependencies!=ind_char];
+	
+	nchars <- ncol(combos);
+	dchars <- length(dep_chars);
+	missing_combos <- unique(combos)[sort(unique(which(unique(combos)==UNKNOWN,arr.ind = T)[,1])),];
+	nstates <- count_states(combos);
+	nstates[secondaries] <- nstates[secondaries]+1;
+	#combos <- combos[order(combos[,1],combos[,2],combos[,3]),];
+	for (cn in ncol(combos):1)	combos <- combos[order(combos[,cn]),];
+	all_obs_complex_combos <- unique(combos);
+	all_obs_complex_combos <- all_obs_complex_combos[all_obs_complex_combos[,1]>=0,];
+	if (!is.matrix(all_obs_complex_combos))	all_obs_complex_combos <- array(all_obs_complex_combos,dim=c(1,2));
+	ind_states <- sort(unique(chmatrix[,ind_char][chmatrix[,ind_char]>=0]))
+	key_states <- unique(all_obs_complex_combos[,1]);
+	wrong_states <- ind_states[!ind_states %in% key_states];
+	
+	if (!theoretical)	{
+		all_poss_combos <- unique(combos);
+		for (cu in ncol(all_poss_combos):1)	all_poss_combos <- all_poss_combos[order(abs(all_poss_combos[,cu])),];
+		all_poss_combos <- all_poss_combos[(1:nrow(all_poss_combos))[!(1:nrow(all_poss_combos)) %in% which(all_poss_combos==UNKNOWN,arr.ind=T)[,1]],];
+		} else	{
+		dc <- nchars+1;
+		while (dc >1)	{
+			dc <- dc-1;
+			char_states <- sort(unique(combos[,dc]));
+			char_states <- char_states[!char_states %in% c(UNKNOWN,INAP)];
+			cs <- 1;
+			while (char_states[cs]<0)	{
+				char_states <- c(char_states,unravel_polymorph_badass(char_states[cs]))
+				char_states <- unique(sort(char_states[2:length(char_states)]));
+				}
+	#		if (dc %in% secondaries)	unq_combos[unq_combos[,dc]==(nstates[dc]-1),dc] <- INAP;
+			if (dc %in% secondaries)	char_states <- c(char_states,INAP);
+			nstates_ch <- length(char_states);
+			if (dc==nchars)	{
+				all_poss_combos <- array(char_states,dim=c(nstates_ch,1));
+				} else	{
+				cs <- 1;
+				existing_combos <- nrow(all_poss_combos)
+				added_char_states <- rep(char_states[cs],existing_combos);
+				unq_combos_orig <- all_poss_combos;
+				while (cs<nstates_ch)	{
+					cs <- cs+1;
+					all_poss_combos <- rbind(all_poss_combos,unq_combos_orig);
+					added_char_states <- c(added_char_states,rep(char_states[cs],existing_combos));
+					}
+				all_poss_combos <- cbind(added_char_states,all_poss_combos);
+				}
 			}
-		ttl_code <- round(nrow(unq_combos)/length(this_char_states),0);
-		unq_combos[,dc] <- rep(this_char_states,ttl_code);
-		if (dc %in% secondaries)	unq_combos[unq_combos[,dc]==(nstates[dc]-1),dc] <- INAP;
 		}
-	}
-sc <- 0;
-while (sc < length(secondaries))	{
-	sc <- sc+1;
-	independents <- 2:ncol(unq_combos);
-	semi_indy <- find_independent_character(dchar=secondaries[sc],independents=2:ncol(unq_combos),chmatrix=combos,UNKNOWN,INAP);
-	this_pair <- unique(combos[,c(semi_indy,secondaries[sc])]);
-	semi_key_state <- unique(this_pair[this_pair[,2]!=INAP,][,1]);
-	zz <- (1:nrow(unq_combos));
-	xx <- zz[unq_combos[,semi_indy] %in% semi_key_state]
-	yy <- zz[unq_combos[,secondaries[sc]]==INAP];
-	xx <- xx[xx %in% yy];
-	unq_combos <- unq_combos[!zz %in% xx,];
-	}
-
-wrong_states <- unique(chmatrix[,ind_char][!chmatrix[,ind_char] %in% unq_combos[,1]]);
-wrong_states <- wrong_states[!wrong_states %in% c(UNKNOWN,INAP)];
-keystates <- unique(combos[!combos[,1] %in% c(wrong_states,UNKNOWN,INAP),1]);
-
-wrstates <- length(wrong_states);
-null_combos <- cbind(wrong_states,array(INAP,dim=c(wrstates,ncol(combos)-1)));
-colnames(null_combos) <- colnames(unq_combos)
-unq_combos <- rbind(null_combos,unq_combos);
-
-ucombos <- rcombos <- ttl_states <- nrow(unq_combos);
-if (unknown_inap_sep)	{
-	unq_combos <- rbind(unq_combos,missing_combos);
-	ttl_states <- nrow(unq_combos);
-	rcombos <- ttl_states-(wrstates+length(missing_combos));
-	ucombos <- ttl_states-length(missing_combos);
-	} else	{
+	all_poss_combos <- all_poss_combos[all_poss_combos[,1] %in% key_states,];
+	# alternative for secondary independents: replace all pairs with -22 & then reduce via unique(all_poss_combos);
+	
+	sc <- 0;
+	while (sc < length(secondaries))	{
+		sc <- sc+1;
+		independents <- 2:ncol(all_poss_combos);
+		semi_indy <- find_independent_character(dchar=secondaries[sc],independents=2:ncol(all_poss_combos),chmatrix=combos,UNKNOWN,INAP);
+		this_pair <- unique(combos[,c(semi_indy,secondaries[sc])]);
+		semi_key_state <- unique(this_pair[this_pair[,2]!=INAP,][,1]);
+		semi_wrn_state <- unique(this_pair[,1][!this_pair[,1] %in% semi_key_state]);
+		
+		# get rid of keystate:inapplicable pairs
+		zz <- (1:nrow(all_poss_combos));
+		xx <- zz[all_poss_combos[,semi_indy] %in% semi_key_state]
+		yy <- zz[all_poss_combos[,secondaries[sc]]==INAP];
+		xx <- xx[xx %in% yy];
+		all_poss_combos <- all_poss_combos[!zz %in% xx,];
+		
+		# get rid of nonkeystate:state-pairs
+		zz <- (1:nrow(all_poss_combos));
+		xx <- zz[all_poss_combos[,semi_indy] %in% semi_wrn_state]
+		yy <- zz[all_poss_combos[,secondaries[sc]]!=INAP];
+		xx <- xx[xx %in% yy];
+		all_poss_combos <- all_poss_combos[!zz %in% xx,];
+		}
+	
+	wrstates <- length(wrong_states);
+	null_combos <- cbind(wrong_states,array(INAP,dim=c(wrstates,ncol(combos)-1)));
+	colnames(null_combos) <- colnames(all_poss_combos)
+	all_poss_combos <- rbind(null_combos,all_poss_combos);
+	
+	ucombos <- rcombos <- ttl_states <- nrow(all_poss_combos);
 	rcombos <- ttl_states-wrstates;
-	}
-
-state_combos <- rep("",ttl_states);
-for (uc in 1:ttl_states)	{
-	this_combo <- paste(unq_combos[uc,],collapse="");
-	this_combo <- gsub(as.character(INAP),"-",this_combo);
-	this_combo <- gsub(as.character(UNKNOWN),"?",this_combo);
-	state_combos[uc] <- this_combo;
-	}
-state_combos <- gsub(as.character(INAP),"",state_combos);
-rownames(unq_combos) <- state_combos;
-colnames(unq_combos) <- c(ind_char,dep_chars);
-
-# prepare Q-Matrix
-if (nrow(unq_combos)>100)	{
-	print("Getting basic distances among state combinations")
-	Q <- pairwise_differences_discrete(unq_combos,UNKNOWN=UNKNOWN,INAP=INAP,progress_bar=T);
-	} else	{
-	Q <- pairwise_differences_discrete(unq_combos,UNKNOWN=UNKNOWN,INAP=INAP,progress_bar=F);
-	}
-# if there are secondaries, the figure out how to weight them here!!!
-Q[wrstates,(wrstates+1):ttl_states] <- 1/rcombos;
-colnames(Q) <- rownames(Q) <- state_combos;
-if (!multichanges)			Q[Q>1] <- 0;
-for (qq in 1:ttl_states)	Q[qq,qq] <- -sum(Q[qq,1:ucombos]);
-
-new_multistate <- vector(length=notu);
-for (nn in 1:notu)	new_multistate[nn] <- match_vector_to_matrix_row(test_vector=chmatrix[nn,c(ind_char,dep_chars)],test_matrix=unq_combos)-1;
-
-if (unknown_inap_sep)	{
-	new_multistate[is.na(new_multistate)] <- UNKNOWN;
-	} else	{
+	
+	state_combos <- rep("",ttl_states);
+	for (uc in 1:ttl_states)	{
+		this_combo <- paste(all_poss_combos[uc,],collapse="");
+		this_combo <- gsub(as.character(INAP),"-",this_combo);
+		this_combo <- gsub(as.character(UNKNOWN),"?",this_combo);
+		state_combos[uc] <- this_combo;
+		}
+	state_combos <- gsub(as.character(INAP),"",state_combos);
+	rownames(all_poss_combos) <- state_combos;
+	colnames(all_poss_combos) <- c(ind_char,dep_chars);
+	# make sure that secondaries dependencies are weeded out.
+	#	if we see only •2-, then make sure that •20 & •21 are eliminated
+	# prepare Q-Matrix
+	if (nrow(all_poss_combos)>100)	{
+		print("Getting basic distances among state combinations")
+		Q <- pairwise_differences_discrete(all_poss_combos,UNKNOWN=UNKNOWN,INAP=INAP,progress_bar=T);
+		} else	{
+		Q <- pairwise_differences_discrete(all_poss_combos,UNKNOWN=UNKNOWN,INAP=INAP,progress_bar=F);
+		}
+	# if there are secondaries, the figure out how to weight them here!!!
+	colnames(Q) <- rownames(Q) <- state_combos;
+	Q[wrstates,(wrstates+1):ttl_states] <- 1/rcombos;
+	si <- 0;
+	while (si < length(semi_indies))	{
+		si <- si+1;
+		sc <- match(semi_indies[si],c(ind_char,dep_chars));
+		cs <- (1:length(c(ind_char,dep_chars)))[secondary_dependencies==semi_indies[si]];
+		relv_combos <- unique(all_poss_combos[,c(sc,cs)]);
+		relv_combos <- relv_combos[(1:nrow(relv_combos))[!(1:nrow(relv_combos)) %in% unique(which(relv_combos==INAP,arr.ind=T)[,1])],];
+		relv_combos_all <- all_poss_combos[,c(sc,cs)];
+		if (length(cs)>1)	{
+			key_combos <- which(all_poss_combos[,cs]==INAP,arr.ind=T)[,1]
+			} else	{
+			key_combos <- as.numeric(which(all_poss_combos[,cs]==INAP,arr.ind=T))
+			}
+		# fix revl_combos to get all of the right matches & not just those for one possibility
+		key_combos <- key_combos[!key_combos %in% key_combos[all_poss_combos[,sc]==INAP]];
+		relv_combos_2 <- all_poss_combos[,c(sc,cs)];
+		relv_combos_2 <- relv_combos_2[!(1:ttl_states) %in% which(relv_combos_2==INAP,arr.ind=T)[,1],];
+		combos_key <- match(rownames(relv_combos_2),rownames(Q));
+	#	Q[key_combos,combos_key]==1;
+		for (i in 1:length(key_combos))
+			Q[key_combos[i],combos_key][Q[key_combos[i],combos_key]==1] <- 1/nrow(relv_combos);
+	#	1/nrow(relv_combos)
+		}
+	Q[Q>1] <- 0;
+	for (qq in 1:ttl_states)	Q[qq,qq] <- -sum(Q[qq,1:ucombos]);
+	
+	#write.csv(Q,"Q.csv",row.names = T)
+	new_multistate <- vector(length=notu);
+	for (nn in 1:notu)
+		new_multistate[nn] <- match_vector_to_matrix_row(test_vector=chmatrix[nn,c(ind_char,dep_chars)],test_matrix=all_poss_combos)-1;
+	all_states <- c(0:9,letter_states,more_letter_states);
+	if (nrow(all_poss_combos)>10)
+		if (is.numeric(new_multistate))
+			new_multistate[!is.na(new_multistate)] <- all_states[1+new_multistate[!is.na(new_multistate)]]
+	#cbind(new_multistate,chmatrix[,c(ind_char,dep_chars)])
+	#if (unknown_inap_sep)	{
+	#	new_multistate[is.na(new_multistate)] <- UNKNOWN;
+	#	} else	{
 	prob_child <- (1:notu)[is.na(new_multistate)];
 	combos <- chmatrix[,c(ind_char,dep_chars)];
-	all_states <- c(0:9,letter_states,more_letter_states);
 	pc <- 0;
 	polymorphs <- unique(combos[combos<0])
 	polymorphs <- polymorphs[!polymorphs %in% c(UNKNOWN,INAP)];
@@ -1309,35 +1365,34 @@ if (unknown_inap_sep)	{
 		if (combos[pcc,1]==UNKNOWN)	{
 			new_multistate[pcc] <- UNKNOWN;
 			} else	{
-			# make it polymorphic for all possible states
+				# make it polymorphic for all possible states
 			this_combo <- combos[pcc,(0:dchars)+1];
-#			doofi <- (1:length(this_combo))[this_combo==UNKNOWN];
+	#		doofi <- (1:length(this_combo))[this_combo==UNKNOWN];
 			# this if/else probably is unneeded now!
 			if (sum(this_combo %in% polymorphs)==0)	{
 				set_chars <- (1:length(this_combo))[this_combo!=UNKNOWN];
-				set_chars <- set_chars[set_chars>1];
+	#			set_chars <- set_chars[set_chars>1];
 				set_states <- this_combo[set_chars];
-				poss_combos <- unq_combos[unq_combos[,1] %in% keystates,];
+				poss_combos <- all_poss_combos[all_poss_combos[,1] %in% key_states,];
 				ss <- 0;
 				while (ss < length(set_chars))	{
 					ss <- ss+1;
 					poss_combos <- subset(poss_combos,poss_combos[,set_chars[ss]]==set_states[ss]);
 					}
 				polymorph <- 0;
-				if (nrow(unq_combos)>10)	polymorph <- c();
+				if (nrow(all_poss_combos)>10)	polymorph <- c();
 				for (cp in 1:nrow(poss_combos))	{
-					this_state <- (row.match(poss_combos[cp,],as.data.frame(unq_combos))-1);
-					if (nrow(unq_combos)>10)	{
+					this_state <- (row.match(poss_combos[cp,],as.data.frame(all_poss_combos))-1);
+					if (nrow(all_poss_combos)>10)	{
 						polymorph <- c(polymorph,all_states[this_state]);
-#						base64encode(this_state);
-#						for (i in 1:5)	print(base64encode(10^(i-1)));
+	#					base64encode(this_state);
+	#					for (i in 1:5)	print(base64encode(10^(i-1)));
 						} else	{
 						polymorph <- polymorph-((10^(cp-1))*this_state);
 						}
 					}
 				} else	{
-				set_chars <- (1:nchars)[!this_combo %in% c(UNKNOWN,polymorphs)];
-				unset_chars <- (1:nchars)[this_combo %in% c(UNKNOWN,polymorphs)];
+				set_chars <- (1:nchars)[!this_combo %in% c(UNKNOWN,polymorphs)];				unset_chars <- (1:nchars)[this_combo %in% c(UNKNOWN,polymorphs)];
 				un <- 0;
 				missing <- unset_chars[this_combo[unset_chars]==UNKNOWN];
 				polys <- unset_chars[!this_combo[unset_chars] %in% UNKNOWN];
@@ -1349,16 +1404,16 @@ if (unknown_inap_sep)	{
 					for (rs in 1:length(rstates))
 						this_combo[mchar] <- this_combo[rs]-rstates[rs]*(10^(rs-1));
 					}
-#				set_chars <- set_chars[set_chars>1];
+	#				set_chars <- set_chars[set_chars>1];
 				set_states <- this_combo[set_chars];
-				poss_combos <- unq_combos;
-#				print(nrow(poss_combos));
+				poss_combos <- all_poss_combos;
+	#			print(nrow(poss_combos));
 				# reduce the possible combinations to those consistent
 				sc <- length(set_chars);
-#				for (sc in 1:length(set_chars))	{
+	#			for (sc in 1:length(set_chars))	{
 				while (sc > 1)	{
 					poss_combos <- subset(poss_combos,poss_combos[,set_chars[sc]]==set_states[sc]);
-#					print(nrow(poss_combos));
+	#				print(nrow(poss_combos));
 					sc <- sc-1;
 					}
 				uc <- 0;
@@ -1366,36 +1421,48 @@ if (unknown_inap_sep)	{
 					uc <- uc+1;
 					poss_combos <- poss_combos[poss_combos[,polys[uc]] %in% unravel_polymorph_badass(this_combo[polys[uc]]),];
 					}
-				pstates <- match(rownames(poss_combos),rownames(unq_combos));
+				pstates <- match(rownames(poss_combos),rownames(all_poss_combos));
 				polymorph <- 0;
-				if (nrow(unq_combos)>10)	polymorph <- c();
+				if (nrow(all_poss_combos)>10)	polymorph <- c();
 				for (cp in 1:nrow(poss_combos))	{
-					this_state <- (row.match(poss_combos[cp,],as.data.frame(unq_combos))-1);
-					if (nrow(unq_combos)>10)	{
+					this_state <- (row.match(poss_combos[cp,],as.data.frame(all_poss_combos))-1);
+					if (nrow(all_poss_combos)>10)	{
 						polymorph <- c(polymorph,all_states[this_state]);
-#						base64encode(this_state);
-#						for (i in 1:5)	print(base64encode(10^(i-1)));
+	#					base64encode(this_state);
+	#					for (i in 1:5)	print(base64encode(10^(i-1)));
 						} else	{
 						polymorph <- polymorph-((10^(cp-1))*this_state);
 						}
 					}
-				
 				}
-			if (nrow(unq_combos)>10)	{
-				if (is.numeric(new_multistate))
-					new_multistate[!is.na(new_multistate)] <- all_states[1+new_multistate[!is.na(new_multistate)]]
+	#		if (nrow(unq_combos)>10)	{
+	#			if (is.numeric(new_multistate))
+	#				new_multistate[!is.na(new_multistate)] <- all_states[1+new_multistate[!is.na(new_multistate)]]
 				new_multistate[pcc] <- paste("(",paste(polymorph,collapse=""),")",sep="");
-				} else	{
-				new_multistate[pcc] <- polymorph;
-				}
+	#			} else	{
+	#			new_multistate[pcc] <- polymorph;
+	#			}
 			}
 		}
+	#	}
+	#new_multistate[new_multistate==UNKNOWN] <- "?";
+	
+	#cbind(new_multistate,chmatrix[,c(ind_char,dep_chars)])
+	output <- list(all_poss_combos,Q,new_multistate);
+	names(output) <- c("unique_combinations","Q","new_character");
+	return(output);
+	} else	{
+	combos <- chmatrix[,c(ind_char,dep_chars)];
+	combos <- combos[!(rowMaxs(combos)==UNKNOWN & rowMins(combos)==UNKNOWN),];
+	combos <- unique(combos);
+	all_poss_combos <- combos;
+	new_multistate <- chmatrix[,ind_char];
+	k <- max(2,nrow(combos));
+	Q <- construct_Q_matrix_unordered(k);
+	output <- list(all_poss_combos,Q,new_multistate);
+	names(output) <- c("unique_combinations","Q","new_character");
+	return(output);
 	}
-
-#cbind(new_multistate,chmatrix[,c(ind_char,dep_chars)])
-output <- list(unq_combos,Q,new_multistate)
-names(output) <- c("unique_combinations","Q","new_character");
-return(output);
 }
 
 #### MODIFY & WRITE NEXUS FILES ####
@@ -1590,9 +1657,84 @@ nexus_file_content <- rbind(nexus_file_content,"end;");
 write(nexus_file_content,file=new_file_name);
 }
 
+# write nexus file from chmatrix that already is converted to character
+scribio_nexus_file_from_chmatrix_character <- function(ch_matrix_ch,new_file_name,max_states,unknown="?",inap="-")	{
+notu <- nrow(ch_matrix_ch);
+taxon_names <- rownames(ch_matrix_ch);
+nchars <- ncol(ch_matrix_ch);
+
+nexus_file_content <- c();
+nexus_file_content <- rbind("#NEXUS","","BEGIN DATA;")
+nexus_file_content <- rbind(nexus_file_content,paste("	DIMENSIONS  NTAX=",notu," NCHAR=",nchars,";",sep=""));
+if (max_states<10) {
+	state_symbols <- " ";
+	for (st in 1:max_states)
+		state_symbols <- paste(state_symbols,st-1,sep=" ");
+	} else	{
+#	mxl <- max_states-10;
+	all_states <- c(0:9,letter_states,more_letter_states);
+	state_symbols <- paste(all_states[1:max_states],collapse=" ");
+	}
+nexus_file_content <- rbind(nexus_file_content,paste("	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = ",inap," MISSING = ",unknown," SYMBOLS = \"",state_symbols,"\";"));
+nexus_file_content <- rbind(nexus_file_content,"	MATRIX");
+
+string_to_count <- taxon_names;
+name_lengths <- sapply(string_to_count,count_characters_in_string);
+max_name_length <- max(name_lengths);
+need_quotes <- c(".","(",")","[","]");
+for (nn in 1:notu)	{
+	test_name <- strsplit(taxon_names[nn],split="",fixed=TRUE)[[1]]
+	if (sum(test_name %in% need_quotes)==0)	{
+		taxon <- gsub(" ","_",taxon_names[nn]);
+		} else	{
+		taxon <- paste("\"",taxon_names[nn],"\"",sep="");
+		name_lengths[nn] <- name_lengths[nn]+2;
+		}
+	this_line <- paste("\t",taxon,paste(rep(" ",(5+(max_name_length-name_lengths[nn]))),collapse=""),sep="");
+	this_line <- paste(this_line,paste(ch_matrix_ch[nn,],collapse=""),sep="");
+	nexus_file_content <- rbind(nexus_file_content,this_line);
+	}
+
+nexus_file_content <- rbind(nexus_file_content,";");
+nexus_file_content <- rbind(nexus_file_content,"END;");
+nexus_file_content <- rbind(nexus_file_content,"begin mrbayes;");
+nexus_file_content <- rbind(nexus_file_content,"	set autoclose=yes nowarn=yes;");
+nexus_file_content <- rbind(nexus_file_content,"	lset nst=6 rates=invgamma;");
+nexus_file_content <- rbind(nexus_file_content,"	unlink statefreq=(all) revmat=(all) shape=(all) pinvar=(all); ");
+nexus_file_content <- rbind(nexus_file_content,"	prset applyto=(all) ratepr=variable;");
+nexus_file_content <- rbind(nexus_file_content,"	mcmcp ngen= 100000000 relburnin=yes burninfrac=0.25 printfreq=10000  samplefreq=10000 nchains=4 savebrlens=yes;");
+nexus_file_content <- rbind(nexus_file_content,"	mcmc;");
+nexus_file_content <- rbind(nexus_file_content,"	sumt;");
+nexus_file_content <- rbind(nexus_file_content,"end;");
+write(nexus_file_content,file=new_file_name);
+}
+
 ravel_polymorph_for_file <- function(polystates)	{
 polystates <- sort(polystates,decreasing = FALSE);
 return(paste("(",paste(polystates,collapse=""),")",sep=""));
+}
+
+convert_character_matrix_to_character <- function(chmatrix,UNKNOWN=-11,INAP=-22,unknown="?",inap="-")	{
+notu <- nrow(chmatrix);
+nchars <- ncol(chmatrix);
+chmatrix_char <- chmatrix;
+allstates <- c(0:9,letter_states,more_letter_states);
+for (ch in 1:nchars)	{
+	these_states <- chmatrix[,ch];
+	coded_notu <- (1:notu)[these_states>=0];
+	inap_notu <- (1:notu)[these_states==INAP];
+	miss_notu <- (1:notu)[these_states==UNKNOWN];
+	poly_notu <- (1:notu)[!(1:notu) %in% c(coded_notu,inap_notu,miss_notu)];
+	chmatrix_char[coded_notu,ch] <- as.character(allstates[1+chmatrix[coded_notu,ch]]);
+	chmatrix_char[miss_notu,ch] <- unknown;
+	chmatrix_char[inap_notu,ch] <- inap;
+	pn <- 0;
+	while (pn < length(poly_notu))	{
+		pn <- pn+1;
+		chmatrix_char[poly_notu[pn],ch] <- ravel_polymorph_for_file(allstates[1+sort(unravel_polymorph_badass(chmatrix[poly_notu[pn],ch]))]);
+		}
+	}
+return(chmatrix_char);
 }
 
 #### READ NEWICK FILES ####
