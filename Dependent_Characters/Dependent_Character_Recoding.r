@@ -17,8 +17,9 @@ greek_to_me <- c("Alpha","Beta","Gamma","Delta","Epsilon","Zeta","Eta","Theta","
 #if(!require(base64enc)) install.packages("base64enc");	library(base64enc);
 #if(!require(encode)) install.packages("encode"); 		library(encode);
 source(paste(common_source_folder,'Data_Downloading_v4.r',sep=""))  #
-source(paste(common_source_folder,'Disparity.r',sep=""))  #
+source(paste(common_source_folder,'disparity.r',sep=""))  #
 source(paste(common_source_folder,'Nexus_File_Routines.r',sep=""))  #
+source(paste(common_source_folder,'paleophylogeny_routines.r',sep=""))  #
 source(paste(common_source_folder,'Wagner_kluges.r',sep=""))  #
 source(paste(common_source_folder,"Wagner_Stats_and_Probability_101.r",sep=""))  #
 load(paste(data_for_R_folder,'Character_Data.RData',sep=""));
@@ -34,12 +35,14 @@ notu <- nrow(chmatrix);
 nchars <- ncol(chmatrix);															# total characters
 nstates <- character_info$States;
 chtypes <- character_info$State_Types;
+#chmatrix <- chmatrix[!(1:notu) %in% character_info$Outgroup,];
 
 # Get Dependent - Independent Pairs ####
 dchar <- unique(which(chmatrix==INAP,arr.ind=T)[,2]);								# separate characters with inapplicables
 independents <- (1:nchars);
 # get the "parent" character upon which each dependent character depends
 parent_chars <- pbapply::pbsapply(dchar,find_independent_character,independents,chmatrix,UNKNOWN,INAP);
+#for (dc in 1:length(dchar))	nn <- find_independent_character(dchar=dchar[dc],independents,chmatrix,UNKNOWN,INAP);
 #find_independent_character(51,independents,chmatrix,UNKNOWN,INAP);
 # create data.frame with additive characters, with dependent & independent.
 additives <- data.frame(dependents=as.numeric(dchar),independents=as.numeric(parent_chars));
@@ -68,11 +71,49 @@ for (ui in 1:length(unique_indies))	{
 	}
 names(redone) <- unique_indies;
 
+tstates <- tacit_indies <- additives$dependents[additives$independents==0];
+names(tstates) <- tacit_indies;
+redone_2 <- list();
+redone_all <- redone;
+ti <- 0;
+#for (ti in 1:length(tacit_indies))		{
+while (ti < length(tacit_indies))	{
+	ti <- ti+1;
+	tch <- tacit_indies[ti];
+	new_states <- orig_states <- chmatrix[,tch];
+	polys <- (1:notu)[orig_states < 0 & !orig_states %in% c(UNKNOWN,INAP)];
+	new_states[orig_states>=0] <- orig_states[orig_states>=0]+1;
+	new_states[orig_states==INAP] <- 0;
+	pl <- 0;
+	while (pl < length(polys))	{
+		pl <- pl+1
+		new_states[polys[pl]] <- ravel_polymorph(unravel_polymorph_badass(orig_states[polys[pl]])+1);
+#		print(ti);
+		}
+	tstates[ti] <- max(new_states+1);
+	Q <- array(1,dim=c(tstates[ti],tstates[ti]));
+	Q[1,] <- 1/nstates[tch];
+	diag(Q) <- 0; 
+	diag(Q) <- -(rowSums(Q));
+	colnames(Q) <- rownames(Q) <- c("-",(1:nstates[tch])-1)
+	x <- list(orig_states,Q,new_states)
+	names(x) <- names(redone[[1]]);
+	redone_2 <- rlist::list.append(redone_2,x);
+	redone_all <- rlist::list.append(redone_all,x);
+	}
+names(redone_2) <- tacit_indies;
+names(redone_all) <- c(names(redone),names(redone_2));
+order(as.numeric(names(redone_all)))
+redone_all <- redone_all[order(as.numeric(names(redone_all)))];
+#names(redone_all)
+
 chmatrix_recoded <- convert_character_matrix_to_character(chmatrix);
 nchars <- ncol(chmatrix);
 max_states <- max(character_info$States);
 rstates <- nstates;
 names(rstates) <- 1:nchars;
+# go through all characters; do the routine below for those with coded independents;
+#		just swap out character vector for those with tacit independents
 for (ui in length(unique_indies):1)	{
 	rchar <- ncol(chmatrix_recoded);
 	ind_char <- unique_indies[ui];
@@ -144,6 +185,12 @@ for (nn in 1:length(rescored))	{
 	another_prop <- array(chmatrix_recoded[,rescored[nn]],dim=c(notu,1));
 	rownames(another_prop) <- rownames(chmatrix);
 	scribio_nexus_file_from_chmatrix_character(ch_matrix_ch = another_prop,new_file_name = new_file_name_a,max_states=max_states);
+	}
+
+for (nn in 1:length(redone))	{
+	new_file_name_b <- gsub("Dummy",paste("Q_Matrix",greek_to_me[nn],sep="_"),revbayes_file_name);
+	new_file_name_b <- gsub(".nex",".txt",new_file_name_b);
+	write.table(redone[[nn]]$Q,new_file_name_b,sep="\t");
 	}
 
 {}

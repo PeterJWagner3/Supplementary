@@ -236,4 +236,87 @@ if (is.null(inapplicable_examples$independent_character))	{
 	}
 write.csv(inapplicable_examples,paste(dependent_directory,"Gastropods_w_Inapplicables.csv",sep=""),row.names = F);
 
+mammal_matrices <- names(character_database$Vertebrates$Mammals);
+matrices_w_inaps <- c();
+for (bm in 1:length(mammal_matrices))	{
+	character_info <- accersi_data_from_RData(matrix_name=mammal_matrices[bm],character_database);
+	inap_cases <- unique(which(character_info$Matrix==INAP,arr.ind=T)[,2]);
+	if (length(inap_cases)>0)
+		matrices_w_inaps <- rbind(matrices_w_inaps,cbind(rep(mammal_matrices[bm],length(inap_cases)),inap_cases));
+	}
+inapplicable_examples <- data.frame(matrix=as.character(matrices_w_inaps[,1]),dependent_character=as.numeric(matrices_w_inaps[,2]))
+mammal_matrices_inaps <- unique(inapplicable_examples$matrix);
+independents <- c();
+for (bm in 1:length(mammal_matrices_inaps))	{
+	character_info <- accersi_data_from_RData(matrix_name=mammal_matrices_inaps[bm],character_database);
+	chmatrix <- character_info$Matrix;
+	dependent_chars <- inapplicable_examples$dependent_character[inapplicable_examples$matrix==mammal_matrices_inaps[bm]];
+	for (dc in 1:length(dependent_chars))	{
+		dcc <- dependent_chars[dc];
+		independents <- c(independents,0);
+		cd <- dependent_chars[dc];
+		while (cd > 1)	{
+#		for (cd in (dependent_chars[dc]-1):1)	{
+			cd <- cd-1;
+			unique_combos <- unique(chmatrix[,c(cd,dcc)]);
+			unique_combos <- unique_combos[!unique_combos[,1] %in% c(UNKNOWN,INAP),];
+			if (is.matrix(unique_combos))
+				unique_combos <- unique_combos[!unique_combos[,2] %in% UNKNOWN,];
+			if (is.matrix(unique_combos))	{
+				g_c <- unique_combos[unique_combos[,2]==INAP,];
+				gapped_combos <- array(g_c,dim=c((length(g_c)/2),2));
+				ungapped_combos <- array(unique_combos[!unique_combos[,2] %in% INAP,],dim=c((length(unique_combos[!unique_combos[,2] %in% INAP,])/2),2));
+				if (length(unique(gapped_combos[,1]))==1 && sum(ungapped_combos[,1]==gapped_combos[1,1])==0)	{
+					independents[length(independents)] <- cd;
+					cd <- 1;
+#					} else if (is.matrix(gapped_combos) && length(unique(gapped_combos[,1])))	{
+					}
+				}
+			}
+		}
+	}
+write.csv(inapplicable_examples,paste(dependent_directory,"Mammals_w_Inapplicables.csv",sep=""),row.names = F);
+
+dinosaur_matrices <- names(character_database$Vertebrates$Dinosaurs);
+matrices_w_inaps <- c();
+for (bm in 1:length(dinosaur_matrices))	{
+	character_info <- accersi_data_from_RData(matrix_name=dinosaur_matrices[bm],character_database);
+	inap_cases <- unique(which(character_info$Matrix==INAP,arr.ind=T)[,2]);
+	if (length(inap_cases)>0)
+		matrices_w_inaps <- rbind(matrices_w_inaps,cbind(rep(dinosaur_matrices[bm],length(inap_cases)),inap_cases));
+	}
+inapplicable_examples <- data.frame(matrix=as.character(matrices_w_inaps[,1]),dependent_character=as.numeric(matrices_w_inaps[,2]))
+dinosaur_matrices_inaps <- unique(inapplicable_examples$matrix);
+independents <- c();
+for (bm in 1:length(dinosaur_matrices_inaps))	{
+	character_info <- accersi_data_from_RData(matrix_name=dinosaur_matrices_inaps[bm],character_database);
+	chmatrix <- character_info$Matrix;
+	dependent_chars <- inapplicable_examples$dependent_character[inapplicable_examples$matrix==dinosaur_matrices_inaps[bm]];
+	for (dc in 1:length(dependent_chars))	{
+		dcc <- dependent_chars[dc];
+		independents <- c(independents,0);
+		cd <- dependent_chars[dc];
+		while (cd > 1)	{
+#		for (cd in (dependent_chars[dc]-1):1)	{
+			cd <- cd-1;
+			unique_combos <- unique(chmatrix[,c(cd,dcc)]);
+			unique_combos <- unique_combos[!unique_combos[,1] %in% c(UNKNOWN,INAP),];
+			if (is.matrix(unique_combos))
+				unique_combos <- unique_combos[!unique_combos[,2] %in% UNKNOWN,];
+			if (is.matrix(unique_combos))	{
+				g_c <- unique_combos[unique_combos[,2]==INAP,];
+				gapped_combos <- array(g_c,dim=c((length(g_c)/2),2));
+				ungapped_combos <- array(unique_combos[!unique_combos[,2] %in% INAP,],dim=c((length(unique_combos[!unique_combos[,2] %in% INAP,])/2),2));
+				if (length(unique(gapped_combos[,1]))==1 && sum(ungapped_combos[,1]==gapped_combos[1,1])==0)	{
+					independents[length(independents)] <- cd;
+					cd <- 1;
+#					} else if (is.matrix(gapped_combos) && length(unique(gapped_combos[,1])))	{
+					}
+				}
+			}
+		}
+	}
+write.csv(inapplicable_examples,paste(dependent_directory,"Dinosaurs_Inapplicables.csv",sep=""),row.names = F,fileEncoding = "UTF-8");
+write.csv(unique(inapplicable_examples$matrix),paste(dependent_directory,"Dinosaurs_w_Inapplicables.csv",sep=""),row.names=F,fileEncoding = "UTF-8");
+
 {}
