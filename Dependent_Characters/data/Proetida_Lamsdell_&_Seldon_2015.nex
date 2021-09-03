@@ -1,5 +1,5 @@
 #NEXUS
-[written Fri Dec 18 16:00:30 CST 2020 by Mesquite  version 3.6 (build 917) at Wagners_Dark_Tower/10.0.1.29]
+[written Thu Sep 02 00:18:05 CDT 2021 by Mesquite  version 3.6 (build 917) at EAS-6BCEC7.local/10.0.1.82 ()]
 
 BEGIN TAXA;
 	TITLE Taxa;
@@ -13,7 +13,7 @@ END;
 
 BEGIN CHARACTERS;
 	TITLE  Character_Matrix;
-	DIMENSIONS  NCHAR=114;
+	DIMENSIONS  NCHAR=118;
 	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9";
 	CHARSTATELABELS 
 		1 Eye_angle /  diverging_posteriorly equilateral diverging_anteriorly,
@@ -32,8 +32,8 @@ BEGIN CHARACTERS;
 		14 Angle_of_sutures_as_they_cross_the_anterior_margin /  parralel converging,
 		15 Cephalic_sutures_with_marked_inward_curve_just_prior_to_cephalic_margin /  absent present,
 		16 'Glabella extent (length of glabella as proportion of cephalic length)' /  'extends_to_cephalon_anterior_[greater_than_75_percent]' 'extends_to_cephalon_midline_or_posterior_[less_than_or_equal_to_75_percent]',
-		17 Effacement_of_S3 /  S3_deeply_incised S3_effaced,
-		18 Effacement_of_S2 /  S2_deeply_incised S2_effaced,
+		17 Effacement_of_S2 /  S2_deeply_incised S2_effaced,
+		18 Effacement_of_S3 /  S3_deeply_incised S3_effaced,
 		19 Positioning_of_S2_&_S3 /  well_spaced 'S3_&_S2_close_together,_L3_expanded',
 		20 'Length of S3/S2' /  approximately_50_percent_of_glabella_width 'short,_approximately_25_percent_of_glabella_width',
 		21 Relationship_of_L1_to_glabella /  'part_of_glabella_(not_separated_by_S1)' 'detached_from_glabella_(S1_extends_to_occipital_ring,_separating_L1_from_glabella)' 'fully_merged_with_glabella_(S1_shallow_of_effaced)',
@@ -95,109 +95,113 @@ BEGIN CHARACTERS;
 		77 Degree_of_posteromedial_pygidial_indentation /  'gentle_(slight_indentation)' 'acute_(clear_indentation)',
 		78 Pygidium_with_pleural_spines_besides_macropleural_spines /  absent present,
 		79 Form_of_pygidial_pleural_spines /  spinous quadrate_or_lobate,
-		80 Number_of_axial_rings_in_pygidium /  '4/5' 3 2 '7/8' 22 14,
-		81 'Form of terminal ring in 4/5' /  fully_expressed 'suppressed,_partially_merged_with_terminal_piece',
-		82 'Size of pygidium in relation to cephalon (quantified via comparison of boxxed area plots)' /  'micropygous_[pygidium_occupies_less_than_23_percent_area_of_cephalon]_' 'isopygous_[pygidium_occupies_25"-"110_percent_area_of_cephalon]' 'macropygous_[greater_than_150_percent_area_of_cephalon]',
-		83 Degree_of_micropygosity /  'extreme_micropygosity_[0"-"5_percent]_' 'micropygous_[10"-"23_percent]',
-		84 Degree_of_isopygosity /  'extreme_subisopygosity_[25"-"32_percent]' 'subisopygous_[35"-"90_percent]' 'isopygous_[90"-"105_percent]',
-		85 Gross_pygidial_morphology /  'simple,_paddle-like_[broadest_at_posterior]' 'tail-like_[broadest_at_anterior_or_mid-point]',
-		86 Termination_of_pleural_grooves /  at_pygidial_boundary before_pygidial_boundary,
-		87 'Pygidial border (dorsal expression of ventral doublure) demarcated by visible groove' /  absent present,
-		88 Pygidial_border_developed_into_broad_pleural_fields /  absent present,
-		89 Pygidial_border_overturned_onto_inflated_pygidial_border /  absent present,
-		90 Interpleural_furrows_encroach_onto_demarcated_border /  absent present,
-		91 'Dense, unordered sculpture of scales/pustules' /  absent present,
-		92 Row_of_four_tubercles_on_each_axial_ring /  absent present,
-		93 Axial_tubercles_on_lateral_ribs_of_pleura /  present absent,
-		94 Row_of_tubercles_on_lateral_ribs_of_pleura /  absent present,
-		95 Terminal_piece_of_pygidium_compsed_of_axial_region_and_two_posteriorly_oriented_lappets /  absent present,
-		96 Form_of_lappets /  'long,_produced_into_spines' 'short,_reduced',
-		97 Early_protaspids_with_paired_posterior_spines /  absent present,
-		98 Fate_of_posterior_spines_by_end_of_protaspid_stage /  spines_retained_into_meraspid_stage spines_lost_during_protaspid_stage_,
-		99 Protaspids_with_posterior_medial_indentation /  absent present,
-		100 Form_of_glabella_in_protaspids /  'circumscribing_furrows_effaced,_glabella_comprising_a_globular_axial_structure_that_extends_for_length_of_cephalon_' 'tapering,_with_preglabellar_field_',
-		101 Protaspid_glabellar_segmentation /  subdued 'fully_traversing_glabella,_resembling_full_body_segmentation',
-		102 Position_of_initial_compound_eye_formation_in_early_protaspids /  'anterior_margin_[within_45_degrees_of_either_side_of_midline]' 'lateral_margin_[beyond_45_degrees_of_either_side_of_midline]',
-		103 Protaspid_eye_ridges /  fully_expressed suppressed,
-		104 Late_protaspid_stages_with_tubercular_swilling_on_occiiptial_ring /  absent present,
-		105 Protaspids_with_median_spines /  absent present,
-		106 Protaspids_with_anterior_spines /  absent present,
-		107 Protaspid_with_doublure_curved_inward_resulting_in_overall_globular_morphology /  absent present,
-		108 Meraspid_stages_with_coarse_tubercles_on_the_fixed_cheek /  absent present,
-		109 Meraspid_stages_with_a_row_of_tubercles_on_fixed_cheek_either_side_of_glabella /  absent present,
-		110 Meraspid_stages_with_three_pairs_of_tubercles_on_glabella /  absent present,
-		111 Spacing_of_three_glabellar_tubercle_pairs /  equilateral anterior_two_pairs_compressed_together_,
-		112 Meraspid_stages_with_row_of_short_spines_at_pygidium_fulcrum /  absent present,
-		113 Number_of_tubercles_on_fixed_cheek_row /  3 2,
-		114 Tubercle_on_eye_ridge_in_meraspid /  absent present ; 
+		80 80a._Axial_rings_in_pygidium,
+		81 Number_of_axial_rings_in_pygidium /  '4/5' 3 2 '7/8' 22 14,
+		82 'Form of terminal ring in 4/5' /  fully_expressed 'suppressed,_partially_merged_with_terminal_piece',
+		83 'Size of pygidium in relation to cephalon (quantified via comparison of boxxed area plots)' /  'micropygous_[pygidium_occupies_less_than_23_percent_area_of_cephalon]_' 'isopygous_[pygidium_occupies_25"-"110_percent_area_of_cephalon]' 'macropygous_[greater_than_150_percent_area_of_cephalon]',
+		84 Degree_of_micropygosity /  'extreme_micropygosity_[0"-"5_percent]_' 'micropygous_[10"-"23_percent]',
+		85 Degree_of_isopygosity /  'extreme_subisopygosity_[25"-"32_percent]' 'subisopygous_[35"-"90_percent]' 'isopygous_[90"-"105_percent]',
+		86 Gross_pygidial_morphology /  'simple,_paddle-like_[broadest_at_posterior]' 'tail-like_[broadest_at_anterior_or_mid-point]',
+		87 86a._Pleural_grooves,
+		88 Termination_of_pleural_grooves /  at_pygidial_boundary before_pygidial_boundary,
+		89 'Pygidial border (dorsal expression of ventral doublure) demarcated by visible groove' /  absent present,
+		90 Pygidial_border_developed_into_broad_pleural_fields /  absent present,
+		91 Pygidial_border_overturned_onto_inflated_pygidial_border /  absent present,
+		92 Interpleural_furrows_encroach_onto_demarcated_border /  absent present,
+		93 'Dense, unordered sculpture of scales/pustules' /  absent present,
+		94 Row_of_four_tubercles_on_each_axial_ring /  absent present,
+		95 Axial_tubercles_on_lateral_ribs_of_pleura /  present absent,
+		96 Row_of_tubercles_on_lateral_ribs_of_pleura /  absent present,
+		97 Terminal_piece_of_pygidium_compsed_of_axial_region_and_two_posteriorly_oriented_lappets /  absent present,
+		98 Form_of_lappets /  'long,_produced_into_spines' 'short,_reduced',
+		99 Early_protaspids_with_paired_posterior_spines /  absent present,
+		100 Fate_of_posterior_spines_by_end_of_protaspid_stage /  spines_retained_into_meraspid_stage spines_lost_during_protaspid_stage_,
+		101 Protaspids_with_posterior_medial_indentation /  absent present,
+		102 Form_of_glabella_in_protaspids /  'circumscribing_furrows_effaced,_glabella_comprising_a_globular_axial_structure_that_extends_for_length_of_cephalon_' 'tapering,_with_preglabellar_field_',
+		103 101a._Differentiated_protaspid_glabella,
+		104 Protaspid_glabellar_segmentation /  subdued 'fully_traversing_glabella,_resembling_full_body_segmentation',
+		105 Position_of_initial_compound_eye_formation_in_early_protaspids /  'anterior_margin_[within_45_degrees_of_either_side_of_midline]' 'lateral_margin_[beyond_45_degrees_of_either_side_of_midline]',
+		106 Protaspid_eye_ridges /  fully_expressed suppressed,
+		107 Late_protaspid_stages_with_tubercular_swilling_on_occiiptial_ring /  absent present,
+		108 Protaspids_with_median_spines /  absent present,
+		109 Protaspids_with_anterior_spines /  absent present,
+		110 Protaspid_with_doublure_curved_inward_resulting_in_overall_globular_morphology /  absent present,
+		111 Meraspid_stages_with_coarse_tubercles_on_the_fixed_cheek /  absent present,
+		112 Meraspid_stages_with_a_row_of_tubercles_on_fixed_cheek_either_side_of_glabella /  absent present,
+		113 Meraspid_stages_with_three_pairs_of_tubercles_on_glabella /  absent present,
+		114 Spacing_of_three_glabellar_tubercle_pairs /  equilateral anterior_two_pairs_compressed_together_,
+		115 Meraspid_stages_with_row_of_short_spines_at_pygidium_fulcrum /  absent present,
+		116 113a._Fixed_cheek_tubercles,
+		117 Number_of_tubercles_on_fixed_cheek_row /  3 2,
+		118 Tubercle_on_eye_ridge_in_meraspid /  absent present ; 
 	MATRIX
-	Aulacopleura_wulongensis           110000100000010111--10010000000-10011200-111010-100?????????20111012100000-0-0-1-01-11100000-00-11010101000010-001
-	Aulacopleura_konincki              110000100000010111--10010000000-10011200-111010-10000011011110111012100000-0-0-1-01-11100000-00-???????????010-001
-	Aulacopleura_longecornuta          010000000000010111--10010000000-10011100-111010-100?????????10111012100000-0-0-0101-11100000-00-??????????????????
-	Cyphaspis_dabrowni                 011101--0100010011--11011001001110011200-111111-110011110111??11???1101000-0-0-01???11101001010-??0101010000111111
-	Otarion_huddyi                     011101--0100210111--11010001001110011100-111111-11001111011141111011100000-0-0-011-111101001010-???????????0111111
-	Maurotarion_periergum              010000000100010111-01000-000001010011100-111011-10000111011130111011101000-0-0-0101-11100001010-??????????????????
-	Maurotarion_struszi                0100000001?0010111--1100-000001110011100-1110110100??????????1????????????????????????????????0-??0101010000110101
-	Brachymetopus_germanicus           011101--010----111--11010000001010012100-111111-100?????????50111021101000-0-0-5-1-111100001010-??????????????????
-	Rorringtonia_kennedyi              101000101100310100000000-000001010011100-000-0-00-0?????????50111011100000-0-0-3-1-111100100-00-??????????????????
-	Scharyia_micropyga                 101000000101110110-00000-100001010011100-111010-0-0?????????50111021100000-0-0-3-1-111100000-10-0-11010100000101-0
-	Bathyurellus_nitidus               101001--0110010010-111010000001010012100-000-0-00-0?????????50111010101000-0-0-3-1-111100000-00-???????????000-0-0
-	Bathyurus_ulu                      10?001--1110010010-000012000000-10012100-000-1000-0011100111??11???1100000-0-0-1-1-111100010-00-0-01010????000-?-0
-	Proetus_talenti                    101001--1110110011--11010000001010012100-000-1000-0011110111?011???0100000-0-0-3-???11100001100-0-110101000000-0-0
-	Phillipsia_belgica                 101001--11100100001111012000000-10012100-100-1000-001111011150111020101000-0-0-4-1-211100101110-??????????????????
-	Gerastos_tuberculatus_macrocensis  101001--1110010010-111010000000-10011200-00101000-0?????????50111010100000-0-0-3-1-111100001100-??????????????????
-	Tropidocoryphe_bassei              101001--1100110111--1000-100001010011110-000-0-00-0?????????50001021000000-0-0-3-1-111100100-00-??????????????????
-	Hintzecurus_paragenalatus          010100000000000100010000-000000-10001000-111010-100?????????51010010100000-0-0-0101-11100000-00-??110100000010-???
-	Politicurus_politus                010100000000300100010000-000001100000000-000-0-00-0?????????51010010100000-0-0-011-111100000-00-??????????????????
-	Toernquistia_sanchezae             001010000100010100000000-000001010011100-011010000010???11??51111011110010-0-0-1-01-11101010-00-111101100000110100
-	Dimeropyge_speyeri                 010101--0100210011--2-011000000-10011100-111111-10010???11??51111011110010-0-0-1-1-011101010-00-1111011000001101-0
-	Eoredlichia_intermedia             000000000000000000000000-000001000000000-000-0-00-00000-000000000000000000-0-0-0000-000---00-00-???????????000-0-0
-	Altiocculus_harrisi                110000000000010100000000-000000-10011200-000-0-10-0?????????10111012100100-0-0-2-00-11100000-00-??????????????????
-	Elrathia_kingii                    110000000000010100000000-000001010012200-000-0-10-0?????????30111012100100-100-0001-11100000-00-0-100000000000-0-0
-	Ehmaniella_apolabella              010000000000010100000000-000001010011200-000-0-10-0??????????0???????????0-0-0-2-???11100000-00-0-100000000000-0-0
-	Lermontovia_dzevanovskii           0000000000000001000000011000000-000111110000-0-00-0?????????10000001100000-0-0-0000-000---00-00-??????????????????
-	Modocia_kohli                      010000000000110100000000-000100-100120010000-0-00-0?????????30001011100000-000-0001-11100000-00-??????????????????
-	Marjumia_typa                      010000000000000100010000-000000-10011100-000-0-00-0?????????00000000100000-0-10001-0100---00-00-??????????????????
-	Olenus_wahlenbergi                 00001010000021010000000100000010000111011110-0-00-00000-000020000110100000-0-0-0001-10100000-00-10001000000100-0-0
-	Parabolina_spinulosa               01001000000021000000000100000010000111011110-0-00-00000-000040000110000000-0-100001-100---00-00-10001000000100-0-0
-	Leptoplastus_crassicorne           01001000000021000000000100000010000000011010-0-00-00000-000040000010000000-0-100001-100---00-00-10001000000000-0-0
-	Aphelaspis_brachyphasis            100001--00003101000000010000001000011100-000-0-00-00000-00004??????0100000-0-0-0001-10100000-00-10001000110100-0-0
-	Crepicephalus_buttsi_montanaensis  000010000000011100010000-000101010011000-002-2-00-0?00100000?????????????10110-1-1-011110000-00-0-100000000000-0-0
-	Coosella_prolifica                 010010100000311100000000-000100-10011200-000-0-00-0??????????????????????0-110-1-1-011110000-00-0-100000000000-0-0
-	Tricrepicephalus_taxanus           010000000001011100000000-000101010011100-002-0-00-0?????????4000101110000100-0-1-1-011100000-00-??????????????????
-	Solenopleura_canaliculata          010010000000310110-00000-010000-??????00-000-0-1??0??????????????????????0-100-3-???110---00-00-??????????????????
-	Paraselenopleura_gregaria          010010000000310110-00000-0100010010---00-000-2-00-0?????????00001010100000-0-0-0000-110---00-00-??????????????????
-	Kawina_arnoldi                     110011--00112100000000010000000-110---00-111010-0-001010001040021013100000-0-111-1-1100---00-011??????????????????
-	Anacheirurus_frederici             0100100000012100000000010000001010011100-111010-0-1000??00?040001010100000-0-101-1-1100---00-010??????????????????
-	Ceraurinella_typa                  0100100000012100000100012000001010011100-111010-1010101000004000101310000100-101-1-0100---00-010??????????????????
-	Ceraurinella_nahanniensis          0100100000012100000100012000001010011100-111010-101010100000??0010?310000100-101-1-0100---00-01110001000110100-0-0
-	Parapilekia_olesnaensis            010010000001210000000000-000001000010100-111010-0-100110000040000000100000-0-10001-1100---00-01-??????????????????
-	Calyptaulax_annulata               000001--00012100000001012000000-10011200-111010-0-00100-0000401110?0100010-0-0-3-1-1110---00-00-10001000110100-0-0
-	Flexicalymene_senaria              020011--0001210000000000-000000-10011200-111010-0-001010010040111000100010-0-0-3-1-0110---00-00-10001000110100-0-0
-	Isotelus_parvirugosus              010201--0000010011--2-010000000-110---00-000-0-00-00200-000150110033100000-0-0---2--1-0---00-00-1000----001000-0-0
-	Lopnorites_rectispicatus           010010100000010011--00010000000-100111011110-0-00-0?????????5011001010000110-0-3-1-111100000-00-??????????????????
-	Proceratopyge_promisca             0100101000000100000000010000000-100111011110-0-00-0?????????5011001010000110-0-3-1-111100000-00-??????????????????
-	Remopleurides_caelatus             100021--10003100000000010000000-00011100-010-0-00-00210-0001??10???3100000-1-1-1-???10100000-00-1000----111000-0-0
-	Remopleurides_eximius              100021--1000310011--2-010000000-00011100-010-0-00-00210-000140101013100000-1-1-1-00-10100000-00-??????????????????
-	Asaphus_expansus                   010211--0000010011--2-010000000-110---00-000-0-00-00200-000150110033100000-0-0-3-1-2110---00-00-??????????????????
-	Harpides_atlanticus                220000110002---100110010-000010-10012?00-000-0-00-0??????????0????????????????????????????????????????????????????
-	Eskoharpes_palanasus               120000110012---100010010-000111010112100-000-0-00-00000-0010???1????100000-??????00-1??????????-??000?00???000-0-0
-	Harpes_macrocephalus               120000110012---100010010-000111010112100-000-0-00-0?????????10111011100000-0-0-1-00-11100000-00-??????????????????
-	Eoharpes_benignensis               120000110012---100010010-000110-10112100-000-0-00-00000-001000111011100000-0-0-1-00-11100000-00-??????????????????
-	Entomaspis_radiatus                2200001100101--1000100010000110-10012100-002-2-00-00??0-00???????????????0-0-0-001-011100000-00-??????????????????
-	Holotrachelus_punctillosus         110010000011200011--000100000010110---00-000-0-00-001112001050021013100000-0-11001-1100---00-011??????????????????
+	Aulacopleura_wulongensis           110000100000010111--10010000000-10011200-111010-100?????????20111012100000-0-0-11-01-111100000-00-110110101000010-0101
+	Aulacopleura_konincki              110000100000010111--10010000000-10011200-111010-10000011011110111012100000-0-0-11-01-111100000-00-????????????010-0101
+	Aulacopleura_longecornuta          010000000000010111--10010000000-10011100-111010-100?????????10111012100000-0-0-10101-111100000-00-????????????????????
+	Cyphaspis_dabrowni                 011101--0100010011--11011001001110011200-111111-110011110111??11???1101000-0-0-101???111101001010-??011010100001111111
+	Otarion_huddyi                     011101--0100210111--11010001001110011100-111111-11001111011141111011100000-0-0-1011-1111101001010-????????????01111111
+	Maurotarion_periergum              010000000100010111--1000-000001010011100-111011-10000111011130111011101000-0-0-10101-111100001010-????????????????????
+	Maurotarion_struszi                0100000001?0010111--1100-000001110011100-111011-100??????????1??????????????????????????????????0-??011010100001101101
+	Brachymetopus_germanicus           011101--010?---111--11010000001010012100-111111-100?????????50111021101000-0-0-15-1-1111100001010-????????????????????
+	Rorringtonia_kennedyi              101000101100310100000000-000001010011100-000-0-00-0?????????50111011100000-0-0-13-1-1111100100-00-????????????????????
+	Scharyia_micropyga                 101000000101110101-00000-100001010011100-111010-0-0?????????50111021100000-0-0-13-1-1111100000-10-0-1110101000001010-0
+	Bathyurellus_nitidus               101001--0110010001-111010000001010012100-000-0-00-0?????????50111010101000-0-0-13-1-1111100000-00-????????????000-00-0
+	Bathyurus_ulu                      10?001--1110010001-000012000000-10012100-000-10-0-0011100111??11???1100000-0-0-11-1-1111100010-00-0-011010????000-?0-0
+	Proetus_talenti                    101001--1110110011--11010000001010012100-000-10-0-0011110111?011???0100000-0-0-13-???111100001100-0-1110101000000-00-0
+	Phillipsia_belgica                 101001--11100100001111012000000-10012100-100-10-0-001111011150111020101000-0-0-14-1-2111100101110-????????????????????
+	Gerastos_tuberculatus_macrocensis  101001--1110010001-111010000000-10011200-001010-0-0?????????50111010100000-0-0-13-1-1111100001100-????????????????????
+	Tropidocoryphe_bassei              101001--1100110111--1000-100001010011110-000-0-00-0?????????50001021000000-0-0-13-1-1111100100-00-????????????????????
+	Hintzecurus_paragenalatus          010100000000000100010000-000000-10001000-111010-100?????????51010010100000-0-0-10101-111100000-00-??1110100000010-????
+	Politicurus_politus                010100000000300100010000-000001100000000-000-0-00-0?????????51010010100000-0-0-1011-1111100000-00-????????????????????
+	Toernquistia_sanchezae             001010000100010100000000-000001010011100-011010-10010???11??51111011110010-0-0-11-01-111101010-00-11111011000001101100
+	Dimeropyge_speyeri                 010101--0100210011--2-011000000-10011100-111111-10010???11??51111011110010-0-0-11-1-0111101010-00-111110110000011010-0
+	Eoredlichia_intermedia             000000000000000000000000-000001000000000-000-0-00-00000-000000000000000000-0-0-10000-0100---00-00-????????????000-00-0
+	Altiocculus_harrisi                110000000000010100000000-000000-10011200-000-0-10-0?????????10111012100100-0-0-12-00-111100000-00-????????????????????
+	Elrathia_kingii                    110000000000010100000000-000001010012200-000-0-10-0?????????30111012100100-100-10001-111100000-00-0-1010000000000-00-0
+	Ehmaniella_apolabella              010000000000010100000000-000001010011200-000-0-10-0??????????0???????????0-0-0-12-???111100000-00-0-1010000000000-00-0
+	Lermontovia_dzevanovskii           0000000000000001000000011000000-000111110000-0-00-0?????????10000001100000-0-0-10000-0100---00-00-????????????????????
+	Modocia_kohli                      010000000000110100000000-000100-100120010000-0-00-0?????????30001011100000-??0-10001-111100000-00-????????????????????
+	Marjumia_typa                      010000000000000100010000-000000-10011100-000-0-00-0?????????00000000100000-0-101001-01100---00-00-????????????????????
+	Olenus_wahlenbergi                 00001010000021010000000100000010000111011110-0-00-00000-000020000110100000-0-0-10001-110100000-00-100011000000100-00-0
+	Parabolina_spinulosa               01001000000021000000000100000010000111011110-0-00-00000-000040000110000000-0-1010001-1100---00-00-100011000000100-00-0
+	Leptoplastus_crassicorne           01001000000021000000000100000010000000011010-0-00-00000-000040000010000000-0-1010001-1100---00-00-100011000000000-00-0
+	Aphelaspis_brachyphasis            100001--00003101000000010000001000011100-000-0-00-00000-00004??????0100000-0-0-10001-110100000-00-100011000110100-00-0
+	Crepicephalus_buttsi_montanaensis  000010000000011100010000-000101010011000-002-2-00-0?00100000?????????????10110-11-1-0111110000-00-0-1010000000000-00-0
+	Coosella_prolifica                 010010100000311100000000-000100-10011200-000-0-00-0??????????????????????0-110-11-1-0111110000-00-0-1010000000000-00-0
+	Tricrepicephalus_taxanus           010000000001011100000000-000101010011100-002-0-00-0?????????4000101110000100-0-11-1-0111100000-00-????????????????????
+	Solenopleura_canaliculata          010010000000310101-00000-010000-??????00-000-0-1??0??????????????????????0-100-13-???1110---00-00-????????????????????
+	Paraselenopleura_gregaria          010010000000310101-00000-0100010010---00-000-2-00-0?????????00001010100000-0-0-10000-1110---00-00-????????????????????
+	Kawina_arnoldi                     110011--00112100000000010000000-110---00-111010-0-001010001040021013100000-0-1111-1-11100---00-011????????????????????
+	Anacheirurus_frederici             0100100000012100000000010000001010011100-111010-0-1000??00?040001010100000-0-1011-1-11100---00-010????????????????????
+	Ceraurinella_typa                  0100100000012100000100012000001010011100-111010-1010101000004000101310000100-1011-1-01100---00-010????????????????????
+	Ceraurinella_nahanniensis          0100100000012100000100012000001010011100-111010-101010100000??0010?310000100-1011-1-01100---00-011100011000110100-00-0
+	Parapilekia_olesnaensis            010010000001210000000000-000001000010100-111010-0-100110000040000000100000-0-101001-11100---00-01?????????????????????
+	Calyptaulax_annulata               000001--00012100000001012000000-10011200-111010-0-00100-0000401110?0100010-0-0-13-1-11110---00-00-100011000110100-00-0
+	Flexicalymene_senaria              020011--0001210000000000-000000-10011200-111010-0-001010010040111000100010-0-0-13-1-01110---00-00-100011000110100-00-0
+	Isotelus_parvirugosus              010201--0000010011--2-010000000-110---00-000-0-00-00200-000150110033100000-0-0-0--2--10-0---00-00-10000----001000-00-0
+	Lopnorites_rectispicatus           010010100000010011--00010000000-100111011110-0-00-0?????????5011001010000110-0-13-1-1111100000-00-????????????????????
+	Proceratopyge_promisca             0100101000000100000000010000000-100111011110-0-00-0?????????5011001010000110-0-13-1-1111100000-00-????????????????????
+	Remopleurides_caelatus             100021--10003100000000010000000-00011100-010-0-00-00210-0001??10???3100000-1?1211-???110100000-00-10000----111000-00-0
+	Remopleurides_eximius              100021--1000310011--2-010000000-00011100-010-0-00-00210-000140101013100000-1?1211-00-110100000-00-????????????????????
+	Asaphus_expansus                   010211--0000010011--2-010000000-110---00-000-0-00-00200-000150110033100000-0-0-13-1-21110---00-00-????????????????????
+	Harpides_atlanticus                220000110002---100110010-000010-10012?00-000-0-00-0??????????0????????????????????????????????????????????????????????
+	Eskoharpes_palanasus               120000110012---100010010-000111010112100-000-0-00-00000-0010???1????100000-???????00-1??????????????0010?00???000-00-0
+	Harpes_macrocephalus               120000110012---100010010-000111010112100-000-0-00-0?????????10111011100000-0-0-11-00-111100000-00-????????????????????
+	Eoharpes_benignensis               120000110012---100010010-000110-10112100-000-0-00-00000-001000111011100000-0-0-11-00-111100000-00-????????????????????
+	Entomaspis_radiatus                2200001100101--1000100010000110-10012100-002-2-00-00??0-00???????????????0-0-0-1001-0111100000-00-????????????????????
+	Holotrachelus_punctillosus         110010000011200011--000100000010110---00-000-0-00-001112001050021013100000-0-111001-11100---00-011????????????????????
 
 ;
 
 END;
 BEGIN ASSUMPTIONS;
 	OPTIONS DEFTYPE = unord PolyTcount = MINSTEPS;
-	TYPESET * UNTITLED   =  unord:  1- 114;
+	TYPESET * UNTITLED   =  unord:  1- 118;
 
 END;
 
 BEGIN MESQUITECHARMODELS;
-	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 114;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 118;
 END;
 
 BEGIN TREES;
@@ -340,11 +344,54 @@ BEGIN SETS;
 
 END;
 
+BEGIN NOTES;
+
+	TEXT   TAXON = 55 CHARACTER = 6 TEXT = Was_1;
+
+	TEXT   TAXON = 8 CHARACTER = 12 TEXT = 'Was -';
+
+	TEXT   TAXON = 6 CHARACTER = 20 TEXT = Was_0;
+
+	TEXT   TAXON = 7 CHARACTER = 48 TEXT = Was_0;
+	TEXT   TAXON = 12 CHARACTER = 48 TEXT = Was_0;
+	TEXT   TAXON = 13 CHARACTER = 48 TEXT = Was_0;
+	TEXT   TAXON = 14 CHARACTER = 48 TEXT = Was_0;
+	TEXT   TAXON = 15 CHARACTER = 48 TEXT = Was_0;
+	TEXT   TAXON = 19 CHARACTER = 48 TEXT = Was_0;
+
+	TEXT   TAXON = 19 CHARACTER = 49 TEXT = Was_0;
+
+	TEXT   TAXON = 26 CHARACTER = 76 TEXT = Was_0;
+
+	TEXT   TAXON = 26 CHARACTER = 77 TEXT = Was_0;
+	TEXT   TAXON = 47 CHARACTER = 77 TEXT = 'Was -';
+	TEXT   TAXON = 48 CHARACTER = 77 TEXT = 'Was -';
+
+	TEXT   TAXON = 47 CHARACTER = 79 TEXT = 'was -';
+	TEXT   TAXON = 48 CHARACTER = 79 TEXT = 'was -';
+
+	TEXT   TAXON = 41 CHARACTER = 98 TEXT = 'Was -';
+	TEXT   TAXON = 51 CHARACTER = 98 TEXT = 'Was -';
+
+	TEXT   TAXON = 44 CHARACTER = 104 TEXT = 'Was -';
+	TEXT   TAXON = 47 CHARACTER = 104 TEXT = 'Was -';
+
+	TEXT   TAXON = 44 CHARACTER = 105 TEXT = 'Was -';
+	TEXT   TAXON = 47 CHARACTER = 105 TEXT = 'Was -';
+
+	TEXT   TAXON = 44 CHARACTER = 106 TEXT = 'Was -';
+	TEXT   TAXON = 47 CHARACTER = 106 TEXT = 'Was -';
+
+	TEXT   TAXON = 44 CHARACTER = 107 TEXT = 'Was -';
+	TEXT   TAXON = 47 CHARACTER = 107 TEXT = 'Was -';
+
+END;
+
 Begin MESQUITE;
 		MESQUITESCRIPTVERSION 2;
 		TITLE AUTO;
 		tell ProjectCoordinator;
-		timeSaved 1608328831003;
+		timeSaved 1630559886009;
 		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
 		tell It;
 			setID 0 5659161149118404726;
@@ -356,8 +403,12 @@ Begin MESQUITE;
 		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
 		tell It;
 			setID 0 2123490003574049976;
+			tell It;
+				setDefaultOrder  0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 17 16 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 77 78 79 80 81 82 83 84 85 86 87 89 89 90 91 92 93 94 95 96 97 98 99 100 101 103 102 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118;
+				attachments ;
+			endTell;
 			mqVersion 360;
-			checksumv 0 3 4013483308 null  getNumChars 114 numChars 114 getNumTaxa 55 numTaxa 55   short true   bits 63   states 63   sumSquaresStatesOnly 32671.0 sumSquares 32671.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			checksumv 0 3 2161134466 null  getNumChars 118 numChars 118 getNumTaxa 55 numTaxa 55   short true   bits 63   states 63   sumSquaresStatesOnly 33237.0 sumSquares 33237.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
 			mqVersion;
 		endTell;
 		getWindow;
@@ -370,7 +421,7 @@ Begin MESQUITE;
 			setFontIncAnnot 0;
 			setFontIncExp 0;
 			setSize 1436 671;
-			setLocation 464 104;
+			setLocation 4 52;
 			setFont SanSerif;
 			setFontSize 10;
 			getToolPalette;
@@ -393,13 +444,12 @@ Begin MESQUITE;
 					setFontIncAnnot 0;
 					setFontIncExp 0;
 					setSize 1336 599;
-					setLocation 464 104;
+					setLocation 4 52;
 					setFont Gadget;
 					setFontSize 16;
 					getToolPalette;
 					tell It;
 					endTell;
-					setActive;
 				endTell;
 				showWindow;
 				getEmployee #mesquite.lists.ColorTaxon.ColorTaxon;
@@ -432,7 +482,7 @@ Begin MESQUITE;
 					setFontIncAnnot 0;
 					setFontIncExp 0;
 					setSize 1336 599;
-					setLocation 464 104;
+					setLocation 4 52;
 					setFont Gadget;
 					setFontSize 16;
 					getToolPalette;
@@ -552,20 +602,21 @@ Begin MESQUITE;
 					setFontIncAnnot 0;
 					setFontIncExp 0;
 					setSize 1336 599;
-					setLocation 464 104;
+					setLocation 4 52;
 					setFont Gadget;
 					setFontSize 14;
 					getToolPalette;
 					tell It;
 						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
 					endTell;
+					setActive;
 					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
 					colorCells  #mesquite.charMatrices.NoColor.NoColor;
 					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
 					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
 					colorText  #mesquite.charMatrices.NoColor.NoColor;
 					setBackground White;
-					toggleShowNames on;
+					toggleShowNames off;
 					toggleShowTaxonNames on;
 					toggleTight off;
 					toggleThinRows off;
@@ -632,6 +683,38 @@ Begin MESQUITE;
 				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
 				tell It;
 					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			showCharacters #2123490003574049976 #mesquite.lists.CharacterList.CharacterList;
+			tell It;
+				setData 0;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.DefaultCharOrder.DefaultCharOrder;
+					newAssistant  #mesquite.lists.CharListInclusion.CharListInclusion;
+					newAssistant  #mesquite.lists.CharListPartition.CharListPartition;
+					newAssistant  #mesquite.parsimony.CharListParsModels.CharListParsModels;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1336 599;
+					setLocation 4 52;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.CharListAnnotPanel.CharListAnnotPanel;
+				tell It;
+					togglePanel off;
 				endTell;
 			endTell;
 		endTell;
