@@ -362,3 +362,15 @@ bootstrapped <- data_vector[ceiling(length(data_vector)*runif(length(data_vector
 return(data.frame(mean=as.numeric(mean(bootstrapped)),median=as.numeric(median(bootstrapped))));
 }
 
+accersi_distance_for_one_taxon_from_every_other <- function(single_taxon,all_others,UNKNOWN=-11,INAP=-22)	{
+nchars <- ncol(all_others);
+ootus <- nrow(all_others);
+single_applicable <- (1:nchars)[!single_taxon %in% c(UNKNOWN,INAP)];
+distances <- vector(length=ootus);
+for (nn in 1:ootus)	{
+	other_applicable <- (1:nchars)[!all_others[nn,] %in% c(UNKNOWN,INAP)];
+	applicable <- single_applicable[single_applicable %in% other_applicable];
+	distances[nn] <- sum(single_taxon[applicable]!=all_others[nn,applicable]);
+	}	
+return(distances);
+}
