@@ -31,22 +31,18 @@ data_file <- file.choose();															# choose a nexus file
 matrix_name <- strsplit(data_file,"/")[[1]][length(strsplit(data_file,"/")[[1]])];	# get file name alone
 character_info <- accersi_data_from_nexus_file(data_file);							# get information about nexus file
 chmatrix <- character_info$Matrix;													# get character data
-notu <- nrow(chmatrix);
-nchars <- ncol(chmatrix);															# total characters
-nstates <- character_info$States;
-chtypes <- character_info$State_Types;
-#chmatrix <- chmatrix[!(1:notu) %in% character_info$Outgroup,];
+notu <- nrow(chmatrix);				nchars <- ncol(chmatrix);															# total characters
+nstates <- character_info$States;	chtypes <- character_info$State_Types;	nchars <- length(character_info$States);
 
 # Get Dependent - Independent Pairs ####
 dchar <- unique(which(chmatrix==INAP,arr.ind=T)[,2]);								# separate characters with inapplicables
 independents <- (1:nchars);
 # get the "parent" character upon which each dependent character depends
+#for (dc in 1:length(dchar))	dd <- find_independent_character(dchar=dchar[dc],independents,chmatrix,UNKNOWN,INAP);
 parent_chars <- pbapply::pbsapply(dchar,find_independent_character,independents,chmatrix,UNKNOWN,INAP);
-#for (dc in 1:length(dchar))	nn <- find_independent_character(dchar=dchar[dc],independents,chmatrix,UNKNOWN,INAP);
-#find_independent_character(51,independents,chmatrix,UNKNOWN,INAP);
 # create data.frame with additive characters, with dependent & independent.
 additives <- data.frame(dependents=as.numeric(dchar),independents=as.numeric(parent_chars));
-
+#unique(chmatrix[,c(46:48)])
 # Get the Unique Character State combinations & recodings ####
 unique_indies <- unique(additives$independents[additives$independents>0]);
 unique_indies <- unique_indies[!unique_indies %in% additives$dependents];
@@ -61,13 +57,20 @@ for (ui in 1:length(unique_indies))	{
 		dep_chars <- sort(c(dep_chars,new_deps));
 		tag_alongs <- additives$dependents[additives$independents %in% new_deps];
 		}
-	secondary_dependencies <- c(ind_char,additives$independents[match(dep_chars,additives$dependents)])
+	char_dependencies <- c(ind_char,additives$independents[match(dep_chars,additives$dependents)])
 	combos <- unique(chmatrix[,c(ind_char,dep_chars)]);
 	combos <- combos[!(rowMaxs(combos)==UNKNOWN & rowMins(combos)==UNKNOWN),];
 	out_states <- unique(chmatrix[chmatrix[,dep_chars[1]]==INAP,ind_char]);
-	chmatrix[chmatrix[,ind_char] %in% out_states,dep_chars] <- INAP;
-
-	redone <- rlist::list.append(redone,transmogrify_additive_dependents_to_multistate(ind_char,dep_chars,chmatrix,secondary_dependencies=secondary_dependencies,INAP=INAP,UNKNOWN=UNKNOWN,theoretical=T));
+	accidental_unknowns <- which(chmatrix[chmatrix[,ind_char] %in% out_states,dep_chars]==UNKNOWN,arr.ind = T);
+	if (length(accidental_unknowns)>0)	{
+		if (!is.matrix(accidental_unknowns))	accidental_unknowns <- array(accidental_unknowns,dim=c(1,2));
+		for (au in 1:nrow(accidental_unknowns))	{
+			fch <- c(ind_char,dep_chars)[accidental_unknowns[2]];
+			chmatrix[accidental_unknowns[1],fch] <- INAP;
+			}
+		}
+	
+	redone <- rlist::list.append(redone,transmogrify_additive_dependents_to_multistate(ind_char,dep_chars,chmatrix,char_dependencies,INAP,UNKNOWN));
 	}
 names(redone) <- unique_indies;
 
@@ -103,37 +106,30 @@ while (ti < length(tacit_indies))	{
 	}
 names(redone_2) <- tacit_indies;
 names(redone_all) <- c(names(redone),names(redone_2));
-order(as.numeric(names(redone_all)))
+#order(as.numeric(names(redone_all)))
 redone_all <- redone_all[order(as.numeric(names(redone_all)))];
 #names(redone_all)
+new_matrix <- array("",dim=c(notu,length(redone_all)));
+for (ui in 1:ncol(new_matrix))	new_matrix[,ui] <- redone_all[[ui]]$new_character;
+colnames(new_matrix) <- names(redone_all);
 
 chmatrix_recoded <- convert_character_matrix_to_character(chmatrix);
-nchars <- ncol(chmatrix);
-max_states <- max(character_info$States);
-rstates <- nstates;
-names(rstates) <- 1:nchars;
-# go through all characters; do the routine below for those with coded independents;
-#		just swap out character vector for those with tacit independents
-for (ui in length(unique_indies):1)	{
-	rchar <- ncol(chmatrix_recoded);
-	ind_char <- unique_indies[ui];
-	dep_chars <- additives$dependents[additives$independents==ind_char];
-	tag_alongs <- additives$dependents[additives$independents %in% dep_chars];
-	dep_chars <- sort(c(dep_chars,tag_alongs));
-	while (length(tag_alongs)>0)	{
-		new_deps <- additives$dependents[additives$independents %in% tag_alongs];
-		dep_chars <- sort(c(dep_chars,new_deps));
-		tag_alongs <- additives$dependents[additives$independents %in% new_deps];
-		}
-	garbo <- (1:rchar)[!(1:rchar) %in% c((1:ind_char),dep_chars)];
-	greta <- (1:rchar)[!(1:rchar) %in% c(garbo,ind_char,dep_chars)];
-	chmatrix_recoded <- cbind(chmatrix_recoded[,greta],redone[[ui]]$new_character,chmatrix_recoded[,garbo]);
-	max_states <- max(max_states,nrow(redone[[ui]]$Q));
-	rstates <- c(rstates[greta],nrow(redone[[ui]]$Q),rstates[garbo]);
-	}
+replacements <- match(as.numeric(colnames(new_matrix)),as.numeric(colnames(chmatrix_recoded)));
+orig_colnames <- colnames(chmatrix_recoded);
+chmatrix_recoded[,replacements] <- new_matrix;
+retentions <- (1:nchars)[!(1:nchars) %in% additives$dependents];
+chmatrix_recoded <- chmatrix_recoded[,retentions];
 
-colnames(chmatrix_recoded) <- names(rstates);
 rchars <- ncol(chmatrix_recoded);
+names(nstates) <- 1:nchars;
+rstates <- nstates[names(nstates) %in% as.numeric(colnames(chmatrix_recoded))];
+additives$independents[additives$independents==0] <- additives$dependents[additives$independents==0];
+
+for (ai in 1:length(redone_all))	{
+	rs <- match(as.numeric(names(redone_all)[ai]),names(rstates));
+	rstates[rs] <- nrow(redone_all[[ai]]$Q);
+	}
+max_states <- max(rstates);
 
 matrix_name_parts <- strsplit(matrix_name,"_")[[1]];
 coauthor_split <- match("&",matrix_name_parts);
@@ -191,6 +187,35 @@ for (nn in 1:length(redone))	{
 	new_file_name_b <- gsub("Dummy",paste("Q_Matrix",greek_to_me[nn],sep="_"),revbayes_file_name);
 	new_file_name_b <- gsub(".nex",".txt",new_file_name_b);
 	write.table(redone[[nn]]$Q,new_file_name_b,sep="\t");
+	}
+
+nchars <- ncol(chmatrix);
+max_states <- max(character_info$States);
+rstates <- nstates;
+names(rstates) <- 1:nchars;
+# go through all characters; do the routine below for those with coded independents;
+#		just swap out character vector for those with tacit independents
+testing <- c();
+for (ui in length(unique_indies):1)	{
+	testing <- cbind(redone_all[[ui]]$new_character,testing);
+	colnames(testing) <- names(redone_all[length(unique_indies):ui]);
+	rchar <- ncol(chmatrix_recoded);
+	ind_char <- unique_indies[ui];
+	dep_chars <- additives$dependents[additives$independents==ind_char];
+	tag_alongs <- additives$dependents[additives$independents %in% dep_chars];
+	dep_chars <- sort(c(dep_chars,tag_alongs));
+	while (length(tag_alongs)>0)	{
+		new_deps <- additives$dependents[additives$independents %in% tag_alongs];
+		dep_chars <- sort(c(dep_chars,new_deps));
+		tag_alongs <- additives$dependents[additives$independents %in% new_deps];
+		}
+	garbo <- (1:rchar)[!(1:rchar) %in% c((1:ind_char),dep_chars)];
+	greta <- (1:rchar)[!(1:rchar) %in% c(garbo,ind_char,dep_chars)];
+	new_charnames <- colnames(chmatrix_recoded)[c(greta,ind_char,garbo)];
+	chmatrix_recoded <- cbind(chmatrix_recoded[,greta],redone_all[[ui]]$new_character,chmatrix_recoded[,garbo]);
+	max_states <- max(max_states,nrow(redone_all[[ui]]$Q));
+	rstates <- c(rstates[greta],nrow(redone_all[[ui]]$Q),rstates[garbo]);
+	names(rstates) <- colnames(chmatrix_recoded) <- new_charnames;
 	}
 
 {}
