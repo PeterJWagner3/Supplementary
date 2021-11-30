@@ -1,0 +1,262 @@
+#NEXUS
+[written Tue Sep 07 13:59:05 MDT 2021 by Mesquite  version 3.6 (build 917) at DESKTOP-HJI4EG6/192.168.0.17]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=23;
+	TAXLABELS
+		Paroxacron_valdense Paroxacron_bergeri Oxacron_courtoisii Plesiomeryx_huerzeleri Plesiomeryx_cadurcensis Caenomeryx_procommunis Caenomeryx_filholi Cainotherium_laticurvatum Robiacina_minuta Robiacina_quercyi Robiacina_lavergnensis Dacrytherium_ovinum Anoplotherium_latipes Mixtotherium_cuspidatum Parvitragulus_priscus Lophiomeryx_chalaniati Archaeomeryx_optatus Amphimeryx_murinus Xiphodon_castrense Paratoceras_coatesi_ Eotylopus_reedi Dichobune_leporina Eurodexis_russelli 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  'Matrix in file "tjsp_a_1645754_sm4372.nex"';
+	DIMENSIONS  NCHAR=73;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3";
+	CHARSTATELABELS 
+		1 Lower_incisors /  one_endocristulid two_endocristulids,
+		2 Lower_canine /  caniniform incisiform,
+		3 'Diastema between C-P1/' /  absence presence,
+		4 'Diastema between P1/-P2/' /  absence presence,
+		5 'Diastema between P/1-P/2' /  absent_to_reduced short_to_important,
+		6 'Diastema between P/2-P/3' /  absent_to_reduced short_to_important,
+		7 'Upper M: styles, crests' /  absence presence,
+		8 'Upper M: parastyle, size' /  'very large, superior to other styles' 'large, like other styles',
+		9 'Upper M: mesostyle' /  absence presence,
+		10 'Upper M: mesostyle, shape' /  looped pinched,
+		11 'Upper M: position of the protocone (A)' /  mesial subcentral distal,
+		12 'M1/-M2/: hypocone' /  absence presence,
+		13 'Upper M: paraconule' /  absence presence,
+		14 'Upper M: paraconule, size' /  small large,
+		15 'Upper M: preprotocrista and paraconule, junction' /  absence presence,
+		16 'Upper M: metaconule, size' /  small large,
+		17 'M3/: position of protocone relative to mesial or distal lingual cusp (bucco-lingual axis)' /  at_the_same_level protocone_more_lingual,
+		18 'Upper M: cingulum surrounding the protocone (A)' /  absent_to_very_weak weak wide very_wide,
+		19 'Upper M: dilambdodonty' /  absence presence,
+		20 'Upper M: dilambdodonty, type' /  'strong, with crests weakly oblique and pronounced' 'very strong, with crests very oblique and pronounced',
+		21 'Upper M: premetacristula' /  absence presence,
+		22 'Upper M: premetacristula, length' /  short 'long, extend into the central valley',
+		23 'Upper M: premetacristula, shape' /  continuous discontinuous,
+		24 'Upper M: postmetacristula and metastyle, junction' /  absence presence,
+		25 'Upper M: preparacrista, length' /  as_long_as_the_postparacrista shorter_than_postparacrista,
+		26 'Upper M: postprotocrista' /  absent_to_reduced long,
+		27 'Upper M: postprotocrista, direction' /  'disto-buccally directed' distally_directed,
+		28 'Upper M: postprotocrista, bifurcation' /  absence presence,
+		29 'Upper M: postparacristula' /  absence presence,
+		30 'Upper M: postparacristula long and joins preprotocrista in the center of the tooth' /  absence presence,
+		31 'Upper M: shape (A)' /  triangular subtriangular quadrangular,
+		32 'Upper M: elongated bucco-lingually' /  absence presence,
+		33 'Lower M: metaconulid' /  absence presence,
+		34 'Lower M: metaconulid, size (A)' /  small medium 'large (like other cuspids)',
+		35 'Lower M: metaconulid and metaconid, linked' /  absence presence,
+		36 'Lower M: metastylid' /  absence presence,
+		37 'M/3: hypoconulid in basin-shape' /  absence presence,
+		38 'M/1-M/2: hypoconulid' /  absence presence,
+		39 'Lower M: entoconid in ‘loop-like’' /  absence presence,
+		40 'Lower M: entoconid and hypoconid, relative position (mesio-distal axis) (A)' /  'opposed, to entoconid more mesial' entoconid_slightly_more_distal entoconid_very_distal,
+		41 'Lower M: valley between entoconid and metaconid or metaconulid' /  absence presence,
+		42 'Lower M: paraconid' /  absent_to_small large,
+		43 'Lower M: prehypocristid, fused (cusp or crest)' /  absence presence,
+		44 'Lower M: prehypocristid (oblique cristid), junction with (NA)' /  postprotocristid metaconulid_or_metastylid preentocristid postprotocristid_then_preentocristid,
+		45 'Lower M: prehypocristid' /  straight_to_convex_buccally concave_buccallly,
+		46 'Lower M: postprotocristid and postmetacristid, fused' /  absence presence,
+		47 'Lower M: neotrigonid (Centroconulid + Postendocentrocristulid)' /  absence presence,
+		48 'M/3: prehypocristulid, fused (cusp or crest)' /  absence presence,
+		49 'M/3: prehypocristulid, junction with' /  posthypocristid_ posthypocristid_and_postentocristid,
+		50 'M/3: posthypocristulid' /  absence presence,
+		51 'M/3: posthypocristulid, inclined' /  'mesio-buccally' 'mesio-distally',
+		52 'Lower M: hypolophid' /  absence presence,
+		53 'Lower M: straight buccal wall' /  absence presence,
+		54 'P4/: metacone' /  absence presence,
+		55 'P4/: paracone et metacone, individualized' /  absence presence,
+		56 'P4/: paracone and protocone, level' /  at_the_same_level protocone_more_mesial paracone_more_mesial,
+		57 'P4/: postprotocrista' /  absent_to_reduced long,
+		58 'P3/-P4/: styles, crests' /  absence presence,
+		59 'P3/: metacone' /  absence presence,
+		60 'P3/: metacone and paracone, relative size' /  metacone_smaller_than_paracone 'metacone and paracone sub-equal',
+		61 'P3/: triangular' /  absence presence,
+		62 'P3/: mesial lobe, very elongated' /  absence presence,
+		63 'P3/: protocone, mesio-distal width' /  small large,
+		64 'P2/: protocone' /  absence presence,
+		65 'P/3: metaconid (visible groove)' /  absence presence,
+		66 'P/3: entoconid' /  absence presence,
+		67 'P/2-P/3: hypoconid' /  absent_to_small large,
+		68 'Lower P : postprotoconulid' /  absence presence,
+		69 'Lower P : postprotoconulid, size' /  very_small small_to_large,
+		70 'P/1: roots' /  uniradiclated biradiculated,
+		71 'P/1: shape' /  caniniform premolariform,
+		72 'P: cingulum/id pronounced' /  absence presence,
+		73 'Lower P:  large premolars with strong main cusp' /  absence presence ; 
+	MATRIX
+	Paroxacron_valdense        11010101102011011111100101101010120000121011011110-0010111111100000101100
+	Paroxacron_bergeri         ?10000011120110111111001011010201200???2?0??????????010111111100??0??1100
+	Oxacron_courtoisii         11010101102010011111100101101010120000121011011110-0010111111000000101000
+	Plesiomeryx_huerzeleri     11101001112010011111100101101120120000121011011110-0010011111011000110101
+	Plesiomeryx_cadurcensis    ?1101001112010011111100101101120120000121011011110-0010011111011000110101
+	Caenomeryx_procommunis     11101011112011011111100101101121120000121011011110-0010011111011000110101
+	Caenomeryx_filholi         ??101011112011011111100101101121120000121011011110-0010011111011000110101
+	Cainotherium_laticurvatum  11000011112011010111100101101120120000120011011110-0010011110000000110111
+	Robiacina_minuta           ?1??0100111010111010111111000-101010111110110101110001000011100?100100100
+	Robiacina_quercyi          ?100??10111010111010111110-00-1010101111101101011100010000111000??0????00
+	Robiacina_lavergnensis     ?0????10111010111210100110-00-101110111110100101110001011111101?100??0?00
+	Dacrytherium_ovinum        01000010110011110210100100-00-20111011111011010111000100111000111010-?111
+	Anoplotherium_latipes      ??00001011001111?210100100-00-201110??1111110101???00100111000111010-??11
+	Mixtotherium_cuspidatum    ?0000010110010110210110100-00-200--10110000-110111000110011010110010-?101
+	Parvitragulus_priscus      ????10110-000--1000-11010100--200--0000000130101011011101110101110?0-0000
+	Lophiomeryx_chalaniati     ????101111000--1031011010100--200--001000012010100-000-0101001111010-0010
+	Archaeomeryx_optatus       ?1--101111000--1031011010100--200--00?0000120101010000-111101110?010-0000
+	Amphimeryx_murinus         ??????011100110112111001010010200--00100000-110110-00100101?110????0-????
+	Xiphodon_castrense         ?????0101100110102101001010010200--0000000120100-1001100101?000?0100-??10
+	Paratoceras_coatesi_       ????101111000--1120-10000100--200--00000000-0000-10000-0101000000100-0011
+	Eotylopus_reedi            0111100111000--1110-10000101--200--00000000-0000-10000-0101000100100-0111
+	Dichobune_leporina         ????11010-011101130-0--100-00-200--0?1001?0-010100-101121????????000-0??0
+	Eurodexis_russelli         ??????010-101010130-0--101000-000--00100010-0101010000-0000-100?????-????
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	OPTIONS DEFTYPE = UNORD POLYTCOUNT = MINSTEPS;
+	TYPESET * UNTITLED   =  unord:  1- 10 12- 17 19- 30 32- 33 35- 39 41- 73, ord:  11 18 31-34\3 40;
+TYPESET default   =  unord:  1- 10 12- 17 19- 30 32- 33 35- 39 41- 73, ord:  11 18 31-34\3 40;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 73;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1631044745109;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 591933584675067090;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 6222767383292092721;
+			mqVersion 360;
+			checksumv 0 3 2320931599 null  getNumChars 73 numChars 73 getNumTaxa 23 numTaxa 23   short true   bits 15   states 15   sumSquaresStatesOnly 4581.0 sumSquares 4581.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 700 464;
+			setLocation 8 8;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #6222767383292092721 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 600 392;
+					setLocation 8 8;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+
