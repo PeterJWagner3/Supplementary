@@ -112,6 +112,7 @@ redone_all <- redone_all[order(as.numeric(names(redone_all)))];
 new_matrix <- array("",dim=c(notu,length(redone_all)));
 for (ui in 1:ncol(new_matrix))	new_matrix[,ui] <- redone_all[[ui]]$new_character;
 colnames(new_matrix) <- names(redone_all);
+rownames(new_matrix) <- character_info$OTUs;
 
 chmatrix_recoded <- convert_character_matrix_to_character(chmatrix);
 replacements <- match(as.numeric(colnames(new_matrix)),as.numeric(colnames(chmatrix_recoded)));
@@ -148,6 +149,7 @@ if (is.na(coauthor_split) & is.na(etal_split) & is.na(hyphen_split))	{
 scribio_nexus_file_from_chmatrix_character(ch_matrix_ch=chmatrix_recoded,new_file_name,max_states);
 
 # now, break up matrices for RevBayes
+#  ADJUST THIS to exclude altered hierarchical characters
 rbstates <- rstates[names(rstates)!=""];
 rbtypes <- chtypes[as.numeric(names(rstates[names(rstates)!=""]))];
 retained_chars <- as.numeric(names(rbstates));
@@ -157,34 +159,66 @@ char_type_combos <- char_types <- data.frame(character=as.numeric(retained_chars
 char_type_combos$character <- NULL;
 char_type_combos <- unique(char_type_combos[order(char_type_combos[,1]),]);
 
+hierarchical <- as.numeric(names(redone_all));
 for (nn in 1:nrow(char_type_combos))	{
 	this_set <- subset(char_types,char_types$states==char_type_combos$states[nn]);
 	this_set <- subset(this_set,this_set$ordering==char_type_combos$ordering[nn]);
-	dummy_sub <- paste(char_type_combos$states[nn],"States",char_type_combos$ordering[nn],sep="_");
-	new_file_name_a <- gsub("Dummy",dummy_sub,revbayes_file_name);
+	this_set <- this_set[!this_set$character %in% hierarchical,];
+	if (nrow(this_set)>0)	{
+		dummy_sub <- paste(char_type_combos$states[nn],"States",char_type_combos$ordering[nn],sep="_");
+		new_file_name_a <- gsub("Dummy",dummy_sub,revbayes_file_name);
 #	scribio_nexus_file_from_chmatrix_character(ch_matrix_ch=ch_matrix_ch[,this_set$character],new_file_name=new_file_name_a,max_states=char_type_combos$states[nn]);
-	if (length(this_set$character)==1)	{
-		another_prop <- array(chmatrix[,this_set$character],dim=c(notu,1))
-		rownames(another_prop) <- rownames(chmatrix);
-		scribio_nexus_file_from_chmatrix(ch_matrix=another_prop,new_file_name=new_file_name_a);
-		} else	{
-		scribio_nexus_file_from_chmatrix(ch_matrix=chmatrix[,this_set$character],new_file_name=new_file_name_a);
+		if (length(this_set$character)==1)	{
+			another_prop <- array(chmatrix[,this_set$character],dim=c(notu,1))
+			rownames(another_prop) <- rownames(chmatrix);
+			scribio_nexus_file_from_chmatrix(ch_matrix=another_prop,new_file_name=new_file_name_a);
+			} else	{
+			scribio_nexus_file_from_chmatrix(ch_matrix=chmatrix[,this_set$character],new_file_name=new_file_name_a);
+			}
 		}
 	}
 # start here: break up
-
-rescored <- (1:rchars)[names(rstates)==""];
-for (nn in 1:length(rescored))	{
+lgm <- length(greek_to_me);
+while (length(redone_all) > length(greek_to_me))	{
+	andreikelo <- greek_to_me[(1+length(greek_to_me)-lgm):length(greek_to_me)];
+	for (lg in 1:lgm)	andreikelo[lg] <- paste(andreikelo[lg],"_",greek_to_me[lg],sep="");
+	greek_to_me <- c(greek_to_me,andreikelo);
+	}
+for (nn in 1:length(redone))	{
 	new_file_name_a <- gsub("Dummy",paste("Rescored",greek_to_me[nn],sep="_"),revbayes_file_name);
 #	scribio_nexus_file_from_chmatrix_character(ch_matrix_ch=ch_matrix_ch[,this_set$character],new_file_name=new_file_name_a,max_states=char_type_combos$states[nn]);
 	max_states <- nrow(redone[[nn]]$Q);
-	another_prop <- array(chmatrix_recoded[,rescored[nn]],dim=c(notu,1));
+	nc <- match(as.numeric(names(redone)[nn]),as.numeric(colnames(chmatrix_recoded)));
+	another_prop <- array(chmatrix_recoded[,nc],dim=c(notu,1));
+	rownames(another_prop) <- rownames(chmatrix);
+	scribio_nexus_file_from_chmatrix_character(ch_matrix_ch = another_prop,new_file_name = new_file_name_a,max_states=max_states);
+	}
+redone_2_states <- c();
+nnn <- 0;
+while (nnn < length(redone_2))	{
+	nnn <- nnn+1;
+	redone_2_states <- c(redone_2_states,nrow(redone_2[[nnn]]$Q));
+	}
+# now, consolidate tacit hierarcicals 	
+
+for (nnn in 1:length(redone_2))	{
+	new_file_name_a <- gsub("Dummy",paste("Rescored",greek_to_me[nn+nnn],sep="_"),revbayes_file_name);
+#	scribio_nexus_file_from_chmatrix_character(ch_matrix_ch=ch_matrix_ch[,this_set$character],new_file_name=new_file_name_a,max_states=char_type_combos$states[nn]);
+	max_states <- nrow(redone[[nn]]$Q);
+	nc <- match(as.numeric(names(redone)[nn]),as.numeric(colnames(chmatrix_recoded)));
+	another_prop <- array(chmatrix_recoded[,nc],dim=c(notu,1));
 	rownames(another_prop) <- rownames(chmatrix);
 	scribio_nexus_file_from_chmatrix_character(ch_matrix_ch = another_prop,new_file_name = new_file_name_a,max_states=max_states);
 	}
 
 for (nn in 1:length(redone))	{
 	new_file_name_b <- gsub("Dummy",paste("Q_Matrix",greek_to_me[nn],sep="_"),revbayes_file_name);
+	new_file_name_b <- gsub(".nex",".txt",new_file_name_b);
+	write.table(redone[[nn]]$Q,new_file_name_b,sep="\t");
+	}
+
+for (nnn in 1:length(redone_2))	{
+	new_file_name_b <- gsub("Dummy",paste("Q_Matrix",greek_to_me[nn+nnn],sep="_"),revbayes_file_name);
 	new_file_name_b <- gsub(".nex",".txt",new_file_name_b);
 	write.table(redone[[nn]]$Q,new_file_name_b,sep="\t");
 	}
