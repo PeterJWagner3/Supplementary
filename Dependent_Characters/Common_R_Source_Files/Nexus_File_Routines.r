@@ -1163,12 +1163,17 @@ for (pi in p_inds:1)	{
 	unique_combos_2 <- unique_combos[!unique_combos[,1] %in% c(INAP,UNKNOWN),];
 	# exclude -- or ?1 pairings
 	u_c <- nrow(unique_combos);
-	missing_match <- (1:u_c)[unique_combos[,1] %in% UNKNOWN][!(1:u_c)[unique_combos[,1] %in% UNKNOWN] %in% (1:u_c)[unique_combos[,2] %in% UNKNOWN]]
+	missing_match <- (1:u_c)[unique_combos[,1] %in% UNKNOWN][!(1:u_c)[unique_combos[,1] %in% UNKNOWN] %in% (1:u_c)[unique_combos[,2] %in% UNKNOWN]];
 	inap_match <- (1:u_c)[unique_combos[,1] %in% INAP][!(1:u_c)[unique_combos[,1] %in% INAP] %in% (1:u_c)[unique_combos[,2] %in% c(UNKNOWN,INAP)]]
 #	sum((unique_combos[,1] %in% INAP) * (unique_combos[,2] %in% INAP));
 #	double_inap <- double_inap + sum((unique_combos[,1] %in% UNKNOWN) * (!unique_combos[,2] %in% c(UNKNOWN,INAP)));
 	if (length(missing_match)>0 || length(inap_match)>0)	{
-		
+		scored_matches <- unique(unique_combos_2[,1])[!unique(unique_combos_2[,1]) %in% unique(unique_combos_2[!unique_combos_2[,2] %in% c(INAP,UNKNOWN),1])];
+		if (length(scored_matches)==1 && sum(scored_matches >= 0))	{
+			ind_char <- ic;
+			pi <- 1;
+			return(ind_char);
+			}
 		} else if (nrow(unique_combos_2)>1)	{
 		unique_combos <- unique_combos_2;
 		if (!is.matrix(unique_combos))	unique_combos <- array(unique_combos,dim=c(1,2));
@@ -1199,16 +1204,6 @@ for (pi in p_inds:1)	{
 				return(ind_char);
 				}
 			}	# end case where ic might be the "parent" character
-#		if (is.matrix(unique_combos))	{
-#			g_c <- unique_combos[unique_combos[,2]==INAP,];
-#			gapped_combos <- array(g_c,dim=c((length(g_c)/2),2));
-#			ungapped_combos <- array(unique_combos[!unique_combos[,2] %in% INAP,],dim=c((length(unique_combos[!unique_combos[,2] %in% INAP,])/2),2));
-#			if ((length(unique(gapped_combos[,1]))==1 || length(unique(gapped_combos[,2]))==1) && sum(ungapped_combos[,1]==gapped_combos[1,1])==0)	{
-#			if (length(unique(gapped_combos[,1]))==1 && sum(ungapped_combos[,1]==gapped_combos[1,1])==0)	{
-#				ind_char <- ic;
-#				return(ind_char);
-#				pi <- 1;
-#				}
 		} else if (unique_combos[1]>=0 && unique_combos[2]==INAP)	{
 		ind_char <- ic;
 		pi <- 1;
