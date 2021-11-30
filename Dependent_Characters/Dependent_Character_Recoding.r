@@ -61,14 +61,20 @@ for (ui in 1:length(unique_indies))	{
 	combos <- unique(chmatrix[,c(ind_char,dep_chars)]);
 	combos <- combos[!(rowMaxs(combos)==UNKNOWN & rowMins(combos)==UNKNOWN),];
 	out_states <- unique(chmatrix[chmatrix[,dep_chars[1]]==INAP,ind_char]);
-	accidental_unknowns <- which(chmatrix[chmatrix[,ind_char] %in% out_states,dep_chars]==UNKNOWN,arr.ind = T);
-	if (length(accidental_unknowns)>0)	{
-		if (!is.matrix(accidental_unknowns))	accidental_unknowns <- array(accidental_unknowns,dim=c(1,2));
-		for (au in 1:nrow(accidental_unknowns))	{
-			fch <- c(ind_char,dep_chars)[accidental_unknowns[2]];
-			chmatrix[accidental_unknowns[1],fch] <- INAP;
-			}
-		}
+	chmatrix[chmatrix[,ind_char]==UNKNOWN,dep_chars] <- UNKNOWN; # convert dependents on unknown independent to unknown
+	
+#	out_states <- out_states[out_states!=UNKNOWN];
+#	accidental_unknowns <- which(chmatrix[chmatrix[,ind_char] %in% out_states,dep_chars]==UNKNOWN,arr.ind = T);
+	# what is the point of this???
+#	accidental_unknowns <- which(chmatrix[chmatrix[,ind_char] %in% out_states,dep_chars]==UNKNOWN,arr.ind = T);
+#	if (length(accidental_unknowns)>0)	{
+#		if (!is.matrix(accidental_unknowns))	accidental_unknowns <- array(accidental_unknowns,dim=c(1,2));
+#		if (!is.matrix(accidental_unknowns))	accidental_unknowns <- array(accidental_unknowns,dim=c(length(accidental_unknowns),1));
+#		for (au in 1:nrow(accidental_unknowns))	{
+#			fch <- c(ind_char,dep_chars)[accidental_unknowns[2]];
+#			chmatrix[accidental_unknowns[1],fch] <- INAP;
+#			}
+#		}
 	
 	redone <- rlist::list.append(redone,transmogrify_additive_dependents_to_multistate(ind_char,dep_chars,chmatrix,char_dependencies,INAP,UNKNOWN));
 	}
