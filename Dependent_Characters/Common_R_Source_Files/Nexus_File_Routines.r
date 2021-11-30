@@ -2106,8 +2106,7 @@ otu_names_nex <- gsub(" ","_",otu_names);
 simple_newick_string <- molecularize <- strsplit(newick_string_full,split="")[[1]];
 left_brackets <- (1:length(molecularize))[molecularize %in% "["];
 right_brackets <- (1:length(molecularize))[molecularize %in% "]"];
-for (br in 1:length(left_brackets))
-	molecularize[left_brackets[br]:right_brackets[br]] <- "";
+for (br in 1:length(left_brackets))	molecularize[left_brackets[br]:right_brackets[br]] <- "";
 newick_string_taxa_only_rawwest <- newick_string_taxa_raw <- newick_string_taxa_only <- paste(molecularize[molecularize!=""],collapse="");
 notu <- length(otu_names);
 branch_durations <- array(0,dim=(2*notu)-1);
@@ -2137,15 +2136,19 @@ if (newick_string_taxa_only_atomized[nstoa]!=";")	{
 	newick_string_taxa_only_atomized <- c(newick_string_taxa_only_atomized,";");
 	nstoa <- length(newick_string_taxa_only_atomized);
 	}
-if (newick_string_taxa_only_atomized[nstoa-1]!=")")	{
-	newick_string_taxa_only_atomized[nstoa] <- ");";
-	newick_string_taxa_only_atomized <- c("(",newick_string_taxa_only_atomized);
-	}
 newick_string_taxa_only <- paste(newick_string_taxa_only_atomized,collapse="");
 ancestral <- find_newick_ancestors(newick_string_ancestored=newick_string_taxa_only);
 names(ancestral) <- otu_names_nex;
 newick_string_taxa_only_raw <- newick_string_taxa_only;
 newick_string_taxa_only <- fix_newick_ancestors(newick_string_taxa_only);
+newick_string_taxa_only_atomized <- strsplit(newick_string_taxa_only,"")[[1]];
+nstoa <- length(newick_string_taxa_only_atomized);
+if (newick_string_taxa_only_atomized[nstoa-1]!=")")	{
+	newick_string_taxa_only_atomized[nstoa] <- ")";
+	newick_string_taxa_only_atomized <- c("(",newick_string_taxa_only_atomized,";");
+	newick_string_taxa_only <- paste(newick_string_taxa_only_atomized,collapse="");
+	}
+
 vector_tree <- read_newick_string(newick_string_taxa_only);
 mat_tree <- transform_vector_tree_to_matrix_tree(vector_tree);
 newick_string_taxa_raw <- strsplit(newick_string_taxa_raw,split="")[[1]];
@@ -2178,7 +2181,7 @@ if (nNodes<10)	{
 	}
 names(branch_durations) <- c(otu_names_nex,node_names);
 
-vector_tree_raw <- read_newick_string(newick_string_taxa_only_raw);
+#vector_tree_raw <- read_newick_string(newick_string_taxa_only_raw);
 #vector_tree <- read_newick_string(newick_string_taxa_only);
 molecularize <- strsplit(newick_string_taxa_only,split="")[[1]];
 
@@ -2188,7 +2191,11 @@ venn_tree_newick <- transform_newick_string_to_venn_tree(newick_string = newick_
 # need: clade_posteriors, prob_ancestor,hpd;
 # uset mat_tree and newick_string_taxa_only to figure out which node is what number
 newick_rem_info <- gsub("sampled_ancestor=","•",newick_string_full);
-newick_rem_info <- gsub("age_95%_HPD=","§",newick_rem_info);
+if (gsub("age_95%_HPD=","§",newick_rem_info)!=newick_rem_info)	{
+	newick_rem_info <- gsub("age_95%_HPD=","§",newick_rem_info);
+	} else	{
+	newick_rem_info <- gsub("brlen_95%_HPD=","§",newick_rem_info);
+	}
 newick_rem_info <- gsub("posterior=","¶",newick_rem_info);
 hpd <- data.frame(lb=as.numeric(rep(0,notu+nNodes)),ub=as.numeric(rep(0,notu+nNodes)));
 molecularized <- str_split(newick_rem_info,"")[[1]];

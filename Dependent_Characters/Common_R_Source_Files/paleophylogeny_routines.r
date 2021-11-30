@@ -7,6 +7,8 @@
 # revelare: reveal
 
 ### udpated with routines written for first phylogenetics course at UNL
+UNKNOWN <- -11; 
+INAP <- -22;
 
 #### ROUTINES RELATED TO BASIC INFORMATION ABOUT TREE TOPOLOGY ####
 accersi_clade_reunion_given_paleodb_data <- function(clade_members)	{
@@ -94,8 +96,9 @@ return(node_richness);
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 #### Character reconstruction routines (likelihood, parsimony, etc.) ####
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-set_marginals <- function(taxon_names,chmatrix,nstates)	{
-notu <- length(taxon_names)
+set_marginals <- function(taxon_names,chmatrix,nstates,UNKNOWN=-11,INAP=-22)	{
+notu <- length(taxon_names);
+nttu <- (2*notu)-1;
 ncharss <- length(nstates)
 mxstates <- max(nstates)
 marginals <- array(0,dim=c((2*notu)-1,ncharss,mxstates))
@@ -107,7 +110,7 @@ for (n in 1:(notu-1))	{
 		node_names[n] <- paste("Node_",n,sep="")
 		}
 	}
-names(marginals[1:notu,,]) <- c(taxon_names,node_names)
+names(marginals[1:nttu,,]) <- c(taxon_names,node_names)
 char_names <- vector(length=ncharss)
 for (ch in 1:ncharss)	{
 	if (ch<10)	{
@@ -124,29 +127,30 @@ for (ch in 1:ncharss)	{
 			}
 		}	else	char_names[ch] <- paste("Char_",ch,sep="")
 	}
-names(marginals[,1:ncharss,]) <- char_names
-state_names <- vector(length=mxstates)
+names(marginals[,1:ncharss,]) <- char_names;
+state_names <- vector(length=mxstates);
 for (st in 1:mxstates)	{
 	state_names[st] <- paste("State_",st,sep="")
 	}
-names(marginals[,,1:mxstates]) <- state_names
+names(marginals[,,1:mxstates]) <- state_names;
 
 for (ch in 1:ncharss)	{
 	for (sp in 1:notu)	{
 		if (chmatrix[sp,ch]>=1)	{
-			marginals[sp,ch,chmatrix[sp,ch]] <- 1
+			marginals[sp,ch,chmatrix[sp,ch]] <- 1;
 			}	else if (chmatrix[sp,ch]==UNKNOWN || chmatrix[sp,ch]==INAP)	{
-			for (st in 1:nstates[ch])	marginals[sp,ch,chmatrix[sp,ch]] <- 1/nstates[ch]
+			for (st in 1:nstates[ch])	marginals[sp,ch,st] <- 1/nstates[ch];
 			}	else {
-			polym <- unravel_polymorph(chmatrix[sp,ch])
-			marginals[sp,ch,polym] <- 1/length(polym)
+			polym <- unravel_polymorph(chmatrix[sp,ch]);
+			marginals[sp,ch,polym] <- 1/length(polym);
 			}
 		}
+	marginals[(notu+1):((2*notu)-1),ch,1:nstates[ch]] <- 1;
 	}
 
-marginals[(notu+1):((2*notu)-1),1:ncharss,1:mxstates] <- 1
-	
-return(marginals)
+
+#rownames(marginals[,3,]) <- c(taxon_names,node_names);
+return(marginals);
 }
 
 # get minimum possible divergence times with time separating each taxon & htu from its ancestral node
@@ -296,6 +300,12 @@ accersi_exhaustion_curve <- function(mtree,cdata,types,FAs=1,UNKNOWN=-11,INAP=-2
 #	and (if available) stratigraphic data to order branches and show how
 #	many novel states appear with how many changes along each branch working
 #	up the tree.
+# mtree: matrix tree, where each row gives the branches stemming from a node
+# cdata: character data
+# types: 1 for unordered, 0 for ordered
+# UNKNOWN: numeric representation for "?"
+# INAP: numeric representation for inapplicable or gap
+# outgroup: the number of the outgroup taxon
 if (length(outgroup)>1)
 	outgroup <- outgroup[match(min(FAs[outgroup]),FAs[outgroup])];
 	

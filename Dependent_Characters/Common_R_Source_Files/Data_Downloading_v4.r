@@ -24,6 +24,11 @@ uncertains <- c("?","cf.","aff.","ex_gr.");
 taxon_qualifiers <- c("\\? ","cf. ","aff. ","ex_gr. ","n. sp. ","n. gen. "," informal");
 nomens <- c("nomen dubium","nomen nudum","nomen oblitum","nomen vanum");
 hell_no <- F;
+
+carbonate_environments <- c("carbonate indet.","peritidal","shallow subtidal indet.","open shallow subtidal","lagoonal/restricted shallow subtidal","sand shoal","reef, buildup or bioherm","perireef or subreef","intrashelf/intraplatform reef","platform/shelf-margin reef","slope/ramp reef","basin reef","deep subtidal ramp","deep subtidal shelf","deep subtidal indet.","offshore ramp","offshore shelf","offshore indet.","slope","basinal (carbonate)","basinal (siliceous)")
+siliciclastic_environments <- c("marginal marine indet.","coastal indet.","estuary/bay","lagoonal","paralic indet.","delta plain","interdistributary bay","delta front","prodelta","deltaic indet.","foreshore","shoreface","transition zone/lower shoreface","offshore","submarine fan","basinal (siliciclastic)","deep-water indet.")
+marine_environments <- c("marine indet.",carbonate_environments,siliciclastic_environments);
+
 sedimentary_rocks <- c("arenarie","areniscas","argillaceous","argilliti","ashes","ash","calcaerous","calcaire","carbonate","chalk","cherty","cherts","chert","clay","claystone","claystones","conglomerates","conglomerate","coquina","coquinas","diatomite","dolomites","dolomite","dolostones","dolostone","flags","glauconites","glauconite","glauconitics","glauconitic","gres","grauwacke","greywacke","greywackes","grits","grit","kalk","kalkmergel","limestone","limestones","limeston","limstone","ls.","ls","lst","lst.","lutitas","marlstones","marlstone","marl","marls","marly","marne","micrites","micrite","mergel","mudstones","mudstone","ooid","ooids","oolitic","pebbles","pebble","phosphatics","phosphatic","phosphorite","phosphorites","platy","qzt.","quartzite","quartzites","quarziti","reef","sands","sand","sandstone","sandstones","shales","schichten","schistes","shale","shaly","siltstones","siltstone","slates","slate","tillite","tillites","tuff","tuffs","volcanic","volcanics");
 missing_taxon_assignment <- c("NP","NO","NC","NF","NG","");
 missing_data_assignment <- c("NP","NO","NC","NF","NG","","coordinates not computable using this model");
@@ -129,8 +134,9 @@ if (!is.null(pbdb_data$created))	{
 	pbdb_date <- pbdb_data$modified;
 	ndates1 <- (1:length(pbdb_date))[!is.na(as.numeric(pbdb_date))];
 	ndates2 <- (1:length(pbdb_date))[is.na(as.numeric(pbdb_date))];
-	pbdb_date[ndates1] <- as.character(as.Date.numeric(as.numeric(pbdb_date[ndates1]),origin="1970-01-01"));
-	pbdb_date[ndates2] <- as.Date.character(as.Date.character(pbdb_data$modified[ndates2]));
+	ndates3 <- ndates2[pbdb_date[ndates2]!="0000-00-00 00:00:00"];
+	pbdb_date[ndates2][pbdb_date[ndates2]=="0000-00-00 00:00:00"] <- pbdb_data$created[ndates2[pbdb_date[ndates2]=="0000-00-00 00:00:00"]];
+	pbdb_date[ndates3] <- as.Date.character(as.Date.character(pbdb_data$modified[ndates3]));
 
 #		as.numeric(pbdb_date[!is.na(as.numeric(pbdb_date))]);
 #	pbdb_date2 <- as.character(pbdb_date[is.na(as.numeric(pbdb_date))]);
@@ -3218,6 +3224,21 @@ if (ncol(opinions)==2)	{
 	}
 }
 
+# get opinion by PBDB opinion number #
+# get the taxonomic opinions that the PaleoDB has (if any) for a taxon given its name
+#opinion_no <- 856773;
+accersi_taxonomic_opinion_no <- function(opinion_no) {
+# taxon_no: paleodb taxon number for a taxon
+# exact_match: if true, then get only this taxon; if false, then get all constituent taxa, too.
+#/data1.2/opinions/single.json?id=1000&show=entname
+httpTO <- paste("https://www.paleobiodb.org/data1.2/opinions/single.txt?id=",opinion_no,"&private&show=basis,ref,refattr,ent,entname,crmod",sep="");
+httpTO <- paste("https://www.paleobiodb.org/data1.2/opinions/single.txt?id=",opinion_no,"&show=basis,ref,refattr,ent,entname,crmod",sep="");
+#accio <- RCurl::getURL(httpTO);
+#https://www.paleobiodb.org/data1.2/opinions/list.json?author=Osborn
+taxon_opinions <- read.csv(httpTO,header=T,stringsAsFactors=hell_no,encoding="UTF-8");
+return(taxon_opinions);
+}
+
 # get the latest authoritative opinion for a taxon based on PaleoDB number
 entangle_disconnected_genus_and_subgenus <- function(taxon_nos)	{
 # add something to make sure that the most recent assignment is still a valid higher taxon
@@ -4540,6 +4561,35 @@ ttl_names <- length(species_names);
 return(paste(species_names[(1:length(species_names))[!(1:length(species_names)) %in% (ttl_names-1)]],collapse=" "));
 }
 
+#species_name <- "Liobolina (Guilinaspis) intermedia" smithi"
+elevate_subspecies_to_species_whole <- function(species_name)	{
+species_names <- strsplit(species_name," ")[[1]];
+ttl_names <- length(species_names);
+if (ttl_names==4)	{
+	return(paste(species_names[c(1:2,4)],collapse=" "))
+	} else if (ttl_names==3)	{
+	second_name <- strsplit(species_names[2],"")[[1]];
+	if (second_name[1]=="(")	{
+		return(species_name);
+		}	else	{
+		return(paste(species_names[c(1,3)],collapse=" "));
+		}
+	} else	{
+	return(species_name);
+	}
+#return(paste(species_names[(1:length(species_names))[!(1:length(species_names)) %in% (ttl_names-1)]],collapse=" "));
+}
+
+#species_name <- "Guilinaspis subcylindrica subcylindrica";
+#species_name <- "Guilinaspis subcylindrica brevis"
+elevate_type_subspecies_to_species <- function(species_name)	{
+species_names <- strsplit(species_name," ")[[1]];
+ttl_names <- length(species_names);
+if (ttl_names>2 && species_names[ttl_names]==species_names[ttl_names-1])
+	species_name <- paste(species_names[1:(ttl_names-1)],collapse=" ")
+return(species_name);
+}
+
 # taxon_name <- "Eostropheodonta (Eostropheodonta)"
 is.subgenus <- function(taxon_name)	{
 if (length(simplify2array(strsplit(taxon_name," ")[[1]]))==2)	{
@@ -5582,7 +5632,7 @@ if (named_rock_unit=="")	{
 		if (n_r_u[1]=="Mountain")	n_r_u[1] <- "Mount";
 		}
 
-	bad_words <- c("basal","bed","beds","between","biofacies","biozone","contact","couches","cyclothem","cycle","facies","fm.","fm","formacion","formation","horizons","horizon","layer","level","lagoonal","member","mbr","mb","mb.","miembro","niveau","portion","section","series","shelly","stage","standard","suite","subst.","subunit","subsuite","subzone","unit","units","unknown","unnamed","zone","bottom","top","(lower)","(middle)","(upper)","(bottom)","(top)","regional","seam","thin-bedded","undifferentiated");
+	bad_words <- c("basal","bed","beds","between","biofacies","biozone","contact","couches","cyclothem","cycle","facies","facies","fazies","fm.","fm","formacion","formation","horizons","horizon","layer","level","lagoonal","member","mbr","mb","mb.","miembro","niveau","portion","section","series","shelly","stage","standard","suite","subst.","subunit","subsuite","subzone","unit","units","unknown","unnamed","zone","bottom","top","(lower)","(middle)","(upper)","(bottom)","(top)","regional","seam","thin-bedded","undifferentiated");
 	uncensored <- (1:rock_names)[!tolower(n_r_u) %in% bad_words];
 
 	named_rock_unit <- paste(n_r_u[uncensored],collapse = " ");
