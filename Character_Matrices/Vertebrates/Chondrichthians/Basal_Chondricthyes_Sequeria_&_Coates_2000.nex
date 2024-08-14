@@ -1,0 +1,129 @@
+#NEXUS
+[MacClade 4.08 registered to Peter Wagner, Field Museum of Natural History]
+
+
+BEGIN MacCladeStart;
+	Extended;
+END;
+
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=13 NCHAR=23;
+
+[!Sequeira, S. E. K., and M. I. Coates.  2000.  Reassessment of �Cladodus�neilsoni Traquair: a primitive shark from the Lower Carboniferous of East Kilbridge, Scotland.  Palaeontology 43:153-172.]
+	FORMAT SYMBOLS= " 0 1 2 3 4 5 6 7 8 9 A" MISSING=? GAP=- ;
+
+MATRIX
+[                                 10        20    ]
+[                                 .         .     ]
+
+Gutturensis_neilsoni     11????100?110??10??0???
+Cladodus_wildungensis    11120????11?01110020??0
+Cobelodus                11011?1?????00?10??0??1
+Helodus                  10000111??0000?00??0?01
+Hybodus                  10130111112101000131110
+Stethacanthus            11010010001110111?10?00
+Tristychius              10100110?12100100131100
+Tamiobatis_sp.           111101010111011?0?20100
+Tamiobatis_vetustus      11110101011101110020110
+Orthacanthus             11120101111101100030110
+Acanthodes               02000010000000000?00??0
+Kujdanowiaspis           00100001000001000000000
+Mimia                    02000010000000000000000
+;
+END;
+
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+	TYPESET * UNTITLED  = unord: 1-23;
+	WTSET * UNTITLED  = 1: 1-23;
+END;
+
+
+BEGIN TREES;
+
+	TRANSLATE
+		1	Gutturensis_neilsoni,
+		2	Cladodus_wildungensis,
+		3	Cobelodus,
+		4	Helodus,
+		5	Hybodus,
+		6	Stethacanthus,
+		7	Tristychius,
+		8	Tamiobatis_sp.,
+		9	Tamiobatis_vetustus,
+		10	Orthacanthus,
+		11	Acanthodes,
+		12	Kujdanowiaspis,
+		13	Mimia
+	;
+	TREE  * UNTITLED =  [&R] ((12,(13,11)),(4,(3,((1,6),(8,(9,(2,(10,(5,7)))))))));
+
+END;
+
+
+BEGIN MacClade;
+	Version 4.0  87;
+	LastModified -849515160;
+	FileSettings treewindow  '1' '1' '8' '1';
+	Singles 010;
+	Editor 00011011111111100100010010 '0' '72' Gadget '12' '206' '1' all;
+	EditorPosition  '222' '48' '495' '831';
+	TreeWindowPosition  '61' '470' '735' '974';
+	ListWindow Characters open Gadget '12' '50' '25' '457' '586' 000;
+	ListWindow Taxa open Gadget '12' '50' '10' '270' '343' 100000000;
+	ListWindow Trees closed Gadget '12' '50' '10' '134' '387' ;
+	ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow ExSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharSets closed Gadget '12' '70' '45' '111' '182' ;
+	ListWindow TaxSets closed Gadget '12' '50' '10' '134' '185' ;
+	ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490' ;
+	TextWindow AboutFile  '90' '65' '280' '445' Gadget '12' (normal) 1 ;
+	ChartWindowPosition  '50' '30' '688' '964';
+	StateNamesSymbols open Gadget '12' '10' '697' '412' '203' '254';
+	WindowOrder  Tree List Characters States List Taxa Text AboutFile;
+	OtherSymbols &/ 00 ?-;
+	Correlation  '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile  '2';
+	ExportHTML _ MOSS  '100' 110000;
+	PrettyPrint 10;
+	CharLegendPosition  '656' '1343' '77' '90';
+	TreeLegendPosition  '689' '1245' '112' '93';
+	EditorToolsPosition  '706' '923' '115' '165';
+	TreeToolsPosition  '576' '6' '126' '138';
+	TreeWindowProgram 00;
+	TreeWindow 0000;
+	Continuous  '0' '3' 1;
+	Calculations 1100111;
+	SummaryMode  '0' '0' 0;
+	Charts  Gadget '12' (normal) 0010;
+	NexusOptions  '0' '0' '50' 001011001;
+	TipLabel  '1';
+	TreeFont  Gadget '12' (normal);
+	TreeShape  1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors  '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth  '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax  '0';
+	TraceAllChangesDisplay  '1' 1;
+	BarsOnBranchesDisplay  '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation  '3' 0;
+	PrintTree  10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Gadget '12' (normal) Gadget '10' (normal) Gadget '9' (normal) Gadget '9' (normal) Gadget '9' (bold ) Gadget '9' (normal) Gadget '9' (normal) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '0' '0' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 10;
+	TreeTools  '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools  '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign  '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools  '1';
+END;

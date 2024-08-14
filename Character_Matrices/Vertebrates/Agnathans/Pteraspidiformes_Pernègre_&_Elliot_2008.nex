@@ -1,0 +1,182 @@
+#NEXUS
+[MacClade 4.05 registered to Peter Wagner, Field Museum of Natural History]
+
+
+BEGIN TAXA;
+	DIMENSIONS  NTAX=26;
+
+[!Pern�gre, V.N. & D.K. Elliott. 2008. Phylogeny of the Pteraspidiformes (Heterostraci), Silurian-Devonian jawless vertebrates.  Zoologica Scripta 37:391�403.]
+	TAXLABELS
+	Doryaspis_arctica
+	Errivaspis_waynensis
+	Protopteraspis_vogti
+	Stegobranchiaspis_baringensis
+	Anchipteraspis_crenulata
+	Rachiaspis_pteriga
+	Xylaspis_prima
+	Gigantaspis_minima
+	Gigantaspis_laticephala
+	Canadapteraspis_alocostomata
+	Protaspis_bucheri
+	Loricopteraspis_dairydinglensis
+	Tuberculaspis_elyensis
+	Cosmaspis_transversa
+	Anglaspis_heintzi
+	Nahanniaspis_mackenziei
+	Zascinaspis_carmani
+	Europrotaspis_crenulata
+	Gigantaspis_isachseni
+	Rhinopteraspis_crouchi
+	Larnovaspis_goujeti
+	Unarkaspis_schultzei
+	Panamintaspis_snowi
+	Doryaspis_nathorsti
+	Doryaspis_groenhorgensis
+	Drepanaspis_gemuendenensis;
+END;
+
+
+BEGIN CHARACTERS;
+	DIMENSIONS  NCHAR=59;
+	FORMAT SYMBOLS= " 0 1 2 3 4" MISSING=? GAP=- ;
+
+MATRIX
+[                                           10        20        30        40        50        60]
+[                                           .         .         .         .         .         . ]
+
+Doryaspis_arctica                  0000111210-211202011021101010220100102101121002001001111011
+Errivaspis_waynensis               00000112210201211011022111011120130100100221010120110120101
+Protopteraspis_vogti               00000101211201200101011100120020132000111220302002001010101
+Stegobranchiaspis_baringensis      00020101210201200112021101020020210100101221102111100110101
+Anchipteraspis_crenulata           000201012311011001022000-000001123101220001030201100??10???
+Rachiaspis_pteriga                 00020101?301011001022000-00000112300022000?03020??00??101??
+Xylaspis_prima                     1111011210-0-1210112022101010021111111111101102002111?100??
+Gigantaspis_minima                 01010112011201210202022211110021121110111121001121110120101
+Gigantaspis_laticephala            01010112011201210001022211110021121110110121102112110110001
+Canadapteraspis_alocostomata       0000011221021121000101110212012012010210122021212100??201??
+Protaspis_bucheri                  111001122220-12200001221111100210121111100?110201111??10?01
+Loricopteraspis_dairydinglensis    00000112211201211001022102110020122100100220010020110110101
+Tuberculaspis_elyensis             111?11123113-12200000121021200210121111000?110212111??10??1
+Cosmaspis_transversa               111011122223-12201001221100100210111111000?100?021??0110?01
+Anglaspis_heintzi                  1000001000-0-00-----2000---0010003101-000001001021000000110
+Nahanniaspis_mackenziei            0000100000-0-00-----2000---0000003101-0000010??0210??000?10
+Zascinaspis_carmani                01000112222301220100122101120021011101????????01221101100?1
+Europrotaspis_crenulata            111001122113012200001221011101210121111100?0210???1???10?01
+Gigantaspis_isachseni              01010112010201210001022?1111112102111011112111001111??20001
+Rhinopteraspis_crouchi             000001122102012110110221110111201311001011202111201101201??
+Larnovaspis_goujeti                000001122102112010010121111101201221001012?011212111??20???
+Unarkaspis_schultzei               01000102010211200112022101020120100100100121111112?0??20???
+Panamintaspis_snowi                0100010221020121000002210112012010010011102111112111???010?
+Doryaspis_nathorsti                0000111210-211202011021101010220100102100121002???001111011
+Doryaspis_groenhorgensis           0000?11210-211202011021101010220100102100?21002???0011110??
+Drepanaspis_gemuendenensis         1101?100111-1?0211-02000?13-20?3-21?-2-0000??010110?00-000?
+;
+END;
+
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+	TYPESET * UNTITLED  = unord: 1-59;
+	WTSET * UNTITLED  = 1: 1-59;
+END;
+
+
+BEGIN TREES;
+
+	TRANSLATE
+		1	Doryaspis_arctica,
+		2	Errivaspis_waynensis,
+		3	Protopteraspis_vogti,
+		4	Stegobranchiaspis_baringensis,
+		5	Anchipteraspis_crenulata,
+		6	Rachiaspis_pteriga,
+		7	Xylaspis_prima,
+		8	Gigantaspis_minima,
+		9	Gigantaspis_laticephala,
+		10	Canadapteraspis_alocostomata,
+		11	Protaspis_bucheri,
+		12	Loricopteraspis_dairydinglensis,
+		13	Tuberculaspis_elyensis,
+		14	Cosmaspis_transversa,
+		15	Anglaspis_heintzi,
+		16	Nahanniaspis_mackenziei,
+		17	Zascinaspis_carmani,
+		18	Europrotaspis_crenulata,
+		19	Gigantaspis_isachseni,
+		20	Rhinopteraspis_crouchi,
+		21	Larnovaspis_goujeti,
+		22	Unarkaspis_schultzei,
+		23	Panamintaspis_snowi,
+		24	Doryaspis_nathorsti,
+		25	Doryaspis_groenhorgensis,
+		26	Drepanaspis_gemuendenensis
+	;
+	TREE Maclade_Parsimony =  [&R] (15,(16,((5,6),(26,(14,(11,(17,((13,18),(7,((8,(9,19)),(((21,10),(12,(20,2))),(23,(22,(4,(3,(1,(24,25)))))))))))))))));
+	TREE  * Fig._5 =  [&R] (15,(16,((5,6),(26,(3,((1,(24,25)),(4,(22,(23,(((21,10),(12,(20,2))),((8,(9,19)),(7,((13,18),(11,(14,17)))))))))))))));
+
+END;
+
+
+BEGIN MacClade;
+	Version 4.0  84;
+	LastModified -997978556;
+	FileSettings treewindow  '1' '1' '60' '1';
+	Singles 000;
+	Editor 0001100111111110010001001 '0' '24' Gadget '12' '212' '1' all;
+	EditorPosition  '44' '962' '767' '405';
+	TreeWindowPosition  '44' '11' '684' '791';
+	ListWindow Characters open Gadget '12' '48' '816' '134' '517' 000;
+	ListWindow Taxa closed Gadget '12' '50' '10' '134' '397' 100000;
+	ListWindow Trees closed Gadget '12' '50' '25' '134' '405' ;
+	ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow ExSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow TaxSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490' ;
+	ChartWindowPosition  '52' '30' '818' '1380';
+	StateNamesSymbols open Gadget '12' '10' '50' '30' '203' '220';
+	WindowOrder  List Characters Tree States;
+	OtherSymbols &/ 00 ?-;
+	Correlation  '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile  '2';
+	ExportHTML _ MOSS  '100' 110000;
+	PrettyPrint 10;
+	CharLegendPosition  '610' '701' '99' '85';
+	TreeLegendPosition  '621' '603' '88' '93';
+	EditorToolsPosition  '596' '1189' '115' '165';
+	TreeToolsPosition  '716' '9' '126' '138';
+	TreeWindowProgram 10;
+	TreeWindow 0000;
+	Continuous  '0' '3' 1;
+	Calculations 1000101;
+	SummaryMode  '0' '0' 0;
+	Charts  Arial '12' (normal) 0010;
+	NexusOptions  '0' '0' '50' 001011011;
+	TipLabel  '1';
+	TreeFont  Gadget '12' (normal);
+	TreeShape  1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors  '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth  '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax  '0';
+	TraceAllChangesDisplay  '1' 1;
+	BarsOnBranchesDisplay  '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation  '3' 1;
+	PrintTree  10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Geneva '9' (normal) Geneva '10' (normal) Geneva '9' (normal) Geneva '9' (normal) Geneva '9' (bold ) Geneva '9' (normal) Geneva '9' (normal) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '32767' '-1' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 00;
+	TreeTools  '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools  '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign  '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools  '1';
+END;

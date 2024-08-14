@@ -1,0 +1,359 @@
+#NEXUS
+[written Mon Nov 30 00:14:38 CST 2020 by Mesquite  version 3.61 (build 927) at EAS-392515.local/127.0.0.1]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=43;
+	TAXLABELS
+		Pholidophorus Apsopelix Allothrissops Anaethalion_angustus Anaethalion_zapporum Ascalabos Bavarichthys Brycon Chanos Chongichthys Crossognathus Denticeps Diplomystus Domeykos Engraulis Elops Erichalcis Esox Gordichthys Goulmimichthys Hiodon Heterotis Humbertia Leptolepis Leptolepides_haerteisi Leptolepides_sprattiformis Luisichthys Lycoptera Megalops Notelops Oncorhynchus Opsariichthys Orthogonikleithrus_hoelli Pachythrissops Protoclupea Rhacolepis Santanaclupea Tharsis Thrissops Thymallus Umbra Varasichthys Polcynichthys_lloydhilli 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=142;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5";
+	MATRIX
+	Pholidophorus               0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+	Apsopelix                   00010?011112?0001101?0100012?101?0000000020010000101000012220?0012010?1??011001100000001010?000002000001?1111101000110?000??2?1?1111?1001?0001
+	Allothrissops               11?100000??210001101101000021001?001000001021000010100001222000010000010010110220000100?000110000001000?21011100000010000021111000110000000001
+	Anaethalion_angustus        000100000??2?000??0101?000021000000?100001?01000000000001222000012100?00?000001?000000?0??1?00??01?10002111011011000101000??1110?00?0001?00000
+	Anaethalion_zapporum        0001?0000????000??01?1?000021000?0001000010?100000000?001222000012000?00000000110000?00100?10?1??101000211101101?00010?00?21111??0?????1100000
+	Ascalabos                   00?1?00?0??2?000??01?0?00002?????0000000010?11000100000012220000110000000001001100000000000100000101000120011100000010?00021111??000?000000000
+	Bavarichthys                ?0?1?001?????000??01-?10001211???00?100000??1000010000001222000?1201000??00100110000?0010001001202010002101011001?00????00211?1??1??1100210000
+	Brycon                      0011-001011210001102101100022001110000001211001101000000?222101022110000????0011000?00021001012200111000211111011100100?00?2-110000?0010100110
+	Chanos                      001100010112100011011010100210011100011113000110011000101222011122110201300000?21000120200030-220011100021111100100010100021-11000000?10000000
+	Chongichthys                ??01000101???00?1101??100?02?????000000?00121000010000001222000011000?0?000100????????????????????????????????????0?100002????1??????11010000?
+	Crossognathus               00010001???2?0?0??010010001211?1?0??0000011100000?01000012220?0012010?0?001?001100000001000?000002000001?11111010000100000212?1??11111001?0001
+	Denticeps                   000101010112111011011011-002200010000000021110100100000022?21010?2011000010000110000100101020-221001000021112101111110000021111100000010?00000
+	Diplomystus                 00?100010112101111011010?002?00??000000001111?1001000000122210001201?00000000011000110010?01002110010000211111011?1010000?211?1000000010000000
+	Domeykos                    00?1?0010??2?0001?01?0100????????00?0???01?21?00010110001222000011000101100?001100001000000000000101000??0010000000?111000111?1??1????10000000
+	Engraulis                   0001?0010112111111001011100220001010000000111010010000002222101012011003?0000012100?100?1-02012?1001100021111101111110000021-11000000010100000
+	Elops                       0001000001121000110001100002100000001000000010000000000012220000120101022001002210000000001100110001000221111101100010100011111000110101110000
+	Erichalcis                  00?10001?????000??01?01000021011?0000000011110100100000012220010??0?000000??0122?10002011-010?12010001?2211111010100?00?00211?1???000?10000000
+	Esox                        010101010112100011121010000210-010000?00101110111100010012220000?201000001000022000012111-020-220001010021111101110110000021111000000010100000
+	Gordichthys                 001??000?????000??010010?0021001?10?0111131101?00110001012?201011100000??00000?10000100001020-120001000021111100?10110?000211?1??0000010000000
+	Goulmimichthys              ?0?1100101?2100011??-?1000021100?000000000?110?001010000122200001?000?0?001?0?111000??0???0?0-020201000???????????001??0?0??2110111111101?000?
+	Hiodon                      00011102011210001101-01001122000-0000000010210100100000112220010120000023100001?0000110000030-110001000021112211100110001011111000001000101000
+	Heterotis                   00110001011200001101-01001122000-0000000020210100100000111?210101200000??1000012000011000004003200010000211122111101100010??111100001000101000
+	Humbertia                   0001?101011210001101101000021010?0000001011110100100000012?2000012010000?0000122101002111-01031200110112211111011100100?00?1111000000000000000
+	Leptolepis                  000000000?011000000100000001000000010000010001000000000011110000100000002000001100000000000?00000100000100001100000010000011111000000000000000
+	Leptolepides_haerteisi      000101100??2?000??0110000002011??200000102??1?100000010013?2000?1210000000100111010010000001011?01000102210111010100100000211????0000000000000
+	Leptolepides_sprattiformis  000100000112?0001?01101000021111?2000001021110100000010013?200001100000000100111010000000001011?010001?221011100010010100021111??0000000000000
+	Luisichthys                 ?0?1100?0112?0?011?1?010000??????00?000001??1??000011000122200001100010??0??002200000000010100001?01000?10110000?00011?000111?1?11???0000?0000
+	Lycoptera                   000100020??2?000??01100001022000-0000000010?10100000000012?200001000000??100001?0000110000030-11000100002111221111011000101???1??0000010101000
+	Megalops                    00010000011210001100011000021000000010000000100000000000122200001301010220010012100000000011001100010002?1111101100010100011111000100101000000
+	Notelops                    0001100101?200001101-110001211?0?00000000002100000000000122200001000000?0011002100000001??02??2?0200000?21111100?00010000221211011111100100000
+	Oncorhynchus                000101010112100011011010000210001000000000111010011001001222000011000100200000?2111112111-0101120001011021111101110110010020111000000010200000
+	Opsariichthys               0011110101121000110210101002100111000100121110100100000013221010230100003000001210001000020301220011100021111101100010100122-1100000-000000110
+	Orthogonikleithrus_hoelli   0001?1110??2?000??01?01000021??1?20001001111001001000100122200001?00000??0100112010110011-010112010001022101110111002--?0021111??000?000000000
+	Pachythrissops              ???1?0000??2?000??01?0?0000210?0?00?0000010?100000?00000122200001200??100101101200001100000?10100?010002001011000000101000?11?1??0?0?0?00?0000
+	Protoclupea                 ???100010??2?0?0??010?000002?00??000000001?21100010110001222000?1??00101100000220000000?010100000?01000?2111000??00011100??11?1??1??0000000000
+	Rhacolepis                  0001100101?210001101-010000211?1?00000000011100001010000122200001000000?001?0011100000010?02??2?0?00000?21011101?00010?00221211011111110100000
+	Santanaclupea               00?100010??2?111000???1110?21????01?000000??101001000000?2220?001??000???0000011?00010011-0?0-221001000?21011101??1010?00021111??0?0?010?00000
+	Tharsis                     00010001011?100010010010000210000001000001001100000000001222000011000000000000221000100000010000010000011000110000001000002?111000000000000000
+	Thrissops                   1101?00?01?21000??0110100002100??00?000001?2100001000000122200001000001001011022000000000?0110000001000221011100000010?00021111??0110000?00001
+	Thymallus                   00010101011210001101001000021000100000000111101001100100122200001100000020000022101102111-0101120001010021111101110110010021111000000010000000
+	Umbra                       01?100010112100011121010000210-010000?00121100111100010012221000?20?000001000012000012111-020-220001010021112211110?10000?21111000?00010100000
+	Varasichthys                000100011112?000110100000000100??000000001110100000110001222000011001101100100120000?10?0103000?0001000110110000?000111001?11?1??1??0000000000
+	Polcynichthys_lloydhilli    00??1???????????????-??00002110??0001000001110????01??0012220?0???0??????01?00111000??????0???12?2?0?00?21?1110??0001??002?12?1??11111?110000?
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 142;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 142;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1606716878056;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 3051544449100507056;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 226998652348340385;
+			mqVersion 361;
+			checksumv 0 3 3672125804 null  getNumChars 142 numChars 142 getNumTaxa 43 numTaxa 43   short true   bits 31   states 31   sumSquaresStatesOnly 17751.0 sumSquares 17751.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1 errorReportedDuringRun;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 941 758;
+			setLocation 8 23;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.trees.BasicTreeWindowCoord.BasicTreeWindowCoord;
+		tell It;
+			makeTreeWindow #3051544449100507056  #mesquite.trees.BasicTreeWindowMaker.BasicTreeWindowMaker;
+			tell It;
+				suppressEPCResponse;
+				setTreeSourceEditMode #mesquite.trees.StoredTrees.StoredTrees;
+				tell It;
+					laxMode;
+					setTreeBlock -2147483647;
+					toggleUseWeights off;
+				endTell;
+				setAssignedID 3026.1606716745224.5936031628506301135;
+				getTreeWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 841 686;
+					setLocation 8 23;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.trees.SearchTreeToolAssistant.SearchTreeToolExtra.randomlyRotate;
+					endTell;
+					getTreeDrawCoordinator #mesquite.trees.BasicTreeDrawCoordinator.BasicTreeDrawCoordinator;
+				tell It;
+					suppress;
+					setTreeDrawer  #mesquite.trees.SquareLineTree.SquareLineTree;
+					tell It;
+						setNodeLocs #mesquite.trees.NodeLocsStandard.NodeLocsStandard;
+						tell It;
+							branchLengthsToggle off;
+							toggleScale on;
+							toggleBroadScale off;
+							toggleCenter on;
+							toggleEven on;
+							setFixedTaxonDistance 0;
+						endTell;
+						setEdgeWidth 4;
+						showEdgeLines on;
+						orientRight;
+					endTell;
+					setBackground White;
+					setBranchColor Black;
+					showNodeNumbers off;
+					showBranchColors on;
+					labelBranchLengths off;
+					centerBrLenLabels on;
+					showBrLensUnspecified on;
+					showBrLenLabelsOnTerminals on;
+					setBrLenLabelColor 0 0 255;
+					setNumBrLenDecimals 6;
+					setSelectedTaxonHighlightMode 1;
+					desuppress;
+					getEmployee #mesquite.trees.BasicDrawTaxonNames.BasicDrawTaxonNames;
+					tell It;
+						setFont Gadget;
+						setFontSize 12;
+						setColor Black;
+						setTaxonNameStyler  #mesquite.trees.NoColorForTaxon.NoColorForTaxon;
+						toggleShadePartition off;
+						toggleShowFootnotes on;
+						toggleNodeLabels on;
+						toggleCenterNodeNames off;
+						toggleShowNames on;
+						namesAngle ?;
+					endTell;
+				endTell;
+					setTreeNumber 1;
+					setTree '(1,(24,(38,(6,(((14,(35,(27,42))),(10,(7,(30,((2,11),(20,(36,43))))))),((34,(3,39)),(((4,5),(16,29)),((28,(21,22)),((((8,32),(9,19)),(13,(37,(12,15)))),(((18,41),(31,40)),(23,(17,(33,(25,26))))))))))))))<> <> <  setBetweenBits = selected >;';
+					setDrawingSizeMode 0;
+					toggleLegendFloat on;
+					scale 0;
+					toggleTextOnTree off;
+					togglePrintName off;
+					showWindow;
+				endTell;
+				setEditMode 'Edited, based on Default Symmetrical Tree+';
+				desuppressEPCResponseNORESET;
+				getEmployee #mesquite.trees.ColorBranches.ColorBranches;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.trees.SearchTreeToolAssistant.SearchTreeToolAssistant;
+				tell It;
+					getEmployee #mesquite.trees.TreeValueUsingMatrix.TreeValueUsingMatrix;
+					tell It;
+						getEmployee #mesquite.parsimony.TreelengthForMatrix.TreelengthForMatrix;
+						tell It;
+							getEmployee #mesquite.parsimony.ParsCharSteps.ParsCharSteps;
+							tell It;
+								setModelSource  #mesquite.parsimony.CurrentParsModels.CurrentParsModels;
+							endTell;
+						endTell;
+						getEmployee #mesquite.charMatrices.CharMatrixCoordIndep.CharMatrixCoordIndep;
+						tell It;
+							setCharacterSource #mesquite.charMatrices.StoredMatrices.StoredMatrices;
+							tell It;
+								setDataSet #226998652348340385;
+							endTell;
+						endTell;
+					endTell;
+				endTell;
+				getEmployee #mesquite.ornamental.BranchNotes.BranchNotes;
+				tell It;
+					setAlwaysOn off;
+				endTell;
+				getEmployee #mesquite.ornamental.ColorTreeByPartition.ColorTreeByPartition;
+				tell It;
+					colorByPartition off;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocDoubles.DrawTreeAssocDoubles;
+				tell It;
+					setOn on;
+					toggleShow consensusFrequency;
+					toggleShow bootstrapFrequency;
+					toggleShow posteriorProbability;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					setDigits 4;
+					setThreshold ?;
+					writeAsPercentage off;
+					toggleCentred off;
+					toggleHorizontal on;
+					toggleWhiteEdges on;
+					toggleShowOnTerminals on;
+					setFontSize 10;
+					setOffset 0  0;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocStrings.DrawTreeAssocStrings;
+				tell It;
+					setOn on;
+					toggleCentred on;
+					toggleHorizontal on;
+					setFontSize 10;
+					setOffset 0  0;
+					toggleShowOnTerminals on;
+				endTell;
+				getEmployee #mesquite.trees.TreeInfoValues.TreeInfoValues;
+				tell It;
+					panelOpen false;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #226998652348340385 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 157;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 841 686;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 12;
+					getToolPalette;
+					tell It;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

@@ -1,0 +1,345 @@
+#NEXUS
+[written Sat Sep 05 12:50:08 CDT 2020 by Mesquite  version 3.6 (build 917) at EAS-6BCEC7.local/10.0.1.16 ()]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=49;
+	TAXLABELS
+		Anglaspis_macculloughi Nahanniaspis_mackenziei Anchipteraspis_crenulata Protopteraspis_vogti Errivaspis_waynensis Gigantaspis_laticephala Woodfjordaspis_felixi Doryaspis_nathorsti Xylaspis_prima Protaspis_bucheri Drepanaspis_juvenile Drepanaspis_gemuendenensis Guerichosteus_kozlowskii Guerichosteus_heterolepis Schizosteus_perneri Perscheia_pulla Obruchevia_heckeri Tartuosteus_giganteus Tartuosteus_maximus Pycnolepis_splendens Pycnosteus_palaeformis Pycnosteus_pauli Pycnosteus_tuberculatus Ganosteus_artus Ganosteus_stellatus Psammolepis_toriensis Psammolepis_abavica Psammolepis_paradoxa Psammolepis_venyukovi Schizosteus_asatkini Schizosteus_striatus Paulia_proia Placosteus_alatus Placosteus_undulatus Elgaia_luhai Psammosteus_bergi Psammosteus_praecursor Psammosteus_maeandrinus Psammosteus_megalopteryx Psammosteus_cuneatus Psammosteus_livonicus Psammosteus_asper Psammosteus_levis Psammosteus_tenuis Karelosteus_weberi Traquairosteus_ramosus Traquairosteus_falcatus Traquairosteus_pectinatus Traquairosteus_kiaeri 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  'Matrix in file "GlinskiySupplement2taxon-charactermatrix.nex"';
+	DIMENSIONS  NCHAR=120;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7";
+	CHARSTATELABELS 
+		1 'Number of main plates on the dorsal side of cephalothorax (The paired plates are only considered for one side)' /  '(0) one to three' '(1) four-five' '(2) more than five',
+		2 Position_of_the_mouth /  '(0) ventral position' '(1) dorsal position',
+		3 'Rostral plate / rostral part of cephalothorax, ventral (recurrent) lamella with pre-oral surface' /  '(0) absent' '(1) extremely reduced (maxillary brim)' '(2) short lamella (less than the half of the dorsal length)' '(3) long lamella (more than the half of the dorsal length)',
+		4 'Rostral area/plate, anterior margin' /  '(0) convex, rounded anteriorly' '(1) convex, rounded anteriorly to a point' '(2) triangular' '(3) aligned' '(4) concave anteriorly',
+		5 'Rostral plate, lateral/posterolateral margins (rostro-orbital contact)' /  '(0) concave (for orbital plate or tesserae)' '(1) straight or convex',
+		6 'Rostro-orbital contact' /  '(0) present' '(1) absent due tesserae',
+		7 'Rostral plate, posterior margin' /  '(0) generally convex' '(1) concave or straight',
+		8 'Rostro-pineal contact' /  '(0) absent' '(1) notch for the pineal plate in the rostral plate' '(2) planar' '(3) absent due tesserae',
+		9 'Rostral area/plate, proportions' /  '(0) wider than long' '(1) as long as wide' '(2) longer than wide',
+		10 Praerostral_plates /  '(0) absent' '(1) present',
+		11 'Oral plates, posterior contact' /  '(0) with the ventral plate' '(1) with lateral postoral plates' '(2) with the field of tesserae',
+		12 'Orogonal plates (lateral postoral plates)' /  '(0) many pairs' '(1) 1 pair',
+		13 'Pineal plate (separate plate)' /  '(0) pineal macula/plate included in dorsal plate' '(1) pineal plate inserted in the dorsal plate',
+		14 'Pineal plate, morphology' /  '(0) triangular' '(1) flat topped ovate /croissant' '(2) quadratangular' '(3) rhomboid / polygonal' '(4) rhomboid, crown and neck also covered by tubercles',
+		15 'Pineal plate, anterior margin' /  '(0) convex or stright' '(1) concave',
+		16 'Orbito-pineal contact' /  '(0) absent' '(1) narrow contact (point of contact)' '(2) broad of contact (orbito-pineal belt)',
+		17 Pineal_plate_position /  '(0) plate well inserted in dorsal plate (over more than half of its length)' '(1) plate slightly inserted in the dorsal plate (less than half its length)' '(2) pineal plate contacts with tesserae',
+		18 'Pineal opening (macula), covering' /  '(0) covered by discrete primordial tubercle' '(1) primordium of the pineal plate with a dentine unit' '(2) covered by many tubercles on the pineal plate' '(3) uncovered (open primordium)',
+		19 'Pineal canal (pc), location' /  '(0) loops around pineal macula/plate' '(1) loops through pineal plate or macula',
+		20 'Pineal / postpineal canal, pattern' /  '(0) V and U shaped' '(1) slightly arched' '(2) radial pattern',
+		21 Orbital_area /  '(0) orbit surrounded by numerous plates (sub-orbitale+dorsale)' '(1) orbit included in orbito-cornual plate' '(2) orbit included in orbital plate' '(3) orbital and postorbital plate',
+		22 'Orbital plates, anterior process' /  '(0) pointed' '(1) truncated/convex anterior margin',
+		23 'Orbital plates, median process' /  '(0) short' '(1) medium' '(2) long',
+		24 'Orbital/postorbital plates, posterior process length' /  '(0) short' '(1) medium-sized' '(2) long process' '(3) posterior process is absent',
+		25 'Postorbital canal of lateral-line system' /  '(0) absent' '(1) present (one canal)' '(2) present (radial canals)',
+		26 'Orbital plates, presence of rostral folds (rostral suborbital process)' /  '(0) absent' '(1) present',
+		27 Median_plates_surrounded_by_fields_of_tesserae /  '(0) absent' '(1) present',
+		28 'Accessory plates (postbranchial plates/sub-branchial scales)' /  '(0) absent' '(1) present',
+		29 'Dorsal shield/plate, width/length ratio' /  '(0) elongated (width/length ratio less than 0.7)' '(1) elongated or broad (width/length more than 0.7)' '(2) isometric or very broad (width/length more than 1)',
+		30 'Dorsal plate, general shape' /  '(0) quadrangular/polygonal/oval with posterolateral lobes which contacts with cornual plates' '(1) rhomboid with anterior and posterior notches' '(2) heart-shaped' '(3) oval/pear-shaped and narrowing in front' '(4) oval with anterolateral lobes',
+		31 'Dorsal plate, general shape of primordium (for psammosteids)' /  '(0) rhomboid with anterior and posterior notches' '(1) heart-shaped' '(2) elongated and narrowing in front',
+		32 'Dorsal plate morphology, anterior margin curvature' /  '(0) concave' '(1) straight' '(2) convex' '(3) convex to a point',
+		33 'Dorsal plate, lateral margins curvature' /  '(0) convex' '(1) concavo-convex' '(2) angular, may also form anterolateral and posterolateral margins (rhomboid, heart-shaped dorsal plate)' '(3) straight (paralleled)' '(4) convexo-concave' '(5) convexo-concave with posterolateral process (fam. Obrucheviidae)',
+		34 'Dorsal shield/plate, branchial sinus' /  '(0) absent' '(1) present',
+		35 'Dorsal shield / plate, posterior margin curvature' /  '(0) concave' '(1) straight' '(2) convex (rounded)' '(3) convex (angular)',
+		36 'Dorsal shield / plate, contact between posterior and lateral margins' /  '(0) obtuse angle' '(1) arc-shaped contact',
+		37 'Dorsal shield / plate, medial posterior process on the posterior margin (mid-posterior process, posterior medial peak)' /  '(0) absent' '(1) present',
+		38 'Dorsal plate, posterior notch of the dorsal plate (for the independent dorsal spine or ridge-scale)' /  '(0) present, open' '(1) present, enclosed' '(2) absent',
+		39 Dorsal_spine /  '(0) present, fused to dorsal plate' '(1) present, independent dorsal spine' '(2) absent',
+		40 'Dorsal shield/plate, transverse commissures (tc or radiating comissures)' /  '(0) 3 pairs' '(1) 2 pairs' '(2) more than 3 pairs' '(3) absent',
+		41 'Dorsal shield/plate, transverse commissures pattern, anterior (first) pair' /  '(0) straight or convex anteriorly' '(1) concave anteriorly',
+		42 'Dorsal shield/plate, transverse commissures pattern, middle (second) pair' /  '(0) straight or convex anteriorly' '(1) concave anteriorly',
+		43 'Dorsal shield/plate, transverse commissures pattern, posterior (third) pair' /  '(0) straight' '(1) concave anteriorly' '(2) convex anteriorly',
+		44 'Dorsal shield/plate, median transverse commissures (mtc)' /  '(0) absent' '(1) presence on the anterior part of the plate (near with pair tc1-tc2)' '(2) presence in the middle or on the posterior part of the plate (near with pair tc2-tc3)',
+		45 'Dorsal plate, median transverse commissures (mtc), quantity' /  '(0) two' '(1) one',
+		46 'Dorsal shield/plate, median dorsal canals (mdc), anterior part' /  '(0) diverge' '(1) converge or parallel' '(2) mdc are absent',
+		47 'Dorsal shield/plate, anterior mdc begins on the dorsal shield/plate without connection to any other canals' /  '(0) absent' '(1) present',
+		48 'Dorsal plate, mdc anterior prolongation' /  '(0) mdc not prolonged anteriorly' '(1) between orbital and pineal areas/plates' '(2) pineal plate' '(3) orbital plate' '(4) meets pineal canal on the dorsal plate',
+		49 'Dorsal shield/plate, lateral dorsal canal (ldc)' /  '(0) absent' '(1) present' '(2) present in the fields of tesserae',
+		50 'Dorsal shield/plate, contact between the anterior transverse commissures (ts) and the lateral dorsal canal (ldc)' /  '(0) the anterior tc contacts the ldc on its anterior third' '(1) the anterior tc contacts the ldc on its medial third' '(2) the anterior tc contacts the ldc somewhere in fields of tesserae',
+		51 'Dorsal shield/plate, position of the lateral dorsal canal (ldc)' /  '(0) ldc very far from the lateral margins of the dorsal plate' '(1) ldc moderately far from the lateral margins of the dorsal plate' '(2) ldc close to the lateral margins of the dorsal plate',
+		52 'Posterior prolongation of the supraorbital canals (soc)' /  '(0) soc between the orbital and pineal areas or in the pineal plate' '(1) soc on the orbital plate',
+		53 Position_of_soc /  '(0) medial' '(1) lateral (also in the fields of tesserae)',
+		54 'Dorsal shield/plate, ornamentation and tesserae' /  '(0) lateral addition of dentine ridges (longitudinal ridges)' '(1) concentric ridges from a primordium' '(2) concentric rows of tubercles from a primordium' '(3) tesserae',
+		55 'Dorsal plate, growth center (ornamentation''s primordium), their position' /  '(0) lack of primordium' '(1) anterior half of the plate' '(2) near half of the plate' '(3) posterior half of the plate',
+		56 'Dorsal plate, density of ornamentation on the dorsal disc' /  '(0) ridge (or tubercle) density equal or superior to 10 per millimetre' '(1) density inferior to 10 per millimetre',
+		57 'Dorsal plate, degree of coverage of the rooted tesserae' /  '(0) absent' '(1) rare single tesserae' '(2) small primordium of the dorsal plate not covering by tesserae' '(3) large primordium (like the independent plate) of the dorsal plate not covering by tesserae' '(4) partly covering, mosaic of own superficial layer on the definitive stage' '(5) full covering',
+		58 'Dorsal plate, tesserae on the primordium (juvenile stage)' /  '(0) absent' '(1) present',
+		59 'Dorsal plate, sizes of the rooted tesserae' /  '(0) big (more than 1.6 cm)' '(1) medium (0.8-1.6 cm)' '(2) small sized (0.2 - 0.8 cm)',
+		60 'Dorsal plate, dominated shape of the rooted tesserae' /  '(0) scale-like, rhombic, square with overlapped margins' '(1) scale-like, rhombic, square, not overlapped margins' '(2) polygonal, not overlapped margins',
+		61 'Dorsal plate, groove type of the rooted tesserae' /  '(0) cyclomorial, concentric position of primordial tubercle' '(1) cyclomorial, eccentric position of primordial tubercle' '(2) synchronomorial',
+		62 'Dorsal plate (and other main plates), rooting of the bases of the rooted tesserae' /  '(0) dense rooting' '(1) weak rooting with development canals in the aspidin',
+		63 'Dorsal shield/plate, internal organ impressions on the visceral surface' /  '(0) present' '(1) absent',
+		64 'Ventral plate, form of the primordium (shape of the juvenile plate)' /  '(0) posterior notch is present (small V-shaped)' '(1) posterior notch is present (large V-shaped)' '(2) posterior notch is present (large U-shaped)' '(3) oval shape, posterior notch is absent' '(4) primordium isn''t distinguishable due the tesserae pattern',
+		65 'Ventral shield/plate, width/length ratio' /  '(0) elongated (width/length ratio 0.5 - 0.7)' '(1) broad (width/length more than 0.7)' '(2) very elongated (less than 0.5)',
+		66 'Ventral shield/plate, anterior margin shape' /  '(0) concave' '(1) convex or straight in the middle',
+		67 'Ventral shield/plate, posterior margin shape' /  '(0) convex angular' '(1) convex' '(2) straight or slightly concave' '(3) V-shaped posterior notch' '(4) broad U-shaped posterior notch (Pycnosteus-type)' '(5) secondary convex (overgrown of V-shaped posterior notch/O-shaped growth center)' '(6) secondary convex with posterior middle process (Psammosteus)',
+		68 'Ventral plate, ratio of length of posterior notch (L1) and ventral plate (L2)' /  '(0) short posterior notch (L1/L2 = 0.1-0.25)' '(1) middle sized (L1/L2 = 0.3-0.5)' '(2) long (L1/L2 more than 0.5)' '(3) extreme long (L1/L2 = 0.8)',
+		69 'Ventral plate, protruding edges of the posterior notch' /  '(0) absent' '(1) present',
+		70 'Ventral shield/plate, position of primordium (growth center)' /  '(0) posteriorly' '(1) middle' '(2) anteriorly',
+		71 'Ventral shield/plate, covering by rooted tesserae' /  '(0) absent' '(1) few tesserae, only in posterior notch and on the posterior parts of plate (Schizosteus, Tartuosteus)' '(2) posterior pattern of tesserae' '(3) lateral and posterior pattern of tesserae' '(4) full covering by tesserae',
+		72 'Ventral plate, shape of rooted tesserae and overlapping' /  '(0) mostly scale-like, rombic, square (''Psammolepis''-shape), overlapped margins' '(1) scale-like, rhombic, square, not overlapped margins' '(2) mostly polygonal (''Psammosteus''-shape), not overlapped margins',
+		73 'Ventral plate, groove type of the rooted tesserae' /  '(0) cyclomorial, concentric position of primordial tubercle' '(1) cyclomorial, eccentric position of primordial tubercle' '(2) synchronomorial',
+		74 'Ventral plate, sizes of the rooted tesserae' /  '(0) big (more than 1.6 cm)' '(1) medium (0.8-1.6 cm)' '(2) small sized (0.2 - 0.8 cm)',
+		75 'Ventral shield/plate, presence of the postoral canal (polc)' /  '(0) absent' '(1) present',
+		76 'Ventral shield/plate, presence of the lateral ventral canal (lvc)' /  '(0) lvc (only) present' '(1) lvc with transverse commissures' '(2) absent, only transverse commissures',
+		77 Branchial_plates_reaches_the_proximal_margins_of_the_cephalothorax /  '(0) absent' '(1) present',
+		78 'Branchial plates, lateral/anterolateral ledge' /  '(0) absent' '(1) present',
+		79 'Branchial plates, dorsal lamella' /  '(0) lack of dorsal lamella' '(1) width of ventral and dorsal lamellae equal' '(2) unequal width of lamellae' '(3) lamellae are partly fused, form the free anterolateral ledge and distal tip' '(4) lamellae are fully fused',
+		80 'Branchial plate, contact between the dorsal plate/shield' /  '(0) long, more than half disc length' '(1) short, less than the half disc length' '(2) lack of contact',
+		81 'Branchial plates, length-width ratio (l:w)' /  '(0) narrow eurybasal (more than 1.5 - 2)' '(1) isometric eurybasal (more than 0.9 to 1.5)' '(2) wide eurybasal (more than 0.6)' '(3) stenobasal (less than 0.6)' '(4) extremely short stenobasal (less than 0.3)',
+		82 'Branchial plates, shape of anterolateral margin' /  '(0) slightly convex' '(1) arcuate convex (arc-shape for Protaspis, Psammolepis)' '(2) generally concave' '(3) linear',
+		83 'Branchial plates, shape of medial margin' /  '(0) straight or concave' '(1) anterior part is concave and posterior part is slight convex (eurybasal)' '(2) with anterior concave and posterior expressed convex (eurybasal)' '(3) anterior part is short and posterior part is expressed convex (eurybasal)' '(4) expressed convex (stenobasal)',
+		84 'Branchial plates, shape of posterior margin' /  '(0) convex posteriorly' '(1) stright or concave posteriorly',
+		85 'Branchial plates, distal tip' /  '(0) back oriented (divergent/parallel)' '(1) back oriented (convergent)' '(2) forward oriented' '(3) truncated (for Obruchevia)',
+		86 'Branchial plates, ratio of the ornamented/unornamented surface (w1:w2) on the dorsal side of plates' /  '(0) ornamented surface is narrow (from 0.2 up to 0.5)' '(1) equally (from 0.5 up to 1)' '(2) ornamented surface is wide (more less 1)',
+		87 'Branchial plates, ratio of the ornamented/unornamented surface (w1:w2) on the ventral side of plates' /  '(0) unornamented surface is narrow' '(1) expanded unornamented surface' '(2) extremely expanded unornamented surface',
+		88 'Branchial openings, position' /  '(0) at half of branchial plate' '(1) at the distal tip of branchial plate' '(2) at the posterior margin of branchial plate',
+		89 'Branchial openings, delimitation' /  '(0) superior edge of branchial plate' '(1) posterior edge of branchial plate' '(2) lateral margin of the dorsal plate',
+		90 Cornual_plates /  '(0) absent' '(1) fused with other plates' '(2) cornual plates sensu stricto with cornua' '(3) rudimentary and very reduced cornual plates',
+		91 'Cornual plates, length-width ratio' /  '(0) narrow (l>w)' '(1) broad (l=w)' '(2) very broad (l<w)',
+		92 'Cornual plates, general shape' /  '(0) triangular' '(1) rectangular, trapezium-shape',
+		93 'Cornual plates, margins' /  '(0) lateral (external) and posterior margins convex' '(1) lateral (external) margin concave and posterior margin convex' '(2) lateral (external) margin convex and posterior margin concave' '(3) all margins rounded/convex',
+		94 'Cornual plates, posterior extension' /  '(0) less than posterior margin of dorsal plate' '(1) equal to posterior margin of dorsal plate' '(2) greater than posterior margin of dorsal plate',
+		95 'Cornual plates, ornamentation' /  '(0) scale-like ornamentation' '(1) long ridges parallel to the lateral (external) edge' '(2) like on the median plates',
+		96 'Cornual plates, lateral projection' /  '(0) lateral projection less than brachial plate' '(1) lateral projection the same as brachial plates' '(2) lateral projection just up to greater than double that of the branchial plates' '(3) lateral projection vastly greater than brachial plate' '(4) cornual plates placed on dorsal shield',
+		97 'Cornual - ventral contact' /  '(0) absent' '(1) present',
+		98 'Flank scales, morphology' /  '(0) short and broad' '(1) rhombic shape with short unornamented surface' '(2) rhombic/round shape with long unornamented surface',
+		99 'Flank and ridge scales, ornamentation and groove lines' /  '(0) longitudinal / transversal ridges' '(1) V-/arc- ordered ridgelets/tubercles' '(2) areal groove zones of ridgelets/tubercles',
+		100 'Lateral body scales, rows of lateral squamation' /  '(0) reduced number of rows, about two' '(1) more than 2 rows',
+		101 'Flank scales, relative sizes in different rows' /  '(0) different width' '(1) same width',
+		102 'Flank scales, relative length' /  '(0) > than ridge scales' '(1) equal to ridge scales' '(2) < than ridge scales',
+		103 'Flank scales, sizes' /  'large (up to 1.6 mm)' 'medium (0.8-1.6 mm)' 'small (less than 0.8 mm) (Psammosteus)',
+		104 'Flank scales, row of subperpendicular dentine ridges on the free margins (like in Schizosteus)' /  '(0) present' '(1) absent',
+		105 'Caudal fin, shape' /  '(0) heterocercal' '(1) hypocercal' '(2) homocercal',
+		106 'Fields of tesserae, average sizes of discrete tesserae' /  '(0) large (1.8 - 3 cm)' '(1) medium (1 cm up to 1.8 cm)' '(2) small (less than 1 cm)',
+		107 'Fields of tesserae, presence of the single elements and complex elements (not juvenile forms)' /  '(0) absent' '(1) present',
+		108 'Fields of tesserae, morphology, morpho-histological type of the discrete elements' /  '(0) scale-lake with overlapping zones' '(1) scale-like without overlapping zones' '(2) mostly polygonal, basic type, discrete tesserae with high neck' '(3) mostly polygonal, basic type, discrete tesserae with low neck' '(4) progressive type',
+		109 'Ornamentation, general pattern on the main plates' /  '(0) uniform (continuous ridges / continuous tubercle bands pattern)' '(1) undulating ridges (tuberculated ridges with one or more crown)' '(2) rows of ridges and tubercles' '(3) tubercles in rows (couple tubercles can fuse together in the small ''ridgelets'')',
+		110 'Ornamentation, relative position of ridges/tubercles' /  '(0) between the tubercles are visible the solitary pores of aspidin' '(1) very dense position, so called ''parquet''' '(2) far position of relative tubercles',
+		111 'Ornamentation, the dominant sizes of tubercle bases' /  'very small (less than 0.3 mm)' 'small (0.3 - 0.7 mm)' 'middle (0.7 - 1 mm)' 'large (1 - 1.5 mm)' 'very large (more than 1.5)',
+		112 'Ornamentation, primordial tubercles surrounds by satellite tubercles (on the main plates excluding tesserae)' /  '(0) absent' '(1) present',
+		113 'Ornamentation, tops of dentine ridges/tubercles' /  '(0) smooth' '(1) crested/sharpened',
+		114 'Ornamentation, margins of dentine ridges/tubercles' /  '(0) smooth (radial ribs do not pass into the marginal serrations/crenulations)' '(1) serrations' '(2) simple crenulations (tips branch rare)' '(3) complete crenulations (branching tips)' '(4) very complete crenulations (branching tips and branching on the entire length of crenulations)',
+		115 'Ornamentation, orientation of tubercles ridges on the branchial plate' /  '(0) subparallel to the anterolateral margin' '(1) worm-like shapes' '(2) subperpendicular to the anterolateral margin, convex distally' '(3) subperpendicular to the anterolateral margin, convex proximally',
+		116 Cell_imprints_on_the_surface_of_tubercles /  '(0) absent' '(1) rare' '(2) numerous',
+		117 Pleromin /  '(0) absent' '(1) present' '(2) present (full covering)',
+		118 'Aspidin (L1) type of the median plates of cephalothorax' /  '(0) absent' '(1) present',
+		119 'Aspidin mounds/ridges of L1 on the main plates' /  '(0) absent' '(1) present',
+		120 'Aspidin (L2) type of the median plates of cephalothorax' /  '(0) cancellar' '(1) compact' ; 
+	MATRIX
+	Anglaspis_macculloughi      0011---000000--0-0000---100000--013002200000-0111010100100----0-010-??0---1111100001-??000-------000?0???---00?0?0-??0-0
+	Nahanniaspis_mackenziei     0010---0000?0--0-0000---000100--013002200000-1010-?0103000----0-010-?00---??10000000-??000-------00000??0---00?0?0-?????
+	Anchipteraspis_crenulata    1020001000??0--0-1001102?00000-20?001010010200101020112000----0-???-????????100200??-??001------0????????---00?0?1-?????
+	Protopteraspis_vogti        202000010001130001002101110000-000001010112200101020111100----0-010-?00---1100110000-??00200201011(0 1)111???---00?011-0?0-0
+	Errivaspis_waynensis        203210022010121201112011100000-001001010012201021101013100----1-010-?00---1100110000-??00200(1 2)01011(0 1)112??1---00?011-??100
+	Gigantaspis_laticephala     202010020010121213112011?10010-030300010101201021021013100----1-0?1-?00---0000110000-??0120000?011(0 1)1?2???---00?000-???00
+	Woodfjordaspis_felixi       ?????0?2????111211112?01?00000-30000122??????????????1?100----1-0?1-?00---00?01?00??-?????0??????????????---(0 1)0?0??-???0?
+	Doryaspis_nathorsti         212410020011110211002011100100-310001200001201?41020013100----1-0?2-?00---010011000?-??00220111301(0 1)011??1---(0 1)0?010-???00
+	Xylaspis_prima              1020100200?1120211112111?00010-100101220011201021120013100----1-0?0--00---0?1?1101011??110-------???????----(0 1)0?000-???0?
+	Protaspis_bucheri           2020100200??121211112020?10010-100001?10102??1??1020013100----1-00?-??0---??111001011??110-------1(0 1)1?????---00?001-??101
+	Drepanaspis_juvenile        20?1(0 1)01201??1000010?3101?01?11002000??2?????????2???1??100----????3?????--?21120001(0 1)00?11300022401110???2???20(0 1 2)???-???01
+	Drepanaspis_gemuendenensis  210(1 3)(0 1)1(0 1)3(0 1)1201(0 3)00(0 2)10?3101201?(0 1)100200010200?0?-00022-0122100----?0(0 1)(0 1)30010---12112000(1 2)(0 1)0001130(0 1)022401110200200020(0 1 2)1110??101
+	Guerichosteus_kozlowskii    2??1(0 1)1??0???13???20?3??1??1?????20??????????????2????22100----1?1?320?0---?2113000(1 2)0000213010?24011??200???030(3 4)11(0 1 2)-??101
+	Guerichosteus_heterolepis   2????1?????????0????3101201????????????????????????0122100----1?????????--?2113000?000?21????????11??200?00030(3 4)11(0 1)-01101
+	Schizosteus_perneri         ????????????????????????????????????????????????????????????????????????????114010?000?01????????11???0????0303010-???01
+	Perscheia_pulla             ?????????????????????????????21?5121022??0211???1?2??-?-00----11??3?0?0---?2???????????21???????????????????--30----2111
+	Obruchevia_heckeri          ????????????1???????????????1210(4 5)1210223---0-2??0????-2-00----11??3?0?0---?21140101130021???????????????????---0----21?1
+	Tartuosteus_giganteus       2???????????????????3?????1??210????????????????2????2?100----100?3101102(0 1)?21140131102021?????????????0??00?31(0 1)012-?1101
+	Tartuosteus_maximus         2???????????1???0???3??3??1?22102030?221?0-????022-??22100----100131011?-(0 1)?211402311020213110?24011??20??00031(0 1)012-?1101
+	Pycnolepis_splendens        2?01(0 1)1030???1???????3?????1?22102030?22??????????????(2 3)211001101?1?421?1---?21140(1 2)(0 2)30(1 2)1021????????11??2?0?(0 1)0030(2 3)012-11101
+	Pycnosteus_palaeformis      2????1??????1??00???3101?01?22102030122?????????2??0122100----121?43121---?21140(1 2)(0 2)30(1 2)20213110?24011??200?00?303012-01101
+	Pycnosteus_pauli            2???????????????????3?????1??21?2030122?????????2????22100----121?43121---?21140223022021????????????????00?(2 3)0301(2 3)201101
+	Pycnosteus_tuberculatus     2????1?????????00???3100?01?221020?0?2??????????2??0?22100----121?43121---?21140(2 3)23022(0 1)213010?24011??200?000(2 3)0301(2 3)201101
+	Ganosteus_artus             2???????????????????3?????1??21?????????????????2????2?1?0?????21?4212?---?2114020?1??121????????21???1?????323?1(2 3)-?1101
+	Ganosteus_stellatus         2??1110?????1???0???3?????1?22102030122?????????2????22100----121?42121---?2114(0 1)(2 3)031111213(0 1)10?24021??211?00032311(2 3)-01101
+	Psammolepis_toriensis       2???????????????????3?????1??2??2?3?????????????2????(2 3)2120(0 1)0(1 2)01????????????21140111110021????????11??2(0 1)??0?031(0 1)01(2 3)-?1101
+	Psammolepis_abavica         2???????????130??20?3?????1??21?????????????????2????(2 3)?120(0 1)0(1 2)0100?5101302(0 1)?21140(0 1)11???021????????11??2(0 1)??00031(0 1)01(2 3)-?1101
+	Psammolepis_paradoxa        2?0311030???1??00???3103201?12102030122?????????2??0?(2 3)(1 2)120(0 1)0(1 2)0100?5101302(0 1)?21140111111021???????011??2(0 1)0?0003(0 1)(1 2)01(2 3)-11101
+	Psammolepis_venyukovi       2?0311030???1???????3??3??1?(1 2)210(2 4)1(2 3)0?22?????????2???1(2 3)1120(0 1)0(1 2)0100?5???3????21140111111021????????11???(0 1)1??003(0 1)(1 2)11(2 3)-11101
+	Schizosteus_asatkini        2???????????????????3?????1?22102020022?????????2????22100----111?3101?---?2114?10(1 2)1010213??????????????????31(1 2)012-11101
+	Schizosteus_striatus        2?01(0 1)1030???????????3??1??1?12112020?22?????????2????22100----111?310110-(0 1)?2114010(1 2)101021???????011102(0 1)0?(0 1)0021(0 1 2)012011101
+	Paulia_proia                ??0111030???????????310?1?1?0321(0 1)02112201(0 1)1(1 2)001022-0?(2 3)1130(0 1)0(1 2)0112?5102212(0 1 2)?211401(0 3)2101021?????????????(0 1)?????2(0 1)(1 2)012(0 1)21101
+	Placosteus_alatus           ????????????????????3?????1?032(1 2)1021022?????????2????(2 3)2141(1 2)(0 1)(1 2)0132?5--22122?21140102101021???????????????????2(0 1)(1 2)012(0 1)21101
+	Placosteus_undulatus        ????????????????????3?????1?032(1 2)102102200022101022-??(2 3)2141(1 2)(0 1)(1 2)0132?5--22122??1140102101021???????????????????2(0 1)(1 2)012(0 1)21101
+	Elgaia_luhai                ????????????????????3?????1???????21122??????????????3?15?2(1 2)(0 1)01??????????????14(0 1)30310112????????????????????20(1 2)012(0 1)21101
+	Psammosteus_bergi           ????????????1???0???3??2??1?14?241211220112(1 2)0010101??3?15122(0 1)11??????????????14133410112?????????211022(0 1)?21220(1 2)012(0 1)21101
+	Psammosteus_praecursor      ????????????????????3?????1?1??2??21122100-11010?????3?15122(0 1)1140?6--242(0 1)2???1413(0 3)410(0 1)(1 2)2?????????21??22(0 1)?21220(1 2)012021101
+	Psammosteus_maeandrinus     ????????????1400?20?3?????1??????????????????????????3?15122(0 1)11??????????????1413(0 3)4101(1 2)2?????????21??22(0 1)?21220(1 2)012021101
+	Psammosteus_megalopteryx    ????????????????0???3?????1?142(0 2)41211221(0 1)0-11110101??3?15122(0 1)1140?5--?42(0 1)2???1414041002220-------211022(0 1)?21220(1 2)012221101
+	Psammosteus_cuneatus        ????????????????????3?????1??????????????????????????3?151???????????????????1414(0 3)410022?????????21??22(0 1)?21?20(1 2)012221101
+	Psammosteus_livonicus       ????????????????????3?????1?14?24121?2?10(0 1)-?-010?????3?15122(0 1)11??????????????14130410022??????????????2??21320(2 3)01(2 3)(0 2)21101
+	Psammosteus_asper           ????????????????????3?????1?14??412112???????????????3?15122?11??????????????14140410022?????????21??22??21320(2 3)01(2 3)221101
+	Psammosteus_levis           ????????????????????3?????1????????????????????????????1?1???????????????????14140410022?????????211022(0 1)?21?2(0 1)(1 2)012221101
+	Psammosteus_tenuis          ????????????????????3?????1????????????????????????????1?1???????????????????14140410022?????????????????2122(0 1)(2 3)013(1 2)21101
+	Karelosteus_weberi          ????????????????????3?????1????????????????????????????1?12?0????????????????141?0410022?????????????????2?320(3 4)01(2 3)-21101
+	Traquairosteus_ramosus      ????????????????????3?????1????????????????????????????1?122(0 1)1???????????????14140410022?????????2(1 2)???21?21420(3 4)014(2 3)21111
+	Traquairosteus_falcatus     ????????????????????3?????1??????????????????????????3?15122?11??????????????14140410022??????????(1 2)??????21420(3 4)014(2 3)21111
+	Traquairosteus_pectinatus   ????????????????????3?????1????????????????????????????1?1???????????????????1414041?022?????????????????21?20(3 4)014(2 3)2?111
+	Traquairosteus_kiaeri       ????????????????????3?????1????????????????????????????1?1???????????????????1414041?022??????????(1 2)??????21420(3 4)014(2 3)2?111
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	OPTIONS DEFTYPE = UNORD POLYTCOUNT = MINSTEPS;
+	TYPESET * UNTITLED   =  unord:  2- 7 9- 15 17- 20 22- 29 32- 37 39- 53 55- 56 58- 63 65- 70 72- 78 80 82 84- 85 90- 98 100- 107 109- 116 118- 120, ord:  1 8 16 21 30- 31 38 54-57\3 64 71 79 81 83-86\3 87- 89 99 108 117;
+TYPESET default   =  unord:  2- 7 9- 15 17- 20 22- 29 32- 37 39- 53 55- 56 58- 63 65- 70 72- 78 80 82 84- 85 90- 98 100- 107 109- 116 118- 120, ord:  1 8 16 21 30- 31 38 54-57\3 64 71 79 81 83-86\3 87- 89 99 108 117;
+
+END;
+
+BEGIN NOTES;
+
+	TEXT  TAXON = 11 TEXT = juvenile_specimen;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 120;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1599328209149;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 3105355190245976564;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 4728807514671061311;
+			mqVersion 360;
+			checksumv 0 3 19800965 null  getNumChars 120 numChars 120 getNumTaxa 49 numTaxa 49   short true   bits 127   states 127   sumSquaresStatesOnly 83292.0 sumSquares 83292.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 175;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1197 625;
+			setLocation 8 23;
+			setFont Gadget;
+			setFontSize 14;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #4728807514671061311 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 193;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1022 553;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

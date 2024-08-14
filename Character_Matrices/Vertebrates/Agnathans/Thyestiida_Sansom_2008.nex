@@ -1,0 +1,279 @@
+#NEXUS
+[written Tue Nov 10 22:50:19 CST 2020 by Mesquite  version 3.6 (build 917) at EAS-6BCEC7.local/10.0.1.16 ()]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=18;
+	TAXLABELS
+		Aceraspis Zenaspis Procephalaspis Witaaspis Auchenaspis Thyestes Dartmuthia Saaremaspis Oeselaspis Tremataspis Aestiaspis Tyriaspis Sclerodus Didymaspis Timanaspis Dobraspis Tannuaspis Ilemoraspis
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=35;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6";
+
+	MATRIX
+	Aceraspis       01000001110200101001000200000001001
+	Zenaspis        00000001110201001001000100100000001
+	Procephalaspis  000003011102111010??001100100100000
+	Witaaspis       01001111011210101???00?00200000?01?
+	Auchenaspis     000003110102?1101?1?10?10011??10010
+	Thyestes        01001111011111101???1?1100111111010
+	Dartmuthia      000011110111121001??01121001000?010
+	Saaremaspis     000011110111121?01?011100200001????
+	Oeselaspis      10111111011110010???111113100002110
+	Tremataspis     10111111011110010110111214000001110
+	Aestiaspis      001011110111121?0???0111?1011011???
+	Tyriaspis       000000110111?21001101???00000101???
+	Sclerodus       0111??110111?2??0???11?0100?110?1??
+	Didymaspis      00000310011210011???11?10000001211?
+	Timanaspis      0??01001?11(0 2)?0010???1?00?101000????
+	Dobraspis       01111111011(1 2)?0??0????????????0?????
+	Tannuaspis      0?11?21010-0?2??0???1???001?01??11?
+	Ilemoraspis     0?11120010-011001??000??0100000????
+
+;
+
+END;
+BEGIN MacCladeStart;
+	Extended;
+
+END;
+BEGIN ASSUMPTIONS;
+	OPTIONS DEFTYPE = unord PolyTcount = MINSTEPS;
+	TYPESET * UNTITLED   =  unord:  1- 35;
+	WTSET * UNTITLED  =  1: 1 -  35;
+
+END;
+
+BEGIN TREES;
+	Title 'Trees from "Thyestiida_Sansom_2008.nex"';
+	ID 0175b59adda51;
+	LINK Taxa = Taxa;
+	TRANSLATE
+[0] 		1 Aceraspis,
+[1] 		2 Zenaspis,
+[2] 		3 Procephalaspis,
+[3] 		4 Witaaspis,
+[4] 		5 Auchenaspis,
+[5] 		6 Thyestes,
+[6] 		7 Dartmuthia,
+[7] 		8 Saaremaspis,
+[8] 		9 Oeselaspis,
+[9] 		10 Tremataspis,
+[10] 		11 Aestiaspis,
+[11] 		12 Tyriaspis,
+[12] 		13 Sclerodus,
+[13] 		14 Didymaspis,
+[14] 		15 Timanaspis,
+[15] 		16 Dobraspis,
+[16] 		17 Tannuaspis,
+[17] 		18 Ilemoraspis;
+	TREE UNTITLED = (1,(2,(3,(5,(14,(6,((11,7),(8,(12,(4,((18,17),(13,((16,15),(10,9))))))))))))));
+
+END;
+
+
+BEGIN MacClade;
+	Version 4.0 84;
+	LastModified -993391592;
+	FileSettings treewindow '1' '1' '36' '1';
+	Singles 010;
+	Editor 0001101111111110010001001 '0' '72' Gadget '12' '114' '1' all;
+	EditorPosition '84' '874' '512' '683';
+	TreeWindowPosition '61' '470' '715' '974';
+	ListWindow Characters closed Gadget '12' '50' '25' '270' '586' 000;
+	ListWindow Taxa closed Gadget '12' '50' '10' '253' '305' 100000;
+	ListWindow Trees closed Gadget '12' '50' '10' '134' '405';
+	ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow ExSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharSets closed Gadget '12' '70' '45' '111' '182';
+	ListWindow TaxSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	TextWindow AboutFile '90' '65' '280' '445' Gadget '12' ( normal ) 1;
+	ChartWindowPosition '50' '30' '688' '964';
+	StateNamesSymbols open Gadget '12' '10' '537' '894' '203' '220';
+	WindowOrder Text AboutFile Tree States;
+	OtherSymbols & / 00 ? -;
+	Correlation '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile '2';
+	ExportHTML _ MOSS '100' 110000;
+	PrettyPrint 10;
+	CharLegendPosition '668' '879' '121' '85';
+	TreeLegendPosition '626' '781' '112' '94';
+	EditorToolsPosition '507' '41' '115' '165';
+	TreeToolsPosition '576' '6' '126' '138';
+	TreeWindowProgram 00;
+	TreeWindow 0000;
+	Continuous '0' '3' 1;
+	Calculations 1100111;
+	SummaryMode '0' '0' 0;
+	Charts Gadget '12' ( normal ) 0010;
+	NexusOptions '0' '0' '50' 001011001;
+	TipLabel '1';
+	TreeFont Gadget '12' ( normal );
+	TreeShape 1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax '0';
+	TraceAllChangesDisplay '1' 1;
+	BarsOnBranchesDisplay '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation '3' 0;
+	PrintTree 10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Gadget '12' ( normal ) Gadget '10' ( normal ) Gadget '9' ( normal ) Gadget '9' ( normal ) Gadget '9' ( bold ) Gadget '9' ( normal ) Gadget '9' ( normal ) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '0' '0' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 10;
+	TreeTools '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools '1';
+
+END;
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 37;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1605070220202;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 7843505047736148628;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 7286243503140221478;
+			mqVersion 360;
+			checksumv 0 3 2216591617 null  getNumChars 37 numChars 37 getNumTaxa 18 numTaxa 18   short true   bits 127   states 127   sumSquaresStatesOnly 9894.0 sumSquares 9894.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 175;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 700 464;
+			setLocation 8 23;
+			setFont Gadget;
+			setFontSize 14;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #7286243503140221478 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 525 392;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;

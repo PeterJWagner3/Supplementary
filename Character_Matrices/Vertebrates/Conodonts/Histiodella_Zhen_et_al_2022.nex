@@ -1,0 +1,21 @@
+#NEXUS
+
+[!File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=11 NCHAR=12;
+	FORMAT SYMBOLS= " 0 1 2 3" MISSING=? GAP=- ;
+MATRIX
+Cooperignathus_nyinti			110000------
+Histiodella_altifrons			111000--0000
+Histiodella_minutiserrata	111100--0000
+Histiodella_sinuosa				1111100-0000
+Histiodella_labiosa				111111100000
+Histiodella_serrata				111111010000
+Histiodella_holodentata		111111011000
+Histiodella_kristinae			111111011100
+Histiodella_wuhaiensis		111111011110
+Histiodella_bellburnensis	111111011110
+Histiodella_triangularis	111111011111
+;
+end;
