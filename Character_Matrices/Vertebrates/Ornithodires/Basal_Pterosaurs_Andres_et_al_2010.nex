@@ -1,0 +1,281 @@
+#NEXUS
+[written Tue Aug 02 15:04:52 CDT 2022 by Mesquite  version 3.6 (build 917) at Wagners_Dark_Tower/10.0.1.87]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=22;
+	TAXLABELS
+		Ornithosuchus_longidens Herrerasaurus_ischigualastensis Scleromochlus_taylori Preondactylus_buffarinii Eudimorphodon_ranzii Austriadactytlus_cristatus Peteinosaurus_zambelli Dimorphodon_macronyx Campylognathoides_liasicus Sericipterus_wucaiwanensis Angustinaripterus_longicephalus Harpactognathus_gentryii Cacibupteryx_caribensis Rhamphorhynchus_muensteri Dorygnathus_banthensis Scaphognathus_crassirostris Sordes_pilosus Jeholopterus_ningchengensis Dendrorhynchoides_curvidentatus Batrachognathus_volans Anurognathus_ammoni Pterodactyloidea
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=75;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9";
+	MATRIX
+	Ornithosuchus_longidens          0-0000000?000?00000000000??00000000000000000000000000000-000?0????00-000000
+	Herrerasaurus_ischigualastensis  0-0000000000100000000000000000000000000000000?000?000000-00000????00-000020
+	Scleromochlus_taylori            0-??000?0??0?1?1??0??0000000?0000?000????00??0000?000000-10???????10-00002-
+	Preondactylus_buffarinii         0-000000?010000?1000?0??00000010001000100000?00?0?100100100000000000?0000??
+	Eudimorphodon_ranzii             0-000000001000010001?00?00120010001101100001000?0110020?10?1???????001?????
+	Austriadactytlus_cristatus       0-0?00100010000100?0?0??????001001100110000??0?00?????0????10?0100?????????
+	Peteinosaurus_zambelli           ???????????????????????0?1?001000??0010???????001?1001001001001000100000010
+	Dimorphodon_macronyx             0-1000000010000010?0?00?0010000000100001000000001?1001001001000000010011010
+	Campylognathoides_liasicus       0-0000001010000100010001001210000000000110010000111002011011010111111110111
+	Sericipterus_wucaiwanensis       1101011011101?0???1110????1?110111011221111?1???????03????????1?00?1???????
+	Angustinaripterus_longicephalus  11010110?11011000011?0??1011110111011221111????????????????????????????????
+	Harpactognathus_gentryii         10??1110?1101?0???????01?????10???0?1?21111????????????????????????????????
+	Cacibupteryx_caribensis          ??010?00111011110001?001?????00?????0??111?????????????????????????????????
+	Rhamphorhynchus_muensteri        100100001110111100?111011111100101010221111110001{1 2}1003111111011111111110111
+	Dorygnathus_banthensis           0-0100001110110100011001101110010101002111011000131003110101000001111110111
+	Scaphognathus_crassirostris      0-0100001010100100010001101010000100002111000000121003110101000001111110111
+	Sordes_pilosus                   0-0100001010000101?10001101010000000003111001000120004111101000001111011111
+	Jeholopterus_ningchengensis      0-1?20011001-001-????01000?0?000000000311100?1110?0111010101111011111010010
+	Dendrorhynchoides_curvidentatus  0-1?2001?00???????????1????0?00000077031?????1110?01140101?1?111111??010010
+	Batrachognathus_volans           0-1?20011001-001-????0100010?000000000311100?10??2011411?1?1?????????010???
+	Anurognathus_ammoni              0-1?2001100????1?10?00100010?00000000031110001{0 1}100001401010111101111?010010
+	Pterodactyloidea                 0-0100001011-100-1?1010111101000000000311000010102200500110(0 1)0{0 1}1{0 1}11111111120
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	OPTIONS DEFTYPE = unord PolyTcount = MINSTEPS;
+	TYPESET * UNTITLED   =  unord:  1- 75;
+
+	WTSET * UNTITLED  =  1: 1 -  75 ;
+
+END;
+
+BEGIN TREES;
+	Title 'Trees from "Basal_Pterosaurs_Andres_et_al_2010.nex"';
+	ID 01826026cc9f145;
+	LINK Taxa = Taxa;
+	TRANSLATE
+[0] 		1 Ornithosuchus_longidens,
+[1] 		2 Herrerasaurus_ischigualastensis,
+[2] 		3 Scleromochlus_taylori,
+[3] 		4 Preondactylus_buffarinii,
+[4] 		5 Eudimorphodon_ranzii,
+[5] 		6 Austriadactytlus_cristatus,
+[6] 		7 Peteinosaurus_zambelli,
+[7] 		8 Dimorphodon_macronyx,
+[8] 		9 Campylognathoides_liasicus,
+[9] 		10 Sericipterus_wucaiwanensis,
+[10] 		11 Angustinaripterus_longicephalus,
+[11] 		12 Harpactognathus_gentryii,
+[12] 		13 Cacibupteryx_caribensis,
+[13] 		14 Rhamphorhynchus_muensteri,
+[14] 		15 Dorygnathus_banthensis,
+[15] 		16 Scaphognathus_crassirostris,
+[16] 		17 Sordes_pilosus,
+[17] 		18 Jeholopterus_ningchengensis,
+[18] 		19 Dendrorhynchoides_curvidentatus,
+[19] 		20 Batrachognathus_volans,
+[20] 		21 Anurognathus_ammoni,
+[21] 		22 Pterodactyloidea;
+	TREE UNTITLED = (4,(5,(6,(7,(8,(9,((17,(22,(21,(20,(18,19))))),(16,(15,((13,14),(12,(10,11))))))))))));
+
+END;
+
+
+BEGIN MacClade;
+	Version 4.0 87;
+	LastModified -908723310;
+	FileSettings editor '1' '1' '76' '1';
+	Singles 110;
+	Editor 00011011111111100100010010 '0' '72' Gadget '12' '230' '1' all;
+	EditorPosition '46' '6' '512' '1503';
+	TreeWindowPosition '46' '6' '1021' '1630';
+	ListWindow Characters open Gadget '12' '50' '10' '253' '374' 000;
+	ListWindow Taxa open Gadget '12' '50' '25' '253' '382' 100000000;
+	ListWindow Trees closed Gadget '12' '50' '10' '276' '490';
+	ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow ExSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow TaxSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	TextWindow AboutFile '50' '25' '212' '724' Gadget '12' ( normal ) 1;
+	ChartWindowPosition '52' '30' '968' '1620';
+	StateNamesSymbols open Gadget '12' '7' '505' '1417' '152' '220';
+	WindowOrder Data Text AboutFile List Characters States List Taxa;
+	OtherSymbols & / 00 ? -;
+	Correlation '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile '2';
+	ExportHTML _ MOSS '100' 110000;
+	PrettyPrint 10;
+	EditorToolsPosition '898' '554' '115' '165';
+	TreeToolsPosition '866' '9' '126' '138';
+	TreeWindowProgram 10;
+	TreeWindow 0000;
+	Continuous '0' '3' 1;
+	Calculations 0000001;
+	SummaryMode '0' '0' 0;
+	Charts Arial '12' ( normal ) 0010;
+	NexusOptions '0' '0' '50' 001011001;
+	TipLabel '1';
+	TreeFont Gadget '12' ( normal );
+	TreeShape 1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax '0';
+	TraceAllChangesDisplay '1' 1;
+	BarsOnBranchesDisplay '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation '3' 1;
+	PrintTree 10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Arial '12' ( normal ) Geneva '10' ( normal ) Arial '12' ( normal ) Arial '12' ( normal ) Arial '12' ( bold ) Arial '12' ( normal ) Arial '12' ( normal ) '83' '115' '13' '45' '116' '148' '13' '45' '149' '181' '13' '45' '182' '214' '13' '45' '211' '47' '0' '0' '624' '456' '636' '35' '678' '35' '678' '288' '24' '35' '1' '1' '1' '1' '0' '4' '-39' '4' '-40' '0' '1' '2' '1' '8' '40' '40' '0' '2' 1000111000000001000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 00;
+	TreeTools '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools '1';
+
+END;
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 75;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1659470693018;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 6705390799327726764;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 4814160103995757937;
+			mqVersion 360;
+			checksumv 0 3 2265890176 null  getNumChars 75 numChars 75 getNumTaxa 22 numTaxa 22   short true   bits 2305843009213694143   states 191   sumSquaresStatesOnly 38486.0 sumSquares -2.3058430092136903E19 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1 errorReportedDuringRun;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 227;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1428 664;
+			setLocation 8 25;
+			setFont Gadget;
+			setFontSize 16;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #4814160103995757937 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1201 592;
+					setLocation 8 25;
+					setFont Gadget;
+					setFontSize 16;
+					getToolPalette;
+					tell It;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;

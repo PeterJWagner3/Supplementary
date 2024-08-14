@@ -1,0 +1,928 @@
+#NEXUS
+[written Tue Dec 08 15:44:53 CST 2020 by Mesquite  version 3.6 (build 917) at Wagners_Dark_Tower/10.0.1.29]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=64;
+	TAXLABELS
+		Hadrosaurus_foulkii Eotrachodon_orientalis Acristavus_gagslarsoni 'Saurolophinae <sp. Big Bend UTEP 37.7>' Brachylophosaurus_canadensis Probrachylophosaurus_bergei Edmontosaurus_annectens Edmontosaurus_regalis Gryposaurus_latidens Gryposaurus_notabilis Gryposaurus_monumentensis ?_Gryposaurus_alsatei Kritosaurus_horneri Kritosaurus_navajovius Kerberosaurus_manakini Kundurosaurus_nagornyi Maiasaura_peeblesorum Naashoibitosaurus_ostromi Prosaurolophus_maximus 'Sabinosaur <sp. PASAC-1>' Saurolophus_osborni Saurolophus_angustirostris Augustynolophus_morrisi Secernosaurus_koerneri Shantungosaurus_giganteus Aralosaurus_tuberiferus Canardia_garonnensis Arenysaurus_ardevoli Blasisaurus_canudoi Amurosaurus_riabinini Charonosaurus_jiayinensis Corythosaurus_casuarius Corythosaurus_intermedius Hypacrosaurus_altispinus Hypacrosaurus_stebingeri Jaxartosaurus_aralensis Lambeosaurus_lambei Lambeosaurus_magnicristatus Magnapaulia_laticaudus Olorotitan_ararhensis Pararhabdodon_isonensis Parasaurolophus_walkeri Parasaurolophus_tubicen Parasaurolophus_cyrtocristatus Sahaliyania_elunchunorum Tsintaosaurus_spinorhinus Velafrons_coahuilensis Rhinorex_condrupus 'Aquilarhinus <sp. TMM 42452-1>' Latirhinus_uitslani Iguanodon_bernissartensis Bactrosaurus_johnsoni Claosaurus_agilis Eolambia_caroljonesa Equijubus_normani Gilmoreosaurus_mongoliensis Jeyawati_rugoculus Jinzhousaurus_yangi Lophorhothon_atopus Probactrosaurus_gobiensis Protohadros_byrdi Tanius_sinensis Telmatosaurus_transsylvanicus Tethyshadros_insularis 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  'Matrix in file "HADROMATRIX-DEC11.nex"';
+	DIMENSIONS  NCHAR=279;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7";
+	CHARSTATELABELS 
+		1 'Maximum number of tooth positions in the dentary dental battery (DTTH1, http://www.morphbank.net/Show/?id=460667; modified from Horner, Weishampel & Forster 2004, character 1): 30 or less (sample mean of 22 alveolar positions) (0); 31 to 42 (sample mean of 37 alveolar positions) (1); more than 42 (sample mean of 49 alveolar positions) (2).' /  30_or_less 31_to_42 over_42,
+		2 'Minimum number of teeth per alveoli arranged dorsoventrally at mid length of the dental battery (DTTH3, http://www.morphbank.net/Show/?id=461202; modified from Horner et al. 2004, character 2): two (0); three (1); four; (2) five or more (3). ' /  two three four five_or_more,
+		3 'Maximum number of functional teeth exposed on the dentary occlusal plane (DTTH4, http://www.morphbank.net/Show/?id=461203; modified from Horner et al. 2004, character 3): one (0); one functional tooth rostrally and caudally, and up to two teeth at and approaching the middle of the dental battery (1); three functional teeth throughout most of the dental battery, gradually decreasing to two near the rostral and caudal ends of the dentary (2).' /  one up_to_two_at_or_near_the_middle three_throughout_most,
+		4 'Flat and steeply inclined occlusal surface of the dentary dental battery (DTTH14; Prieto-Márquez 2014, character 4): absent (0); present (1).' /  absent present,
+		5 'Height/width ratio of the dentary tooth crowns in lingual aspect (DTTH5, http://www.morphbank.net/Show/?id=461204; Prieto-Márquez 2010a, character 4): ratio up to 1.95 (sample mean ratio of 1.6) (0); ratio from 1.95 to 2.7 (sample mean ratio of 2.4) (1); ratio from 2.8 to 3.3 (sample mean ratio of 3.0) (2); ratio greater than 3.3 (sample mean ratio of 3.7) (3).' /  up_to_1.95 1.95_to_2.7 2.8_to_3.3 greater_than_3.3,
+		6 'Maximum number of ridges on the enameled lingual side of dentary tooth crowns (DTTH6, http://www.morphbank.net/Show/?id=461205; modified Horner et al. 2004, character 6):  presence of a primary major ridge extending from the ventral to the dorsal end of the crown, a rostral and slightly shorter secondary ridge and several (three or more) subdisidary, faintly developed and short tertiary ridges (0); presence of primary, secondary, and one or two tertiary ridges (1); presence of a primary ridge and one or two faint and shorter ridges (2); loss of all but the primary ridge (3).' /  '1ary, 2ndary, and three or more 3ary ridges ' '1ary, 2ndary, and one or two 3ary ridges ' primary_ridge_and_one_or_two_faint_shorter_ridges_ loss_of_all_but_the_primary_ridge_,
+		7 'Dentary tooth crowns, position of the primary ridge (DTTH7, http://www.morphbank.net/Show/?id=461207; modified from You et al. 2003, character 39): well offset caudally from the midline (0); median for most teeth, although some teeth within the same dental battery may display a slight caudal offset of the primary ridge (1).' /  offset_caudally_from_midline_ median_for_most_teeth,
+		8 'Overall morphology of the dentary marginal denticles (DTTH10, http://www.morphbank.net/Show/?id=461210; Norman 2002, character 31): wedge to tongue-shaped (0); curved and mammillated asymmetrical ledge (1); absent or very reduced to small papillae along the apical half of the dorsal half of the crown (2). ' /  'wedge to tongue-shaped ' mammillated_asymmetrical_ledge_ absent_or_very_reduced_to_small_papillae,
+		9 'Denticle size (DTTH12, http://www.morphbank.net/Show/?id=461212; Prieto-Márquez 2010a, character 11): the denticles of both mesial and distal margins are equal in size (0);      the mesial margin has larger denticles than the distal one (1).' /  equal_mesial_and_distal larger_mesial_denticles,
+		10 'Imbrication of dentary tooth crowns (DTTH13, http://www.morphbank.net/Show/?id=461212; Prieto-Márquez 2010a, character 12): absent (0); present, the mesial margin overlaps the distal one of the adjacent crown (1).' /  absent mesial_margin_overlaps_distal_one,
+		11 'Maximum number of tooth positions in the maxillary dental battery (MXTH1, http://www.morphbank.net/Show/?id=461215; modified from Horner et al. 2004, character 1): up to 32 tooth positions (sample mean of 23 teeth) (0); from 33 to 44 tooth positions (sample mean of 40 teeth) (1); 45 or more tooth positions (sample mean of 49 teeth) (2). ' /  up_to_32 33_to_44 45_ore_more,
+		12 'Maximum number of functional teeth per alveolus in the maxillary occlusal plane (MXTH4, http://www.morphbank.net/Show/?id=461218; modified from Horner et al. 2004, character 3): one (0); one tooth for most of the dental battery, with the sporadic presence of a second tooth forming the occlusal plane (1); two functional teeth throughout most of the dental battery length, gradually changing to one near the rostral and caudal ends of the maxilla (2).' /  one 'one mostly, two sporadically' two_,
+		13 'Maximum number of ridges on the enameled labial side of maxillary tooth crowns (MXTH5, http://www.morphbank.net/Show/?id=461219; Horner et al. 2004 character 7): presence of a primary major ridge and three or more much fainter ridges (0); loss of all but the primary ridge in all or, at least, most of the crowns (in the latter situation a few crowns show a fainter secondary ridge) (1). ' /  primary_ridge_and_three_or_more_fainter_ridges loss_of_all_but_primary_ridges_mostly,
+		14 'Maxillary tooth crowns, position of the primary ridge (MXTH6, http://www.morphbank.net/Show/?id=461220 and http://www.morphbank.net/Show/?id=461221; modified from You et al., 2003 character 36): the dental battery contains a mixture of teeth with primary ridge positioned caudally and teeth with the ridge at the center of the crown (0); the majority of teeth in the dental battery have a primary ridge positioned at the midline of the crown (1).' /  'some caudally, some median' median_mostly,
+		15 'Overall morphology of the maxillary marginal denticles (MXTH8, http://www.morphbank.net/Show/?id=461223; Norman 2002, character 30): wedge to tongue-shaped (0); curved and mammillated asymmetrical ledge (1); absent or reduced to small papillae along the apical half of the dorsal half of the crown (2).' /  'wedge to tongue-shaped ' curved_and_mammillated_asymmetrical_ledge absent_or_reduced_to_small_papillae,
+		16 'Predentary. Ratio between the predentary maximum mediolateral width and the maximum rostrocaudal length along the lateral rami (PDT1, http://www.morphbank.net/Show/?id=461224; modified from Horner et al. 2004, character 13): up to 1.75 (0); more than 1.75 (1).' /  up_to_1.75 over_1.75,
+		17 'Predentary. Orientation of the rostral surface relative to the dorsal margin of the lateral rami (PDT3, http://www.morphbank.net/Show/?id=461226; modified from Horner et al. 2004, character 14): angle of 75º or greater (sample mean angle of 81º) (0); angle between 56º and 74º (sample mean angle of 66º) (1); angle between 40º and 55º (sample mean angle of 47º) (2); angle of 40º or less, gently rounded rostral surface (sample mean angle of 34º) (3).' /  75º_or_greater 56º_to_74º 40º_to_55º less_than_40º,
+		18 'Predentary. Shape of the denticles of the predentary oral margin (PDT4, http://www.morphbank.net/Show/?id=461227; modified from Horner et al. 2004, character 13): triangular and pointed (0); subrectangular to rectangular (1). ' /  triangular_and_pointed subrectangular,
+		19 'Predentary. Number of predentary denticles in adult individuals lateral to the median denticle (not included in the count) (PDT6, http://www.morphbank.net/Show/?id=461228, http://www.morphbank.net/Show/?id=461229, and http://www.morphbank.net/Show/?id=461230; Prieto-Márquez 2010a, character 27): maximum of five (0); six or more (1). ' /  up_to_five six_or_more,
+		20 'Predentary. Extension of the predentary denticulate margin (PDT7, http://www.morphbank.net/Show/?id=461228, http://www.morphbank.net/Show/?id=461229, and http://www.morphbank.net/Show/?id=461230; Prieto-Márquez 2010a, character 28): denticles extending into the lateral process (0); denticles limited to the rostral margin (1).' /  extending_into_lateral_process limited_to_rostral_margin,
+		21 'Predentary. Morphology of the predentary rostrolateral corner (PDT8, http://www.morphbank.net/Show/?id=461228, http://www.morphbank.net/Show/?id=461229, and http://www.morphbank.net/Show/?id=461230; modified from Horner et al. 2004, character 13): gently rounded and continuous with the lateral process, giving the predentary an arcuate dorsal profile (0); subsquared rostrolateral corner (1); subsquared, very broad and rostrolaterally projected (2).' /  rounded_ subsquared 'subsquared, very broad and rostrolaterally projected',
+		22 'Predentary. Development of a lateral shelf on the dorsal side of the predentary lateral process (PDT9, http://www.morphbank.net/Show/?id=460672, http://www.morphbank.net/Show/?id=460673, and http://www.morphbank.net/Show/?id=460674; modified from Wagner, unpub. Master?s thesis, Texas Tech Univ., Austin, 2001): absence of shelf, presence of a rostrocaudally short and shallow groove limited to the distal region of the lateral process, bounded by a tall lateral wall (0); short and shallow shelf limited to the laterocaudal region of the lateral process (1); short and well-incised shelf that is wider near the rostrolateral corner of the predentary (2); shelf extremely narrow mediolaterally and very long rostrocaudally (3); shelf rostrocaudally long, deeply incised and mediolaterally broad, forming half of the mediolateral breadth of the lateral process and becoming wider distally (4).' /  'shelf absent, presence of groove' short_narrow_laterocaudal_shelf short_shelf_wider_rostrocaudally shelf_narrow_and_rostrocaudally_long 'shelf long, deep, half the breadth of lat process',
+		23 'Predentary. Ridge on the dorsal lingual, keel-shaped process (PDT11, http://www.morphbank.net/Show/?id=461232; Prieto-Márquez 2010a, character 31): the process lacks a prominent median ridge on the lingual side of the rostral region of the predentary, and, if present, the former forms and projects caudally from the caudal margin of the predentary rostral region (0); the process has a well-developed ridge on the lingual surface of the rostral segment of the predentary, from which the former extends further caudally to lie dorsal to the dentary symphysis (1).' /  absent present,
+		24 'Predentary. Ventral median process, degree of indentation of the split of the process into two distinct lobes (PDT13, http://www.morphbank.net/Show/?id=461234; Prieto-Márquez 2010a, character 32): short indentation and deep undivided portion, the splitting originates at a distance from the predentary ventral margin that equals approximately half of the mediolateral width of the ventral process (0); long indentation and shallow undivided portion, the splitting originates at a distance from the predentary ventral margin that is less than the mediolateral width of the process (1).' /  short_indentation_and_deep_undivided_portion long_indentation_and_shallow_undivided_portion,
+		25 'Dentary. Ratio between the length of the proximal edentulous slope of the dentary and the distance between the rostralmost tooth position and the caudal margin of the coronoid process (DT1, http://www.morphbank.net/Show/?id=461235; Prieto-Márquez 2010a, character 33): less than 0.20 (sample mean ratio of 0.11) (0); ratio between 0.20 and 0.31 (sample mean ratio of 0.27) (1); ratio between 0.32 and 0.45 (sample mean ratio of 0.35) (2); ratio greater than 0.45 (sample mean ratio of 0.54) (3). ' /  less_than_0.20 0.20_to_0.31 0.32_to_0.45 greater_than_0.45,
+		26 'Dentary. Angle of deflection of the rostral ventral margin of the dentary (DT4, http://www.morphbank.net/Show/?id=461238; Prieto-Márquez 2010a, character 36): angle less than 17º (sample mean angle of 13º) (0); angle between 17º and 25º (sample mean angle of 22º) (1); angle greater than 25º (sample mean angle of 33º) (2).' /  less_than_17º 17º_to_25º greater_than_25º,
+		27 'Dentary. Location of the origination of the ventral deflection the dentary (measured as the ratio between the distance from the caudal margin of the coronoid process to the inflexion point of the ventral margin and the distance from the caudal margin the coronoid process to the rostralmost alveolus) (DT5, http://www.morphbank.net/Show/?id=461239; Prieto-Márquez 2010a, character 37): the deflection occurs near the rostral end of the dentary, ratio greater than 0.78 (sample mean ratio of 0.87) (0); ratio between 0.66 and 0.78 (sample mean ratio of 0.72) (1); deflection originating near the middle of the dental battery, ratio of 0.65 or less (sample mean ratio of 0.59) (2). ' /  'near rostrally, greater than 0.78' 0.66_to_0.78 'near mid-length, 0.65 or less',
+		28 'Dentary. Medial or lateral profile of the dorsal margin of the rostral edentulous region of the dentary for articulation with the predentary (DT9, http://www.morphbank.net/Show/?id=461243; Prieto-Márquez 2010a, character 40): ranging from having a very subtle concavity (almost straight) to straight or even displaying a subtle convexity (0); having a well-pronounced concavity (1).' /  'subtly concave, straight, or subtly convex' prominent_concavity,
+		29 'Dentary. Angle between the long axis of the coronoid process and the dorsal margin of the alveolar sulci of the dental battery (DT11; modified from Godefroit et al. 2008, character 39): coronoid process subvertical or caudally inclined (0); process rostrally inclined (1).' /  subvertical_to_caudally_inclined rostrally_inclined,
+		30 'Dentary. Morphology of the apex of the coronoid process (in adults) (DT12, http://www.morphbank.net/Show/?id=461246; modified from Horner et al. 2004, character 17): slightly expanded rostrocaudally, with very limited development of rostral and caudal expansions resulting in an apex that is taller than wider (0); well developed expansion of both the caudal and, especially, the rostral margins (1).' /  slightly_expanded greatly_expanded,
+		31 'Dentary. Caudodorsal margin of the coronoid process projected dorsally into a sharp point (DT13, http://www.morphbank.net/Show/?id=461246; Prieto-Márquez 2010a, character 44): absent (0); present (1).' /  sharp_point_absent sharp_point_present,
+		32 'Dentary. Thick and dorsoventrally elongated ridge on the medial side of the coronoid process, located near the caudal margin of the process (DT14, http://www.morphbank.net/Show/?id=461247; Prieto-Márquez 2010a, character 45): absent, presence of fine striations (0); present, the ridge forms the rostral boundary of a depressed facet for attachment of the rostrodorsal process of the surangular; coarse striations present rostral to the ridge (1).' /  'absent, only fine striations' presence_of_ridge,
+		33 'Dentary. Lateral expansion of caudal region of the dentary, ventral to the base of the coronoid process (measured as the angle between the lateral surface of the dentary and that of the region caudoventral to the coronoid process) (DT15, http://www.morphbank.net/Show/?id=461248; Prieto-Márquez 2010a, character 46): the lateral side of the dentary is only sightly expanded laterally ventral to the coronoid process, with an angle greater than 165º (sample mean angle of 171º) (0); well developed expansion of the lateral side of the dentary ventral to the coronoid process, with an angle up to 165º (sample mean angle of 154º) (1).' /  'slightly expanded, greater than 165º' 'greatly expanded, up to 165º',
+		34 'Dentary. Orientation of the longitudinal axis of the dentary occlusal plane relative to the lateral side of the bone (as seen dorsally and caudal to the edentulous region) (DT16, http://www.morphbank.net/Show/?id=461249; Prieto-Márquez 2010a, character 47): diagonal axis, directed rostrolaterally and forming approximately 15º with the lateral side of the dentary (0); axis parallel to the lateral side of the dentary (1). ' /  'diagonal axis, 15º with lateral side' axis_parallel_to_lateral_side,
+		35 'Dentary. Lingual bowing of the occlusal plane (DT17, http://www.morphbank.net/Show/?id=461250; Horner et al. 2004, character 12): absent, rostrocaudally straight occlusal plane (0); present, lingually convex occlusal plane (1).' /  'absent, rostrocaudally straight' 'present, lingually convex',
+		36 'Dentary. Separation between the dentary tooth row and the coronoid process (DT19,  http://www.morphbank.net/Show/?id=461252; Norman 2002, character 26): the coronoid process is laterally offset (but nearly in contact) with the tooth row, lacking a platform in-between the tooth row and the base of the process (0); the coronoid process is laterally offset relative to the tooth row, with the presence of a concave platform or, in some cases, a laterodorsal concave slope separating the base of the process from the dental battery (1). ' /  ' lacking shelf in-between the tooth row and the base of the process' concave_platform_or_laterodorsal_concave_slope_separating_the_base_of_the_process_from_the_dental_battery,
+		37 'Dentary. Prominent ventral convexity of the dentary ramus rostral to coronoid process (DT20; modified from Prieto-Márquez, 2010, character 41): absent (0); present (1).' /  absent present,
+		38 'Dentary. Caudal extension of the dental battery (DT18, http://www.morphbank.net/Show/?id=461251; modified from Horner et al. 2004, character 10): the caudal end of the dental battery is found rostral to the caudal margin of the coronoid process (0); the caudal end of the dental battery is found flush with the caudal margin of the coronoid process (1); the caudal end of the dental battery is found caudal to the caudal margin of the coronoid process (2).' /  rostral_to_caudal_margin_of_coronoid_process_ flush_to_caudal_margin_of_coronoid_process_ caudal_to_caudal_margin_of_coronoid_process_,
+		39 'Surangular. Morphology of the rostral ascending process of the surangular (SA1, http://www.morphbank.net/Show/?id=461253; modified from Wagner, unpub. Master?s thesis, Texas Tech Univ., Austin, 2001): rostrocaudally thick process, slightly reduced in thickness rostrally, extensively exposed in lateral view (0); rostrocaudally reduced in thickness, strap-like and wedging dorsally into a thin sliver that becomes concealed in lateral view by the dorsal half of the caudal margin of the coronoid process (1).' /  'thick process, slightly reduced in thickness rostrally, extensively exposed in lateral view ' 'reduced in thickness, strap-like and wedging dorsally into a thin sliver ',
+		40 'Surangular foramen (SA2, http://www.morphbank.net/Show/?id=461254; Norman 2002, character, character 27): absent (0); present (1).' /  absent present,
+		41 'Surangular. Accessory foramen located rostrodorsal to the main surangular foramen (SA3, http://www.morphbank.net/Show/?id=461255; Kobayashi & Azuma 2003, character 15): absent (0); present (1).' /  absent present,
+		42 'Surangular. Orientation of the convex side of the lateral lap and the lateroventral surface of the main body of the surangular (SA4, http://www.morphbank.net/Show/?id=461256; Prieto-Márquez 2010a, character 54): facing more laterally than ventrally (0); facing more ventrally than laterally (1).' /  facing_more_laterally_than_ventrally facing_more_ventrally_than_laterally,
+		43 'Surangular. Lateral curvature of the retroarticular process of the surangular (SA5, http://www.morphbank.net/Show/?id=461257; Prieto-Márquez 2010a, character 55): absent, process rostrocaudally oriented (0); present, process laterally recurved (1).' /  'absent, process rostrocaudally oriented' 'present, process laterally recurved',
+		44 'Angular. Position of the angular in the mandible (ANG, http://www.morphbank.net/Show/?id=461259; Weishampel et al. 1993, character 26): positioned ventrally and slightly medially, exposed in lateral view (0); positioned medially, not exposed in lateral view (1).' /  'ventrally and slightly medially, exposed in lateral view ' 'positioned medially, not exposed in lateral view ',
+		45 'Prearticular bone (PRAR, http://www.morphbank.net/Show/?id=461261; Prieto-Márquez 2010a, character 59): absent (0); present (1).' /  absent present,
+		46 'Premaxilla. Mediolateral expansion of the premaxillary oral margin (measured as the ratio between the maximum mediolateral width of the premaxilla and the minimum width at the narrowest point or post-oral constriction) (PMX1, http://www.morphbank.net/Show/?id=461264; modified from Horner et al. 2004, character 22): relatively narrow, ratio less than 1.65 (mean ratio of 1.45) (0); ratio between 1.65 and 2 (mean ratio of 1.84) (1); very wide, with a ratio greater than 2 (mean ratio of 2.22) (2).' /  ratio_less_than_1.65 ratio_1.65_to_2 ratio_greater_than_2,
+		47 'Premaxilla. Position of the premaxillary oral margin relative to the occlusal plane of the dentition (PMX2, http://www.morphbank.net/Show/?id=461265; modified from Norman 2002): premaxillary margin slightly ventrally offset from occlusal plane (approximately, the dorsoventral distance between the occlusal plane and the level of the premaxillary oral margin is less than the mean depth of the dentary) (0); very strongly deflected ventrally (approximately, the dorsoventral distance between the occlusal plane and the level of the premaxillary oral margin is equal to or larger than the mean depth of the dentary) (1).' /  premaxillary_margin_slightly_ventrally_offset_ very_strongly_deflected_ventrally,
+		48 'Premaxilla. Degree of expansion and folding of the oral margin of the premaxilla (modified from Horner et al. 2004, character 22): moderately expanded border, dorsoventrally thicker towards the parasagittal plane of the snout, and slightly deflected ventrally (PMX3, http://www.morphbank.net/Show/?id=461266) (0); moderately expanded border, becoming thinner towards the parasagittal plane of the snout (http://www.morphbank.net/Show/?id=461267) (1); folded caudodorsally into a thin recurved margin (http://www.morphbank.net/Show/?id=461268) (2); ventrally deflected and dorsoventrally expanded, forming a very broad ?lip-like? margin (http://www.morphbank.net/Show/?id=461269) (3).' /  'thicker towards the parasagittal plane of the snout, and slightly deflected' 'moderately expanded, thinner towards the parasagittal plane of the snout' folded_caudodorsally_into_a_thin_recurved_margin 'deflected and deep, very broad lip-like margin',
+		49 'Premaxilla. Premaxillary oral margin with a ?double layer? morphology consisting of an external denticle-bearing layer and an internal layer of thickened bone set back slightly from the oral margin and separated from the denticular layer by a deep sulcus bearing vascular foramina (PMX5, http://www.morphbank.net/Show/?id=461271; Horner et al. 2004, character 25): absent (0); present (1).  ' /  absent present,
+		50 'Premaxilla. Premaxillary foramen located rostrally and ventrolateral to the rostral margin of the apertura ossis nasi (PMX6, http://www.morphbank.net/Show/?id=461272; Horner et al. 2004, character 23): absent (0); present (1).' /  absent present,
+		51 'Premaxilla. Premaxillary accessory foramen entering rostrally through the rostral fossa, located rostral to the premaxillary foramen (PMX7, http://www.morphbank.net/Show/?id=461273; Horner et al. 2004, character 24): absent (0); present, empties into a common chamber with the premaxillary foramen (1).' /  absent present,
+		52 'Premaxilla. Circumnarial depression including a premaxillary rostral fossa set rostral to the circumnarial fossa proper (PMX8, http://www.morphbank.net/Show/?id=461274; Horner et al. 2004, character 26): absent (0); present, separated from circumnarial depression by a rostrocaudally wide ridge (1). ' /  absent present,
+		53 'Premaxilla. Accessory rostral fossa located lateral to the rostral fossa and rostrolateral to the circumnarial fossa, parallel to the lateral border of the oral margin (PMX9, http://www.morphbank.net/Show/?id=461275): absent (0); present (1).' /  absent present,
+		54 'Premaxilla. Elongation of premaxillary medial process (PMX10, http://www.morphbank.net/Show/?id=461276; modified from Horner et al. 2004, characters 27): the premaxillary caudodorsal process does not meet the caudoventral process caudally (0); elongate caudodorsal process that extends caudally to meet the caudoventral process, forming the caudal margin of the external naris (1).' /  caudodorsal_process_does_not_meet_the_caudoventral_process_caudally meeting_it_and_forming_caudal_margin_of_the_external_naris_,
+		55 'Premaxilla. Vertical groove on the caudoventral process of the premaxilla, located rostral to the dorsal process of the maxilla and extending ventrally from a small opening between the two premaxillary caudal processes; the groove is bounded rostrally by a triangular ventral projection of the caudolateral process of the premaxilla (PMX11, http://www.morphbank.net/Show/?id=461277; Evans & Reisz 2007, character 5): absent (0); present (1).' /  absent present,
+		56 'Premaxilla. Elongation of the lateral process of the premaxilla (in adults) (PMX12, http://www.morphbank.net/Show/?id=461278; modified from Suzuki et al. 2004, character 4): relatively short, the caudoventral process extends caudodorsally to end dorsal to the lacrimal or medidodorsal to the rostral end of the prefrontal (0); long, the caudoventral process extends to end medial to the dorsal region of the prefrontal (1); very long, the caudoventral process extends caudodorsal to the prefrontal (2).' /  'short, ends dorsal to lacrimal or medidodorsal to rostral end of prefrontal ' 'long, ends medial to dorsal region of prefrontal' 'very long, caudodorsal to prefrontal',
+		57 'Premaxilla. Morphology of the caudal region of the lateral process of the adult premaxilla: mediolaterally compressed and triangular (PMX13, http://www.morphbank.net/Show/?id=461279; Prieto-Márquez 2010a, character 71) (0); dorsoventrally broad and directed caudally or caudally and slightly dorsally (http://www.morphbank.net/Show/?id=461280) (1); triangular and dorsoventrally expanded, laterally convex lobe, directed rostrodorsally (http://www.morphbank.net/Show/?id=461281) (2).' /  mediolaterally_compressed_and_triangular 'dorsoventrally broad, directed caudally or caudally and slightly dorsally' 'triangular and dorsoventrally expanded, laterally convex lobe, directed rostrodorsally',
+		58 'Premaxilla. Premaxillary caudodorsal process has an accessory rostroventral flange that overlaps the lateral surface of the nasal in the rostral region of a supracranial crest (PMX14, http://www.morphbank.net/Show/?id=461282); Evans & Reisz 2007, character 18): absent (0); present (1).' /  absent present,
+		59 'Premaxilla. Laterodorsal profile of the caudodorsal and caudoventral margins of the external bony naris (PMX15, http://www.morphbank.net/Show/?id=461283 and http://www.morphbank.net/Show/?id=461285; modified from Evans & Resiz 2007, character 4): subrectangular to subellipsoidal (0); triangular and very long (length/width ratio greater than 2.85), caudal constriction gradually closing caudodorsally (1); triangular and moderately long (length/width ratio greater than 2.85), caudal constriction gradually closing caudodorsally (length/width ratio between 1.85 and 2.85) (2); lacriform (length/width ratio less than 1.85), caudal constriction occurs abruptly and is primarily composed of a lateroventral expansion of the caudodorsal premaxillary process (3); lacriform (length/width ratio less than 1.85), caudal constriction occurs abruptly and is primarily composed of a dorsal expansion of the caudoventral process of the premaxilla (4).' /  subrectangular_to_subellipsoidal 'triangular and very long (L/W > 2.85)' 'triangular and moderately long, caudal constriction gradually closing caudodorsally (L/W 1.85 to 2.85) ' 'lacriform (L/W < 1.85), caudal constriction abrupt, composed of lateroventral expansion of caudodorsal pmx process  ' 'lacriform (L/W < 1.85), caudal constriction abrupt, composed of dorsal expansion of caudoventral process pmx   ',
+		60 'Premaxilla. Dorsolateral flange at approximately mid-length of the mediolaterally compressed caudoventral process of the premaxilla (PMX16, http://www.morphbank.net/Show/?id=461286; Gates & Sampson 2007): absent (0); present (1).' /  absent present,
+		61 'Premaxilla. One or more foramina on the rostral surface of the premaxilla (PMX17; Prieto-Márquez 2010b, character 287): absent (0); present (1).' /  absent present,
+		62 'Premaxilla. Lateral profile of the dorsal margin of the rostral rostrum (PMX18; Prieto-Márquez & Wagner 2013, character 287): convex (0); straight to gently concave (1); strongly concave (2).' /  convex straight_to_gently_concave strongly_concave,
+		63 'Premaxilla. Contour of the rostrolateral region of the thin everted oral margin (PMX19; Prieto-Márquez & Wagner 2013, character 289): broad and arcuate (0); subangular (1). ' /  broad_and_arcuate subangular,
+		64 'Premaxilla. Orientation of the medial process relative to the lateral process around the apertura ossis nasi (PMX20; Prieto-Márquez 2014, character 66): subparallel (0); processes slightly converging caudally (1). ' /  subparallel processes_slightly_converging_caudally,
+		65 'Nasal. Location of the nasal bone and nasal cavity in the adult skull (NS1, http://www.morphbank.net/Show/?id=461287; modified from Horner et al. 2004, character 33 and partially from Evans & Reisz 2007, character 7): the nasal extends from the rostral region of the skull roof to the rostrodorsal region of the snout, rostral or dorsal to the orbit, nasal cavity rostromedial to the orbit (0); nasal retracted caudal to the rostrum and occupying a supracranial position in the skull, with the ventral region of the nasal meeting the prefrontal rostral to the orbit, resulting in a crest that extends caudal to the orbit, yet nasal cavity remains rostromedial to the orbit  (1); retracted caudal to the rostrum and occupying a supracranial position in the skull, with the ventral region of the nasal meeting the prefrontal caudal to the rostral margin of the orbit, resulting in a convoluted narial passage and hollow crest that extend supraorbitally (2).' /  'from rostral region of sk roof to rostrodorsal region of snout, nasal cavity rostromedial to the orbit' 'retracted caudal to rostrum, supracranial, nasal cavity remains rostromedial to orbit  ' 'retracted caudal to rostrum, supracranial position in the skull, convoluted narial passage and hollow crest extending supraorbitally ',
+		66 'Nasal. Curvature of the caudodorsal region of the nasal (NS2, http://www.morphbank.net/Show/?id=461288; modified partially from Evans and Reisz, 2007, character 7): absent, nasal straight caudodorsally (0); present, nasal rotated and folded dorsally or caudodorsally (1).' /  'absent, nasal straight caudodorsally' 'present, nasal rotated and folded dorsally or caudodorsally',
+		67 'Nasal. Morphology of the rostral end of the nasal dorsal process at the contact with the medial process of the premaxilla (NS3, http://www.morphbank.net/Show/?id=461289 and http://www.morphbank.net/Show/?id=461290; states 3 and 4 modified from Evans & Reisz 2007, character 17): long and wedge-shaped rostral process, gradually decreasing in width rostrally (0); hook-like process, it becomes abruptly deep near its rostral end and then wedges rostrally to a rostroventrally directed (1); long and subrectangular process, with slightly rounded corners (2); small rostral process of the nasal fits along the ventral edge of the premaxilla, the latter briefly overlapping the nasal (3); the nasal bifurcates to meet the premaxilla in a W-shaped interfingering suture, a long and finger-like process of the nasal has an extensive overlapping joint with the caudodorsal process of the premaxilla; and additional, more caudally located shorter process of the nasal abuts the premaxilla (4).' /  'long and wedge-shaped rostral proces' 'hook-like process' long_and_subrectangular_process small_process_fits_along_ventral_edge_of_pmx 'long finger-like process, meeting pmx in a W-shaped interfingering suture',
+		68 'Nasal. Morphology of the nasal contact with the caudodorsal region of the medial premaxillary process at the caudal margin of the apertura ossis nasi (NS4, http://www.morphbank.net/Show/?id=461291; Prieto-Márquez 2010a, character 78): the nasal forms a subrectangular flange exposed dorsal to the premaxillary caudoventral process (0); the nasal forms a large hook-like rostroventral process, exposed dorsal to the premaxillary caudoventral process (1); the nasal forms a greatly shortened and dorsoventrally narrow hook-like rostroventral process, exposed dorsal to the premaxillary caudoventral process (2). ' /  subrectangular_flange_exposed_dorsal_to_the_premaxillary_caudoventral_process_ 'large hook-like rostroventral process' 'shortened and dorsoventrally narrow hook-like rostroventral process',
+		69 'Nasal. Location of the rostral end of the dorsal process of the nasal relative to the rostral margin of the apertura ossis nasi (NS5, http://www.morphbank.net/Show/?id=461292; Prieto-Márquez 2010a, character 79): the rostral end of the dorsal process of the nasal does not reach the rostral margin of the apertura ossis nasi (0); the rostral end of the rostrodorsal process of the nasal reaches the rostral margin of the apertura ossis nasi (1).' /  not_reaching_rostral_margin_of_apertura_ossis_nasi reaching_rostral_margin_of_apertura_ossis_nasi,
+		70 'Nasal. Caudoventral region of nasal, in hollow supracranial crest, ventrally recurved and hook-shaped, with a rostral process that inserts under the caudoventral process of the premaxilla (NS6, http://www.morphbank.net/Show/?id=461293; Prieto-Márquez 2010a, character 80): absent (0); present (1).' /  absent present,
+		71 'Nasal. Caudal end of the nasals forming a pair of broad, strap-like process on top of the frontals, that are separated sagitally by an intervening median sliver of the frontal (NS7, http://www.morphbank.net/Show/?id=461294; Gates & Sampson 2007, character 65, in part): absent (0); present (1).' /  absent present,
+		72 'Nasal. Caudal end of nasals forming a pair of short processes that insert between the frontals at the sagittal plane of the skull roof (NS8, http://www.morphbank.net/Show/?id=461295; Gates & Sampson 2007, character 65, in part): absent (0); present (1).' /  absent present,
+		73 'Nasal. Position of the summit of nasal arch crest relative to the caudodorsal margin of the apertura ossis nasi (NS9, http://www.morphbank.net/Show/?id=461296; Prieto-Márquez 2010, character 83): summit located dorsal to the caudal margin of the apertura ossis nasi (0); summit located caudodorsal to the caudal margin of the apertura ossis nasi (1).' /  dorsal_to_caudal_margin_of_apertura_ossis_nasi caudodorsal_to_caudal_margin_of_apertura_ossis_nasi,
+		74 'Nasal. Mediolateral breath of caudal nasal processes that insert in between the frontals at the sagittal plane of the skull (N10; Prieto-Márquez 2014, character 75): processes broad and converging caudally in width, forming a V-shaped dorsal outline between the frontals (0); processes greatly compressed mediolaterally and finger-like (1).' /  'broad, V-shaped dorsal outline between frontals ' 'finger-like',
+		75 'Nasal. Ridge bordering the caudodorsal margin of the circumnarial depression (NS11; Godefroit et al., 2012): absent (0); present, thin and weakly developed (1); present, thick and prominent (2).' /  absent 'present, thin and weakly developed' 'present, thick and prominent',
+		76 'Maxilla. Palatal (rostrodorsal) process that is medially offset from the body of the maxilla and extends also medial to the caudoventral process of premaxilla to form part of medial floor of external naris (MX1, http://www.morphbank.net/Show/?id=461297; partially after Wagner, unpub. Master?s thesis, Texas Tech Univ., Austin, 2001 and Horner et al., 2004, character 42): absent, the rostral end of the maxilla forms a ventrally sloping rostrodorsal shelf that underlies the premaxilla (0); present (1).' /  absent present,
+		77 Maxilla._Palatal_process_shape. /  'Broad, subtriangular, with extensive proxinal region' 'Narrow, short and finger-like',
+		78 Maxilla._Palatal_process_orientation. /  Divering_rostrally_from_premaxillary_process 'More ventrally than rostrally, paralell to premaxillary process',
+		79 'Maxilla. Lateral exposure of the palatal process (MX2, http://www.morphbank.net/Show/?id=461298; modified from Gates & Sampson 2007, character 45): not exposed or only the distal tip exposed through the apertura ossis nasi in lateral view (0); large segment of the process exposed through the apertura ossis nasi in lateral view (1). ' /  'not exposed, or only distal tip exposed' well_exposed,
+		80 'Maxilla. Angle between the dorsal margin of the rostroventral process or shelf of the maxilla and the rostral segment of the tooth row (MX4, http://www.morphbank.net/Show/?id=461300; Prieto-Márquez 2010a, character 87): rostrodorsal region of the maxilla subconical in shape, dorsoventrally narrow, forming an angle of 25º or less with the rostral tooth row (mean angle of 20º) (0); dorsoventrally thicker, forming an angle greater then 25º and up to 39º with the rostral tooth row (mean angle of 31º) (1); rostroventral process dipping steeply ventrally, forming an angle of 40º or greater with the tooth row (mean angle of 43º), rostral region of the maxilla appearing dorsally ?swollen? and rostrocaudally compressed (2).' /  25º_or_less_with_rostral_tooth_row_ '>25º and up to 39º with rostral tooth row' 40º_or_greater_with_the_tooth_row_,
+		81 'Maxilla. Lateral profile of the lateral surface of the rostrodorsal region of the maxilla (MX5; modified from Prieto-Márquez 2010a, character 88): subtriangular profile with broadly arcuate dorsal margin below jugal and lacrimal (0); triangular and rostrocaudally compressed (1); trapezoid, extensive lateral exposure, with horizontal dorsal margin under lacrimal (2).' /  subtriangular_profile_with_broadly_arcuate_dorsal_margin_ triangular_and_rostrocaudally_compressed 'trapezoid, extensive lateral exposure under lacrimal',
+		82 'Maxilla. Trapezoid lateral profile of rostrodorsal region of maxilla with extensive lateral exposure under lacrimal (MX18; Prieto-Márquez 2014, character 81): length of exposed rostrodorsal margin is less than 40% of distance between rostral end of maxilla and caudoventral corner of orbital margin of jugal in articulated skull (0); exposed rostrodorsal margin is at least 40% of distance between rostral end of maxilla and caudoventral corner of orbital margin of jugal in articulated skull (1).' /  less_than_40%_of_distance_rostral_end_of_mx_to_caudoventral_corner_of_orbital_margin_of_jugal_in_skull at_least_40%_of_distance_rostral_end_of_mx_to_caudoventral_corner_of_orbital_margin_of_jugal_in_skull,
+		83 'Maxilla. Position of the dorsal process and the dorsal margin of the dorsolateral promontory of the maxilla (expressed as the ratio between the distance from its summit to the rostral end of the maxilla and the rostrocaudal length of the element) (MX7, http://www.morphbank.net/Show/?id=461303; Prieto-Márquez 2010a, character 90): caudally located dorsolateral promontory (with a ratio greater than 0.57; mean of 0.64), base of dorsal process positioned within the caudal third of the maxilla (0); centrally located dorsolateral promontory (with a ratio between 0.47 and 0.57; mean of 0.51), base of dorsal process positioned slightly caudal to the mid-length of the maxilla (1); dorsolateral promontory located slightly rostral to the mid-length of the maxilla (with a ratio between 0.35 and 0.46; mean of 0.42), base of dorsal process centered around the mid-length of the bone (2); the base of dorsal process and dorsolateral promontory located rostral to the mid-length of the maxilla, with a ratio less than 0.35 (mean of 0.28) for the relative position of the rostrodorsal promontory (3)' /  'caudally located promontory (r > 0.57), base of drs within caudal third of mx' 'centrally located promontory (r 0.47 to 0.57), base of dorsal process slightly caudal to the mid-length of mx' 'promontory slightly rostral to mid-length of mx (r 0.35 to 0.46), base dorsal process centered mid-length of mx ' 'base dorsal process and promontory located rostral to mid-length of mx (r < 0.35)',
+		84 'Maxilla. Height/width proportions of the dorsal process ' /  wider_than_tall taller_than_wide,
+		85 'Maxilla. Orientation of the caudal margin of the dorsal process: rostrally inclined (0); subvertical or vertical (0); inclined caudally (1). ' /  rostrally_inclined_ subvertical_or_vertical caudally_inclined,
+		86 'Maxilla. Jugal process projecting caudally from the jugal articular surface: absent, reduced to a tubercle (jugal tubercle) (0); present (1). ' /  'reduced to a tubercle (jugal tubercle) ' present,
+		87 'Maxilla. Union of ectopterygoid ridge and ventral margin of jugal facet: absent, tunnel present at rostral end of coronoid fossa (0); present, tunnel closed but ectopterygoid ridge fainting near ventral margin of jugal facet (1); present, complete closure of tunnel and ectopterygoid ridge continuous with ventral margin of jugal facet (2). ' /  'absent, tunnel present at rostral end of coronoid fossa ' 'present, tunnel closed but ectopterygoid ridge fainting near ventral margin of jugal facet' 'present, complete closure of tunnel and ectopterygoid ridge continuous with ventral margin of jugal facet ',
+		88 'Maxilla. Elevated jugal articular facet for jugal such that ventralmost extent is well above level of ectopterygoid ridge: absent (0); present (1).' /  'absent, spurian facet level with ectopterygoid ridge ' 'present, spurian facet above level of ectopterygoid ridge ',
+		89 'Maxilla. Acute embayment indenting rostral to ventral jugal tubercle between facet for jugal and ectopterygoid shelf: absent (0); present (1).' /  no_embayment embayment_present,
+		90 'Maxilla. Arrangement of maxillary foramina ventral and rostral to the jugal articulation (excluding large rostrodorsal or rostrolateral foramen): arranged rostrocaudally and scattered throughout the lateral side of the maxilla (MX10, http://www.morphbank.net/Show/?id=461309; Prieto-Márquez 2010a, character 93) (0); forming either a row or cluster that is oriented rostrodorsally (http://www.morphbank.net/Show/?id=461310, http://www.morphbank.net/Show/?id=461311, and http://www.morphbank.net/Show/?id=461312) (1).' /  arranged_rostrocaudally_and_scattered_ row_or_cluster_that_is_oriented_rostrodorsally,
+		91 'Maxilla. Number of maxillary foramina ventral and rostral to the jugal articulation (excluding large rostrodorsal or rostrolateral foramen) (MX11, http://www.morphbank.net/Show/?id=461313; Prieto-Márquez 2010a, character 94): seven or more (0); six or less (1).' /  seven_or_more six_or_less,
+		92 'Maxilla. Location of the articular facet for the jugal: occupies much of the lateral surface of the maxillary dorsal process.' /  on_jugal_process_ on_dorsal_process,
+		93 'Maxilla. Large rostral maxillary foramen (MX12, http://www.morphbank.net/Show/?id=461314 and http://www.morphbank.net/Show/?id=461315; Evans & Reisz 2007, character 22 modified after Horner et al. 2004, character 44): opening on the rostrolateral body of the maxilla, ventral to the rostrodorsal margin of the element and exposed in lateral view (0); opening on the rostrolateral body of the maxilla, near the dorsal margin of the rostrodorsal margin of the element and exposed in lateral view (1); opening on the dorsal surface of the maxilla along the maxilla-premaxilla contact, not exposed laterally (2).' /  'on rostrolateral body of maxilla, ventral to rostrodorsal margin of mx' 'on rostrolateral body of maxilla, near dorsal margin to rostrodorsal margin of mx' 'opening on dorsal surface along the mx-pmx contact, not exposed laterally',
+		94 'Maxilla-lacrimal contact (MX13, http://www.morphbank.net/Show/?id=461316 and http://www.morphbank.net/Show/?id=461317; Evans & Reisz 2007, character 23): present externally (0); largely covered externally by the jugal-premaxilla contact (1).' /  present_externally 'largely covered externally by the j-pmx contact',
+		95 'Maxilla. Length of the ectopterygoid shelf relative to the total rostrocaudal length of the alveolar margin of the maxilla (MX14, http://www.morphbank.net/Show/?id=461318; partially after You et al. 2003, character 12): ratio between the length ectopterygoid shelf and the length of the rostrocaudal alveolar margin up to 0.25 (mean ratio of 0.20) (0); ratio greater than 0.25 and up to 0.35 (mean ratio of 0.30) (1); ratio greater than 0.35 (mean ratio of 0.45) (2).' /  up_to_0.25 '>0.25 to 0.35' '>0.35',
+		96 'Maxilla. Slope of the ectopterygoid shelf, measured as the angle between this and the rostrocaudal axis of the caudal segment of the tooth row (MX15, http://www.morphbank.net/Show/?id=461319; Prieto-Márquez 2010a, character 98): steeply inclined caudoventrally, with an angle greater than 21º (mean angle of 29º) (0); shelf inclined with an angle greater than 10 and up to 21º (mean angle of 15º) (1); slightly inclined shelf, with an angle greater than 4º and up to 10º (mean angle of 8º) (2); horizontal shelf, with an angle up to 4º (3).' /  '>21º' '>10º to 21º' '>4º to 10º' 'sub- or horizontal',
+		97 'Maxilla. Morphology of the lateral emargination of the ectopterygoid shelf (MX16, http://www.morphbank.net/Show/?id=461320; modified from Godefroit et al. 2000, character 14): dorsoventrally thin ridge (0); faint or thin rostrally, then abruptly becoming dorsoventrally thick along the caudal segment of the margin (1); dorsoventrally thick continuous ridge, becoming gradually thicker caudally (2). ' /  dorsoventrally_thin_ridge_ 'faint to thin rostrally, thick caudally' 'thick continuous ridge, even thicker caudally',
+		98 'Maxilla. Position of the central region of the arcuate row of special foramina on the medial side of the maxilla (MX17, http://www.morphbank.net/Show/?id=461321; Prieto-Márquez 2010a, character 100): ventral to, or at the level of the mid-dorsoventral depth of the maxilla (0); above the mid-dorsoventral depth of the maxilla (1).' /  'ventral to or at mid-depth of mx' 'above mid-depth of mx',
+		99 'Maxilla, rostrodorsal margin bearing a prominent subrectangular flange that rises vertically above the rostroventral process (MX19; Prieto-Márquez et al., 2013): absent (0); present (1).' /  absent present,
+		100 'Maxilla. Fossa excavating rostrodorsal surface of the premaxillary shelf, separating shelf from a rostrodorsal flange (MX22; new character): absent (0); present (1).' /  absent present,
+		101 'Lacrimal. General morphology of the adult lacrimal in lateral view (LC1, http://www.morphbank.net/Show/?id=461325; Prieto-Márquez 2010a, character 101): triangular and rostrocaudally elongated, with a rostral process that is rostrally (and slightly ventrally) directed (0); triangular, rostrocaudally abbreviated with a relatively shorter and thinner rostral process (1).' /  rostrally_elongate abbreviated_with_shorter_and_thiner_rostral_process,
+		102 'Lacrimal. Ventral margin of the lacrimal with a prominent convexity rostral to the jugal notch (LC2, http://www.morphbank.net/Show/?id=461326; Prieto-Márquez 2010a, character 102): absent (0); present (1).' /  absent present,
+		103 'Jugal. Rostral apex of the rostral process of the jugal (J1, http://www.morphbank.net/Show/?id=461327 and http://www.morphbank.net/Show/?id=461328; Prieto-Márquez 2010a, character 103): present, wedge-shaped, elongated and sharply pointed, positioned at mid distance along the dorsoventral depth of the rostral process (0); present, wedge-shaped, pointed and less elongated than in (0), positioned within the dorsal half of the rostral process of the jugal; the dorsal magin of the apex forms a steeper angle with the horizontal than in state (0) (1); greatly reduced to a blunt convexity (2);  reduced to a short process, only slightly thinner rostrally and ending abruptly (3); absent, straight nearly vertical rostral margin (4); absent, tongue-shaped rostral margin (5).' /  'present, wedge-shaped, elongated, at mid-depth of rostral process' 'present, wedge-shaped, less elongate than in (0), within the dorsal half o rostral pr' greatly_reduced_to_a_blunt_convexity 'short pr, only slightly thinner rostrally and ending abruptly' 'absent, straight nearly vertical rostral margin' 'absent, tongue-shaped rostral margin',
+		104 'Jugal. Dorsoventral expansion of the caudal margin of the lacrimal process of the jugal (J2, http://www.morphbank.net/Show/?id=461329; Weishampel et al. 1993, character 15): relatively shallow, rostrodorsally directed and forming little of the rostroventral margin of the orbital rim (0); relatively deep (about 60-90% as deep as the rostral jugal constriction), dorsally or slightly recurved caudodorsally, forming the rostroventral corner of the orbital rim (1).' /  relatively_shallow '60-90% as deep as rostral jugal constriction',
+		105 'Jugal. Morphology of the ventral spur of the rostral process of the jugal (J3, http://www.morphbank.net/Show/?id=461330; Prieto-Márquez 2010a, character 105): shallow and rostrocaudally wide prominence (wider than deep) (0); ventrally pointed, approximately as deep as or slightly deeper as its proximal end is wide (1); ventrally projected triangular narrow process, at least twice as deep as it is wide, sharply pointed and often recurved caudally (2).' /  'shallow, wider than deep' as_deep_as_or_slightly_deeper_than_its_proximal_end_is_wide 'twice as deep as it is wide, sharply pointed and often recurved',
+		106 'Jugal. Location of the caudoventral apex of the rostral process relative to the caudodorsal articulation with the lacrimal (with longitudinal axis of the rostral process oriented horizontally) (J4, http://www.morphbank.net/Show/?id=461333; Prieto-Márquez 2010a, character 106): apex located caudoventral to the caudal margin of the lacrimal process (0); apex located ventral to the caudal margin of the lacrimal process (1).' /  caudoventral_to_caudal_margin_of_the_lacrimal_process ventral_to_the_caudal_margin_of_lacrimal_process,
+		107 'Jugal. Orientation of the articular facet for the palatine (J5, http://www.morphbank.net/Show/?id=461332; Prieto-Márquez 2010a, character 107): facing medioventrally, the articular surface forms a deep concavity bounded dorsally and caudally by a laterally offset rim (0); facing medially, the articular surface is bounded only caudally by a rim of bone (1).' /  subhorizontal_ 'oblique, rostrodorsally oriented ' subvertical_,
+		108 'Jugal. Ventral expansion of the caudoventral jugal flange (measured as the ratio between the dorsoventral depth of the flange and the minimum depth of the caudal constriction of the jugal) (J8, http://www.morphbank.net/Show/?id=461336; modified from Wagner, unpub. Master?s thesis, Texas Tech Univ., Austin, 2001): slightly expanded flange, ratio of 1.36 or less (mean ratio of 1.29) (0); moderately expanded flange, ratio greater than 1.36 and up to 1.55 (mean ratio of 1.44) (1); greatly expanded flange, ratio greater than 1.55 (mean ratio of 1.68) (2).' /  'slightly expanded, r= or <1.36' 'moderate, r > 1.36 and up to 1.55' 'greatly expanded, r>1.55',
+		109 'Jugal. Lateral profile of the quadratojugal flange (J9, http://www.morphbank.net/Show/?id=461337 and http://www.morphbank.net/Show/?id=461338; Prieto-Márquez 2010a, character 111) subconical, dorsoventrally tall and rostrocaudally narrow, with a nearly vertical caudal margin (0); auricular in shape, with subparallel concave to nearly straight dorsal and convex ventral margins that converge dorsally into a short subconical point (1); fan-like, with dorsal and ventral margins that are subparallel and diverge caudodorsally; dorsal and ventral margins can be straight or slightly bowed dorsally (2); auricular in shape, with subparallel concave to nearly straight dorsal and convex ventral margins that converge dorsally into a recurved or dorsally directed tall subconical extension (this state is similar to (1), but the dorsal region of the flange is rostrocaudally narrower and taller) (3).' /  subconical 'auricular, caudodorsal short apex' 'fan-shaped' 'auricular, caudodorsal long and recurved apex',
+		110 'Jugal. Morphology of the ventral margin located between the caudoventral and quadratojugal flanges (J10, http://www.morphbank.net/Show/?id=461339; modified from Weishampel et al. 1993, character 18): relatively short and shallow concavity (0); relatively wide and well-pronounced concavity (1).' /  short_and_shallow_concavity wide_and_prominent_concavity,
+		111 'Jugal. Relative depth of the caudal bar and orbital constrictions (in adults) (rostral constriction region located between the rostral and postorbital processes; caudal constriction region located between the postorbital process and the caudoventral flange) (J11, http://www.morphbank.net/Show/?id=461340; Prieto-Márquez 2010a, character 113): deeper rostral constriction, ratio of the depth of the caudal constriction relative to the rostral of 1 or less (mean ratio of 0.93) (0); deeper caudal constriction, with a ratio greater than 1 and less than 1.35 (mean ratio of 1.18, resulting from merging two K-means clusters with mean ratios of 1.13 and 1.24) (1); extremely deep caudal constriction, with a ratio greater than 1.35 (mean ratio of 1.43) (2). ' /  deeper_orbital_constriction 'deeper infratemporal bar (r>1 and less than 1.35)' 'deep infratemporal bar  (r>1.35)',
+		112 'Jugal. Relative width and lateral profiles of the orbital and infratemporal margins of the jugal (J13, http://www.morphbank.net/Show/?id=461342; Prieto-Márquez 2010a, character 115): wider orbital margin and relatively constricted ventral margin of the infratemporal fenestra (0); orbital and infratemporal margins are nearly equally wide (1); wider infratemporal margin (2).' /  wider_orbital_margin nearly_equally_wide wider_infratemporal_margin,
+		113 'Quadrate. Degree of curvature of the caudal margin of the quadrate (Q1, http://www.morphbank.net/Show/?id=461343; Prieto-Márquez 2010a, character 116): the caudal margin of the dorsal half or third of the quadrate displays a slight curvature relative to the ventral half of the element, with an angle of 150º or greater (mean angle of 161º) (0); the caudal margin of the dorsal half or third of the quadrate is strongly curved caudally relative to the ventral half of the element, with an angle less than 150º (mean angle of 143º) (1).' /  'slight curvature, 150º or greater' 'strongly curved, less than 150º',
+		114 'Quadrate. Position of the quadratojugal (paraquadrate) notch along the dorsoventral length of the quadrate (measured as the ratio between the distance from the mid-length of the notch to the qudadrate head and the dorsoventral length of the element) (Q2, http://www.morphbank.net/Show/?id=461344; Prieto-Márquez 2010a, character 117): the mid point of the notch is located slightly ventral to or centered at mid-length of the quadrate, ratio less than 0.60 (mean ratio of 0.54) (0); the mid point of the notch is located substantially ventral to the mid-length of the quadrate, ratio of 0.60 or greater (mean ratio of 0.64) (1).' /  'mid point of notch is slightly ventral to, or at mid-length of q, r<0.60' 'mid point of notch is well ventral to mid-length of q, r of 0.60 or more',
+		115 'Quadrate. Orientation of the dorsal margin of the quadratojugal notch of the quadrate (measured as the angle between this and the caudal margin of the element) (Q3, http://www.morphbank.net/Show/?id=461345; Prieto-Márquez 2010a, character 118): angle greater than 45º (mean angle of 52º) (0); angle up to 45º (mean angle of 28º) (1).' /  'angle > 45º' angle_up_to_45º,
+		116 'Quadrate. Morphology of the lateral profile of the quadratojugal notch of the quadrate (Q4, http://www.morphbank.net/Show/?id=461346; Prieto-Márquez 2010a, character 119): subcircular, with a ventral half of the notch that is recurved and has a horizontal rostral segment (0); wide arcuate and asymmetrical, with the ventral half of the notch having a short horizontal rostral segment (1); wide arcuate and symmetrical, the ventral half of the notch being rostroventrally-directed, nearly straight as it is the dorsal half (2' /  subcircular wide_arcuate_and_asymmetrical wide_arcuate_and_symmetrical,
+		117 'Quadrate. Development of the squamosal buttress on the caudal margin of the dorsal end of the quadrate (Q5, http://www.morphbank.net/Show/?id=461347; Prieto-Márquez 2010a, character 120): absent or poorly developed as a gentle convexity (0); present, the buttress is a sharp protuberance hanging from the caudal side of the dorsal fourth of the quadrate, near the head of the element (1).' /  absent_or_poorly_developed present,
+		118 'Quadrate. Morphology of ventral surface of the quadrate (Q6, http://www.morphbank.net/Show/?id=461349 and http://www.morphbank.net/Show/?id=461348; Weishampel et al. 1993, character 22): mediolaterally broad and rostrocaudally compressed, lateral condyle slightly larger than the medial one (mean ratio between the rostrocaudal width of the lateral condyle and the mediolateral width of the ventral end of the quadrate of 0.59); the ventral surface of the lateral condyle is only slightly offset ventrally relative to the ventral surface of the medial condyle (0); subtriangular in ventral view, lateral condyle rostrocaudally expanded and much larger than the medial one (mean ratio between the rostrocaudal width of the lateral condyle and the mediolateral width of the ventral end of the quadrate of 0.90); the ventral surface of the lateral condyle is well offset ventrally relative to the ventral surface of the medial condyle (1).' /  'broad and rostrocaudally compressed, lateral condyle only slightly offset' 'subtriangular in ventral view, lateral condyle rostrocaudally expanded, much larger than medial one ',
+		119 'Prefrontal. Dorsomedial margin of the prefrontal developed into a caudodorsally-oriented crest (PF1, http://www.morphbank.net/Show/?id=461350 and http://www.morphbank.net/Show/?id=461351; Godefroit et al. 2004, character 16): absent (0); present (1).' /  absent present,
+		120 'Prefrontal. Development of the dorsomedial crest of the prefrontal (PF9, http://www.morphbank.net/Show/?id=461350 and http://www.morphbank.net/Show/?id=461351; Godefroit et al. 2004, character 16): crest not extending caudal to the prefrontal-frontal articulation (0); crest extending caudally over the dorsal surface of the frontal and above the prefrontal-postorbital articulation in lateral view in adults (1).' /  'crest not extending caudal to the prefrontal-frontal articulation ' 'crest extending caudally over frontal, above pf-po articulation in adults',
+		121 'Prefrontal. Lateral profile of the rostrodorsal margin of the prefrontal (PF2, http://www.morphbank.net/Show/?id=461352; modified from Horner et al. 2004, character 50): smoothly curved, the rostral margin is rostroventrally oriented and forming an obtuse angle with the dorsal orbital margin (0); rostromedially broad with subsquared rostrodorsal corner (1).' /  smoothly_curved broad_with_subsquared_rostrodorsal_corner,
+		122 'Prefrontal. Mediolateral breadth of the exposed rostroventral region of the prefrontal (PF3, http://www.morphbank.net/Show/?id=461353; partially after Horner et al. 2004, character 50): the rostroventral region is mediolaterally expanded (0); the exposed rostroventral region is relatively mediolaterally compressed and narrow (1).' /  rostroventral_region_mediolaterally_expanded rostroventral_region_mediolaterally_compressed_and_narrow,
+		123 'Prefrontal. Inclusion of the prefrontal in the circumnarial fossa (PF4, http://www.morphbank.net/Show/?id=461354 and http://www.morphbank.net/Show/?id=461355; Wagner, unpub. Master?s thesis, Texas Tech Univ., Austin, 2001): absent (0); present (1).' /  absent present,
+		124 'Prefrontal. Exposure of the prefrontal-nasal contact in lateral and/or dorsal view (PF6, http://www.morphbank.net/Show/?id=461357; modified from Wagner, unpub. Master?s thesis, Texas Tech Univ., Austin, 2001): contact totally exposed in lateral and/or dorsal view (0); contact visible in lateral view along the caudal and half of the dorsal margin of the prefrontal (1); contact visible in lateral view only along the caudal region of the prefrontal in adults, due to the invasion of the premaxilla along the medial side of the prefrontal (2).' /  contact_totally_exposed contact_visible_laterally_along_caudal_and_half_of_the_dorsal_margin_of_the_pf contact_visible_in_lateral_view_only_along_the_caudal_region_of_pf_in_adults,
+		125 'Prefrontal. Deep fossa on the ventral surface of the rostrodorsal corner of the orbit, rostrodorsal orbital margin being squared and slightly projected rostrodorsally (PF7; after Campione & Evans 2011): absent (0); present (1).' /  absent present,
+		126 'Prefrontal. Caudodorsal process of the prefontal that joins the caudodorsal frontal process in supporting ventrally a solid nasal caudodorsal crest (PF8; new character): absent (0); present (1).' /  absent present,
+		127 'Postorbital. Dorsal promontorium on the rostral process of the postorbital (PO1, http://www.morphbank.net/Show/?id=461359 and http://www.morphbank.net/Show/?id=461358; Godefroit et al. 2004, character 17): absent, the dorsal surface of the postorbital above the jugal process is horizontal or slightly concave (0); present in adult specimens, the articular margin for the prefrontal is elevated and the dorsal surface of the postorbital above the jugal process is deeply depressed (1). ' /  absent present,
+		128 'Postorbital. Narrowing of the dorsal region of the infratemporal fenestra (PO2, http://www.morphbank.net/Show/?id=461360; modified from Evans & Reisz 2007, character 36): absent, dorsal margin of infratemporal fenestra being wider than quadrate cotylus, squamosal ramus of the postorbital elongate over the infratemporal fenestra (0); present, dorsal margin of infratemporal fenestra being as wide as or narrower than quadrate cotylus and squamosal ramus of the postorbital relatively short over the infratemporal fenestra (1). ' /  'absent, dorsal margin itf being wider than q cotylus' 'present, dorsal margin of itf being as wide as or narrower q cotylus',
+		129 'Postorbital. Morphology of the central body of the postorbital (PO3, http://www.morphbank.net/Show/?id=461361; Prieto-Márquez 2010a, character 130): triangular, rostrocaudally broad, expanded rostroventrally to form a straight and obliquely oriented caudodorsal orbital margin (0); triangular, with a caudodorsal orbital margin that ranges in lateral profile from semicircular to subsquared (1); rostrocaudally expanded, rostrally excavated and and bulging laterally (?inflated?), containing a hollow inner cavity (in adults) (2). ' /  'broad, straight and obliquely oriented caudodorsal orbital margin' caudodorsal_orbital_margin_semicircular_to_subsquared 'rostrally excavated and and bulging laterally (inflated) (in adults)',
+		130 'Postorbital. Morphology of the caudal end of the caudal process of the postorbital at its articulation with the squamosal  (PO5, http://www.morphbank.net/Show/?id=461363; Evans & Reisz 2007, character 35): oblong or wedge-shaped (0); bifid (1).' /  'oblong or wedge-shaped' bifid,
+		131 'Postorbital. Caudal extension of the caudal ramus of the postorbital that overlaps the laterodorsal surface of the squamosal (PO6, http://www.morphbank.net/Show/?id=461364; modified from Godefroit et al. 2000): the caudal end of the postorbital caudal ramus extends to a point rostral to the quadrate cotylus and does not overlap the latter (0); the caudal end of the postorbital caudal ramus extends caudodorsal to the precotyloid process and over as much as the rostral half of the quadrate cotylus (1); the caudal end of the postorbital caudal ramus completely overlaps the laterodorsal side of the squamosal quadrate cotylus (2).' /  rostral_to_the_quadrate_cotylus extends_over_as_much_as_the_rostral_half_of_the_quadrate_cotylus completely_overlaps_the_laterodorsal_side_of_quadrate_cotylus,
+		132 'Postorbital. Deeply inflected (Y-shaped) dorsal surface of the central body of the postorbital (in presumably adult larger specimens) (PO7; new character): absent (0); present (1).' /  absent present,
+		133 'Squamosal. Length of the precotyloid process of the squamosal (measured as the ratio of its length relative to the width of the quadrate cotylus) (SQ1, http://www.morphbank.net/Show/?id=461365; Prieto-Márquez 2010a, character 134): very short precotyloid process, ratio less than 0.95 (mean ratio of 0.74) (0); moderately long precotyloid process, ratio between 0.95 and 1.25 (mean ratio of 1.13) (1); very long precotyloid process, ratio greater than 1.25 (mean ratio of 1.41) (2).' /  'short, r<0.95' 'moderately long, r 0.95 to 1.25' 'very long, r>1.25',
+		134 'Squamosal. Dorsoventral expansion of the caudolateral surface of the squamosal (SQ2, http://www.morphbank.net/Show/?id=461366; Horner et al. 2004, character 64): unexpanded, shallowly exposed in caudal view (0); greatly expanded dorsomedially, forming a deep, near vertical, well-exposed face in caudal view (in adults) (1).' /  shallowly_exposed_caudally 'deep, near vertical face caudally (in adults)',
+		135 'Squamosal. Separation of the squamosals at the occipital margin of the skull roof (SQ3, http://www.morphbank.net/Show/?id=461367; Horner et al. 2004, character 63): completely separated by the parietal (0); the squamosal approach the sagittal plane of the skull, separated by a narrow band of parietal (1); extensive intersquamosal joint present at the midline, parietal completely excluded from the sagittal plane of the skull at that particular spot (in adults) (2).' /  completely_separated separated_by_narrow_band_of_par 'sq to sq joint, par excluded',
+		136 'Squamosal. Rostromedial indenture of the medial ramus of the squamosal (SQ4, http://www.morphbank.net/Show/?id=461368; modified from Godefroit et a 1998): absent, medial ramus of the squamosal extends medially, forming a subsquared caudolateral border of the skull roof (0); present, medial ramus of the squamosal curves rostromedially, so that the back of the skull appears to be deeply indented rostrally when viewed dorsally (1).' /  indenture_absent indenture_present,
+		137 'Frontal. Bifurcation of the rostromedial margin of the frontals at the sagittal plane of the skull roof, leaving a V-shaped space in between (F1, http://www.morphbank.net/Show/?id=461369; Prieto-Márquez 2010a, character 138): absent (0); present (1).' /  absent present,
+		138 'Frontal fontanelle, present at least at one stage during ontogeny (F2, http://www.morphbank.net/Show/?id=461370; Langston 1960): absent (0); present (1).' /  no_fontanelle fontanelle_present,
+		139 'Frontal. Nasal articulation surface of the frontal shaped into a rostroventrally-sloping platform (F3, http://www.morphbank.net/Show/?id=461371; Godefroit et al. 2004, character 7, in part; Evans & Reisz 2007, character 40, in part): absent (0); present (1).' /  absence_of_frontal_platform frontal_platform_present,
+		140 'Frontal. Nasal articulation surface of the frontal shaped into a dorsoventrally thickened, tongue-like platform that projects caudodorsally to overhang the parietal in adults (F4, http://www.morphbank.net/Show/?id=461372; Godefroit et al. 2004, character 7, in part; Evans and Reisz, 2007, character 40, in part, and character 41): absent (0); present (1).' /  'no tongue-like platform' 'tongue-like platforn',
+		141 'Frontal. Median cleft separating the two striated tongues of the frontal platform (F5, http://www.morphbank.net/Show/?id=461373; Evans & Reisz, 2007, character 40, in part): absent (0); present (1).' /  no_median_frontal_cleft median_frontal_cleft,
+		142 'Frontal. Exposure of the frontal at the dorsal margin of the orbit (F6; Horner et al. 2004, character 57): frontal completely excluded from the orbital margin by an extensive articulation between the prefrontal and postorbital (0); frontal exposed, forming part of the dorsal orbital margin in between the prefrontal and postorbital (1).' /  f_completely_excluded f_exposed_at_orbit,
+		143 'Frontal, upward doming dorsal to the braincase in subadult (and perhaps young adult) specimens (F7, http://www.morphbank.net/Show/?id=461375; modified after Horner et al. 2004, character 58): absent (0); present (1). ' /  absent_f_doming frontal_doming,
+		144 'Frontal, length/width ratio of the ectocranial surface (F8, http://www.morphbank.net/Show/?id=461376; Evans & Reisz 2007, character 42): relatively elongated ectocranial surface, with a ratio greater than 0.8 (0); relatively short ectocranial surface, with a ratio of 0.8 or less, but greater than 0.4 (1); greatly shortened ectocranial surface, with a ratio less than 0.4 (2).' /  'long, r>0.8' 'short r<0.8 and >0.4' less_than_0.4,
+		145 'Frontal. Morphology of the ventral annular ridge that defines the rostral extent of the cerebral fossa (F9, http://www.morphbank.net/Show/?id=461377; Evans & Reisz 2007, character 43): long, low and gently rounded in medial view (0); sharp annular ridge (1).' /  'long, low, gently rounded ridge' sharp_annular_ridge,
+		146 'Frontal. Triangular rostrolateral projection ending into narrow apex (F10; Prieto-Márquez, 2014, character 131): absent (0); present (1).' /  absent apex_present,
+		147 'Frontal. Caudodorsal process raising from the ectocranial surface of the frontal and that buttress the ventral surface of nasal crest (F11; modified from Prieto-Márquez, 2014, character 136): absent (0); present (1).' /  absent caudodorsal_f_process,
+		148 'Frontal. Shape of the base of the caudodorsal process of the frontal (F12; new character): columnar and buttressed by large oblique ridge (0); crescent (1). ' /  'columnar, buttressed by large ridge' crescent,
+		149 'Frontal. Deeply depressed ectocranial surface and sagittal elevation of the interfrontal suture (F13; new character): absent (0); present (1' /  absent 'depressed f, elevated suture',
+		150 'Parietal. Maximum length/minimum width proportions of the adult parietal (PAR1, http://www.morphbank.net/Show/?id=461378; modified from Godefroit et al. 2004, character 18): very short, length/width ratio less than 1.40 (sample mean ratio of 1.19) (0); short, ratio between 1.40 and 2.35 (sample mean ratio of 1.98) (1); relatively long, ratio greater than 2.35 (sample mean ratio of 2.75) (2). ' /  'very short, L/W<1.40' 'short, L/W 1.40 to 2.35' 'long, L/W>2.35',
+		151 'Parietal. Orientation of the parietal midline crest (PAR2, http://www.morphbank.net/Show/?id=461380; Horner et al. 2004; character 69; Evans & Reisz 2007, character 44): straight and level with the skull roof or slightly down-warped along its length (0); the sagittal crest deepens caudally and is strongly down-warped (1).' /  'horizontal or slightly down-warped' 'steeply down-warped',
+		152 'Basioccipital. Participation of the basioccipital in the ventral margin of the foramen magnum (BO1, http://www.morphbank.net/Show/?id=461383; Weishampel et al. 1993, character 24): absent, the exoccipital condyloids nearly or completely exclude the basioccipital from the ventral margin of the foramen magnum (0); present, the exoccipitals are separated at the sagittal plane of the braincase and allow the basioccipital to become part of the ventral margin of the foramen magnum (1). ' /  absent bo_present,
+		153 'Basioccipital. Length of basioccipital constriction (BO3, http://www.morphbank.net/Show/?id=461385; Godefroit et al. 2001): poorly developed and relatively short constriction (0); relatively long and well developed (1). ' /  poorly_developed_and_short_constriction long_and_well_developed_constriction,
+		154 'Basisphenoid. Development of the alar process of the basisphenoid (BS2, http://www.morphbank.net/Show/?id=461387; Prieto-Márquez 2010a, character 155): moderately developed (0); very well developed, relatively large in size (1).' /  moderate_to_small_alar_process large_alar_process,
+		155 'Basisphenoid. Ventral transverse caudal ridge between the basipterygoid processes of the basisphenoid (BS3, http://www.morphbank.net/Show/?id=461388; Gates & Sampson 2007, character 78): absent or very poorly developed (0); present, sharply defined ridge (1).' /  absent_or_poorly_developed 'present, sharply defined ridge',
+		156 'Basisphenoid. Short median ventral process located between the basipterygoid processes of the basisphenoid (BS4, http://www.morphbank.net/Show/?id=461389; Gates & Sampson 2007, character 79): absent (0); present, ventrally or caudoventrally directed (1).' /  absent median_process_present,
+		157 'Parietal. Rostral extension of the sagittal crest along the dorsal surface of the parietal (PAR4, http://www.morphbank.net/Show/?id=461382; Prieto-Márquez 2010a, character 150): the sagittal crest extends along the entire length of the parietal and remains sharp and well defined at the rostral region (0); the sagittal crest extends along the entire length of the parietal but its sharpness fades away at the rostral region where the parietal is rostrocaudally shorter than it is wide (1); the sagittal crest only extends along the caudal half of the parietal and the rostral half of the dorsal surface of the parietal is flattened, lacking any ridge or mediolateral compression (2).' /  'remains sharp, defined rostrally' sharpness_fades_away_rostrally 'rostral half of par lacks ridge, flattened',
+		158 'Basisphenoid. Development of the rostral constriction of the basisphenoid, caudal to the basipterygoid processes (measured as the ratio between the minimum mediolateral width of the rostral constriction and the maximum width of the basisphenoid across the spheno-occipital tubercles) (BS5, http://www.morphbank.net/Show/?id=471320; Prieto-Márquez 2010a, character 158): very thick constriction, ratio less than 1.45 (sample mean ratio of 1.37) (0); moderately developed constriction, ratio between 1.45 and 1.90 (sample mean ratio of 1.72) (1); very thin constriction, ratio greater than 1.90 (sample mean ratio of 2.25) (2).' /  'thick constriction, r<1.45' 'moderate constriction, r=1.45 to 1.90' 'thin, r>1.90',
+		159 'Laterosphenoid. Complete lateral osseous closure of the ophthalmic sulcus (V1) of the laterosphenoid (LS1, http://www.morphbank.net/Show/?id=461391; Evans & Reisz 2007, character 51): absent (0); present (1). ' /  open_sulcus osseous_closure,
+		160 'Laterosphenoid. Extreme reduction of the length of the postorbital process of the laterosphenoid to 25% or less the length of the mediodorsal flange of this element (LS2, http://www.morphbank.net/Show/?id=461392; modified from Prieto-Márquez et al. 2006, character 76): absent (0); present (1).' /  absent extremely_reduced,
+		161 'Exoccipital. Caudal extension of the exoccipital-supraoccipital shelf above the foramen magnum (EX1, http://www.morphbank.net/Show/?id=461395; modified from Godefroit et al. 2004, character 24): very short rostrocaudal length, approximately less than half the diameter of the foramen magnum (0); moderately long, approximately more than half but less than the diameter of the foramen magnum (1); very long, substantially longer (often twice or more) than the diameter of the foramen magnum (2). ' /  'very short, less than half diameter of foramen magnum' more_than_half_but_less_than_diameter_of_foramen_magnum 'substantially longer (often twice or more) than diameter of the foramen magnum',
+		162 'Pterygoid. Elevation of the proximodorsal region of the quadrate wing of the pterygoid (PLT1, http://www.morphbank.net/Show/?id=461397; Prieto-Márquez et al., 2006, character 72): absent (0); present (1).' /  absent present,
+		163 'Pterygoid. Ventral extension of the lamina located ventral to the central buttress of the pterygoid (PLT2, http://www.morphbank.net/Show/?id=461398; Prieto-Márquez et al. 2006, character 75): lamina of moderate size, a relatively large portion of the ventral quadrate process and the rostroventral process extends beyond the ventral margin of the lamina (0); extensive lamina, only a relatively small portion of the ventral quadrate process and the rostroventral process extends beyond the ventral margin of the lamina (1).' /  lamina_of_moderate_size extensive_lamina,
+		164 'Ectopterygoid?jugal contact (PLT3, http://www.morphbank.net/Show/?id=461399; Godefroit et al. 2001, character 12): present, the ectopteryoid contacts the medial side of the jugal (0); absent, the jugal lacks an articular facet for the ectopterygoid (1).' /  eptg_contacts_medial_jugal absent,
+		165 'Angle between the dorsal margin of the rostrum parallel to the long axis of the external naris and the maxillary tooth row (adults only) (RST2, http://www.morphbank.net/Show/?id=461401; Prieto-Márquez 2010a, character 168): angle up to 30º (sample mean angle of 27º) (0); angle greater than 30º and up to 40º (sample mean angle of 34º) (1); angle greater than 40º (sample mean angle of 47º) (2).' /  up_to_30º '>30º to 40º' more_than_40º,
+		166 'Exposure of the nasal passage (NPS1, http://www.morphbank.net/Show/?id=461402; modified from Norman 2002, character 5): absent, nasal passage nearly or completely enclosed by bone and formation of internal cavities and passages (such as lateral diverticula and a common median chamber) (0); present, nasal passage open and exposed on the lateral side of the rostrum (1). Distinction is made here between apertura ossis nasi (Wagner, unpub. Master?s thesis, Texas Tech Univ., Austin, 2001) and bony naris (Evans, 2006). Functionally, both structures formed the external naris. The iguanodontoidean apertura ossis nasi was regarded as homologous to the common median chamber of lambeosaurines (Hopson, 1975; Wagner, 2004). Because of caudodorsal migration of the external passage to become enclosed in a supracranial crest forming the common median chamber in lambeosaurines, what remained on the laterodorsal surface of the premaxilla (the bony naris) in the latter group was not regarded as structurally homologous to the apertura ossis nasi. ' /  'absent, ns passage nearly or completely enclosed by bone' 'present, ns passage open, exposed on lat side of rostrum',
+		167 'Lateral profile of the apertura ossis nasi (NPS2, http://www.morphbank.net/Show/?id=461403 and http://www.morphbank.net/Show/?id=461404; Prieto-Márquez 2010a, character 170): broad and subellipsoidal in lateral profile (0); narrow and subellipsoidal in lateral profile (1); extremely narrow, slit-like in lateral profile (2).' /  broad_subcircular broad_ellipsoidal narrow_ellipsoidal 'slit-like',
+		168 'Degree of closure of the nasal passage on the lateral crest surface between the caudoventral process of the premaxilla and the nasal (NPS3, http://www.morphbank.net/Show/?id=461405; Evans 2007, character 15): present, premaxilla-nasal fontanellae persist into late ontogenetic stages (0); absent, fontanellae completely closed in adults (1).' /  'pmx-ns fontanelle present in late ontog stage' fontanelle_closed_in_adults,
+		169 'Ratio between the length of the apertura ossis nasi and the distance between the rostroventral corner of the premaxilla and the rostroventral margin of the prefrontal (NPS4, http://www.morphbank.net/Show/?id=461406; Prieto-Márquez 2010a, character 172): very short apertura ossis nasi, ratio up to 0.40 (sample mean ratio of 0.32) (0); moderately long apertura ossis nasi, ratio greater than 0.40 but less than 0.60 (sample mean ratio of 0.49) (1); elongated apertura ossis nasi, ratio between 0.60 and 0.65 (sample mean ratio of 0.62) (2); extremely long apertura ossis nasi, ratio greater than 0.65 (sample mean ratio of 0.72) (3).' /  'short, r up to 0.40' 'moderate, r>0.40 but <0.60' 'long, r 0.60 to 0.65' 'very long, r>0.65',
+		170 'Nasal vestibule folded into an S-loop in the enclosed premaxillary passages rostral to the dorsal process of the maxilla (Weishampel 1981; Evans 2007, character 8): absent (Weishampel 1981, Fig. 6) (0); present (Weishampel 1981, Figs. 4-5) (1).' /  absent present,
+		171 'Location of the lateral diverticulum relative to the common median chamber (Weishampel 1981): lateral to the common median chamber (Weishampel 1981, Fig. 4 and 6) (0); rostral to the common median chamber (Weishampel 1981, Fig. 10) (1); caudodorsal to the common median chamber (Weishampel 1981, Fig. 8) (2).' /  rostral_to_common_med_chamber caudodorsal_to_common_med_chamber,
+		172 'Communication between the external bony naris, the lateral diverticulum and the common median chamber (Evans 2006): a tubular premaxillary passage extends caudodorsally from the bony naris to the lateral diverticulum, that is then connected to the common median chamber (Weishampel 1981, Figs. 4-6) (0); a tubular premaxillary passage connects directly the bony naris to the common median chamber (Weishampel 1981, Fig. 7-8) (1).' /  'tubular pmx passage extends caudodorsally from bony naris to lat diverticulum,' tubular_pmx_passage_connects_directly_bony_naris_to_comm_med_chamber,
+		173 'Caudal extent of the nasal passage dorsal and/or caudal to the orbit (NPS8, http://www.morphbank.net/Show/?id=461407; modified from Evans 2007, character 9): absent, nasal passage restricted to the antorbital region of the skull (0); present, but not extending caudal to the occiput, with a nasal vestibule that flanks a common median chamber (1); present, nasal vestibule extending caudodorsal to the occipital region of the skull (2).' /  'absent, ns passage restricted to antorbital region of sk' 'present, but not extending caudal to occiput' 'present, ns vestibule extending caudodorsal to occiput',
+		174 'Composition of the caudal margin of the functional external naris (NPS9, http://www.morphbank.net/Show/?id=461408; modified from Horner et al. 2004, character 29): formed by the nasal dorsally and the premaxilla ventrally (0); formed entirely by the nasal (1); formed entirely by the premaxilla (2).' /  by_ns_dorsally_and_pmx_ventrally entirely_by_ns entirely_by_pmx,
+		175 'Circumnarial fossa on the lateral surface of the facial region of the skull (CMN1, http://www.morphbank.net/Show/?id=461409; Horner et al. 2004, character 31): absent, circumnarial structure entirely enclosed (0); present (1).' /  'absent, circumnarial structure entirely enclosed' circumnarial_fossae_present,
+		176 'Caudodorsal extension of circumnarial fossa (homologous to the lateral diverticulum inside hollow supracranial crests) (CMN2, http://www.morphbank.net/Show/?id=461411 and http://www.morphbank.net/Show/?id=461412; Hopson 1975; Wagner 2004; modified from Horner et al. 2004, characters 32): the fossa does not reach the caudal margin of the apertura ossis nasi and, thus, lacks a caudal margin (0); the fossa extends as far as to surround the caudal margin of the apertura ossis nasi, but does not reach the orbit (1); the fossa extends as far as the rostrodorsal region of the orbit (2); the fossa extends beyond the orbit, caudodorsal to its caudal margin (3).' /  cmn_fossa_does_not_reach_caudal_apertura_ossis_nasi 'cmn surrounds caudal apertura ossis nasi, but not orbit' cmn_extends_as_far_as_the_rostrodorsal_region_of_orbit cmn_extends_beyond_orbit,
+		177 'Degree of excavation of the caudal region of the circumnarial fossa (CMN3, http://www.morphbank.net/Show/?id=461410; Horner et al. 2004, character 32): lightly incised (0); deeply incised (1); invaginated (2). ' /  lightly_incised deeply_incised invaginated,
+		178 'Position of the circumnarial fossa on lateral surface of solid nasal crest (CMN4; new character): extending onto the rostral or medial margin of the nasal (0); shifted caudally and adjacent to the caudolateral margin of the nasal (1).' /  extending_onto_med_margin_of_ns extending_onto_lat_margin_of_ns,
+		179 'Elevation of the skull roof dorsal to the ancestral lateral profile (i.e., presence of supracranial crest) (CRS1, http://www.morphbank.net/Show/?id=461413; Wagner 2004): absent (0); present (1).' /  absent crest_present,
+		180 'Composition of the supracranial crest (or the homologous region of the skull from which the crest forms) (excluding supporting elements) (CRS2, http://www.morphbank.net/Show/?id=461414; modified from Horner et al. 2004, character 40): primarily composed of the nasals (0); primarily composed of the nasals and frontals (1); primarily composed of the nasals and premaxillae (2).' /  primarly_by_ns primarily_by_ns_and_f primarily_by_ns_and_pmx,
+		181 'Relative contribution of the nasal and premaxilla in the formation of hollow supracranial crests (CRS3, http://www.morphbank.net/Show/?id=461415; Wagner, unpub. Master?s thesis, Texas Tech Univ., Austin, 2001 and modified in part from Evans & Reisz 2007, character 11): the nasals constitute half or a larger portion of the crest in the form of a caudal plate-like surface (0); the nasals form a smaller portion of the crest relative to the surrounding premaxillae (1).' /  half_or_a_larger_portion_of_the_crest form_a_smaller_portion_of_the_crest_relative_to_the_surrounding_pmx,
+		182 'Supracranial crest shape (CRS4, http://www.morphbank.net/Show/?id=461416, http://www.morphbank.net/Show/?id=461417, http://www.morphbank.net/Show/?id=461418, and http://www.morphbank.net/Show/?id=461419; modified from Horner et al. 2004, character 36): dome-like broad and low protuberance (0); mediolaterally compressed arcuate protuberance, rostral or, in adults, dorsal to the level to the orbits (1); paddle-like caudally directed solid blade (2); rod-like caudodorsally directed solid crest (3); rostrally excavated and rostrally-facing protuberance, rostrodorsal to the orbit (4); nasal fold that rises dorsally or caudodorsally to form a laterally excavated promontory, with a caudal region that rests over the frontals (5); raised into a large vertical fan, formed by a solid plate-like extension of the premaxilla (?cockscomb?) above the nasal passages in the rostral region of the crest (6); long and tubular, caudodorsally directed beyond the occiput and slightly arched (7).' /  'dome-like broad and low protuberance' 'arcuate protuberance, dorsal to orbits in adults' 'paddle-like caudally directed solid blade' 'rod-like caudodorsally directed solid crest' 'excavated rostrally-facing protuberance, rostrodorsal to orbit' 'ns fold rising dorsally or caudodorsally, lat excavated, resting over f' 'cockscomb formed by solid plate-like extension of pmx' 'long and tubular, caudally beyond occiput and gently arched',
+		183 'Hollow crest-snout angle along the dorsal margin of the premaxilla in lateral view (in adults) (CRS5, http://www.morphbank.net/Show/?id=461420; Evans 2007, character 13): absent, the lateral profile of the snout is continuous with the lateral profile of the dorsal premaxillary margin of the crest (0); facial profile shallowly concave in lateral view, angle greater than 140º (1); angle between 110º and 140º (2); crest procumbent and rostrally inclined, angle less than 110º (3).' /  'absent, snout continuous with pmx margin of crest' 'facial profile shallowly concave, angle>140º' angle_between_110º_and_140º 'crest procumbent and rostrally inclined, angle<110º',
+		184 'Caudal extension of the hook-like nasal process on the caudoventral region of helmet-shaped hollow supracranial crests (CRS6, http://www.morphbank.net/Show/?id=461421; Prieto-Márquez 2010a, character 186): rostral to or at the level of the caudal margin of the occiput (0); extended caudal to the level of the caudal margin of the occiput (1).' /  rostral_or_at_level_of_occiput caudal_to_occiput,
+		185 'Supracranial solid crest significantly elevated dorsally above the skull roof (CRS7; new character): absent (0); present (1)' /  absent solid_crest_significantly_above_skroof,
+		186 'Distal end of solid nasal crest elongate and bluntly subconical (CRS8; new character): absent (0); present (1).' /  absent distal_blunt_end_present,
+		187 'Palpebral (supraorbital) bone (PLP, http://www.morphbank.net/Show/?id=461422; Norman, 2002, character 13): absent (0); present (1).' /  absent palpebral_present,
+		188 'Length/width proportions of the orbit (ORB, http://www.morphbank.net/Show/?id=461424; Wagner, unpub. Master?s thesis, Texas Tech Univ., Austin, 2001): nearly circular, approximately as wide as it is deep (0); elongated, dorsoventrally deeper than it is wide (1).' /  'orbit subcircular, as wide as deep' 'orbit elongate, deeper than wide',
+		189 'Presence of a gap (paraquadratic foramen) between the quadratojugal and the jugal (PQF, http://www.morphbank.net/Show/?id=461425; Prieto-Márquez 2010a, character 189): absent (0); present (1).' /  absent paraq_foramen_present,
+		190 'Size of the infratemporal fenestra relative to that of the orbit (ITF1, http://www.morphbank.net/Show/?id=461426; modified from Gates & Sampson 2007): infratemporal fenestra both rostrocaudally wider and dorsoventrally deeper than the orbit (0); infratemporal fenestra rostrocaudally narrower than or approximately as wide as the orbit (1).' /  ITF_wider_and_deeper_than_orbit ITF_narrower_or_as_wide_as_orbit,
+		191 'Shape and rostrocaudal width of the dorsal margin of the infratemporal fenestra relative to that of the ventral margin (ITF2, http://www.morphbank.net/Show/?id=461427 and http://www.morphbank.net/Show/?id=461428; Prieto-Márquez 2010a, character 191): subrectangular, with a dorsal infratemporal margin that is approximately as wide as the ventral margin (0); subtriangular, with a dorsal infratemporal margin that is narrower than the ventral margin (1). ' /  'subrectangular, dorsal and ventral margins subequally wide' 'subtriangular, dorsal margin narrower than ventral margin',
+		192 'Location of the dorsal margin of the infratemporal fenestra relative to the dorsal margin of the orbit (ITF3, http://www.morphbank.net/Show/?id=461564; modified from Gates & Sampson 2007, character 86): the dorsal margin of the infratemporal fenestra lies approximately at the same level than the dorsal margin of the orbit and the caudal region of the skull roof is subhorizontal or slightly sloping caudoventrally relative to the frontal plane (0); the dorsal margin of the infratemporal fenestra is substantially more dorsally located than the dorsal margin of the orbit and the caudal region of the skull roof is rostroventrally inclined relative to the frontal plane (1); the dorsal margin of the infratemporal fenestra lies substantially below the level of the dorsal margin of the orbit, caudal region of the skull roof sloping caudoventrally relative to the frontal plane (2).' /  'dorsal margin of ITF at same level as orbital one, skroof subhorizontal or gently sloping caudovnt' 'dorsal margin ITF well above orbit, skroof steep rostrovnt slope' 'dorsal margin ITF well below orbit, skroof with slight to moderate caudovnt slope',
+		193 'Morphology of the dorsal outline of the supratemporal fenestra (STF, http://www.morphbank.net/Show/?id=461565; Prieto-Márquez 2010a, character 193): subrectangular, with the long axis directed rostrally (0); oval, with the long axis directed rostrolaterally (1); oval and wider mediolaterally than rostrocaudally (2).' /  'subrectangular, long axis rostrally directed' 'oval, long axis rostrally rostrolaterally' 'oval, wider mediolaterally than rostrocaudally',
+		194 'Depth of the skull (ratio between the skull height along caudal margin of quadrate and distance from rostral predentary tip to the level of the caudal margin of quadrate) (SK1; modified from You et al. 2003, character 1): ratio less than 0.70 (0); relatively deep skull, ratio of 0.70 or greater (1).' /  less_than_0.70 'deep skull, 0.70 or greater',
+		195 'Maximum transverse width of the cranium in dorsal view across the postorbitals relative to the width across the quadrate cotylus of the squamosals (SK2, http://www.morphbank.net/Show/?id=461699; modified from Horner et al. 2004, character 67): the skull is more than 25% wider across the postorbitals (sample mean ratio of 0.35) (0); the skull is up to 25% wider across the postorbitals (sample mean ratio of 0.14) (1); the skull is approximately equally wide across the postorbitals than across the squamosals (2). ' /  '>25% wider across po' up_to_25%_wider_across_po subqually_wide_across_po_and_sq,
+		196 'Cervical vertebrae. Morphology of the dorsal flange of the axis (CRV1, http://www.morphbank.net/Show/?id=461701; modified from Campione et al. 2007): dorsally convex flange extending beyond or to the level of the cranialmost region of the postzygapophyses (0); presence of shor¬¬t cranial flange separated from the postzygapophyseal region by a prominent embayment (1).' /  flange_extending_beyond_or_to_level_of_postzyg short_flange_separated_from_postzyg_by_embayment,
+		197 'Number of cervical vertebrae (Horner et al. 2004, character 72): 11 or less (0); 12 or more (1).' /  11_or_less 12_or_more,
+		198 'Height of the neural spine relative to that of the centrum of the tallest caudal dorsal or sacral vertebrae (in adults) (DRS1, http://www.morphbank.net/Show/?id=461703; modified from Norman, 2002, character 41): short neural spine, ratio up to 2.10 (mean ratio of 1.79) (0); ratio greater than 2.10 and up to 3.25 (mean ratio of 2.57) (1); very long neural spine, ratio greater than 3.25 (mean ratio of 3.97) (2).' /  'short neural sp, r up to 2.10' 'r>2.10 and up to 3.25' 'long neural sp, r>3,25',
+		199 'Slightly elongated neural spines in the cranial dorsal vertebrae, forming a ?wither-like? region above the pectoral girdle (DRS2, http://www.morphbank.net/Show/?id=461704; Wagner, unpub. Master?s thesis, Texas Tech Univ., Austin, 2001): absent (0); present (1).' /  absent 'wither-like verts',
+		200 'Minimum count of co-ossified vertebrae in the sacral region (including single dorsal and caudal contributions (Godefroit et al. 2000, character 27): seven or fewer (0); eight or more (1). ' /  seven_or_less eight_or_more,
+		201 'Chevron length relative to the length of the neural spines in the caudal vertebrae of the proximal half of the tail (CDL, http://www.morphbank.net/Show/?id=461705; Wagner, unpub. Master?s thesis, Texas Tech Univ., Austin, 2001): chevrons shorter or nearly as long as the neural spines (0); chevrons longer than the neural spines (1).' /  chevrons_shorter_or_nearly_as_long_as_neural_sp chevrons_longer_than_neural_sp,
+		202 'Sternum. Length of the ?handle-like? caudolateral process of the sternal relative to that of the craniomedial plate (excluding the caudoventral process) (ST, http://www.morphbank.net/Show/?id=461706; modified from Prieto-Márquez et al. 2006, character 100): caudolateral process slightly shorter or as long as the rostromedial plate (0); caudolateral process longer than the craniomedial plate (1).' /  caudolateral_pr_slightly_shorter_or_as_long_as_the_rostromedial_pl caudolateral_pr_longer_than_the_craniomedial_plate,
+		203 'Coracoid size relative to the length of the scapula (COR1, http://www.morphbank.net/Show/?id=461707; Horner et al. 2004, character 77): relatively large coracoid, ratio between craniocaudal length of coracoid and length of scapula of approximately 0.2 (0); coracoid reduced in size relative to the scapula (1).' /  'corL/scpL = 0.2' coracoid_reduced_in_size,
+		204 'Coracoid. Ratio between the length of the lateral margin of the facet for the scapular articulation and the length of the lateral margin of the glenoid (COR2, http://www.morphbank.net/Show/?id=461708; Prieto-Márquez 2010a, character 206): longer scapular facet, with a ratio greater than 1.30 (sample mean ratio of 1.48) (0); slightly longer scapular facet, ratio greater than 1 and up to 1.30 (sample mean ratio of 1.14) (1); glenoid longer than the scapular facet, with a ratio up to 1 (sample mean ratio of 0.75) (2).' /  'longer scapular facet, r>1.30' 'slightly longer scapular facet, r>1 and up to 1.30' 'glenoid longer, r up to 1',
+		205 'Coracoid. Angle between the lateral margins of the facet for scapular articulation and the glenoid (COR3, http://www.morphbank.net/Show/?id=461709; Prieto-Márquez 2010a, character 207): angle greater than 115º (sample mean angle of 124º) (0); angle up to 115º (sample mean angle of 102º) (1).' /  'angle>115º' up_to_115º,
+		206 'Coracoid. Morphology of the craniomedial margin of the coracoid (COR4, http://www.morphbank.net/Show/?id=461710; Horner et al. 2004, character 78): convex or straight, associated to a moderate development and slight projection biceps tubercle (0); concave, associated to a relatively large and lateroventrally-projected biceps tubercle (1).' /  straight_or_convex 'convex, large biceps tubercle',
+		207 'Coracoid. Development of the ?hook-like? ventral process of the coracoid, measured as the ratio between the dorsoventral depth and the breadth of the process (COR5, http://www.morphbank.net/Show/?id=461711; modified from Godefroit et al. 2000, character 25): relatively short, ratio less than 0.65 (sample mean ratio of 0.55) (0); ratio between 0.65 to 0.80 (sample mean ratio of 0.71) (1); long process, nearly as deep as it is wide, with a ratio greater than 0.80 (sample mean ratio of 0.96) (2).' /  'short hook-like pr, r<0.65' ratio_0.65_to_0.80 'long hook-like pr, r>0.80',
+		208 'Coracoid. Curvature of the ventral ?hook-like? process of the coracoid (COR6, http://www.morphbank.net/Show/?id=461712; Godefroit et al. 2000, character 25): ventrally directed (0); recurved, so that the process is caudoventrally directed (1).' /  ventrally_directed 'recurved, caudoventrally directed',
+		209 'Scapula. Lateral profile of the dorsal margin of the scapula (SCP1, http://www.morphbank.net/Show/?id=461713; modified from Sereno 1986): craniocaudally straight from the cranial margin of the coracoid facet to the distal end of the blade (0); curved, dorsally convex, curvature originating at the level of the dorsal margin of the pseudoacromion process and is most pronounced over the dorsoventral constriction (1).' /  straight_scp curved_scp,
+		210 'Scapular length, ratio between the craniocaudal length of the scapula (from the cranial end of the pseudoacromion process to the distal margin of the blade) and the dorsoventral depth of the cranial end (from the cranial end of the pseudoacromion process to the ventral apex of the glenoidal facet) (SCP2, http://www.morphbank.net/Show/?id=461714; Prieto-Márquez 2010a, character 212): relatively short scapula, ratio up to 4 (sample mean ratio of 3.54) (0); relatively long scapula, ratio greater than 4 (sample mean ratio of 4.64) (1).' /  'short scp, r up to 4' 'long scp, r > 4',
+		211 'Scapula. Dorsoventral expansion of the distal region of the scapular blade (measured as a ratio between the depth of the distal end of the blade and the depth of the proximal region) (SCP4, http://www.morphbank.net/Show/?id=461716; Prieto-Márquez 2010a, character 213): ratio less than 1 (sample mean ratio of 0.80) (0); ratio of 1 or greater (sample mean ratio of 1.15) (1).' /  'ratio<1' 'ratio=1 or greater',
+		212 'Scapula. Proximal constriction (scapular ?neck?), ratio between the dorsoventral width of the proximal constriction and the dorsoventral depth of the cranial end of the scapula (SCP5, http://www.morphbank.net/Show/?id=461717; Prieto-Márquez 2010a, character 214): narrow ?neck?, ratio up to 0.60 (sample mean ratio of 0.53) (0); relatively broad ?neck?, ratio greater than 0.60 (sample mean ratio of 0.68) (1).' /  'narrow neck, r up to 0.60' 'broad neck, r>0.60',
+		213 'Scapula. Morphology and orientation of the pseudoacromion process (SCP6, http://www.morphbank.net/Show/?id=461718; modified from Horner et al. 2004, character 80): recurved, so that the cranial region is dorsally or craniodorsally directed (0); horizontal, occasionally with minor and subtle dorsal or ventral curvatures, so that the cranial region is cranially or mostly cranially directed (1).' /  recurved 'sub- or horizontal',
+		214 'Scapula. Degree of curvature of the dorsally oriented pseudoacromion process of the scapula (SCP7, http://www.morphbank.net/Show/?id=461718; modified from Horner et al. 2004, character 80): strongly recurved, so that the cranial region of the process is dorsally oriented (0); slightly recurved, with concave lateral profile of the dorsal margin, so that the cranial region of the process is craniodorsally oriented (1).' /  'strongly recurved, dorsally oriented' 'slightly recurved, craniodorsally oriented',
+		215 'Scapula. Cranial extension of the craniodorsal region of the scapula (bearing the coracoid facet), measured as a ratio between the distance from the coracoid joint and the cranial end of the pseudoacromion process and the height between this and the ventral apex of the glenoidal facet (SCP8, http://www.morphbank.net/Show/?id=461719; Prieto-Márquez 2010a, character 217): short craniodorsal region, ratio less than 0.45 (sample mean ratio of 0.35) (0); long craniodorsal region, ratio of 0.45 or greater (sample mean ratio of 0.53) (1).' /  'short craniodorsal region, r<0.45' 'long craniodorsal region, r>0.45 or greater',
+		216 'Scapula. Development of the deltoid ridge (SCP9, http://www.morphbank.net/Show/?id=461720; Prieto-Márquez 2010a, character 218): dorsoventrally narrow convexity limited to the proximal region of the scapula, near the pseudoacromion process from which it develops, with a poorly demarcated ventral margin (0); dorsoventrally deep and craniocaudally long, with a well demarcated ventral margin (1).' /  'narrow and proximal, poorly defined vnt margin' 'deep and long, well defined vnt margin',
+		217 'Humerus. Length of the deltopectoral crest of the humerus (measured as the ratio between the proximodistal length of the crest and the proximodistal length of the humerus (HM1, http://www.morphbank.net/Show/?id=461721; modified from Godefroit et al. 2000, character 26): proximodistally short crest, ratio less than 0.48 (sample mean ratio of 0.44) (0); ratio between 0.48 and 0.55 (sample mean ratio of 0.52) (1); very long crest, ratio greater than 0.55 (sample mean ratio of 0.59) (2).' /  'short dpc crest, r<0.48' 'r=0.48 to 0.55' 'long dpc crest, r>0.55',
+		218 'Humerus. Lateroventral expansion of the deltopectoral crest of the humerus (measured as the ratio between the width of the humerus across the distal fourth of the deltopectoral crest and the width of the distal shaft at the point of maximum curvature) (HM2, http://www.morphbank.net/Show/?id=461722; modified from Horner et al. 2004): poorly expanded deltopectoral crest, ratio less than 1.65 (sample mean ratio of 1.53) (0); ratio between 1.65 and 1.90 (sample mean ratio of 1.76) (1); very expanded deltopectoral crest, ratio greater than 1.90 (sample mean ratio of 2) (2). ' /  'poorly expanded dpc crest, r<1.65' ratio_between_1.65_and_1.90_ 'expanded dpc crest, r>1.90 ',
+		219 'Humerus. Degree of angulation of the ventral margin of the deltopectoral crest (HM3, http://www.morphbank.net/Show/?id=471338; Weishampel et al. 1993, character 37): well rounded (0); extending abruptly from the humeral shaft to give a distinct angular profile (1).' /  well_rounded angular,
+		220 'Humerus. Overall proportions of the humerus (measured as a ratio between the total length and the width of the lateral surface of the proximal end of the humerus) (HM4, http://www.morphbank.net/Show/?id=461724; modified from Weishampel et al. 1993, character 36): relatively short and stocky humerus, ratio less than 4.25 (mean ratio of 3.85) (0); ratio between 4.25 and 4.90 (sample mean ratio of 4.60) (1); relatively long and thin humerus, ratio greater than 4.90 (mean ratio of 5.4) (2).' /  'short and stocky hm, r<4.25' 'r= 4.25 and 4.90 ' 'long and thinner hm, r>4.90 (',
+		221 'Ulna. Length of the ulna relative to its dorsoventral thickness (measured at mid-shaft) (UL1, http://www.morphbank.net/Show/?id=461725; Prieto-Márquez 2010a, character 223): ratio length/width less than 10 (0); ratio length/width equal or larger than 10 (1).' /  'L/W<10' 'L/W= or >10',
+		222 'Ulnar length relative to humeral length (UL2, http://www.morphbank.net/Show/?id=461726; Norman 2002, character 47): ulna shorter than or as long as the humerus (0); longer ulna, up to 20% longer than the humerus (1); longer ulna, being more than 20% longer than the humerus (2).' /  ul_shorter_or_as_long_as_hm longer_ulna,
+		223 'Composition of the carpus (MN1, http://www.morphbank.net/Show/?id=461727; adapted from Horner et al. 2004, character 86): presence of fused ulnare, radiale, intermedium and distal carpals (0); number of carpal bones reduced to a maximum of two unfused elements (1).' /  'fused ulnare, radiale, intermedium and distal carpals ' two_unfused_carpals,
+		224 'Manual digit I (Norman 2002, character 49) (MN2, http://www.morphbank.net/Show/?id=461728): presence of metacarpal I and one ungual phalanx (0); entire digit I absent (1).' /  absence_of_digit_I _mtc_I_and_one_ungual_phalanx,
+		225 'Elongation of the manus exemplified by elongation of metacarpals II through IV, measured as the ratio between the length of metacarpal III and the width of its mid-shaft (MN3, http://www.morphbank.net/Show/?id=461729; modified from Horner et al. 2004, character 84): relatively short and blocky, ratio up to 5 (sample mean ratio of 4.25) (0); relatively long and slender, ratio greater than 5 (sample mean ratio of 8.54) (1).' /  'short and blocky mtc III, r up to 5' 'long slender mtc III, r>5',
+		226 'Elongation of metacarpal V, so that it is more than twice as long as it is proximally wide (MN4, http://www.morphbank.net/Show/?id=461730; Prieto-Márquez 2010a, character 228): absent (0); present (1).' /  absent mtc_V_elongate,
+		227 'Length/width proportions of manual phalanx III1 (MN6, http://www.morphbank.net/Show/?id=461732; modified from Prieto-Márquez et al. 2006, character 114): proximodistally compressed, mediolaterally wider than it is long (0); slightly longer proximodistally than it is wide mediolaterally (1); very elongated, proximodistal length that is at least twice its mediolateral width at the middle of its longitudinal axis (2).' /  'ph(m)III1 wider than long' 'ph(m)III1 slightly longer than wide' 'ph(m)III1 twice longer than wide',
+		228 'Shape of manual ungual II (MN7, http://www.morphbank.net/Show/?id=461733; Norman 2002, character 53, in part): claw-like (0); hoof-like (1).' /  'claw-like' 'hoof-like',
+		229 'Proximodistal length of manual phalanx II1 relative to that of II2 (MN8, http://www.morphbank.net/Show/?id=461734; modified from You et al. 2003, character 55): phalanx II1 less than three times longer than phalanx II2 (0); phalanx II1 three times or more longer than phalanx II2 (1). ' /  'ph(m)II1<3x longer than ph(m)II2' 'ph(m)II1 3x or more longer than ph(m)II2',
+		230 'Ilium. Angle of ventral deflection of the preacetabular process of the ilium (IL1, http://www.morphbank.net/Show/?id=461735; modified from Suzuki et al. 2004, character 69): angle greater than 150º (sample mean angle of 162º) (0); angle of 150º or less (sample mean angle of 143º) (1).' /  'deflection>150º' 'deflection = or <150º',
+		231 'Ilium. Depth of the proximal region of the preacetabular process (measured as a ratio between this and the dorsoventral distance between the pubic peduncle and the dorsal margin of the ilium) (IL3, http://www.morphbank.net/Show/?id=461737; Prieto-Márquez 2010a, character 233): shallow, less than half the depth of the cranial central plate, ratio less than 0.50 (sample mean ratio of 0.42) (0); approximately as deep as the cranial central plate depth, ratio between 0.50 and 0.55 (sample mean ratio of 0.51) (1); deeper than half the depth of the cranial central plate, ratio greater than 0.55 (sample mean ratio of 0.62) (2).' /  'shallow, < half depth of central pl' 'as deep as half central pl, r 0.50-0.55' 'deeper than half central pl, r>0.55',
+		232 'Ilium. Depth of the central plate of the ilium (expressed as a ratio between this and the distance between the pubic peduncle and the caudodorsal prominence of the ischiadic peduncle) (IL4, http://www.morphbank.net/Show/?id=461738; Prieto-Márquez 2010a, character 234): ratio of 0.80 or greater (sample mean ratio of 0.90) (0); ratio less than 0.80 (sample mean ratio of 0.71) (1).' /  'deep, ratio of 0.80 or greater' 'shallow, ratio < 0.80',
+		233 'Ilium. Position of the ventral-most margin of the supraacetabular crest relative to the caudoventral margin of the lateral ridge of caudal protuberance of the ischiadic peduncle of the ilium (IL5, http://www.morphbank.net/Show/?id=461739; Brett-Surman & Wagner 2007): apex located caudodorsally (0); apex located above caudoventral margin of protuberance (1); apex located craniodorsally (2).' /  apex_caudodorsal apex_above apex_craniodorsal,
+		234 'Ilium. Development of the lateroventral projection of the supraacetabular crest of the ilium (IL6, http://www.morphbank.net/Show/?id=461740; modified from Horner et al. 2004, character 91): forms a longitudinal and continuous ?swelling? or reflected border along the dorsal margin of the central plate and the proximal region of the postacetabular process, with a depth up to 25% the depth of the ilium (0); projected lateroventrally at least 25% (but less than half) the depth of the ilium (1); projects lateroventrally between half and three quarters of the dorsoventral depth of the ilium (2); projects lateroventrally to overlap totally or at least half of the lateral ridge of the caudal prominence of the ischiadic peduncle (3).' /  'longitudinal swelling, up to 25% the depth of il ' projected_latvnt_at_least_25%_but_less_than_50%_depth_il projected_latvnt_50%_to_75%_depth_il overlaps_part_or_entire_caudal_prominence_of_ischiadic_pr,
+		235 'Ilium. Craniocaudal breadth of the supraacetabular process, measured as the ratio between the breadth of the process across its dorsal region and the craniocaudal length of the central iliac blade from the caudal ischiadic peduncle to the pubic one (IL7, http://www.morphbank.net/Show/?id=461741; Prieto-Márquez 2010a, character 237): craniocaudally nearly as wide as or wider than the central plate of the ilium, ratio greater than 0.85 (sample mean ratio of 1.16) (0); craniocaudally broad, ratio between 0.70 and 0.85 (sample mean of 0.73) (1); slightly broader than half the length of the central iliac blade, ratio between 0.55 and 0.69 (sample mean ratio of 0.62) (2); short, ratio less than 0.55 (sample mean ratio of 0.48) (3).' /  'as wide as or wider than central pl, r>0.85' 'wide, r 0.70 to 0.85' 'slightly wider than half length of central pl, r 0.55 to 0.69' 'short, r<0.55 ',
+		236 'Ilium. Symmetry of the lateral profile of the supraacetabular crest (IL8, http://www.morphbank.net/Show/?id=461742; Prieto-Márquez 2010a, character 238): asymmetrical, with a caudally skewed lateral profile (0); symmetrical or with a slightly caudally skewed profile (1).' /  'aymmetrical, caudally skewed' 'symmetrical, only slightly cd skewed',
+		237 'Ilium. Morphology of the lateroventral margin of the supraacetabular crest (IL9, http://www.morphbank.net/Show/?id=461743; Prieto-Márquez 2010a, character 239): craniocaudally sinuous (0); widely arched (1); U or V-shaped (2); subrectangular, with a shallow notch that divides the ventral margin in two poorly demarcated lobes (3).' /  sinuous widely_arched 'U or V-shaped' subrectangular_and_notched,
+		238 'Ilium. Demarcation of the caudodorsal margin of the lateroventral rim of the supraacetabular process (IL10, Prieto-Márquez 2010a, character 240): the caudodorsal margin is poorly defined and appears discontinuous with the dorsal margin of the proximal region of the postacetabular process due to the lack of a well demarcated caudodorsal ridge (http://www.morphbank.net/Show/?id=461744) (0); the caudodorsal margin is a well-defined ridge that is continuous with the dorsal margin of the proximal region of the postacetabular process (http://www.morphbank.net/Show/?id=461799) (1).' /  poorly_demarcated_cddrs_margin ridge_connecting_postac_pr,
+		239 'Ilium. Morphology of the pubic peduncle of the ilium (IL11, http://www.morphbank.net/Show/?id=461745 and http://www.morphbank.net/Show/?id=461746; modified from Sereno 1986; Horner et al. 2004; character 92): relatively large and dorsoventrally deep (longer than wide), subconical, with a proximal region that is only slightly craniocaudally wider than the distal end of the process (0); relatively shorter (wider or as wide as long) and triangular, with a proximal region that is much craniocaudally wider than the distal end (1).' /  'subconical, longer than wide' 'shorter, wider or as wide as long',
+		240 'Ilium. Morphology of the ischiadic peduncle of the ilium (IL12, http://www.morphbank.net/Show/?id=461747 and http://www.morphbank.net/Show/?id=461748; modified from Godefroit et al. 2001, character 30): formed by a single and large, oval ventral protrusion (0); composed of a large and oval ventral protrusion and by a smaller, caudodorsally located prominence emerging from the caudodorsal ridge (1); formed by two protrusions of similar size, the caudal-most one located slightly caudodorsally (2).' /  single_protrusion large_protrusion_and_smaller_prominence 'two similar-sized protrusions',
+		241 'Ilium. Ratio between the craniocaudal length of the postacetabular process and the craniocaudal length of the central plate of the ilium (IL13, http://www.morphbank.net/Show/?id=461749; Prieto-Márquez 2010a, character 243): short postacetabular process, ratio up to 0.80 (sample mean ratio of 0.70) (0); postacetabular process nearly as long as the central plate, ratio greater than 0.80 but less than 1.1 (sample mean ratio of 0.90) (1); postacetabular process substantially longer than the central plate, ratio of 1.1 or greater (sample mean ratio of 1.23) (2' /  'short postacet pr, r up to 0.80' 'postacet pr nearly as long as central pl, r>0.80 but <1.1 ' 'postacet pr longer than central pl, r= or >1.1',
+		242 'Ilium. Brevis shelf at the base of the postacetabular process of the ilium (IL14, http://www.morphbank.net/Show/?id=461750; modified in part from Horner et al. 2004, character 93): absent (0); present (1). ' /  absent brevis_shelf,
+		243 'Ilium. Medioventral ridge on the medial side of the postacetabular process, crossing the bone surface from the proximoventral to the caudodorsal margins and orientation of the brevis shelf (IL15, http://www.morphbank.net/Show/?id=468875; Prieto-Márquez 2010a, character 245): absent or presence of a faint ridge (0); well-defined ridge bounding the medial margin of the brevis shelf; the latter faces medioventrally and in medial view appears restricted to the caudal region of the postacetabular process (1); well-defined ridge forming the medial margin of a medioventrally-facing shelf, with a postacetabular process that is progressively expanded mediolaterally towards the caudal end (2); well-developed, oblique and expanded flange forming the medial margin of an extensive brevis shelf that faces more ventrally than medially (3).' /  absent_or_faint_ridge 'well-defined ridge bounding med margin of brevis sf' 'well-defined ridge forming med margin of medioventrally-facing sf' 'well-developed, oblique and expanded flange forming med margin of extensive, more vnt facing brevis sf',
+		244 'Ilium. Craniocaudally-oriented median ridge on the laterodorsal surface of the postacetabular process (IL16, http://www.morphbank.net/Show/?id=461752; Prieto-Márquez 2010a, character 246): absent (0); present (1). ' /  absent ridge_present,
+		245 'Ilium. Geometry of the lateral profile of the postacetabular process of the ilium (IL17, http://www.morphbank.net/Show/?id=461753 and http://www.morphbank.net/Show/?id=461754; modified from Horner et al. 2004, character 93): the ventral margin converges caudodorsally to meet the horizontal dorsal margin, forming a tapering caudal end and producing a triangular lateral profile of the process (0); dorsal and ventral margins parallel or slightly convergent, forming a distinct (rectangular or subcircular) caudal margin (1).' /  'triangular, caudally tapering' rectangular_to_subcircular_caudal_margin,
+		246 'Ilium. Orientation of the dorsal margin of the postacetabular process relative to the acetabular margin (IL18, http://www.morphbank.net/Show/?id=461755; Prieto-Márquez 2010a, character 248): ventrally deflected or horizontal dorsal margin, parallel or nearly parallel to the acetabular margin (0); caudodorsally oriented dorsal margin, rising dorsally relative to the acetabular margin (1).' /  horizontal_or_vnt_deflected caudodorsally_oriented,
+		247 'Ilium. Position of the medial sacral ridge within the medial surface of the central plate of the ilium (IL19, http://www.morphbank.net/Show/?id=461756; Prieto-Márquez 2010a, character 249): ridge well separated ventrally from the dorsal margin of the ilium, set between 50% and 30% the dorsoventral depth of the central plate (0); ridge located more dorsally, closer to the dorsal margin, within the dorsal third (less than 30% the depth) of the central plate (1).' /  'ridge set ventrally, 50% to 30% of il depth' ridge_within_dorsal_third_of_il,
+		248 'Ilium. Lateral profile of the dorsal or laterodorsal margin of the ilium (IL21, http://www.morphbank.net/Show/?id=461758; modified from Horner et al. 2004, character 100): straight or slightly convex (0); distinctly depressed over the supraacetabular process and dorsally bowed over the proximal region of the preacetabular process (1).' /  straight_or_slightly_convex depressed_over_supraac_pr,
+		249 'Pubis. Orientation of the dorsoventral expansion of the prepubic process (PB1, http://www.morphbank.net/Show/?id=461759; Prieto-Márquez 2010a, character 252): the dorsal region of the expansion is more expanded than the ventral region, so that distally the process is dorsally-directed (0); the ventral region is more expanded than the dorsal region, so that the distal expansion is ventrally-directed (1).' /  dorsally_directed ventrally_directed,
+		250 'Pubis. Geometry of the dorsoventral expansion of the prepubic process of the pubis (in lateral or medial views) (PB2, http://www.morphbank.net/Show/?id=461760, http://www.morphbank.net/Show/?id=461761, and http://www.morphbank.net/Show/?id=461762; modified in part from Wagner, unpub. Master?s thesis, Texas Tech Univ., Austin, 2001): circular to oval expansion, extensive and convex ventral margin (0); subsquared distal dorsal margin, expansion dorsoventrally taller than cranioventrally long, very pronounced proximal dorsal concavity and nearly straight distal ventral margin (1); ellipsoidal, expansion craniocaudally longer than dorsoventrally tall, well pronounced concavities of the dorsal and ventral proximal margins (2); oval expansion, dorsoventrally taller than craniocaudally long, well pronounced concave profiles of dorsal and ventral proximal margins (3); rectangular, craniocaudally longer than dorsoventrally tall, nearly straight profiles of the dorsal and ventral proximal margins (4). ' /  'circular to oval blade, convex ventral margin' 'subsquared distal drs margin, deeper than long, pronounced proximal dorsal concavity and nearly straight distal ventral margin' 'ellipsoidal blade, longer than deep, prominent concavities of drs and vnt proximal margins' 'oval blade, deeper than long, pronounced concave profiles drs and vnt proximal margins' 'rectangular, longer than deep, nearly straight drs and vnt proximal margins',
+		251 'Pubis. Depth of the dorsoventral expansion of the distal region of the prepubic process relative to the width of the acetabular margin of the pubis (PB3, http://www.morphbank.net/Show/?id=461763; Prieto-Márquez 2010a, character 254): distal expansion as wide as or shallower than width of the acetabular margin (0); dorsoventral expansion deeper than the acetabular margin (1).' /  distal_blade_as_wide_as_or_shallower_than_acetab_margin blade_deeper_than_acetab_margin,
+		252 'Pubis. Craniocaudal length of the proximal constriction of the prepubic process of the pubis relative to length of the dorsoventral expansion (PB4, http://www.morphbank.net/Show/?id=461764; modified from Horner et al. 2004, character 96): constriction longer than the dorsoventral expansion, that is restricted to the distal region of the process (0); constriction and distal expansion have approximately the same length (1); constriction slightly shorter than the dorsoventral expansion, that begins at the proximal region of the process (2).' /  constriction_longer_than_blade constriction_and_blade_subequally_long constriction_slightly_shorter_than_blade,
+		253 'Pubis. Relative position of maximum concavity of the dorsal and ventral margins of the prepubic process of the pubis (PB5, http://www.morphbank.net/Show/?id=461765; Prieto-Márquez 2010a, character 256): maximum ventral concavity achieved adjacent to the proximal region of the postpubic process, maximum dorsal concavity located further distally (0); maximum ventral concavity located ventral to or slightly caudal to the maximum dorsal concavity (1).' /  max_dorsal_concavity_further_distal_than_ventral_concavity ventral_to_or_slightly_caudal_to_max_dorsal_concavity_,
+		254 'Pubis. Morphology of the acetabular margin, ventral to the lateral edge of the iliac peduncle (PB6, http://www.morphbank.net/Show/?id=461766; Prieto-Márquez 2010a, character 257): the lateral margin of the iliac peduncle extends ventrally forming a prominent ridge that merges with the proximal region of the ischiadic peduncle (0); the lateral margin of the iliac peduncle progressively disappears ventrally into the lateral surface of the region adjacent to the acetabular margin (1).' /  forming_prominent_ridge iliac_pr_progressively_disappears_ventrally,
+		255 'Pubis, obturator foramen (PB7, http://www.morphbank.net/Show/?id=461767; modified from Horner et al. 2004, character 97): absent, proximal postpubic ramus lacks a dorsocaudally oriented process (0); present, proximal postpubic ramus has a caudodorsally oriented short process that contacts totally or partially with the ischiadic peduncle to form the obturator foramen (1).' /  absent obturator_foramen_present,
+		256 'Pubis. Length/width ratio of the ischiadic peduncle of the pubis (PB8, http://www.morphbank.net/Show/?id=461768; Prieto-Márquez 2010a, character 259): very short ischiadic peduncle, ratio less than 1.85 (sample mean ratio of 1.5) (0); ratio ranging from 1.85 to less than 3 (sample mean ratio of 2.4) (1); very long, ratio of 3 or more (with a sample mean ratio of 4) (2).' /  'very short, L/W<1.85' 'L/W 1.85 to <3' 'very long, L/W 3 or more',
+		257 'Pubis. Lateroventral protuberance on the proximal region of the ischiadic peduncle of the pubis (PB9, http://www.morphbank.net/Show/?id=461769; Prieto-Márquez 2010a, character 260): absent or very faintly developed (0); present (1).' /  absent_or_faint protuberance_present,
+		258 'Pubis. Depth/width proportions of the iliac peduncle of the pubis (PB10, http://www.morphbank.net/Show/?id=461770; Prieto-Márquez 2010a, character 261): craniocaudally broader than dorsoventrally tall (0); taller dorsoventrally than broad craniocaudally (1).' /  broader_than_tall taller_than_broad,
+		259 'Pubis. Total length of the pubis, as the ratio between the craniocaudal distance from the acetabular margin to the distal margin of the prepubic process and the distance from the dorsal margin of the iliac peduncle and the ventral margin of the proximal postpubic shaft (PB11, http://www.morphbank.net/Show/?id=471324; Prieto-Márquez 2010a, character 262): short, ratio less than 2.70 (sample mean raio of 2.30) (0); long, ratio between 2.70 and 3 (sample mean ratio of 2.84) (1); very long, ratio greater than 3 (sample mean ratio of 3.53) (2).' /  'short pubis, r<2.70 ' 'long pubis, r  2.70 to 3 ' 'very long pubis, r>3',
+		260 'Ischium. Development of a caudal curvature of the distal margin of the iliac peduncle of the ischium (IS1, http://www.morphbank.net/Show/?id=461772 and http://www.morphbank.net/Show/?id=461773; Brett-Surman & Wagner 2007): curvature absent, distal margin slightly rounded and, in some exemplars, slightly curved cranially (0); presence of a very short and slight curvature in the caudodorsal corner (1); presence of a well developed curvature in the caudodorsal corner, so that the peduncle appears ?thumb-like? in lateral and medial profiles (2).' /  absent 'short, very slight curvature' 'recurved, thumb-like',
+		261 'Ischium. Elongation of the iliac peduncle of the ischium (ratio between the proximodistal length and the craniocaudal width of the distal margin) (IS3, http://www.morphbank.net/Show/?id=461775; Prieto-Márquez 2010a, character 265): relatively short peduncle, ratio less than 1.5 (sample mean ratio of 1.27) (0); ratio between 1.5 and 2 (sample mean ratio of 1.78) (1); relatively long peduncle, ratio greater than 2 (sample mean ratio of 2.30) (2).' /  'short, r<1.5' r_1.5_to_2 'long, r>2',
+		262 'Ischium. Relative orientation of the acetabular and caudodorsal margins of the iliac peduncle of the ischium (IS4, http://www.morphbank.net/Show/?id=461776; Prieto-Márquez 2010a, character 266: margins are either parallel or divergent distally (correlated with a greater expansion of the craniodorsal corner of the peduncle) (0); margins converge distally (1).' /  parallel_or_divergent_distally convergent_distally,
+		263 'Ischium. Orientation of the craniocaudal axis of the pubic peduncle (perpendicular to its articular margin) relative to the ischiadic shaft (IS5, http://www.morphbank.net/Show/?id=461777; Prieto-Márquez 2010a, character 267): ventrally inclined, angle up to 130º (sample mean angle of 118º) (0); slightly inclined ventrally, angle greater than 130 and up to 170º (sample mean angle of 157º) (1); pubic peduncle parallel to the ischiadic shaft (2).' /  'ventrally inclined, up to 130º' 'slightly ventrally tilted, >130º to 170º',
+		264 'Ischium. Length/width proportions of the pubic peduncle of the ischium (IS6, http://www.morphbank.net/Show/?id=461778; Prieto-Márquez 2010a, character 268): proximodistally longer than the distal articular surface is wide (0); approximately as long proximodistally as the distal articular surface is dorsoventrally wide (1); proximodistally shorter than the dorsoventral width of the distal articular surface (2).' /  longer_than_width_of_distal_articular_surface as_long_as_distal_articular_surface shorter_than_width_of_distal_articular_surface,
+		265 'Ischium. Relative position of the dorsal acetabular margin of the pubic peduncle (IS7, http://www.morphbank.net/Show/?id=461779; Prieto-Márquez 2010a, character 269): ventral to or at the same level as the dorsal margin of the ischiadic shaft (0); peduncular margin set dorsal to the dorsal margin of the ischiadic shaft (1).' /  ventral_to_or_at_same_level_as_isch_shaft dorsal_to_isch_shaft,
+		266 'Ischium. Dorsoventral thickness of the mid-shaft of the ischium (measured as a ratio between this and the length of the entire shaft) (IS8, http://www.morphbank.net/Show/?id=461780; modified from Wagner, unpub. Master?s thesis, Texas Tech Univ., Austin, 2001): very thin shaft, up to 5% of the length of the ischiadic shaft (sample mean of 4.6%)(0); thickness ranging from more than 5% and up to 7.5% of the length of the ischiadic shaft (sample mean of 6.7%) (1); very thick shaft, thickness greater than 7.5% of the length of the ischiadic shaft (sample mean of 8.4%) (2).' /  'thin shaft, up to 5% its length' 5%_to_7.5%_of_the_shaft_length_ 'thick shaft, >7.5% its length',
+		267 'Ischium. Morphology of the distal region of the ischiadic shaft (IS9, http://www.morphbank.net/Show/?id=461781 and http://www.morphbank.net/Show/?id=462510; modified from Godefroit et al. 2001, character 31): slightly expanded into a blunt end (0); ventrally expanded forming a large ?foot? or ?boot-like? process (1).' /  slightly_expanded_into_a_blunt_end 'foot-like distal process',
+		268 'Ischium. Degree of ventral projection of the distal expansion of the ischium (expressed as the ratio between the length of the ischiadic shaft and the length of the distal ventral expansion) (IS10, http://www.morphbank.net/Show/?id=461783; Evans & Reisz 2007, character 90): ratio less than 0.25 (sample mean ratio of 0.18) (0); ratio of 0.25 or greater (sample mean ratio of 0.28) (1).' /  'r<0.25' 'r= or >0.25',
+		269 'Ischium. Morphology of the cranial margin of the ventral expansion of the distal ischiadic shaft (IS11, http://www.morphbank.net/Show/?id=461784; Prieto-Márquez 2010a, character 273): slightly concave and directed caudoventrally to meet the caudal margin to nearly a point (0); strongly concave, recurved cranial margin (1).' /  slightly_concave_and_directed_caudoventrally 'strongly concave, recurved',
+		270 'Ischium. Orientation of the long axis of the distal ?foot? relative to the ischiadic shaft (IS12, http://www.morphbank.net/Show/?id=461785; Prieto-Márquez 2010a, character 274): straight, ventrally directed (0); cranioventrally directed, the inclination starting at the dorsal margin of the ?foot? (1).' /  'straight, ventrally directed' cranioventrally_directed,
+		271 'Femur. Degree of curvature of the distal half of the femoral shaft (FM1, (http://www.morphbank.net/Show/?id=461786; Norman 2002, character 62):  slightly curved caudomedially (0); absence of curvature, straight distal shaft (1).' /  slightly_curved_caudomedially straight_distal_shaft,
+		272 'Femur. Lateral profile of the caudoventral margin of the fourth trochanter of the femur (FM2, http://www.morphbank.net/Show/?id=461787; modified from Wagner, unpub. Master?s thesis, Texas Tech Univ., Austin, 2001): triangular and ending in a caudally, and slightly ventrally, directed point (0); smooth and arcuate (1).' /  'triangular, caudally directed apex' smooth_and_arcuate,
+		273 'Tibia. Extension of the cnemial crest of the tibia (TB, http://www.morphbank.net/Show/?id=461788; Godefroit et al. 2000, character 31): the cnemial crest is restricted to the proximal end of the tibia (0); cnemial crest further extended along the cranial surface of the proximal half of the diaphysis (1).' /  restricted_to_proximal_end_of_tb extending_along_proximal_half_of_tb,
+		274 'Astragalus. Development of the medial platform of the astragalus (AS, http://www.morphbank.net/Show/?id=461790; Prieto-Márquez 2010a, character 279): it extends medially to completely underlie the medial malleolus of the tibia (0); short, wedges laterally underlying only part of the medial malleolus of the tibia (1).' /  completely_underlies_medial_malleolus_tb 'short, wedges laterally underlying part of med malleoulus',
+		275 'Metatarsal I (modified from Norman, 2002, character 66): absent (0); slender and splint-like element (1).' /  absent 'slender, splint-like mttI',
+		276 'Length/width proportions of pedal phalanx II2 (PES3, http://www.morphbank.net/Show/?id=461792; Prieto-Márquez 2010a, character 283): proximodistally shortened, being twice as wide mediolaterally as it is proximodistally long (0); subsquared, only slightly shorter proximodistally than it is wide mediolaterally (1).' /  twice_wider_than_long 'subsquared, slightly shorter than wide',
+		277 'Length/width proportions of the disc-shaped pedal phalanx III2-III3 (PES4, http://www.morphbank.net/Show/?id=461793; modified from Horner et al. 2004, character 104): up to three times (or less) wider than they are proximodistally long (0); more than three times wider than they are proximodistally long (1).' /  up_to_3x_wider_than_long '>3x wider than long',
+		278 'Morphology of the pedal unguals (PES6, http://www.morphbank.net/Show/?id=461795; Norman 2002, character 67): proximodistally elongated and arrow-shaped, with a bluntly truncated tip and prominent claw grooves (0); mediolaterally broad and proximodistally shortened, rounded shield or hoof-like shaped, with reduced or absent claw grooves (1). ' /  'elongated, arrow-shaped, claw grooves' 'shortened, hoof-shaped, lacking or poorly developed claw grooves',
+		279 'Ridge on the plantar surface of pedal unguals (PES7, http://www.morphbank.net/Show/?id=461796; Prieto-Márquez 2005, character 47): absent (0); present (1).' /  _ plantar_ridge ; 
+	MATRIX
+	Hadrosaurus_foulkii                     ????131100??111?????????????????????????????????????????????????????????????????????????????????2??????????????????????????????????????????????????????????????????????????????????????-????????????????????????????????000110???????120123??112????1011?????10????011?00?0---111?0????
+	Eotrachodon_orientalis                  {0 1}0{0 1}0121101{0 1}11110111012000011000011010110010100021001100000001000000?1-10--0100-2211001100(0 1)01001121000110001221010112010-10000000111000201100-100?00-011??00101?00???212-20--0111100-------0100000110?1??????????????????????????????????????????????????1?101100110001120??---??1??????
+	Acristavus_gagslarsoni                  122023110012111?????????2(0 1)0111?01101021001010213110100000000?0-0001??-00--0100110-20?020011111222100000111222111????1?0-10000001111000200000-100010-01010111020?1??1?11-?0--0111?-00------010110000???????????????????????1?11??????????????????????????????110011????????????11???????
+	'Saurolophinae <sp. Big Bend UTEP 37.7>'????????????????????????????????????????????????????????????????????????????00?????????????????????????????????????????????????????????????????????????????????????????????????????????-?????????????0?????111111??01-1111111{1 2}??1??1?1202211201211311011????110?01?0011??00---11??0???0
+	Brachylophosaurus_canadensis            1220231200121111211122113(0 1 2)(0 1 2)111101101021001010213110100000000(0 1)0-010111-00--0100110-2000200111112221000001112221110112110-1000000(0 1)1110001000101100010-0201011102001101(1 2)11-10--01130010-2--000101100001110111121121111(0 1)1-01101112101121112022203012100011111211110111101112110---111001011
+	Probrachylophosaurus_bergei             122023?200121111?1?1221122(0 1)111?011010210010102131?????0??????0-?10111-00--0100?10-2000200111112221000001?12121110112110-10?000001110002000101100?00-0201011101001???{1 2}11-10--01120010-2--0001011000???10?1?????????????????????????????202220301210001111120111011110?1121???????100????
+	Edmontosaurus_annectens                 232013120022112011?1141130(0 1)011001101121001010213111110000000(0 1)0-000221-00--2110101-20?0200111112321000011002030210112010-10001001211010101000-100000-1201001101012011011-10--01112-00------010110000010011112112111111-01(1 2)111(0 1)1101111112122312012100011111310110101202112(0 1)00---111001010
+	Edmontosaurus_regalis                   232023120022112011?1141130(0 1)01100110112100101021311111000000000-000221-00--2110101-2010200111112321000011002030210112010-10001001211010101000-100000-1201001101012011011-10--01112-00------010110000010011112111111111-01211111101111112022312012100011111310110101102111100---111001010
+	Gryposaurus_latidens                    13200311001211??????????22111100110102100101021211??00000001010000010-??0?01110220300020011110232100??1000213002??????0-??00?0?0??0020?0??00??0?????0??????????????1?12-?0--01110110-1--000?0?0????0?0?11112111110011-111(0 1)1201??1????11?12112112200011111411110?012???????0---???????10
+	Gryposaurus_notabilis                   13201212001211?020010410(1 2)(1 2)(0 1)111001101021001010112110100000001011000010-011101??022030?0200111102321000111(0 1)02131120112110-10000000110020101000-100010-0201001101002001212-30--01110110-1--00010001011010011112111110011-111(1 2)1(1 2)111011111111221120122???11111411110???201112100---111001110
+	Gryposaurus_monumentensis               13201312001211201101041022111?001101021001010112110100000001011000010-01110111022030?0200111102321000111102231120112110-10000000110020?01000-100?10-0201??110100?001212-30--01110110-1--00010101011????????????????????????????????????????????2???????????????????????????---?????????
+	?_Gryposaurus_alsatei                   1???1312?01?112?????????11211110111102?000?????21??????????????????????????????22??0?02001?????????????1102031010112??0-1000000?1???????0000-100010-0???????????????????????????????????????????????????????????????????1112????????????????????????????14021111112????????????????????
+	Kritosaurus_horneri                     ??2023120022?????????????????1????0??????????????????0000000????00010-10--011102213??0200111?02???000111102???0???????0-100000001110?0?0?000-?00?10-010?????0???????212-?0--01120010-5--00010001011????????????????????????????????????????????????????????????????????????????????????
+	Kritosaurus_navajovius                  12202312002211?01??1041?0200(0 1)100110102100101011211010000?000011000??0-10--01??0{1 2}213?????011??0232?00??11102231020112110-?0?00000111020?0?000-100?10-0101??100?10??01212-?0--0?1?????-?--??010001011????????????????????????????????????????????2???????????????????????????????????????
+	Kerberosaurus_manakini                  ??????????2211????????????????????????????????????????0?????????00???-????1111?1??20?02001111?2?2100??1100203011011??10-100000???????0?01?00-??00???12010???0?0?2??1?1?-?0--0?11???????-??0?0??????????????????????????????????????????????????????????????????????????????????????????
+	Kundurosaurus_nagornyi                  23????????2???????????????{0 1}?1100110112??????0???????????????????002??-??--2??????????0200111112321????11002030(1 2)1011201????????0?1?0(0 1)10?0??00-100??0-?20??0??0?0??????11-?0--01112-00------010????????????1??????11?11-111?021????????02121302012100011111{2 3}?0110101202112100---?????????
+	Maiasaura_peeblesorum                   12202312001211?12111221121111110110102100101021311010000000010-000111-00--0100110-2000200111112221000001112221110112110-10100000111000200000-100?10-0(1 2)01011102001101111-00--01120011-4--00010110000111011?1211?111111-01101111101?21112022203012100011111211110111101112110---11100?011
+	Naashoibitosaurus_ostromi               ???023120?22112??????????????1???????????????????????000????????000?0-100-011101202000200111102321000011102131110112110-1000000011102010?000-000?10-01010?1?00002?01?1?-?0--01111110-1--000101000?1?1???????????????????1??2???????????????????????????????????????????????????????????
+	Prosaurolophus_maximus                  23212312002211?0(2 3)10114111(0 1)0011001101121001010212110100000000010100221-10--011001202010200111102321000111002(0 1)30020111010-10100001111(0 1)20100000-000000-020100110000200?013-20--01121010-5--00010110001?10011112112111111-11111(1 2)1110111111212(2 3)212112200011111401110201202112110---111001110
+	'Sabinosaur <sp. PASAC-1>'              232???????221???????????11001100110102?????10?????????00?????????????-?????1???12?20??????1?1?232100????????????0112110-??????0??????0?0??????0??????2010?11001?2?0??1?-?0--0??????0----??0?0????????1?1??111?2?0??01-11???????????????122212012100011111401110?11202112100---111??????
+	Saurolophus_osborni                     23212312002211?03101041?200011001101121001010112110100010000010110221-00--011?012020?02001111023210001110020300(1 2)0111010-101001111111212000111000?0100?11001?00002001013-20--01131010-3--11010110002110111?12112111111-01?21{0 1}01101??1112123212012200011111411110??110?1???10---111001110
+	Saurolophus_angustirostris              23211312002211?021010411200011001101121001010112110100010000020110221-00--01??012020?02001111023210001110020300(1 2)0111010-101001111111212000111000?010021100??00002??1013-20--01131010-3--11010110002110111112112111111-01221001101?11112123212012200011111411110??1102112010---111001110
+	Augustynolophus_morrisi                 23?11312002211?????????02010110011?112?00101??1211010????0??010110???-00--?1???12020?0200?11??232100??110020??020111?10-??????001?10?12000???000?011021?????0??02???01?-?0--0?130110-3--11???100002???????1?????1??11-?11211???0??1???????????????????????????????????????????????0????
+	Secernosaurus_koerneri                  12??2312001?11???1??????02111100?10??2?0?1?10?????????0?????????00???-?1?0?1???20-???0200111??2121?0??????????????????0-1000000?1??0?0?01000-100010-?201001?00002????1?-?0--0???????-?--??0?????0?1??1???111011110011-11????1???1????11122102112113111111401110201202112120---111?0????
+	Shantungosaurus_giganteus               232013120022112?2???0???{2 3}0201100110112?????10????????00000????-?00???-?0--?1???01-20???0011?1?232100????????????1112010-0000?001111110(1 2)01?00-100?00-1211????0??02???01?-?0--0?112-00------0101100?1??1010112111011011-01211111101??1?12122312012100011111310110111002112110---111000010
+	Aralosaurus_tuberiferus                 12202(2 3)12011111(1 2)?????????01111100110102?????????????????0?0??????01???0??-???--?1202??02001112?212111??101021301111110?0-10000000111000?0??00-100000-010????????00?????????????????1?????0?0101?0101????????????????????????????????????????????????????????????????????????????????????
+	Canardia_garonnensis                    ???0220200?1112????????????????????????0011?????????????????????????????????--?1202??02001112?232111??1??02?????111?0111010?00???????????????????????????????????????????????????-???????????????????????1??????1??????01?1????????????????????????????????????????????????????????????
+	Arenysaurus_ardevoli                    11?032120?????2?????????002111?0111101?0011?????????????????????2???????????????????????????2???21?????1??????????????1???0?00021110112010101001?00-0011100?10000????0????????0---1?????0?01?1?21?1??21???12?121110001???????????????????????????????????11??1???10???????????1????????
+	Blasisaurus_canudoi                     112?331201?2112?????????002111?0110101?0011??????????????????????????????????????????????????????10?10?121203110???????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+	Amurosaurus_riabinini                   1{2 3}2022120011111?????????11201100110102100011011110000102??1-01--21?--?00--00---01-2120200111212321001?21?121101011100111010?00101??1????1?101011??0-0111000121000???20-1-???{1 2}20---12061?0-010???10???1???01?11211?11010022110??01????02?213021?2??????1101101?????0?21????????111?0????
+	Charonosaurus_jiayinensis               112?3312?????????????????11111001101021001?10??????????????-????21?--?00--????-????????????????????0??2121201010??????11??0?0?101120?1200001?012100-011100??21000??1?0-?-?????0---1?????0-0101??101????1????????1?11010012111???10???120223?211200001111?????10??1?211??0?111111110?1??
+	Corythosaurus_casuarius                 12202211111211?0310113101(1 2)(0 1)11100110102100111011110000112101-01--214--100--00---01-2110200111212321001021212(0 1)101110000111010200101110112010101011100-0011001110000001(0 1)0-0-100120---1206210-010102101011110112111111110100221012101111112022312112100011111110110111121112021010111100110
+	Corythosaurus_intermedius               12202211111211?03101131011(0 1)11100110102100111011110000112101-01--214--100--00---01-21?0200111212321001021212(0 1)101110000111010200101110112010101011100-0011001110000001(0 1)0-0-100120---1206200-01010210101111?112111111110100221012101111112022312112100011111110110111121112021010111100110
+	Hypacrosaurus_altispinus                112?32120112112?3111131?11(1 2)1?100?101021001?1011110000112203-01--214--100--00---01-2120200111212321001041212(0 1)101110000111010200101010112010101011100-0011000100(0 1)00001(0 1)0-1-100120---1206100-010102101112110112111111100100221012101111112022312112112011110110110111021111021110111100110
+	Hypacrosaurus_stebingeri                112?32(0 1)111221??03101131011211100110102100111011110000112101-01--214--100--00---01-21202001112123210010212121101110000111010200101110112010101011100-0011001110000??110-1-100120---1206110-010102101??2?1?112111111100100221012???????1202231211210001111011011011102111?011010111100110
+	Jaxartosaurus_aralensis                 ??????????????????????????????????????????????????????????????????????00--????????????????????????????????????????????10010?0002111010?000100001?00-01010011?0000???????????????????????0-0??1101?1????????????????????????????????????????????????????????????????????????????????????
+	Lambeosaurus_lambei                     1(1 2)20(2 3)21111(1 2)21110(2 3)1011(3 4)1011111100110102100111011110000112211-01--213--000--00---01-(1 2)1??200111212321001021212(0 1)101110000111010100101110112010101011100-001100111010000110-0-110120---1216300-010102101011110112111111100100??111{1 2}1011111120223121121000111111?0110111121112011010111101110
+	Lambeosaurus_magnicristatus             1?20?21???(1 2)2111?(2 3)1011310111111001101021001?1011110000112211-01--213--000--00---01-21?020011121232?00102121201011100001110101001011101120?010101??00-0011????1?1?0??110-0-??0120---1216310-01010210??1?1?011?????11100100221112101?111120223121121000111111101101?1121112021010111?0??10
+	Magnapaulia_laticaudus                  1120221??012111???????????1?1????10102??????0111100001????2-01--???--??0--?0---01-2??02001112?232100??212120???1???????????????????????????????????-?????????????????0-?-????20---1?????0-0?0????????21?0?1211111??001002111?????????12021312112????11110110110111021112021010111??????
+	Olorotitan_ararhensis                   1?203211?12211??31?11?11111111001101021001110111100001?2002-01--2??--1?0--00---01-112020011121232100??41212010111???0?110?0?0?1????????0?????011?00-0?110?????00?00?10-?-???120---12061?0-01010210?01?12?11211111111010022101????????12021312112110011?1???????????211120110?0111??????
+	Pararhabdodon_isonensis                 ????????????????????????????????????????????0??????????????????????????0--?????0?11?202111112?232100?????????????????????????????????????????????????????????????????????????????????????????????????1?1????????1???01002{1 2}11???????????????????????????????????????2??????1????????????
+	Parasaurolophus_walkeri                 1220????????111031?1141011211100110102100111011110000100004-01--2??--000--00---11-11?020011120232?0010312120102010000111010200111110212000010012100-0011????1?000??120-1-021220---12170-0-010112101?1111??12111111110001221001101001112023312112000011?111101101?1021112011?1111??????0
+	Parasaurolophus_tubicen                 122032110012111???????1??12111001101021001110????????10000?-????2??--000--00---11-1120200111202321001031212010201?000111010200111110212?00010012100-0011001?10000??120-1-021220---12170-0-0101?2101??????????????????????????????????????????1?2???????????????????????????????????????
+	Parasaurolophus_cyrtocristatus          1220221100????????????1????1???0?101021001?10????????10000?-????2??--0?0--00??-????1?0200??1?0??????1?????2???????????11010200101120212000010012?00-0011001?10000???20-1-021220---12170-0-0101?2101?11110???????11110101221001101????1212331211200001111111011011102001102111111110??10
+	Sahaliyania_elunchunorum                11?0221200??????????????11211100110102?????????????????????????????????????0---01-1??0200?1?2?1??000??2121211?101100?1??????????????????1?101??1???-00?1?0??2?000??????????????---???????????????????????1??????1??001002211?????????021213121121000111101101101011?1112011????????????
+	Tsintaosaurus_spinorhinus               1120(2 3)311001?11?0210113101120110011010210010100131?010??2??0-01--103--000--00---01-11202111112?232100??412?21100(1 2)1011010-?0?0000???10?0000000?001?00-0011001?10?00??1?????????00---12????0?0101?0201?11110012010111100100221112??11?11120223021121110111101101101?1021111011010111100110
+	Velafrons_coahuilensis                  1?20221???1211?021?1131?01111100110102?????1011110000112?02-01--214--?00-?00---01-211020011121212100??212121101011000111??0?0010?110???0??1010???00-001?????1???0??110??-????20---12?6??0-01?10?101?????????????????010??211????1????1202131211201201111????110111?21112011000????0??10
+	Rhinorex_condrupus                      ?32?131200??????????????????1???110102?????1011211010000000101?000010-??0?01??022030?0200111102321000?1100?2??12??????0-?0?000001100?010?000-?00??0-020???????0?????212-?0--01110-10-1--0001?10101?????????????????????????????????????????????????????????????????????????????????????
+	'Aquilarhinus <sp. TMM 42452-1>'        1{1 2 3}{1 2}?131??010112?????????{1 2}1{0 1}0?1?0110?0???????????????????????????00010-??0?010??00-20?1200111112121000?0000102120?????????????????????????????????????????????????????10??0--01110-10-1--00????????????????????????????????????1?111?0?????????????0011?????????????????????????????????
+	Latirhinus_uitslani                     ????????????????????????????????????????????????????????????????000?0-????0??????????????????????????????????????????????????????????????????????????????????????????10??0--011?????-?--??????????????????1200??10110101221111?01?????????????????????????????????????????????110?0??10
+	Iguanodon_bernissartensis               00000000000000000000000000000001001000011000100000000000000000--00000-00--01?0000-0001000000000000000000000000001000100-0000000001001001?000-100?00-01000000010000?0012-00--001?--00------1010000?0000010000000000000000000100010010010100000000111000000000001000110000011000000010000
+	Bactrosaurus_johnsoni                   0110(1 2)(1 2)0200011(0 1)101001010001110(0 1)01001101010001010010000000000010--0000?-00--0100?10-1001000001000011000000000110100111100-00000000011000111100-100000-0101101102000??101?-?0--0010--00------1?10000?00?1?0?101000000100101010100??10?1?12001101111(0 1)11000100?12100101111111021001111000000
+	Claosaurus_agilis                       ????????????111??????????????0????????????????????????????????????????????????????????????????????????????????????????????????0?1??0?????????????????????????????????1??????????????????????????????????????????1??01-000{0 1}0???????????21211??01200?010?0??????????????????????1???0?0??
+	Eolambia_caroljonesa                    00101201001010101??0140?1(1 2)2100010011010100000{0 1}?00000000000000?--000??-????01???10-20010000100?101000??000?0(0 1)30(1 2)1100010?????0?0000??0001???00-100?00-0201010001100??0?12-00--0010--00------0?1?000?????0??00100000000100000000???1?100000?010011200?0000000000?1?010111210010?00100?????
+	Equijubus_normani                       01??0000000?00001010000?0011000?0???0?010000?00000000000000000--00001-000-01??0?0-1??1???0000000??000000000000110000100-000000000?0010???000-100?00-0100?0??0?0?0???112-00--0010--00------001000?0000?00?????????????????????????????000000001000??000?0???????????????????????????????
+	Gilmoreosaurus_mongoliensis             01102?????0111100?00010?0011???1001101??????????????????????????0000?-?????100?10-20010000010?11110000?0?00??0??0111100-???0?00????0?????????10??0???????????????????1?-?0--00?????0-?----?????????????????200000?00010101011{0 1}??1????121011011120110101(0 1)?????0???1111111011000111001000
+	Jeyawati_rugoculus                      1{0 1}??12010?1?101?????0???02210001101101?????????0???????????????????????????1???10-1001??00????0110?0????????????001010????????0?0????????????????????????????????????1?-?0--0???????-???????1??????????????????????????????????????????????????????????????????????????????????????????
+	Jinzhousaurus_yangi                     0?????????0?0??0????0??0002?0??????????1?0?0?000?0000000000000--00021-00--01??0??-0?01???010?00???-0000000?2001010??1?0-000000000000102???00-100?00-010?????????????112-00--0010--00------1?1?0?10000?0?0000000010000000000100010010000000000000111000?0????0?1100?1200?02100000?010000
+	Lophorhothon_atopus                     ????22110?0?111??????????????????????????????????????00000??????00???-01-101???00-2?????????0???????0?00?01?????0111110-0000000?0??020001100-100000-01?1????0??00?00?1?-?0--0?110010----0-0??1000?1??????001000000001-00000210??10?1?12?02102?1??00010111??1100??11021????0---101001000
+	Probactrosaurus_gobiensis               00101100000?1??0?000010?00110001001?01?1?0???000?0000000000000??000??-????01??0??-???1000??0?0?00?00??000000???????????????0?000?000?011??00-100?00-010?????0?0?0??0?1?-?0--0?1????0------?01100001????0?00100000000000000011??11?11?0000000010001100010001201???111100101100000???1000
+	Protohadros_byrdi                       00??1201001?1110???01410122100010001010100000?1000000000000000--000??-????0100?10-10010000100?101100??000?0100120100100-?000?00?0??0??????00-100000-???????????????0?12-00--0010--00------0?1?00????????????????????????000????????????????????????????????????????????????????????????
+	Tanius_sinensis                         ?????????????????????????????????????????????????????????????????????-00--?????????????????????????????00000000101??1????0?0?0001?10?0111100-100?00-010100??01000001?1?-??--???????0------0???000?1??2??????????100000000100?????????1201010111111101000??????????????????????1????????
+	Telmatosaurus_transsylvanicus           01??12001101110?????????00010000000001?000010?0000000000000000--00???-00--01???10-20010000?100211100??0??00????001??11?????0?00????0?00?1100-100?00-01010????100???1112-00--0?1??-?0------0?0?0000?0???????????????????????????????????????????????????????????????????????????????????
+	Tethyshadros_insularis                  111?1010101?110010?0000100?01??????00?000101?{0 1}00000000000-0?00-0000000?0--0???000010????001??0????0?005000?030020112000-00000000100000?00?00-100?00-000?????1???????01?-{0 1}0--00100-00------10000000100?011102000010101-?0000000101-111121?31020??10?000?0010010010000?111?00---1?0?00110
+
+;
+
+END;
+BEGIN NOTES;
+
+	TEXT  TAXON = 20 TEXT = 'Sabinosaur PASAC-1';
+	TEXT  TAXON = 49 TEXT = 'Aquilarhinus TMM 42452-1';
+
+	TEXT   TAXON = 35 CHARACTER = 39 TEXT = 1;
+
+END;
+
+BEGIN MacClade;
+	Version 4.0 84;
+	LastModified -822848698;
+	FileSettings editor '0' '0' '121' '1';
+	Singles 010;
+	Editor 0001100111111110010001001 '0' '72' Cambria '14' '212' '1' all;
+	EditorPosition '49' '4' '685' '1343';
+	TreeWindowPosition '44' '19' '775' '1230';
+	ListWindow Characters closed Geneva '9' '75' '736' '657' '359' 000;
+	ListWindow Taxa closed Geneva '9' '75' '279' '577' '319' 100000;
+	ListWindow Trees closed Geneva '9' '50' '10' '129' '379';
+	ListWindow TypeSets closed Geneva '9' '50' '10' '276' '490';
+	ListWindow WtSets closed Geneva '9' '50' '10' '276' '490';
+	ListWindow ExSets closed Geneva '9' '50' '10' '276' '490';
+	ListWindow CharSets closed Geneva '9' '50' '10' '276' '490';
+	ListWindow TaxSets closed Geneva '9' '50' '10' '276' '490';
+	ListWindow CharPartitions closed Geneva '9' '50' '10' '276' '490';
+	ListWindow CharPartNames closed Geneva '9' '50' '10' '276' '490';
+	ListWindow WtSets closed Geneva '9' '50' '10' '276' '490';
+	ChartWindowPosition '52' '30' '718' '1220';
+	StateNamesSymbols closed Geneva '9' '10' '50' '30' '148' '220';
+	WindowOrder Data;
+	OtherSymbols & / 00 ? -;
+	Correlation '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile '2';
+	ExportHTML _ MOSS '100' 110000;
+	PrettyPrint 10;
+	EditorToolsPosition '605' '50' '115' '165';
+	TreeToolsPosition '616' '9' '126' '138';
+	TreeWindowProgram 10;
+	TreeWindow 0000;
+	Continuous '0' '3' 1;
+	Calculations 0000001;
+	SummaryMode '0' '0' 0;
+	Charts Geneva '9' ( normal ) 0010;
+	NexusOptions '0' '0' '50' 001011011;
+	TipLabel '1';
+	TreeFont Geneva '9' ( normal );
+	TreeShape 1.0 1.0 1101;
+	TraceLabels 0101;
+	ChartColors '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax '0';
+	TraceAllChangesDisplay '0' 1;
+	BarsOnBranchesDisplay '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0100101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation '2' 1;
+	PrintTree 10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Geneva '9' ( normal ) Geneva '10' ( normal ) Geneva '9' ( normal ) Geneva '9' ( normal ) Geneva '9' ( bold ) Geneva '9' ( normal ) Geneva '9' ( normal ) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '0' '7' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 00;
+	TreeTools '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools '1';
+
+END;
+BEGIN ASSUMPTIONS;
+	OPTIONS DEFTYPE = unord PolyTcount = MINSTEPS;
+	TYPESET * UNTITLED   =  unord:  6- 10 14- 16 18- 20 22- 24 28- 35 37- 45 47- 55 57- 61 63- 64 66- 74 76- 79 81- 82 84- 86 88- 92 94 98- 104 106-109\3 110-113\3 114- 115 117- 123 125- 130 132 134 136- 143 145- 149 151 153- 157 159- 160 162- 164 166 168 170- 172 174- 175 178- 182 184- 194 196- 197 199- 203 205- 206 208- 216 219 221 223- 226 228- 230 232 236- 239 242- 251 253- 255 257- 258 262-265\3 267- 279, ord:  1- 5 11- 13 17 21 25- 27 36 46 56 62-65\3 75 80-83\3 87 93 95- 97 105 107- 108 111- 112 116 124 131 133 135 144 150 152 158-161\3 165 167 169 173-176\3 177 183 195-198\3 204-207\3 217- 218 220 222 227 231 233- 235 240- 241 252 256-259\3 260- 261 263- 264 266;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 279;
+END;
+
+BEGIN TREES[!'tree(s) from TNT, for data in Z:\Users\Kobresia\Desktop\47-MS Aquilarhinus from Rattlesnake Mountain\Phylogeny \hadromatrix 7 June 2018.tnt'];
+	Title Imported_trees;
+	ID 0166f81296b49;
+	LINK Taxa = Taxa;
+	TRANSLATE
+[0] 		1 Hadrosaurus_foulkii,
+[1] 		2 Eotrachodon_orientalis,
+[2] 		3 Acristavus_gagslarsoni,
+[3] 		4 'Saurolophinae <sp. Big Bend UTEP 37.7>',
+[4] 		5 Brachylophosaurus_canadensis,
+[5] 		6 Probrachylophosaurus_bergei,
+[6] 		7 Edmontosaurus_annectens,
+[7] 		8 Edmontosaurus_regalis,
+[8] 		9 Gryposaurus_latidens,
+[9] 		10 Gryposaurus_notabilis,
+[10] 		11 Gryposaurus_monumentensis,
+[11] 		12 ?_Gryposaurus_alsatei,
+[12] 		13 Kritosaurus_horneri,
+[13] 		14 Kritosaurus_navajovius,
+[14] 		15 Kerberosaurus_manakini,
+[15] 		16 Kundurosaurus_nagornyi,
+[16] 		17 Maiasaura_peeblesorum,
+[17] 		18 Naashoibitosaurus_ostromi,
+[18] 		19 Prosaurolophus_maximus,
+[19] 		20 'Sabinosaur <sp. PASAC-1>',
+[20] 		21 Saurolophus_osborni,
+[21] 		22 Saurolophus_angustirostris,
+[22] 		23 Augustynolophus_morrisi,
+[23] 		24 Secernosaurus_koerneri,
+[24] 		25 Shantungosaurus_giganteus,
+[25] 		26 Aralosaurus_tuberiferus,
+[26] 		27 Canardia_garonnensis,
+[27] 		28 Arenysaurus_ardevoli,
+[28] 		29 Blasisaurus_canudoi,
+[29] 		30 Amurosaurus_riabinini,
+[30] 		31 Charonosaurus_jiayinensis,
+[31] 		32 Corythosaurus_casuarius,
+[32] 		33 Corythosaurus_intermedius,
+[33] 		34 Hypacrosaurus_altispinus,
+[34] 		35 Hypacrosaurus_stebingeri,
+[35] 		36 Jaxartosaurus_aralensis,
+[36] 		37 Lambeosaurus_lambei,
+[37] 		38 Lambeosaurus_magnicristatus,
+[38] 		39 Magnapaulia_laticaudus,
+[39] 		40 Olorotitan_ararhensis,
+[40] 		41 Pararhabdodon_isonensis,
+[41] 		42 Parasaurolophus_walkeri,
+[42] 		43 Parasaurolophus_tubicen,
+[43] 		44 Parasaurolophus_cyrtocristatus,
+[44] 		45 Sahaliyania_elunchunorum,
+[45] 		46 Tsintaosaurus_spinorhinus,
+[46] 		47 Velafrons_coahuilensis,
+[47] 		48 Rhinorex_condrupus,
+[48] 		49 'Aquilarhinus <sp. TMM 42452-1>',
+[49] 		50 Latirhinus_uitslani,
+[50] 		51 Iguanodon_bernissartensis,
+[51] 		52 Bactrosaurus_johnsoni,
+[52] 		53 Claosaurus_agilis,
+[53] 		54 Eolambia_caroljonesa,
+[54] 		55 Equijubus_normani,
+[55] 		56 Gilmoreosaurus_mongoliensis,
+[56] 		57 Jeyawati_rugoculus,
+[57] 		58 Jinzhousaurus_yangi,
+[58] 		59 Lophorhothon_atopus,
+[59] 		60 Probactrosaurus_gobiensis,
+[60] 		61 Protohadros_byrdi,
+[61] 		62 Tanius_sinensis,
+[62] 		63 Telmatosaurus_transsylvanicus,
+[63] 		64 Tethyshadros_insularis;
+	TREE 'Imported tree 1+' = (51,(58,(55,(60,((62,(52,(56,(63,(59,(53,(64,(1,(2,((((3,(17,(5,6))),((18,(((4,24),((9,48),(11,10))),(13,14))),(12,(20,((15,(16,(25,(7,8)))),(19,(23,(21,22)))))))),(26,(27,(36,(((((35,((40,(34,(28,29))),(39,(47,(30,45))))),(32,33)),(37,38)),(31,(44,(42,43)))),(41,46)))))),50)))))))))),(57,(54,61)))))));
+	TREE 'Imported tree 2+' = (51,(58,(55,(60,((62,(52,(56,(63,(59,(53,(64,(2,(1,((((3,(17,(5,6))),((18,(((4,24),((9,48),(11,10))),(13,14))),(12,(20,((15,(16,(25,(7,8)))),(19,(23,(21,22)))))))),(26,(27,(36,(((((35,((40,(34,(28,29))),(39,(47,(30,45))))),(32,33)),(37,38)),(31,(44,(42,43)))),(41,46)))))),50)))))))))),(57,(54,61)))))));
+	TREE 'Imported tree 3+' = (51,(58,(55,(60,((62,(52,(56,(63,(59,(53,(64,(1,(2,((((3,(17,(5,6))),((18,(((4,24),(11,(48,(9,10)))),(13,14))),(12,(20,((15,(16,(25,(7,8)))),(19,(23,(21,22)))))))),(26,(27,(36,(((((35,((40,(34,(28,29))),(39,(47,(30,45))))),(32,33)),(37,38)),(31,(44,(42,43)))),(41,46)))))),50)))))))))),(57,(54,61)))))));
+	TREE 'Imported tree 4+' = (51,(58,(55,(60,((62,(52,(56,(63,(59,(53,(64,(1,(2,((((3,(17,(5,6))),((18,(12,(((4,24),((9,48),(11,10))),(13,14)))),(20,((15,(16,(25,(7,8)))),(19,(23,(21,22))))))),(26,(27,(36,(((((35,((40,(34,(28,29))),(39,(47,(30,45))))),(32,33)),(37,38)),(31,(44,(42,43)))),(41,46)))))),50)))))))))),(57,(54,61)))))));
+	TREE 'Imported tree 5+' = (51,(58,(55,(60,((62,(52,(56,(63,(59,(53,(64,(2,(1,((((3,(17,(5,6))),((18,(((4,24),(11,(48,(9,10)))),(13,14))),(12,(20,((15,(16,(25,(7,8)))),(19,(23,(21,22)))))))),(26,(27,(36,(((((35,((40,(34,(28,29))),(39,(47,(30,45))))),(32,33)),(37,38)),(31,(44,(42,43)))),(41,46)))))),50)))))))))),(57,(54,61)))))));
+	TREE 'Imported tree 6+' = (51,(58,(55,(60,((62,(52,(56,(63,(59,(53,(64,(2,(1,((((3,(17,(5,6))),((18,(12,(((4,24),((9,48),(11,10))),(13,14)))),(20,((15,(16,(25,(7,8)))),(19,(23,(21,22))))))),(26,(27,(36,(((((35,((40,(34,(28,29))),(39,(47,(30,45))))),(32,33)),(37,38)),(31,(44,(42,43)))),(41,46)))))),50)))))))))),(57,(54,61)))))));
+	TREE 'Imported tree 7+' = (51,(58,(55,(60,((62,(52,(56,(63,(59,(53,(64,(1,(2,((((3,(17,(5,6))),((18,(12,(((4,24),(11,(48,(9,10)))),(13,14)))),(20,((15,(16,(25,(7,8)))),(19,(23,(21,22))))))),(26,(27,(36,(((((35,((40,(34,(28,29))),(39,(47,(30,45))))),(32,33)),(37,38)),(31,(44,(42,43)))),(41,46)))))),50)))))))))),(57,(54,61)))))));
+	TREE 'Imported tree 8+' = (51,(58,(55,(60,((62,(52,(56,(63,(59,(53,(64,(1,(2,((((3,(17,(5,6))),((18,(12,(((4,24),(9,(48,(11,10)))),(13,14)))),(20,((15,(16,(25,(7,8)))),(19,(23,(21,22))))))),(26,(27,(36,(((((35,((40,(34,(28,29))),(39,(47,(30,45))))),(32,33)),(37,38)),(31,(44,(42,43)))),(41,46)))))),50)))))))))),(57,(54,61)))))));
+	TREE 'Imported tree 9+' = (51,(58,(55,(60,((62,(52,(56,(63,(59,(53,(64,(1,(2,((((3,(17,(5,6))),((18,(12,(((4,24),(9,(10,(11,48)))),(13,14)))),(20,((15,(16,(25,(7,8)))),(19,(23,(21,22))))))),(26,(27,(36,(((((35,((40,(34,(28,29))),(39,(47,(30,45))))),(32,33)),(37,38)),(31,(44,(42,43)))),(41,46)))))),50)))))))))),(57,(54,61)))))));
+	TREE 'Imported tree 10+' = (51,(58,(55,(60,((62,(52,(56,(63,(59,(53,(64,(2,(1,((((3,(17,(5,6))),((18,(12,(((4,24),(11,(48,(9,10)))),(13,14)))),(20,((15,(16,(25,(7,8)))),(19,(23,(21,22))))))),(26,(27,(36,(((((35,((40,(34,(28,29))),(39,(47,(30,45))))),(32,33)),(37,38)),(31,(44,(42,43)))),(41,46)))))),50)))))))))),(57,(54,61)))))));
+	TREE 'Imported tree 11+' = (51,(58,(55,(60,((62,(52,(56,(63,(59,(53,(64,(2,(1,((((3,(17,(5,6))),((18,(12,(((4,24),(9,(48,(11,10)))),(13,14)))),(20,((15,(16,(25,(7,8)))),(19,(23,(21,22))))))),(26,(27,(36,(((((35,(((28,29),(34,40)),(39,(47,(30,45))))),(32,33)),(37,38)),(31,(44,(42,43)))),(41,46)))))),50)))))))))),(57,(54,61)))))));
+	TREE 'Imported tree 12+' = (51,(58,(55,(60,((62,(52,(56,(63,(59,(53,(64,(2,(1,((((3,(17,(5,6))),((18,(12,(((4,24),(9,(10,(11,48)))),(13,14)))),(20,((15,(16,(25,(7,8)))),(19,(23,(21,22))))))),(26,(27,(36,(((((35,(((28,29),(34,40)),(39,(47,(30,45))))),(32,33)),(37,38)),(31,(44,(42,43)))),(41,46)))))),50)))))))))),(57,(54,61)))))));
+
+END;
+
+
+BEGIN LABELS;
+	TAXAGROUPLABEL Ingroup COLOR = (RGB 1 1 1) ;
+	TAXAGROUPLABEL Outgroup COLOR = (RGB 1 1 1) ;
+
+
+END;
+
+BEGIN SETS;
+	TAXPARTITION * UNTITLED  =  Ingroup :  1- 50, Outgroup :  51- 64;
+
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1607463894001;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 871707446139014262;
+			tell It;
+				setDefaultOrder  3 34 9 28 12 64 13 14 16 18 17 65 10 11 19 39 20 21 23 22 24 25 26 27 15 50 41 51 52 66 53 31 54 56 55 57 32 58 48 49 45 33 47 46 44 43 42 80 60 62 84 0 35 37 1 2 38 88 4 5 6 7 8 40;
+				attachments ;
+			endTell;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 1239981590003391729;
+			tell It;
+				setDefaultOrder  0 1 2 3 4 5 6 7 8 9 10 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 30 31 32 33 34 35 36 37 39 40 38 41 42 43 44 45 46 47 48 49 50 51 54 55 52 53 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 76 75 293 77 278 279 78 79 80 81 82 83 276 273 274 84 275 85 86 277 87 88 89 90 91 92 303 270 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 296 112 114 115 116 113 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 134 135 136 137 133 138 139 271 140 141 143 144 145 146 147 142 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 264 265 267 268 269 301 302;
+				attachments ;
+			endTell;
+			mqVersion 360;
+			checksumv 0 3 1940115942 null  getNumChars 279 numChars 279 getNumTaxa 64 numTaxa 64   short true   bits 2305843009213694207   states 255   sumSquaresStatesOnly 150863.0 sumSquares -1.3835058055282159E20 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 400;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1455 928;
+			setLocation 60 46;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			showTaxa #871707446139014262 #mesquite.lists.TaxonList.TaxonList;
+			tell It;
+				setTaxa #871707446139014262;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.TaxonListCurrPartition.TaxonListCurrPartition;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1355 856;
+					setLocation 60 46;
+					setFont Gadget;
+					setFontSize 16;
+					getToolPalette;
+					tell It;
+					endTell;
+					setActive;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.ColorTaxon.ColorTaxon;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.lists.TaxonListAnnotPanel.TaxonListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.trees.BasicTreeWindowCoord.BasicTreeWindowCoord;
+		tell It;
+			makeTreeWindow #871707446139014262  #mesquite.trees.BasicTreeWindowMaker.BasicTreeWindowMaker;
+			tell It;
+				suppressEPCResponse;
+				setTreeSource  #mesquite.trees.StoredTrees.StoredTrees;
+				tell It;
+					setTreeBlock 1;
+					setTreeBlockID 0166f81296b49;
+					toggleUseWeights off;
+				endTell;
+				setAssignedID 1499.1541760264438.2397496272886274226;
+				getTreeWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1355 856;
+					setLocation 60 46;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.trees.BasicTreeWindowMaker.BasicTreeWindow.interchange;
+					endTell;
+					getTreeDrawCoordinator #mesquite.trees.BasicTreeDrawCoordinator.BasicTreeDrawCoordinator;
+				tell It;
+					suppress;
+					setTreeDrawer  #mesquite.trees.SquareLineTree.SquareLineTree;
+					tell It;
+						setNodeLocs #mesquite.trees.NodeLocsStandard.NodeLocsStandard;
+						tell It;
+							branchLengthsToggle off;
+							toggleScale on;
+							toggleBroadScale off;
+							toggleCenter on;
+							toggleEven on;
+							setFixedTaxonDistance 0;
+						endTell;
+						setEdgeWidth 4;
+						showEdgeLines on;
+						orientUp;
+					endTell;
+					setBackground White;
+					setBranchColor Black;
+					showNodeNumbers off;
+					showBranchColors on;
+					labelBranchLengths off;
+					centerBrLenLabels on;
+					showBrLensUnspecified on;
+					showBrLenLabelsOnTerminals on;
+					setBrLenLabelColor 0 0 255;
+					setNumBrLenDecimals 6;
+					setSelectedTaxonHighlightMode 1;
+					desuppress;
+					getEmployee #mesquite.trees.BasicDrawTaxonNames.BasicDrawTaxonNames;
+					tell It;
+						setColor Black;
+						setTaxonNameStyler  #mesquite.trees.ColorTaxonByAssigned.ColorTaxonByAssigned;
+						toggleShadePartition off;
+						toggleShowFootnotes on;
+						toggleNodeLabels on;
+						toggleCenterNodeNames off;
+						toggleShowNames on;
+						namesAngle ?;
+					endTell;
+				endTell;
+					setTreeNumber 12;
+					setTree '(51,(58,(55,(60,((57,(54,61)),(62,(52,(56,(63,(59,(53,(64,(2,(1,(50,(((3,(17,(5,6))),((18,(12,(((4,24),(9,(10,(11,48)))),(13,14)))),(20,((15,(16,(25,(7,8)))),(19,(23,(21,22))))))),(26,(27,(36,((41,46),((31,(44,(42,43))),((37,38),((32,33),(35,(((28,29),(34,40)),(39,(47,(30,45))))))))))))))))))))))))))));';
+					setDrawingSizeMode 0;
+					toggleLegendFloat on;
+					scale 0;
+					toggleTextOnTree off;
+					togglePrintName on;
+					showWindow;
+					newAssistant  #mesquite.ancstates.TraceCharacterHistory.TraceCharacterHistory;
+				tell It;
+					suspend ;
+					setDisplayMode  #mesquite.ancstates.ShadeStatesOnTree.ShadeStatesOnTree;
+					tell It;
+						toggleLabels off;
+						togglePredictions off;
+						toggleGray off;
+					endTell;
+					setHistorySource  #mesquite.ancstates.RecAncestralStates.RecAncestralStates;
+					tell It;
+						getCharacterSource  #mesquite.charMatrices.CharSrcCoordObed.CharSrcCoordObed;
+						tell It;
+							setCharacterSource #mesquite.charMatrices.StoredCharacters.StoredCharacters;
+							tell It;
+								setDataSet #1239981590003391729;
+							endTell;
+						endTell;
+						setMethod  #mesquite.parsimony.ParsAncestralStates.ParsAncestralStates;
+						tell It;
+							setModelSource  #mesquite.parsimony.CurrentParsModels.CurrentParsModels;
+							toggleMPRsMode off;
+						endTell;
+						toggleShowSelectedOnly off;
+					endTell;
+					setCharacter 179;
+					setMapping 1;
+					toggleShowLegend on;
+					setColorMode 0;
+					toggleWeights on;
+					setInitialOffsetX 607;
+					setInitialOffsetY -266;
+					setLegendWidth 473;
+					setLegendHeight 161;
+					resume ;
+				endTell;
+				endTell;
+				desuppressEPCResponse;
+				getEmployee #mesquite.trees.ColorBranches.ColorBranches;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.ornamental.BranchNotes.BranchNotes;
+				tell It;
+					setAlwaysOn off;
+				endTell;
+				getEmployee #mesquite.ornamental.ColorTreeByPartition.ColorTreeByPartition;
+				tell It;
+					colorByPartition off;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocDoubles.DrawTreeAssocDoubles;
+				tell It;
+					setOn on;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					setDigits 4;
+					setThreshold ?;
+					writeAsPercentage off;
+					toggleCentred off;
+					toggleHorizontal on;
+					toggleWhiteEdges on;
+					toggleShowOnTerminals on;
+					setFontSize 10;
+					setOffset 0  0;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocStrings.DrawTreeAssocStrings;
+				tell It;
+					setOn on;
+					toggleCentred on;
+					toggleHorizontal on;
+					setFontSize 10;
+					setOffset 0  0;
+					toggleShowOnTerminals on;
+				endTell;
+				getEmployee #mesquite.trees.TreeInfoValues.TreeInfoValues;
+				tell It;
+					panelOpen false;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #1239981590003391729 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 236;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1355 856;
+					setLocation 60 46;
+					setFont Gadget;
+					setFontSize 12;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames on;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW off;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel on;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+					getInfoPanel;
+					tell It;
+						btspOpen true;
+						apOpen true;
+						fpOpen false;
+					endTell;
+					toggleInfoPanel off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			showCharacters #1239981590003391729 #mesquite.lists.CharacterList.CharacterList;
+			tell It;
+				setData 0;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.DefaultCharOrder.DefaultCharOrder;
+					newAssistant  #mesquite.lists.CharListInclusion.CharListInclusion;
+					newAssistant  #mesquite.lists.CharListPartition.CharListPartition;
+					newAssistant  #mesquite.parsimony.CharListParsModels.CharListParsModels;
+					getTable;
+					tell It;
+						rowNamesWidth 839;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1355 856;
+					setLocation 60 46;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.lists.CharacterList.CharacterListWindow.ibeam;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.CharListAnnotPanel.CharListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

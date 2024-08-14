@@ -1,0 +1,574 @@
+#NEXUS
+[written Wed Dec 02 16:37:13 CST 2020 by Mesquite  version 3.61 (build 927) at EAS-392515.local/127.0.0.1]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=24;
+	TAXLABELS
+		Euparkeria_capensis Paleorhinus_scurriensis Paleorhinus_bransoni Paleorhinus_sawini Angistorhinus Brachysuchus_megalodon Rutiodon_carolinensis Phytosaurus_doughtyi Leptosuchus_crosbiensis Leptosuchus_imperfecta Leptosuchus_studeri Leptosuchus_adamanensis Machaeroprosopus_lithodendrorum Machaeroprosopus_zunii Smilosuchus_gregorii Pravusuchus_hortus Protome_batalaria 'Phytosauridae <sp. TMM 31173-120>' Pseudopalatus_jablonskiae Pseudopalatus_mccauleyi Pseudopalatus_pristinus Mystriosuchus_westphali 'Pravusuchus hortus < PEFO 31218>' 'Pravusuchus hortus <PEFO 34239>'
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=43;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4";
+
+	MATRIX
+	Euparkeria_capensis                00001000000??0000??000?0000?0?000000000?000
+	Paleorhinus_scurriensis            1100???1?0?10?1??????000001?0??000?0??00001
+	Paleorhinus_bransoni               110011?10011030010?01000001?0?100000001011?
+	Paleorhinus_sawini                 111??0?101???2?010?01000001?0?1001031?101??
+	Angistorhinus                      121??0110011012010?0101010100?10011??0???1?
+	Brachysuchus_megalodon             12?110110111012010???01110100?10011?11???1?
+	Rutiodon_carolinensis              121??111001??2?010?01?1120000011000??0???11
+	Phytosaurus_doughtyi               1?1??1?????????????0101220010111?001???????
+	Leptosuchus_crosbiensis            1211?1110120?12001000012200101110002?1???1?
+	Leptosuchus_imperfecta             12???11?0?2?????010???1?2?0?0??1?00??1?????
+	Leptosuchus_studeri                12111111012001210100001220010011000211???1?
+	Leptosuchus_adamanensis            1220011101210120010?111121000011100?0121112
+	Machaeroprosopus_lithodendrorum    12?0?111012??12001100?1220000011100??1???12
+	Machaeroprosopus_zunii             1?1??1?????????????01011210001?1?001??2????
+	Smilosuchus_gregorii               122001111120012001201111210000111001?12??12
+	Pravusuchus_hortus                 12200111012011200100011221011111100111211??
+	Protome_batalaria                  1????1110?????2010?01112210001?1?00??121???
+	'Phytosauridae <sp. TMM 31173-120>'121??11100200120010000122101011110011121112
+	Pseudopalatus_jablonskiae          1????1?????????????01??10101?0?22000??211??
+	Pseudopalatus_mccauleyi            122??1121120012001110222110011122001202?112
+	Pseudopalatus_pristinus            12200112101002201??(0 1)12221101111220012021112
+	Mystriosuchus_westphali            122001121111022111?00200010?1012100?00???1?
+	'Pravusuchus hortus < PEFO 31218>' 122??1110?2??120???001122101?111100??1???1?
+	'Pravusuchus hortus <PEFO 34239>'  122??1?10?2???2????001122101?111100??1???1?
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	OPTIONS DEFTYPE = unord PolyTcount = MINSTEPS;
+	TYPESET * UNTITLED   =  unord:  1- 43;
+
+	WTSET * UNTITLED  =  1: 1 -  43;
+
+END;
+
+BEGIN TREES;
+	Title 'Trees from "Phytosauridae_Stocker_2012.nex"';
+	ID 0176258d3ad98;
+	LINK Taxa = Taxa;
+	TRANSLATE
+[0] 		1 Euparkeria_capensis,
+[1] 		2 Paleorhinus_scurriensis,
+[2] 		3 Paleorhinus_bransoni,
+[3] 		4 Paleorhinus_sawini,
+[4] 		5 Angistorhinus,
+[5] 		6 Brachysuchus_megalodon,
+[6] 		7 Rutiodon_carolinensis,
+[7] 		8 Phytosaurus_doughtyi,
+[8] 		9 Leptosuchus_crosbiensis,
+[9] 		10 Leptosuchus_imperfecta,
+[10] 		11 Leptosuchus_studeri,
+[11] 		12 Leptosuchus_adamanensis,
+[12] 		13 Machaeroprosopus_lithodendrorum,
+[13] 		14 Machaeroprosopus_zunii,
+[14] 		15 Smilosuchus_gregorii,
+[15] 		16 Pravusuchus_hortus,
+[16] 		17 Protome_batalaria,
+[17] 		18 'Phytosauridae <sp. TMM 31173-120>',
+[18] 		19 Pseudopalatus_jablonskiae,
+[19] 		20 Pseudopalatus_mccauleyi,
+[20] 		21 Pseudopalatus_pristinus,
+[21] 		22 Mystriosuchus_westphali,
+[22] 		23 'Pravusuchus hortus < PEFO 31218>',
+[23] 		24 'Pravusuchus hortus <PEFO 34239>';
+	TREE Pars_001 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,10,(18,((9,11),(23,24,(13,(12,15)),(16,(20,(21,(19,22)))))))))))))))));
+	TREE Pars_002 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(10,18,((8,(9,11)),(23,24,(13,(12,15)),(16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_003 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(10,18,(8,(9,11)),(23,24,(13,(12,15)),(16,(20,(21,(19,22)))))))))))))));
+	TREE Pars_004 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,(10,23,24,(8,(9,11)),(13,(12,15)),(16,(20,(21,(19,22)))))))))))))));
+	TREE Pars_005 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,(8,10,(9,11),(23,24,(13,(12,15)),(16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_006 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,((8,(9,11)),(10,23,24,(13,(12,15)),(16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_007 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,((8,9,10,11),(23,24,(13,(12,15)),(16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_008 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,((8,10,(9,11)),(23,24,(13,(12,15)),(16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_009 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,((8,(9,10,11)),(23,24,(13,(12,15)),(16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_010 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,((8,(9,11)),(10,13,23,24,(12,15),(16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_011 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,((8,(9,11)),(23,24,(10,13,(12,15)),(16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_012 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,((8,(9,11)),(23,24,(10,12,13,15),(16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_013 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,((8,(9,11)),(23,24,(13,(10,12,15)),(16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_014 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,10,18,((9,11),(23,24,(13,(12,15)),(16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_015 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(10,18,((9,11),(23,24,(13,(12,15)),(16,(20,(21,(19,22)))))))))))))))));
+	TREE Pars_016 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(10,18,(9,11),(23,24,(13,(12,15)),(16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_017 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(18,(9,10,11,(23,24,(13,(12,15)),(16,(20,(21,(19,22)))))))))))))))));
+	TREE Pars_018 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(18,(10,23,24,(9,11),(13,(12,15)),(16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_019 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(18,((9,10,11),(23,24,(13,(12,15)),(16,(20,(21,(19,22)))))))))))))))));
+	TREE Pars_020 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(18,((9,11),(10,23,24,(13,(12,15)),(16,(20,(21,(19,22)))))))))))))))));
+	TREE Pars_021 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(18,((9,11),(10,13,23,24,(12,15),(16,(20,(21,(19,22)))))))))))))))));
+	TREE Pars_022 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(18,((9,11),(23,24,(10,12,13,15),(16,(20,(21,(19,22)))))))))))))))));
+	TREE Pars_023 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(18,((9,11),(23,24,(10,13,(12,15)),(16,(20,(21,(19,22)))))))))))))))));
+	TREE Pars_024 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(18,((9,11),(23,24,(13,(10,12,15)),(16,(20,(21,(19,22)))))))))))))))));
+	TREE Pars_025 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,10,(18,((9,11),(23,24,16,(13,(12,15)),(20,(21,(19,22))))))))))))))));
+	TREE Pars_026 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,10,18,((9,11),(23,24,16,(13,(12,15)),(20,(21,(19,22)))))))))))))));
+	TREE Pars_027 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(10,18,((9,11),(23,24,16,(13,(12,15)),(20,(21,(19,22))))))))))))))));
+	TREE Pars_028 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(10,18,(9,11),(23,24,16,(13,(12,15)),(20,(21,(19,22)))))))))))))));
+	TREE Pars_029 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(18,(9,10,11,(23,24,16,(13,(12,15)),(20,(21,(19,22))))))))))))))));
+	TREE Pars_030 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(18,(10,23,24,16,(9,11),(13,(12,15)),(20,(21,(19,22)))))))))))))));
+	TREE Pars_031 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(18,((9,10,11),(23,24,16,(13,(12,15)),(20,(21,(19,22))))))))))))))));
+	TREE Pars_032 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(18,((9,11),(10,23,24,16,(13,(12,15)),(20,(21,(19,22))))))))))))))));
+	TREE Pars_033 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(18,((9,11),(10,13,23,24,16,(12,15),(20,(21,(19,22))))))))))))))));
+	TREE Pars_034 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(18,((9,11),(23,24,16,(10,12,13,15),(20,(21,(19,22))))))))))))))));
+	TREE Pars_035 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(18,((9,11),(23,24,16,(10,13,(12,15)),(20,(21,(19,22))))))))))))))));
+	TREE Pars_036 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(18,((9,11),(23,24,16,(13,(10,12,15)),(20,(21,(19,22))))))))))))))));
+	TREE Pars_037 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(10,18,((8,(9,11)),(23,24,16,(13,(12,15)),(20,(21,(19,22)))))))))))))));
+	TREE Pars_038 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(10,18,(8,(9,11)),(23,24,16,(13,(12,15)),(20,(21,(19,22))))))))))))));
+	TREE Pars_039 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,(10,23,24,16,(8,(9,11)),(13,(12,15)),(20,(21,(19,22))))))))))))));
+	TREE Pars_040 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,(8,10,(9,11),(23,24,16,(13,(12,15)),(20,(21,(19,22)))))))))))))));
+	TREE Pars_041 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,((8,(9,11)),(10,23,24,16,(13,(12,15)),(20,(21,(19,22)))))))))))))));
+	TREE Pars_042 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,((8,9,10,11),(23,24,16,(13,(12,15)),(20,(21,(19,22)))))))))))))));
+	TREE Pars_043 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,((8,10,(9,11)),(23,24,16,(13,(12,15)),(20,(21,(19,22)))))))))))))));
+	TREE Pars_044 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,((8,(9,11)),(10,13,23,24,16,(12,15),(20,(21,(19,22)))))))))))))));
+	TREE Pars_045 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,((8,(9,10,11)),(23,24,16,(13,(12,15)),(20,(21,(19,22)))))))))))))));
+	TREE Pars_046 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,((8,(9,11)),(23,24,16,(10,13,(12,15)),(20,(21,(19,22)))))))))))))));
+	TREE Pars_047 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,((8,(9,11)),(23,24,16,(10,12,13,15),(20,(21,(19,22)))))))))))))));
+	TREE Pars_048 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,((8,(9,11)),(23,24,16,(13,(10,12,15)),(20,(21,(19,22)))))))))))))));
+	TREE Pars_049 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,10,(18,((9,11),(23,(13,(12,15)),(24,16,(20,(21,(19,22)))))))))))))))));
+	TREE Pars_050 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,10,18,((9,11),(23,(13,(12,15)),(24,16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_051 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(10,18,((9,11),(23,(13,(12,15)),(24,16,(20,(21,(19,22)))))))))))))))));
+	TREE Pars_052 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(10,18,(9,11),(23,(13,(12,15)),(24,16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_053 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(18,(9,10,11,(23,(13,(12,15)),(24,16,(20,(21,(19,22)))))))))))))))));
+	TREE Pars_054 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(18,(10,23,(9,11),(13,(12,15)),(24,16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_055 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(18,((9,10,11),(23,(13,(12,15)),(24,16,(20,(21,(19,22)))))))))))))))));
+	TREE Pars_056 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(18,((9,11),(10,23,(13,(12,15)),(24,16,(20,(21,(19,22)))))))))))))))));
+	TREE Pars_057 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(18,((9,11),(10,13,23,(12,15),(24,16,(20,(21,(19,22)))))))))))))))));
+	TREE Pars_058 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(18,((9,11),(23,(10,12,13,15),(24,16,(20,(21,(19,22)))))))))))))))));
+	TREE Pars_059 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(18,((9,11),(23,(10,13,(12,15)),(24,16,(20,(21,(19,22)))))))))))))))));
+	TREE Pars_060 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(18,((9,11),(23,(13,(10,12,15)),(24,16,(20,(21,(19,22)))))))))))))))));
+	TREE Pars_061 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(10,18,((8,(9,11)),(23,(13,(12,15)),(24,16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_062 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(10,18,(8,(9,11)),(23,(13,(12,15)),(24,16,(20,(21,(19,22)))))))))))))));
+	TREE Pars_063 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,(10,23,(8,(9,11)),(13,(12,15)),(24,16,(20,(21,(19,22)))))))))))))));
+	TREE Pars_064 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,(8,10,(9,11),(23,(13,(12,15)),(24,16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_065 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,((8,(9,11)),(10,23,(13,(12,15)),(24,16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_066 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,((8,9,10,11),(23,(13,(12,15)),(24,16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_067 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,((8,10,(9,11)),(23,(13,(12,15)),(24,16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_068 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,((8,(9,11)),(10,13,23,(12,15),(24,16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_069 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,((8,(9,10,11)),(23,(13,(12,15)),(24,16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_070 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,((8,(9,11)),(23,(10,13,(12,15)),(24,16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_071 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,((8,(9,11)),(23,(10,12,13,15),(24,16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_072 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,((8,(9,11)),(23,(13,(10,12,15)),(24,16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_073 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,10,(18,((9,11),(24,(13,(12,15)),(23,16,(20,(21,(19,22)))))))))))))))));
+	TREE Pars_074 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,10,18,((9,11),(24,(13,(12,15)),(23,16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_075 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(10,18,(9,11),(24,(13,(12,15)),(23,16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_076 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(10,18,((9,11),(24,(13,(12,15)),(23,16,(20,(21,(19,22)))))))))))))))));
+	TREE Pars_077 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(18,(9,10,11,(24,(13,(12,15)),(23,16,(20,(21,(19,22)))))))))))))))));
+	TREE Pars_078 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(18,(10,24,(9,11),(13,(12,15)),(23,16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_079 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(18,((9,10,11),(24,(13,(12,15)),(23,16,(20,(21,(19,22)))))))))))))))));
+	TREE Pars_080 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(18,((9,11),(10,24,(13,(12,15)),(23,16,(20,(21,(19,22)))))))))))))))));
+	TREE Pars_081 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(18,((9,11),(10,13,24,(12,15),(23,16,(20,(21,(19,22)))))))))))))))));
+	TREE Pars_082 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(18,((9,11),(24,(10,13,(12,15)),(23,16,(20,(21,(19,22)))))))))))))))));
+	TREE Pars_083 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(18,((9,11),(24,(10,12,13,15),(23,16,(20,(21,(19,22)))))))))))))))));
+	TREE Pars_084 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(18,((9,11),(24,(13,(10,12,15)),(23,16,(20,(21,(19,22)))))))))))))))));
+	TREE Pars_085 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(10,18,((8,(9,11)),(24,(13,(12,15)),(23,16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_086 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(10,18,(8,(9,11)),(24,(13,(12,15)),(23,16,(20,(21,(19,22)))))))))))))));
+	TREE Pars_087 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,(10,24,(8,(9,11)),(13,(12,15)),(23,16,(20,(21,(19,22)))))))))))))));
+	TREE Pars_088 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,(8,10,(9,11),(24,(13,(12,15)),(23,16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_089 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,((8,(9,11)),(10,24,(13,(12,15)),(23,16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_090 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,((8,9,10,11),(24,(13,(12,15)),(23,16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_091 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,((8,10,(9,11)),(24,(13,(12,15)),(23,16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_092 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,((8,(9,11)),(10,13,24,(12,15),(23,16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_093 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,((8,(9,10,11)),(24,(13,(12,15)),(23,16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_094 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,((8,(9,11)),(24,(10,12,13,15),(23,16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_095 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,((8,(9,11)),(24,(10,13,(12,15)),(23,16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_096 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(18,((8,(9,11)),(24,(13,(10,12,15)),(23,16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_097 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,10,(18,((9,11),((13,(12,15)),(23,24,16,(20,(21,(19,22)))))))))))))))));
+	TREE Pars_098 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,10,18,((9,11),((13,(12,15)),(23,24,16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_099 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(10,18,(9,11),((13,(12,15)),(23,24,16,(20,(21,(19,22))))))))))))))));
+	TREE Pars_100 = (1,(2,(3,(4,(5,(6,(7,(14,(17,(8,(10,18,((9,11),((13,(12,15)),(23,24,16,(20,(21,(19,22)))))))))))))))));
+	TREE UNTITLED = (1,(2,(3,(4,(5,(6,(7,(14,(17,(10,(8,(18,((9,11),((13,(12,15)),(16,(20,(21,(19,22))))))))))))))))));
+
+END;
+
+
+BEGIN NOTES;
+
+	TEXT  TAXON = 16 TEXT = AMNH_FR_30646;
+	TEXT  TAXON = 17 TEXT = 'PEFO 34034 from Stocker (2012.  A new phytosaur (Archosauriformes, Phytosauria) from the Lot?s Wife beds (Sonsela Member) within the Chinle Formation (Upper Triassic) of Petrified Forest National Park, Arizona, Journal of Vertebrate Paleontology, 32:3, 573-586)';
+
+	TEXT   TAXON = 17 CHARACTER = 44 TEXT = 'Norian_221.5_-_205.6';
+	TEXT   TAXON = 19 CHARACTER = 44 TEXT = 'Norian_221.5_-_205.6';
+
+END;
+
+BEGIN MacClade;
+	Version 4.0 87;
+	LastModified -848418112;
+	FileSettings editor '1' '1' '44' '1';
+	Singles 110;
+	Editor 00011011111111100100010010 '0' '72' Gadget '12' '236' '1' all;
+	EditorPosition '46' '6' '495' '1509';
+	TreeWindowPosition '46' '6' '847' '1390';
+	ListWindow Characters open Gadget '12' '713' '1136' '253' '374' 000;
+	ListWindow Taxa closed Gadget '12' '50' '10' '236' '395' 100000000;
+	ListWindow Trees closed Gadget '12' '50' '10' '270' '403';
+	ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow ExSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow TaxSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	TextWindow AboutFile '70' '45' '280' '445' Gadget '12' ( normal ) 1;
+	ChartWindowPosition '52' '30' '818' '1380';
+	StateNamesSymbols open Gadget '12' '10' '564' '22' '203' '220';
+	WindowOrder Data States List Characters Text AboutFile;
+	OtherSymbols & / 00 ? -;
+	Correlation '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile '2';
+	ExportHTML _ MOSS '100' 110000;
+	PrettyPrint 10;
+	EditorToolsPosition '399' '48' '115' '165';
+	TreeToolsPosition '716' '9' '126' '138';
+	TreeWindowProgram 10;
+	TreeWindow 0000;
+	Continuous '0' '3' 1;
+	Calculations 0001101;
+	SummaryMode '0' '0' 0;
+	Charts Arial '12' ( normal ) 0010;
+	NexusOptions '0' '0' '50' 001011001;
+	TipLabel '1';
+	TreeFont Gadget '12' ( normal );
+	TreeShape 1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax '0';
+	TraceAllChangesDisplay '1' 1;
+	BarsOnBranchesDisplay '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation '3' 1;
+	PrintTree 10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Gadget '9' ( normal ) Gadget '10' ( normal ) Gadget '9' ( normal ) Gadget '9' ( normal ) Gadget '9' ( bold ) Gadget '9' ( normal ) Gadget '9' ( normal ) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '0' '0' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 10;
+	TreeTools '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools '1';
+
+END;
+BEGIN LABELS;
+	TAXAGROUPLABEL Outgroup COLOR = (RGB 1 1 1) ;
+	TAXAGROUPLABEL Ingroup COLOR = (RGB 1 1 1) ;
+
+
+END;
+
+BEGIN SETS;
+	TAXPARTITION * UNTITLED  =  Outgroup :  1- 4, Ingroup :  5- 24;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 45;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1606948633707;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 4307966127285533599;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 1217421825379158546;
+			mqVersion 361;
+			checksumv 0 3 3373862030 null  getNumChars 45 numChars 45 getNumTaxa 24 numTaxa 24   short true   bits 31   states 31   sumSquaresStatesOnly 12222.0 sumSquares 12222.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1 errorReportedDuringRun;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1187 688;
+			setLocation 8 23;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			showTaxa #4307966127285533599 #mesquite.lists.TaxonList.TaxonList;
+			tell It;
+				setTaxa #4307966127285533599;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.TaxonListCurrPartition.TaxonListCurrPartition;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1087 616;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 12;
+					getToolPalette;
+					tell It;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.ColorTaxon.ColorTaxon;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.lists.TaxonListAnnotPanel.TaxonListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.trees.BasicTreeWindowCoord.BasicTreeWindowCoord;
+		tell It;
+			makeTreeWindow #4307966127285533599  #mesquite.trees.BasicTreeWindowMaker.BasicTreeWindowMaker;
+			tell It;
+				suppressEPCResponse;
+				setTreeSource  #mesquite.trees.StoredTrees.StoredTrees;
+				tell It;
+					setTreeBlock 1;
+					setTreeBlockID 0176258d3ad98;
+					toggleUseWeights off;
+				endTell;
+				setAssignedID 1777.1606948573786.465482300457121496;
+				getTreeWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1087 616;
+					setLocation 8 23;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.trees.BasicTreeWindowMaker.BasicTreeWindow.collapseall;
+					endTell;
+					setActive;
+					getTreeDrawCoordinator #mesquite.trees.BasicTreeDrawCoordinator.BasicTreeDrawCoordinator;
+				tell It;
+					suppress;
+					setTreeDrawer  #mesquite.trees.SquareLineTree.SquareLineTree;
+					tell It;
+						setNodeLocs #mesquite.trees.NodeLocsStandard.NodeLocsStandard;
+						tell It;
+							branchLengthsToggle off;
+							toggleScale on;
+							toggleBroadScale off;
+							toggleCenter on;
+							toggleEven on;
+							setFixedTaxonDistance 0;
+						endTell;
+						setEdgeWidth 4;
+						showEdgeLines on;
+						orientRight;
+					endTell;
+					setBackground White;
+					setBranchColor Black;
+					showNodeNumbers off;
+					showBranchColors on;
+					labelBranchLengths off;
+					centerBrLenLabels on;
+					showBrLensUnspecified on;
+					showBrLenLabelsOnTerminals on;
+					setBrLenLabelColor 0 0 255;
+					setNumBrLenDecimals 6;
+					setSelectedTaxonHighlightMode 1;
+					desuppress;
+					getEmployee #mesquite.trees.BasicDrawTaxonNames.BasicDrawTaxonNames;
+					tell It;
+						setFont Gadget;
+						setColor Black;
+						setTaxonNameStyler  #mesquite.trees.NoColorForTaxon.NoColorForTaxon;
+						toggleShadePartition off;
+						toggleShowFootnotes on;
+						toggleNodeLabels on;
+						toggleCenterNodeNames off;
+						toggleShowNames on;
+						namesAngle ?;
+					endTell;
+				endTell;
+					setTreeNumber 1;
+					setTree '(1,(2,(3,(4,(5,(6,(7,(14,(17,(8,10,(18,((9,11),((13,(12,15)),((16,24,23),(20,(21,(19,22)))))))))))))))));';
+					setDrawingSizeMode 0;
+					toggleLegendFloat on;
+					scale 0;
+					toggleTextOnTree off;
+					togglePrintName off;
+					showWindow;
+				endTell;
+				desuppressEPCResponse;
+				getEmployee #mesquite.trees.ColorBranches.ColorBranches;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.ornamental.BranchNotes.BranchNotes;
+				tell It;
+					setAlwaysOn off;
+				endTell;
+				getEmployee #mesquite.ornamental.ColorTreeByPartition.ColorTreeByPartition;
+				tell It;
+					colorByPartition off;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocDoubles.DrawTreeAssocDoubles;
+				tell It;
+					setOn on;
+					toggleShow consensusFrequency;
+					toggleShow bootstrapFrequency;
+					toggleShow posteriorProbability;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					setDigits 4;
+					setThreshold ?;
+					writeAsPercentage off;
+					toggleCentred off;
+					toggleHorizontal on;
+					toggleWhiteEdges on;
+					toggleShowOnTerminals on;
+					setFontSize 10;
+					setOffset 0  0;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocStrings.DrawTreeAssocStrings;
+				tell It;
+					setOn on;
+					toggleCentred on;
+					toggleHorizontal on;
+					setFontSize 10;
+					setOffset 0  0;
+					toggleShowOnTerminals on;
+				endTell;
+				getEmployee #mesquite.trees.TreeInfoValues.TreeInfoValues;
+				tell It;
+					panelOpen false;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #1217421825379158546 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 230;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1087 616;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 12;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
