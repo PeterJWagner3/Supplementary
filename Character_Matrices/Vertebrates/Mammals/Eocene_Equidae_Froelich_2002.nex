@@ -1,0 +1,649 @@
+#NEXUS
+[written Wed Sep 01 08:27:47 CDT 2021 by Mesquite  version 3.61 (build 927) at EAS-392515.local/127.0.0.1]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=48;
+	TAXLABELS
+		Phenacodontidae Radinskya Phenacolophidae Tethytheres Hyracoidea Hallensia Hyracotherium_leporinum Palaeosyops Lambdotherium Palaeotheriidae Ceratomorpha Ancylopoda Isectolophus Homogalax Cardiolophus Orientolophus Cymbalophus Systemodon_tapirinus Systemodon Sifrhippus_sandrae Arenahippus_grangeri Arenahippus_pernix Minippus_jicarillai Minippus_index Arenahippus_aemulor Xenicohippus_craspedotum 'Xenicohippus <Bighorn large>' 'Xenicohippus <Kihm sp. D>' Xenicohippus_grangeri Xenicohippus_osborni Eohippus_angustidens Hyracotherium_seekinsi 'Arenahippus <Kihm sp. A>' 'Minippus <Kihm sp. B>' 'Eohippus <Kihm sp. C>' 'Minippus <Kihm sp. E>' 'Protorohippus <Kihm sp. F>' Pliolophus_vulpiceps Protorohippus_montanum Protorohippus_cf._venticolum Protorohippus_venticolum 'Equidae <Wind River medium Lysite>' 'Equidae <Wind River medium LC>' 'Equidae <Wind River small>' Protorohippus_aff._venticolum Orohippus_major Orohippus_pumilus Epihippus 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=129;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9 A B C D";
+	CHARSTATELABELS 
+10 Foramen_rotundum,
+		22 P2_metacone_and_paracone_relative_position,
+		33 P4_metaconule,
+		34 P4_metaconule_position,
+		35 P4_postprotocrista,
+		41 Upper_molar_paraconule,
+		42 Upper_molar_paraconule,
+		44 'Paraconule/protocone position',
+		56 Upper_molar_metaloph,
+		57 Upper_molar_metaloph?ectoloph_junction,
+		58 Upper_molar_metaloph_obliqueness,
+		70 P3_metaconid,
+		71 P3_metaconid_position,
+		73 P3_hypoconid,
+		80 79._Premolar_paralophid_complex,
+		81 80._Cristid_obliqua_position_on_the_protolophid,
+		82 81._Cristid_obliqua,
+		83 82._Lower_molar_cristid_obliqua_anterior_attachment,
+		84 83a._Twinned_Lower_molar_metaconid,
+		85 83._Twinned_Lower_molar_metaconid,
+		86 84a._Twinned_Metaconid,
+		87 84._Lower_molar_metaconid,
+		89 86._Molar_paralophid_complex,
+		94 Lower_molar_hypolophid,
+		95 Hypolophid_Orientation,
+		96 Lower_molar_hypolophid_shape,
+		97 Lower_molar_buccal_and_lingual_cusps_convergence_angle,
+		99 'Pre-M3 postcristid branch',
+		104 M3_heel_shape,
+		108 M3_hypoconulid_connection,
+		122 119a._Astragalus,
+		123 '119. Astragalus with a saddle-shaped navicular contact',
+		124 120._Astragalus_that_has_tall_trochlea,
+		125 121.,
+		126 122.,
+		127 123.,
+		128 124.,
+		129 125. ; 
+	MATRIX
+	Phenacodontidae                     00-11000000001201110000---0-00001-000001000(0 1)020200000100---11000000000-1100200021010-0-0100(0 1)(0 1)?0?0-0011110???0?010010020000--00(0 1)00
+	Radinskya                           00??10000000?0???1??0?????????000000000100?0000000000101101010?0000?????????????????????????????????????????0????????????????????
+	Phenacolophidae                     ?????????????120001?000---0-10001-000000100012033101100100121210100000-0000200022010-0-010021103101--121100?1?????000?0000--000?0
+	Tethytheres                         1100001001101(0 1)001111000---0-001-1-0000002-1120003000212300100010202021111312000021?0-0-0001(1 2)02032000012000203?000000120110--01101
+	Hyracoidea                          10-00110111011001110000---10001-1-0001212-012212310111011100001020201100030000012000-0-1001111031100012000202?02(1 2)0(0 1)1110110--01102
+	Hallensia                           ?0-?210011020110211010100010110000000010000001000000011111010000111021001?02000020010101031111131001112110001?0110010101210000102
+	Hyracotherium_leporinum             ?0-?2?011????1?121?01010001011000000011000(0 1)2010100000111110001?0011?????????????1?110102?111011?1???????????1??????????????????0?
+	Palaeosyops                         ?0-?21001?0001201210100---0-10001-1-0221110212121001112110011101102000-01302200100111102101202232102122100202?0110?1020?211-00102
+	Lambdotherium                       10-121001100010120101010001011001-000221000202121001112110010101102011000212000000111102101202232102222101202?0110110201211-00102
+	Palaeotheriidae                     10-1210111020111201010100010110000000211000?0101?00011111?0101010120210012020001101101011?12?11310011121?0101?0110?10101210000102
+	Ceratomorpha                        11012100110001202010100---11101-1-011?212-1?00331022023??111101212020101202201031?00-1214130313211?211100203?0110?10211210--00102
+	Ancylopoda                          ?0-?21001?00?1202010100---10101-1-0112212-11?20331122023011?11002120?100120220002100-112041303132001211100203????????2??211-0?1??
+	Isectolophus                        ?0-????01??001200000200---11101-1-0102212-0?00030022023?0000101212010101312201130000-12041303232100203011203???????????210--0????
+	Homogalax                           ?0-?2100110001201200100---0-10001-01022111012000300120221000000121201100121210103000-0-2041202232100103011203????0110201211-00102
+	Cardiolophus                        10-?21001?0001201200000---0-10000000022111011000300121221000000121201100120210103000-0-1041201232100103011103????????????????????
+	Orientolophus                       ?????????????????????????????????????210111110002001102210000000202?????????????30010102041101131101112101002????????????????????
+	Cymbalophus                         ????????????????2?10?010000-10000000011011(0 1)110002001102210000000201?11100?01000120010112131201132101112001112????????????????????
+	Systemodon_tapirinus                ????????1?????0120???010000-100000000110110110002001102210000000201011100201000120010112131201132102122001112????????????????????
+	Systemodon                          ????????1?????012010?010000-100000000110110110002001102210000000201011100201000120010112131201132102122001112????????????????????
+	Sifrhippus_sandrae                  ?0-??????????10121100010001011000000000000(0 1)100001000012110000100101011100101000120010102121100111001112100001????101??1121001?102
+	Arenahippus_grangeri                10-121011101010131100010101011000000000000010000000001211000010010101110010110002001010201011011100001211000100?1111?211210010102
+	Arenahippus_pernix                  ????????1?????01?1??10111010110000000000000200000000012110000100101011100101?000200111120101101(1 2)1000012110101???????????2100101??
+	Minippus_jicarillai                 ??????????????????????????????????????????????????????????????????1?1???0101000120010102021110111100012110001????????????????????
+	Minippus_index                      ??????????????????????????????0?000000000002000000000121100001001?1?111???01000120011112021110111100012111001????????????????????
+	Arenahippus_aemulor                 10-1210111010101311010101010110000000000000200000000012110000100101011100101100020010102010110111000012110101???1?1???112100101??
+	Xenicohippus_craspedotum            ?0-?????1????101301011101010110000000000000200000000012110000100101011101311111010011112010110011000013011001???????????21001011?
+	'Xenicohippus <Bighorn large>'      ????????1?????0??0????101010110000000000000200000000012110000100101?11101311111010011112010110011000013011001????????????????????
+	'Xenicohippus <Kihm sp. D>'         ????????1??????????????01010110000000000000200000000012110000100101?11101311111010011112010110011000013011001????????????????????
+	Xenicohippus_grangeri               ????????1?????01?01?11111010110000000000000200000000012110000100101111111312111020011112020110111000013011101????????????????????
+	Xenicohippus_osborni                10-1210111010101201011111010110000000000000200000000012110000100101111111312111020011112020110111000013011101?0121110211210010102
+	Eohippus_angustidens                ?0??210111?2?101311010111010110000000100000200000000012110000100101011100201100020011112010110111000012111101?????????112100101??
+	Hyracotherium_seekinsi              ???????????????????????????????????????????2????0???????????????101???????????????01111201011011100001??????1????????????????????
+	'Arenahippus <Kihm sp. A>'          ????????1???????31?010101010110000000000000200000000012110000100101011100101100020010112010110111000012110001????????????????????
+	'Minippus <Kihm sp. B>'             ??????????????????????????????????????????????????????????????????1?111001?1000020010102021110111000012110001????????????????????
+	'Eohippus <Kihm sp. C>'             ?0-?????1?????0131?0101010101100000001000002000000000121100001001010111001011000200111120101101(1 2)1000012011101????????????????????
+	'Minippus <Kihm sp. E>'             ????????????????????????????????????????????????????????????????????11100101000120010102010110111000012111101????????????????????
+	'Protorohippus <Kihm sp. F>'        ????????1????????1?010111010110100000100000201011001112110000100201011101201100010011112021200122100012111201????????????????????
+	Pliolophus_vulpiceps                ?0-?2?011?02?101211010121010100000000100000200010000012110000100101011100201000020011112010110112000012110101????????21?210010?02
+	Protorohippus_montanum              10-?21011????1013110101110101100000001000002000110000121100001002010111002011000200111120211001(1 2)21000121111010??????????2100101??
+	Protorohippus_cf._venticolum        10-?210111?2?101311010121010110100000100000201011001112110000100201011101201100010011112021200022100012111201?0??11?0211210120102
+	Protorohippus_venticolum            10-1210111020101311010121010110100000100000201011001112110000100201011101201100010011112021200022100012111201?0121110211210020102
+	'Equidae <Wind River medium Lysite>'?0-?21011102?10131101012101011010000010000020101100111211000010020101110120110001001111202120002210001211120100??1???211210020102
+	'Equidae <Wind River medium LC>'    ?0-?21011102?10131101012101011010000010000020101100111211000010020101110120110001001111202120002210001211120100??1???211210020102
+	'Equidae <Wind River small>'        ?????????????????????????????????????0000002000000000121100001001?1?111???01000120011112021110111100012111001????????????????????
+	Protorohippus_aff._venticolum       10-1210111020101311010121010110100000100000201011001112110000100201011101202100010011112021200022100012111201?0121110211210220102
+	Orohippus_major                     ????????1?????01?0?0111211101101011-01100002010110010121100101002010111?1312211010011112021210022100011100201???????????210??????
+	Orohippus_pumilus                   10-121011102010130101112110-1101011-0110000202021001112200010100201011111312201000011112021200022100011100201?0121110211210120112
+	Epihippus                           ?0-?21011102010130?02112110-1101011-01100001020210011122000101002010111113122010000111120202000221000111002011??????????2101201??
+
+;
+
+END;
+BEGIN MacCladeStart;
+	Extended;
+
+END;
+BEGIN ASSUMPTIONS;
+	OPTIONS DEFTYPE = unord PolyTcount = MINSTEPS;
+	TYPESET * UNTITLED   =  unord:  1- 129;
+
+	WTSET * UNTITLED  =  1: 1 -  129 ;
+
+END;
+
+BEGIN TREES;
+	Title 'Trees from "Eocene_Equidae_Froelich_2002.nex"';
+	ID 017b993cf7086;
+	LINK Taxa = Taxa;
+	TRANSLATE
+[0] 		1 Phenacodontidae,
+[1] 		2 Radinskya,
+[2] 		3 Phenacolophidae,
+[3] 		4 Tethytheres,
+[4] 		5 Hyracoidea,
+[5] 		6 Hallensia,
+[6] 		7 Hyracotherium_leporinum,
+[7] 		8 Palaeosyops,
+[8] 		9 Lambdotherium,
+[9] 		10 Palaeotheriidae,
+[10] 		11 Ceratomorpha,
+[11] 		12 Ancylopoda,
+[12] 		13 Isectolophus,
+[13] 		14 Homogalax,
+[14] 		15 Cardiolophus,
+[15] 		16 Orientolophus,
+[16] 		17 Cymbalophus,
+[17] 		18 Systemodon_tapirinus,
+[18] 		19 Systemodon,
+[19] 		20 Sifrhippus_sandrae,
+[20] 		21 Arenahippus_grangeri,
+[21] 		22 Arenahippus_pernix,
+[22] 		23 Minippus_jicarillai,
+[23] 		24 Minippus_index,
+[24] 		25 Arenahippus_aemulor,
+[25] 		26 Xenicohippus_craspedotum,
+[26] 		27 'Xenicohippus <Bighorn large>',
+[27] 		28 'Xenicohippus <Kihm sp. D>',
+[28] 		29 Xenicohippus_grangeri,
+[29] 		30 Xenicohippus_osborni,
+[30] 		31 Eohippus_angustidens,
+[31] 		32 Hyracotherium_seekinsi,
+[32] 		33 'Arenahippus <Kihm sp. A>',
+[33] 		34 'Minippus <Kihm sp. B>',
+[34] 		35 'Eohippus <Kihm sp. C>',
+[35] 		36 'Minippus <Kihm sp. E>',
+[36] 		40 'Protorohippus <Kihm sp. F>',
+[37] 		38 Pliolophus_vulpiceps,
+[38] 		39 Protorohippus_montanum,
+[39] 		t40t Protorohippus_cf._venticolum,
+[40] 		41 Protorohippus_venticolum,
+[41] 		42 'Equidae <Wind River medium Lysite>',
+[42] 		43 'Equidae <Wind River medium LC>',
+[43] 		44 'Equidae <Wind River small>',
+[44] 		45 Protorohippus_aff._venticolum,
+[45] 		46 Orohippus_major,
+[46] 		47 Orohippus_pumilus,
+[47] 		48 Epihippus;
+	TREE Figure_1 = (1,(2,(3,((4,5),(((((((11,12),13),14),15),(17,19)),16),(((8,7),6),(20,((23,24),((9,18),(21,(25,(22,(((29,30),26),(31,(38,(39,(40,(45,(46,(47,48))))))))))))))))))));
+	TREE Actually_more_parsimonious = (1,(2,((11,13),(3,(((8,9),(12,(14,15))),((4,5),(((17,(19,18)),16),((7,6),(20,((23,24),(21,(25,(22,(((29,30),26),(31,(38,(39,(40,(45,(46,(47,48)))))))))))))))))))));
+	TREE Analyzed_Taxa = (20,((23,24),(21,(25,(22,(((29,30),26),(31,(38,(39,(40,(45,(46,(47,48)))))))))))));
+
+END;
+
+
+BEGIN NOTES;
+
+	TEXT  TAXON = 18 TEXT = Bighorn_lophoid;
+	TEXT  TAXON = 27 TEXT = 'Xenicohippus craspedotum (Bighorn large)';
+	TEXT  TAXON = 28 TEXT = 'Xenicohippus craspedotum (Kihm sp. D)';
+	TEXT  TAXON = 32 TEXT = '"Hyracotherium" seekinsi';
+	TEXT  TAXON = 33 TEXT = Kihm_sp._A;
+	TEXT  TAXON = 34 TEXT = Kihm_sp._B;
+	TEXT  TAXON = 35 TEXT = Kihm_sp._C;
+	TEXT  TAXON = 36 TEXT = Kihm_sp._E;
+	TEXT  TAXON = 37 TEXT = Kihm_sp._F;
+	TEXT  TAXON = 42 TEXT = WR_medium_Lysite;
+	TEXT  TAXON = 43 TEXT = WR_medium_LC;
+	TEXT  TAXON = 44 TEXT = Wind_River_small;
+
+	TEXT   TAXON = 2 CHARACTER = 22 TEXT = 'Was -';
+
+	TEXT   TAXON = 9 CHARACTER = 33 TEXT = Was_0;
+
+	TEXT   TAXON = 12 CHARACTER = 42 TEXT = Was_1;
+
+	TEXT   TAXON = 11 CHARACTER = 44 TEXT = 'Was -';
+	TEXT   TAXON = 13 CHARACTER = 44 TEXT = 'Was -';
+
+	TEXT   TAXON = 11 CHARACTER = 56 TEXT = Was_0;
+	TEXT   TAXON = 13 CHARACTER = 56 TEXT = Was_0;
+
+	TEXT   TAXON = 11 CHARACTER = 82 TEXT = 'Was -';
+
+	TEXT   TAXON = 4 CHARACTER = 83 TEXT = 'Was -';
+
+	TEXT   TAXON = 11 CHARACTER = 85 TEXT = 'Was -';
+	TEXT   TAXON = 13 CHARACTER = 85 TEXT = 'Was -';
+
+	TEXT   TAXON = 10 CHARACTER = 89 TEXT = 'Was -';
+
+	TEXT   TAXON = 1 CHARACTER = 94 TEXT = 'Was -';
+
+	TEXT   TAXON = 1 CHARACTER = 96 TEXT = 'Was -';
+
+	TEXT   TAXON = 11 CHARACTER = 99 TEXT = 'Was -';
+
+	TEXT   TAXON = 1 CHARACTER = 106 TEXT = 'Was -';
+
+	TEXT   TAXON = 1 CHARACTER = 107 TEXT = 'Was -';
+
+	TEXT   TAXON = 1 CHARACTER = 108 TEXT = 'Was -';
+	TEXT   TAXON = 3 CHARACTER = 108 TEXT = 'Was -';
+
+	TEXT   TAXON = 8 CHARACTER = 124 TEXT = 'Was -';
+	TEXT   TAXON = 9 CHARACTER = 124 TEXT = 'Was -';
+	TEXT   TAXON = 12 CHARACTER = 124 TEXT = 'Was -';
+	TEXT   TAXON = 14 CHARACTER = 124 TEXT = 'Was -';
+
+END;
+
+BEGIN MacClade;
+	Version 4.0 87;
+	LastModified -849536546;
+	FileSettings editor '1' '1' '126' '1';
+	Singles 100;
+	Editor 00011001111111100100010010 '0' '24' Gadget '12' '304' '1' all;
+	EditorPosition '46' '6' '767' '1025';
+	TreeWindowPosition '45' '51' '754' '952';
+	ListWindow Characters open Gadget '12' '83' '895' '729' '382' 000;
+	ListWindow Taxa closed Gadget '12' '50' '10' '236' '360' 100000000;
+	ListWindow Trees closed Gadget '12' '90' '65' '134' '454';
+	ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow ExSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow TaxSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	ChartWindowPosition '52' '30' '686' '964';
+	StateNamesSymbols open Gadget '12' '16' '408' '19' '305' '240';
+	WindowOrder Data List Characters States;
+	OtherSymbols & / 00 ? -;
+	Correlation '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile '2';
+	ExportHTML _ MOSS '100' 110000;
+	PrettyPrint 10;
+	EditorToolsPosition '764' '388' '115' '165';
+	TreeToolsPosition '716' '9' '126' '138';
+	TreeWindowProgram 10;
+	TreeWindow 0000;
+	Continuous '0' '3' 1;
+	Calculations 1000101;
+	SummaryMode '0' '0' 0;
+	Charts Arial '12' ( normal ) 0010;
+	NexusOptions '0' '0' '50' 001011001;
+	TipLabel '1';
+	TreeFont Gadget '12' ( normal );
+	TreeShape 1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax '0';
+	TraceAllChangesDisplay '1' 1;
+	BarsOnBranchesDisplay '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation '3' 1;
+	PrintTree 10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Geneva '9' ( normal ) Geneva '10' ( normal ) Geneva '9' ( normal ) Geneva '9' ( normal ) Geneva '9' ( bold ) Geneva '9' ( normal ) Geneva '9' ( normal ) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '0' '0' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 00;
+	TreeTools '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools '1';
+
+END;
+BEGIN LABELS;
+	TAXAGROUPLABEL Ingroup COLOR = (RGB 1 1 1) ;
+	TAXAGROUPLABEL Outgroup COLOR = (RGB 1 1 1) ;
+
+
+END;
+
+BEGIN SETS;
+	TAXPARTITION * UNTITLED  =  Outgroup :  1- 19, Ingroup :  20- 48;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 129;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1630502867042;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 636152439896355851;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 7465226645548269051;
+			tell It;
+				setDefaultOrder  7 0 1 2 3 4 5 6 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 84 83 86 85 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128;
+				attachments ;
+			endTell;
+			mqVersion 361;
+			checksumv 0 3 4103028680 null  getNumChars 129 numChars 129 getNumTaxa 48 numTaxa 48   short true   bits 31   states 31   sumSquaresStatesOnly 25495.0 sumSquares 25495.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1 errorReportedDuringRun;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 153;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1307 738;
+			setLocation 409 243;
+			setFont Gadget;
+			setFontSize 16;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			showTaxa #636152439896355851 #mesquite.lists.TaxonList.TaxonList;
+			tell It;
+				setTaxa #636152439896355851;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.TaxonListCurrPartition.TaxonListCurrPartition;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1154 666;
+					setLocation 409 243;
+					setFont Gadget;
+					setFontSize 16;
+					getToolPalette;
+					tell It;
+						setTool mesquite.lists.TaxonList.TaxonListWindow.ibeam;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.ColorTaxon.ColorTaxon;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.lists.TaxonListAnnotPanel.TaxonListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.trees.BasicTreeWindowCoord.BasicTreeWindowCoord;
+		tell It;
+			makeTreeWindow #636152439896355851  #mesquite.trees.BasicTreeWindowMaker.BasicTreeWindowMaker;
+			tell It;
+				suppressEPCResponse;
+				setTreeSource  #mesquite.trees.StoredTrees.StoredTrees;
+				tell It;
+					setTreeBlock 1;
+					setTreeBlockID 017b993cf7086;
+					toggleUseWeights off;
+				endTell;
+				setAssignedID 1869.1630367185753.2263253598384450277;
+				getTreeWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1154 666;
+					setLocation 409 243;
+					setFont Gadget;
+					setFontSize 16;
+					getToolPalette;
+					tell It;
+					endTell;
+					getTreeDrawCoordinator #mesquite.trees.BasicTreeDrawCoordinator.BasicTreeDrawCoordinator;
+				tell It;
+					suppress;
+					setTreeDrawer  #mesquite.trees.SquareLineTree.SquareLineTree;
+					tell It;
+						setNodeLocs #mesquite.trees.NodeLocsStandard.NodeLocsStandard;
+						tell It;
+							branchLengthsToggle off;
+							toggleScale on;
+							toggleBroadScale off;
+							toggleCenter on;
+							toggleEven on;
+							setFixedTaxonDistance 0;
+						endTell;
+						setEdgeWidth 4;
+						showEdgeLines on;
+						orientUp;
+					endTell;
+					setBackground White;
+					setBranchColor Black;
+					showNodeNumbers off;
+					showBranchColors on;
+					labelBranchLengths off;
+					centerBrLenLabels on;
+					showBrLensUnspecified on;
+					showBrLenLabelsOnTerminals on;
+					setBrLenLabelColor 0 0 255;
+					setNumBrLenDecimals 6;
+					setSelectedTaxonHighlightMode 1;
+					desuppress;
+					getEmployee #mesquite.trees.BasicDrawTaxonNames.BasicDrawTaxonNames;
+					tell It;
+						setColor Black;
+						setTaxonNameStyler  #mesquite.trees.NoColorForTaxon.NoColorForTaxon;
+						toggleShadePartition off;
+						toggleShowFootnotes on;
+						toggleNodeLabels on;
+						toggleCenterNodeNames off;
+						toggleShowNames on;
+						namesAngle ?;
+					endTell;
+				endTell;
+					setTreeNumber 1;
+					setTree '(1,(2,(3,((4,5),((((((((11,12),13),14),15),(17,19)),16),(9,18)),(((8,7),6),(20,((23,24),(21,(25,(22,(((29,30),26),(31,(38,(39,(37,(45,(46,(47,48)))))))))))))))))));';
+					setDrawingSizeMode 0;
+					toggleLegendFloat on;
+					scale 0;
+					toggleTextOnTree off;
+					togglePrintName off;
+					showWindow;
+				endTell;
+				desuppressEPCResponse;
+				getEmployee #mesquite.trees.ColorBranches.ColorBranches;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.ornamental.BranchNotes.BranchNotes;
+				tell It;
+					setAlwaysOn off;
+				endTell;
+				getEmployee #mesquite.ornamental.ColorTreeByPartition.ColorTreeByPartition;
+				tell It;
+					colorByPartition off;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocDoubles.DrawTreeAssocDoubles;
+				tell It;
+					setOn on;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					setDigits 4;
+					setThreshold ?;
+					writeAsPercentage off;
+					toggleCentred off;
+					toggleHorizontal on;
+					toggleWhiteEdges on;
+					toggleShowOnTerminals on;
+					setFontSize 10;
+					setOffset 0  0;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocStrings.DrawTreeAssocStrings;
+				tell It;
+					setOn on;
+					toggleCentred on;
+					toggleHorizontal on;
+					setFontSize 10;
+					setOffset 0  0;
+					toggleShowOnTerminals on;
+				endTell;
+				getEmployee #mesquite.trees.TreeInfoValues.TreeInfoValues;
+				tell It;
+					panelOpen false;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #7465226645548269051 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 345;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1154 666;
+					setLocation 409 243;
+					setFont Gadget;
+					setFontSize 16;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			showCharacters #7465226645548269051 #mesquite.lists.CharacterList.CharacterList;
+			tell It;
+				setData 0;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.DefaultCharOrder.DefaultCharOrder;
+					newAssistant  #mesquite.lists.CharListInclusion.CharListInclusion;
+					newAssistant  #mesquite.lists.CharListPartition.CharListPartition;
+					newAssistant  #mesquite.parsimony.CharListParsModels.CharListParsModels;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1154 666;
+					setLocation 409 243;
+					setFont Gadget;
+					setFontSize 16;
+					getToolPalette;
+					tell It;
+						setTool mesquite.lists.CharacterList.CharacterListWindow.ibeam;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.CharListAnnotPanel.CharListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

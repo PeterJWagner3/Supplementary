@@ -1,0 +1,209 @@
+#NEXUS
+[written Wed Jul 22 03:16:50 CDT 2020 by Mesquite  version 3.6 (build 917) at EAS-6BCEC7.local/10.0.1.16 ()]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=21;
+	TAXLABELS
+		Cardiolophus_radinskyi Homogalax_wutuensis Lophiaspis_maurettei Lophiodon_remensis Protomoropus_gabuniai Paleomoropus_jepseni Pappomoropus_taishanensis Litolophus_gobiensis Eomoropus_ulterior Grangeria_canina Eomoropus_anarsius Eomoropus_amarorum Eomoropus_quadridentatus Eomoropus_minimus 'Chalicotheriidae <SDM 84006>' Eomoropus_pawnyunti Schizoherium_avitum Moropus_elatus Ansiodon_grande Hyrachyus_eximus Heptodon_calciculus 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=58;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3";
+	MATRIX
+	Cardiolophus_radinskyi        000?00110001000000001100100000000001000000000000000000?0?0
+	Homogalax_wutuensis           ?????1111003000?000021001000???????1000000011?????????????
+	Lophiaspis_maurettei          ??101021011311001011212200010????11110?111011?????????????
+	Lophiodon_remensis            1?1010210010100001??21221001010000001001100120???????1???1
+	Protomoropus_gabuniai         ?????????11310010000210000010???????000111001?????????????
+	Paleomoropus_jepseni          ?????????????1000000201100010?????????????????????????????
+	Pappomoropus_taishanensis     ?????????????????????????????01011111000110000???????0???0
+	Litolophus_gobiensis          001(0 1)111120020100101121000112110(0 1)12111011121110001111110000
+	Eomoropus_ulterior            ??????????????????????????????10010?001112110?????????????
+	Grangeria_canina              001121112???0?????????????0??1???21110??121111???????100?1
+	Eomoropus_anarsius            ?????????????1011011001321010?0?1?110011121011?011???1?0?1
+	Eomoropus_amarorum            ??10101131130100101100132211010?0211001112100?1?1111?11000
+	Eomoropus_quadridentatus      01101011301301011011002323120?101(1 2)21001112101????????1?1?0
+	Eomoropus_minimus             ?????????????1000011012322210?????????????????????????????
+	'Chalicotheriidae <SDM 84006>'??112011311301111011012321210?????????????????????????????
+	Eomoropus_pawnyunti           ??100?2021?211001011002322110?????????????????????????????
+	Schizoherium_avitum           1?11?00???1?01101?110123220101121221011112111?????????????
+	Moropus_elatus                1?1110013013011020110123222101121221?2?1221102111000212110
+	Ansiodon_grande               1?10010030030010201001232(1 3)210100101112?1221110011111?000?0
+	Hyrachyus_eximus              011020111111(0 1)00201??201110010000000112?110002?000010011010
+	Heptodon_calciculus           001010012012000201??2011100100000011011100002??0???1011010
+
+;
+
+END;
+begin mrbayes;
+outgroup Cardiolophus_ORIG_Cardinolophus;
+set autoclose = yes nowarn = yes;
+ctype ordered :  7 9 12 17 21 23 28 35 38 41 -42 45 -46;
+lset rates = gamma coding = informative;
+set usebeagle = yes beagledevice = CPU beagleprecision = double beaglescaling = always beaglesse = no beagleopenmp = no;
+mcmcp ngen = 5000000 nruns = 2 relburnin = yes burninfrac = 0.25 printfreq = 1000 samplefreq = 500 nchains = 4 savebrlens = yes;
+mcmc;
+sumt relburnin = yes burninfrac = 0.25;
+sump relburnin = yes burninfrac = 0.25;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 58;
+
+END;
+
+BEGIN NOTES;
+
+	TEXT  TAXON = 1 TEXT = Cardionlophus_radinskyi;
+	TEXT  TAXON = 11 TEXT = Grangeria_anarsius;
+	TEXT  TAXON = 14 TEXT = V_9911;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 58;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1595405811123;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 3834727594423081600;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 5215040975775370974;
+			mqVersion 360;
+			checksumv 0 3 3269670161 null  getNumChars 58 numChars 58 getNumTaxa 21 numTaxa 21   short true   bits 15   states 15   sumSquaresStatesOnly 4690.0 sumSquares 4690.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 175;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1149 698;
+			setLocation 8 23;
+			setFont Gadget;
+			setFontSize 14;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #5215040975775370974 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 307;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 974 626;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

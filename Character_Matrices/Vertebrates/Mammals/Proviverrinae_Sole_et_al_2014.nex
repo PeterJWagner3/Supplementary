@@ -1,0 +1,357 @@
+#NEXUS
+[written Mon Jun 01 12:39:02 CDT 2020 by Mesquite  version 3.6 (build 917) at EAS-6BCEC7.local/10.0.1.16 ()]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=37;
+	TAXLABELS
+		Eomaia_scansoria Cimolestes_spp. Tinerhodon_disputatum Prototomus_spp. Arfia_spp. Boualitomus_marocanensis Parvagula_palulae Eoproviverra_eisenmanni Minimovellentodon_russelli Morlodon_vellerei Boritia_duffaudi Matthodon_menui Matthodon_tritens Oxyaenoides_lindgreni Oxyaenoides_bicuspidens Oxyaenoides_schlosseri Alienetherium_buxwilleri Eurotherium_theriodis Eurotherium_matthesi Prodissopsalis_eocaenicus Paenoxyaenoides_liguritor Leonhardtina_gracilis Leonhardtina_godinoti Allopterodon_bulbosus Allopterodon_minor Allopterodon_torvidus Proviverra_typica Lesmesodon_spp. Cynohyaenodon_trux Cynohyaenodon_ruetimeyeri Cynohyaenodon_cayluxi Cynohyaenodon_lautricensis Paracynohyaenodon_magnus Paracynohyaenodon_schlosseri Quercytherium_simplicidens Quercytherium_tenebrosum Protoproviverra_palaeonictides 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=59;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9 A B";
+	MATRIX
+	Eomaia_scansoria                100000000100001000???0?0?010100?0?0001000?0?00?0?0?00000-01
+	Cimolestes_spp.                 0(0 1)010(0 2)00000000000000001(0 1)00000000000000(0 1)1000000000001000(0 1)001
+	Tinerhodon_disputatum           1100??000000001111000?0000000000100000????????????????????1
+	Prototomus_spp.                 00002200000000101001000010001000100000000000000100100001000
+	Arfia_spp.                      00002200000000100101000110000001111100000110000121110001100
+	Boualitomus_marocanensis        11001-00000000101101?0111000101011000?????????????????????1
+	Parvagula_palulae               000020000000001011?100101000000011?????????????????????????
+	Eoproviverra_eisenmanni         ????????????????????????100000001100??????10?01010101000-00
+	Minimovellentodon_russelli      00101???010?0010?1?00000100000?0110?0?????????????????????1
+	Morlodon_vellerei               0011?1100101002001010011101000011200????0100001110101101001
+	Boritia_duffaudi                0011111001010020010100011100000111000?????????????????????1
+	Matthodon_menui                 1111?210010100200101001012200001120010000110002120?01100-?1
+	Matthodon_tritens               1111121001010020010100101220000112001?????????????????????1
+	Oxyaenoides_lindgreni           0010101001000020010100011221101012001?????????1120????????1
+	Oxyaenoides_bicuspidens         0010101001000020010100011221101012001??0??????2120101100-?1
+	Oxyaenoides_schlosseri          ????????????????????????12211010?2??2?????????????????????1
+	Alienetherium_buxwilleri        ?0101?100101012001?1101?11100?0111??1?????????????????????0
+	Eurotherium_theriodis           001110100101002001011011122001011100011101100011111010?0-?0
+	Eurotherium_matthesi            0010101001010120010110101110010111001(0 1)1101100011211010?0-10
+	Prodissopsalis_eocaenicus       00111010010101200101101011100101120011110110002121101(0 1)00-00
+	Paenoxyaenoides_liguritor       00111010010100200101101112210101120021110110002121101100-10
+	Leonhardtina_gracilis           00002010110112200101100010000001111001000111000102101000-00
+	Leonhardtina_godinoti           000020??1101?2????01??0?1000000111100?????????????????????0
+	Allopterodon_bulbosus           00002010110112200121111010000001111001000111111112101000-00
+	Allopterodon_minor              00002010110112200121110010000001111001000111111122101000-00
+	Allopterodon_torvidus           000020??1????2?????1110010000001111001000111111122101000-00
+	Proviverra_typica               00002010110112200111100010000001111101?00111010102101001100
+	Lesmesodon_spp.                 000-20??????????????????100000011?10??????????01021????????
+	Cynohyaenodon_trux              00101010110100200111100111100001120000?10111001111101010-00
+	Cynohyaenodon_ruetimeyeri       0011101011010020011110111110000112000??10112002111101010-00
+	Cynohyaenodon_cayluxi           00111010110101200111101011200001120010110112002121101010-00
+	Cynohyaenodon_lautricensis      ???????????????????????1?????????????0111011022121101010-00
+	Paracynohyaenodon_magnus        00111010110100200111101111200001120010110112002121101010-00
+	Paracynohyaenodon_schlosseri    0011?010110100200111101111200001120010110112002121101010-00
+	Quercytherium_simplicidens      00111001111001100111101111200001120011111011022121101010-00
+	Quercytherium_tenebrosum        00111001101001000011101111200001120011111011022121101010-00
+	Protoproviverra_palaeonictides  ?01???????????20010110111??00001?200??????????????????????0
+
+;
+
+END;
+BEGIN CHARACTERS;
+	TITLE  Ranges;
+	DIMENSIONS  NCHAR=2;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5";
+	CHARSTATELABELS 
+		1 FA,
+		2 LA ; 
+	MATRIX
+	Eomaia_scansoria                00
+	Cimolestes_spp.                 00
+	Tinerhodon_disputatum           11
+	Prototomus_spp.                 22
+	Arfia_spp.                      22
+	Boualitomus_marocanensis        22
+	Parvagula_palulae               22
+	Eoproviverra_eisenmanni         22
+	Minimovellentodon_russelli      22
+	Morlodon_vellerei               22
+	Boritia_duffaudi                22
+	Matthodon_menui                 22
+	Matthodon_tritens               33
+	Oxyaenoides_lindgreni           22
+	Oxyaenoides_bicuspidens         33
+	Oxyaenoides_schlosseri          33
+	Alienetherium_buxwilleri        33
+	Eurotherium_theriodis           33
+	Eurotherium_matthesi            33
+	Prodissopsalis_eocaenicus       33
+	Paenoxyaenoides_liguritor       45
+	Leonhardtina_gracilis           33
+	Leonhardtina_godinoti           22
+	Allopterodon_bulbosus           45
+	Allopterodon_minor              45
+	Allopterodon_torvidus           33
+	Proviverra_typica               33
+	Lesmesodon_spp.                 33
+	Cynohyaenodon_trux              33
+	Cynohyaenodon_ruetimeyeri       33
+	Cynohyaenodon_cayluxi           45
+	Cynohyaenodon_lautricensis      44
+	Paracynohyaenodon_magnus        44
+	Paracynohyaenodon_schlosseri    45
+	Quercytherium_simplicidens      55
+	Quercytherium_tenebrosum        45
+	Protoproviverra_palaeonictides  22
+
+;
+
+END;
+BEGIN MacCladeStart;
+	Extended;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED  (CHARACTERS = Character_Matrix)  =  unord:  1- 59;
+TYPESET * UNTITLED  (CHARACTERS = Ranges)  =  unord:  1- 2;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED  (CHARACTERS = Character_Matrix)  =  'Mk1 (est.)':  1- 59;
+ProbModelSet * UNTITLED  (CHARACTERS = Ranges)  =  'Mk1 (est.)':  1- 2;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1591033142722;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 9030461933926451446;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 4379175467879178604;
+			mqVersion 360;
+			checksumv 0 3 711460980 null  getNumChars 59 numChars 59 getNumTaxa 37 numTaxa 37   short true   bits 7   states 7   sumSquaresStatesOnly 5567.0 sumSquares 5567.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 2;
+			mqVersion;
+			setID 1 7083819564172115386;
+			mqVersion 360;
+			checksumv 1 3 2286576053 null  getNumChars 2 numChars 2 getNumTaxa 37 numTaxa 37   short true   bits 63   states 63   sumSquaresStatesOnly 12812.0 sumSquares 12812.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 2;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 175;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1134 534;
+			setLocation 8 23;
+			setFont Gadget;
+			setFontSize 14;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #4379175467879178604 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 214;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 959 462;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+			showDataWindow #7083819564172115386 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 228;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 959 462;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

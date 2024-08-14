@@ -1,0 +1,153 @@
+#NEXUS
+[MacClade 4.08 registered to Peter Wagner, Field Museum of Natural History]
+
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=25 NCHAR=47;
+
+[!Damiani, R. J.  2001.  A systematic revision and phylogenetic analysis of Triassic mastodonsauroids (Temnospondyli: Stereospondyli).  Zoological Journal of the Linnean Society 133:379 � 482.]
+	FORMAT SYMBOLS= " 0 1 2 3 4 5 6 7 8" MISSING=? GAP=- ;
+
+MATRIX
+[                                         10        20        30        40        ]
+[                                         .         .         .         .         ]
+
+Angusaurus                       11100111110100111011111111000000001001101011111
+Benthosuchus                     11001012010101110011011001000110001111111000110
+Cherninia                        01011002001112010000010001110111101111111??????
+Chomatobatrachus                 01100001000100000000010001000000011?0010???????
+Cyclotosaurus                    0102000200111100120011010111101110111111???????
+Deltacephalus                    01100002000100001???0?000100001?0111001????????
+Eryosuchus                       01011002001112010100010001110111101111111100110
+Eocyclotosaurus                  1102101201011211100111110111111100111111???????
+Lydekkerina                      01100001000101000000010001000010011000101000110
+Mastodonsaurus                   01010012011101011101110001111111101111111111110
+Odenwaldia                       110110?2??01??110??1?????????1?????1???????????
+Benthosuchus_madagascariensis    011000010011000010100?00010000????1?001????????
+Paracyclotosaurus                0101100200111201010?1100?1111111101111111100?10
+Parotosuchus                     01001002001112010100010001110111101111111100110
+Stenotosaurus                    010210020011120111000100?111?11110111111???????
+Tatrasuchus                      01010002001111000200010001110011101111111111110
+Thoosuchus                       11000111110100110011011111000000001001101011111
+Trematosaurus                    111001111101001110-111111---000010100-101011111
+Watsonisuchus                    01001002001112010010010001110111001111111100110
+Wellesaurus                      01010002001112011100010001111111101111111100110
+Wetlugasaurus                    01001002000111010010011001110110101111111100110
+Konzhukovia                      0000000000000011000101?00001001000000100???????
+Rhineceps                        00000000000001000000000000000000000000010000000
+Rhinesuchus                      00000000000001000000001000000010?0000001???????
+Uranocentrodon                   000000000000000000000?0000000010?00000010000000
+;
+END;
+
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MAXSTEPS ;
+	TYPESET * UNTITLED  = unord: 1-47;
+	WTSET * UNTITLED  = 1: 1-47;
+END;
+
+
+BEGIN TREES;
+
+	TRANSLATE
+		1	Angusaurus,
+		2	Benthosuchus,
+		3	Cherninia,
+		4	Chomatobatrachus,
+		5	Cyclotosaurus,
+		6	Deltacephalus,
+		7	Eryosuchus,
+		8	Eocyclotosaurus,
+		9	Lydekkerina,
+		10	Mastodonsaurus,
+		11	Odenwaldia,
+		12	Benthosuchus_madagascariensis,
+		13	Paracyclotosaurus,
+		14	Parotosuchus,
+		15	Stenotosaurus,
+		16	Tatrasuchus,
+		17	Thoosuchus,
+		18	Trematosaurus,
+		19	Watsonisuchus,
+		20	Wellesaurus,
+		21	Wetlugasaurus,
+		22	Konzhukovia,
+		23	Rhineceps,
+		24	Rhinesuchus,
+		25	Uranocentrodon
+	;
+	TREE  * UNTITLED =  [&R] (((23,(24)25),(((4,9),(12,6)),(((18)1)17,(((8)11,((19,(((13,(15,((3,(10,(16,5))))20)))7)14))21))2))))22;
+
+END;
+
+
+BEGIN NOTES;
+
+	TEXT  TAXON=12 TEXT= '''P.''_madagascariensis_in_matrix';
+	TEXT  TAXON=22 TEXT= misspelled_Konshukovia_in_matrix.;
+END;
+
+
+BEGIN MacClade;
+	Version 4.0  87;
+	LastModified -850037876;
+	FileSettings editor  '2' '48' '1' '0';
+	Singles 110;
+	Editor 00011001111111100100010010 '0' '24' Gadget '12' '194' '1' all;
+	EditorPosition  '45' '9' '529' '387';
+	TreeWindowPosition  '98' '123' '514' '634';
+	ListWindow Characters closed Gadget '12' '50' '10' '253' '374' 000;
+	ListWindow Taxa closed Gadget '9' '50' '10' '273' '309' 100000000;
+	ListWindow Trees closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow ExSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow TaxSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490' ;
+	TextWindow AboutFile  '50' '25' '280' '445' Gadget '12' (normal) 1 ;
+	ChartWindowPosition  '50' '30' '688' '964';
+	StateNamesSymbols open Gadget '12' '10' '83' '1242' '203' '302';
+	WindowOrder  Data States Text AboutFile;
+	OtherSymbols &/ 00 ?-;
+	Correlation  '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile  '2';
+	ExportHTML _ MOSS  '100' 110000;
+	PrettyPrint 10;
+	EditorToolsPosition  '605' '44' '115' '165';
+	TreeToolsPosition  '607' '5' '126' '138';
+	TreeWindowProgram 10;
+	TreeWindow 0000;
+	Continuous  '0' '3' 1;
+	Calculations 1100101;
+	SummaryMode  '0' '0' 0;
+	Charts  Arial '12' (normal) 0010;
+	NexusOptions  '0' '0' '50' 001011001;
+	TipLabel  '1';
+	TreeFont  Gadget '12' (normal);
+	TreeShape  1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors  '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth  '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax  '0';
+	TraceAllChangesDisplay  '1' 1;
+	BarsOnBranchesDisplay  '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation  '3' 1;
+	PrintTree  10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Gadget '9' (normal) Gadget '10' (normal) Gadget '9' (normal) Gadget '9' (normal) Gadget '9' (bold ) Gadget '9' (normal) Gadget '9' (normal) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '0' '0' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 10;
+	TreeTools  '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools  '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign  '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools  '1';
+END;

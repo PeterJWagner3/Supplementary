@@ -1,0 +1,320 @@
+#NEXUS
+[written Wed Nov 11 23:12:51 CST 2020 by Mesquite  version 3.6 (build 917) at EAS-6BCEC7.local/10.0.1.16 ()]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=19;
+	TAXLABELS
+		Balanerpeton_woodi Sclerocephalus_haeuseri Ecolsonia_cutlerensis Micromelerpeton_credneri Platyrhinops_lyelli Amphibamus_grandiceps Micropholis_stowii Branchiosaurus_salamandroides Apateon_pedestris Apateon_gracilis Apateon_caducus Apateon_kontheri Apateon_flagrifer Apateon_dracyiensis Melanerpeton_humbergense Leptorophus_tener Schoenfelderpeton_prescheri Melanerpeton_sembachense Melanerpeton_eisfeldi
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=40;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9 A";
+	MATRIX
+	Balanerpeton_woodi             0000000000000000000000100000000?0000?010
+	Sclerocephalus_haeuseri        0000000000000100000000000000000000100000
+	Ecolsonia_cutlerensis          010010(0 1)100000100000100100100002??112?00?
+	Micromelerpeton_credneri       0110100000000100000000001(0 1)00000001110000
+	Platyrhinops_lyelli            20(0 1)0100111011100101000?01110000?0112?111
+	Amphibamus_grandiceps          20101001110111??1?1000?01110000?11120011
+	Micropholis_stowii             01(0 1)01001(0 1)0100100000000101110000?1(1 2)12?011
+	Branchiosaurus_salamandroides  (0 1)00?1000110101?1000001(0 1)0100100211112?010
+	Apateon_pedestris              11021000(0 1)1010111010001101001(0 1)02212121110
+	Apateon_gracilis               01121000111(1 2)0110110000101001002211121110
+	Apateon_caducus                2111101111120111010001101001102212121110
+	Apateon_kontheri               11111000111(0 1)0110010001101001002211121110
+	Apateon_flagrifer              2112101(0 1)(0 1)11(0 1)011(0 1)010001?01001102212121110
+	Apateon_dracyiensis            2012100111110111010001(0 1)01001002212121110
+	Melanerpeton_humbergense       0101111001110100000001011001001211110110
+	Leptorophus_tener              0101111001120100000110011001012211110110
+	Schoenfelderpeton_prescheri    1(0 1)021110010101000001110110010112?1110110
+	Melanerpeton_sembachense       01011(0 1)10011101000001(0 1)101100100(1 2)21212?110
+	Melanerpeton_eisfeldi          11011??0?11?01?00000?1011001002211120110
+
+;
+
+END;
+BEGIN MacCladeStart;
+	Extended;
+
+END;
+BEGIN ASSUMPTIONS;
+	OPTIONS DEFTYPE = unord PolyTcount = MAXSTEPS;
+	TYPESET * UNTITLED   =  unord:  1- 40;
+
+	WTSET * UNTITLED  =  1: 1 -  40;
+
+END;
+
+BEGIN TREES;
+	Title 'Trees from "Branchiosauridae_Schoch_&_Milner_2008.nex"';
+	ID 0175b5ebd2556;
+	LINK Taxa = Taxa;
+	TRANSLATE
+[0] 		1 Balanerpeton_woodi,
+[1] 		2 Sclerocephalus_haeuseri,
+[2] 		3 Ecolsonia_cutlerensis,
+[3] 		4 Micromelerpeton_credneri,
+[4] 		5 Platyrhinops_lyelli,
+[5] 		6 Amphibamus_grandiceps,
+[6] 		7 Micropholis_stowii,
+[7] 		8 Branchiosaurus_salamandroides,
+[8] 		9 Apateon_pedestris,
+[9] 		10 Apateon_gracilis,
+[10] 		11 Apateon_caducus,
+[11] 		12 Apateon_kontheri,
+[12] 		13 Apateon_flagrifer,
+[13] 		14 Apateon_dracyiensis,
+[14] 		15 Melanerpeton_humbergense,
+[15] 		16 Leptorophus_tener,
+[16] 		17 Schoenfelderpeton_prescheri,
+[17] 		18 Melanerpeton_sembachense,
+[18] 		19 Melanerpeton_eisfeldi;
+	TREE Default_ladder = (1,(2,(3,(4,(5,(6,(7,(8,(9,(10,(11,(12,(13,(14,(15,(16,(17,(18,19))))))))))))))))));
+	TREE Parsimony = ((1,2),(4,(3,(7,((5,6),(8,((19,(18,(15,(16,17)))),(9,((12,10),(14,(13,11)))))))))));
+	TREE UNTITLED = ((1,2),(4,(3,(7,((5,6),(8,((19,(18,(15,(16,17)))),(9,((12,10),(14,(13,11)))))))))));
+
+END;
+
+
+BEGIN NOTES;
+
+	TEXT   TAXON = 1 CHARACTER = 41 TEXT = Visean;
+	TEXT   TAXON = 4 CHARACTER = 41 TEXT = 'Earlier_Micrometerpetonidae_(Limnogyrinus)';
+	TEXT   TAXON = 5 CHARACTER = 41 TEXT = 'Westphalian_D_(Moscovian)';
+	TEXT   TAXON = 6 CHARACTER = 41 TEXT = Westphalian_C;
+	TEXT   TAXON = 7 CHARACTER = 41 TEXT = 'Lystrosaurus_Assemblage_Zone_(earliest_Triassic)';
+	TEXT   TAXON = 8 CHARACTER = 41 TEXT = 'Westphalian_D_(Moscovian)';
+	TEXT   TAXON = 9 CHARACTER = 41 TEXT = 'Stephanian_D_(L._Gzhelian)';
+	TEXT   TAXON = 10 CHARACTER = 41 TEXT = Sakmarian;
+	TEXT   TAXON = 11 CHARACTER = 41 TEXT = Asselian_2;
+	TEXT   TAXON = 12 CHARACTER = 41 TEXT = Asselian_4;
+	TEXT   TAXON = 13 CHARACTER = 41 TEXT = Asselian_2;
+	TEXT   TAXON = 14 CHARACTER = 41 TEXT = Asselian_2;
+	TEXT   TAXON = 16 CHARACTER = 41 TEXT = Asselian_2;
+	TEXT   TAXON = 17 CHARACTER = 41 TEXT = Asselian_3;
+	TEXT   TAXON = 18 CHARACTER = 41 TEXT = Asselian_1;
+	TEXT   TAXON = 19 CHARACTER = 41 TEXT = Asselian_4;
+
+	TEXT   TAXON = 1 CHARACTER = 42 TEXT = Visean;
+	TEXT   TAXON = 5 CHARACTER = 42 TEXT = 'Westphalian_D_(Moscovian)';
+	TEXT   TAXON = 6 CHARACTER = 42 TEXT = Westphalian_C;
+	TEXT   TAXON = 7 CHARACTER = 42 TEXT = Lystrosaurus_Assemblage_Zone;
+	TEXT   TAXON = 8 CHARACTER = 42 TEXT = 'Westphalian_D_(Moscovian)';
+	TEXT   TAXON = 10 CHARACTER = 42 TEXT = Sakmarian;
+	TEXT   TAXON = 11 CHARACTER = 42 TEXT = Asselian_2;
+	TEXT   TAXON = 12 CHARACTER = 42 TEXT = Asselian_4;
+	TEXT   TAXON = 14 CHARACTER = 42 TEXT = Asselian_3;
+	TEXT   TAXON = 15 CHARACTER = 42 TEXT = Asselian_2;
+	TEXT   TAXON = 16 CHARACTER = 42 TEXT = Asselian_3;
+	TEXT   TAXON = 17 CHARACTER = 42 TEXT = Asselian_3;
+	TEXT   TAXON = 18 CHARACTER = 42 TEXT = Asselian_1;
+	TEXT   TAXON = 19 CHARACTER = 42 TEXT = Asselian_4;
+
+END;
+
+BEGIN MacClade;
+	Version 4.0 87;
+	LastModified -967365029;
+	FileSettings treewindow '1' '1' '29' '0';
+	Singles 010;
+	Editor 00011001111111100100010010 '0' '24' Gadget '12' '162' '1' all;
+	EditorPosition '540' '1321' '393' '355';
+	TreeWindowPosition '80' '240' '723' '1111';
+	ListWindow Characters closed Gadget '12' '340' '1248' '270' '374' 000;
+	ListWindow Taxa closed Gadget '12' '475' '1187' '209' '344' 100000000;
+	ListWindow Trees closed Gadget '12' '50' '25' '134' '387';
+	ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow ExSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow TaxSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	TextWindow AboutFile '50' '25' '280' '445' Gadget '12' ( normal ) 1;
+	ChartWindowPosition '52' '30' '818' '1380';
+	StateNamesSymbols closed Gadget '12' '10' '50' '30' '203' '218';
+	WindowOrder Text AboutFile Tree;
+	OtherSymbols & / 00 ? -;
+	Correlation '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile '2';
+	ExportHTML _ MOSS '100' 110000;
+	PrettyPrint 10;
+	CharLegendPosition '627' '1054' '88' '96';
+	TreeLegendPosition '660' '956' '52' '93';
+	EditorToolsPosition '631' '1160' '115' '165';
+	TreeToolsPosition '716' '9' '126' '138';
+	TreeWindowProgram 00;
+	TreeWindow 0000;
+	Continuous '0' '3' 1;
+	Calculations 0000000;
+	SummaryMode '0' '0' 0;
+	Charts Arial '12' ( normal ) 0010;
+	NexusOptions '0' '0' '50' 001011001;
+	TipLabel '1';
+	TreeFont Gadget '12' ( normal );
+	TreeShape 1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax '0';
+	TraceAllChangesDisplay '1' 1;
+	BarsOnBranchesDisplay '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation '3' 1;
+	PrintTree 10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Geneva '9' ( normal ) Geneva '10' ( normal ) Geneva '9' ( normal ) Geneva '9' ( normal ) Geneva '9' ( bold ) Geneva '9' ( normal ) Geneva '9' ( normal ) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '0' '23947' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 00;
+	TreeTools '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools '1';
+
+END;
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 42;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1605157971467;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 3314562780503951903;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 7164637803952793990;
+			mqVersion 360;
+			checksumv 0 3 3341844064 null  getNumChars 42 numChars 42 getNumTaxa 19 numTaxa 19   short true   bits 1535   states 1535   sumSquaresStatesOnly 2469340.0 sumSquares 2469340.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 175;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 700 464;
+			setLocation 8 23;
+			setFont Gadget;
+			setFontSize 14;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #7164637803952793990 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 525 392;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;

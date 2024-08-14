@@ -1,0 +1,281 @@
+#NEXUS
+[written Mon Aug 30 15:25:34 CDT 2021 by Mesquite  version 3.6 (build 917) at Wagners_Dark_Tower/10.0.1.87]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=18;
+	TAXLABELS
+		Tungurictis_spocki Hyaenotherium_wongii Plioviverrops_orbignyi Adcrocuta_eximia Ictitherium_viverrinum Hyaenictitherium_hyaenoides Lycyaena_dubia Palinhyaena_reperta Belbus_beaumonti Chasmaporthetes_borissiaki Chasmaporthetes_lunensis Ikelohyaena_abronia Leecyaena_lycyaenoides Hyaena_hyaena Parahyaena_brunnea Pliocrocuta_perrieri Pachycrocuta_brevirostris Crocuta_crocuta
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  'Matrix in file "Hyaenidae_Werdelin_&_Solounias_1991.nex"';
+	DIMENSIONS  NCHAR=25;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9 A B";
+	CHARSTATELABELS
+		1 '1. M2(l) Presence' /  Absent Present,
+		2 '2. P1(l) Presence' /  Absent Present,
+		3 5._#_Mental_Foramina /  More_than_one one,
+		4 '4. M2(u) Presence' /  Absent Present,
+		5 '6. M1:P4' /  '~.9:1' '~.85:1' '~.80:1' '~.75:1' '~.70:1' strongly_reduced very_strongly_reduced,
+		6 7._#_Talonid_Cusps_on_M1 /  Three Two One,
+		7 8._M1_Metaconid /  Absent Present,
+		8 9._P4_Protocone_Position /  Extends_anterior_of_Protostyle Level_with_parastyle_anterior Not_extened_anteriorly,
+		9 10._Tooth_Row_Shape /  Straight Curved_or_convex,
+		10 '11. P4 Paracone:Metastyle' /  'meta_<=_para' 'meta_>_para',
+		11 12._Carnassials_Position /  In_line_with_tooth_row Parallel_to_sagittal_plane,
+		12 13._P4_anterior_cusp_size /  Large Small,
+		13 14._P4_anterior_cusp_position /  Free_of_Main_Cusp Appressed_to_Main_Cusp,
+		14 15._P3_Anterior_Face_Shape /  concave_or_straight convex,
+		15 '19. P2(u) length',
+		16 '20. P4(u) length',
+		17 '22. Infra-orbital foramen posit' /  Between_P3_@_P4 Above_middle_of_P3 Anterior_to_middle_of_P3,
+		18 23._Anterior_Orbit /  Above_anterior_end_of_P4 Above_P3,
+		19 '24. Premaxillary/Frontal Suture' /  Absent Present,
+		20 '28. Maxillary in Antero-Interna' /  Small_to_none Substantial_Contribution,
+		21 32._Basioccipital_Shape /  Flat Low_Lateral_Ridges,
+		22 '33. Premax-Max Suture Position' /  near_Middle_of_Incisive_Fossa 'At_Postero-Lateral_Margin',
+		23 35._Major_Palatine_Foramen_Posi /  'At_Palatine-Max_Suture' Far_Ahead_of_Palate,
+		24 '36. Jugal-Maxillary Suture Shap' /  Angled_downwards_posteriorly Straight,
+		25 44._Shape_of_Nuchal_Crest /  'Antero-Posteriorly_Inclined' Appx._Vertical ;
+	MATRIX
+	Tungurictis_spocki           11?10??0000000000000?01?0
+	Hyaenotherium_wongii         1111100111000000001000100
+	Plioviverrops_orbignyi       11?10000000000??1100??1?0
+	Adcrocuta_eximia             0110411211101112100111111
+	Ictitherium_viverrinum       1101000110010000001000100
+	Hyaenictitherium_hyaenoides  1111200111000000001000100
+	Lycyaena_dubia               00003001110000000010?01?0
+	Palinhyaena_reperta          111120011001011000110?10?
+	Belbus_beaumonti             ??1?2001100111??1011??1?0
+	Chasmaporthetes_borissiaki   011031110100010000100?1?0
+	Chasmaporthetes_lunensis     0110321111000100001?001?1
+	Ikelohyaena_abronia          ??1?2001100100??1011001?0
+	Leecyaena_lycyaenoides       1?1?2102110010??10??0?1??
+	Hyaena_hyaena                0010310110111010200100101
+	Parahyaena_brunnea           0010410111111011101100101
+	Pliocrocuta_perrieri         0010410111101011201111111
+	Pachycrocuta_brevirostris    ??1?4111111010??201111111
+	Crocuta_crocuta              0010521111111012200111111
+
+;
+
+END;
+
+BEGIN MacCladeStart;
+	Extended;
+
+END;
+BEGIN ASSUMPTIONS;
+	OPTIONS DEFTYPE = unord PolyTcount = MAXSTEPS;
+	TYPESET Authors   =  unord:  1- 2 4 15- 16, ord:  3 5- 14 17- 25;
+	WTSET Authors  =  1: 1 -  25 ;
+
+END;
+
+
+BEGIN MacClade;
+	Version 4.0 87;
+	LastModified -847554646;
+	FileSettings editor '1' '26' '1' '0';
+	Singles 100;
+	Editor 00011001111111100100010010 '0' '24' Gadget '12' '198' '1' all;
+	EditorPosition '40' '4' '546' '1399';
+	TreeWindowPosition '46' '6' '855' '1390';
+	ListWindow Characters open Gadget '12' '548' '29' '559' '466' 000;
+	ListWindow Taxa closed Gadget '12' '475' '1187' '134' '349' 100000000;
+	ListWindow Trees closed Gadget '12' '50' '10' '678' '442';
+	ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow ExSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow TaxSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	ChartWindowPosition '52' '30' '818' '1380';
+	StateNamesSymbols closed Gadget '12' '10' '50' '30' '148' '220';
+	WindowOrder Data List Characters;
+	OtherSymbols & / 00 ? -;
+	Correlation '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile '2';
+	ExportHTML _ MOSS '100' 110000;
+	PrettyPrint 10;
+	EditorToolsPosition '660' '120' '115' '165';
+	TreeToolsPosition '716' '9' '126' '138';
+	TreeWindowProgram 10;
+	TreeWindow 0000;
+	Continuous '0' '3' 1;
+	Calculations 0000111;
+	SummaryMode '0' '0' 0;
+	Charts Arial '12' ( normal ) 0010;
+	NexusOptions '0' '0' '50' 001011001;
+	TipLabel '1';
+	TreeFont Gadget '12' ( normal );
+	TreeShape 1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax '0';
+	TraceAllChangesDisplay '1' 1;
+	BarsOnBranchesDisplay '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation '2' 1;
+	PrintTree 10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Gadget '9' ( normal ) Gadget '10' ( normal ) Gadget '9' ( normal ) Gadget '9' ( normal ) Gadget '9' ( bold ) Gadget '9' ( normal ) Gadget '9' ( normal ) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '21027' '0' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 00;
+	ColorOptions 00;
+	TreeTools '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools '1';
+
+END;
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 25;
+ProbModelSet * UNTITLED  (CHARACTERS = 'Matrix in file "Hyaenidae_Werdelin_&_Solounias_1991.nex"')  =  Brownian_default:  1- 2;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1630355134820;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 367608192658292826;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 7040229754929360365;
+			mqVersion 360;
+			checksumv 0 3 873453619 null  getNumChars 25 numChars 25 getNumTaxa 18 numTaxa 18   short false   bits 63   states 63   sumSquaresStatesOnly 3487.0 sumSquares 3487.0 longCompressibleToShort true usingShortMatrix false   NumFiles 1 NumMatrices 2;
+			mqVersion;
+			setID 1 5519045689717739197;
+			mqVersion 360;
+			checksumv 1 3 4050292240 null  numChars 2   numItems 1   min 0.0   max 1.15   sumSquares 15.319164440000003   NumFiles 1 NumMatrices 2;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 202;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1603 761;
+			setLocation 8 23;
+			setFont Gadget;
+			setFontSize 16;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #7040229754929360365 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1401 689;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 16;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;

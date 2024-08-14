@@ -1,0 +1,388 @@
+#NEXUS
+[written Mon Aug 30 17:39:13 CDT 2021 by Mesquite  version 3.6 (build 917) at Wagners_Dark_Tower/10.0.1.87]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=31;
+	TAXLABELS
+		Zygorhiza_kochi Cynthiacetus_peruvianus Agorophius_pygmaeus Eudelphis_mortezelensis Zygophyseter_varolai Brygmophyseter_shigensis Acro_deinodon Acro_robustus 'Acrophyseter <sp. MUSM 2182>' Albicetus_oxymycterus Livyatan_melvillei Cozzuophyseter Orycterocetus_crocodilinus Physeterula_dubusi Idiorophus_patagonicus Diaphorocetus_poucheti Placoziphius_duboisi Aulophyseter_morricei Physeter_macrocephalus Idiophyseter_merriami Thalassocetus_antwerpiensis Aprixokogia_kelloggi Scaphokogia_cochlearis Praekogia_cedrosensis Kogia_sima Kogia_breviceps Nanokogia_isthmia Squalodon Kogia_pusilla Koristocetus Pliokogia 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=55;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9";
+	MATRIX
+	Zygorhiza_kochi               0000000000??000???0??000?00000200000000000?00000000?0?1
+	Cynthiacetus_peruvianus       0000000010??000???0??000?00000201000100000?00000?000001
+	Agorophius_pygmaeus           ??01000?01?00000000?0?010000020??????0???1000?0????????
+	Eudelphis_mortezelensis       101?001?11001??01?10??????1000?1????00?????????0???????
+	Zygophyseter_varolai          10110011210211011211?100102100?12?1110111100?00?2?011?1
+	Brygmophyseter_shigensis      ??1??10?21021201??1????110110?1????1101?1???0?????0??1?
+	Acro_deinodon                 201100101?03?20011110??02011001?2011101011??0?012011??2
+	Acro_robustus                 ??110?1?0202120?011101002021021???1?10?0110?0001??1?111
+	'Acrophyseter <sp. MUSM 2182>'00110100120????0??1????0?0110???????10?011?0??01??1????
+	Albicetus_oxymycterus         ?0?10200?????????????????????????????001??????????0????
+	Livyatan_melvillei            212110013202?1?0???0?1?1201?02??????1001110?0?1????1??1
+	Cozzuophyseter                101100101102110002110?01212101222011112012010?1011001?0
+	Orycterocetus_crocodilinus    101100001101110101101?01111100222011012??20?001011????1
+	Physeterula_dubusi            ??10?0??21021101??100??11?110?22????0121??000??0??01???
+	Idiorophus_patagonicus        00110300210????????0???11????1??????0121??0?0?????0???0
+	Diaphorocetus_poucheti        1?1?000?110?110??1?????11121001?????0????201??00???????
+	Placoziphius_duboisi          ?01200??110?110111?0??011?1100?2?????????20????0????0??
+	Aulophyseter_morricei         1010012?21021101021001022211012?201?01???200??1010????1
+	Physeter_macrocephalus        (0 1)022(0 1)02?31031101021001022211012220110121(0 1)20011101101021
+	Idiophyseter_merriami         ??????0?1?02110?1210???221????2????????????????????????
+	Thalassocetus_antwerpiensis   ?????0??0101101????01??11?110?1???????????011??????????
+	Aprixokogia_kelloggi          ??2?000?010011110210?11210111122?????????1110?10??????1
+	Scaphokogia_cochlearis        ?111111?020010110210?1121???113?211??????21???????????1
+	Praekogia_cedrosensis         ?????0??0210101???101?1?11102?12??????????111?10???????
+	Kogia_sima                    2122002?021010110(1 2)121110221021(1 2)2212101(0 1 2)1(0 1)11112102122?21
+	Kogia_breviceps               2122002?021010110(1 2)121110221021(1 2)2212101(0 1 2)1(0 1)21012102122?21
+	Nanokogia_isthmia             2111002-02101010??10110010102112????0?11?-111210??01??1
+	Squalodon                     0002020??1??00000?000001000000011010002002000?00?100??2
+	Kogia_pusilla                 ?011002??2??011??112?1000????02???????????11??????????1
+	Koristocetus                  2112000102130011??12?11?1011211??????????2100?1???????1
+	Pliokogia                     ??1?00?-02101011021???121????????????1????1?1?????????1
+
+;
+
+END;
+BEGIN SETS;
+	TAXPARTITION * UNTITLED  =  Outgroup :  1- 4, Ingroup :  5- 31;
+
+END;
+
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 55;
+
+END;
+
+BEGIN NOTES;
+
+	TEXT  TAXON = 1 TEXT = Zygorhiza;
+	TEXT  TAXON = 2 TEXT = Cynthiacetus;
+	TEXT  TAXON = 3 TEXT = Agorophius;
+	TEXT  TAXON = 4 TEXT = Eudelphis;
+	TEXT  TAXON = 5 TEXT = Zygophyseter;
+	TEXT  TAXON = 6 TEXT = Brygmophyseter;
+	TEXT  TAXON = 7 TEXT = 'Acro Deinodon^n';
+	TEXT  TAXON = 8 TEXT = Acro_Robustus;
+	TEXT  TAXON = 9 TEXT = Acrophyseter_sp._Cerro_los_Quesos_Pisco_Formation_F_Member_176_meters;
+	TEXT  TAXON = 11 TEXT = Livyatan;
+	TEXT  TAXON = 14 TEXT = Physeterula;
+	TEXT  TAXON = 15 TEXT = Idiorophus;
+	TEXT  TAXON = 16 TEXT = Diaphorocetus;
+	TEXT  TAXON = 17 TEXT = Placoziphius;
+	TEXT  TAXON = 20 TEXT = Idiophyseter;
+	TEXT  TAXON = 21 TEXT = Thalassocetus;
+	TEXT  TAXON = 22 TEXT = Aprixokogia;
+	TEXT  TAXON = 23 TEXT = Scaphokogia;
+	TEXT  TAXON = 24 TEXT = Praekogia;
+	TEXT  TAXON = 27 TEXT = Nanokogia;
+
+END;
+
+BEGIN LABELS;
+	TAXAGROUPLABEL Outgroup COLOR = (RGB 1 1 1) ;
+	TAXAGROUPLABEL Ingroup COLOR = (RGB 1 1 1) ;
+
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 55;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1630363153211;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 8568926134136819675;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 5281661958353084881;
+			mqVersion 360;
+			checksumv 0 3 1619384369 null  getNumChars 55 numChars 55 getNumTaxa 31 numTaxa 31   short true   bits 15   states 15   sumSquaresStatesOnly 5467.0 sumSquares 5467.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 202;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1383 915;
+			setLocation 502 34;
+			setFont Gadget;
+			setFontSize 16;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			showTaxa #8568926134136819675 #mesquite.lists.TaxonList.TaxonList;
+			tell It;
+				setTaxa #8568926134136819675;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.TaxonListCurrPartition.TaxonListCurrPartition;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1181 843;
+					setLocation 502 34;
+					setFont Gadget;
+					setFontSize 16;
+					getToolPalette;
+					tell It;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.ColorTaxon.ColorTaxon;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.lists.TaxonListAnnotPanel.TaxonListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.trees.BasicTreeWindowCoord.BasicTreeWindowCoord;
+		tell It;
+			makeTreeWindow #8568926134136819675  #mesquite.trees.BasicTreeWindowMaker.BasicTreeWindowMaker;
+			tell It;
+				suppressEPCResponse;
+				setTreeSource  #mesquite.trees.DefaultTrees.DefaultTrees;
+				setAssignedID 1194.1610923696915.5320330773831282382;
+				getTreeWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1181 843;
+					setLocation 502 34;
+					setFont Gadget;
+					setFontSize 16;
+					getToolPalette;
+					tell It;
+					endTell;
+					getTreeDrawCoordinator #mesquite.trees.BasicTreeDrawCoordinator.BasicTreeDrawCoordinator;
+				tell It;
+					suppress;
+					setTreeDrawer  #mesquite.trees.SquareLineTree.SquareLineTree;
+					tell It;
+						setNodeLocs #mesquite.trees.NodeLocsStandard.NodeLocsStandard;
+						tell It;
+							branchLengthsToggle off;
+							toggleScale on;
+							toggleBroadScale off;
+							toggleCenter on;
+							toggleEven on;
+							setFixedTaxonDistance 0;
+						endTell;
+						setEdgeWidth 4;
+						showEdgeLines on;
+						orientUp;
+					endTell;
+					setBackground White;
+					setBranchColor Black;
+					showNodeNumbers off;
+					showBranchColors on;
+					labelBranchLengths off;
+					centerBrLenLabels on;
+					showBrLensUnspecified on;
+					showBrLenLabelsOnTerminals on;
+					setBrLenLabelColor 0 0 255;
+					setNumBrLenDecimals 6;
+					setSelectedTaxonHighlightMode 1;
+					desuppress;
+					getEmployee #mesquite.trees.BasicDrawTaxonNames.BasicDrawTaxonNames;
+					tell It;
+						setColor Black;
+						setTaxonNameStyler  #mesquite.trees.NoColorForTaxon.NoColorForTaxon;
+						toggleShadePartition off;
+						toggleShowFootnotes on;
+						toggleNodeLabels on;
+						toggleCenterNodeNames off;
+						toggleShowNames on;
+						namesAngle ?;
+					endTell;
+				endTell;
+					setTreeNumber 1;
+					setDrawingSizeMode 0;
+					toggleLegendFloat on;
+					scale 0;
+					toggleTextOnTree off;
+					togglePrintName off;
+					showWindow;
+				endTell;
+				desuppressEPCResponse;
+				getEmployee #mesquite.trees.ColorBranches.ColorBranches;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.ornamental.BranchNotes.BranchNotes;
+				tell It;
+					setAlwaysOn off;
+				endTell;
+				getEmployee #mesquite.ornamental.ColorTreeByPartition.ColorTreeByPartition;
+				tell It;
+					colorByPartition off;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocDoubles.DrawTreeAssocDoubles;
+				tell It;
+					setOn on;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					setDigits 4;
+					setThreshold ?;
+					writeAsPercentage off;
+					toggleCentred off;
+					toggleHorizontal on;
+					toggleWhiteEdges on;
+					toggleShowOnTerminals on;
+					setFontSize 10;
+					setOffset 0  0;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocStrings.DrawTreeAssocStrings;
+				tell It;
+					setOn on;
+					toggleCentred on;
+					toggleHorizontal on;
+					setFontSize 10;
+					setOffset 0  0;
+					toggleShowOnTerminals on;
+				endTell;
+				getEmployee #mesquite.trees.TreeInfoValues.TreeInfoValues;
+				tell It;
+					panelOpen false;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #5281661958353084881 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 203;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1181 843;
+					setLocation 502 34;
+					setFont Gadget;
+					setFontSize 16;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

@@ -1,0 +1,618 @@
+#NEXUS
+[written Wed Dec 02 19:33:15 CST 2020 by Mesquite  version 3.61 (build 927) at EAS-392515.local/127.0.0.1]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=19;
+	TAXLABELS
+		Trimerorhachis_insignis Sclerocephalus_haeuseri Uranocentrodon_senekalensis Lydekkerina_huxleyi Siderops_kehli Batrachosuchus_watsoni Laidleria_gracilis Trucheosaurus Gerrothorax_pulcherrimus Plagiosuchus_pustuliferus Mastodonsaurus Aphaneramma Trematolestes_hagdorni Lyrocephaliscus_euri Rileymillerus_cosgriffi Almasaurus_habbazi Metoposaurus_diagnosticus Callistomordax_kugleri Dendrerpeton_acadianum
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Stereospondyli_Schoch_2008;
+	DIMENSIONS  NCHAR=108;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9 A B";
+	CHARSTATELABELS
+		1 Ornament_type,
+		2 Ornament_of_snout,
+		3 Ornament_ridges,
+		4 Ornament_zones,
+		5 Orbit_location,
+		6 Orbit_margin,
+		7 Lacrimal_presence,
+		8 Lacrimal_position,
+		9 Nasal_width,
+		10 Naris_position,
+		11 Lateral_line_sulci,
+		12 Infraorbital_flexure,
+		13 Supraorbital_sulcus,
+		14 Maxilla_nasal,
+		15 Maxilla_prefrontal,
+		16 Pre?_postfrontal,
+		17 Prefrontal_jugal,
+		18 Postorbital,
+		19 Postorbital_length,
+		20 Otic_notch,
+		21 Supratemporal,
+		22 Jugal_ventral_proc.,
+		23 Jugal_anterior_ext.,
+		24 Intertemporal,
+		25 Squamosal_tabular,
+		26 Squamosal_crest,
+		27 Tabular_horn,
+		28 Cheek_tabular_horn,
+		29 Occipital_flange,
+		30 Post?temporal_wind.,
+		31 Quadrate_occiput,
+		32 Paraquadrate_for.,
+		33 Marginal_teeth,
+		34 Tooth_bases,
+		35 Fangs_keeled,
+		36 Vomer_teeth,
+		37 Vomer_tusks,
+		38 Transver._row_vom.,
+		39 Parasph._shagreen,
+		40 Ectopter._tusks,
+		41 Ant._pal._opening,
+		42 Ant._pal._fossa,
+		43 Ant._pal._op._paired,
+		44 Basicranial_joint,
+		45 Basicranial_contact,
+		46 Parasphen._exocc.,
+		47 Carotid_foramina,
+		48 Parasphen._plate,
+		49 Cultrif._proc._base,
+		50 Cultrif._proc._ventr.,
+		51 Muscular_pockets,
+		52 Parasphenoid,
+		53 Pterygoid_vomer,
+		54 Pter._vent._ornam.,
+		55 Pterygoid_exocc.,
+		56 Pterygoid_stout,
+		57 Palatine_ramus,
+		58 Palatine_ectopt.,
+		59 Palatine_vomer,
+		60 Palate_downcurved,
+		61 Quadrate_medial,
+		62 Condyle,
+		63 Exoccipital,
+		64 Retroarticular_proc.,
+		65 Preglenoid_proc.,
+		66 Meckelian_window,
+		67 Symphyseal_teeth,
+		68 Presacral_count,
+		69 Transv._proc._orien.,
+		70 Transv._proc._length,
+		71 Neural_spine,
+		72 Intercent._shape,
+		73 Intercent._canal,
+		74 Intercent._vent._sur.,
+		75 Intercent._ant._con.,
+		76 Parap._intersegmen.,
+		77 Pleurocentrum,
+		78 Pleuroc._lat._surf.,
+		79 Ribs_shaft_shape,
+		80 Ribs_uncin._blades,
+		81 Ribs_uncin._spines,
+		82 Interclav._shape,
+		83 Interclav._length,
+		84 Interclav._pos._mar.,
+		85 Interclav._ant._mar.,
+		86 Interclav._clav.,
+		87 Scapula_glenoid,
+		88 Humerus_supin.,
+		89 Humerus_condyle,
+		90 Humerus_torsion,
+		91 Humerus_shape,
+		92 Ilium_ant._margin,
+		93 Ilium_dor._end,
+		94 Ilium_height,
+		95 Ilium_shaft,
+		96 Pubis,
+		97 Femur_fossa,
+		98 Gastral_squam.,
+		99 Dorsal_squam.,
+		100 Rib_cage,
+		101 Cranial_flattening,
+		102 Basicranium_shortened,
+		103 Clavicle_height,
+		104 'Naso-frontal suture',
+		105 Ornament,
+		106 Postorbital,
+		107 Loss_of_postfrontal,
+		108 Tabular_horn ;
+	MATRIX
+	Trimerorhachis_insignis      0000000000000000000000001011001100010100111000000000000000000001000100000000000000000010010000000000????????
+	Sclerocephalus_haeuseri      00000000001??10010000001000000010000000000?000100000000000000000000000000000001100000000100000000000????????
+	Uranocentrodon_senekalensis  000001000000010010000101010000010(0 1)00010001?100100011000000000101010110000000000000101001110000011000????????
+	Lydekkerina_huxleyi          0000010000(0 1)(0 1)0100100001011101001111010100110100100011110000000101010?10000000000000101000110000011000????????
+	Siderops_kehli               000011101100?11011111101110101211111111111011010(0 1)020101111110101010010000000001000101011010011001000????????
+	Batrachosuchus_watsoni       000011101100?110111111011111012111011111110111111020111111110101????????????????????????????????????????????
+	Laidleria_gracilis           000011100000?111110111011?1102211101110111?1101110201111111001010??210?100001?000??????1110??????011????????
+	Trucheosaurus                01001110000??11011000101110100111101111011011010102010110010010?0?????????????????????????0???????00????????
+	Gerrothorax_pulcherrimus     1000010010000101000111011?110221110111(0 1)10101101010201011111001010002100200011?0001011100000011011011????????
+	Plagiosuchus_pustuliferus    1000010010000101010111011?110221110111110101101010201011111001010?02100200011?0001111111000000001011????????
+	Mastodonsaurus               010001000001110110000101110100111101011111011011001010100010010102011101000001110010110(0 1)010000001100????????
+	Aphaneramma                  01111000000101?011100101110100111101000011111111012010100110010102??10?010000010?0201110011?00?0?100????????
+	Trematolestes_hagdorni       0111110100010110111001111101001111010000111111110120101001100101020010101000001010201111011100101100????????
+	Lyrocephaliscus_euri         00111000000111?011100101110100111101110(0 1)1111111101201111011001010???10?010000010?01012??0???00?0?100????????
+	Rileymillerus_cosgriffi      00011101??1??11001110?111011002111111?11???11?1110201010?1?0011100?????????????????????????????0??00????????
+	Almasaurus_habbazi           0011110?0101111001100011110100211111101111111111012010101110011102??10?01100001000101200010?00?01100????????
+	Metoposaurus_diagnosticus    001111011101111001100011110111211111101011111111102011101110111112111101111101100010120(0 1)010000101100????????
+	Callistomordax_kugleri       001111011101011001100111110111211111(0 1)11?1111111101201(0 1)10111011111211101(0 1)1110001010101201010100101100????????
+	Dendrerpeton_acadianum       000000000010000000000000000000000000000000?000000000000000000000000000000000000000000000000000000000????????
+
+;
+
+END;
+BEGIN MacCladeStart;
+	Extended;
+
+END;
+BEGIN ASSUMPTIONS;
+	OPTIONS DEFTYPE = unord PolyTcount = MINSTEPS;
+	TYPESET * UNTITLED   =  unord:  1- 108;
+
+	WTSET * UNTITLED  =  1: 1 -  108 ;
+
+END;
+
+BEGIN TREES;
+	Title 'Trees from "Stereospondyli_Schoch_2008.nex"';
+	ID 0176262b2b3116;
+	LINK Taxa = Taxa;
+	TRANSLATE
+[0] 		1 Trimerorhachis_insignis,
+[1] 		2 Sclerocephalus_haeuseri,
+[2] 		3 Uranocentrodon_senekalensis,
+[3] 		4 Lydekkerina_huxleyi,
+[4] 		5 Siderops_kehli,
+[5] 		6 Batrachosuchus_watsoni,
+[6] 		7 Laidleria_gracilis,
+[7] 		8 Trucheosaurus,
+[8] 		9 Gerrothorax_pulcherrimus,
+[9] 		10 Plagiosuchus_pustuliferus,
+[10] 		11 Mastodonsaurus,
+[11] 		12 Aphaneramma,
+[12] 		13 Trematolestes_hagdorni,
+[13] 		14 Lyrocephaliscus_euri,
+[14] 		15 Rileymillerus_cosgriffi,
+[15] 		16 Almasaurus_habbazi,
+[16] 		17 Metoposaurus_diagnosticus,
+[17] 		18 Callistomordax_kugleri,
+[18] 		19 Dendrerpeton_acadianum;
+	TREE Default_ladder = (19,(1,(2,(3,(4,(5,(6,(7,(8,(9,(10,(11,(12,(13,(14,(15,(16,(17,18))))))))))))))))));
+	TREE Default_ladder = (19,(1,(2,(3,(4,(5,(6,(7,(8,(9,(10,(11,(12,(13,(14,(15,(16,(17,18))))))))))))))))));
+	TREE Default_ladder = (19,(1,(2,(3,(4,(5,(6,(7,(8,(9,(10,(11,(12,(13,(14,(15,(16,(17,18))))))))))))))))));
+	TREE Default_ladder = (19,(1,(2,(3,(4,(5,(6,(7,(8,(9,(10,(11,(12,(13,(14,(15,(16,(17,18))))))))))))))))));
+	TREE UNTITLED = (19,(2,(1,(3,(4,((((5,6),(7,(9,10))),8),(11,((12,13),(14,((15,16),(17,18)))))))))));
+
+END;
+
+
+BEGIN NOTES;
+
+	TEXT  TAXON = 1 TEXT = 'Gzhellian - Asselian';
+	TEXT  TAXON = 2 TEXT = 'Gzhellian - Asselian';
+	TEXT  TAXON = 3 TEXT = 'Rhinesuchidae; Guadalupian';
+	TEXT  TAXON = 4 TEXT = Asselian;
+	TEXT  TAXON = 5 TEXT = 'Chigutisauridae; Carinian - Hettangian';
+	TEXT  TAXON = 6 TEXT = 'Batrachosuchus watsoni; E. Induan - Olenkian';
+	TEXT  TAXON = 7 TEXT = Olenkian;
+	TEXT  TAXON = 8 TEXT = 'Trucheosaurus_+_Deltasaurus_=_Rhytidosteidae; Lopingian to Olenkian';
+	TEXT  TAXON = 9 TEXT = 'Ladinian - Norian';
+	TEXT  TAXON = 10 TEXT = Ladinian;
+	TEXT  TAXON = 11 TEXT = 'Capitosauroidea; Olenkian to Hettangian';
+	TEXT  TAXON = 12 TEXT = Early_to_Late_Induan;
+	TEXT  TAXON = 13 TEXT = Ladinian;
+	TEXT  TAXON = 14 TEXT = Late_Induan;
+	TEXT  TAXON = 15 TEXT = Norian;
+	TEXT  TAXON = 16 TEXT = Carnian;
+	TEXT  TAXON = 17 TEXT = 'Metoposauridae; Carnian to Norian';
+	TEXT  TAXON = 18 TEXT = Ladinian;
+	TEXT  TAXON = 19 TEXT = Westphalian;
+
+END;
+
+BEGIN MacClade;
+	Version 4.0 87;
+	LastModified -809809409;
+	FileSettings editor '1' '1' '109' '1';
+	Singles 110;
+	Editor 00011001111111100100010010 '0' '24' Gadget '12' '188' '1' all;
+	EditorPosition '44' '11' '478' '1629';
+	TreeWindowPosition '44' '53' '813' '975';
+	ListWindow Characters open Gadget '12' '356' '61' '355' '419' 000;
+	ListWindow Taxa closed Gadget '12' '50' '10' '273' '278' 100000000;
+	ListWindow Trees closed Gadget '12' '50' '25' '134' '387';
+	ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow ExSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow TaxSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	TextWindow AboutFile '50' '25' '280' '445' Gadget '12' ( normal ) 1;
+	ChartWindowPosition '50' '30' '688' '964';
+	StateNamesSymbols closed Gadget '12' '16' '523' '179' '305' '299';
+	WindowOrder Data Text AboutFile List Characters;
+	OtherSymbols & / 00 ? -;
+	Correlation '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile '2';
+	ExportHTML _ MOSS '100' 110000;
+	PrettyPrint 10;
+	EditorToolsPosition '771' '46' '115' '165';
+	TreeToolsPosition '716' '9' '126' '138';
+	TreeWindowProgram 00;
+	TreeWindow 0000;
+	Continuous '0' '3' 1;
+	Calculations 1000101;
+	SummaryMode '0' '0' 0;
+	Charts Arial '12' ( normal ) 0010;
+	NexusOptions '0' '0' '50' 001011001;
+	TipLabel '1';
+	TreeFont Gadget '12' ( normal );
+	TreeShape 1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax '0';
+	TraceAllChangesDisplay '1' 1;
+	BarsOnBranchesDisplay '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation '3' 1;
+	PrintTree 10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Gadget '12' ( normal ) Geneva '10' ( normal ) Gadget '12' ( normal ) Gadget '12' ( normal ) Gadget '12' ( bold ) Gadget '12' ( normal ) Gadget '12' ( normal ) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '0' '-1109' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 00;
+	TreeTools '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools '1';
+
+END;
+BEGIN LABELS;
+	TAXAGROUPLABEL Outgroup COLOR = (RGB 1 1 1) ;
+	TAXAGROUPLABEL Ingroup COLOR = (RGB 1 1 1) ;
+
+
+END;
+
+BEGIN SETS;
+	TAXPARTITION * UNTITLED  =  Ingroup :  1- 18, Outgroup :  19;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 108;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1606959195667;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 3071737235848320888;
+			tell It;
+				setDefaultOrder  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 0;
+				attachments ;
+			endTell;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 3208770312996457164;
+			mqVersion 361;
+			checksumv 0 3 3616591058 null  getNumChars 108 numChars 108 getNumTaxa 19 numTaxa 19   short false   bits 7   states 7   sumSquaresStatesOnly 4676.0 sumSquares 4676.0 longCompressibleToShort true usingShortMatrix false   NumFiles 1 NumMatrices 1 errorReportedDuringRun;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1550 585;
+			setLocation 8 23;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			showTaxa #3071737235848320888 #mesquite.lists.TaxonList.TaxonList;
+			tell It;
+				setTaxa #3071737235848320888;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.TaxonListCurrPartition.TaxonListCurrPartition;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1450 513;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 12;
+					getToolPalette;
+					tell It;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.ColorTaxon.ColorTaxon;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.lists.TaxonListAnnotPanel.TaxonListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.trees.BasicTreeWindowCoord.BasicTreeWindowCoord;
+		tell It;
+			makeTreeWindow #3071737235848320888  #mesquite.trees.BasicTreeWindowMaker.BasicTreeWindowMaker;
+			tell It;
+				suppressEPCResponse;
+				setTreeSource  #mesquite.trees.StoredTrees.StoredTrees;
+				tell It;
+					setTreeBlock 1;
+					setTreeBlockID 0176262b2b3116;
+					toggleUseWeights off;
+				endTell;
+				setAssignedID 2975.1606958352973.1830325355261533998;
+				getTreeWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1450 513;
+					setLocation 8 23;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.trees.SearchTreeToolAssistant.SearchTreeToolExtra.randomlyRotate;
+					endTell;
+					setActive;
+					getTreeDrawCoordinator #mesquite.trees.BasicTreeDrawCoordinator.BasicTreeDrawCoordinator;
+				tell It;
+					suppress;
+					setTreeDrawer  #mesquite.trees.SquareLineTree.SquareLineTree;
+					tell It;
+						setNodeLocs #mesquite.trees.NodeLocsStandard.NodeLocsStandard;
+						tell It;
+							branchLengthsToggle off;
+							toggleScale on;
+							toggleBroadScale off;
+							toggleCenter on;
+							toggleEven on;
+							setFixedTaxonDistance 0;
+						endTell;
+						setEdgeWidth 4;
+						showEdgeLines on;
+						orientRight;
+					endTell;
+					setBackground White;
+					setBranchColor Black;
+					showNodeNumbers off;
+					showBranchColors on;
+					labelBranchLengths off;
+					centerBrLenLabels on;
+					showBrLensUnspecified on;
+					showBrLenLabelsOnTerminals on;
+					setBrLenLabelColor 0 0 255;
+					setNumBrLenDecimals 6;
+					setSelectedTaxonHighlightMode 1;
+					desuppress;
+					getEmployee #mesquite.trees.BasicDrawTaxonNames.BasicDrawTaxonNames;
+					tell It;
+						setFont Gadget;
+						setFontSize 12;
+						setColor Black;
+						setTaxonNameStyler  #mesquite.trees.NoColorForTaxon.NoColorForTaxon;
+						toggleShadePartition off;
+						toggleShowFootnotes on;
+						toggleNodeLabels on;
+						toggleCenterNodeNames off;
+						toggleShowNames on;
+						namesAngle ?;
+					endTell;
+				endTell;
+					setTreeNumber 1;
+					setTree '(19,(2,(1,((3,4),((8,((5,6),(7,(9,10)))),(11,((12,13),(14,((15,16),(17,18))))))))))<> <> <  setBetweenBits = selected >;';
+					setDrawingSizeMode 0;
+					toggleLegendFloat on;
+					scale 0;
+					toggleTextOnTree off;
+					togglePrintName off;
+					showWindow;
+				endTell;
+				desuppressEPCResponse;
+				getEmployee #mesquite.trees.ColorBranches.ColorBranches;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.trees.SearchTreeToolAssistant.SearchTreeToolAssistant;
+				tell It;
+					getEmployee #mesquite.trees.TreeValueUsingMatrix.TreeValueUsingMatrix;
+					tell It;
+						getEmployee #mesquite.parsimony.TreelengthForMatrix.TreelengthForMatrix;
+						tell It;
+							getEmployee #mesquite.parsimony.ParsCharSteps.ParsCharSteps;
+							tell It;
+								setModelSource  #mesquite.parsimony.CurrentParsModels.CurrentParsModels;
+							endTell;
+						endTell;
+						getEmployee #mesquite.charMatrices.CharMatrixCoordIndep.CharMatrixCoordIndep;
+						tell It;
+							setCharacterSource #mesquite.charMatrices.StoredMatrices.StoredMatrices;
+							tell It;
+								setDataSet #3208770312996457164;
+							endTell;
+						endTell;
+					endTell;
+				endTell;
+				getEmployee #mesquite.ornamental.BranchNotes.BranchNotes;
+				tell It;
+					setAlwaysOn off;
+				endTell;
+				getEmployee #mesquite.ornamental.ColorTreeByPartition.ColorTreeByPartition;
+				tell It;
+					colorByPartition off;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocDoubles.DrawTreeAssocDoubles;
+				tell It;
+					setOn on;
+					toggleShow consensusFrequency;
+					toggleShow bootstrapFrequency;
+					toggleShow posteriorProbability;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					setDigits 4;
+					setThreshold ?;
+					writeAsPercentage off;
+					toggleCentred off;
+					toggleHorizontal on;
+					toggleWhiteEdges on;
+					toggleShowOnTerminals on;
+					setFontSize 10;
+					setOffset 0  0;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocStrings.DrawTreeAssocStrings;
+				tell It;
+					setOn on;
+					toggleCentred on;
+					toggleHorizontal on;
+					setFontSize 10;
+					setOffset 0  0;
+					toggleShowOnTerminals on;
+				endTell;
+				getEmployee #mesquite.trees.TreeInfoValues.TreeInfoValues;
+				tell It;
+					panelOpen false;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #3208770312996457164 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 163;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1450 513;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;

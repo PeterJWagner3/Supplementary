@@ -1,0 +1,149 @@
+#NEXUS
+[MacClade 4.08 registered to Peter Wagner, Field Museum of Natural History]
+
+
+BEGIN MacCladeStart;
+	Extended;
+END;
+
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=21 NCHAR=37;
+
+[!Boisserie, J.-R., F. Lihoreau, and M. Brunet.  2005.  Origins of Hippopotamidae (Mammalia, Cetartiodactyla): towards resolution.  Zoologica Scripta 34:119-143.]
+	FORMAT SYMBOLS= " 0 1 2 3 4 5 6 7 8 9 A B" MISSING=? GAP=- ;
+
+MATRIX
+[                                    10        20        30        ]
+[                                    .         .         .         ]
+
+Diacodexis_pakistanensis    ??10000002001001000012000000001?01000
+Cebochoerus_lacustris       001000001000100100000(01)000001101?010??
+Pecari_tajacu               100000001(12)110200022110111010011011001
+Tayassu_pecari              210000001(12)111200022110111010011011001
+Catagonus_wagneri           101000000(12)110200022110111010011011301
+Doliochoerus_quercyi        0?1001001?11?2?0022??00?(01)110011?(01)100?
+Xenohyus_venitor            ?????????????????????00?(01)110011?110??
+Kenyapotamus                (12)?????????????????????????1?1?0?0111?
+Choeropsis_liberiensis      20110000011101000111012021101100(02)0110
+Saotherium_mingoz           20110001?1111110011101202110110000110
+Archaeopotamus_harvardi     20110001?1110110011101202110110000110
+Hexaprotodon_sivalensis     20110112?1111112111101202110110000110
+Hippopotamus_amphibius      2011111201110112111101202110110020110
+Libycosaurus_petrocchiii    21011112?1110112211101202010010001210
+Merycopotamus_dissimilis    2101111(12)1(01)110112111101202110010001210
+Brachyodus_aequatorialis    20010001?01111100111010?1000000?01210
+Elomeryx_armatus            11110101101111000111020021100100012?0
+Anthracotherium             0?1??10??0?1??0201???10?2110000001110
+Microbunodon_minimum        1011000100011100012101101110001001210
+Anthracokeryx_ulnifer       10?1000(01)?0011100012112000110001?012??
+Siamotherium_krabiense      ??100001?0???????????20?0?00001?01110
+;
+END;
+
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+	TYPESET * UNTITLED  = unord: 1-37;
+	WTSET * UNTITLED  = 1: 1-37;
+END;
+
+
+BEGIN TREES;
+
+	TRANSLATE
+		1	Diacodexis_pakistanensis,
+		2	Cebochoerus_lacustris,
+		3	Pecari_tajacu,
+		4	Tayassu_pecari,
+		5	Catagonus_wagneri,
+		6	Doliochoerus_quercyi,
+		7	Xenohyus_venitor,
+		8	Kenyapotamus,
+		9	Choeropsis_liberiensis,
+		10	Saotherium_mingoz,
+		11	Archaeopotamus_harvardi,
+		12	Hexaprotodon_sivalensis,
+		13	Hippopotamus_amphibius,
+		14	Libycosaurus_petrocchiii,
+		15	Merycopotamus_dissimilis,
+		16	Brachyodus_aequatorialis,
+		17	Elomeryx_armatus,
+		18	Anthracotherium,
+		19	Microbunodon_minimum,
+		20	Anthracokeryx_ulnifer,
+		21	Siamotherium_krabiense
+	;
+	TREE  * UNTITLED =  [&R] (1,(2,(((6,7),(5,(3,4))),(21,(20,(19,(16,((17,18),(8,(9,((10,11),(12,(13,(14,15))))))))))))));
+
+END;
+
+
+BEGIN NOTES;
+
+	TEXT  TAXON=11 TEXT= 'Nov Gen. "A" harvardi';
+	TEXT  TAXON=10 TEXT= 'Nov Gen. "B" mingoz';
+END;
+
+
+BEGIN MacClade;
+	Version 4.0  87;
+	LastModified -849529942;
+	FileSettings editor  '1' '1' '38' '1';
+	Singles 110;
+	Editor 00011001111111100100010010 '0' '24' Gadget '12' '202' '1' all;
+	EditorPosition  '46' '6' '546' '515';
+	TreeWindowPosition  '47' '153' '736' '1212';
+	ListWindow Characters closed Gadget '12' '50' '10' '270' '374' 000;
+	ListWindow Taxa closed Geneva '9' '50' '10' '241' '296' 100000000;
+	ListWindow Trees closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow ExSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow TaxSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490' ;
+	ChartWindowPosition  '52' '30' '686' '964';
+	StateNamesSymbols closed Gadget '12' '12' '611' '34' '203' '220';
+	WindowOrder  Data;
+	OtherSymbols &/ 00 ?-;
+	Correlation  '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile  '2';
+	ExportHTML _ MOSS  '100' 110000;
+	PrettyPrint 10;
+	EditorToolsPosition  '508' '918' '115' '165';
+	TreeToolsPosition  '716' '9' '126' '138';
+	TreeWindowProgram 10;
+	TreeWindow 0000;
+	Continuous  '0' '3' 1;
+	Calculations 1000101;
+	SummaryMode  '0' '0' 0;
+	Charts  Arial '12' (normal) 0010;
+	NexusOptions  '0' '0' '50' 001011001;
+	TipLabel  '1';
+	TreeFont  Gadget '12' (normal);
+	TreeShape  1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors  '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth  '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax  '0';
+	TraceAllChangesDisplay  '1' 1;
+	BarsOnBranchesDisplay  '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation  '3' 1;
+	PrintTree  10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Geneva '9' (normal) Geneva '10' (normal) Geneva '9' (normal) Geneva '9' (normal) Geneva '9' (bold ) Geneva '9' (normal) Geneva '9' (normal) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '0' '0' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 00;
+	TreeTools  '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools  '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign  '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools  '1';
+END;

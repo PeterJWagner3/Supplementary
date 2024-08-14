@@ -1,0 +1,171 @@
+#NEXUS
+[MacClade 4.05 registered to Peter Wagner, Field Museum of Natural History]
+
+
+BEGIN MacCladeStart;
+	Extended;
+END;
+
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=34 NCHAR=52;
+
+[!Williamson, T. E. and T. D. Carr. 2007. Bomburia and Ellipsodon (Mammalia: Mioclaenidae) from the Early Paleocene of New Mexico. Journal of Paleontology 81:966-985.]
+	FORMAT SYMBOLS= " 0 1 2 3 4 5 6 7 8 9 A" MISSING=? GAP=- ;
+
+MATRIX
+[                                        10        20        30        40        50   ]
+[                                        .         .         .         .         .    ]
+
+Aspanlestes_aptap               ??0???1000000100?00000000000000000000000010000000000
+Parazhelestes_minor             ??0?1010000001001000000000000000000000000?????0????0
+Eoungulatum_kudukensis          ??0???1000000000?00000000000000000000000010000000000
+Protungulatum_donnae            001?000000000001010110110012100011100000000110010000
+Oxyprimus_galadrielae           0010000000000001000110110012100011100000000110010000
+Baioconodon_nordicum            0010000000000101010110110012100011100000000110010001
+Loxolophus_hyattianus           0010000000010002000110130002100010300001000011010101
+Mimotricentes_subtrigonus       0011001000110001000110130002100011300001100010010001
+Chriacus_pelvidens              0010001010010001000110130002210011300000100010010000
+Maiorana_noctiluca              0010000000000100010110110012200111100101000110010000
+Mimatuta_minuial                0010000000000000010110110012200111100101000110010000
+Valenia_wilsoni                 ??1?0000?1000001000001101100111000101000001002110000
+Promioclaenus_acolytes          1110100101010100101110130021100010101000111211110100
+Promioclaenus_lemuroides        1110100100010100101110130021100010101000111211110101
+Tiznatzinia_vanderhoofi         ??1??????????????????????????????0211000111211111100
+Choeroclaenus_turgidunculus     1110??0001011101000110130012100000121001111210010100
+Mioclaenus_turgidus             1110111010011102101110131121100010122000101211110101
+Platymastus_palantir            ???????????001011001101311111000???????????????????0
+Bomburia_prisca                 ??1?1000000??1???????0??????????10201000111211100100
+Ellipsodon_inaequidens          ??11101000010112202110131121100010221000122211100201
+Ellipsodon_grangeri             ??11?01?00010112202110131121100010221000122211100201
+Ellipsodon_yotankae             ???????????101122021101311211000?02?1000122211100201
+Protoselene_opisthacus          ??10111001011000000110120012100010201001101210011000
+'"Litaletes" sternbergi'        ??1???0010?101001011101300111000?????000101211100100
+Litaletes_disjunctus            1110011110010101000110111112100011210000101210011000
+Litomylus_dissentaneus          ??10011???0101000001101111121000?1100001101210011000
+Haplaletes_disceptatrix         ??10??1000010101000110111112100001200001101210010100
+Orthaspidotherium_edwardsi      0010011110011100010111111000000011220002020300111011
+Pleuraspidotherium_aumonieri    001?022110011000010111111000000011300002020300101011
+Molinodus_suarezi               ??1?000000010101011110120000001011101010121320001210
+Tiuclaenus_minutus              1010000000010101011110130000001010101010121320001010
+Pucanodus_gagnieri              1010000000010110011110130000001010101010121320000010
+Abdounodus_hamdii               ????????????????????????????????????0????10????0??10
+Simpsonodus_chacensis           ??1?000001210001000110130000000012300000100310011000
+;
+END;
+
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+	TYPESET * UNTITLED  = unord: 1-52;
+	WTSET * UNTITLED  = 1: 1-52;
+END;
+
+
+BEGIN TREES;
+
+	TRANSLATE
+		1	Aspanlestes_aptap,
+		2	Parazhelestes_minor,
+		3	Eoungulatum_kudukensis,
+		4	Protungulatum_donnae,
+		5	Oxyprimus_galadrielae,
+		6	Baioconodon_nordicum,
+		7	Loxolophus_hyattianus,
+		8	Mimotricentes_subtrigonus,
+		9	Chriacus_pelvidens,
+		10	Maiorana_noctiluca,
+		11	Mimatuta_minuial,
+		12	Valenia_wilsoni,
+		13	Promioclaenus_acolytes,
+		14	Promioclaenus_lemuroides,
+		15	Tiznatzinia_vanderhoofi,
+		16	Choeroclaenus_turgidunculus,
+		17	Mioclaenus_turgidus,
+		18	Platymastus_palantir,
+		19	Bomburia_prisca,
+		20	Ellipsodon_inaequidens,
+		21	Ellipsodon_grangeri,
+		22	Ellipsodon_yotankae,
+		23	Protoselene_opisthacus,
+		24	'"Litaletes" sternbergi',
+		25	Litaletes_disjunctus,
+		26	Litomylus_dissentaneus,
+		27	Haplaletes_disceptatrix,
+		28	Orthaspidotherium_edwardsi,
+		29	Pleuraspidotherium_aumonieri,
+		30	Molinodus_suarezi,
+		31	Tiuclaenus_minutus,
+		32	Pucanodus_gagnieri,
+		33	Abdounodus_hamdii,
+		34	Simpsonodus_chacensis
+	;
+	TREE  * UNTITLED =  [&R] (3,((1,2),(12,((5,(4,(6,(10,11)))),((34,(33,((28,29),(30,(31,32))))),(9,((7,8),((18,(27,(25,26))),(23,(16,((13,14),(15,(19,(24,(17,(22,(20,21)))))))))))))))));
+
+END;
+
+
+BEGIN MacClade;
+	Version 4.0  84;
+	LastModified -907861972;
+	FileSettings treewindow  '1' '1' '53' '1';
+	Singles 010;
+	Editor 0001100111111110010001001 '0' '24' Gadget '12' '202' '1' all;
+	EditorPosition  '44' '6' '966' '1630';
+	TreeWindowPosition  '44' '49' '906' '1353';
+	ListWindow Characters open Gadget '12' '50' '25' '338' '422' 000;
+	ListWindow Taxa open Gadget '12' '50' '10' '644' '386' 100000;
+	ListWindow Trees closed Gadget '9' '50' '10' '134' '387' ;
+	ListWindow TypeSets closed Gadget '9' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '9' '50' '10' '276' '490' ;
+	ListWindow ExSets closed Gadget '9' '50' '10' '276' '490' ;
+	ListWindow CharSets closed Gadget '9' '50' '10' '276' '490' ;
+	ListWindow TaxSets closed Gadget '9' '50' '10' '276' '490' ;
+	ListWindow CharPartitions closed Gadget '9' '50' '10' '276' '490' ;
+	ListWindow CharPartNames closed Gadget '9' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '9' '50' '10' '276' '490' ;
+	TextWindow AboutFile  '50' '25' '280' '445' Gadget '12' (normal) 1 ;
+	ChartWindowPosition  '52' '30' '686' '964';
+	StateNamesSymbols closed Gadget '9' '10' '127' '1049' '203' '220';
+	WindowOrder  Tree List Taxa Text AboutFile List Characters;
+	OtherSymbols &/ 00 ?-;
+	Correlation  '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile  '2';
+	ExportHTML _ MOSS  '100' 110000;
+	PrettyPrint 10;
+	CharLegendPosition  '777' '1301' '154' '85';
+	TreeLegendPosition  '867' '1203' '64' '93';
+	EditorToolsPosition  '771' '46' '115' '165';
+	TreeToolsPosition  '866' '9' '126' '138';
+	TreeWindowProgram 10;
+	TreeWindow 0000;
+	Continuous  '0' '3' 1;
+	Calculations 0000001;
+	SummaryMode  '0' '0' 0;
+	Charts  Gadget '9' (normal) 0010;
+	NexusOptions  '0' '0' '50' 001011001;
+	TipLabel  '1';
+	TreeFont  Gadget '12' (normal);
+	TreeShape  1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors  '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth  '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax  '0';
+	TraceAllChangesDisplay  '1' 1;
+	BarsOnBranchesDisplay  '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation  '3' 1;
+	PrintTree  10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Gadget '9' (normal) Gadget '10' (normal) Gadget '9' (normal) Gadget '9' (normal) Gadget '9' (bold ) Gadget '9' (normal) Gadget '9' (normal) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '0' '0' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 00;
+	TreeTools  '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools  '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign  '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools  '1';
+END;
