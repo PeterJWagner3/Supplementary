@@ -1,0 +1,19 @@
+#NEXUS
+[MacClade 4.08 registered to Peter Wagner, Field Museum of Natural History]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=9 NCHAR=12;
+	[!Adrain J.M., McAdams N.E.B. 2012. The Lower Ordovician (upper Floian) bathyurid trilobite Aponileus Hu, with species from Utah, Texas, and Greenland. Zootaxa, 3293:1–67. doi: 10.11646/ZOOTAXA.3293.1.1.]
+	FORMAT SYMBOLS= " 0 1 2 3 4 5 6 7 8 9" MISSING=? GAP=- ;
+MATRIX
+Aponileus_laikaae				000000010001
+Aponileus_latus					???11?120112
+Aponileus_aasei					11011?120112
+Aponileusglaber					?1??????0112
+Aponileus_belkaae				100010131101
+Aponileus_strelkaae			100010131101
+Aponileus_ugolekae			111011130111
+'? Aponileus veterokae'	111011130211
+Strigigenalis						000000000000
+;
+end;

@@ -1,0 +1,450 @@
+#NEXUS
+[written Fri May 08 11:09:57 CDT 2020 by Mesquite  version 3.6 (build 917) at EAS-6BCEC7.local/10.0.1.16 (Thompson JR, Hu S-x, Zhang Q-Y, Petsios E, Cotton LJ, Huang J-Y, Zhou C-y,WenW, Bottjer DJ. 2018 A new stem group echinoid from the Triassic of China leads to a revised macroevolutionary history of echinoids during the end-Permian mass extinction. Royal Society Open Science 5: 171548. 10.1098/rsos.171548)]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=13;
+	TAXLABELS
+		Parabolinella_prolata Parabolinella_tumifrons Cloacaspis_senilis Cloacaspis_tesselata Cloacaspis_ekphymosa Cloacaspis_dejecta Balnibarbi_ceryx_ceryx Balnibarbi_ceryx_anataphra Balnibarbi_pulvurea Balnibarbi_tholia Balnibarbi_erugata Balnibarbi_sombrero Balnibarbi_scimitar 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  'Matrix in file "Balnibarbinae_Hopkins_2019.nex"';
+	DIMENSIONS  NCHAR=45;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4";
+	CHARSTATELABELS 
+		1 Width_of_anterior_border_relative_to_frontal_area. /  'Narrow (>0.2, <0.3)' 'Wide (>0.3)' 'Very narrow (<0.2)',
+		2 Anterior_border_pits /  Absent Present,
+		3 Number_of_anterior_border_pits /  '20-25' '25-35' '35-45',
+		4 Number_of_rows_of_anterior_border_pits /  One Two,
+		5 Expression_of_anterior_border_pits /  Visible_on_external_surface Visible_only_on_internal_mold,
+		6 Granulation_on_adults /  Absent 'On preglabellar/frontal area' On_furrows_only Everywhere,
+		7 'Caeca on preglabellar field/frontal area' /  Absent Present,
+		8 Terrace_lines_on_preglabellar_field /  Absent 'On preglabellar field/frontal area' On_frontal_area_and_glabella,
+		9 Degree_of_divergence_of_anterior_facial_suture /  'Low (20 degrees)' 'Moderate (40 degrees)' 'High (>55 degrees)',
+		10 Shape_of_anterior_border_of_cranidium /  Curved_smoothly Comes_to_point_at_sagittal_axis,
+		11 Maximum_sagittal_width_of_preglabellar_field /  'At sagittal axis (medially)' At_lateral_edge 'Both medially and antero-laterally (e.g., Balnibarni ceryx)',
+		12 Curvature_of_preglabellar_field /  Flat_or_sloping_downward_smoothly 'Convex (e.g., Balnibarbi tholia)',
+		13 Bulge_in_preglabellar_field_at_sagittal_axis /  Absent Present,
+		14 Size_of_frontal_area_relative_to_cranidial_length /  'Short (<0.15)' 'Wide (>0.15, <0.25)' 'Very wide (>0.25)',
+		15 Pitting_in_preglabellar_furrow /  Absent 'Present (e.g., some Balnibarbi pulvurea?)',
+		16 Medial_indent_in_preglabellar_furrow /  Absent Present,
+		17 Placement_of_anterior_end_of_palpebral_lobe_relative_to_glabellar_furrows /  'Between 4P and 3P (4S and 3S)' 'Between 3P and 2P (3S and 2S)',
+		18 Placement_of_posterior_end_of_palpebral_lobe_relative_to_glabellar_furrows /  'Between 2P and 1P (2S and 1S)' 'Between 1P and occipital furrow (1S)' Posterior_to_occipital_furrow,
+		19 Size_of_palpebral_lobes_relative_to_cranidial_length /  'Very short (<0.25)' 'Short (<0.35 >0.25)' 'Long (>0.35)',
+		20 Forward_curvature_of_palpebral_lobe /  Absent Present,
+		21 Width_of_palpebral_lobes_relative_to_frontal_area /  Narrower Even Wider,
+		22 'Shape of postocular fixigena (posterior limbs)' /  'strap-like (long)' 'trapezoidal (extends laterally then postero-laterally)' 'triangular (short)',
+		23 Shape_of_S2 /  Straight Deflected_or_curved_midway,
+		24 Shape_of_S3 /  'Straight, reaches axial furrow' 'Straight, long, almost reaches axial furrow' 'Marooned (short, straight, does not reach axial furrow)',
+		25 Shape_of_S4 /  Straight Marooned Not_expressed,
+		26 Bifuracting_glabellar_furrows_in_adults /  Absent Present,
+		27 Bifurcating_glabellar_furrows_in_juveniles /  Absent Present,
+		28 Frontal_lobe_bisected_by_furrow /  Absent Present,
+		29 'Post-palpebral furrow in adults' /  Absent Present,
+		30 'Post-palpebral furrow in juveniles' /  Absent Present,
+		31 Articulating_socket_in_posterior_margin /  Absent 'Present (e.g., Balnibarni ceryx)',
+		32 Bifurcation_in_occipital_furrow /  Absent Present,
+		33 Length_of_genal_spine /  'Short (=<length of cranidium)' 'Long (1.5 x length of cranidium)' 'Very long (=>2 x length of cranidium)',
+		34 'Genal angle/advanced genal spine' /  'Absent (posterior border continues laterally)' 'Present (posterior border curves forward to meet advanced genal spine)',
+		35 Genal_vein_from_eye_to_margin /  Absent Present,
+		36 Genal_ridge_around_eye /  Absent Present,
+		37 Number_of_axial_rings_on_pygidium /  Four Three Two,
+		38 Number_of_completely_defined_axial_rings /  Four Three Two One,
+		39 Number_of_pleural_furrows /  Four Three Two,
+		40 'Extent of pleural/interpleural furrows' /  Extend_to_border Do_not_extend_to_border,
+		41 Granulation_on_pygidium /  Absent Present,
+		42 Terrace_lines_on_pleural_region_of_pygidium /  Absent Present,
+		43 Pleural_region_between_terminal_piece_and_border /  Absent Present,
+		44 Medial_indent_on_posterior_border /  Absent Present,
+		45 Pygidial_border_spines /  Absent Present ; 
+	MATRIX
+	Parabolinella_prolata       00---000011?01001000220020?00??10010?????????
+	Parabolinella_tumifrons     21?00011001101001000220020?00??1001??????????
+	Cloacaspis_senilis          110002020100000101212201101101?01101232001001
+	Cloacaspis_tesselata        01000002110?00010121?21111110?10110122111?000
+	Cloacaspis_ekphymosa        2100030?110?00?10121220110?111?0????2210??000
+	Cloacaspis_dejecta          11200212110?01?10121221210?00??011011211?0010
+	Balnibarbi_ceryx_ceryx      11210110212011001121110210?00?101100111001110
+	Balnibarbi_ceryx_anataphra  011010002120?1000121110210?00?101100?????????
+	Balnibarbi_pulvurea         112103102120011112200012100100?02010010011110
+	Balnibarbi_tholia           010003112121011011101?1210?10??0??????00??100
+	Balnibarbi_erugata          01101310201002001110001210?00?00?000010000110
+	Balnibarbi_sombrero         01101010201002001110001210?00?00?????????????
+	Balnibarbi_scimitar         21200010201002001110011210?00?00?110110000110
+
+;
+
+END;
+BEGIN NOTES;
+
+	TEXT   CHARACTER = 1 TEXT = 'Excludes furrow and/or "preglabellar depressed area" in Cloacaspis dejecta (Fortey 1974, p. 42). See notes for each cell for specimen measurement.';
+	TEXT   TAXON = 1 CHARACTER = 1 TEXT = '0.21 - 0.29';
+	TEXT   TAXON = 2 CHARACTER = 1 TEXT = '0.04 - 0.05';
+	TEXT   TAXON = 3 CHARACTER = 1 TEXT = 0.333;
+	TEXT   TAXON = 4 CHARACTER = 1 TEXT = 0.25;
+	TEXT   TAXON = 5 CHARACTER = 1 TEXT = 0.1667;
+	TEXT   TAXON = 6 CHARACTER = 1 TEXT = 0.333;
+	TEXT   TAXON = 7 CHARACTER = 1 TEXT = 0.375;
+	TEXT   TAXON = 8 CHARACTER = 1 TEXT = 0.214;
+	TEXT   TAXON = 9 CHARACTER = 1 TEXT = 0.3125;
+	TEXT   TAXON = 10 CHARACTER = 1 TEXT = 0.25;
+	TEXT   TAXON = 11 CHARACTER = 1 TEXT = 0.231;
+	TEXT   TAXON = 12 CHARACTER = 1 TEXT = 0.222;
+	TEXT   TAXON = 13 CHARACTER = 1 TEXT = 0.074;
+
+	TEXT   TAXON = 8 CHARACTER = 2 TEXT = 'But see Fortey 1974 Plate 9, fig. 7';
+	TEXT   TAXON = 11 CHARACTER = 2 TEXT = Expressed_on_external_mold_~30;
+
+	TEXT   CHARACTER = 3 TEXT = 'NA when border pits are absent; states need to be adjusted as taxa are being coded';
+	TEXT   TAXON = 3 CHARACTER = 3 TEXT = Maybe_closer_to_30?;
+	TEXT   TAXON = 6 CHARACTER = 3 TEXT = Currently_based_on_description_on_Fortey_1974;
+
+	TEXT   CHARACTER = 4 TEXT = 'NA = no anterior border pits';
+	TEXT   TAXON = 9 CHARACTER = 4 TEXT = 'Seen on a couple of specimens--but just a few, looks almost teratological except that that is how it looks on the plates for ceryx in Fortey';
+
+	TEXT   TAXON = 3 CHARACTER = 6 TEXT = Specifically_just_the_occipital_furrow;
+	TEXT   TAXON = 6 CHARACTER = 6 TEXT = 'Includes axial furrow, glabellar furrows, and anterior border furrow';
+
+	TEXT   CHARACTER = 8 TEXT = And_possibly_glabella_for_tholia?;
+	TEXT   TAXON = 6 CHARACTER = 8 TEXT = 'At least on glabella--check frontal area';
+
+	TEXT   CHARACTER = 9 TEXT = 'Quantiative character; character states are place-holders for now';
+	TEXT   TAXON = 3 CHARACTER = 9 TEXT = 30_degrees?;
+	TEXT   TAXON = 6 CHARACTER = 9 TEXT = 50_degrees?;
+	TEXT   TAXON = 13 CHARACTER = 9 TEXT = 'Very high (80?)';
+
+	TEXT   TAXON = 3 CHARACTER = 11 TEXT = Subtle_change_in_width;
+
+	TEXT   TAXON = 4 CHARACTER = 12 TEXT = Looks_convex_but_might_be_because_of_furrows;
+
+	TEXT   CHARACTER = 14 TEXT = See_notes_for_each_cell_for_specimen_measurements;
+	TEXT   TAXON = 1 CHARACTER = 14 TEXT = '0.21 - 0.26';
+	TEXT   TAXON = 2 CHARACTER = 14 TEXT = '0.18 - 0.22';
+	TEXT   TAXON = 3 CHARACTER = 14 TEXT = '0.08 - 0.15';
+	TEXT   TAXON = 4 CHARACTER = 14 TEXT = '0.1 - 0.15';
+	TEXT   TAXON = 5 CHARACTER = 14 TEXT = '0.09 - 0.1';
+	TEXT   TAXON = 6 CHARACTER = 14 TEXT = '0.15 -0.17';
+	TEXT   TAXON = 7 CHARACTER = 14 TEXT = '0.17 - 0.21';
+	TEXT   TAXON = 8 CHARACTER = 14 TEXT = '0.12 - 0.19';
+	TEXT   TAXON = 9 CHARACTER = 14 TEXT = '0.18 - 0.25';
+	TEXT   TAXON = 10 CHARACTER = 14 TEXT = '0.21 - 0.26';
+	TEXT   TAXON = 11 CHARACTER = 14 TEXT = '0.25 - 0.32';
+	TEXT   TAXON = 12 CHARACTER = 14 TEXT = '0.31 - 0.36';
+	TEXT   TAXON = 13 CHARACTER = 14 TEXT = '0.23 - 0.34';
+
+	TEXT   CHARACTER = 15 TEXT = Similar_to_pits_in_anterior_border_furrow;
+	TEXT   TAXON = 10 CHARACTER = 15 TEXT = very_shallow;
+
+	TEXT   TAXON = 5 CHARACTER = 16 TEXT = Really_subtle...;
+	TEXT   TAXON = 6 CHARACTER = 16 TEXT = Really_subtle...;
+
+	TEXT   CHARACTER = 17 TEXT = Specifically_where_the_glabellar_furrows_meet_the_axial_furrow;
+
+	TEXT   CHARACTER = 18 TEXT = Specifically_where_the_glabellar_furrows_meet_the_axial_furrow;
+	TEXT   TAXON = 3 CHARACTER = 18 TEXT = Increasingly_closer_to_occipital_ring_with_size_increase;
+
+	TEXT   CHARACTER = 19 TEXT = 'Discretized version, might co-vary with placement of ends of palpebral lobes. See notes for each cell for specimen measurements.';
+	TEXT   TAXON = 1 CHARACTER = 19 TEXT = '0.23 - 0.25';
+	TEXT   TAXON = 2 CHARACTER = 19 TEXT = '0.16 - 0.19';
+	TEXT   TAXON = 3 CHARACTER = 19 TEXT = 0.436;
+	TEXT   TAXON = 4 CHARACTER = 19 TEXT = 0.369;
+	TEXT   TAXON = 5 CHARACTER = 19 TEXT = 0.407;
+	TEXT   TAXON = 6 CHARACTER = 19 TEXT = 0.417;
+	TEXT   TAXON = 7 CHARACTER = 19 TEXT = 0.366;
+	TEXT   TAXON = 8 CHARACTER = 19 TEXT = 0.458;
+	TEXT   TAXON = 9 CHARACTER = 19 TEXT = '0.35 - 0.4';
+	TEXT   TAXON = 10 CHARACTER = 19 TEXT = 0.308;
+	TEXT   TAXON = 11 CHARACTER = 19 TEXT = 0.327;
+	TEXT   TAXON = 12 CHARACTER = 19 TEXT = 0.278;
+	TEXT   TAXON = 13 CHARACTER = 19 TEXT = 0.292;
+
+	TEXT   CHARACTER = 20 TEXT = 'Palpebral lobes curves forward such that it is parallel to axial furrow from 2P to 4P (Cloacaspis)';
+
+	TEXT   CHARACTER = 22 TEXT = Trapezoidal_ends_up_being_medium_length.;
+	TEXT   TAXON = 7 CHARACTER = 22 TEXT = 'Closest to strap-like of any Cloacaspis species';
+	TEXT   TAXON = 13 CHARACTER = 22 TEXT = Closest_to_triangular_of_any_Balnibarbi_species;
+
+	TEXT   TAXON = 3 CHARACTER = 24 TEXT = Becomes_more_and_more_marooned_as_specimen_size_increases;
+	TEXT   TAXON = 5 CHARACTER = 24 TEXT = 'Almost reaches axial furrow, rather long';
+
+	TEXT   CHARACTER = 26 TEXT = Glabellar_furrows_are_interconnected_by_longitudinal_furrows_which_bifurcate_medially.;
+
+	TEXT   TAXON = 4 CHARACTER = 27 TEXT = Based_on_USNM_495689;
+	TEXT   TAXON = 9 CHARACTER = 27 TEXT = 'See Fortey 1974, Plate 1, fig. 8--is this correct assignment?';
+
+	TEXT   TAXON = 3 CHARACTER = 28 TEXT = More_strongly_expressed_on_internal_mold;
+	TEXT   TAXON = 5 CHARACTER = 28 TEXT = More_strongly_expressed_on_internal_mold;
+	TEXT   TAXON = 9 CHARACTER = 28 TEXT = Present_in_juvenile;
+	TEXT   TAXON = 10 CHARACTER = 28 TEXT = Visible_on_internal_mold;
+
+	TEXT   CHARACTER = 31 TEXT = Close_to_occipital_ring;
+	TEXT   TAXON = 4 CHARACTER = 31 TEXT = Visible_in_Ikes_Canyon_material;
+
+	TEXT   CHARACTER = 33 TEXT = Quantitative;
+
+	TEXT   TAXON = 1 CHARACTER = 35 TEXT = Extends_to_posterior_margin_just_in_front_of_base_of_genal_spine;
+	TEXT   TAXON = 9 CHARACTER = 35 TEXT = Extends_to_lateral_margin_just_in_front_of_base_of_genal_spine;
+	TEXT   TAXON = 13 CHARACTER = 35 TEXT = Extends_to_lateral_margin_far_in_front_of_base_of_genal_spine;
+
+	TEXT   CHARACTER = 41 TEXT = Both_axial_and_pleural_regions._Covaries_with_granulation_on_glabella?;
+
+	TEXT   TAXON = 9 CHARACTER = 42 TEXT = Mostly_on_anterior_border_and_along_lateral_border;
+
+	TEXT   TAXON = 3 CHARACTER = 45 TEXT = Small_spine_on_anterior_segment;
+
+END;
+
+BEGIN LABELS;
+	TAXAGROUPLABEL Outgroup;
+	TAXAGROUPLABEL Ingroup;
+
+
+END;
+
+BEGIN SETS;
+	TAXPARTITION * UNTITLED  =  Outgroup :  1- 2, Ingroup :  3- 13;
+
+END;
+
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 8 10- 13 15- 18 20- 32 34- 45, ord:  9 14 19 33;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 45;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1588954197255;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 1934294700070494355;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 6313791319898075460;
+			mqVersion 360;
+			checksumv 0 3 2432391505 null  getNumChars 45 numChars 45 getNumTaxa 13 numTaxa 13   short true   bits 15   states 15   sumSquaresStatesOnly 2306.0 sumSquares 2306.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 175;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1030 559;
+			setLocation 8 23;
+			setFont Gadget;
+			setFontSize 14;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			showTaxa #1934294700070494355 #mesquite.lists.TaxonList.TaxonList;
+			tell It;
+				setTaxa #1934294700070494355;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.TaxonListCurrPartition.TaxonListCurrPartition;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 855 487;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.ColorTaxon.ColorTaxon;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.lists.TaxonListAnnotPanel.TaxonListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #6313791319898075460 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 855 487;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+					getInfoPanel;
+					tell It;
+						btspOpen true;
+						apOpen true;
+						fpOpen true;
+					endTell;
+					toggleInfoPanel off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 855 487;
+						setLocation 8 23;
+						setFont Gadget;
+						setFontSize 14;
+						getToolPalette;
+						tell It;
+						endTell;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			showCharacters #6313791319898075460 #mesquite.lists.CharacterList.CharacterList;
+			tell It;
+				setData 0;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.DefaultCharOrder.DefaultCharOrder;
+					newAssistant  #mesquite.lists.CharListInclusion.CharListInclusion;
+					newAssistant  #mesquite.lists.CharListPartition.CharListPartition;
+					newAssistant  #mesquite.parsimony.CharListParsModels.CharListParsModels;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 855 487;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.CharListAnnotPanel.CharListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

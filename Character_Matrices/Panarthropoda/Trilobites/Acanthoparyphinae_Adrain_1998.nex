@@ -1,0 +1,167 @@
+#NEXUS
+[MacClade 4.08 registered to Peter Wagner, Field Museum of Natural History]
+
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=24 NCHAR=39;
+
+[!Adrain, J. M.  1998.  Systematics of the Acanthoparyphinae (Trilobita), with species from the Silurian of Arctic Canada.  Journal of Paleontology 72:698 - 718.]
+	FORMAT SYMBOLS= " 0 1 2 3 4 5 6 7 8" MISSING=? GAP=- ;
+	CHARSTATELABELS
+		1  Cephalon,  2  Cephalon,  3  Cephalon,  4  Cephalon,  5  Cephalon,  6  Cephalon,
+  7  Cephalon,  8  Cephalon,  9  Cephalon,  10  Cephalon,  11  Cephalon,
+  12  Cephalon,  13  Cephalon,  14  Cephalon,  15  Cephalon,  16  Cephalon,
+  17  Cephalon,  18  Cephalon,  19  Cephalon,  20  Cephalon,  21  Cephalon,
+  22  Cephalon,  23  Thorax,  24  Thorax,  25  Thorax,  26  Pygidium,
+  27  Pygidium,  28  Pygidium,  29  Pygidium,  30  Pygidium,  31  Pygidium,
+  32  Pygidium,  33  Pygidium,  34  Pygidium,  35  Pygidium,  36  Pygidium,
+  37  Pygidium,  38  Pygidium,  39  Pygidium
+		;
+
+MATRIX
+[                                      10        20        30        40  ]
+[                                      .         .         .         .   ]
+
+Holia_anacantha               0000000000000001?????????00100001001000
+Youngia_boucoti               102121101111101101000001?10000101011201
+Parayoungia_brennardi         102121100111????01110001310000201111000
+Acanthoparypha_chiropyga      000101000010000000000000110000011011000
+Holia_cimelia                 002010000000000000000100001100001021000
+Hyrokybe_lightfooti           111121101122201110011010210000011011101
+Hyrokybe_copelandi            111121111112101110011010210000011011111
+Acanthoparypha_echinoderma    000101000011000001000000110000011001000
+Parayoungia_eleyae            102121100110111100110001210010201111001
+Acanthoparypha_evitti         010101000011000100000000110000011001100
+Parayoungia_folinsbeei        102011100010111????????1310000201111001
+Acanthoparypha_goniopyga      0000000000100001??????00?10000011011000
+Parayoungia_mclaughlini       1021211001101111??????11210010201111001
+Hyrokybe_hadnagyi             1110211?1112101110011010211000011011010
+Youngia_johnsoni              110121101111101101000011?10001101011201
+Hyrokybe_julli                111121111112101110011010211000011011010
+Youngia_kathyae               102121101111101101000011210001101011201
+Hyrokybe_lenzi                111121111112101110011010211000011011010
+Acanthoparypha_perforata      000120000010101000010000111000011011000
+Pandaspinapyga_salsa          000101000010?????000?000110000000000000
+Holia_secristi                002000000000000000000100001100001021000
+Youngia_steineri              102121101111101101000011210001101011021
+Parayoungia_tuberculata       0021201001001111??????11110010201111001
+Hammannopyge_unica            0000000000000000??????00000000000000000
+;
+END;
+
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MAXSTEPS ;
+	TYPESET * UNTITLED  = unord: 1-39;
+END;
+
+
+BEGIN TREES;
+
+[!Adrain, J. M.  1998.  Systematics of the Acanthoparyphinae (Trilobita), with species from the Silurian of Arctic Canada.  Journal of Paleontology 72:698 - 718.]
+	TRANSLATE
+		1	Holia_anacantha,
+		2	Youngia_boucoti,
+		3	Parayoungia_brennardi,
+		4	Acanthoparypha_chiropyra,
+		5	Holia_cimelia,
+		6	Hyrokybe_lightfooti,
+		7	Hyrokybe_copelandi,
+		8	Acanthoparypha_echinoderma,
+		9	Parayoungia_eleyae,
+		10	Acanthoparypha_evitti,
+		11	Parayoungia_folinsbeei,
+		12	Acanthoparypha_goniopyga,
+		13	Parayoungia_mclaughlini,
+		14	Hyrokybe_hadnagyi,
+		15	Youngia_johnsoni,
+		16	Hyrokybe_julli,
+		17	Youngia_kathyae,
+		18	Hyrokybe_lenzi,
+		19	Acanthoparypha_perforata,
+		20	Pandaspinapyga_salsa,
+		21	Holia_secristi,
+		22	Youngia_steineri,
+		23	Parayoungia_tuberculata,
+		24	Hammannopyge_unica
+	;
+	TREE All_Species =  [&R] (((((((19,((6,(((16,18),14),7)),(((11,3),((23,13),9)),(((17,15),22),2)))),12),4),(8,10)),20),((5,21),1)),24);
+	TREE Sans_U.Sheinwood =  [&R] (((((((19,(((16,18),7),(((11,3),((23,13),9)),(((17,15),22),2)))),12),4),(8,10)),20),((5,21),1)),24);
+	TREE sans_M._Sheinwoodian =  [&R] (((((((19,((16,18),((11,3),(((17,15),22),2)))),12),4),(8,10)),20),((5,21),1)),24);
+	TREE sans_Wenlock =  [&R] (((((((19,(18,((11,3),(((17,15),22),2)))),12),4),(8,10)),20),((5,21),1)),24);
+	TREE sans_Llandovery =  [&R] ((((((19,12),4),(8,10)),20),((5,21),1)),24);
+	TREE  * UNTITLED =  [&R] (((((21,5),1),24),20),((8,10),(4,(12,(19,((6,(7,(14,(16,18)))),((2,(22,(17,15))),((11,3),(9,(23,13))))))))));
+
+END;
+
+
+BEGIN NOTES;
+	TEXT  TAXON=6 TEXT= 'Hyrokybe_lightfoot/mitchellae';
+	TEXT  TAXON=7 TEXT= 'Hyrokybe_copelandi/youngi';
+	TEXT  TAXON=21 TEXT= 'Holia_secristi/glabra';
+END;
+
+
+BEGIN MacClade;
+	Version 4.0  87;
+	LastModified -851599297;
+	FileSettings treewindow  '1' '1' '40' '1';
+	Singles 010;
+	Editor 00011001111111100100010010 '0' '24' Gadget '12' '208' '1' all;
+	EditorPosition  '355' '11' '665' '785';
+	TreeWindowPosition  '46' '6' '715' '974';
+	ListWindow Characters closed Gadget '12' '50' '25' '746' '517' 000;
+	ListWindow Taxa closed Gadget '12' '50' '10' '202' '387' 100000000;
+	ListWindow Trees closed Gadget '12' '90' '65' '145' '379' ;
+	ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow ExSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow TaxSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490' ;
+	ChartWindowPosition  '52' '30' '686' '964';
+	StateNamesSymbols closed Gadget '12' '9' '50' '30' '186' '220';
+	WindowOrder  Tree;
+	OtherSymbols &/ 00 ?-;
+	Correlation  '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile  '2';
+	ExportHTML _ MOSS  '100' 110000;
+	PrettyPrint 10;
+	CharLegendPosition  '599' '879' '143' '85';
+	TreeLegendPosition  '654' '781' '88' '93';
+	EditorToolsPosition  '202' '248' '115' '165';
+	TreeToolsPosition  '584' '9' '126' '138';
+	TreeWindowProgram 10;
+	TreeWindow 0000;
+	Continuous  '0' '3' 1;
+	Calculations 1000101;
+	SummaryMode  '0' '0' 0;
+	Charts  Arial '12' (normal) 0010;
+	NexusOptions  '0' '0' '50' 001011001;
+	TipLabel  '1';
+	TreeFont  Gadget '12' (normal);
+	TreeShape  1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors  '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth  '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax  '0';
+	TraceAllChangesDisplay  '1' 1;
+	BarsOnBranchesDisplay  '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation  '3' 1;
+	PrintTree  10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Gadget '9' (normal) Gadget '10' (normal) Gadget '9' (normal) Gadget '9' (normal) Gadget '9' (bold ) Gadget '9' (normal) Gadget '9' (normal) '83' '115' '13' '45' '116' '148' '13' '45' '149' '181' '13' '45' '182' '214' '13' '45' '214' '57' '0' '0' '544' '456' '612' '35' '678' '35' '678' '288' '24' '35' '1' '1' '1' '1' '0' '0' '-39' '4' '-40' '0' '1' '2' '1' '8' '20' '20' '0' '2' 1000111000000001000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 00;
+	TreeTools  '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools  '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign  '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools  '1';
+END;
