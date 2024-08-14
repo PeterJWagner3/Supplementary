@@ -1,0 +1,205 @@
+#NEXUS
+[written Sat Feb 11 21:03:29 CST 2023 by Mesquite  version 3.70 (build 940) at EAS-F094C0.local/10.0.1.133]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=29;
+	TAXLABELS
+		Calyptaulax_glabella Acernaspis_orestes Barrandeops_granulops Austerops_smoothops Barrandeops_ovatus Phacops_araw Austerops_speculator_punctatus Austerops_kermiti Austerops_salamandar Boeckops_stelcki Barrandeops_lebesus Barrandeops_forteyi Reedops_pembertoni Reedops_cephalotes_hamlagdadianus Reedops_bronni 'Pedinopariops (Pedinopariops) lentigifer' 'Pedinopariops (Hypsipariops) vagabundus' Drotops_megalomanicus Drotops_armatus Eldredgeops_rana Chotecops_auspex Boeckops_boecki Paciphacops_logani Viaphacops_cristatus Geesops_schlotheimi Phacops_latifrons Morocops_struvei Kainops_microps Ananaspis_fecunda 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=40;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7";
+	MATRIX
+	Calyptaulax_glabella                      1032?000000020007?0120005000?0070077071?
+	Acernaspis_orestes                        0200300000013000012000010300000000000100
+	Barrandeops_granulops                     2312723122113310211010023111012101113000
+	Austerops_smoothops                       2313121100103112110010012100011000202000
+	Barrandeops_ovatus                        2212223132113311211000023121011101113000
+	Phacops_araw                              2121725010013122311100132012012700213000
+	Austerops_speculator_punctatus            2113121000103111111110012410111000202000
+	Austerops_kermiti                         1333121000203122100111012501710000201000
+	Austerops_salamandar                      2303121000103112111111012300010000201000
+	Boeckops_stelcki                          4012122030112110112010022310111000103000
+	Barrandeops_lebesus                       2312222132113310211010023211011101113000
+	Barrandeops_forteyi                       2112223122123311312000022020012101113001
+	Reedops_pembertoni                        2133120100201002020001002302111100001000
+	Reedops_cephalotes_hamlagdadianus         3213220232212300121001005502121100001000
+	Reedops_bronni                            2213120232212002000000000400021100001000
+	'Pedinopariops (Pedinopariops) lentigifer'1212723130022?113101?013242?711101213002
+	'Pedinopariops (Hypsipariops) vagabundus' 0412224130022111310110132313111111213002
+	Drotops_megalomanicus                     1223726140122311311110132213111111213002
+	Drotops_armatus                           1323726140022311311110132313111111213002
+	Eldredgeops_rana                          1313724140213212311000131211?111017?3000
+	Chotecops_auspex                          2113?12232213012100011000301011000101000
+	Boeckops_boecki                           2012722120012710102000014402?21000102000
+	Paciphacops_logani                        1212313131111700212110121211?11001100110
+	Viaphacops_cristatus                      1321023131210701312110110210712000103110
+	Geesops_schlotheimi                       0321?23141012?12311010122213111111713000
+	Phacops_latifrons                         1221724030023122317700130017001001203000
+	Morocops_struvei                          032112314101?712317??7772217711111?17070
+	Kainops_microps                           2121013232112?00201110122411?11001102010
+	Ananaspis_fecunda                         1311213120013000000000133301701000000110
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 40;
+
+END;
+
+BEGIN NOTES;
+
+	TEXT  TAXON = 20 TEXT = Eldredgeops_rana_rana;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 40;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1676171010023;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 2248369226321123565;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 8320419692326734132;
+			mqVersion 370;
+			checksumv 0 3 4083248708 null  getNumChars 40 numChars 40 getNumTaxa 29 numTaxa 29   short true   bits 255   states 255   sumSquaresStatesOnly 603678.0 sumSquares 603678.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1343 919;
+			setLocation 8 38;
+			setFont Gadget;
+			setFontSize 14;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #8320419692326734132 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 326;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1243 847;
+					setLocation 8 38;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleColorOnlyTaxonNames off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

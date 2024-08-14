@@ -1,0 +1,253 @@
+#NEXUS
+[written Wed Feb 22 12:23:22 CST 2023 by Mesquite  version 3.70 (build 940) at EAS-F094C0.local/127.0.0.1]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=88;
+	TAXLABELS
+		Brachymetopus Acanthophillipsia Ameropiltonia Ameura Anisopyge Archegonus Australokaskia Bedicella Belgibole Bollandia Breviphillipsia Carbonocoryphe Carbonoproetus Comptonaspis Conophillipsia Crassiproetus Cummingella Cyphinioides Dayinaspis Dechenella Dechenelloides Delaria Diacoryphe Ditomopyge Doublatia Dudu Dushania Elliptophillipsia Eocyphinium Exochops Gapeevella Gitarra Globusia Gracemerea Griffithidella Griffithides Hentigia Hesslerides Hunanoproetus Kaskia Kathwaia Kollarcephalus Kulmiella Lichanocoryphe Linguaphillipsia Liobole Malchi Menorcaspis Monodechenella Nipponaspis Novoameura Nunnaspis Paladin Palaeophillipsia Parangustibole Perexigupyge Persia Philliboloides Phillipsia Piltonia Planokaskia Pseudocyrtosymbole Pseudophillipsia Pseudowaribole Pudoproetus Reediella Richterella Schizophillipsia Sdzuyaspis Sevillia Sinosymbole Spatulata Spergenaspis Spinibole Thalabaria Thigriffides Timoraspis Triproetus Vandergrachtia Wagnerispina Waideggula Waribole Weania Weberides Weberiphillipsia Witryides Xenoboloides Yishanaspis 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=21;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6";
+	MATRIX
+	Brachymetopus       01100000000100000000-
+	Acanthophillipsia   131000202000111201-11
+	Ameropiltonia       12011111100001011-00-
+	Ameura              12011001100001121--11
+	Anisopyge           13011120201001121--??
+	Archegonus          0101100001--11000110-
+	Australokaskia      120110002000010101011
+	Bedicella           120110012010110100110
+	Belgibole           02011101000100001-?11
+	Bollandia           131?0000200111010011?
+	Breviphillipsia     12011101100001010000-
+	Carbonocoryphe      12011001001010000110-
+	Carbonoproetus      121?0000?01110000010-
+	Comptonaspis        120110001000110100?10
+	Conophillipsia      101100001011011100110
+	Crassiproetus       001000001010111100?0-
+	Cummingella         121100002010010100111
+	Cyphinioides        131110102010011210011
+	Dayinaspis          0101100001--10000010-
+	Dechenella          1201100110000012??-11
+	Dechenelloides      12011000001000010010-
+	Delaria             13011?20201101111--11
+	Diacoryphe          011?000001--1000???0-
+	Ditomopyge          13110021200001011--10
+	Doublatia           1201110110??1?000000-
+	Dudu                13100020001110111-?11
+	Dushania            1211?000101001010010-
+	Elliptophillipsia   1201100010100100???0-
+	Eocyphinium         1311000120011100010??
+	Exochops            13110000200101120000-
+	Gapeevella          12011101101011121--11
+	Gitarra             12110001100000000100-
+	Globusia            1011?001101111000110-
+	Gracemerea          12011000101100000000-
+	Griffithidella      120110001000010000011
+	Griffithides        131100012001010100011
+	Hentigia            13111020101011121--11
+	Hesslerides         130110012010010100010
+	Hunanoproetus       12011101101001111--11
+	Kaskia              13111001200010121-010
+	Kathwaia            13100001200111010010-
+	Kollarcephalus      12011101201001010000-
+	Kulmiella           1311?001101100021-111
+	Lichanocoryphe      0101110001--10000010-
+	Linguaphillipsia    12011001100000121--11
+	Liobole             0101110001--11000010-
+	Malchi              12110000100000010000-
+	Menorcaspis         01??000101--1100???0-
+	Monodechenella      021000001011001100011
+	Nipponaspis         120110001010010100101
+	Novoameura          12111?2110?1?1121-011
+	Nunnaspis           13100000201011110010-
+	Paladin             13100001100001111--11
+	Palaeophillipsia    120110001010000101011
+	Parangustibole      011000001011110001?00
+	Perexigupyge        10011100101101010100-
+	Persia              1211000110100101?????
+	Philliboloides      121100001000100100100
+	Phillipsia          1201110?100000121--10
+	Piltonia            12011000100110111--0-
+	Planokaskia         120110011010010201011
+	Pseudocyrtosymbole  110110011011000001110
+	Pseudophillipsia    13011120100111121--11
+	Pseudowaribole      12011?00100001010010-
+	Pudoproetus         1001110110101001000??
+	Reediella           1211??002000010000011
+	Richterella         12111?01101001010000-
+	Schizophillipsia    12011101100001000000-
+	Sdzuyaspis          12111001101001010110-
+	Sevillia            13011121200001121--11
+	Sinosymbole         ?21110000001100000111
+	Spatulata           1101100111--11010010-
+	Spergenaspis        12110000100000010000-
+	Spinibole           0110000001--110000?0-
+	Thalabaria          12011001101000010010-
+	Thigriffides        131100001000011201011
+	Timoraspis          1310000120000101???0-
+	Triproetus          130111012010011100011
+	Vandergrachtia      01011?0001--11000000-
+	Wagnerispina        121000011011110001101
+	Waideggula          131110001000111200011
+	Waribole            010110010011000100111
+	Weania              12011001101001000010-
+	Weberides           120110011000011200011
+	Weberiphillipsia    12011101100001121-011
+	Witryides           121110002010010101111
+	Xenoboloides        12111?011011010100111
+	Yishanaspis         01011001001111000110-
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 21;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 21;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1677090202665;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 7090533648745691995;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 9072215161263765331;
+			mqVersion 370;
+			checksumv 0 3 47964335 null  getNumChars 21 numChars 21 getNumTaxa 88 numTaxa 88   short true   bits 15   states 15   sumSquaresStatesOnly 6858.0 sumSquares 6858.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1459 853;
+			setLocation 8 38;
+			setFont Gadget;
+			setFontSize 14;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #9072215161263765331 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1359 781;
+					setLocation 8 38;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleColorOnlyTaxonNames off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

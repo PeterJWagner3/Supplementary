@@ -1,0 +1,209 @@
+#NEXUS
+[written Fri Mar 01 15:23:23 CST 2024 by Mesquite  version 3.70 (build 940) at eas-f094c0.unl.edu/10.73.37.64]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=17;
+	TAXLABELS
+		Prosaukia_misa Prosaukia_hartii Briscoia_schucherti Briscoia_angustilimba Briscoia_sinclairensis Briscoia_dalyi Briscoia_llanoensis Briscoia_septentrionalis Briscoia_pertransversa Briscoia_coloradoensis Briscoia_nevadensis Dikelocephalus_minnesotensis Dikelocephalus_freeburgensis Walcottaspis_vanhornei Osceolia Elkia_nasuta Hamashania_pulchera 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=38;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9";
+	MATRIX
+	Prosaukia_misa                00000000000000000000000000000000000000
+	Prosaukia_hartii              0001000110110020100?000000012000122000
+	Briscoia_schucherti           10012?0212210000100?0???000?100001?000
+	Briscoia_angustilimba         00002?0002110020100?????00021000011100
+	Briscoia_sinclairensis        10000111121100001000011?00021000122100
+	Briscoia_dalyi                100101001100020110001???01011000022100
+	Briscoia_llanoensis           101?0?0012100001201?????00012000002000
+	Briscoia_septentrionalis      1001210220100000100?0???00111000?02110
+	Briscoia_pertransversa        10023?012?111200?00?????00010000100000
+	Briscoia_coloradoensis        10022100122101000?0?????00021000102000
+	Briscoia_nevadensis           10010?01221101000?0?????00012000012000
+	Dikelocephalus_minnesotensis  10022111010000111101111100211100122101
+	Dikelocephalus_freeburgensis  1002211112110011110?100100010100121101
+	Walcottaspis_vanhornei        201?3112110010112101111101120101122100
+	Osceolia                      100001012221010011001???00010020101102
+	Elkia_nasuta                  10011?02200001100001?10?00110000102120
+	Hamashania_pulchera           20020?1110110100000?0???10003010101000
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 38;
+
+END;
+
+BEGIN NOTES;
+
+	TEXT  TAXON = 1 TEXT = '(Owen, 1852)';
+	TEXT  TAXON = 2 TEXT = '(Walcott, 1879)';
+	TEXT  TAXON = 3 TEXT = 'Ulrich and Resser, 1930';
+	TEXT  TAXON = 4 TEXT = 'Westrop, 1986';
+	TEXT  TAXON = 5 TEXT = 'Walcott, 1924';
+	TEXT  TAXON = 6 TEXT = 'Walcott, 1914';
+	TEXT  TAXON = 7 TEXT = 'Winston and Nicholls, 1967';
+	TEXT  TAXON = 8 TEXT = 'Kobayashi, 1935';
+	TEXT  TAXON = 9 TEXT = 'Lochman, 1956';
+	TEXT  TAXON = 10 TEXT = 'Walcott, 1914';
+	TEXT  TAXON = 11 TEXT = 'Resser, 1937';
+	TEXT  TAXON = 12 TEXT = 'Owen, 1852';
+	TEXT  TAXON = 13 TEXT = 'Feniak in Bell et al., 1952';
+	TEXT  TAXON = 14 TEXT = '(Walcott, 1914)';
+	TEXT  TAXON = 15 TEXT = sensu_lato;
+	TEXT  TAXON = 16 TEXT = 'Walcott, 1884';
+	TEXT  TAXON = 17 TEXT = 'Kobayashi, 1942';
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 38;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1709328203255;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 2249240565430161903;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 949014060033453804;
+			mqVersion 370;
+			checksumv 0 3 90117983 null  getNumChars 38 numChars 38 getNumTaxa 17 numTaxa 17   short true   bits 15   states 15   sumSquaresStatesOnly 2295.0 sumSquares 2295.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1449 705;
+			setLocation 8 34;
+			setFont Gadget;
+			setFontSize 14;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #949014060033453804 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 253;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1349 633;
+					setLocation 8 34;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleColorOnlyTaxonNames off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

@@ -1,0 +1,133 @@
+#NEXUS
+[MacClade 4.08 registered to Peter Wagner, Field Museum of Natural History]
+
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=15 NCHAR=20;
+
+[!Westrop, S. R., and J. M. Adrain.  2009.  The late Cambrian (Furongian; Steptoean) trilobite genus Xenocheilos Wilson, 1949: systematics and biostratigraphic significance.  Memoirs of the Association of Australasian Palaeontologists 37:351 - 368.]
+	FORMAT SYMBOLS= " 0 1 2 3 4 5 6 7 8 9" MISSING=? GAP=- ;
+		;
+
+MATRIX
+[                                   10        20  ]
+[                                   .         .   ]
+Xenocheilos_cf._minutum		10110011110100010100
+'Xenocheilos <sp. 1>'			10110011110100013100
+Xenocheilos_spineum				11120011110100013?0?
+Xenocheilos_cf._spineum		1111001111010001310?
+Nepea_narinosa						10001112121101001000
+Penarosa_retifera					11121112121101001000
+Ferenepea_hispida					10001011121011012000
+Biaverta_biaverta					20130112122?1?112000
+Biaverta_reineri					2??401??12????112?0?
+'Ptychoparioidea <genus et species undetermined E of Shergold 1980>'	1111010?10110001000?
+Holcacephalus_praecursor	1001000?001000000010
+Hardyoides_mimicus				00010011001010000010
+Menomonia_semele					0013020?00100?210001
+Dresbachia_amata					2??4020?00201?210001
+Bolaspidella_housensis		0000000?000000000000;
+;
+END;
+
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+	TYPESET * UNTITLED  = unord: 1-20;
+	WTSET * UNTITLED  = 1: 1-20;
+END;
+
+
+BEGIN TREES;
+
+	TRANSLATE
+		1	Xenocheilos_cf._minutum,
+		2	'Xenocheilos <sp. 1>',
+		3	Xenocheilos_spineum,
+		4	Xenocheilos_cf._spineum,
+		5	Nepea_narinosa,
+		6	Penarosa_retifera,
+		7	Ferenepea_hispida,
+		8	Biaverta_biaverta,
+		9	Biaverta_reineri,
+		10	'Ptychoparioidea <genus et species undetermined E of Shergold 1980>',
+		11	Holcacephalus_praecursor,
+		12	Hardyoides_mimicus,
+		13	Menomonia_semele,
+		14	Dresbachia_amata,
+		15	Bolaspidella_housensis
+	;
+	TREE  * UNTITLED =  [&R] ((((((((4,3),2),1),(((6,5),(9,8)),7)),10),(14,13)),(11,12)),15);
+
+END;
+
+
+BEGIN NOTES;
+
+	TEXT  TAXON=10 TEXT= '"Ptychopariacean_genus_et_species_undetermined_E"_of_Shergold_(1980)';
+	TEXT  TAXON=12 TEXT= '"Hardyoides" "mimicus';
+END;
+
+
+BEGIN MacClade;
+	Version 4.0  87;
+	LastModified -890844114;
+	FileSettings editor  '1' '1' '21' '1';
+	Singles 010;
+	Editor 00011011111111100100010010 '0' '72' Gadget '12' '236' '1' all;
+	EditorPosition  '46' '6' '597' '1005';
+	TreeWindowPosition  '71' '206' '670' '804';
+	ListWindow Characters open Gadget '12' '564' '100' '406' '374' 000;
+	ListWindow Taxa closed Gadget '12' '50' '10' '270' '402' 100000000;
+	ListWindow Trees closed Gadget '12' '90' '65' '134' '387' ;
+	ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow ExSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow TaxSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490' ;
+	TextWindow AboutFile  '50' '25' '280' '445' Gadget '12' (normal) 1 ;
+	ChartWindowPosition  '52' '30' '968' '1620';
+	StateNamesSymbols open Gadget '12' '9' '639' '552' '186' '220';
+	WindowOrder  Data List Characters States Text AboutFile;
+	OtherSymbols &/ 00 ?-;
+	Correlation  '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile  '2';
+	ExportHTML _ MOSS  '100' 110000;
+	PrettyPrint 10;
+	EditorToolsPosition  '771' '46' '115' '165';
+	TreeToolsPosition  '866' '9' '126' '138';
+	TreeWindowProgram 10;
+	TreeWindow 0000;
+	Continuous  '0' '3' 1;
+	Calculations 1000101;
+	SummaryMode  '0' '0' 0;
+	Charts  Gadget '12' (normal) 0010;
+	NexusOptions  '0' '0' '50' 001011001;
+	TipLabel  '1';
+	TreeFont  Gadget '12' (normal);
+	TreeShape  1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors  '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth  '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax  '0';
+	TraceAllChangesDisplay  '1' 1;
+	BarsOnBranchesDisplay  '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation  '3' 1;
+	PrintTree  10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Gadget '12' (normal) Geneva '10' (normal) Gadget '12' (normal) Gadget '12' (normal) Gadget '12' (bold ) Gadget '12' (normal) Gadget '12' (normal) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '0' '2' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 00;
+	TreeTools  '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools  '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign  '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools  '1';
+END;

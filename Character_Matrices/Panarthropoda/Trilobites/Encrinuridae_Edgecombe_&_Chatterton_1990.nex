@@ -1,0 +1,21 @@
+#NEXUS
+
+[File downloaded from graemetlloyd.com]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=11 NCHAR=28 ;
+	FORMAT DATATYPE=STANDARD SYMBOLS=" 0 1 2 3 4" MISSING=? GAP=- ;
+MATRIX
+Encrinuroides_torulatus				0000000000000000000000000000
+Encrinuroides_lapworthi				10010?1000011001010010?001??
+Erratencrinurus_vigilans			1001101100100000110011?001?1
+Encrinurus_uncatus						0001011100110000000011101111
+Encrinurus_neuter							0001011000110002110010101111
+Curriella_tuberculifrons			11010?1012?120??00?0?0??1???
+Curriella_newlandensis				11010?1012?120?0111110?0010?
+Curriella_clancyi							1101001012?1201111111000010?
+Encrinuroides_zhenxiongensis	10020?10000121?211?0?0??1???
+Encrinurus_priscus						1011201010011112111110?10101
+Nucleurus_rotundus						1011201010011112111110?10101
+;
+END;

@@ -1,0 +1,168 @@
+#NEXUS
+[MacClade 4.08 registered to Peter Wagner, Field Museum of Natural History]
+
+
+BEGIN MacCladeStart;
+	Extended;
+END;
+
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=28 NCHAR=20;
+	FORMAT SYMBOLS= " 0 1 2 3 4 5 6 7 8 9 A B C D E F G H" MISSING=? GAP=- ;
+	CHARSTATELABELS
+		1  Pygidium,  2  Pygidium,  3  Pygidium,  4  Pygidium,  5  Pygidium,  6  Pygidium,
+  7  Pygidium,  8  Thorax,  9  Thorax,  10  Cephalon,  11  Cephalon,
+  12  Cephalon,  13  Cephalon,  14  Cephalon,  15  Cephalon,  16  Cephalon,
+  17  Cephalon,  18  Cephalon,  19  Cephalon,  20  Cephalon
+  ;
+
+MATRIX
+[                                      10        20   ]
+[                                      .         .    ]
+
+Raymondaspis                  00000000000000000000
+Illaenus_crassicauda          00102111111111210100
+Illaenus_sarsi                00112111011011020100
+Illaenus_aduncus              00112111012011020104
+Illaenus_planifrons           0013211??1?011220100
+Illaenus_oscitatus            0011211??11011020214
+Illaenus_praecurrens          11102?1101101102000?
+Illaenus_fallax               1100211101101102000?
+Illaenus_roemeri              0000201?011011020000
+Illaenus_lacertus             20112?21211021?2030?
+Illaenus_viator               20112021211021?20302
+Illaenus_utahensis            2012211111202102030?
+Illaenus_marginalis           20112111111011220203
+Illaenus_conradi              20111012212021122312
+Illaenus_angusticollis        201?0012202020312412
+Illaenus_depressicapitatus    2011101??1?021221312
+Illaenus_latiaxiatus          201?1121?1?021221312
+Illaenus_fieldi               201??01??1?021221302
+Illaenus_conifrons            2011??1??0?120300412
+Nanillaenus_?raymondi         2011001121?120211310
+Nanillaenus_aduncus           2011101??131211204?2
+Nanillaenus_mackenziensis     2011101??13021020412
+Thaleops_ovata                20110011203120112311
+Thaleops_longispina           2011?011203120301412
+Thaleops_anusacermissima      2011101??13121120402
+Thaleops_laurentiana          20111011212021120302
+Thaleops_jaanussoni           20110011213021021312
+Thaleops_mobydicki            20111011211021220302
+;
+END;
+
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MAXSTEPS ;
+	TYPESET * UNTITLED  = unord: 1-20;
+END;
+
+
+BEGIN TREES;
+
+	TRANSLATE
+		1	Raymondaspis,
+		2	Illaenus_crassicauda,
+		3	Illaenus_sarsi,
+		4	Illaenus_aduncus,
+		5	Illaenus_planifrons,
+		6	Illaenus_oscitatus,
+		7	Illaenus_praecurrens,
+		8	Illaenus_fallax,
+		9	Illaenus_roemeri,
+		10	Illaenus_lacertus,
+		11	Illaenus_viator,
+		12	Illaenus_utahensis,
+		13	Illaenus_marginalis,
+		14	Illaenus_conradi,
+		15	Illaenus_angusticollis,
+		16	Illaenus_depressicapitatus,
+		17	Illaenus_latiaxiatus,
+		18	Illaenus_fieldi,
+		19	Illaenus_conifrons,
+		20	Nanillaenus_?raymondi,
+		21	Nanillaenus_aduncus,
+		22	Nanillaenus_mackenziensis,
+		23	Thaleops_ovata,
+		24	Thaleops_longispina,
+		25	Thaleops_anusacermissima,
+		26	Thaleops_laurentiana,
+		27	Thaleops_jaanussoni,
+		28	Thaleops_mobydicki
+	;
+	TREE  * UNTITLED =  [&R] (1,(9,((7,8),((2,5),(3,(4,(6,(13,(12,((10,11),(28,(((26,14),(22,(21,25))),(18,(17,(16,(27,(20,(23,(15,(19,24))))))))))))))))))));
+
+END;
+
+
+BEGIN NOTES;
+
+	TEXT  TAXON=2 CHARACTER=22 TEXT= Kuckers_formation;
+	TEXT  TAXON=8 CHARACTER=23 TEXT= 'see_Bruton_&_Owen_1988._Norsk_Geologisk_Tidsskrift_68:_241�258.';
+	TEXT  TAXON=5 CHARACTER=23 TEXT= 'Jaanusson_1957._Bulletin_of_the_Geological_Institutions_of_the_University_of_Uppsala_37:_79�165.';
+	TEXT  TAXON=7 CHARACTER=23 TEXT= 'Jaanusson_1957._Bulletin_of_the_Geological_Institutions_of_the_University_of_Uppsala_37:_79�165.';
+END;
+
+
+BEGIN MacClade;
+	Version 4.0  87;
+	LastModified -943039448;
+	FileSettings editor  '1' '1' '22' '0';
+	Singles 110;
+	Editor 00011001111111100100010010 '0' '24' Gadget '12' '186' '1' all;
+	EditorPosition  '113' '110' '597' '619';
+	TreeWindowPosition  '46' '6' '495' '619';
+	ListWindow Characters closed Gadget '12' '134' '27' '423' '374' 000;
+	ListWindow Taxa closed Geneva '9' '50' '10' '209' '315' 100000000;
+	ListWindow Trees closed Gadget '9' '56' '130' '134' '395' ;
+	ListWindow TypeSets closed Gadget '9' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '9' '50' '10' '276' '490' ;
+	ListWindow ExSets closed Gadget '9' '50' '10' '276' '490' ;
+	ListWindow CharSets closed Gadget '9' '50' '10' '276' '490' ;
+	ListWindow TaxSets closed Gadget '9' '50' '10' '276' '490' ;
+	ListWindow CharPartitions closed Gadget '9' '50' '10' '276' '490' ;
+	ListWindow CharPartNames closed Gadget '9' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '9' '50' '10' '276' '490' ;
+	ChartWindowPosition  '52' '30' '818' '1380';
+	StateNamesSymbols open Gadget '12' '10' '651' '833' '203' '305';
+	WindowOrder  Data States;
+	OtherSymbols &/ 00 ?-;
+	Correlation  '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile  '2';
+	ExportHTML _ MOSS  '100' 110000;
+	PrettyPrint 10;
+	EditorToolsPosition  '765' '283' '115' '165';
+	TreeToolsPosition  '716' '9' '126' '138';
+	TreeWindowProgram 00;
+	TreeWindow 0000;
+	Continuous  '0' '3' 1;
+	Calculations 1000101;
+	SummaryMode  '0' '0' 0;
+	Charts  Gadget '9' (normal) 0010;
+	NexusOptions  '0' '0' '50' 001011001;
+	TipLabel  '1';
+	TreeFont  Gadget '10' (normal);
+	TreeShape  1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors  '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth  '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax  '0';
+	TraceAllChangesDisplay  '1' 1;
+	BarsOnBranchesDisplay  '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation  '3' 1;
+	PrintTree  10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Geneva '9' (normal) Geneva '10' (normal) Geneva '9' (normal) Geneva '9' (normal) Geneva '9' (bold ) Geneva '9' (normal) Geneva '9' (normal) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '0' '15' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 10;
+	TreeTools  '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools  '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign  '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools  '1';
+END;

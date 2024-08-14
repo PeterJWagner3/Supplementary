@@ -1,0 +1,219 @@
+#NEXUS
+[written Mon Jul 08 23:30:25 CDT 2024 by Mesquite  version 3.70 (build 940) at EAS-F094C0.local/127.0.0.1]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=42;
+	TAXLABELS
+		Changaspis_elongata Changaspis_placenta Churkinia_yukonensis Curvoryctocephalus_taijiangensis Goldfieldia_ninguis Goldfieldia_pacifica Lancastria_cf._plana_Geyer_and_Peel_2011 Lancastria_roddyi Metabalangia_yupingensis Opsiosoryctocephalus_ophis Oryctocephalites_burgessensis Oryctocephalites_longus Oryctocephalites_opiki Oryctocephalites_palmeri Oryctocephalites_rasettii Oryctocephalites_resseri Oryctocephalites_reynoldsiformis Oryctocephalites_reynoldsi Oryctocephalites_runcinatus Oryctocephalites_salteri Oryctocephalites_taijiangensis Oryctocephalites_typicalis Oryctocephalites_vicinus Oryctocephalites_walcotti Oryctocephaloides_convexus Oryctocephaloides_robustus Oryctocephalops_frischenfeldi Oryctocephalops_guizhouensis Oryctocephalus_americanus Oryctocephalus_elongatus Oryctocephalus_granulatus Oryctocephalus_indicus Oryctocephalus_lancastrioides Oryctocephalus_nyensis Oryctocephalus_orientalis Oryctocephalus_primus Oryctocephalus_reticulatus Protoryctocephalus_arcticus Protoryctocephalus_balangensis Protoryctocephalus_wuxunensis Tonkinella_gavrilovae Tonkinella_spinosa 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=35;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9";
+	MATRIX
+	Changaspis_elongata                       02115010000000121333011100020102022
+	Changaspis_placenta                       02105012100000311342010110020203032
+	Churkinia_yukonensis                      03010004301000061001010000110200000
+	Curvoryctocephalus_taijiangensis          01015110110100321233020003111301012
+	Goldfieldia_ninguis                       021150120001111113330??????????????
+	Goldfieldia_pacifica                      04115014000211211323010111010301022
+	Lancastria_cf._plana_Geyer_and_Peel_2011  02115010000100211433010000110203032
+	Lancastria_roddyi                         01115011100000030331031110020203032
+	Metabalangia_yupingensis                  1100201110000220015003000710?400000
+	Opsiosoryctocephalus_ophis                02103114000200233203210???111512012
+	Oryctocephalites_burgessensis             01015010100002121231131006121611033
+	Oryctocephalites_longus                   01012010200002211232020005121403022
+	Oryctocephalites_opiki                    01014010100001211130031006121611013
+	Oryctocephalites_palmeri                  02014011100101111231031??6121502013
+	Oryctocephalites_rasettii                 020130{0 1}3000001001122031??5111301012
+	Oryctocephalites_resseri                  100020101010012112310?????121403032
+	Oryctocephalites_reynoldsiformis          01015010100101221342{0 1}?????111611023
+	Oryctocephalites_reynoldsi                01015010100101221232030006121611023
+	Oryctocephalites_runcinatus               01005003100002121120031???111502022
+	Oryctocephalites_salteri                  11015010100002011221011??6111601013
+	Oryctocephalites_taijiangensis            03013010100002221231031??5131303022
+	Oryctocephalites_typicalis                100140101000021111400?????111511012
+	Oryctocephalites_vicinus                  0101601010010{1 2}1213320??????????????
+	Oryctocephalites_walcotti                 02014010100102221433131??6111611013
+	Oryctocephaloides_convexus                12002011100001001131011??6111401112
+	Oryctocephaloides_robustus                11005001100001001130021005121303022
+	Oryctocephalops_frischenfeldi             0101500?100000101231031??2111303023
+	Oryctocephalops_guizhouensis              02005001100000121231020003110202022
+	Oryctocephalus_americanus                 020111101110011212210????2020201012
+	Oryctocephalus_elongatus                  03010110111100121313031??0010302022
+	Oryctocephalus_granulatus                 02011110111001131231020002130403032
+	Oryctocephalus_indicus                    03010110311000121321031002121302022
+	Oryctocephalus_lancastrioides             02011110111000331213030000130103032
+	Oryctocephalus_nyensis                    03010110{2 3}11200131322031002120303032
+	Oryctocephalus_orientalis                 010111103111011211300?????131403032
+	Oryctocephalus_primus                     000111103111010111300?????131503012
+	Oryctocephalus_reticulatus                02011110111000221332021000121202012
+	Protoryctocephalus_arcticus               01015011100100211332031000111302012
+	Protoryctocephalus_balangensis            02016010300101111232010003120402022
+	Protoryctocephalus_wuxunensis             01016010100001101231020003120302022
+	Tonkinella_gavrilovae                     010060043000022014230????711?600100
+	Tonkinella_spinosa                        110060041000020113210?????1??601100
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	OPTIONS DEFTYPE = unord PolyTcount = MINSTEPS;
+	TYPESET * UNTITLED   =  unord:  1- 35;
+
+END;
+
+BEGIN NOTES;
+
+	TEXT  TAXON = 7 TEXT = Lancastria_cf._plana;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 35;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1720499425577;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 8185919806266610875;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 1070277802422724678;
+			mqVersion 370;
+			checksumv 0 3 2221724763 null  getNumChars 35 numChars 35 getNumTaxa 42 numTaxa 42   short true   bits 2305843009213694207   states 255   sumSquaresStatesOnly 165713.0 sumSquares -1.8446744073709412E19 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1186 785;
+			setLocation 8 34;
+			setFont Gadget;
+			setFontSize 14;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #1070277802422724678 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 306;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1086 713;
+					setLocation 8 34;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleColorOnlyTaxonNames off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

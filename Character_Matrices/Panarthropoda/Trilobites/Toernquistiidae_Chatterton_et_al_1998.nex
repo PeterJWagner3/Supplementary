@@ -1,0 +1,430 @@
+#NEXUS
+[written Thu Oct 28 17:57:02 CDT 2021 by Mesquite  version 3.6 (build 917) at Wagners_Dark_Tower/10.0.1.87]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=38;
+	TAXLABELS
+		Chomatopyge_canasi Chomatopyge_falcata Chomatopyge_marginifera Dimeropyge_clintonensis Dimeropyge_dorothyae Dimeropyge_speyeri Dimeropyge_virginiensis Hystricurus_ellipticus Hystricurus_flectimembrus Hystricurus_genalatus Hystricurus_globosus Hystricurus_hillyardensis Millardicurus_millardensis Hystricurus_paragenalatus Tulepyge_paucitubercutata Hystricurus_penchiensis Hystricurus_scrofulosus Ischyrophyma_tuberculata Ischyrophyma_anataphra Dimeropygiella_blanda Dimeropygiella_caudanodosa Dimeropygiella_ovata Ischyrophyma_stubblefieldi Ischyrophyma_twenhofeli Lasarchopyge_benedettoi Lasarchopyge_correae Mesotaphraspis_circumflexa Mesotaphraspis_inornata Mesotaphraspis_parva Mesotaphraspis?_dalfaskensis Paratoernquistia_chinchensis Paratoernquistia_reedi Paratoernquistia_sanchezae Paratoernquistia_translata Psalikilus_typicus Toernquistia_anxiensis Toernquistia_minuta Toernquistia_nicholsoni 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=55;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9";
+	CHARSTATELABELS 
+		1 'Depth of glabellar furrows:',
+		2 'Swelling of lateral glabellar lobes:',
+		3 Path_of_axial_furrows,
+		4 Depth_of_Axial_Furrows,
+		5 Furrow_from_anterolateral_corner_of_glabella,
+		6 Median_preglabellar_furrow,
+		7 Width_of_fixegenal_field_opposite_?,
+		8 'Position of maximum width of eyes (epsiolon)',
+		9 Length_of_preglabellar_field_realtive_to_anterior_border,
+		10 Degree_of_inflation_of_glabella,
+		11 Node_on_posterior_border_of_cranidium,
+		12 Curvature_of_palpebral_lobe,
+		13 Gradient_in_depth_of_free_cheek_border_furrow,
+		14 Curvature_of_lateral_margin_of_free_cheek,
+		15 Terrace_lines_around_margin_of_cephalon,
+		16 'Extension of lateral and/or posterior border furrow onto genal spine',
+		17 Genal_spine,
+		18 Height_of_fixigena_relative_to_palpebral_lobe,
+		19 Length_of_posterior_area_of_fixigena,
+		20 Cephalon,
+		21 Cephalon,
+		22 Cephalon,
+		23 Cephalon,
+		24 Cephalon,
+		25 Cephalon,
+		26 Cephalon,
+		27 Cephalon,
+		28 Cephalon,
+		29 Cephalon,
+		30 Cephalon,
+		31 Cephalon,
+		32 Cephalon,
+		33 Cephalon,
+		34 Cephalon,
+		35 Cephalon,
+		36 Cephalon,
+		37 Cephalon,
+		38 Thorax,
+		39 Pygidium,
+		40 Pygidium,
+		41 Pygidium,
+		42 Pygidium,
+		43 Pygidium,
+		44 Pygidium,
+		45 Pygidium,
+		46 Pygidium,
+		47 Pygidium,
+		48 Pygidium,
+		49 Pygidium,
+		50 Pygidium,
+		51 Pygidium,
+		52 Pygidium,
+		53 Pygidium,
+		54 Pygidium,
+		55 Pygidium ; 
+	MATRIX
+	Chomatopyge_canasi            00210320210000100100(0 2)2030001100201101021010120010011000
+	Chomatopyge_falcata           000(0 1)02202(0 1)000011012211001111100001000?21010120010001000
+	Chomatopyge_marginifera       ????????????00110??21100111110000100??21010120010000000
+	Dimeropyge_clintonensis       00210022012000000200111302011011211021110(0 1)1112101010111
+	Dimeropyge_dorothyae          00110011012000000112001302011011101?2111011112101010111
+	Dimeropyge_speyeri            0021002201200000020111120201101121102111001112101011111
+	Dimeropyge_virginiensis       0011001211100000020101120201101121112111011112101011111
+	Hystricurus_ellipticus        001100121100??0??10????2110010?22?????11000101001000110
+	Hystricurus_flectimembrus     1001000220111002012211?20(0 1)01100000111?01000101001001110
+	Hystricurus_genalatus         0001001010011000012201020101100220011?12000110000001110
+	Hystricurus_globosus          102100121100100002020002010100012101??01000110101001111
+	Hystricurus_hillyardensis     0001001211000000010200020100(0 1)0?12001??12000110101001110
+	Millardicurus_millardensis    100100221000??00002201021101(0 1)0002001??11000110001000100
+	Hystricurus_paragenalatus     000100101101100201(1 2)211020101100220011?12000110000001110
+	Tulepyge_paucitubercutata     002100221100001001020002000010022001??11000111000020110
+	Hystricurus_penchiensis       000100(0 1)0(1 2)01100120102010201?0100000111011100111001000101
+	Hystricurus_scrofulosus       100100111111000001020002?10110012101??11000110101011111
+	Ischyrophyma_tuberculata      212100213101010010020?0202001111201010???0?????????????
+	Ischyrophyma_anataphra        00(1 2)10(0 1)210100011010020?02020011110111??12100012101101112
+	Dimeropygiella_blanda         0021002211000110110201120200111101101?12000012101110112
+	Dimeropygiella_caudanodosa    002100223110011010010??20201111121101?01000012101001212
+	Dimeropygiella_ovata          0021002201000110100101120200100121101?12000012001110112
+	Ischyrophyma_stubblefieldi    0021002131110110100201130201111121111112100012111111112
+	Ischyrophyma_twenhofeli       002100213110011010020??20200111121111?12100012001101112
+	Lasarchopyge_benedettoi       1000001020000000011000011101000001000011010011001010100
+	Lasarchopyge_correae          110001112000000001010002020000000100?010010011001001100
+	Mesotaphraspis_circumflexa    000102112000?????12????(1 2)100?1000(1 2)?????22010021010010000
+	Mesotaphraspis_inornata       00010120200000000010210101011000010000(1 2)1001(0 1)1100(0 1)00(0 1)000
+	Mesotaphraspis_parva          (0 1)00(0 1)022020000000011000030001(0 1)00011000021001011001011100
+	Mesotaphraspis?_dalfaskensis  00(0 1)112112000000001020000010010010100?000000111001011110
+	Paratoernquistia_chinchensis  (1 2)11122112(0 2)00??????0????2100?10012??????????????????????
+	Paratoernquistia_reedi        110113222100?????10????2110010002?????100(0 1)00100100?0000
+	Paratoernquistia_sanchezae    110012112000000001200(0 1)021001(0 1)00001000020010010010001000
+	Paratoernquistia_translata    100112012000?????00????211?01001??????200?01100100?00?0
+	Psalikilus_typicus            100100100101000200121(0 1)02000110000011??11000112001?00110
+	Toernquistia_anxiensis        001122012000??????0????2??0?0??0???????????????????????
+	Toernquistia_minuta           001112012(0 2)00???????????2?(0 1)0??0?0???????????????????????
+	Toernquistia_nicholsoni       0001(1 2)211210000110102?102110110000?0????????????????????
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	OPTIONS DEFTYPE = unord PolyTcount = MINSTEPS;
+	TYPESET * UNTITLED   =  unord:  1- 55;
+
+	WTSET * UNTITLED  =  1: 1 -  55 ;
+
+END;
+
+BEGIN TREES;
+	Title 'Trees from "Toernquistiidae_Chatterton_et_al_1998.nex"';
+	ID 017cc8567c951;
+	LINK Taxa = Taxa;
+	TRANSLATE
+[0] 		1 Chomatopyge_canasi,
+[1] 		2 Chomatopyge_falcata,
+[2] 		3 Chomatopyge_marginifera,
+[3] 		4 Dimeropyge_clintonensis,
+[4] 		5 Dimeropyge_dorothyae,
+[5] 		6 Dimeropyge_speyeri,
+[6] 		7 Dimeropyge_virginiensis,
+[7] 		8 Hystricurus_ellipticus,
+[8] 		9 Hystricurus_flectimembrus,
+[9] 		10 Hystricurus_genalatus,
+[10] 		11 Hystricurus_globosus,
+[11] 		12 Hystricurus_hillyardensis,
+[12] 		13 Millardicurus_millardensis,
+[13] 		14 Hystricurus_paragenalatus,
+[14] 		15 Tulepyge_paucitubercutata,
+[15] 		16 Hystricurus_penchiensis,
+[16] 		17 Hystricurus_scrofulosus,
+[17] 		18 Ischyrophyma_tuberculata,
+[18] 		19 Ischyrophyma_anataphra,
+[19] 		20 Dimeropygiella_blanda,
+[20] 		21 Dimeropygiella_caudanodosa,
+[21] 		22 Dimeropygiella_ovata,
+[22] 		23 Ischyrophyma_stubblefieldi,
+[23] 		24 Ischyrophyma_twenhofeli,
+[24] 		25 Lasarchopyge_benedettoi,
+[25] 		26 Lasarchopyge_correae,
+[26] 		27 Mesotaphraspis_circumflexa,
+[27] 		28 Mesotaphraspis_inornata,
+[28] 		29 Mesotaphraspis_parva,
+[29] 		30 Mesotaphraspis?_dalfaskensis,
+[30] 		31 Paratoernquistia_chinchensis,
+[31] 		32 Paratoernquistia_reedi,
+[32] 		33 Paratoernquistia_sanchezae,
+[33] 		34 Paratoernquistia_translata,
+[34] 		35 Psalikilus_typicus,
+[35] 		36 Toernquistia_anxiensis,
+[36] 		37 Toernquistia_minuta,
+[37] 		38 Toernquistia_nicholsoni;
+	TREE UNTITLED = (8,(15,((12,(17,(11,(((7,6),(4,5)),(21,((22,20),(18,(19,(23,24))))))))),((14,10),(13,((16,(9,35)),(30,((28,29),(((37,36),(26,25)),(27,((1,(38,(2,3))),(33,(31,(32,34))))))))))))));
+
+END;
+
+
+BEGIN NOTES;
+
+	TEXT  TAXON = 13 TEXT = Hystricurus_millardensis_Hintze_1943;
+	TEXT  TAXON = 15 TEXT = Hystricurus_paucitubercutata;
+	TEXT  TAXON = 20 TEXT = Ischyrophyma_blanda;
+	TEXT  TAXON = 21 TEXT = Ischyrophyma_caudanodosa;
+	TEXT  TAXON = 22 TEXT = Ischyrophyma_ovata;
+
+END;
+
+BEGIN MacClade;
+	Version 4.0 87;
+	LastModified -851587275;
+	FileSettings editor '1' '1' '56' '1';
+	Singles 110;
+	Editor 00011001111111100100010010 '0' '24' Gadget '12' '224' '1' all;
+	EditorPosition '306' '1045' '631' '489';
+	TreeWindowPosition '46' '6' '597' '835';
+	ListWindow Characters open Gadget '12' '72' '1123' '933' '374' 000;
+	ListWindow Taxa closed Geneva '9' '50' '10' '273' '312' 100000000;
+	ListWindow Trees closed Gadget '12' '90' '65' '145' '379';
+	ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow ExSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow TaxSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	ChartWindowPosition '52' '30' '686' '964';
+	StateNamesSymbols closed Gadget '12' '9' '50' '30' '186' '220';
+	WindowOrder Data List Characters;
+	OtherSymbols & / 00 ? -;
+	Correlation '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile '2';
+	ExportHTML _ MOSS '100' 110000;
+	PrettyPrint 10;
+	EditorToolsPosition '765' '871' '115' '165';
+	TreeToolsPosition '584' '9' '126' '138';
+	TreeWindowProgram 10;
+	TreeWindow 0000;
+	Continuous '0' '3' 1;
+	Calculations 1000101;
+	SummaryMode '0' '0' 0;
+	Charts Arial '12' ( normal ) 0010;
+	NexusOptions '0' '0' '50' 001011001;
+	TipLabel '1';
+	TreeFont Gadget '12' ( normal );
+	TreeShape 1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax '0';
+	TraceAllChangesDisplay '1' 1;
+	BarsOnBranchesDisplay '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation '3' 1;
+	PrintTree 10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Geneva '9' ( normal ) Geneva '10' ( normal ) Geneva '9' ( normal ) Geneva '9' ( normal ) Geneva '9' ( bold ) Geneva '9' ( normal ) Geneva '9' ( normal ) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '0' '0' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 00;
+	TreeTools '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools '1';
+
+END;
+BEGIN LABELS;
+	CHARGROUPLABEL Cephalon COLOR = (RGB 1 1 1) ;
+	CHARGROUPLABEL Thorax COLOR = (RGB 1 1 1) ;
+	CHARGROUPLABEL Pygidium COLOR = (RGB 1 1 1) ;
+
+
+END;
+
+BEGIN SETS;
+	CHARPARTITION * UNTITLED  =  Cephalon :  1- 37, Thorax :  38, Pygidium :  39- 55;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 55;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1635461822350;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 2068748622237655016;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 5336786749920935030;
+			mqVersion 360;
+			checksumv 0 3 3555725340 null  getNumChars 55 numChars 55 getNumTaxa 38 numTaxa 38   short true   bits 15   states 15   sumSquaresStatesOnly 8188.0 sumSquares 8188.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 202;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1819 481;
+			setLocation 8 25;
+			setFont Gadget;
+			setFontSize 16;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #5336786749920935030 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1617 409;
+					setLocation 8 25;
+					setFont Gadget;
+					setFontSize 16;
+					getToolPalette;
+					tell It;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			showCharacters #5336786749920935030 #mesquite.lists.CharacterList.CharacterList;
+			tell It;
+				setData 0;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.DefaultCharOrder.DefaultCharOrder;
+					newAssistant  #mesquite.lists.CharListInclusion.CharListInclusion;
+					newAssistant  #mesquite.lists.CharListPartition.CharListPartition;
+					newAssistant  #mesquite.parsimony.CharListParsModels.CharListParsModels;
+					getTable;
+					tell It;
+						rowNamesWidth 240;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1617 409;
+					setLocation 8 25;
+					setFont Gadget;
+					setFontSize 16;
+					getToolPalette;
+					tell It;
+						setTool mesquite.lists.CharacterList.CharacterListWindow.ibeam;
+					endTell;
+					setActive;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.CharListAnnotPanel.CharListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

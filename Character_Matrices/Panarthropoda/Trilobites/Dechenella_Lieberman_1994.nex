@@ -1,0 +1,504 @@
+#NEXUS
+[written Sat Dec 05 22:55:20 CST 2020 by Mesquite  version 3.61 (build 927) at EAS-392515.local/127.0.0.1]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=19;
+	TAXLABELS
+		Dechenella_perscheii Dechenella_bathurstensis Dechenella_algida Dechenella_osborni Dechenella_maclareni Dechenella_haldemani Dechenella_alpenensis Dechenella_vaIentini Dechenella_setosa Dechenella_rittbergensis Dechenella_verneuili Dechenella_struvei Dechenella_gigouti Dechenella_planimarginata Dechenella_welleri Dechenella_polonica Dechenella_carvalhoae Pedinodechenella_modelli Lacunoporaspis_norrisi 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=49;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6";
+	CHARSTATELABELS 
+		1 Cephalon,
+		2 Cephalon,
+		3 Cephalon,
+		4 Pygidium,
+		5 Pygidium,
+		6 Pygidium,
+		7 Pygidium,
+		8 Pygidium,
+		9 Pygidium,
+		10 Pygidium,
+		11 Cephalon,
+		12 Cephalon,
+		13 Cephalon,
+		14 Cephalon,
+		15 Cephalon,
+		16 Cephalon,
+		17 Cephalon,
+		18 Cephalon,
+		19 Pygidium,
+		20 Cephalon,
+		21 Cephalon,
+		22 Cephalon,
+		23 Cephalon,
+		24 Cephalon,
+		25 Cephalon,
+		26 Cephalon,
+		27 Pygidium,
+		28 Pygidium,
+		29 Cephalon,
+		30 Cephalon,
+		31 Cephalon,
+		32 Cephalon,
+		33 Cephalon,
+		34 Cephalon,
+		35 Cephalon,
+		36 Cephalon,
+		37 Cephalon,
+		38 Cephalon,
+		39 Cephalon,
+		40 Cephalon,
+		41 Cephalon,
+		42 Cephalon,
+		43 Cephalon,
+		44 Pygidium,
+		45 Cephalon,
+		46 Pygidium,
+		47 Cephalon,
+		48 Pygidium,
+		49 Pygidium ; 
+	MATRIX
+	Dechenella_perscheii       0110211120001011011000011110101111101011100112000
+	Dechenella_bathurstensis   0011121121001011102001121001001101100011121211110
+	Dechenella_algida          0012321010001010212011111000110011111011110011110
+	Dechenella_osborni         0013221110001011102001111000001001121011130011110
+	Dechenella_maclareni       0014101030111101201010101000100001100010111111110
+	Dechenella_haldemani       1015301110021?1101100011100110001111011112?201101
+	Dechenella_alpenensis      0015301021011111002000111010110111100111131201101
+	Dechenella_vaIentini       0014301120011?0101100011?0011?0111100??1??02?1101
+	Dechenella_setosa          0014131120111011202121111000101011101011110211101
+	Dechenella_rittbergensis   0014131011110111202121011010101100100010110211111
+	Dechenella_verneuili       001020111001101121200011?011100001100??013221?110
+	Dechenella_struvei         001210101011100121101110?0111100101000?01?0101110
+	Dechenella_gigouti         ?0141311100?011101112011?01110211011001????201?11
+	Dechenella_planimarginata  001321112000101112102112?001110101021?????1111101
+	Dechenella_welleri         1010010021021?1110112111001100011110000????210101
+	Dechenella_polonica        1010201111011?0120110011?010111011001??0101101111
+	Dechenella_carvalhoae      001?201010011?1120100011?011110111101??0110?01111
+	Pedinodechenella_modelli   111000110?121?00101000001011111011100110012201001
+	Lacunoporaspis_norrisi     0000000000000000000000000000000000000000000000000
+
+;
+
+END;
+BEGIN SETS;
+	TAXPARTITION * UNTITLED  =  Ingroup :  1- 17, Outgroup :  18- 19;
+
+	TAXSET Outgroup  =  18 -  19;
+
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS DEFTYPE = unord PolyTcount = MAXSTEPS;
+	TYPESET * UNTITLED   =  unord:  1- 49;
+
+	WTSET * UNTITLED  =  1: 1 -  49 ;
+
+END;
+
+BEGIN TREES;
+	Title 'Trees from "Dechenella_Lieberman_1994.nex"';
+	ID 0176365d933d13;
+	LINK Taxa = Taxa;
+	TRANSLATE
+[0] 		1 Dechenella_perscheii,
+[1] 		2 Dechenella_bathurstensis,
+[2] 		3 Dechenella_algida,
+[3] 		4 Dechenella_osborni,
+[4] 		5 Dechenella_maclareni,
+[5] 		6 Dechenella_haldemani,
+[6] 		7 Dechenella_alpenensis,
+[7] 		8 Dechenella_vaIentini,
+[8] 		9 Dechenella_setosa,
+[9] 		10 Dechenella_rittbergensis,
+[10] 		11 Dechenella_verneuili,
+[11] 		12 Dechenella_struvei,
+[12] 		13 Dechenella_gigouti,
+[13] 		14 Dechenella_planimarginata,
+[14] 		15 Dechenella_welleri,
+[15] 		16 Dechenella_polonica,
+[16] 		17 Dechenella_carvalhoae,
+[17] 		18 Pedinodechenella_modelli,
+[18] 		19 Lacunoporaspis_norrisi;
+	TREE 'Published+' = (19,(18,(((((2,14),15),1),(7,(8,6))),((16,17),(11,((4,3),((12,5),(9,(13,10)))))))));
+	TREE 'sans outgroup+' = (((((2,14),15),1),(7,(8,6))),((16,17),(11,((4,3),((12,5),(9,(13,10)))))));
+	TREE 'StratRooted Ingropup+' = (1,(((2,14),15),((7,(8,6)),((16,17),(11,((4,3),((12,5),(9,(13,10)))))))));
+
+END;
+
+
+BEGIN MacClade;
+	Version 4.0 87;
+	LastModified -845377856;
+	FileSettings '1' '1' '50' '1';
+	Singles 000;
+	Editor 00011001111111100100010010 '0' '24' Gadget '12' '204' '1' all;
+	EditorPosition '60' '425' '444' '1357';
+	TreeWindowPosition '58' '481' '715' '974';
+	ListWindow Characters open Gadget '12' '260' '943' '593' '321' 000;
+	ListWindow Taxa closed Gadget '12' '50' '10' '253' '345' 100000000;
+	ListWindow Trees closed Gadget '12' '50' '25' '134' '387';
+	ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow ExSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow TaxSets closed Gadget '12' '50' '10' '134' '185';
+	ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	ChartWindowPosition '50' '30' '688' '964';
+	StateNamesSymbols closed Gadget '12' '10' '50' '30' '203' '220';
+	WindowOrder List Characters;
+	OtherSymbols & / 00 ? -;
+	Correlation '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile '2';
+	ExportHTML _ MOSS '100' 110000;
+	PrettyPrint 10;
+	EditorToolsPosition '563' '46' '115' '165';
+	TreeToolsPosition '576' '6' '126' '138';
+	TreeWindowProgram 00;
+	TreeWindow 0000;
+	Continuous '0' '3' 1;
+	Calculations 1000101;
+	SummaryMode '0' '0' 0;
+	Charts Geneva '9' ( normal ) 0010;
+	NexusOptions '0' '0' '50' 001011001;
+	TipLabel '1';
+	TreeFont Gadget '12' ( normal );
+	TreeShape 1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax '0';
+	TraceAllChangesDisplay '1' 1;
+	BarsOnBranchesDisplay '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation '3' 1;
+	PrintTree 10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Geneva '9' ( normal ) Geneva '10' ( normal ) Geneva '9' ( normal ) Geneva '9' ( normal ) Geneva '9' ( bold ) Geneva '9' ( normal ) Geneva '9' ( normal ) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '0' '0' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 00;
+	TreeTools '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools '1';
+
+END;
+BEGIN LABELS;
+	TAXAGROUPLABEL Ingroup COLOR = (RGB 1 1 1) ;
+	TAXAGROUPLABEL Outgroup COLOR = (RGB 1 1 1) ;
+
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 49;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1607230520568;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 2546773256840140886;
+			tell It;
+				setSelected  18 -  19;
+				attachments ;
+			endTell;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 5642004173155411224;
+			mqVersion 361;
+			checksumv 0 3 3019018473 null  getNumChars 49 numChars 49 getNumTaxa 19 numTaxa 19   short true   bits 63   states 63   sumSquaresStatesOnly 7273.0 sumSquares 7273.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1339 610;
+			setLocation 8 23;
+			setFont Gadget;
+			setFontSize 12;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			showTaxa #2546773256840140886 #mesquite.lists.TaxonList.TaxonList;
+			tell It;
+				setTaxa #2546773256840140886;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.TaxonListCurrPartition.TaxonListCurrPartition;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1239 538;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 12;
+					getToolPalette;
+					tell It;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.ColorTaxon.ColorTaxon;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.lists.TaxonListAnnotPanel.TaxonListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.trees.BasicTreeWindowCoord.BasicTreeWindowCoord;
+		tell It;
+			makeTreeWindow #2546773256840140886  #mesquite.trees.BasicTreeWindowMaker.BasicTreeWindowMaker;
+			tell It;
+				suppressEPCResponse;
+				setTreeSource  #mesquite.trees.StoredTrees.StoredTrees;
+				tell It;
+					setTreeBlock 1;
+					setTreeBlockID 0176365d933d13;
+					toggleUseWeights off;
+				endTell;
+				setAssignedID 2092.1607230514210.8377946013948963027;
+				getTreeWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1239 538;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 12;
+					getToolPalette;
+					tell It;
+					endTell;
+					setActive;
+					getTreeDrawCoordinator #mesquite.trees.BasicTreeDrawCoordinator.BasicTreeDrawCoordinator;
+				tell It;
+					suppress;
+					setTreeDrawer  #mesquite.trees.SquareLineTree.SquareLineTree;
+					tell It;
+						setNodeLocs #mesquite.trees.NodeLocsStandard.NodeLocsStandard;
+						tell It;
+							branchLengthsToggle off;
+							toggleScale on;
+							toggleBroadScale off;
+							toggleCenter on;
+							toggleEven on;
+							setFixedTaxonDistance 0;
+						endTell;
+						setEdgeWidth 4;
+						showEdgeLines on;
+						orientRight;
+					endTell;
+					setBackground White;
+					setBranchColor Black;
+					showNodeNumbers off;
+					showBranchColors on;
+					labelBranchLengths off;
+					centerBrLenLabels on;
+					showBrLensUnspecified on;
+					showBrLenLabelsOnTerminals on;
+					setBrLenLabelColor 0 0 255;
+					setNumBrLenDecimals 6;
+					setSelectedTaxonHighlightMode 1;
+					desuppress;
+					getEmployee #mesquite.trees.BasicDrawTaxonNames.BasicDrawTaxonNames;
+					tell It;
+						setColor Black;
+						setTaxonNameStyler  #mesquite.trees.NoColorForTaxon.NoColorForTaxon;
+						toggleShadePartition off;
+						toggleShowFootnotes on;
+						toggleNodeLabels on;
+						toggleCenterNodeNames off;
+						toggleShowNames on;
+						namesAngle ?;
+					endTell;
+				endTell;
+					setTreeNumber 1;
+					setDrawingSizeMode 0;
+					toggleLegendFloat on;
+					scale 0;
+					toggleTextOnTree off;
+					togglePrintName off;
+					showWindow;
+				endTell;
+				desuppressEPCResponse;
+				getEmployee #mesquite.trees.ColorBranches.ColorBranches;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.ornamental.BranchNotes.BranchNotes;
+				tell It;
+					setAlwaysOn off;
+				endTell;
+				getEmployee #mesquite.ornamental.ColorTreeByPartition.ColorTreeByPartition;
+				tell It;
+					colorByPartition off;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocDoubles.DrawTreeAssocDoubles;
+				tell It;
+					setOn on;
+					toggleShow consensusFrequency;
+					toggleShow bootstrapFrequency;
+					toggleShow posteriorProbability;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					setDigits 4;
+					setThreshold ?;
+					writeAsPercentage off;
+					toggleCentred off;
+					toggleHorizontal on;
+					toggleWhiteEdges on;
+					toggleShowOnTerminals on;
+					setFontSize 10;
+					setOffset 0  0;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocStrings.DrawTreeAssocStrings;
+				tell It;
+					setOn on;
+					toggleCentred on;
+					toggleHorizontal on;
+					setFontSize 10;
+					setOffset 0  0;
+					toggleShowOnTerminals on;
+				endTell;
+				getEmployee #mesquite.trees.TreeInfoValues.TreeInfoValues;
+				tell It;
+					panelOpen false;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #5642004173155411224 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1239 538;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 12;
+					getToolPalette;
+					tell It;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

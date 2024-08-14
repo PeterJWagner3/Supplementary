@@ -1,0 +1,297 @@
+#NEXUS
+[written Mon Aug 01 14:16:04 CDT 2022 by Mesquite  version 3.6 (build 917) at Wagners_Dark_Tower/10.0.1.87]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=14;
+	TAXLABELS
+		Probolichas_kristiae Probolichas_pandus Probolichas_robbinsi Amphilichas_lineatus Amphilichas_subpunctatus Amphilichas_aspratilis Amphilichas_conradi Amphilichas_cucullus Apatolichas_jukesi Amphilichas_cf._A._encyrtos Amphilichas_effnensis Lichas_laciniatus Lyralichas_bronnikovi Pseudotupolichas_ornatus 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=28;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9";
+	CHARSTATELABELS 
+		1 Cranidium,
+		2 Cranidium,
+		3 Cranidium,
+		4 Cranidium,
+		5 Cranidium,
+		6 Cranidium,
+		7 Cranidium,
+		8 Cranidium,
+		9 Cranidium,
+		10 Cranidium,
+		11 Cranidium,
+		12 Cranidium,
+		13 Cranidium,
+		14 Hypostome,
+		15 Hypostome,
+		16 Hypostome,
+		17 Hypostome,
+		18 Pygidium,
+		19 Pygidium,
+		20 Pygidium,
+		21 Pygidium,
+		22 Pygidium,
+		23 Pygidium,
+		24 Pygidium,
+		25 Pygidium,
+		26 Pygidium,
+		27 Pygidium,
+		28 Pygidium ; 
+	MATRIX
+	Probolichas_kristiae         112222211111?111112100021031
+	Probolichas_pandus           112111211110????????????????
+	Probolichas_robbinsi         112111211100????????????????
+	Amphilichas_lineatus         210???2111011111211??00?0??0
+	Amphilichas_subpunctatus     110???2111010111211100010120
+	Amphilichas_aspratilis       110???2111000111211100010120
+	Amphilichas_conradi          010???2111000111211100000120
+	Amphilichas_cucullus         111???1111000111211100010120
+	Apatolichas_jukesi           110???1111111111221111200?10
+	Amphilichas_cf._A._encyrtos  110???211100??11221101201120
+	Amphilichas_effnensis        110???2111011????21110?10?20
+	Lichas_laciniatus            000???0000000000000000000000
+	Lyralichas_bronnikovi        010???2?11000000232000000120
+	Pseudotupolichas_ornatus     100???2010100000000102110042
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	OPTIONS DEFTYPE = unord PolyTcount = MINSTEPS;
+	TYPESET * UNTITLED   =  unord:  1- 28;
+
+	WTSET * UNTITLED  =  1: 1 -  28 ;
+
+END;
+
+BEGIN TREES;
+	Title 'Trees from "Tetralichinae_Carlucci_et_al_2010.nex"';
+	ID 01825ad5e22368;
+	LINK Taxa = Taxa;
+	TRANSLATE
+[0] 		1 Probolichas_kristiae,
+[1] 		2 Probolichas_pandus,
+[2] 		3 Probolichas_robbinsi,
+[3] 		4 Amphilichas_lineatus,
+[4] 		5 Amphilichas_subpunctatus,
+[5] 		6 Amphilichas_aspratilis,
+[6] 		7 Amphilichas_conradi,
+[7] 		8 Amphilichas_cucullus,
+[8] 		9 Apatolichas_jukesi,
+[9] 		10 Amphilichas_cf._A._encyrtos,
+[10] 		11 Amphilichas_effnensis,
+[11] 		12 Lichas_laciniatus,
+[12] 		13 Lyralichas_bronnikovi,
+[13] 		14 Pseudotupolichas_ornatus;
+	TREE UNTITLED = (9,(11,(10,(7,((3,(1,2)),(8,(6,(4,5))))))));
+
+END;
+
+
+BEGIN MacClade;
+	Version 4.0 87;
+	LastModified -845383872;
+	FileSettings treewindow '1' '1' '29' '1';
+	Singles 010;
+	Editor 00011001111111100100010010 '0' '24' Gadget '12' '214' '1' all;
+	EditorPosition '44' '6' '444' '1127';
+	TreeWindowPosition '46' '6' '985' '1630';
+	ListWindow Characters open Gadget '12' '213' '1277' '542' '520' 000;
+	ListWindow Taxa closed Gadget '12' '50' '10' '253' '364' 100000000;
+	ListWindow Trees closed Gadget '12' '50' '10' '134' '387';
+	ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow ExSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow TaxSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	ChartWindowPosition '52' '30' '968' '1620';
+	StateNamesSymbols open Gadget '12' '10' '844' '367' '203' '232';
+	WindowOrder Tree States List Characters;
+	OtherSymbols & / 00 ? -;
+	Correlation '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile '2';
+	ExportHTML _ MOSS '100' 110000;
+	PrettyPrint 10;
+	CharLegendPosition '902' '1535' '110' '85';
+	TreeLegendPosition '924' '1437' '88' '93';
+	EditorToolsPosition '563' '46' '115' '165';
+	TreeToolsPosition '716' '9' '126' '138';
+	TreeWindowProgram 10;
+	TreeWindow 0000;
+	Continuous '0' '3' 1;
+	Calculations 1000101;
+	SummaryMode '0' '0' 0;
+	Charts Arial '12' ( normal ) 0010;
+	NexusOptions '0' '0' '50' 001011001;
+	TipLabel '1';
+	TreeFont Gadget '12' ( normal );
+	TreeShape 1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax '0';
+	TraceAllChangesDisplay '1' 1;
+	BarsOnBranchesDisplay '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation '3' 1;
+	PrintTree 10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Gadget '9' ( normal ) Gadget '10' ( normal ) Gadget '9' ( normal ) Gadget '9' ( normal ) Gadget '9' ( bold ) Gadget '9' ( normal ) Gadget '9' ( normal ) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '0' '-30629' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 00;
+	TreeTools '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools '1';
+
+END;
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 28;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1659381364158;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 3027202339689123707;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 1895513163043128100;
+			mqVersion 360;
+			checksumv 0 3 396797386 null  getNumChars 28 numChars 28 getNumTaxa 14 numTaxa 14   short true   bits 31   states 31   sumSquaresStatesOnly 1775.0 sumSquares 1775.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1 errorReportedDuringRun;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 227;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1498 719;
+			setLocation 8 25;
+			setFont Gadget;
+			setFontSize 16;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #1895513163043128100 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1271 647;
+					setLocation 8 25;
+					setFont Gadget;
+					setFontSize 16;
+					getToolPalette;
+					tell It;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

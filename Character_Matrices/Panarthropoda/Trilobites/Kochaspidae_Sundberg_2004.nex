@@ -1,0 +1,520 @@
+#NEXUS
+[written Mon May 09 18:00:24 CDT 2022 by Mesquite  version 3.6 (build 917) at Wagners_Dark_Tower/10.0.1.87]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=66;
+	TAXLABELS
+		Elrathina_antiqua Pachyaspis_gallagari Pachyaspis_deborra 'Ptychoparella <sp. A Blaker & Peel 1997>' Syspacephalus_gregarius Amecephalites_sundbergi Amecephalus_arrojosensis Amecephalus_agnesensis Amecephalus_cleora Amecephalus_piochensis 'Amecephalus <sp. A Sundberg & McCollum 2000>' Caborcella_arrojosensis Caborcella_collaris Caborcella_pseudaulax Caborcella_reducta Eokochaspis_delamarensis Eokochaspis_longspina Eokochaspis_metalaspis Eokochaspis_nodosa Eokochaspis_piochensis '? Eokochaspis cabinensis' Hadrocephalites_cecinna Hadrocephalites_convexus Hadrocephalites_lyndonensis Hadrocephalites_rhytidodes Inglefieldia_porosa Kochaspis_liliana Kochiella_arenosa Kochiella_augusta Kochiella_brevaspis Kochiella_chares Kochiella_crito Kochiella_eiffelensis Kochiella_gibbosa Kochiella_gracilis Kochiella_mackenziensis Kochiella_mansfieldi Kochiella_maxeyi Kochiella_rasettii Kochiella_tuberculata Kochiellina_groomensis Kochiellina_janglensis Kochina_americana Kochina_macrops Mexicella_antelopea Mexicella_grandoculus Mexicella_granulata Mexicella_mexicana Mexicella_obscurus Mexicella_robusta Mexicella_stator Nyella_granosa Nyella_rara '? Nyella plana' Nyella_clinolimbata Nyella_columbiana Nyella_immoderata Nyella_skapta Onchocephalus_depressus Onchocephalus_fieldensis Onchocephalus_major Onchocephalus_thia Parapoulsenia_lata '? Schistometopus minor' Tonopahella_goldfieldensis Tonopahella_walcotti
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=70;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8";
+	CHARSTATELABELS
+		1 Cephalon,
+		2 Cephalon,
+		3 Cephalon,
+		4 Cephalon,
+		5 Cephalon,
+		6 Cephalon,
+		7 Cephalon,
+		8 Cephalon,
+		9 Cephalon,
+		10 Cephalon,
+		11 Cephalon,
+		12 Cephalon,
+		13 Cephalon,
+		14 Cephalon,
+		15 Cephalon,
+		16 Cephalon,
+		17 Cephalon,
+		18 Cephalon,
+		19 Cephalon,
+		20 Cephalon,
+		21 Cephalon,
+		22 Cephalon,
+		23 Cephalon,
+		24 Cephalon,
+		25 Cephalon,
+		26 Cephalon,
+		27 Cephalon,
+		28 Cephalon,
+		29 Cephalon,
+		30 Cephalon,
+		31 Cephalon,
+		32 Cephalon,
+		33 Cephalon,
+		34 Cephalon,
+		35 Cephalon,
+		36 Cephalon,
+		37 Cephalon,
+		38 Cephalon,
+		39 Cephalon,
+		40 Cephalon,
+		41 Cephalon,
+		42 Cephalon,
+		43 Cephalon,
+		44 Cephalon,
+		45 Cephalon,
+		46 Cephalon,
+		47 Cephalon,
+		48 Cephalon,
+		49 Cephalon,
+		50 Cephalon,
+		51 Cephalon,
+		52 Cephalon,
+		53 Thorax,
+		54 Thorax,
+		55 Thorax,
+		56 Thorax,
+		57 Pygidium,
+		58 Pygidium,
+		59 Pygidium,
+		60 Pygidium,
+		61 Pygidium,
+		62 Pygidium,
+		63 Pygidium,
+		64 Pygidium,
+		65 Pygidium,
+		66 Pygidium,
+		67 Pygidium,
+		68 Pygidium,
+		69 Pygidium,
+		70 Pygidium ;
+	MATRIX
+	Elrathina_antiqua                           (2 3)4010021(1 2)1100(1 2)(2 3)120110000010(1 2)111030000300030320000??1000(1 2)010000?00021?2
+	Pachyaspis_gallagari                        12120110111002212212000001001110102001121211010?????0102011000?10021??
+	Pachyaspis_deborra                          (2 3)(2 3)01011111100(1 2)31(1 2)0120000010(0 1)1100(2 3)(0 1)(0 1)10301(0 1)103110???????????????????????
+	'Ptychoparella <sp. A Blaker & Peel 1997>'  2(3 4 5)010110111001(2 3)1(1 2)0(1 2)200(0 1)001(0 1)(1 2)(0 1 2)1013(0 1)(0 1)002000(1 2)0(3 4)21000?020003010000?02010?1
+	Syspacephalus_gregarius                     1(3 4)02201022100(2 3 4)31(1 2)0222000001(1 2)1101(2 3)0(0 1)00(2 3)011(0 1 2 3)041010????000001(0 1)000?01010?1
+	Amecephalites_sundbergi                     0(2 3)11011111100(2 3)311(1 2 3)112000001210?0(2 3)(1 2)200212(1 2)11(1 2)110?????????011000?0(0 1)011?1
+	Amecephalus_arrojosensis                    1212010100110(1 2)230(1 2)000100001211101(0 1)20(0 1)(1 2)10(2 3)012210221111112001000?0(1 2)02111
+	Amecephalus_agnesensis                      0(0 1)120102001102330(0 1 2)1001000014?000(0 1)(1 2)(2 3 4)20000(2 3)012200221112112300000?02021?0
+	Amecephalus_cleora                          0(0 1)02010200110(0 1)(1 2)30(1 2)00010000111010(0 1 2)(1 2)410001(1 2 3)01(0 1 2)100221112113??????????????
+	Amecephalus_piochensis                      0(1 2)1201011011013301000100002(1 2)1000(1 2 3)(4 5)310(0 1)01(2 3)?2(2 3)100322121114012000?0(2 3)011?1
+	'Amecephalus <sp. A Sundberg & McCollum 2000>'  1(1 2 3)11010011100(0 1)230(2 3)010100011(1 2)1100(1 2)(0 1)200210(1 2)002200???????????????????????
+	Caborcella_arrojosensis                     (1 2)010112222?01(2 3)33010000000111211031(1 2)002110113101???????????????????????
+	Caborcella_collaris                         310011222210012110120010020121????020???0?121?????????????????????????
+	Caborcella_pseudaulax                       1012212212?0124312000000022220?0222002121222011???????????????????????
+	Caborcella_reducta                          2(0 1 2)12212222101203111010000221210131200211122(1 2)110???????????????????????
+	Eokochaspis_delamarensis                    1211010011100(1 2)(2 3)11(2 3)101000000(1 2)20101(0 1)(2 3)00211(1 2)(0 1)1(1 2)20011001010?011000?0102111
+	Eokochaspis_longspina                       1(2 3)11010011100(1 2)311(2 3)122000000(0 1)2110(1 2)0(2 3)00(2 3)11(0 1)(0 1)0(0 1 2)10031100????001000?0002112
+	Eokochaspis_metalaspis                      (1 2)(2 3)11011111100(2 3)11231200200001201(0 1)(1 2)0(1 2)00311(1 2)102200211000101011000?0101111
+	Eokochaspis_nodosa                          2211111121100(0 1 2)(1 2)111120010021(0 1)201020110311(0 1)(0 1 2)1(2 3)01021101010?0(0 1)1000?0102112
+	Eokochaspis_piochensis                      (1 2)(1 2)11111111100(1 2)32001200000??1??10(2 3)1(1 2)00111(0 1)(0 1)1(2 3)0?0210010101011000?0102111
+	'? Eokochaspis cabinensis'                  1(0 1 2)011102111002(1 2)11(1 2)2(0 1)1100010(0 1)1110(2 3)(0 1)200(1 2 3)11010(0 1)11021111????011000?0102111
+	Hadrocephalites_cecinna                     321121222110?2(2 3)000130000002121????121??12?12111?1?01????113002103000?0
+	Hadrocephalites_convexus                    (3 4)(1 2)(0 1)01122211001010(0 1)12000010102110(0 1 2)0(1 2)201011(1 2)1(0 1)011?????????113003101100?0
+	Hadrocephalites_lyndonensis                 3(2 3)10212221100(1 2)(0 1)101220000002020100(0 1)(1 2)211112(2 3)2201121?01????113002102100?0
+	Hadrocephalites_rhytidodes                  (1 2)2(0 1)(0 1)2122211001(1 2)100120000102(0 1)21101132101?(0 1)01001131201????11300310(2 3)100?0
+	Inglefieldia_porosa                         1(1 2)(0 1)1011011?01221011201(0 1)000?211001(1 2)(2 3)11(0 1)11(1 2)(0 1)2(1 2)110???????????????????????
+	Kochaspis_liliana                           1(1 2)01111122101(1 2)(2 3)10(0 1 2)12(0 1)000012(0 1)2010(1 2)(0 1)(0 1)20(2 3)1(1 2)(0 1)(1 2)2(1 2)11121101????011000?01021?(1 2)
+	Kochiella_arenosa                           0212210211?0?03300100?00002100002?211???1??01??221?2????303111011?10?0
+	Kochiella_augusta                           1(1 2)11210211100(1 2)3302110100001(0 1)1010(0 1)2(2 3 4)11012(1 2)(1 2)2(0 1)11122112????11301101202100
+	Kochiella_brevaspis                         2(1 2)11211211100(1 2)2202110100003(0 1 2)101001(1 2)11102(2 3)(0 1)2(0 1 2)011221?1????203011011021?0
+	Kochiella_chares                            0102210011101(0 1 2)330?110100001300??????1??2(2 3)?2(2 3)111221?2????413111013010?0
+	Kochiella_crito                             1(1 2 3)20110011101(1 2)2301000100001(1 2 3)00102240?001(1 2 3)?1221022112??????????????????
+	Kochiella_eiffelensis                       2201110011100(0 1)220(0 1)010000001(1 2)1000??201??1(1 2)(0 1)21010?????11?1113001012020?0
+	Kochiella_gibbosa                           1212210111100(0 1)(2 3)211122000021(2 3)211011(0 1)11202(2 3)(0 1)2(2 3)011???????????????????????
+	Kochiella_gracilis                          0111111011?010230111010100321010032110??0??0110???????????????????????
+	Kochiella_mackenziensis                     02112100011011130(0 1)11010100?(1 2 3 4)?0000?(2 3)1110?(2 3)?22111221?22112??????????????
+	Kochiella_mansfieldi                        0112110211?0?0220011010000220000132011021222111?2??2??????????????????
+	Kochiella_maxeyi                            (0 1)(0 1 2)11210211101(0 1)330010010000231000132210?2(0 1)22(1 2 3)011?????????403111012010?0
+	Kochiella_rasettii                          (0 1)(1 2)11010211100(0 1 2)330110010000?(2 3)?0000(2 3)(2 3)21012(2 3)(0 1)2111122112211(0 1)10301101(1 2)02000
+	Kochiella_tuberculata                       0(1 2 3)11110211001(0 1)1201100101002(0 1 2)1000(0 1)2(1 2)111?21?2(1 2)011221?2??????????????????
+	Kochiellina_groomensis                      111211011110032201111100011111?0??201??2021211112112????001010?13021?0
+	Kochiellina_janglensis                      1212111121?0032201112000001121?00?200??01211211?????????102010?12011?0
+	Kochina_americana                           11010111210001111021010101211100222000011?12110?????0113001000?120100?
+	Kochina_macrops                             1200011111?0022210110100012120000?021?0232(1 2)2111???????????????????????
+	Mexicella_antelopea                         22110100111001(3 4)10221100001012110(1 2)(0 1)(1 2)10310(0 1)0(0 1)(1 2)20020102????011000?00021?0
+	Mexicella_grandoculus                       02020?02001003410320000000120010112001102012200???????????????????????
+	Mexicella_granulata                         (0 1)(2 3)020101001002312(1 2)200000001(0 1)00102(0 1)(1 2)00(2 3)100003210???????????????????????
+	Mexicella_mexicana                          (0 1)(1 2)(0 2)(1 2)01121011024103200000000(0 1)0010(2 3)(0 1)(1 2)(0 1)0(2 3)10(0 1)(0 1 2 3)032(0 1)(0 1)00?01010?002000?11021?2
+	Mexicella_obscurus                          (1 2)(2 3)11(0 1)100011002(2 3 4)2132100(0 1)00200101030(1 2)003100(1 2)0(1 2)21000??1????011000?03000?1
+	Mexicella_robusta                           12120?0000100(1 2)(2 3)10(2 3)200000000(1 2)111020(2 3)10(2 3)100(1 2)022000??020112011000?02021?0
+	Mexicella_stator                            (0 1)012010000100(0 1)4103200000010(1 2 3)0000(2 3)(0 1 2)(1 2)00210(0 1)(2 3)0(2 3)2000??020005001000?02021?0
+	Nyella_granosa                              (1 2)(1 2)121110111011(1 2)0121200(0 1)00010201011110011(0 1)(0 1 2 3)11111211?1????001000?02011?2
+	Nyella_rara                                 2(1 2)11011111?002(2 3)00303000002002110(1 2)0020212(1 2)(1 2)11211???????????????????????
+	'? Nyella plana'                            1(1 2)111111111002310(1 2)111000021(1 2)1110(1 2)1110(0 1)112(0 1)1(2 3)11131101????011000?0(1 2)010?1
+	Nyella_clinolimbata                         2201111021101(0 1 2)21212200000212(1 2)11011120(0 1)00(2 3)013110201?1??????????????????
+	Nyella_columbiana                           2(2 3)0(1 2)011011100121221200100?0111??2?1102?10(1 2)0(1 2)111???????????????????????
+	Nyella_immoderata                           2(1 2 3)011110211012(1 2)12(0 1)120020010110102(0 1)(0 1 2)00(1 2)00(1 2)013110?????????001000?01011?2
+	Nyella_skapta                               2(2 3)01211122100210211300100211211011120(0 1 2)010202110???????????????????????
+	Onchocephalus_depressus                     2(2 3 4)010?00111001211101000000001100(1 2)01002101(1 2)0(3 4)110???????????????????????
+	Onchocephalus_fieldensis                    1(2 3)01010011100(1 2)312(1 2)020000000(0 1)1110(1 2)02002101(0 1)02210???????????????????????
+	Onchocephalus_major                         1(2 3)11011021100(0 1)212(1 2)02001001(0 1)11100102002?20201110???????????????????????
+	Onchocephalus_thia                          1301012011?0022121210100000010002120011?2??2200???????????????????????
+	Parapoulsenia_lata                          2(1 2)010120(1 2)110122021120020021(0 1 2)21102(0 1)0002100(0 1 2)0(2 3)211???????????????????????
+	'? Schistometopus minor'                    (3 4)(3 4)(0 1)1012021000(1 2 3)010(0 1)1200000100111010(1 2)102111102111???????????????????????
+	Tonopahella_goldfieldensis                  1(0 1)11111111101231001000000?110110(1 2)2110(0 1)01201(3 4)10021012010(1 2)011000?020211?
+	Tonopahella_walcotti                        (1 2)112111011100(1 2)(2 3)1101100000111100021(0 1 2)10(1 2)01(1 2)(0 1)1(3 4)11021012010(0 1 2 3)001000?01021??
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	OPTIONS DEFTYPE = unord PolyTcount = MINSTEPS;
+	TYPESET * UNTITLED   =  unord:  1- 70;
+TYPESET UNTITLED   =  unord:  1- 70;
+
+	WTSET * UNTITLED  =  1: 1 -  70 ;
+WTSET UNTITLED  =  1: 1 -  70 ;
+
+END;
+
+BEGIN TREES;
+	Title 'Trees from "Kochaspidae_Sundberg_2004.nex"';
+	ID 01808182fa066;
+	LINK Taxa = Taxa;
+	TRANSLATE
+[0] 		1 Elrathina_antiqua,
+[1] 		2 Pachyaspis_gallagari,
+[2] 		3 Pachyaspis_deborra,
+[3] 		4 'Ptychoparella <sp. A Blaker & Peel 1997>',
+[4] 		5 Syspacephalus_gregarius,
+[5] 		6 Amecephalites_sundbergi,
+[6] 		7 Amecephalus_arrojosensis,
+[7] 		8 Amecephalus_agnesensis,
+[8] 		9 Amecephalus_cleora,
+[9] 		10 Amecephalus_piochensis,
+[10] 		11 'Amecephalus <sp. A Sundberg & McCollum 2000>',
+[11] 		12 Caborcella_arrojosensis,
+[12] 		13 Caborcella_collaris,
+[13] 		14 Caborcella_pseudaulax,
+[14] 		15 Caborcella_reducta,
+[15] 		16 Eokochaspis_delamarensis,
+[16] 		17 Eokochaspis_longspina,
+[17] 		18 Eokochaspis_metalaspis,
+[18] 		19 Eokochaspis_nodosa,
+[19] 		20 Eokochaspis_piochensis,
+[20] 		21 '? Eokochaspis cabinensis',
+[21] 		22 Hadrocephalites_cecinna,
+[22] 		23 Hadrocephalites_convexus,
+[23] 		24 Hadrocephalites_lyndonensis,
+[24] 		25 Hadrocephalites_rhytidodes,
+[25] 		26 Inglefieldia_porosa,
+[26] 		27 Kochaspis_liliana,
+[27] 		28 Kochiella_arenosa,
+[28] 		29 Kochiella_augusta,
+[29] 		30 Kochiella_brevaspis,
+[30] 		31 Kochiella_chares,
+[31] 		32 Kochiella_crito,
+[32] 		33 Kochiella_eiffelensis,
+[33] 		34 Kochiella_gibbosa,
+[34] 		35 Kochiella_gracilis,
+[35] 		36 Kochiella_mackenziensis,
+[36] 		37 Kochiella_mansfieldi,
+[37] 		38 Kochiella_maxeyi,
+[38] 		39 Kochiella_rasettii,
+[39] 		40 Kochiella_tuberculata,
+[40] 		41 Kochiellina_groomensis,
+[41] 		42 Kochiellina_janglensis,
+[42] 		43 Kochina_americana,
+[43] 		44 Kochina_macrops,
+[44] 		45 Mexicella_antelopea,
+[45] 		46 Mexicella_grandoculus,
+[46] 		47 Mexicella_granulata,
+[47] 		48 Mexicella_mexicana,
+[48] 		49 Mexicella_obscurus,
+[49] 		50 Mexicella_robusta,
+[50] 		51 Mexicella_stator,
+[51] 		52 Nyella_granosa,
+[52] 		53 Nyella_rara,
+[53] 		54 '? Nyella plana',
+[54] 		55 Nyella_clinolimbata,
+[55] 		56 Nyella_columbiana,
+[56] 		57 Nyella_immoderata,
+[57] 		58 Nyella_skapta,
+[58] 		59 Onchocephalus_depressus,
+[59] 		60 Onchocephalus_fieldensis,
+[60] 		61 Onchocephalus_major,
+[61] 		62 Onchocephalus_thia,
+[62] 		63 Parapoulsenia_lata,
+[63] 		64 '? Schistometopus minor',
+[64] 		65 Tonopahella_goldfieldensis,
+[65] 		66 Tonopahella_walcotti;
+	TREE UNTITLED = ((((((((((((((((37,((28,38),31)),35),(36,40)),(26,(33,32))),((39,29),(30,34))),((44,42),41)),43),((((8,9),10),7),11)),21),(((66,65),54),6)),(61,2)),(((((((((((23,25),24),22),(13,(((15,14),12),27))),(58,(52,19))),55),57),20),(3,5)),((63,53),59)),(18,(17,16)))),(((((45,50),51),((47,48),46)),49),(56,62))),60),1),(4,64));
+	TREE UNTITLED = ((((((((((((((9,8),10),7),11),(((((((37,((28,38),31)),35),(36,40)),(26,(33,32))),((39,29),(30,34))),((44,42),41)),43)),21),(((66,65),54),6)),(61,2)),((((((45,50),51),((47,48),46)),49),(56,62)),(60,(1,(4,64))))),(18,(17,16))),((63,53),59)),(3,5)),(((((((23,25),24),22),(13,(((15,14),12),27))),(58,(52,19))),55),57)),20);
+
+END;
+
+
+BEGIN NOTES;
+
+	TEXT  TAXON = 1 TEXT = Palmer_&_Halley_1979;
+	TEXT  TAXON = 2 TEXT = Fritz_1968;
+	TEXT  TAXON = 3 TEXT = Lochman_1952;
+	TEXT  TAXON = 4 TEXT = Blaker_&_Peel_1996;
+	TEXT  TAXON = 5 TEXT = Rasetti_1951;
+	TEXT  TAXON = 6 TEXT = Eddy_&_McCollum_1998;
+	TEXT  TAXON = 7 TEXT = '(Lochman_1952)';
+	TEXT  TAXON = 8 TEXT = '(Walcott_1912)';
+	TEXT  TAXON = 9 TEXT = '(Walcott_1917b)';
+	TEXT  TAXON = 10 TEXT = '(Walcott_1886)';
+	TEXT  TAXON = 11 TEXT = Sundberg_&_McCollum_2000;
+	TEXT  TAXON = 12 TEXT = Lochman_1948;
+	TEXT  TAXON = 13 TEXT = Rasetti_1951;
+	TEXT  TAXON = 14 TEXT = Palmer_&_Halley_1979;
+	TEXT  TAXON = 15 TEXT = Palmer_&_Halley_1979;
+	TEXT  TAXON = 16 TEXT = Sundberg_&_McCollum_2000;
+	TEXT  TAXON = 17 TEXT = Sundberg_&_McCollum_2000;
+	TEXT  TAXON = 18 TEXT = Sundberg_&_McCollum_2000;
+	TEXT  TAXON = 19 TEXT = Sundberg_&_McCollum_2000;
+	TEXT  TAXON = 20 TEXT = Palmer_&_Halley_1979;
+	TEXT  TAXON = 21 TEXT = Sundberg_&_McCollum_2003a;
+	TEXT  TAXON = 22 TEXT = '(Walcott_1917b)';
+	TEXT  TAXON = 23 TEXT = '(Rasetti_1951)';
+	TEXT  TAXON = 24 TEXT = Sundberg_&_McCollum_2002;
+	TEXT  TAXON = 25 TEXT = Sundberg_&_McCollum_2002;
+	TEXT  TAXON = 26 TEXT = Poulsen_1927;
+	TEXT  TAXON = 27 TEXT = '(Walcott_1886)';
+	TEXT  TAXON = 28 TEXT = Resser_1939b;
+	TEXT  TAXON = 29 TEXT = '(Walcott_1886)';
+	TEXT  TAXON = 30 TEXT = Sundberg_&_McCollum_2002;
+	TEXT  TAXON = 31 TEXT = '(Walcott_1917a)';
+	TEXT  TAXON = 32 TEXT = '(Walcott_1917b)';
+	TEXT  TAXON = 33 TEXT = '(Rasetti_1951)';
+	TEXT  TAXON = 34 TEXT = Rasetti_1957;
+	TEXT  TAXON = 35 TEXT = Poulsen_1927;
+	TEXT  TAXON = 36 TEXT = Norford_1968;
+	TEXT  TAXON = 37 TEXT = Resser_1939b;
+	TEXT  TAXON = 38 TEXT = Rasetti_1951;
+	TEXT  TAXON = 39 TEXT = Sundberg_&_McCollum_2002;
+	TEXT  TAXON = 40 TEXT = Poulsen_1927;
+	TEXT  TAXON = 41 TEXT = Palmer_&_Halley_1979;
+	TEXT  TAXON = 42 TEXT = Palmer_&_Halley_1979;
+	TEXT  TAXON = 43 TEXT = '(Walcott_1912)';
+	TEXT  TAXON = 44 TEXT = Rasetti_1951;
+	TEXT  TAXON = 45 TEXT = Sundberg_&_McCollum_2000;
+	TEXT  TAXON = 46 TEXT = Palmer_&_Halley_1979;
+	TEXT  TAXON = 47 TEXT = Eddy_&_McCollum_1998;
+	TEXT  TAXON = 48 TEXT = Lochman_1948;
+	TEXT  TAXON = 49 TEXT = Palmer_&_Halley_1979;
+	TEXT  TAXON = 50 TEXT = Sundberg_&_McCollum_2000;
+	TEXT  TAXON = 51 TEXT = '(Walcott_1916)';
+	TEXT  TAXON = 52 TEXT = '(Resser_1939a)';
+	TEXT  TAXON = 53 TEXT = '(Rasetti_1951)';
+	TEXT  TAXON = 54 TEXT = Sundberg_&_McCollum_2003a;
+	TEXT  TAXON = 55 TEXT = '(Fritz_1968)';
+	TEXT  TAXON = 56 TEXT = '(Rasetti_1957)';
+	TEXT  TAXON = 57 TEXT = Palmer_&_Halley_1979;
+	TEXT  TAXON = 58 TEXT = '(Walcott_1917b)';
+	TEXT  TAXON = 59 TEXT = Rasetti_1951;
+	TEXT  TAXON = 60 TEXT = Rasetti_1951;
+	TEXT  TAXON = 61 TEXT = Rasetti_1951;
+	TEXT  TAXON = 62 TEXT = '(Walcott_1917b)';
+	TEXT  TAXON = 63 TEXT = Rasetti_1957;
+	TEXT  TAXON = 64 TEXT = Rasetti_1957;
+	TEXT  TAXON = 65 TEXT = Sundberg_&_McCollum_2003b;
+	TEXT  TAXON = 66 TEXT = '(Sundberg_&_McCollum_2000)';
+
+END;
+
+BEGIN MacClade;
+	Version 4.0 84;
+	LastModified -999955979;
+	FileSettings treewindow '1' '1' '40' '1';
+	Singles 010;
+	Editor 0001100111111110010001001 '0' '64' Gadget '12' '222' '2' all;
+	EditorPosition '76' '443' '920' '1231';
+	TreeWindowPosition '198' '-1282' '778' '1269';
+	ListWindow Characters open Gadget '12' '116' '1343' '933' '517' 000;
+	ListWindow Taxa open Gadget '12' '63' '1515' '984' '379' 100000;
+	ListWindow Trees closed Gadget '9' '50' '10' '276' '490';
+	ListWindow TypeSets closed Gadget '9' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '9' '50' '10' '276' '490';
+	ListWindow ExSets closed Gadget '9' '50' '10' '276' '490';
+	ListWindow CharSets closed Gadget '9' '50' '10' '276' '490';
+	ListWindow TaxSets closed Gadget '9' '50' '10' '276' '490';
+	ListWindow CharPartitions closed Gadget '9' '50' '10' '276' '490';
+	ListWindow CharPartNames closed Gadget '9' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '9' '50' '10' '276' '490';
+	ChartWindowPosition '52' '30' '818' '1380';
+	StateNamesSymbols open Gadget '12' '9' '85' '498' '186' '256';
+	WindowOrder Tree List Taxa List Characters States;
+	OtherSymbols & / 00 ? -;
+	Correlation '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile '2';
+	ExportHTML _ MOSS '100' 110000;
+	PrettyPrint 10;
+	CharLegendPosition '847' '-114' '110' '85';
+	TreeLegendPosition '869' '-212' '88' '93';
+	EditorToolsPosition '495' '1503' '115' '165';
+	TreeToolsPosition '716' '9' '126' '138';
+	TreeWindowProgram 10;
+	TreeWindow 0000;
+	Continuous '0' '3' 1;
+	Calculations 1000101;
+	SummaryMode '0' '0' 0;
+	Charts Gadget '9' ( normal ) 0010;
+	NexusOptions '0' '0' '50' 001011001;
+	TipLabel '1';
+	TreeFont Gadget '12' ( normal );
+	TreeShape 1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax '0';
+	TraceAllChangesDisplay '1' 1;
+	BarsOnBranchesDisplay '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation '3' 1;
+	PrintTree 10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Gadget '9' ( normal ) Gadget '10' ( normal ) Gadget '9' ( normal ) Gadget '9' ( normal ) Gadget '9' ( bold ) Gadget '9' ( normal ) Gadget '9' ( normal ) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '32767' '-1' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 10;
+	TreeTools '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools '1';
+
+END;
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 70;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1652137224903;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 6962676422390206554;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 5456307375275694826;
+			mqVersion 360;
+			checksumv 0 3 3328429552 null  getNumChars 70 numChars 70 getNumTaxa 66 numTaxa 66   short true   bits 63   states 63   sumSquaresStatesOnly 62171.0 sumSquares 62171.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 202;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1808 752;
+			setLocation 0 124;
+			setFont Gadget;
+			setFontSize 16;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #5456307375275694826 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 393;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1606 680;
+					setLocation 0 124;
+					setFont Gadget;
+					setFontSize 16;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;

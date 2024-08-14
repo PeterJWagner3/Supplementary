@@ -1,0 +1,27 @@
+#NEXUS
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=18 NCHAR=26 ;
+	FORMAT DATATYPE=STANDARD SYMBOLS=" 0 1 2 3 4 5 6" MISSING=? GAP=- ;
+MATRIX
+Dicranopeltis																											10220010111032012110011?13
+Platylichas																												1121100011001?111111011024
+Amphilichas																												11210100110020002111012024
+Acanthopyge																												11110011110020011111010043
+Borealarges																												11110010111020011111010020
+'Dicranogmus <Wenlock sp. indet. Campbell & Chatterton 2009>'			11101011121022201111011034
+'Dicranogmus <Llandovery spp. indet. Campbell & Chatterton 2009>'	00110010120122201110011130
+Hemiarges_turneri																									10100000110011011111000022
+Hemiarges_rasettii																								10101011110011011111011022
+Hemiarges_amiculus																								10100000100010010111010000
+Radiolichas																												011000121201222?1110021124
+Ceratacara																												00000120?30024013010113020
+Diacanthaspis																											0000012002002401410011302?
+Nanillaenus																												112120210000030101?0103100
+Bumastoides																												112110210000140101?0100000
+Failleana																													1021202200000301?000203000
+Stenoblepharum																										10000000000003?150003---00
+Dimeropyge																												100000001110240140003---20
+;
+END
+;

@@ -1,0 +1,126 @@
+#NEXUS
+[MacClade 4.08 registered to Peter Wagner, Field Museum of Natural History]
+
+
+BEGIN MacCladeStart;
+	Extended;
+END;
+
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=11 NCHAR=17;
+
+[!Zhpi, Z,-Y.., Y. Wenwei, and Z. Zhiqiang.  2010.  Evolutional trends and palaeobiogeography of the Ordovician trilobite Ovalocephalus Koroleva 1959.  Proceedings of the Royal Society B: Biological Sciences 277:257-266.
+
+Stratigraphy from Figure 2.]
+	FORMAT SYMBOLS= " 0 1 2 3 4 5" MISSING=? GAP=- ;
+
+MATRIX
+[                                          10        ]
+[                                          .         ]
+
+Ovalocephalus_eoprimitivus        00000000000001000
+Ovalocephalus_primitivus          11001100100012101
+Ovalocephalus_extraneus           11000000100012101
+Ovalocephalus_globosus            11010110000112111
+Ovalocephalus_kelleri             21120210110112112
+Ovalocephalus_plewesae            21120210120112112
+Ovalocephalus_yichongqiaoensis    21120210110112112
+Ovalocephalus_kanlingensis        21111211100112122
+Ovalocephalus_longicervix         22111212202122122
+Ovalocephalus_tetrasulcatus       22111212201122122
+Encrinurella_tetrasulcata         00001200000000000
+;
+END;
+
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+	TYPESET * UNTITLED  = unord: 1-17;
+	WTSET * UNTITLED  = 1: 1-17;
+END;
+
+
+BEGIN TREES;
+
+	TRANSLATE
+		1	Ovalocephalus_eoprimitivus,
+		2	Ovalocephalus_primitivus,
+		3	Ovalocephalus_extraneus,
+		4	Ovalocephalus_globosus,
+		5	Ovalocephalus_kelleri,
+		6	Ovalocephalus_plewesae,
+		7	Ovalocephalus_yichongqiaoensis,
+		8	Ovalocephalus_kanlingensis,
+		9	Ovalocephalus_longicervix,
+		10	Ovalocephalus_tetrasulcatus,
+		11	Encrinurella_tetrasulcata
+	;
+	TREE  * UNTITLED =  [&R] (1,(3,(2,(4,(((5,7),6),(8,(9,10)))))));
+
+END;
+
+
+BEGIN MacClade;
+	Version 4.0  87;
+	LastModified -845387003;
+	FileSettings treewindow  '1' '18' '1' '0';
+	Singles 010;
+	Editor 00011001111111100100010010 '0' '24' Gadget '12' '214' '1' all;
+	EditorPosition  '44' '6' '461' '1559';
+	TreeWindowPosition  '46' '6' '993' '1630';
+	ListWindow Characters closed Gadget '12' '50' '10' '270' '517' 000;
+	ListWindow Taxa closed Gadget '12' '50' '10' '253' '400' 100000000;
+	ListWindow Trees closed Gadget '12' '50' '10' '134' '387' ;
+	ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow ExSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow TaxSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490' ;
+	ChartWindowPosition  '52' '30' '968' '1620';
+	StateNamesSymbols open Gadget '12' '11' '774' '1217' '220' '232';
+	WindowOrder  Tree States;
+	OtherSymbols &/ 00 ?-;
+	Correlation  '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile  '2';
+	ExportHTML _ MOSS  '100' 110000;
+	PrettyPrint 10;
+	CharLegendPosition  '921' '1535' '99' '85';
+	TreeLegendPosition  '932' '1437' '88' '93';
+	EditorToolsPosition  '563' '46' '115' '165';
+	TreeToolsPosition  '716' '9' '126' '138';
+	TreeWindowProgram 10;
+	TreeWindow 0000;
+	Continuous  '0' '3' 1;
+	Calculations 1000101;
+	SummaryMode  '0' '0' 0;
+	Charts  Arial '12' (normal) 0010;
+	NexusOptions  '0' '0' '50' 001011001;
+	TipLabel  '1';
+	TreeFont  Gadget '12' (normal);
+	TreeShape  1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors  '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth  '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax  '0';
+	TraceAllChangesDisplay  '1' 1;
+	BarsOnBranchesDisplay  '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation  '3' 1;
+	PrintTree  10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Geneva '9' (normal) Geneva '10' (normal) Geneva '9' (normal) Geneva '9' (normal) Geneva '9' (bold ) Geneva '9' (normal) Geneva '9' (normal) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '0' '-30629' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 00;
+	TreeTools  '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools  '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign  '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools  '1';
+END;

@@ -1,0 +1,175 @@
+#NEXUS
+[MacClade 4.08 registered to Peter Wagner, Field Museum of Natural History]
+
+
+BEGIN MacCladeStart;
+	Extended;
+END;
+
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=32 NCHAR=40;
+
+[!Adrain, J. M., and G. D. Edgecombe.  1997.  Silurian encrinurine trilobites from the central Canadian Arctic.  Palaeontolographica Canadiana 14:1 - 109.]
+	FORMAT SYMBOLS= " 0 1 2 3 4 5 6 7" MISSING=? GAP=- ;
+	CHARSTATELABELS
+		1  Cephalon,  2  Cephalon,  3  Cephalon,  4  Cephalon,  5  Cephalon,  6  Cephalon,
+  7  Cephalon,  8  Cephalon,  9  Cephalon,  10  Cephalon,  11  Cephalon,
+  12  Cephalon,  13  Cephalon,  14  Cephalon,  15  Cephalon,  16  Cephalon,
+  17  Cephalon,  18  Cephalon,  19  Cephalon,  20  Cephalon,  21  Cephalon,
+  22  Cephalon,  23  Cephalon,  24  Cephalon,  25  Cephalon,  26  Cephalon,
+  27  Cephalon,  28  Thorax,  29  Thorax,  30  Thorax,  31  Thorax,
+  32  Thorax,  33  Thorax,  34  Pygidium,  35  Pygidium,  36  Pygidium,
+  37  Pygidium,  38  Pygidium,  39  Pygidium,  40  Pygidium
+		;
+
+MATRIX
+[                                            10        20        30        40 ]
+[                                            .         .         .         .  ]
+
+Frammia_arctica                     0011010100001002111042120100000000112101
+Frammia_bachae                      10110002000000020110?11211??000000101001
+Mackenziurus_ceejayi                10110101100300200110?111121?001100001110
+Mackenziurus_deedeei                101101010003000001103112121?001100001011
+Struszia_dimitrovi                  201100010000000001102112010?000000101001
+Struszia_epsteini                   00110001000000000111?212010?0?0?00101001
+Avalanchurus_garfunkeli             30?1?002010?10000110?001010?1?0?00101000
+Fragiscutum_glebaie                 0111?00300002021011020011001000001001101
+Struszia_harrisoni                  200100120102100001102212010?000000101001
+Frammia_hyperborea                  1011010200001002111042120100000000101001
+Struszia_indianensis                100100120002000001102212?1??0?0?00101001
+Aegrotocatellus_jaggeri             3001100100111102011020110000010010101001
+Mackenziurus_joeyi                  101101011000000001103???????001100001110
+Mackenziurus_johnnyi                30110101010300210110?001120?0?1?00101010
+Mackenziurus_lauriae                0011??000?0?00010?103??????1001?0000111?
+Avalanchurus_lennoni                30010002010000000110?0110100100000101000
+Struszia_martini                    101100020000000001102012010?000000101001
+Struszia_mccartneyi                 100000020002001000112011110?000000100000
+Aegrotocatellus_nankerphelgeorus    ?0111001001110020110???????001001010100?
+Struszia_obtusa_A                   1011000100000011011022120100000000101001
+Struszia_obtusa_B                   201100020000001101102??????0000000101001
+Struszia_onoae                      001100100002001101113212?1??000000100001
+Struszia_petebesti                  201100010002000001102112010?000000101001
+Struszia_ramskoeldi                 0011??01000000210?102??????0000?0010000?
+Mackenziurus_reimeri                111101001002000001103001121?001000000110
+Fragiscutum_rhytium                 1111000000020021011021111001000001101101
+Struszia_rosensteinae               0011000200000011011020120100000?00101001
+Frammia_rossica                     00010101000?1??2111?????????0???0011210?
+Avalanchurus_simoni                 30010002010010000110?011110?100000101000
+Avalanchurus_starri                 30110002010000000110?111010?1?0?00101001
+Balizoma_variolaris                 1001000100021112010010110000000000001001
+Billevittia_adraini                 0000000000000000000000000000000000000000
+;
+END;
+
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MAXSTEPS ;
+	TYPESET * UNTITLED  = unord: 1-40;
+END;
+
+
+BEGIN TREES;
+
+	TRANSLATE
+		1	Frammia_arctica,
+		2	Frammia_bachae,
+		3	Mackenziurus_ceejayi,
+		4	Mackenziurus_deedeei,
+		5	Struszia_dimitrovi,
+		6	Struszia_epsteini,
+		7	Avalanchurus_garfunkeli,
+		8	Fragiscutum_glebaie,
+		9	Struszia_harrisoni,
+		10	Frammia_hyperborea,
+		11	Struszia_indianensis,
+		12	Aegrotocatellus_jaggeri,
+		13	Mackenziurus_joeyi,
+		14	Mackenziurus_johnnyi,
+		15	Mackenziurus_lauriae,
+		16	Avalanchurus_lennoni,
+		17	Struszia_martini,
+		18	Struszia_mccartneyi,
+		19	Aegrotocatellus_nankerphelgeorus,
+		20	Struszia_obtusa_A,
+		21	Struszia_obtusa_B,
+		22	Struszia_onoae,
+		23	Struszia_petebesti,
+		24	Struszia_ramskoeldi,
+		25	Mackenziurus_reimeri,
+		26	Fragiscutum_rhytium,
+		27	Struszia_rosensteinae,
+		28	Frammia_rossica,
+		29	Avalanchurus_simoni,
+		30	Avalanchurus_starri,
+		31	Balizoma_variolaris,
+		32	Billevittia_adraini
+	;
+	TREE Parsimony =  [&R] (32,(18,((31,(12,19)),((((((((5,23),6),((((22,24),20),27),21)),(9,11)),(2,((1,28),10))),17),((16,(7,29)),30)),((((25,((3,13),4)),15),14),(26,8))))));
+	TREE Parsimony =  [&R] (32,(18,((31,(12,19)),((((((((5,23),6),((((22,24),20),27),21)),(9,11)),(2,((1,28),10))),17),((16,(7,29)),30)),((((25,((3,13),4)),15),14),(26,8))))));
+	TREE  * Parsimony_Strat_Rooted_ =  [&R] (31,((12,19),((32,18),(((26,8),(14,(15,(25,(4,(3,13)))))),((30,(16,(7,29))),(17,((2,(10,(1,28))),((9,11),((6,(5,23)),(21,(27,(20,(22,24)))))))))))));
+
+END;
+
+
+BEGIN MacClade;
+	Version 4.0  87;
+	LastModified -845383364;
+	FileSettings  '1' '1' '41' '1';
+	Singles 000;
+	Editor 00011001111111100100010010 '0' '24' Gadget '12' '162' '1' all;
+	EditorPosition  '57' '754' '631' '475';
+	TreeWindowPosition  '46' '6' '723' '974';
+	ListWindow Characters closed Gadget '12' '70' '45' '763' '321' 000;
+	ListWindow Taxa closed Geneva '9' '50' '10' '225' '330' 100000000;
+	ListWindow Trees closed Gadget '12' '50' '10' '134' '387' ;
+	ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow ExSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow TaxSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490' ;
+	ChartWindowPosition  '50' '30' '688' '964';
+	StateNamesSymbols open Gadget '12' '10' '666' '84' '203' '243';
+	WindowOrder  States;
+	OtherSymbols &/ 00 ?-;
+	Correlation  '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile  '2';
+	ExportHTML _ MOSS  '100' 110000;
+	PrettyPrint 10;
+	EditorToolsPosition  '596' '1059' '115' '165';
+	TreeToolsPosition  '576' '6' '126' '138';
+	TreeWindowProgram 00;
+	TreeWindow 0000;
+	Continuous  '0' '3' 1;
+	Calculations 0000001;
+	SummaryMode  '0' '0' 0;
+	Charts  Arial '12' (normal) 0010;
+	NexusOptions  '0' '0' '50' 001011001;
+	TipLabel  '1';
+	TreeFont  Gadget '12' (normal);
+	TreeShape  1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors  '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth  '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax  '0';
+	TraceAllChangesDisplay  '1' 1;
+	BarsOnBranchesDisplay  '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation  '3' 1;
+	PrintTree  10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Geneva '9' (normal) Geneva '10' (normal) Geneva '9' (normal) Geneva '9' (normal) Geneva '9' (bold ) Geneva '9' (normal) Geneva '9' (normal) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '12' '0' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 00;
+	TreeTools  '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools  '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign  '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools  '1';
+END;

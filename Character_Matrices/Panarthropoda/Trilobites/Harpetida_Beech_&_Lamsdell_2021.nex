@@ -1,0 +1,854 @@
+#NEXUS
+
+    [ File output by Morphobank v3.0 (http://www.morphobank.org); 2023-02-11 18.26.16 ]
+
+    BEGIN TAXA;
+    DIMENSIONS NTAX=53;
+    TAXLABELS
+    		'Eoredlichia intermediata'
+		'Baikadamaspis jikdongensis'
+		'Bohemoharpes naumanni'
+		'Bohemoharpes ungula'
+		'Bowmania lassieae'
+		'Brachyhipposiderus secundus'
+		'Chencunia tripleura'
+		'Conococheaguea ovata'
+		'Dolichoharpes dentoni'
+		'Dubhglasina parvula'
+		'Entomaspis radiatus'
+		'Eoharpes antiquatus'
+		'Eoharpes benignensis'
+		'Eoharpes primus'
+		'Eskoharpes boltoni'
+		'Eskoharpes guthae'
+		'Eskoharpes palanasus'
+		'Eskoharpes wandjina'
+		'Globoharpes friendi'
+		'Globoharpes teicherti'
+		'Harpes gracilis'
+		'Harpes macrocephalus'
+		'Harpes neogracilis'
+		'Harpes whidbournei'
+		'Harpides grimmi'
+		'Helioharpes perradiatus'
+		'Helioharpes radians'
+		'Heterocaryon vargum'
+		'Hibbertia balclatchiensis'
+		'Hibbertia ottawaensis'
+		'Hibbertia wegelini'
+		'Kielania dorbignyana'
+		'Lioharpes montagnei'
+		'Lioharpes venulosus'
+		'Loganopeltis depressa'
+		'Loganopeltoides zenkeri'
+		'Notchpeakia milleri'
+		'Scotoharpes consuetus'
+		'Scotoharpes domina'
+		'Scotoharpes judex'
+		'Scotoharpes latior'
+		'Scotoharpes loma'
+		'Scotoharpes raaschi'
+		'Scotoharpes singularis'
+		'Scotoharpes spasskii'
+		'Scotoharpes tatouyangensis'
+		'Scotoharpes telleri'
+		'Cedaria minor'
+		'Coosina kindlei'
+		'Crepicephalus iowensis'
+		'Modocia whiteleyi'
+		'Ptychoparia striata'
+		'Tricrepicephalus coria'
+    ;
+    ENDBLOCK;
+
+    BEGIN CHARACTERS;
+	DIMENSIONS NCHAR=103;
+	FORMAT DATATYPE=STANDARD GAP=- MISSING=? SYMBOLS="0123456";
+	CHARLABELS
+		 [1] 'Angle of Cephalic Curvature'
+		 [2] 'Cephalon Convexity'
+		 [3] 'Widest point of cephalon'
+		 [4] 'Marginal rim demarcated along its inner margin by enlarge pits'
+		 [5] 'Marginal Rim Concavity'
+		 [6] 'Bilamellar Brim'
+		 [7] 'Bilamellar Brim Concavity'
+		 [8] 'Brim Width'
+		 [9] 'Commencement of narrowing of brim along prolongations'
+		 [10] 'Pitting present on outer field of cephalon (including brim)'
+		 [11] 'Brim Pitting Extent'
+		 [12] 'Pronounced radiating ridges at the genal roll/brim boundary'
+		 [13] 'Girder Separating Genal Rolls from Brim'
+		 [14] 'Girder Seperating Genal Rolls from Brim Extent'
+		 [15] 'Girder Kink'
+		 [16] 'Outer margin of genal roll demarcated by deep pits'
+		 [17] 'Cephalic Doublure'
+		 [18] 'Position of Hypostome Constriction'
+		 [19] 'Cranidium Convexity'
+		 [20] 'Cranidium Convexity Strength'
+		 [21] 'Median Tubercule on Frontal Lobe'
+		 [22] 'Preglabellar Transverse Ridge'
+		 [23] 'Anterior Preglabellar Depression'
+		 [24] 'Anterior Boss'
+		 [25] 'Anterior Boss Inflation'
+		 [26] 'Slope of Genal Rolls'
+		 [27] 'Vaulted Inner Genal Roll'
+		 [28] 'Genal Roll Convexity'
+		 [29] 'Genal Roll Width'
+		 [30] 'Glabellar morphology'
+		 [31] 'Maximum Glabellar Width at Lateral Lobes'
+		 [32] 'Maximum Glabellar Width at Occipital Ring'
+		 [33] 'Depth of S1 furrow'
+		 [34] 'Morphology of 1st Pair of Lateral Glabellar Furrows (S1)'
+		 [35] '2nd Pair of Lateral Glabellar Furrows (S2)'
+		 [36] '3rd Pair of Lateral Glabellar Furrows (S3)'
+		 [37] 'Length of 1st Lateral Glabellar Furrows (S1)'
+		 [38] 'Length of S2/S3'
+		 [39] 'Positioning of S2 & S3'
+		 [40] 'Cross-sectional morphology of glabellar furrows'
+		 [41] 'Curvature of Glabellar Furrows S2-S3'
+		 [42] 'Glabellar lateral margins'
+		 [43] 'Anterior narrowing of glabella (measured across base of frontal glabellar lobe)'
+		 [44] 'Glabella Length'
+		 [45] 'Size of L1'
+		 [46] 'External Surface of Glabella and Genae'
+		 [47] 'Glabellar and Genal Primary Surface Ornament/Scultpure'
+		 [48] 'Minute Tubercules'
+		 [49] 'Sagittal Crest'
+		 [50] 'Yoked Librigenae'
+		 [51] 'Posterior Suture Position'
+		 [52] 'Anterior Suture Angle From Compound Eye'
+		 [53] 'Cephalic sutures with marked inward curve just prior to cephalic margin'
+		 [54] 'Eye Structure'
+		 [55] 'Eye Angle'
+		 [56] 'Lateral position of eye'
+		 [57] 'Anterior-posterior position of eye'
+		 [58] 'Genal ridge running postero-laterally from eye'
+		 [59] 'Eye Size (as percentage of cephalon)'
+		 [60] 'Eye Ridges'
+		 [61] 'Eye Ridge Strength'
+		 [62] 'Eye Ridge Direction'
+		 [63] 'Ridge Insertion on Compound Eye'
+		 [64] 'Genae Concavity'
+		 [65] 'Radiating, Anastomosing Genal Caeca'
+		 [66] 'Radiating, Anastomosing Genal Caeca Strength'
+		 [67] 'Genal Caeca Extent'
+		 [68] 'Axial Furrow Depth'
+		 [69] 'Extension of axial furrows beyond glabella onto genal roll'
+		 [70] 'Alae'
+		 [71] 'Alae strength as defined by alar furrow'
+		 [72] 'Alae morphology'
+		 [73] 'Relief of Alae'
+		 [74] 'Alae Size'
+		 [75] 'Alar Direction'
+		 [76] 'Large pits on genal area opposite alae'
+		 [77] 'Alar Furrow Depth'
+		 [78] 'Anterior Alar Ridge'
+		 [79] 'Occipital Ring Concavity'
+		 [80] 'Median Tubercule on Occipital Ring'
+		 [81] 'Cross-sectional morphology of genal spines'
+		 [82] 'Broad Genal Spines'
+		 [83] 'Genal spine/prolongation curvature'
+		 [84] 'Genal Spine Angle of Divergence'
+		 [85] 'Curvature of genal prolongations'
+		 [86] 'Genal Spine/Prolongation Length'
+		 [87] 'Thoracic Axis Width'
+		 [88] 'Free Thoracic Tergite Count'
+		 [89] 'Form of pleural spine terminations on thoracic tergites'
+		 [90] 'Pleural Furrow Width'
+		 [91] 'Interpleural Furrow Width'
+		 [92] 'Pleural Furrow Depth'
+		 [93] 'Pygidium Proportions'
+		 [94] 'Pygidial Segments Direction'
+		 [95] 'Pygidium With Medial Posterior Indentation'
+		 [96] 'Pygidium Length'
+		 [97] 'Size of Pygidium in Relation to Cephalon'
+		 [98] 'Degree of Micropygosity'
+		 [99] 'Number of axial rings in pygidium'
+		 [100] 'Pygidial border developed into broad pleural fields'
+		 [101] 'Pleural Field Margin'
+		 [102] 'Pleural Fields Concavity'
+		 [103] 'Terminal lappets'
+	;
+	STATELABELS
+		1
+		'greater than 90 degrees'
+		'90 degrees or less'
+		,
+		2
+		'low'
+		'high'
+		,
+		3
+		'Posterior third'
+		'Anterior third'
+		,
+		4
+		'inner margin of rim not demarcated by enlarged pits'
+		'row of enlarged pits demarcates inner margin of rim'
+		,
+		5
+		'straight'
+		'concave'
+		'convex'
+		,
+		6
+		'absent'
+		'present'
+		,
+		7
+		'flat'
+		'concave'
+		'convex'
+		,
+		8
+		'narrower than glabellar length'
+		'equal to or wider than glabellar length'
+		,
+		9
+		'distally, brim constant in width for the majority of prolongation'
+		'proximally, brim narrowing almost from the level of the occipital ring'
+		,
+		10
+		'absent'
+		'present'
+		,
+		11
+		'<50% of the brim surface visibly pitted'
+		'>50% of the brim surface visibly pitted'
+		,
+		12
+		'absent'
+		'present'
+		,
+		13
+		'absent'
+		'present'
+		,
+		14
+		'limited to anterior '
+		'limited to anterior'
+		'extending posteriorly'
+		,
+		15
+		'absent'
+		'present'
+		,
+		16
+		'outer margin of genal roll not lined by deep pits'
+		'row of deep pits demarcate outer margin of genal roll'
+		,
+		17
+		'absent'
+		'present'
+		,
+		18
+		'anterior quarter'
+		'midpoint'
+		,
+		19
+		'flat'
+		'convex'
+		,
+		20
+		'weakly convex'
+		'strongly convex'
+		,
+		21
+		'absent'
+		'present'
+		,
+		22
+		'absent'
+		'present'
+		,
+		23
+		'absent'
+		'present'
+		,
+		24
+		'absent'
+		'present'
+		,
+		25
+		'slight inflation'
+		'bulbous'
+		,
+		26
+		'gentle'
+		'steep'
+		,
+		27
+		'absent'
+		'present'
+		,
+		28
+		'convex'
+		'concave'
+		,
+		29
+		'wider (at widest point) than glabellar width'
+		'narrower (at widest point) than glabellar width'
+		,
+		30
+		'narrowing anteriorly'
+		'widening anteriorly'
+		,
+		31
+		'absent'
+		'present'
+		,
+		32
+		'absent'
+		'present'
+		,
+		33
+		'deep, well defined'
+		'shallow, poorly defined'
+		,
+		34
+		'posterolaterally directed furrows'
+		'J-shaped furrows not continuous with S0'
+		,
+		35
+		'absent'
+		'present'
+		,
+		36
+		'absent'
+		'present'
+		,
+		37
+		'shorter than 50% of glabellar width'
+		'longer than 50% of glabellar width'
+		,
+		38
+		'~50% of glabella width'
+		'short, ~25% of glabella width'
+		,
+		39
+		'well spaced'
+		'S2 & S3 close together, L3 expanded'
+		,
+		40
+		'rounded'
+		'incised'
+		,
+		41
+		'straight'
+		'incurving (curve posteriorly)'
+		'outcurving (curve anteriorly)'
+		,
+		42
+		'converging anteriorly'
+		'equilateral'
+		,
+		43
+		'width at anterior <75% width at base'
+		'width at anterior >75% width at base'
+		,
+		44
+		'<25% of body length'
+		'>25% of body length'
+		'~25% of body length'
+		,
+		45
+		'L1 <10% of glabellar volume'
+		'L1 >10% of glabellar volume'
+		,
+		46
+		'ornamented'
+		'smooth'
+		,
+		47
+		'tuberculate'
+		'reticulation of pits'
+		'fine granulations'
+		,
+		48
+		'absent'
+		'present'
+		,
+		49
+		'absent'
+		'present'
+		,
+		50
+		'absent'
+		'present'
+		,
+		51
+		'cuts through outer margin'
+		'skirts margin'
+		,
+		52
+		'30-45 degrees'
+		'> or = 60 degrees'
+		'< or = 0 degrees'
+		,
+		53
+		'absent'
+		'present'
+		,
+		54
+		'eye lobes'
+		'tubercles'
+		,
+		55
+		'diverging posteriorly'
+		'equilateral'
+		,
+		56
+		'closer to alar furrow'
+		'closer to axial furrow'
+		,
+		57
+		'posterior of cephalon (0-45%)'
+		'midline or anterior (48%+)'
+		'eye encompasses entire cephalon length'
+		,
+		58
+		'Genal ridge absent'
+		'Genal ridge present'
+		,
+		59
+		'20-30%'
+		'<15%'
+		,
+		60
+		'absent'
+		'present'
+		,
+		61
+		'faint'
+		'strong'
+		,
+		62
+		'anterolaterally directed'
+		'posterolaterally directed'
+		'transversely directed (no V)'
+		,
+		63
+		'anterior of eye'
+		'mid-point of eye'
+		,
+		64
+		'flattened/moderately convex'
+		'concave'
+		'extremely convex'
+		,
+		65
+		'absent'
+		'present'
+		,
+		66
+		'faint'
+		'strong'
+		,
+		67
+		'limited to cheek lobes'
+		'extending onto cephalic border'
+		'extending to marginal rim'
+		,
+		68
+		'shallow'
+		'deep'
+		,
+		69
+		'absent'
+		'present'
+		,
+		70
+		'absent'
+		'present'
+		,
+		71
+		'faint (shallow alar furrow)'
+		'strong (deep alar furrow)'
+		,
+		72
+		'subdivided into two crescentic portions by presence of interalar furrow'
+		'continuous, interalar furrow absent'
+		,
+		73
+		'depressed or sunken'
+		'flattened/low relief'
+		'inflated'
+		,
+		74
+		'small (smaller than L1)'
+		'large (equal to or larger than L1)'
+		,
+		75
+		'transversely/laterally directed'
+		'anterolaterally directed'
+		,
+		76
+		'pits on genal area opposite alae absent or not enlarged'
+		'enlarged pits on genal area opposite alae'
+		,
+		77
+		'shallow'
+		'deep'
+		,
+		78
+		'absent'
+		'present'
+		,
+		79
+		'concave'
+		'convex'
+		,
+		80
+		'absent'
+		'present'
+		,
+		81
+		'broad, flattened (prolongations)'
+		'narrow, rounded (spines)'
+		,
+		82
+		'width of genal spines </= 15% width of cephalon'
+		'width of genal spines >20% width of cephalon'
+		,
+		83
+		'Interior/proximal margin straight'
+		'Interior/proximal margin incurving'
+		,
+		84
+		'high (> or = 30 degrees)'
+		'moderate (11 to 29 degrees)'
+		'reduced (< or = to 10 degrees)'
+		,
+		85
+		'straight (rapidly flattens from cephalon)'
+		'concave (twisted along length of prolongation)'
+		,
+		86
+		'longer than cranidium'
+		'equal to or shorter than cranidium length'
+		,
+		87
+		'narrower at broadest point than glabellar width'
+		'equal in width at broadest point to glabellar width'
+		'broader at broadest point than glabellar width'
+		,
+		88
+		'Less than or equal to 15'
+		'More than or equal to 16'
+		,
+		89
+		'acute, spinous'
+		'blunt'
+		,
+		90
+		'broader than 25% of segment width'
+		'narrower than 25% of segment width'
+		,
+		91
+		'broader than 25% of segment width'
+		'narrower than 25% of segment width'
+		,
+		92
+		'deep'
+		'shallow'
+		,
+		93
+		'width < twice length'
+		'width > twice length'
+		,
+		94
+		'parallel to thoracic segments'
+		'converging anteriorly'
+		,
+		95
+		'absent'
+		'present'
+		,
+		96
+		'>25% of thoracic length'
+		'<25% of thoracic length'
+		,
+		97
+		'micropygous (pygidium occupies <23% area of cephalon)'
+		'isopygous (pygidium occupies 25-110% area of cephalon)'
+		'macropygous (>150% area of cephalon)'
+		,
+		98
+		'extreme (0-5%)'
+		'moderate (10-23%)'
+		,
+		99
+		'4-5'
+		'3'
+		'2'
+		'7-8'
+		'22'
+		'14'
+		,
+		100
+		'absent'
+		'present'
+		,
+		101
+		'downturned'
+		'upturned'
+		'flat'
+		,
+		102
+		'concave'
+		'flat'
+		'convex'
+		,
+		103
+		'absent'
+		'present'
+		
+	;
+	MATRIX
+	'Eoredlichia intermediata'		             0000?0---0-00--0??0-0010-00?10010111100?000111-?0001000?2100---00--010--------101010?010001010010010(0,2)?0
+	'Baikadamaspis jikdongensis'		           ?10020---0-00--01?110010-(0,1)00101111110101200?10011?01111-1-1100?00--0?0--------11101?-???11?1110???21020
+	'Bohemoharpes naumanni'		                110121010?-0???1??11?0110?001010?1000--0?00?01-??11--11?1010---20--1010?0000-0??0112?0???1?????????????
+	'Bohemoharpes ungula'		                  ?101210?01(0,1)10--0??1110010100101001000--0100001-1111--1111010---20--1010110(0,1)110110111100?111110?101?0220
+	'Bowmania lassieae'		                    ?100?0---0-00--0??110010-10011000111010?0?-?0001011--??????110?20--10?????????10???????????????????????
+	'Brachyhipposiderus secundus'		          ?000?10001?00--0??10?010-0001001?1?00--?000?01-??11--11?1?1?????0--10???????????011200?????????????????
+	'Chencunia tripleura'		                  ????????????????????????????????????????????????????????????????????????????????????????????010????1011
+	'Conococheaguea ovata'		                 ?00000------0--1??110000-000110001000--021-?000100010??-1??100020--?00--------11????????????1?0???31210
+	'Dolichoharpes dentoni'		                ?0002100011?1000??10??1???0?10100111110?1001001??11--1101011101??--?01110101?1100012101?101?10010000??0
+	'Dubhglasina parvula'		                  ?10??10?01010--???11?00101011???01001--?(0,1)01??????11--11?1?10---?0--10???????????01?2???????????????????
+	'Entomaspis radiatus'		                  ?10001200??10--111110000-00010-101100100?0(0,1)?-1-101?--01-0-1110020--?00--------1010?21???????010???00??0
+	'Eoharpes antiquatus'		                  1100111011100--0??1101010100101101000--1000?0011111--1-(0,1)10110012100101011101011?011200?????????????????
+	'Eoharpes benignensis'		                 1000?10001100--0??10010??????01101?00--1000101-1111--??????????20--1?1010100-11?01121?(2,1)?101111010010200
+	'Eoharpes primus'		                      1100?1?001100--0??1?0?10-?0??00101000--0000001-??11--??????????2???1010????0-???0112?120111?1?0100?0???
+	'Eskoharpes boltoni'		                   1100?12001110--0??11(0,1)0010100100101000--0?00??001?11--1-110110012???001(0,1)11011(0,1)0110112?0?????????????????
+	'Eskoharpes guthae'		                    ?000?10001111100??100000-00110010?00?--??00??001?11--1-11110---2???0010??011001?01(0,1)2?0?????????????????
+	'Eskoharpes palanasus'		                 1100112001110--0?111?0010(0,1)?0100101000--0?00?0001?11--1-1101101120--1011111111?110(0,1)(0,1)2?00???????0?00?0??0
+	'Eskoharpes wandjina'		                  1100110001100--(0,1)??1100010100100101001--0000?0001111--11-1-10---20--(0,1)00--------1?0012?0?????????????????
+	'Globoharpes friendi'		                  1100212?01110--0??1100011110101001000--?100?0001011--1111010---21?2101110101?0??0102?1?????????????????
+	'Globoharpes teicherti'		                1100?12??1110--0??110011(0,1)110101001001--?100?0001?11--11110110012???101(0,1)101111?110002?1?????????????????
+	'Harpes gracilis'		                      ?0012101?1100--0??10?0010100????????????????01-0111--??????????20--?00--------1????????????????????????
+	'Harpes macrocephalus'		                 ?111011001111110?11000110000001001001--0100?0001111--111101110020--10110210101?????11??????????????????
+	'Harpes neogracilis'		                   1100112001100--0??1100010(0,1)0010010?00?--??00??001011--11-1-1101120--100--------1100(0,1)2?0?????????????????
+	'Harpes whidbournei'		                   ?10021?0011011100?11??010?00101001001--1100?11-??11--1111-10---20--100--------1?000101?????????????????
+	'Harpides grimmi'		                      ?00????????????0??000010-001????01??????000??01?011--??????????111010??????????????????????????????????
+	'Helioharpes perradiatus'		              1100?1?000-10--0??1??0???00?100101001--0100101-?111--?111110---?0--1?10??000-0??0012100?????1??1012???0
+	'Helioharpes radians'		                  100??10111100--0??10?100-?00110001000--?100001-?111--???????????0--100--------??0112000??101??0?00?0??0
+	'Heterocaryon vargum'		                  010000-----????11?110010-10(0,1)?01001000--001-?0001010?00(0,1)-1-00---20--110--------101010-???????010???00110
+	'Hibbertia balclatchiensis'		            1000210?11110--0??11??0??10?1???0????????002?01??11--11?1?11101?????0???????????0112000?1-0-01?10??0??0
+	'Hibbertia ottawaensis'		                ???1211??111110??????????????????????????????????11--???????????????????????????01120??????????????????
+	'Hibbertia wegelini'		                   1?0021?0011?1110??1100010000101001001--0100?11-?011--11?101100120--0011011111?1?0112?0?????????????????
+	'Kielania dorbignyana'		                 1100?1?00??0???0??1100110?0?101001000--0?00??1-?011--1111010---?0--0?1110100-0??0012?0?????????????????
+	'Lioharpes montagnei'		                  ?1001121?1010--0??110001000000110000-----00?-1-0111--111101100020--1010110010010010200?????????????????
+	'Lioharpes venulosus'		                  ?101212?01110--00?1111010100101101000--0100?0001111--111101100120--1010120011011001211?????????????????
+	'Loganopeltis depressa'		                0000111001100--0??100110-00?0011?1111001(0,1)00?01-1011--01-111110(0,1)0111?01011000-0??00?01???????110???112?1
+	'Loganopeltoides zenkeri'		              ??002???????0--1??1000?0-?0?00100111110?000??001011--01-1-1110(0,1)21(0,1)2?10--------01???????????????????????
+	'Notchpeakia milleri'		                  0001012011101000111100?0-00010111110010?001??011?102101-0-10---20--110--------011010????00??110???001?0
+	'Scotoharpes consuetus'		                ?000?110?0-10--0??1?001???0?101001000--0100?0???011--1111?10---?0--0????-?????0?0112?0?????????????????
+	'Scotoharpes domina'		                   ?00??10001100--1??100?110000101001000--0?00?01-?011--1111?10---00--11???????????0?1200?????????????????
+	'Scotoharpes judex'		                    10011120?11110?10?1000110??0?01001001--0100?1001111--1111010---2112111010000-???011200??1010???????????
+	'Scotoharpes latior'		                   ?000?11?01110--???11000100?0101001000--1(0,1)00?01-1011--111101101100--00101000100???0?0???????????????????
+	'Scotoharpes loma'		                     1101112001110--0??1100110100100101000--1100?001?011--1111011011210200111?10110??00021????101???????????
+	'Scotoharpes raaschi'		                  ?0???1???1111??0??1100010000101101001--1100?001?011--1111011021????101110111101?0?11???????????????????
+	'Scotoharpes singularis'		               1100111111000--0??11?0111100?0010?00?--??00??????11--??-?-?????????1?0--------??00111??????????????????
+	'Scotoharpes spasskii'		                 1100?1???1100--0??1100?0-10?101001000--0?00?01-1?11--??????????00--00???-???????011(1,2)?0?????????????????
+	'Scotoharpes tatouyangensis'		           ?101?11????00--0??11?010-10??001?1000--0?00?1???011--110101110?210??0111011101??0??2???????????????????
+	'Scotoharpes telleri'		                  110??12101??0--11?11?01??10?10100?00?--??00??????11--1111010---????00111??0100??011200?????????????????
+	'Cedaria minor'		                        0?0000---0-00--1??10?0?0-00?101101001--1000211-??001101-0-10---00--010--------10?010??1?001?11101-012?0
+	'Coosina kindlei'		                      ?00020---0-00--1??100000-000101000010110200?-0-0100?0??-?-?0--?21021(0,1)0--------??????????????010???01220
+	'Crepicephalus iowensis'		               ?00020---0-00--1??100000-00010110000-----00?-1-1?0010????-?0--?21(0,1)2010--------10????????????110???01211
+	'Modocia whiteleyi'		                    000100---0-00--0??1100?0-00?10100000-----001-1-00001100-0-10---20--?10--------1?0010??0?111001101-01120
+	'Ptychoparia striata'		                  000??0---0-00--1??000000-0?1101011111101200011-000011?1-0-111002100110--------1?00111?00?000010101000(1,2)0
+	'Tricrepicephalus coria'		               ?0?100-??1(0,1)00--1??100010-00?10010000-----0??-001?00??????-?0--?00--?10--------??0?100?????????????01??1
+    ;
+    ENDBLOCK;
+
+          BEGIN NOTES;
+              [Taxon comments]
+        	TEXT TAXON=3 TEXT='Figure 2A of Ebach & McNamara (2002)';
+	TEXT TAXON=4 TEXT='YPM. Vars. Czechoslovakia. Bohemia. Koneprusy, Beroun, Dlouha Hora. Silurian. Etage Ff, Ee, Ee2. Carbonate matrix.';
+	TEXT TAXON=5 TEXT='Adrain & Westrop 2004, plates 15-16, & 17 figs 1-28.';
+	TEXT TAXON=6 TEXT='Figure 2H from Ebach & McNamara (2002).';
+	TEXT TAXON=7 TEXT='Qui 1983';
+	TEXT TAXON=8 TEXT='Rasetti 1959. Plate 52. Figures 19-29.';
+	TEXT TAXON=10 TEXT='Figure 4 from Ebach & McNamara (2002)^n^nAnd now also SM A 33957 (listed as Harpes parvulus) (same specimen?)';
+	TEXT TAXON=11 TEXT='Fig. 1-11, Plate 117, Rasetti 1952';
+	TEXT TAXON=12 TEXT='YPM. Catalog #: 6555. Accn #: 2108 New York. Clinton County. Chazy. Near Chazy. Middle Ordovician. Chazy group. Brachipod-rich shell grounds.^n^n^n^nYPM. Catalog #: 223558 Accn #: 2108. Ordovician. Chazy. Chazy, New York. (O.C. Marsh). Brachipod-rich shell grounds.^n^nYPM. Catalog #: 6555. Accn #: 2108 New York. Clinton County. Chazy. Near Chazy. Middle Ordovician. Chazy group. Brachipod-rich shell grounds.^n^n^n^nYPM. Catalog #: 223558 Accn #: 2108. Ordovician. Chazy. Chazy, New York. (O.C. Marsh). Brachipod-rich shell grounds.';
+	TEXT TAXON=13 TEXT='YPM. 7436. 3176. Ordovician (D-D). S. Benigna, Bohemia. Black shale matrix material.';
+	TEXT TAXON=14 TEXT='Figure 2D from Ebach & McNamara (2002)^n^nIn some ways, looks more like harpidid';
+	TEXT TAXON=15 TEXT='From McNamara (2009). Plate 2. Figures 16-22.';
+	TEXT TAXON=16 TEXT='From McNamara et al. (2009). Plate 2. Figures 10-15.';
+	TEXT TAXON=17 TEXT='McNamara 2009. Plate 1. Figs. 1-18.';
+	TEXT TAXON=18 TEXT='From McNamara et al. (2009), Plate 2. Figures 1-9.';
+	TEXT TAXON=19 TEXT='From McNamara et al. (2009). Plate 3. Figures 1-3 and 12-14.';
+	TEXT TAXON=20 TEXT='From McNamara et al. (2009). Plate 3. Figures 7-11 and 15-19.';
+	TEXT TAXON=21 TEXT='YPM. Catalog #: 2981 Accn #: 1999 Germany. Nordrhein-Westfalen. Waldeck-Frankenberg. Martenberg bei Adorf. Late Devonian. Red shale (chert?).';
+	TEXT TAXON=22 TEXT='YPM. Catalog #: 2547. Accn #: 8124 Europe. Germany. Rheinland-Pfalz. Eifel. Devonian Shale. Late Devonian. ^n^n^n^n^n^n^n^nYPM. Catalog #: 4423. Accn #: 2820 Germany. Nordrhein-Westfale. Rheinisch-Berische. Crionoid bed, Kieperheuaer quarry, near Paffrath. Winterfeld, F. Middle Devonian.^n^n^n^nYPM. Catalog #: 2547. Accn #: 8124 Europe. Germany. Rheinland-Pfalz. Eifel. Devonian Shale. Late Devonian. ^n^n^n^nYPM. Catalog #: 4423. Accn #: 2820 Germany. Nordrhein-Westfale. Rheinisch-Berische. Crionoid bed, Kieperheuaer quarry, near Paffrath. Winterfeld, F. Middle Devonian.^n^nYPM. Catalog #: 2547. Accn #: 8124 Europe. Germany. Rheinland-Pfalz. Eifel. Devonian Shale. Late Devonian. ^n^n^n^nYPM. Catalog #: 4423. Accn #: 2820 Germany. Nordrhein-Westfale. Rheinisch-Berische. Crionoid bed, Kieperheuaer quarry, near Paffrath. Winterfeld, F. Middle Devonian.^n^nYPM. Catalog #: 2547. Accn #: 8124 Europe. Germany. Rheinland-Pfalz. Eifel. Devonian Shale. Late Devonian. ^n^nYPM. Catalog #: 4423. Accn #: 2820 Germany. Nordrhein-Westfale. Rheinisch-Berische. Crionoid bed, Kieperheuaer quarry, near Paffrath. Winterfeld, F. Middle Devonian.';
+	TEXT TAXON=23 TEXT='From McNamara et al. (2009). Plate 1. Figures 19-23. Authors determine this species to belong to Eskoharpes; therefore it is listed as *Eskoharpes neogracilis*.';
+	TEXT TAXON=25 TEXT='Fatka et al 2013';
+	TEXT TAXON=26 TEXT='Figure 2F (Ebach & McNamara 2002)';
+	TEXT TAXON=27 TEXT='Figure 2E of Ebach and McNamara (2002). More properly *Harpes radians* according to their analysis.';
+	TEXT TAXON=28 TEXT='Adrain & Westrop 2004, Plate 14';
+	TEXT TAXON=29 TEXT='Figure 2I from Ebach & McNamara (2002)';
+	TEXT TAXON=30 TEXT='YPM. 6553/3414. Ordovician (Trenton). Trenton Falls, NY. Black shale matrix material. Brim only.';
+	TEXT TAXON=31 TEXT='Don"t forget the ventral morphology, you fruit loop.^n^nDon"t forget the ventral morphology, you fruit loop.^n^nDon"t forget the ventral morphology, you fruit loop.^n^nDon''t forget the ventral morphology, you fruit loop.';
+	TEXT TAXON=33 TEXT='YPM. Catalog #: 419948. Accn #: 3176. Czechoslovakia. Bohemia. Koneprusy. Early to Middle Devonian. Pragian to Eifelian. Etage Ff2.';
+	TEXT TAXON=34 TEXT='YPM. Vars. Czechoslovakia, Bohemia. Koneprusy. Carbonate matrix. Early to Middle Devonian. Etage F.';
+	TEXT TAXON=35 TEXT='Rasetti 1945, Figures 4-7';
+	TEXT TAXON=37 TEXT='Figures 3-6 of Adrain & Westrop 2006';
+	TEXT TAXON=38 TEXT='From Norford (1973). Plate 2. Figure 2.';
+	TEXT TAXON=39 TEXT='From Norford (1973). Plate 1. Figures 1-3. Plaster replica.';
+	TEXT TAXON=40 TEXT='Listed as Aristoharpes judex.^n^nSpecimens look squashed.';
+	TEXT TAXON=41 TEXT='From Norford (1973). Plate 1. Figures 4-9. 4,7, & 9 are plaster replicas.';
+	TEXT TAXON=42 TEXT='From Norford (1973). Plate 3, all figures.';
+	TEXT TAXON=43 TEXT='From Norford (1973). Plate 2. Figures 1, 3-5.';
+	TEXT TAXON=44 TEXT='Figure 2G of Ebach and McNamara (2002). Probably. Mistakenly listed as "Scotoharpes singletoni". Dubghlasnia singletoni? Who knows...';
+	TEXT TAXON=46 TEXT='Figure 2C from Ebach & McNamara (2002)^n^nKind of rubbish';
+	TEXT TAXON=47 TEXT='From Norford (1973). Plate 4. All figures.';
+	TEXT TAXON=48 TEXT='http://www.trilobites.info/galptychopariida.htm';
+	TEXT TAXON=49 TEXT='Figure 12 (1-2, 5-8) of Westrop (1992).';
+	TEXT TAXON=50 TEXT='Figure 12 (3,4,9) of Westrop 1992';
+	TEXT TAXON=51 TEXT='Figure 23 of Robison & Babcock (2011)';
+	TEXT TAXON=52 TEXT='Included as a type specimen for Ptychopariida, the designated outgroup for this project on Harpetida.^n^n^n^nYMP. 6572. Jriece, Bohemia. Cambrian. Etage C. Black shale matrix material.^n^nIncluded as a type specimen for Ptychopariida, the designated outgroup for this project on Harpetida.^n^n^n^nYMP. 6572. Jriece, Bohemia. Cambrian. Etage C. Black shale matrix material.^n^nIncluded as a type specimen for Ptychopariida, the designated outgroup for this project on Harpetida.^n^n^n^nYMP. 6572. Jriece, Bohemia. Cambrian. Etage C. Black shale matrix material.^n^nIncluded as a type specimen for Ptychopariida, the designated outgroup for this project on Harpetida.^n^n^n^nYMP. 6572. Jriece, Bohemia. Cambrian. Etage C. Black shale matrix material.';
+	TEXT TAXON=53 TEXT='Figures 1-4, 6 of Plate 81, Palmer (1954)';
+
+        [Character comments]
+        	TEXT CHARACTER=1 TEXT='The lower (more posterior), inside (more sagittal) angle formed by the intersection of the the marginal rim (outermost structure of the brim) and a hypothetical transversely running line placed immediately posterior to the axial ring.';
+	TEXT CHARACTER=6 TEXT='Ebach & McNamara 2002';
+	TEXT CHARACTER=7 TEXT='Ebach & McNamara 2002';
+	TEXT CHARACTER=8 TEXT='Ebach & McNamara 2002, in reference to length of glabella';
+	TEXT CHARACTER=10 TEXT='Ebach & McNamara 2002';
+	TEXT CHARACTER=12 TEXT='Ebach & McNamara 2002^n^n"pronounced radiating ridges at the genal roll/brim boundary" that I am interpreting as external evidence of rib-like supporting structures';
+	TEXT CHARACTER=18 TEXT='from Lamsdell & Selden';
+	TEXT CHARACTER=21 TEXT='Ebach & McNamara 2002';
+	TEXT CHARACTER=22 TEXT='Ebach & McNamara 2002';
+	TEXT CHARACTER=23 TEXT='Ebach & McNamara 2002';
+	TEXT CHARACTER=24 TEXT='Ebach & McNamara 2002';
+	TEXT CHARACTER=26 TEXT='Gentle = ';
+	TEXT CHARACTER=27 TEXT='Ebach & McNamara 2002';
+	TEXT CHARACTER=28 TEXT='Ebach & McNamara 2002';
+	TEXT CHARACTER=29 TEXT='width of genal roll = length of genal roll slope (not map view width); controls for steepness';
+	TEXT CHARACTER=38 TEXT='from Lamsdell & Selden';
+	TEXT CHARACTER=39 TEXT='from Lamsdell & Selden';
+	TEXT CHARACTER=43 TEXT='from Lamsdell & Selden';
+	TEXT CHARACTER=45 TEXT='Ebach & McNamara 2002';
+	TEXT CHARACTER=46 TEXT='...raised ridges...';
+	TEXT CHARACTER=49 TEXT='Ebach & McNamara 2002';
+	TEXT CHARACTER=50 TEXT='as in Heterocaryon vargum';
+	TEXT CHARACTER=51 TEXT='from Lamsdell & Selden';
+	TEXT CHARACTER=52 TEXT='from Lamsdell & Selden';
+	TEXT CHARACTER=53 TEXT='from Lamsdell & Selden^n^n"a sharp turn or kink"';
+	TEXT CHARACTER=55 TEXT='from Lamsdell & Selden';
+	TEXT CHARACTER=56 TEXT='Ebach & McNamara 2002';
+	TEXT CHARACTER=57 TEXT='from Lamsdell & Selden';
+	TEXT CHARACTER=59 TEXT='from Lamsdell & Selden';
+	TEXT CHARACTER=62 TEXT='Ebach & McNamara 2002^n^n*Which way the two ridges V';
+	TEXT CHARACTER=63 TEXT='from Lamsdell & Selden';
+	TEXT CHARACTER=65 TEXT='"...may be present on genae, and preglabellar field, extending onto fringe prolongations." (Ebach and McNamara 2002).';
+	TEXT CHARACTER=68 TEXT='Ebach & McNamara 2002';
+	TEXT CHARACTER=69 TEXT='Ebach & McNamara 2002';
+	TEXT CHARACTER=75 TEXT='Ebach & McNamara 2002';
+	TEXT CHARACTER=76 TEXT='Ebach & McNamara 2002';
+	TEXT CHARACTER=78 TEXT='Ebach & McNamara 2002';
+	TEXT CHARACTER=80 TEXT='Ebach & McNamara 2002';
+	TEXT CHARACTER=82 TEXT='from Lamsdell & Selden^nDelete character, as it is a recapitulation of the prior character.';
+	TEXT CHARACTER=83 TEXT='Ebach & McNamara 2002';
+	TEXT CHARACTER=84 TEXT='from Lamsdell & Selden';
+	TEXT CHARACTER=85 TEXT='Ebach & McNamara 2002';
+	TEXT CHARACTER=87 TEXT='Check codings';
+	TEXT CHARACTER=88 TEXT='from Lamsdell & Selden';
+	TEXT CHARACTER=89 TEXT='from Lamsdell & Selden';
+	TEXT CHARACTER=91 TEXT='Ebach & McNamara 2002, syn???';
+	TEXT CHARACTER=95 TEXT='from Lamsdell & Selden';
+	TEXT CHARACTER=97 TEXT='from Lamsdell & Selden';
+	TEXT CHARACTER=98 TEXT='from Lamsdell & Selden';
+	TEXT CHARACTER=99 TEXT='from Lamsdell & Selden';
+	TEXT CHARACTER=100 TEXT='from Lamsdell & Selden';
+	TEXT CHARACTER=103 TEXT='from Lamsdell & Selden';
+
+      [Attribute comments]
+      	TEXT TAXON=15 CHARACTER=1 TEXT='But close!';
+	TEXT TAXON=10 CHARACTER=1 TEXT='Questionable (only one side available)';
+	TEXT TAXON=1 CHARACTER=70 TEXT='Probably. There are some small swellings that might by homologous to raised alae, but...';
+	TEXT TAXON=24 CHARACTER=54 TEXT='Probably. They"re  a bit big.';
+	TEXT TAXON=21 CHARACTER=65 TEXT='may be present on genae, and preglabellar field, extending onto fringe prolongations (Ebach and McNamara 2002).';
+	TEXT TAXON=3 CHARACTER=46 TEXT='Somewhat effaced, so this is questionable.';
+	TEXT TAXON=9 CHARACTER=72 TEXT='Well, really sub-semicircular or even hemi-demi-circular.';
+	TEXT TAXON=22 CHARACTER=42 TEXT='Not very pronounced.';
+	TEXT TAXON=27 CHARACTER=42 TEXT='See "Widest Part of Glabella"';
+	TEXT TAXON=45 CHARACTER=42 TEXT='Sort of. Without those lateral lobes, it"s pretty much a perfect ellipse.';
+	TEXT TAXON=12 CHARACTER=64 TEXT='*Strongly* convex.';
+	TEXT TAXON=41 CHARACTER=60 TEXT='Maybe.';
+	TEXT TAXON=21 CHARACTER=26 TEXT='Quantify!';
+	TEXT TAXON=33 CHARACTER=26 TEXT='Well, gentler than L. venulousus. I may still need to quantify this properly.';
+	TEXT TAXON=4 CHARACTER=48 TEXT='Concentrated on genal roll';
+	TEXT TAXON=36 CHARACTER=29 TEXT='Barely';
+	TEXT TAXON=49 CHARACTER=29 TEXT='Much';
+	TEXT TAXON=12 CHARACTER=74 TEXT='As in larger than than L1.';
+	TEXT TAXON=22 CHARACTER=37 TEXT='Still need to quantify!';
+	TEXT TAXON=13 CHARACTER=87 TEXT='Compared to what?';
+	TEXT TAXON=12 CHARACTER=4 TEXT='Quantify!';
+	TEXT TAXON=13 CHARACTER=5 TEXT='Brim effaced, making judgements unreliable.';
+	TEXT TAXON=33 CHARACTER=5 TEXT='The rim of the dish';
+	TEXT TAXON=12 CHARACTER=58 TEXT='Compared to.....???';
+	TEXT TAXON=15 CHARACTER=58 TEXT='Slightly...';
+	TEXT TAXON=17 CHARACTER=58 TEXT='But only just';
+	TEXT TAXON=41 CHARACTER=58 TEXT='Slightly...';
+	TEXT TAXON=45 CHARACTER=58 TEXT='Marginally';
+	TEXT TAXON=19 CHARACTER=58 TEXT='but not much...';
+	TEXT TAXON=4 CHARACTER=102 TEXT='Weakly convex.';
+	TEXT TAXON=52 CHARACTER=19 TEXT='Well, really more W shaped.';
+	TEXT TAXON=12 CHARACTER=28 TEXT='More weakly convex than taxa previously scored.';
+	TEXT TAXON=52 CHARACTER=28 TEXT='Originally coded as convex. Changed 10/24/2018.';
+	TEXT TAXON=8 CHARACTER=6 TEXT='Barely';
+	TEXT TAXON=22 CHARACTER=27 TEXT='Beginning to suspect I don"t know what vaulting looks like.';
+	TEXT TAXON=13 CHARACTER=7 TEXT='Again, brim rather effaced. Scoring somewhat dubious.';
+	TEXT TAXON=19 CHARACTER=7 TEXT='Strongly!';
+	TEXT TAXON=20 CHARACTER=7 TEXT='Strongly!';
+	TEXT TAXON=12 CHARACTER=83 TEXT='Slightly incurving.';
+	TEXT TAXON=41 CHARACTER=15 TEXT='Very slight.';
+	TEXT TAXON=42 CHARACTER=15 TEXT='Slight.';
+	TEXT TAXON=43 CHARACTER=75 TEXT='Slightly?';
+	TEXT TAXON=12 CHARACTER=85 TEXT='Maybe very slightly concave??';
+	TEXT TAXON=13 CHARACTER=68 TEXT='Very deep.';
+	TEXT TAXON=33 CHARACTER=68 TEXT='Looks shallower than L. venelosus b/c of lighter color of fossil material (?)';
+	TEXT TAXON=45 CHARACTER=45 TEXT='Maybe';
+	TEXT TAXON=22 CHARACTER=8 TEXT='Brim damaged, so low confidence.';
+	TEXT TAXON=19 CHARACTER=8 TEXT='But not much.';
+	TEXT TAXON=2 CHARACTER=8 TEXT='Much';
+	TEXT TAXON=8 CHARACTER=8 TEXT='Much';
+	TEXT TAXON=37 CHARACTER=8 TEXT='Much. Does it really count as a brim?';
+	TEXT TAXON=13 CHARACTER=24 TEXT='Or absent';
+	TEXT TAXON=16 CHARACTER=14 TEXT='Again, only a little bit.';
+	TEXT TAXON=17 CHARACTER=14 TEXT='But only slightly';
+	TEXT TAXON=46 CHARACTER=49 TEXT='Could be effaced.';
+	TEXT TAXON=49 CHARACTER=49 TEXT='Faint';
+	TEXT TAXON=12 CHARACTER=56 TEXT='Looks equidistant to me...';
+	TEXT TAXON=12 CHARACTER=62 TEXT='At least that"s how it looks with anterior oriented north. With it oriented south.... I"d probably say posterolaterally directed. But I"m not doing that. We"re shooting for consistency. I think it"s because the genae are so highly inflated; it"s throwing everything off.';
+	TEXT TAXON=17 CHARACTER=62 TEXT='Slightly';
+	TEXT TAXON=22 CHARACTER=62 TEXT='Vs towards the front of the trilobite.';
+	TEXT TAXON=46 CHARACTER=62 TEXT='Eye ridges curved so answer ambiguous.';
+	TEXT TAXON=33 CHARACTER=12 TEXT='Weakly vaulted?';
+	TEXT TAXON=11 CHARACTER=12 TEXT='Very strong! Makes me question whether other examples are true vaulting.';
+	TEXT TAXON=33 CHARACTER=73 TEXT='Possibly slightly depressed?';
+	TEXT TAXON=13 CHARACTER=69 TEXT='Genal roll material badly damaged/missing.';
+	TEXT TAXON=6 CHARACTER=81 TEXT='Probably. Specimen is in bad shaped but the more "compressed" prolongation on the right hand side of the figure is almost certainly broken and not an actual character.';
+	TEXT TAXON=21 CHARACTER=25 TEXT='Quantify!';
+	TEXT TAXON=33 CHARACTER=11 TEXT='Possible some pitting/ornamentation lost to to calcite dissolution.';
+	TEXT TAXON=22 CHARACTER=20 TEXT='Glabella strongly convex, leading to overall W shape.';
+	TEXT TAXON=41 CHARACTER=20 TEXT='Well, moderately convex. See figures 4 and 8.';
+	TEXT TAXON=52 CHARACTER=20 TEXT='Flat now coded as "weakly convex", to highlight polarity.';
+	TEXT TAXON=25 CHARACTER=20 TEXT='Again, flat here is coded as "ultra-weak" to try and establish polarity.';
+	TEXT TAXON=33 CHARACTER=71 TEXT='Very faint.';
+	TEXT TAXON=46 CHARACTER=33 TEXT='I think? It"s pretty blunt but not tonally squared off, so...';
+	TEXT TAXON=2 CHARACTER=33 TEXT='Possibly';
+	TEXT TAXON=22 CHARACTER=41 TEXT='Very slightly? Low confidence.';
+	TEXT TAXON=15 CHARACTER=9 TEXT='But not by much.';
+	TEXT TAXON=3 CHARACTER=57 TEXT='Discounting brim';
+	TEXT TAXON=15 CHARACTER=82 TEXT='Discounting brim?';
+	TEXT TAXON=13 CHARACTER=23 TEXT='I think? There"s a very deep axial furrow though, that might be obscure the presence of a secondary depression.';
+	TEXT TAXON=53 CHARACTER=23 TEXT='Three of them! Very prominent.';
+	TEXT TAXON=2 CHARACTER=93 TEXT='Barely.';
+      ENDBLOCK;
+            BEGIN ASSUMPTIONS;
+      TYPESET * UNTITLED = unord: 1 - 103;
+      ENDBLOCK;
+      

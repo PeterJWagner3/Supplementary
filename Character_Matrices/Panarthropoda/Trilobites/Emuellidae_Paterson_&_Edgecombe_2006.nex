@@ -1,0 +1,346 @@
+#NEXUS
+[written Sun May 01 16:16:35 CDT 2022 by Mesquite  version 3.6 (build 917) at Wagners_Dark_Tower/10.0.1.87]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=27;
+	TAXLABELS
+		Emuella_polymera Balcoracania_dailyi Redlichia_takooensis Eoredlichia_intermediata Lemdadella_antarcticae Dolerolenus_zoppii Yinites_wanshougongensis Abadiella_huoi Eccaparadoxides_pusillus Anabaraspis_splendens Xystridura_templetonensis Bigotina_bivallata Estaingia_bilobata Ichangia_ichangensis Ellipsocephalus_gripi Olenellus_fowleri Bristolia_anteros Nephrolenellus_geniculatus Wanneria_walcottana Elliptocephala_asaphoides Holmia_kjerulfi Fallotaspis_bondoni Daguinaspis_ambroggii Archaeaspis_macropleuron Repinaella_sibirica Judomia_tera Nevadia_weeksi 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=45;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7";
+	CHARSTATELABELS 
+		1 Cephalon,
+		2 Cephalon,
+		3 Cephalon,
+		4 Cephalon,
+		5 Cephalon,
+		6 Cephalon,
+		7 Cephalon,
+		8 Cephalon,
+		9 Cephalon,
+		10 Cephalon,
+		11 Cephalon,
+		12 Cephalon,
+		13 Cephalon,
+		14 Cephalon,
+		15 Cephalon,
+		16 Cephalon,
+		17 Cephalon,
+		18 Cephalon,
+		19 Cephalon,
+		20 Cephalon,
+		21 Cephalon,
+		22 Cephalon,
+		23 Cephalon,
+		24 Cephalon,
+		25 Thorax,
+		26 Thorax,
+		27 Thorax,
+		28 Thorax,
+		29 Thorax,
+		30 Thorax,
+		31 Thorax,
+		32 Thorax,
+		33 Pygidium,
+		34 Pygidium,
+		35 Pygidium,
+		36 Pygidium,
+		37 Pygidium,
+		38 Pygidium,
+		39 Body,
+		40 Cephalon,
+		41 Cephalon,
+		42 Cephalon,
+		43 Cephalon,
+		44 Cephalon,
+		45 Thorax ; 
+	MATRIX
+	Emuella_polymera            110-110101020211012101000111101111000-110010?
+	Balcoracania_dailyi         11111101010202110120010001111011??000-1100100
+	Redlichia_takooensis        10111111210???10000101001000100-101110111000-
+	Eoredlichia_intermediata    101111100000--10010101001000100-111010111000-
+	Lemdadella_antarcticae      10111110000102100110000?????????11000-111010?
+	Dolerolenus_zoppii          1011100001010?00010000011000000-100010???????
+	Yinites_wanshougongensis    100-11100000--00010?010?10?0100-1100111110001
+	Abadiella_huoi              10110000000102100121010?1010100-110010???????
+	Eccaparadoxides_pusillus    120-111101010(1 2)00002000001000000-11010-1010011
+	Anabaraspis_splendens       12101(0 1)(0 1)001011200002000001000000-11010-???????
+	Xystridura_templetonensis   120-1(0 1)(0 1)001011(1 2)00002000001000000-1101111010011
+	Bigotina_bivallata          10111000000101100120010??0??1???11000-?01000?
+	Estaingia_bilobata          10111000000102000120010?1010100-1110111010101
+	Ichangia_ichangensis        1211100000010200112?0?0?????????110011101011?
+	Ellipsocephalus_gripi       101010000(0 1)010200112?010?1010100-110010101011?
+	Olenellus_fowleri           011100003-1100000000111?000001100-020-0111010
+	Bristolia_anteros           010-0000011101000101011????0??????????011101?
+	Nephrolenellus_geniculatus  010-000001112-000110011?00000010??????011101?
+	Wanneria_walcottana         010-000000111200010000??1000000-10020-???????
+	Elliptocephala_asaphoides   01100000111112000000001?1000000-10?0100111011
+	Holmia_kjerulfi             010-000011111200000011101000100-10000-???????
+	Fallotaspis_bondoni         00101000000102100000001?100110101000???11?0??
+	Daguinaspis_ambroggii       00101000000100100010001?1001100-0-000-011001?
+	Archaeaspis_macropleuron    00111000000100100000011??0000010?????????????
+	Repinaella_sibirica         001010000000--100000001???001????????????????
+	Judomia_tera                010-1000110112000000000?1000000-11020-???????
+	Nevadia_weeksi              00110000000100000100001?0000010-11000-???????
+
+;
+
+END;
+BEGIN SETS;
+	TAXSET Outgroup  =  16 -  26;
+
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS DEFTYPE = unord PolyTcount = MINSTEPS;
+	TYPESET * UNTITLED   =  unord:  1- 45;
+
+	WTSET * UNTITLED  =  1: 1 -  45 ;
+
+END;
+
+BEGIN TREES;
+	Title 'Trees from "Emuellidae_Paterson_&_Edgecombe_2006.nex"';
+	ID 0180817a54504;
+	LINK Taxa = Taxa;
+	TRANSLATE
+[0] 		1 Emuella_polymera,
+[1] 		2 Balcoracania_dailyi,
+[2] 		3 Redlichia_takooensis,
+[3] 		4 Eoredlichia_intermediata,
+[4] 		5 Lemdadella_antarcticae,
+[5] 		6 Dolerolenus_zoppii,
+[6] 		7 Yinites_wanshougongensis,
+[7] 		8 Abadiella_huoi,
+[8] 		9 Eccaparadoxides_pusillus,
+[9] 		10 Anabaraspis_splendens,
+[10] 		11 Xystridura_templetonensis,
+[11] 		12 Bigotina_bivallata,
+[12] 		13 Estaingia_bilobata,
+[13] 		14 Ichangia_ichangensis,
+[14] 		15 Ellipsocephalus_gripi,
+[15] 		16 Olenellus_fowleri,
+[16] 		17 Bristolia_anteros,
+[17] 		18 Nephrolenellus_geniculatus,
+[18] 		19 Wanneria_walcottana,
+[19] 		20 Elliptocephala_asaphoides,
+[20] 		21 Holmia_kjerulfi,
+[21] 		22 Fallotaspis_bondoni,
+[22] 		23 Daguinaspis_ambroggii,
+[23] 		24 Archaeaspis_macropleuron,
+[24] 		25 Repinaella_sibirica,
+[25] 		26 Judomia_tera,
+[26] 		27 Nevadia_weeksi;
+	TREE All = (27,((24,(25,(22,23))),(((18,(16,17)),(19,(26,(20,21)))),(6,((9,(10,11)),(5,((7,(3,4)),((1,2),(12,(8,(13,(14,15))))))))))));
+	TREE Ingroup_Strat_Rooted = (15,(14,((6,(9,(10,11))),(13,(8,(12,((1,2),(5,(7,(3,4))))))))));
+
+END;
+
+
+BEGIN MacClade;
+	Version 4.0 87;
+	LastModified -845391129;
+	FileSettings treewindow '1' '1' '46' '1';
+	Singles 000;
+	Editor 00011001111111100100010010 '0' '24' Gadget '12' '162' '1' all;
+	EditorPosition '65' '579' '597' '523';
+	TreeWindowPosition '88' '495' '592' '762';
+	ListWindow Characters open Gadget '12' '50' '25' '712' '517' 000;
+	ListWindow Taxa open Gadget '12' '401' '670' '389' '369' 100000000;
+	ListWindow Trees open Gadget '12' '50' '10' '134' '414';
+	ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow ExSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow TaxSets open Gadget '12' '50' '10' '134' '185';
+	ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	ChartWindowPosition '52' '30' '818' '1380';
+	StateNamesSymbols closed Gadget '12' '9' '44' '230' '186' '220';
+	WindowOrder List Trees Tree List Taxa List TaxSets List Characters;
+	OtherSymbols & / 00 ? -;
+	Correlation '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile '2';
+	ExportHTML _ MOSS '100' 110000;
+	PrettyPrint 10;
+	CharLegendPosition '540' '1156' '132' '85';
+	TreeLegendPosition '573' '1058' '88' '93';
+	EditorToolsPosition '399' '48' '115' '165';
+	TreeToolsPosition '716' '9' '126' '138';
+	TreeWindowProgram 00;
+	TreeWindow 0000;
+	Continuous '0' '3' 1;
+	Calculations 1000101;
+	SummaryMode '0' '0' 0;
+	Charts Arial '12' ( normal ) 0010;
+	NexusOptions '0' '0' '50' 001011001;
+	TipLabel '1';
+	TreeFont Gadget '12' ( normal );
+	TreeShape 1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax '0';
+	TraceAllChangesDisplay '1' 1;
+	BarsOnBranchesDisplay '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation '3' 1;
+	PrintTree 10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Gadget '9' ( normal ) Gadget '10' ( normal ) Gadget '9' ( normal ) Gadget '9' ( normal ) Gadget '9' ( bold ) Gadget '9' ( normal ) Gadget '9' ( normal ) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '0' '0' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 10;
+	TreeTools '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools '1';
+
+END;
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 45;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1651439795483;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 5570640595308036931;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 83754594793589742;
+			mqVersion 360;
+			checksumv 0 3 412962091 null  getNumChars 45 numChars 45 getNumTaxa 27 numTaxa 27   short true   bits 15   states 15   sumSquaresStatesOnly 2797.0 sumSquares 2797.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 202;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1680 761;
+			setLocation 8 25;
+			setFont Gadget;
+			setFontSize 16;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #83754594793589742 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1478 689;
+					setLocation 8 25;
+					setFont Gadget;
+					setFontSize 16;
+					getToolPalette;
+					tell It;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

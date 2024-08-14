@@ -1,0 +1,206 @@
+#NEXUS
+[written Sat Jul 13 22:41:33 CDT 2024 by Mesquite  version 3.70 (build 940) at EAS-F094C0.local/127.0.0.1]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=30;
+	TAXLABELS
+		Cedaria_minor Aphelaspis_australis Andrarina_costata Pterocephalia_norfordi Strigambitus_transversus Prehousia_diverta Olenus_gibbosus 'Parabolina (Neoparabolina) frequens argentina' Parabolinella_argentinensis Jujuyaspis_keideli Plicatolina_scalpta Bienvillia_parchaensis Hypermecaspis_armata Hypermecaspis_inermis Hypermecaspis_chamarrensis Hypermecaspis_occidentalis Hypermecaspis_edselbrussai Hypermecaspis_latigena Hypermecaspis_brevifrons Hypermecaspis_venulosa Hypermecaspis_rugosa Hypermecaspis_venerabilis Hypermecaspis_kolouros Hypermecaspis_alveus Tropidopyge_broeggeri Hypermecaspis_mimitis Hypermecaspis_bulmani Hypermecaspis_branisai Hypermecaspis_cf._bulmani_sensu_Whittington_1965 Hypermecaspis_asiatica 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=72;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9";
+	MATRIX
+	Cedaria_minor                                     2210110011001100000000-0001200100001100010001012002000000000--000012--?3
+	Aphelaspis_australis                              ????111122001110000000-1020??????0000???????001000?101100??---100000--?2
+	Andrarina_costata                                 12??21001200111000-----000000000010001??10000011003?01110000--000012--?1
+	Pterocephalia_norfordi                            20102000102-01100000010202120100110102--2000021112120104101101000002--13
+	Strigambitus_transversus                          ????20001110011000000001011(1 4)001001001???????122112??011(3 4)1?1100000001--12
+	Prehousia_diverta                                 ????2000012-11100000---10111010011011???????121310??01141?1---00001102?2
+	Olenus_gibbosus                                   00000010110000000000000000011000000000000000010100310101000100000001--00
+	'Parabolina (Neoparabolina) frequens argentina'   00001110110000000003300101000011101010111111012001320112000000100001--00
+	Parabolinella_argentinensis                       00100000110?10000012102021121010010000001001112000120100000001100002--00
+	Jujuyaspis_keideli                                002111(1 2)20010110000-----201-0310-0002-011101011010132010100?---?00012--?0
+	Plicatolina_scalpta                               1000000001002(0 1)0000010000210210?1000011001001011000220102000000000000--10
+	Bienvillia_parchaensis                            1010211021001100000110-010002001000012--00010111000201031100--100011--?0
+	Hypermecaspis_armata                              010020201010001001122000210401101012-10010000213100?01031000111000011010
+	Hypermecaspis_inermis                             1120211110100000011220222104010-1002-10000001213101201031000011100121012
+	Hypermecaspis_chamarrensis                        211021002110100001022002210?01?00?02-?00100011211?0?01031011010?0002--10
+	Hypermecaspis_occidentalis                        ????0?022100110001122000211?0????002-???????021311??01041?11010200120113
+	Hypermecaspis_edselbrussai                        1???0?02202-01000102200021130?0-?002-00000001023113201042000000101011213
+	Hypermecaspis_latigena                            ????0?021110011011022000211301001002-???????121311??01042?00000211021013
+	Hypermecaspis_brevifrons                          ????1?02212-111001022000211401001002-???????021111??01042?0010020102--12
+	Hypermecaspis_venulosa                            ????1?02202-0100010220012114010-1?02-???????021311??01041?00201211120112
+	Hypermecaspis_rugosa                              ????2?12101010100112100?211??????0001???????????????010???0001000010??0?
+	Hypermecaspis_venerabilis                         ????1?02102-00000102200?211??????002-00000001023112?01042000211?00120212
+	Hypermecaspis_kolouros                            ????2?1011001100011220-2211??????002-???????111311??01031?00--00001202?2
+	Hypermecaspis_alveus                              ????010211100100011110201112010-?0001???????122312??01041?00011010001012
+	Tropidopyge_broeggeri                             ????????????????????????????????????????????111312?????41???????????12??
+	Hypermecaspis_mimitis                             ????2?021100110001122000211??????002-000?000121311??01041?00001100121102
+	Hypermecaspis_bulmani                             ????0?021??011000101101221???????002-???????021310??01042?01110100121212
+	Hypermecaspis_branisai                            12100?021?00110001122?2?2112010-1002-00010000213111?01041000011000021011
+	Hypermecaspis_cf._bulmani_sensu_Whittington_1965  ????2?021000110001011010110??????00?????????110??0??01042?1111020112??12
+	Hypermecaspis_asiatica                            0110?0?12100???????????????20000000??000100001131112010410??????????10?2
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 72;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 72;
+END;
+
+BEGIN NOTES;
+
+	TEXT  TAXON = 29 TEXT = Hypermecaspis_cf._bulmani;
+
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1720928493919;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 7489034980991820597;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 6238726682565419005;
+			mqVersion 370;
+			checksumv 0 3 2235251644 null  getNumChars 72 numChars 72 getNumTaxa 30 numTaxa 30   short true   bits 31   states 31   sumSquaresStatesOnly 14557.0 sumSquares 14557.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1223 641;
+			setLocation 8 34;
+			setFont Gadget;
+			setFontSize 14;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #6238726682565419005 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 359;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1123 569;
+					setLocation 8 34;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleColorOnlyTaxonNames off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

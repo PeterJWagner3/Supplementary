@@ -1,0 +1,22 @@
+#NEXUS
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=14 NCHAR=21 ;
+	FORMAT DATATYPE=STANDARD SYMBOLS=" 0 1 2 3 4 5 6" MISSING=? GAP=- ;
+MATRIX
+Gerastos_tuberculatus_marocensis	101001010000011111010
+Gerastos_aintawilus								101011111200011111010
+Gerastos_lisanrasus								111211011310011102011
+Gerastos_ainrasifus								001001010200011100011
+Gerastos_discombobulatus					111201020100011101011
+Gerastos_cuvieri_malisus					2002010013?0111100111
+Gerastos_taqus										101211021330111?0?011
+Gerastos_malisjildus							100200101330110300?11
+Gerastos_raribus									210210121221111000010
+Gerastos_emmetus									001201021200101112112
+Gerastos_izius										001111112100100011012
+Gerastos_tuberculatus							10100101000001?111110
+Gerastos_mellishae								1000111102111122??102
+Gerastos_milleri									000011110010112???102
+;
+END;

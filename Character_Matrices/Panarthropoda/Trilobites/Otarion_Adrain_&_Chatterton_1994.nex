@@ -1,0 +1,15 @@
+#NEXUS
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=7 NCHAR=15 ;
+	FORMAT DATATYPE=STANDARD SYMBOLS=" 0 1 2 3 4" MISSING=? GAP=- ;
+MATRIX
+Otarion_huddyi				000000000000000
+'Otarion <n. sp. A>'	000000000000010
+Otarion_brauni				110001110111001
+Otarion_coppinsensis	110000000100010
+Otarion_beukeboomi		111101221212100
+Otarion_hollandi			100001110111001
+Otarion_diffractum		111111221212110
+;
+end;
