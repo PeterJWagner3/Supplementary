@@ -1,0 +1,497 @@
+#NEXUS
+[written Wed Dec 02 22:33:47 CST 2020 by Mesquite  version 3.61 (build 927) at EAS-392515.local/10.0.1.51]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=76;
+	TAXLABELS
+		Mussa_angulosa Isophyllia_sinuosa Mycetophyllia_aliciae Mycetophyllia_danaana Favia_fragum Favia_gravida Colpophyllia_natans Diploria_labyrinthiformis Manicina_areolata Mussismilia_hartti Mussismilia_braziliensis Mussismilia_hispida Mussismilia_leptophylla Pseudodiploria_strigosa Pseudodiploria_clivosa Acanthastrea_echinata Acanthastrea_rotundoflora Micromussa_amakusensis Acanthastrea_hillae Lobophyllia_corymbosa Lobophyllia_hemprichii Lobophyllia_pachysepta Symphyllia_agaricia Symphyllia_radians Symphyllia_recta Oxypora_lacera Echinophyllia_echinoporoides Echinophyllia_orpheensis Echinophyllia_aspera Cyphastrea_serailia Cyphastrea_chalcidicum Orbicella_annularis Astrea_curta Echinopora_gemmacea Goniastrea_stelligera Goniastrea_pectinata Merulina_ampliata Merulina_scabricula Scapophyllia_cylindrica Coelastrea_aspera Dipsastraea_amicorum Dipsastraea_pallida Dipsastraea_favus Dipsastraea_speciosa Trachyphyllia_geoffroyi Oulophyllia_crispa Oulophyllia_bennettae Caulastrea_furcata Pectinia_alcicornis Mycedium_elephantotus Pectinia_paeonia Favites_halicora Favites_valenciennesi Favites_chinensis Favites_magnistellata Leptoria_phrygia Platygyra_daedalea Platygyra_lamellina Hydnophora_grandis Hydnophora_exesa Variabilifavia_ausuganensis Variabilifavia_confertissima Hydnophyllia_collinaria Hydnophyllia_costata Hydnophyllia_fimbriata Hydnophyllia_scalaria Hydnophyllia_serpentinoides Hydnophyllia_stellata Hydnophyllia_sublabyrinthica Merulina_isseli Paraleptoria_polygonalis Symphyllia_sp. Echinophyllia_sassellensis Hydnophora_anceps Diploastrea_heliopora Montastraea_cavernosa 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=50;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9";
+	MATRIX
+	Mussa_angulosa                10000-----22-2010021001220022100000000121112212210
+	Isophyllia_sinuosa            101011101-2201000011001220022100000000121112112110
+	Mycetophyllia_aliciae         101031010-22100012101012200221000-0000121112112110
+	Mycetophyllia_danaana         101011010-2200001210101220022100000000121112112110
+	Favia_fragum                  10000---200001210012012110000101100020001121001001
+	Favia_gravida                 10000---200001210012012110000101100020001121001001
+	Colpophyllia_natans           100020101-2201001111021210001101000000020121012011
+	Diploria_labyrinthiformis     10002010201100100012012110000101100020001111001001
+	Manicina_areolata             100020111-1201100022022110001101100020101121011011
+	Mussismilia_hartti            10000-----11-2100021001210021101000000020122012011
+	Mussismilia_braziliensis      10000---1-1101100011001210021101000000120122012011
+	Mussismilia_hispida           10000---1-1102100021001210021101000000020122012011
+	Mussismilia_leptophylla       10000---1-1001100022011210011101000000120121011011
+	Pseudodiploria_strigosa       100020101-1100100012012110000101100020101111011001
+	Pseudodiploria_clivosa        100020100-0101210012012110000101100020101111011011
+	Acanthastrea_echinata         11000---111101001122001101011010100010022102211210
+	Acanthastrea_rotundoflora     11000---1111000011121011010110101-0010022102211210
+	Micromussa_amakusensis        11000---111001101122002102011110100010022102111120
+	Acanthastrea_hillae           11000---112102101122002102011110100010022102111220
+	Lobophyllia_corymbosa         10000-----22-2021121000201023110211010022102212210
+	Lobophyllia_hemprichii        10001110--22-2021121000201023110211010022102212210
+	Lobophyllia_pachysepta        10001110--22-2021121000201023110211010022102212210
+	Symphyllia_agaricia           100031100-2202021221000201023110211010022102212211
+	Symphyllia_radians            100021100-2202021221000201023110211010022102212211
+	Symphyllia_recta              100021100-1201021221000201023110211010022102212211
+	Oxypora_lacera                10004---3210101013110001230210102-0000002101211210
+	Echinophyllia_echinoporoides  10004---321011101321110123011010210000002101111110
+	Echinophyllia_orpheensis      10104---321111101321210123012010210000002111111110
+	Echinophyllia_aspera          10104---321110101321210123012010210000002111111110
+	Cyphastrea_serailia           010-----21000121--11102122100111100020001101011010
+	Cyphastrea_chalcidicum        010-----21000121--11102122100111100020001101011010
+	Orbicella_annularis           010-----20000120--12002122100112100020011101011010
+	Astrea_curta                  010-----20100111--21202122111112200011021101011010
+	Echinopora_gemmacea           010-----31100121--22102122101112100011001101011010
+	Goniastrea_stelligera         10000---200001200011202122100112200012001101011010
+	Goniastrea_pectinata          10000---0-10011000112221221001122-0012101101011010
+	Merulina_ampliata             100020010-00101000112000221001122-0012101101011010
+	Merulina_scabricula           100020010-00101000112000221001122-0012101101011010
+	Scapophyllia_cylindrica       100020110-00111000112000221001122-0012101101011010
+	Coelastrea_aspera             10000---0-1102100021022122111112200010021111021020
+	Dipsastraea_amicorum          10000---201101100021102122111112200010021122011010
+	Dipsastraea_pallida           10000---201101100021102122111112200010021122011010
+	Dipsastraea_favus             10000---201101100021102122111112200010021122011010
+	Dipsastraea_speciosa          10000---201101100021102122111112200010021122011010
+	Trachyphyllia_geoffroyi       10001110--22-2010021022122100102200010021121021020
+	Oulophyllia_crispa            100011100-11110010211002221111122-0000021120020020
+	Oulophyllia_bennettae         10000---0-1111001021100222111112200000021120020020
+	Caulastrea_furcata            10000-----11-1001021110222101112200000020120020020
+	Pectinia_alcicornis           10103---321211011321100222111012000000002000020020
+	Mycedium_elephantotus         10103---321211011321100222111012000000002000020020
+	Pectinia_paeonia              10103---321211011321100222111012000000002000020020
+	Favites_halicora              11000---0-1112110021202222111112200010021112011010
+	Favites_valenciennesi         11000---1-1102110021202222111112200010021112011010
+	Favites_chinensis             11000---0-1112110021202222111112200010021112011020
+	Favites_magnistellata         11000---1-1102110021202222111112200010021112011020
+	Leptoria_phrygia              100020100-00101001010021221001002-0010201101011021
+	Platygyra_daedalea            100010100-11101000210021221011002-0010201101011021
+	Platygyra_lamellina           100010100-11101000210021221011002-0010201101011021
+	Hydnophora_grandis            100120100-11001000110010221001022-0010201101021021
+	Hydnophora_exesa              100120100-11001000110010221001022-0010201101021021
+	Variabilifavia_ausuganensis   100010101010112010212111?????????00000201?????????
+	Variabilifavia_confertissima  1000101010100120102211110????101?00010201121011010
+	Hydnophyllia_collinaria       101031010-22111112100002????????000000201101011010
+	Hydnophyllia_costata          100021100-21111112110002????????000000200111011010
+	Hydnophyllia_fimbriata        100010110-12122112110002????????000000201121021020
+	Hydnophyllia_scalaria         100020010-11111112111002????????000000200111011010
+	Hydnophyllia_serpentinoides   100020010-11111112222002????????000000200?????????
+	Hydnophyllia_stellata         10000---0-11112112111002????????000000201121021020
+	Hydnophyllia_sublabyrinthica  100011100-11111112112001????????000000200111011010
+	Merulina_isseli               100020000-10100010112010????????0-0011201111011010
+	Paraleptoria_polygonalis      100020103000002001011010?????????00000201?????????
+	Symphyllia_sp.                100031110-12011212210002?????????11010022102212210
+	Echinophyllia_sassellensis    10004---3211100013111001?????????10000001111111110
+	Hydnophora_anceps             100020000-12021101011012?????????-0000201111021021
+	Diploastrea_heliopora         010-----20110211--22002100011110100110001102102100
+	Montastraea_cavernosa         010-----20110221--22002110011110100011001102101100
+
+;
+
+END;
+BEGIN MacClade;
+	Version 4.0 84;
+	LastModified -1148217688;
+	FileSettings editor '0' '0' '1' '1';
+	Singles 010;
+	Editor 0001100111111110010001001 '0' '24' Gadget '12' '158' '1' all;
+	EditorPosition '46' '6' '801' '1335';
+	TreeWindowPosition '46' '6' '831' '1390';
+	ListWindow Characters closed Gadget '12' '50' '25' '219' '374' 000;
+	ListWindow Taxa closed Gadget '12' '70' '45' '270' '293' 100000;
+	ListWindow Trees closed Gadget '12' '50' '10' '276' '490';
+	ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow ExSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow TaxSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	ChartWindowPosition '52' '30' '818' '1380';
+	StateNamesSymbols closed Gadget '12' '10' '50' '30' '148' '220';
+	WindowOrder Data;
+	OtherSymbols & / 00 ? -;
+	Correlation '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile '2';
+	ExportHTML _ MOSS '100' 110000;
+	PrettyPrint 10;
+	EditorToolsPosition '707' '46' '115' '165';
+	TreeToolsPosition '716' '9' '126' '138';
+	TreeWindowProgram 10;
+	TreeWindow 0000;
+	Continuous '0' '3' 1;
+	Calculations 0000001;
+	SummaryMode '0' '0' 0;
+	Charts Arial '9' ( normal ) 0010;
+	NexusOptions '0' '0' '50' 001011001;
+	TipLabel '1';
+	TreeFont Gadget '12' ( normal );
+	TreeShape 1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax '0';
+	TraceAllChangesDisplay '1' 1;
+	BarsOnBranchesDisplay '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation '2' 1;
+	PrintTree 10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Gadget '9' ( normal ) Gadget '10' ( normal ) Gadget '9' ( normal ) Gadget '9' ( normal ) Gadget '9' ( bold ) Gadget '9' ( normal ) Gadget '9' ( normal ) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '0' '0' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 00;
+	TreeTools '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools '1';
+
+END;
+BEGIN SETS;
+	TAXPARTITION * UNTITLED  =  Ingroup :  1- 74, Outgroup :  75- 76;
+
+END;
+
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 50;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 50;
+END;
+
+BEGIN LABELS;
+	TAXAGROUPLABEL Outgroup COLOR = (RGB 1 1 1) ;
+	TAXAGROUPLABEL Ingroup COLOR = (RGB 1 1 1) ;
+
+
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1606970027068;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 5911192806722941272;
+			tell It;
+				setDefaultOrder  2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 0 1;
+				attachments ;
+			endTell;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 4458513774318001666;
+			mqVersion 361;
+			checksumv 0 3 2746983389 null  getNumChars 50 numChars 50 getNumTaxa 76 numTaxa 76   short true   bits 31   states 31   sumSquaresStatesOnly 20200.0 sumSquares 20200.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1477 617;
+			setLocation 8 23;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			showTaxa #5911192806722941272 #mesquite.lists.TaxonList.TaxonList;
+			tell It;
+				setTaxa #5911192806722941272;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.TaxonListCurrPartition.TaxonListCurrPartition;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1377 545;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 12;
+					getToolPalette;
+					tell It;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.ColorTaxon.ColorTaxon;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.lists.TaxonListAnnotPanel.TaxonListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.trees.BasicTreeWindowCoord.BasicTreeWindowCoord;
+		tell It;
+			makeTreeWindow #5911192806722941272  #mesquite.trees.BasicTreeWindowMaker.BasicTreeWindowMaker;
+			tell It;
+				suppressEPCResponse;
+				setTreeSource  #mesquite.trees.DefaultTrees.DefaultTrees;
+				setAssignedID 1675.1606969590959.8343526866906619612;
+				getTreeWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1377 545;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 12;
+					getToolPalette;
+					tell It;
+						setTool mesquite.trees.SearchTreeToolAssistant.SearchTreeToolExtra.randomlyRotate;
+					endTell;
+					setActive;
+					getTreeDrawCoordinator #mesquite.trees.BasicTreeDrawCoordinator.BasicTreeDrawCoordinator;
+				tell It;
+					suppress;
+					setTreeDrawer  #mesquite.trees.SquareLineTree.SquareLineTree;
+					tell It;
+						setNodeLocs #mesquite.trees.NodeLocsStandard.NodeLocsStandard;
+						tell It;
+							branchLengthsToggle off;
+							toggleScale on;
+							toggleBroadScale off;
+							toggleCenter on;
+							toggleEven on;
+							setFixedTaxonDistance 0;
+						endTell;
+						setEdgeWidth 4;
+						showEdgeLines on;
+						orientRight;
+					endTell;
+					setBackground White;
+					setBranchColor Black;
+					showNodeNumbers off;
+					showBranchColors on;
+					labelBranchLengths off;
+					centerBrLenLabels on;
+					showBrLensUnspecified on;
+					showBrLenLabelsOnTerminals on;
+					setBrLenLabelColor 0 0 255;
+					setNumBrLenDecimals 6;
+					setSelectedTaxonHighlightMode 1;
+					desuppress;
+					getEmployee #mesquite.trees.BasicDrawTaxonNames.BasicDrawTaxonNames;
+					tell It;
+						setColor Black;
+						setTaxonNameStyler  #mesquite.trees.NoColorForTaxon.NoColorForTaxon;
+						toggleShadePartition off;
+						toggleShowFootnotes on;
+						toggleNodeLabels on;
+						toggleCenterNodeNames off;
+						toggleShowNames on;
+						namesAngle ?;
+					endTell;
+				endTell;
+					setTreeNumber 1;
+					setTree '(((18,(19,((16,17),(20,(21,(22,(72,(23,(24,25))))))))),(((26,73),(27,(28,29))),(((33,((52,54),(53,55))),(((41,42),(43,44)),((40,45),((46,(47,48)),(51,(49,50)))))),((35,(36,((39,(37,38)),(71,(((59,60),(56,(57,58))),(70,((63,(74,(65,68))),(66,(67,(64,69)))))))))),((32,(34,(30,31))),((5,6),((15,(8,14)),(9,((61,62),(13,(7,((11,(10,12)),(1,(2,(3,4))))))))))))))),75,76)<> <> <  setBetweenBits = selected >;';
+					setDrawingSizeMode 0;
+					toggleLegendFloat on;
+					scale 0;
+					toggleTextOnTree off;
+					togglePrintName off;
+					showWindow;
+				endTell;
+				desuppressEPCResponse;
+				getEmployee #mesquite.trees.ColorBranches.ColorBranches;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.trees.SearchTreeToolAssistant.SearchTreeToolAssistant;
+				tell It;
+					getEmployee #mesquite.trees.TreeValueUsingMatrix.TreeValueUsingMatrix;
+					tell It;
+						getEmployee #mesquite.parsimony.TreelengthForMatrix.TreelengthForMatrix;
+						tell It;
+							getEmployee #mesquite.parsimony.ParsCharSteps.ParsCharSteps;
+							tell It;
+								setModelSource  #mesquite.parsimony.CurrentParsModels.CurrentParsModels;
+							endTell;
+						endTell;
+						getEmployee #mesquite.charMatrices.CharMatrixCoordIndep.CharMatrixCoordIndep;
+						tell It;
+							setCharacterSource #mesquite.charMatrices.StoredMatrices.StoredMatrices;
+							tell It;
+								setDataSet #4458513774318001666;
+							endTell;
+						endTell;
+					endTell;
+				endTell;
+				getEmployee #mesquite.ornamental.BranchNotes.BranchNotes;
+				tell It;
+					setAlwaysOn off;
+				endTell;
+				getEmployee #mesquite.ornamental.ColorTreeByPartition.ColorTreeByPartition;
+				tell It;
+					colorByPartition off;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocDoubles.DrawTreeAssocDoubles;
+				tell It;
+					setOn on;
+					toggleShow consensusFrequency;
+					toggleShow bootstrapFrequency;
+					toggleShow posteriorProbability;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					setDigits 4;
+					setThreshold ?;
+					writeAsPercentage off;
+					toggleCentred off;
+					toggleHorizontal on;
+					toggleWhiteEdges on;
+					toggleShowOnTerminals on;
+					setFontSize 10;
+					setOffset 0  0;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocStrings.DrawTreeAssocStrings;
+				tell It;
+					setOn on;
+					toggleCentred on;
+					toggleHorizontal on;
+					setFontSize 10;
+					setOffset 0  0;
+					toggleShowOnTerminals on;
+				endTell;
+				getEmployee #mesquite.trees.TreeInfoValues.TreeInfoValues;
+				tell It;
+					panelOpen false;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #4458513774318001666 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 184;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1377 545;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 12;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+
