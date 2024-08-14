@@ -1,0 +1,370 @@
+#NEXUS
+[written Sat Apr 30 21:40:40 CDT 2022 by Mesquite  version 3.6 (build 917) at EAS-6BCEC7.local/10.0.1.82 ()]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=44;
+	TAXLABELS
+		Agnostus_punctuosus Agnostus_affinis Zeteagnostus_incautus Zeteagnostus_scarifatus Acidusus_atavus Acidusus_acidusus Acidusus_germanus Acidusus_occultatus Ptychagnostus_michaeli Ptychagnostus_akanthodes Ptychagnostus_cassis Agnostus_aculeatus Agnostus_hybridus Agnostus_seminula Onymagnostus_semiermis Agnostus_barrandei Agnostus_praecurrens Agnostus_gibbus Triplagnostus_scopus Triplagnostus_ultimus Aotagnostus_culminosus Aotagnostus_aotus Aotagnostus_magniceps Myrmecomimus_tribulis Myrmecomimus_saltus Agnostus_nathorsti Goniagnostus_scarabaeus Agnostus_spiniger 'Goniagnostus (Cryotypus) oxytaurus' 'Goniagnostus (Cryotypus) lemniscatus' Agnostus_fissus Agnostus_perrugatus Lejopyge_acantha Agnostus_armatus Lejopyge_calva Battus_laevigatus Lejopyge_multifora Phalacroma_?_dubium Agnostus_lundgreni Lejopyge_rigbyi Tomagnostus_bothrus Agnostus_elegans Peronopsis_brighamensis Agnostus_pisiformis 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=28;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7";
+	CHARSTATELABELS 
+		1 Cephalon,
+		2 Cephalon,
+		3 Cephalon,
+		4 Cephalon,
+		5 Cephalon,
+		6 Cephalon,
+		7 Cephalon,
+		8 Cephalon,
+		9 Cephalon,
+		10 Cephalon,
+		11 Cephalon,
+		12 Cephalon,
+		13 Pygidium,
+		14 Pygidium,
+		15 Pygidium,
+		16 Pygidium,
+		17 Pygidium,
+		18 Thorax,
+		19 Pygidium,
+		20 Pygidium,
+		21 Pygidium,
+		22 Pygidium,
+		23 Cephalon,
+		24 Cephalon,
+		25 Pygidium,
+		26 Cephalon,
+		27 Cephalon,
+		28 Thorax ; 
+	MATRIX
+	Agnostus_punctuosus                   0111000210001010000101010000
+	Agnostus_affinis                      01(0 1)1000211001010000101010(0 1)00
+	Zeteagnostus_incautus                 0100000?01201120002101111100
+	Zeteagnostus_scarifatus               0100000201201120002101001100
+	Acidusus_atavus                       010(0 1)0002(0 1)1(1 2)101020121001(0 1)1?00
+	Acidusus_acidusus                     01010002(0 1)2011000102101011100
+	Acidusus_germanus                     01010012(0 1)2011000112101(0 1)11100
+	Acidusus_occultatus                   0101001212011000112101011100
+	Ptychagnostus_michaeli                01000012(0 1)2011000012100111100
+	Ptychagnostus_akanthodes              010100122201110011210001?(0 1)00
+	Ptychagnostus_cassis                  01000002022010(0 1)00?210011110?
+	Agnostus_aculeatus                    01010012220101002?21(0 1)101?00?
+	Agnostus_hybridus                     0100000(0 1)01(0 1)1?1(0 2)2012101101000
+	Agnostus_seminula                     0100000100(0 1)11000102111110100
+	Onymagnostus_semiermis                0101000101(0 1)11000102111110100
+	Agnostus_barrandei                    (0 1)00000000010000000000000000?
+	Agnostus_praecurrens                  0(0 1)00000(0 1)011111200021(0 1)1110100
+	Agnostus_gibbus                       0101(0 1)012(0 1)2(0 1)11?02021100001000
+	Triplagnostus_scopus                  0100001202(0 1)11100212100110101
+	Triplagnostus_ultimus                 010000120?011100112100110100
+	Aotagnostus_culminosus                0100001(1 2)0231110121210011?101
+	Aotagnostus_aotus                     0100001(0 1)02311101(1 2)1200111?101
+	Aotagnostus_magniceps                 0100001202311001(1 2)1200011?100
+	Myrmecomimus_tribulis                 0(0 1)00001202311202102001110100
+	Myrmecomimus_saltus                   000000?2023112?2102001110100
+	Agnostus_nathorsti                    01011112120101101110(0 1)0010000
+	Goniagnostus_scarabaeus               01(0 1)111121201(0 1)110211100(0 1)10001
+	Agnostus_spiniger                     01(0 1)11?120201(0 1)1101?110?01000?
+	'Goniagnostus (Cryotypus) oxytaurus'  011111120201(0 1)11021?100000001
+	'Goniagnostus (Cryotypus) lemniscatus'011111121201(0 1)11021?100000000
+	Agnostus_fissus                       0010000100000010100111(0 1)12(0 1)00
+	Agnostus_perrugatus                   001100020100111010011000??00
+	Lejopyge_acantha                      300000100??1?1?0202?1111?111
+	Agnostus_armatus                      2000001001?11??0002?10(0 1)10110
+	Lejopyge_calva                        3000000001?1???00?2?11(0 1)1?110
+	Battus_laevigatus                     2000000001?11??0002?1111?110
+	Lejopyge_multifora                    3000001001?1???0002?1111?211
+	Phalacroma_?_dubium                   00000000012011?010210011?110
+	Agnostus_lundgreni                    01000000012011(0 1)000210111?100
+	Lejopyge_rigbyi                       010000100120111021210111?100
+	Tomagnostus_bothrus                   0011000101011(0 1)101001(0 1)000?100
+	Agnostus_elegans                      000000000101012000211111?111
+	Peronopsis_brighamensis               000000000?01112010211111?100
+	Agnostus_pisiformis                   0100000000010120002110011100
+
+;
+
+END;
+BEGIN SETS;
+	TAXSET Outgroup  =  43 -  44;
+
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS DEFTYPE = unord PolyTcount = MAXSTEPS;
+	TYPESET * UNTITLED   =  unord:  1- 28;
+
+	WTSET * UNTITLED  =  1: 1 -  28 ;
+
+END;
+
+BEGIN TREES;
+	Title 'Trees from "Agnostoidea_Westrop_et_al_1996.nex"';
+	ID 0180791cb6802;
+	LINK Taxa = Taxa;
+	TRANSLATE
+[0] 		1 Agnostus_punctuosus,
+[1] 		2 Agnostus_affinis,
+[2] 		3 Zeteagnostus_incautus,
+[3] 		4 Zeteagnostus_scarifatus,
+[4] 		5 Acidusus_atavus,
+[5] 		6 Acidusus_acidusus,
+[6] 		7 Acidusus_germanus,
+[7] 		8 Acidusus_occultatus,
+[8] 		9 Ptychagnostus_michaeli,
+[9] 		10 Ptychagnostus_akanthodes,
+[10] 		11 Ptychagnostus_cassis,
+[11] 		12 Agnostus_aculeatus,
+[12] 		13 Agnostus_hybridus,
+[13] 		14 Agnostus_seminula,
+[14] 		15 Onymagnostus_semiermis,
+[15] 		16 Agnostus_barrandei,
+[16] 		17 Agnostus_praecurrens,
+[17] 		18 Agnostus_gibbus,
+[18] 		19 Triplagnostus_scopus,
+[19] 		20 Triplagnostus_ultimus,
+[20] 		21 Aotagnostus_culminosus,
+[21] 		22 Aotagnostus_aotus,
+[22] 		23 Aotagnostus_magniceps,
+[23] 		24 Myrmecomimus_tribulis,
+[24] 		25 Myrmecomimus_saltus,
+[25] 		26 Agnostus_nathorsti,
+[26] 		27 Goniagnostus_scarabaeus,
+[27] 		28 Agnostus_spiniger,
+[28] 		29 'Goniagnostus (Cryotypus) oxytaurus',
+[29] 		30 'Goniagnostus (Cryotypus) lemniscatus',
+[30] 		31 Agnostus_fissus,
+[31] 		32 Agnostus_perrugatus,
+[32] 		33 Lejopyge_acantha,
+[33] 		34 Agnostus_armatus,
+[34] 		35 Lejopyge_calva,
+[35] 		36 Battus_laevigatus,
+[36] 		37 Lejopyge_multifora,
+[37] 		38 Phalacroma_?_dubium,
+[38] 		39 Agnostus_lundgreni,
+[39] 		40 Lejopyge_rigbyi,
+[40] 		41 Tomagnostus_bothrus,
+[41] 		42 Agnostus_elegans,
+[42] 		43 Peronopsis_brighamensis,
+[43] 		44 Agnostus_pisiformis;
+	TREE Published = (44,(((((2,1),(31,(41,32))),(((((5,(6,(7,((9,11),(((((12,10),((30,29),(26,28),27)),18),19),20,(((21,22),23),(25,24)))))),8),15),13),14),16)),43),17,(((((33,37),34),35),36),42)),((4,3),((40,38),39)));
+	TREE Published = (44,(((((((((1,2),(31,(32,41))),(5,(6,(7,((9,11),(((((10,12),((26,28),(29,30),27)),18),19),20,(((21,22),23),(24,25)))),8)))),15),13),14),16),43),17,(((((33,37),34),35),36),42)),((4,3),((40,38),39)));
+	TREE Analysis_Tree = (16,((43,((42,(36,(35,(34,(33,37))))),(17,(44,((4,3),(39,(40,38))))))),(14,(13,(15,(((1,2),(31,(32,41))),(5,(6,(7,(8,((9,11),(20,(((24,25),(23,(21,22))),(19,(18,((10,12),((26,28),(27,(29,30)))))))))))))))))));
+	TREE Strat_Rooted_Ingrtoup_ = (12,(10,((18,(28,(26,(27,(29,30))))),(((9,11),(20,(19,((24,25),(23,(21,22)))))),(8,(7,(6,(((1,2),(31,(32,41))),(15,(14,((42,(36,(35,(34,(33,37))))),(17,(44,((16,(13,5)),(38,((4,3),(39,40)))))))))))))))));
+	TREE Analysis_Tree = (((((((((((((((((((42,(36,(35,(34,(33,37))))),(17,(44,((4,3),(39,(40,38)))))),((2,1),(31,(41,32)))),16),14),13),15),5),8),6),7),(9,11)),((25,24),(23,(21,22)))),20),19),18),(27,((30,29),(26,28)))),10),12);
+	TREE SCI_Tree = (43,(((42,(36,(35,(34,(33,37))))),(17,((4,3),(39,(40,38))))),(16,(14,(13,(15,(((1,2),(31,(32,41))),(5,(6,(7,(8,((9,11),(20,(((24,25),(23,(21,22))),(19,(18,((10,12),((26,28),(27,(29,30))))))))))))))))))));
+
+END;
+
+
+BEGIN MacClade;
+	Version 4.0 87;
+	LastModified -845393566;
+	FileSettings '1' '1' '29' '1';
+	Singles 000;
+	Editor 00011001111111100100010010 '0' '24' Gadget '12' '228' '1' all;
+	EditorPosition '72' '377' '920' '1093';
+	TreeWindowPosition '46' '6' '727' '974';
+	ListWindow Characters open Gadget '12' '48' '9' '576' '321' 000;
+	ListWindow Taxa closed Gadget '12' '50' '10' '797' '408' 100000000;
+	ListWindow Trees closed Gadget '12' '50' '25' '151' '422';
+	ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow ExSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow TaxSets closed Gadget '12' '50' '10' '134' '185';
+	ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	ChartWindowPosition '52' '30' '686' '964';
+	StateNamesSymbols closed Gadget '12' '9' '50' '30' '186' '220';
+	WindowOrder List Characters;
+	OtherSymbols & / 00 ? -;
+	Correlation '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile '2';
+	ExportHTML _ MOSS '100' 110000;
+	PrettyPrint 10;
+	EditorToolsPosition '542' '82' '115' '165';
+	TreeToolsPosition '576' '6' '126' '138';
+	TreeWindowProgram 10;
+	TreeWindow 0000;
+	Continuous '0' '3' 1;
+	Calculations 1000101;
+	SummaryMode '0' '0' 0;
+	Charts Arial '12' ( normal ) 0010;
+	NexusOptions '0' '0' '50' 001011001;
+	TipLabel '1';
+	TreeFont Gadget '12' ( normal );
+	TreeShape 1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax '0';
+	TraceAllChangesDisplay '1' 1;
+	BarsOnBranchesDisplay '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation '3' 1;
+	PrintTree 10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Gadget '9' ( normal ) Gadget '10' ( normal ) Gadget '9' ( normal ) Gadget '9' ( normal ) Gadget '9' ( bold ) Gadget '9' ( normal ) Gadget '9' ( normal ) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '1' '1' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 00;
+	TreeTools '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools '1';
+
+END;
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 28;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1651372841045;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 8497786904261872100;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 6099637204911749859;
+			mqVersion 360;
+			checksumv 0 3 4286170452 null  getNumChars 28 numChars 28 getNumTaxa 44 numTaxa 44   short true   bits 15   states 15   sumSquaresStatesOnly 5068.0 sumSquares 5068.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 153;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1111 481;
+			setLocation 8 25;
+			setFont Gadget;
+			setFontSize 14;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #6099637204911749859 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 275;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 958 409;
+					setLocation 8 25;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

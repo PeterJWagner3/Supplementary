@@ -1,0 +1,35 @@
+#NEXUS
+[MacClade 4.08 registered to Peter Wagner, Field Museum of Natural History]
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=9 NCHAR=14;
+	[!Robison R.A. 1994. Agnostoid trilobites from the Henson Gletscher and Kap Stanton formations (Middle Cambrian), North Greenland. Bulletin Grønlands Geologiske Undersøgelse, 169:25-77]
+	FORMAT SYMBOLS= " 0 1 2 3 4 5" MISSING=? GAP=- ;
+	CHARSTATELABELS
+		1 Cephalon,
+		2 Cephalon,
+		3 Cephalon,
+		4 Cephalon,
+		5 Cephalon,
+		6 Cephalon,
+		7 Cephalon,
+		8 Cephalon,
+		9 Pygidium,
+		10 Pygidium,
+		11 Pygidium,
+		12 Pygidium,
+		13 Pygidium,
+		14 Pygidium;
+
+MATRIX
+Ptychagnostus_praecurrens	00000000000000
+Lejopyge_acantha					11412?01?3220?
+Lejopyge_armata						1131202102220?
+Lejopyge_barrandei				01211201211110
+Lejopyge_calva						01412?01?3220?
+Lejopyge_elegans					01111101011101
+Lejopyge_hybridus					00010201000010
+Lejopyge_laevigata				01312001?2220?
+Lejopyge_seminuia					00000211100010
+;
+end;

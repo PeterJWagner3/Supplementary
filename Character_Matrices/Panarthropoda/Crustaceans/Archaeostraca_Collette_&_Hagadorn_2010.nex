@@ -1,0 +1,244 @@
+#NEXUS
+[written Tue Dec 01 21:11:42 CST 2020 by Mesquite  version 3.61 (build 927) at EAS-392515.local/127.0.0.1]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=75;
+	TAXLABELS
+		'Phyllocarida <Hypothetical ancestor>' Arenosicaris_inflata Aristozoe_memoranda Carinatacaris_scaphoptera Caryocaris_curvilata 'Caryocaris <sp. 1>' Ceratiocaris_praecedens Ceratiocaris_solenoides Cinerocaris_magnifica Dithryocaris_oceani Dithryocaris_oculeus Echinocaris_auricula Echinocaris_beecheri Echinocaris_castorensis Echinocaris_clarkii Echinocaris_condylepis Echinocaris_consanguina Echinocaris_crosbyensis Echinocaris_hunanensis Echinocaris_multinodosa Echinocaris_multispinosis Echinocaris_ohioensis Echinocaris_randallii Echinocaris_socialis Echinocaris_sublaevis Echinocaris_turgida Echinocaris_whidbornei Eleutherocaris_whitfieldi Elymocaris_capsella Elymocaris_siliqua 'Haplocaris <sp. 1>' Herbertocaris_wideneri Kerfornecaris_roscanvelensis Montecaris_lehmannii Montecaris_strunensis Nahecaris_bipennis Nahecaris_stuertzi Nebalia_hessleri Ohiocaris_wycoffi Orozoe_mira Paraechinocaris_punctata Pephricaris_horriplata Ptychocaris_novaki Rhinocaris_columbina Rhinocaris_ehlersi Rhinocaris_venerisi Saronebalia_manensis Tropidocaris_alternata Tropidocaris_bicarinata Tropidocaris_britannica Tropidocaris_interrupta Tropidocaris_salsiusculus Ceratiocaris_acuminata Ceratiocaris_bohemica Ceratiocaris_cornwallisensis Ceratiocaris_grata Ceratiocaris_maccoyanus Ceratiocaris_macroura Ceratiocaris_papilio Ceratiocaris_pusilla Ceratiocaris_silicula Ceratiocaris_teileri Emmelezoe_decora Warneticaris_cenomanensis Pumilocaris_granulosus Pumilocaris_salina Pumilocaris_acuta Caryocaris_subula Caryocaris_wrighti Caryocaris_zhejiangensis Haplocaris_stewarti Ivocaris_delicatus Ivocaris_saltitensis Janviericaris_formosa Janviericaris_jujuyensis 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=87;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9 A B C D E F G H J K M N P Q R S T U V W X";
+	MATRIX
+	'Phyllocarida <Hypothetical ancestor>'20322200200000(0 1)102000100000000000000000000000000223010000010000130303021230200000000222
+	Arenosicaris_inflata                  2--0?0---2----0002-001000000000000000000000000000??-100000--0-01----?-?---??-----------
+	Aristozoe_memoranda                   1--222---1----0102-002011020000000001000000000000??-000000-0-01----0-2---10-----------C
+	Carinatacaris_scaphoptera             0--101---2----1001-1?10001000000101112310000000001?-0111??--?-??----?-?---??-----------
+	Caryocaris_curvilata                  010222---2-1100001011100000000000000000000000000020-10000?--?-??----2-11--0?-0111112---
+	'Caryocaris <sp. 1>'                  0--222---2----0003-11100000000000000000000000000020-10000?--?-??----2-1---00-----------
+	Ceratiocaris_praecedens               11-00100000---(0 1)000-001000000000000000000000000000??31000001000000103000-02001-------011
+	Ceratiocaris_solenoides               01-00000000---(0 1)001-001000000000000000000000000000003100000?-0-00----0-0---10-----------
+	Cinerocaris_magnifica                 2--2??---1----0300-11100?00?0?00000?????0???113?02?-00???0--?-01----1-1---10-----------
+	Dithryocaris_oceani                   0--222---2----1001-111000100000000111231000000000??-011???--?-??----2-1---0?-----------
+	Dithryocaris_oculeus                  0--101---2----1001-11100010000000011123100000000001-011110--0-00----2-1---02-----------
+	Echinocaris_auricula                  2--222---1----0102-00201102111110011213112101110020-100000--0-01----2-0---00-----------
+	Echinocaris_beecheri                  2--222---1----0022-00201102111210012213112101210020-100001--1-11----?-?---??-----------
+	Echinocaris_castorensis               2--222---1----0102-002011021101100113131(0 1)1101110020-10000?--?-??----2-0---00-----------
+	Echinocaris_clarkii                   2--222---1----01(1 2)2-002011021111100122110121?1210020-100001--0-01----2-0---??-----------
+	Echinocaris_condylepis                2--222---1----0102-00201102110100011213100001210020-10000?--?-??----?-?---??-----------
+	Echinocaris_consanguina               2--222---1----0112-00201102110100012(0 1 2)13100001100020-10000?--?-??----?-?---??-----------
+	Echinocaris_crosbyensis               2--222---1----0222-00201102111210012213100001210020-10000?--?-??----?-?---??-----------
+	Echinocaris_hunanensis                2--222---1----0102-00201102110100011213100001210020-10000?--?-??----?-?---??-----------
+	Echinocaris_multinodosa               2--222---1----0122-00201102111210012211000001210020-100001--0-01----?-?---??-----------
+	Echinocaris_multispinosis             2--222---1----0?22-0020110211121001221??00001211020-10000?--?-??----?-?---??-----------
+	Echinocaris_ohioensis                 2--222---1----0022-0020110211121001(1 2)211000011211020-10000?--?-??----?-?---??-----------
+	Echinocaris_randallii                 2--222---1----0102-00201102111210012313112111211020-10000?--?-??----?-?---??-----------
+	Echinocaris_socialis                  2--222---1----0122-00201102111210012211012101211020-100001--1-01----2-0---00-----------
+	Echinocaris_sublaevis                 2--222---1----0122-00201102111110011211012101211020-100001--1-11----2-0---00-----------
+	Echinocaris_turgida                   2--222---1----0212-00201102111210012313100001110020-10000?--?-??----?-?---??-----------
+	Echinocaris_whidbornei                2--222---1----0112-00201102111110012211012101211020-100001--0-01----2-0---00-----------
+	Eleutherocaris_whitfieldi             2--222---(1 2)----1100-10200102111100011202100000000020-000000--0-??----2-1---11-----------
+	Elymocaris_capsella                   1--00(0 1)---2----0001-001100100000000?00000000000000??-0111??--?-??----?-?---??-----------
+	Elymocaris_siliqua                    1--(0 2)(1 2)(0 2)---1----1000-00110011010000000000000000000012-111110--0-01----?-1---00-----------
+	'Haplocaris <sp. 1>'                  022222---2-1000003011100000000000000000000000000020-10000?--?-??----2-10--00-01---11---
+	Herbertocaris_wideneri                0--101---2----1001-??100010000000011123100000000011-011210--0-00----?-1---02-----------
+	Kerfornecaris_roscanvelensis          ?--000---1----1000-011101010100?0011211000000000020-00000?--?-??----?-?---??-----------
+	Montecaris_lehmannii                  2--222---2----1101-10201102110200011113100000000020-000000--0-11----2-1---11-----------
+	Montecaris_strunensis                 2--222---2----1111-10201102110100011113100000000020-000000--0-??----2-1---11-----------
+	Nahecaris_bipennis                    0--(0 1)0(0 1)---2----1001-?01000100000000?12231000000000??-0????0--0-00----2-1---02-----------
+	Nahecaris_stuertzi                    0--(0 1)0(0 1)---2----(0 1)(0 1)01-00100000000000011223100000000001-011110--0-00----2-1---02-----------
+	Nebalia_hessleri                      2--222---0----2102-001000000000000000000000000000X0-100000--0-01----2-0---00-----------
+	Ohiocaris_wycoffi                     1--???---2----22?2-001000000000000000000000000000?0-1121?0--0-01----?-?---??-----------
+	Orozoe_mira                           1--222---1----(0 1 2)002-002111010000000000000000000000??-00000?--?-??----?-?---??-----------
+	Paraechinocaris_punctata              2--222---1----01?2-0020110211(0 1)110011223100000000020-100001--0-11----1-0---00-----------
+	Pephricaris_horriplata                1--???---2----22?2-00110101010000000000000000000020-100000--0-11----2-1---00-----------
+	Ptychocaris_novaki                    0--000---1----0100-00110101010000011211000000000020-00000?--?-??----?-?---??-----------
+	Rhinocaris_columbina                  1--010---2----0000-(0 1)01000000000000200001000000000??-0111?0--0-00----2-1---02-----------
+	Rhinocaris_ehlersi                    1--010---2----0000-10100000000000021123100000000010-011110--0-00----2-1---02-----------
+	Rhinocaris_venerisi                   0--(0 1)00---2----?001-111000?00000000?00000000000000??-0111??--?-??----?-?---??-----------
+	Saronebalia_manensis                  2--222---0----2100-00100000000000000000000000000000-100000--0-01----2-0---00-----------
+	Tropidocaris_alternata                0--???---2----10?1-101100100100011111231113011201??-01????--?-??----?-?---??-----------
+	Tropidocaris_bicarinata               0--00(0 1)---2----1001-00110011010001111123100001120012-01111?--0-00----0-1---02-----------
+	Tropidocaris_britannica               0--000---2----1001-101100110100000111231000000000??-011??0--0-00----?-?---??-----------
+	Tropidocaris_interrupta               0--222---2----100?-??1100110100011111231113011?01??-01????--?-??----?-?---??-----------
+	Tropidocaris_salsiusculus             0--000---2----1001-001100110100000111231000000000??-01???0--0-00----0-1---02-----------
+	Ceratiocaris_acuminata                01-001000-0---(0 1)1-0---1---0------------------------0021----1000-01030000-02101-------001
+	Ceratiocaris_bohemica                 ??-000000-?---(0 1)?-?---1---?------------------------????----1010-00120000-10111-------010
+	Ceratiocaris_cornwallisensis          ??-0???00-?---(0 1)?-?---1---?------------------------????----1000-01031000-02100-------010
+	Ceratiocaris_grata                    11-000000-0---(0 1)0-0---1---0------------------------0021----1010-00111000-02000-------010
+	Ceratiocaris_maccoyanus               11-001000-0---(0 1)1-0---1---0------------------------0011----1000-01030000-02001-------010
+	Ceratiocaris_macroura                 01-001000-0---(0 1)0-0---1---1------------------------0021----1000-00030010-00111-------000
+	Ceratiocaris_papilio                  01-000000-0---(0 1)1-0---0---1------------------------0021----1000-00100000-01111-------000
+	Ceratiocaris_pusilla                  01-000000-0---(0 1)0-0---1---0-----------------------1121-----1000-13030010-?01?1-------001
+	Ceratiocaris_silicula                 01-001000-0---(0 1)0-0---1---0-----------------------??31-----0000-????0000-0??01-------???
+	Ceratiocaris_teileri                  01-000000-0---(0 1)0-0---1---1-----------------------??21-----1000-01030000-02101-------011
+	Emmelezoe_decora                      11-001101-1---(0 1)1-2---1---1-----------------------??31-----1101-1310????-?????-------?2?
+	Warneticaris_cenomanensis             ??-000000-0---(0 1)?-0---1---?-----------------------??31-----1000-01111000-01100-------111
+	Pumilocaris_granulosus                01-222012-0---(0 1)0-0---1---?-----------------------??21-----????-????????-?????-------???
+	Pumilocaris_salina                    01-222002-0---(0 1)0-0---1---1-----------------------0021-----00??-????000?-?????-------0??
+	Pumilocaris_acuta                     11-222002-0---(0 1)0-0---1---0-----------------------??21-----????-????????-?????-------???
+	Caryocaris_subula                     022------2-1102--1111---------------------------------------0-------2-10-----0111200---
+	Caryocaris_wrighti                    010------2-1102--1011---------------------------------------0-------2-10-----0111200---
+	Caryocaris_zhejiangensis              021------2-1102--1011---------------------------------------1-------2-10-----0111212---
+	Haplocaris_stewarti                   022------2-1000--1011---------------------------------------?-------?-10-----0000000---
+	Ivocaris_delicatus                    0?0------2-1002--2101---------------------------------------1-------2-10-----1010011---
+	Ivocaris_saltitensis                  020------2-1002--1111---------------------------------------?-------?-10-----11000??---
+	Janviericaris_formosa                 ???------2-1112--3011---------------------------------------1-------2-10-----1111100---
+	Janviericaris_jujuyensis              010------2-1100--1011---------------------------------------?-------2-10-----1111100---
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 87;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 87;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1606878702793;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 9070715579096483052;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 8532597699861933049;
+			mqVersion 361;
+			checksumv 0 3 3713081483 null  getNumChars 87 numChars 87 getNumTaxa 75 numTaxa 75   short false   bits 1073745935   states 1073745935   sumSquaresStatesOnly 1.15292150462363648E18 sumSquares 1.15292150462363648E18 longCompressibleToShort false usingShortMatrix false   NumFiles 1 NumMatrices 1 errorReportedDuringRun;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1089 678;
+			setLocation 8 23;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #8532597699861933049 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 202;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 989 606;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 12;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

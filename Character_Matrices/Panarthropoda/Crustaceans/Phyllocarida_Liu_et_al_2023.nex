@@ -1,0 +1,210 @@
+#NEXUS
+[written Sun Nov 19 14:43:06 CST 2023 by Mesquite  version 3.70 (build 940) at EAS-F094C0.local/127.0.0.1]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=41;
+	TAXLABELS
+		Nabalia_tagiri Arenosicaris_inflata Caryocaris_curvilata Caryocaris_wrighti Caryocaris_zhejiangensis Janviericaris_formosa Janviericaris_jujuyensis Janviericaris_raymondi Jellicaris_stewarti Ivocaris_saltitensis Ivocaris_delicatus Saltericaris_subula Soomicaris_scanica Soomicaris_cedarbergensis Ceratiocaris_angusta Ceratiocaris_winneshiekensis Pumilocaris_granulosa Pumilocaris_acuta Pumilocaris_salina Pephricaris_horriplata Ohiocaris_wycoffi Ceratiocaris_acuminata Ceratiocaris_bohemica Ceratiocaris_maccoyanus Ceratiocaris_macroura Ceratiocaris_papilio Ceratiocaris_praecedens Ceratiocaris_pusilla Ceratiocaris_silicula Ceratiocaris_solenoides Ceratiocaris_telleri Ceratiocaris_harpago Warneticaris_grata Warneticaris_cenomanensis Warneticaris_cornwallisensis Rlofecaris_lethiersi Rolfecaris_parchaensis Cugoaris_future Gonatocaris_decora Gonatocaris_nankingensis Gonatocaris_wuhanensis 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=103;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4";
+	MATRIX
+	Nabalia_tagiri                0---2100-113-110------00--0--00--------0000------0---0---010100?000---110000????10-----0-120001------0-
+	Arenosicaris_inflata          12--2100-112-11100010000--0--00--------0000------0---0---0??????010---110000?????????--?????--???----??
+	Caryocaris_curvilata          1001002100130000------00--0--00--------0000------0---0---00?????200---???---????1---112--122000--1130??
+	Caryocaris_wrighti            1001202100130000------00--0--00--------0000------0---0---00?????200---???---????1---100--122010--1130??
+	Caryocaris_zhejiangensis      1012202100130000------00--0--00--------0000------0---0---00?????200---???---????1---112--122010--1130??
+	Janviericaris_formosa         ????202100030000------00--0--00--------0000------0---0---00?????200---???---????1---100--122010--1111??
+	Janviericaris_jujuyensis      1001202100130000------00--0--00--------0000------0---0---00?????200---???---????1---100--122010--1111??
+	Janviericaris_raymondi        1001202100030000------00--0--00--------0000------0---0---00?????200---???---????1---1??--1220?0--1?????
+	Jellicaris_stewarti           1021002101130000------00--0--00--------0000------0---0---00?????200---???---????1---100--112100--00?0??
+	Ivocaris_saltitensis          1001202101131000------00--0--00--------0000------0---0---00?????200---???---????1---1??--122100--10?1??
+	Ivocaris_delicatus            100?202101131100------00--0--00--------0000------0---0---00?????200---???---????1---111--122110--10?1??
+	Saltericaris_subula           1022202100131000------00--0--00--------0000------0---0---00?????200---???---????1---100--122010--10?1??
+	Soomicaris_scanica            10120020-114-100------00--0--00--------0000------0---0---00?????200---???---?????---???--??????--??????
+	Soomicaris_cedarbergensis     10210020-114-100------00--0--00--------0000------0---0---00?????200---???---?????---???--??????--??????
+	Ceratiocaris_angusta          ??-?2030-112-110------00--0--00--------0000------0---0---0??????100---???????????????--?????--???----??
+	Ceratiocaris_winneshiekensis  11-02030-112-110------00--0--00--------0000------0---0---0???1??110---101?00????10100--0-100--1??----11
+	Pumilocaris_granulosa         11-02030-110-110------10--0--00--------0000------0---0---0???1??100---???????????????--?????--???----??
+	Pumilocaris_acuta             11-02030-110-110------00--0--00--------0000------0---0---0???1??100---???????????????--?????--???----??
+	Pumilocaris_salina            11-02030-110-110------00--0--00--------0000------0---0---01001??100---00????????????0--???0?--???----??
+	Pephricaris_horriplata        11-002211112-110------00--0--00-----0001000------0---0---00?????000???101010????11000--0-120--100----00
+	Ohiocaris_wycoffi             11-00220-112-110------00--0--00-----0001000------0---0---0??????00110001?000?????????--?????--???----??
+	Ceratiocaris_acuminata        10-00130-110-11110010000--0--00--------0000------0---0---01010??000---100001012?11110--0-101--021----01
+	Ceratiocaris_bohemica         ??-?0030-11?-11100010000--0--00--------0000------0---0---0????????0---100001000?11110--0-101--001----10
+	Ceratiocaris_maccoyanus       11-00130-110-11100010000--0--00--------0000------0---0---01010??010---100001012?11010--0-101--021----10
+	Ceratiocaris_macroura         10-02030-110-11110010000--0--00--------0000------0---0---01001??000---100001000?11110--0-101--001----01
+	Ceratiocaris_papilio          10-02130-110-11100010000--10100--------0000------0---0---01011??000---100001201011110--0-101--011----01
+	Ceratiocaris_praecedens       11-00030-110-11110010000--0--00--------0000------0---0---0???2??010---100001012?11010--0-101--021----11
+	Ceratiocaris_pusilla          11-00030-110-11100010000--0--00--------0000------0---0---01111??010---100000????01010--0-101--?01----01
+	Ceratiocaris_silicula         11-02030-110-11110010000--0--00--------0000------0---0---0???2??010---0?????????????0--??101--0??----??
+	Ceratiocaris_solenoides       11-00030-111-11100010000--0--00--------0000------0---0---01012??000---???0010????????--??101--???----??
+	Ceratiocaris_telleri          10-00030-110-11110010000--0--00--------0000------0---0---0???1??000---100001012?11110--0-101--021----11
+	Ceratiocaris_harpago          ??-?????-11?-11?????????--0--00--------0000------0---0---01011?????---111001010?01110--0-101--021----11
+	Warneticaris_grata            11-02030-110-11100010000--0--00--------0000------0---0---01011??000---100001212111001--0-101--020----10
+	Warneticaris_cenomanensis     ??-?2030-110-11100010000--0--00--------0000------0---0---0???????00---100001212111101--0-101--010----11
+	Warneticaris_cornwallisensis  ??-?2???-11?-1110???????--?--??--------????------?---?---??????????---100001000?11111--0-101--020----10
+	Rlofecaris_lethiersi          12--0130-112-11120110300--0--00--------0000------0---0---0???0??010---0?????????21110--0-110--1??----??
+	Rolfecaris_parchaensis        12--0130-112-11120110300--0--00--------0000------0---0---0???0??010---0?????????21110--0-110--1??----??
+	Cugoaris_future               12--0030-11?-11121110000--0--00--------0000------0---0---0???0??010---0?????????2010?--0-110--1?1----??
+	Gonatocaris_decora            11-02130-112-11121110000--0--00--------0000------0---0---0???2??010---1111011??0?????--?????--???----1?
+	Gonatocaris_nankingensis      11-02130-112-11121110010--0--10--------0000------0---0---0???2??010---???????????????--?????--???----??
+	Gonatocaris_wuhanensis        11-00130-112-11121110010--0--10--------0000------0---0---0???2??010---111001200101010--0-???--???----01
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 103;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 103;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1700426587005;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 3137833379037513525;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 4774780767609491225;
+			mqVersion 370;
+			checksumv 0 3 3958683124 null  getNumChars 103 numChars 103 getNumTaxa 41 numTaxa 41   short true   bits 31   states 31   sumSquaresStatesOnly 8462.0 sumSquares 8462.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1186 650;
+			setLocation 8 34;
+			setFont Gadget;
+			setFontSize 14;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #4774780767609491225 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 176;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1086 578;
+					setLocation 8 34;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleColorOnlyTaxonNames off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

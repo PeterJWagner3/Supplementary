@@ -1,0 +1,481 @@
+#NEXUS
+[written Sat Apr 30 16:38:12 CDT 2022 by Mesquite  version 3.6 (build 917) at Wagners_Dark_Tower/10.0.1.87]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=113;
+	TAXLABELS
+		Tsunyidiscus Neocobboldia_dentata Abakolia_minutus Abakolia_pauca Acidiscus_birdi Acidiscus_theristes Acimetopus_bilobatus Alaskadiscus_spinosus Analox_bipunctata Bathydiscus_dolichometopus Bolboparia_superba Calodiscus_lobatus Morocconus_notabilis Chelediscus_acifer Chelediscus_chathamensis Cobboldites_comleyensis Cobboldites_itsariensis Dawsonia_bohemicus Dawsonia_dawsoni Delgadella_amouslekensis Delgadella_caudatus Delgadella_lenaicus Dicerodiscus_tsunyiensis Egyngolia_obtusa Egyngolia_willochra Egyngolia_zaicevi Ekwipagetia_marginata Ekwipagetia_plicofimbria Eodiscus_borealis Eodiscus_scanicus Hebediscina_blagonravovi Hebediscina_sardoa Hebediscina_yuqingensis Hebediscus_attleborensis Helepagetia_bitruncula Jinghediscus_nummularius Kiskinella_cristata Korobovia_ocellata Lenadiscus_unicus Leptochilodiscus_punctulatus Leptochilodiscus_succinctus Litometopus_longispinus Luvsanodiscus_gammatus Macannaia_maladensis Mallagnostus_desideratus Mallagnostus_limbatus Mallagnostus_llarenai Meniscuchus_menetus Meniscuchus_nanus Limbadiscus_dilata Limbadiscus_incita Neopagetina_rjonsnitzkii Ninadiscus_strobulatus Oodiscus_subgranulatus Opsidiscus_bilobatus Opsidiscus_longispinus Opsidiscus_microspinus Pagetia_bootes Pagetia_prolata Pagetia_aspinosa Pagetia_resseri Pagetides_elegans Pagetides_fragum Pseudocobboldia_pulchra Runcinodiscus_index Semadiscus_sollennis Serrodiscus_ctenoa Serrodiscus_daedalus Serrodiscus_gravestocki Serrodiscus_speciosus Sinodiscus_shipaiensis Sinodiscus_subquadratus Sinopagetia_jinnanensis Stigmadiscus_stenometopus Tannudiscus_altus Tannudiscus_balanus Tchernyshevioides_ninae Weymouthia_nobilis Yukonia_intermedia Yukonides_lacrinus Acadagnostus_syrma Itagnostus_oepiki Archaeagnostus_primigeneus Redeagnostus_ferox Pseudoperonopsis_bifidus Pentagnostus_brighamensis Peronopsis_montis Peronopsis_amplaxis Itagnostus_interstricta Quadragnostus_depressa Diplorrhina_cuneifera Gratagnostus_latus 'Peronopsis (Svenax) egenus' Baltagnostus_rakuroensis 'Peronopsis (Vulgagnostus) longinqua' Ammagnostus_jegorovae Pentagnostus_bonnerensis 'Peronopsis (Svenax) pusillus' Itagnostus_gaspensis Acadagnostus_acadica 'Peronopsis (Proacadagnostus) normata' Peronopsis_segmenta Peronopsis_integer Peronopsis_roddyi Triplagnostus_gibbus Agnostus_pisiformis Doryagnostus_incertus Diplagnostus_planicauda Clavagnostus_repandus Glyptagnostus_reticulatus Ptychagnostus_praecurrens Condylopyge_amitina Pleuroctenium_granulatum 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=129;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9";
+	CHARSTATELABELS 
+		1 '1. Spines on the posterior cephalic border. 0: Present, 1: Absent.',
+		2 '2. Position and angle of posterior cephalic border spines . 0: At genal angles, directed posterolaterally at approximately 45 degrees, 1: Adaxial to genal angles at geniculation, directed posteriorly subparallel to axis.',
+		3 '3. Length of posterior border spine . 0: Short (approximately half or less the distance from axial furrows to genal angles), 1: Long (equal to or greater than distance from axial furrows to genal angles).',
+		4 '4. Anterior lateral cephalic border spines. 0: Absent, 1: Present.',
+		5 '5. Angle of anterior lateral cephalic border spines . 0: Approximately perpendicular to cephalic axis, 1: Directed anterolaterally at approximately 45 degrees to axis.',
+		6 '6. Posterior lateral cephalic border spines (second pair of spines on the lateral cephalic border). 0:Absent in meraspids and holaspids, 1: Present in meraspids, lost in holaspids, 2: Present inholaspids.',
+		7 '7. Anterior cephalic margin bicuspate in anterior view. 0: Absent, 1: Present. This character was described in Leptochilodiscus succinctus by Bassett et al. (1976). It can also be made out in the type material of L. punctulatus Rasetti, 1966 (USNM146009 and USNM 146010), despite dorsoventral flattening.',
+		8 '8. Anterolateral cephalic border scrobiculate. 0: Absent, 1: Present. Despite Öpik?s (1975: p. 33) assertion to the contrary, radial furrows can clearly be seen amongst the tubercles on the anterior cephalic border of at least two specimens of Discomesite fragum (Öpik 1975: pl. 5, figs. 1, 3). The series of pits on the anterior cephalic border in Jinghediscus nummularius Xiang and Zhang, 1985, and Mallagnostus llarenai (Richter & Richter, 1941) are here treated as homologous with the more fully developed scrobiculae found in other taxa.',
+		9 '9. Depth of cephalic border scrobiculae . 0: Very shallow, 1: Moderate, 2: Deep.',
+		10 '10. Length of cephalic border scrobiculae : 0: Short (small elongate pits in border furrow), 1: Moderately long (approximately half border width), 2: Long (considerably more than half border width).',
+		11 '11. Epiborder furrow. 0: Absent, 1: Present.',
+		12 '12. Cephalic border nodes. 0: Absent, 1: Present.',
+		13 '13. Number of pairs of border nodes . 0: 1-3, 1: 4-6, 2: 7-9, 3: 10+. This is coded assuming that in species of Tsunyidiscus with border nodes the nodes continued onto the free cheeks. The total number of node pairs was therefore estimated from the numberon the anterior border (3 pairs in Tsunyidiscus niutitangensis, 4 or 5 in T. aclis) and increased in proportion to the length of the free cheek margin. The estimates are 3 or 4 more pairs in T. niutitangensis, and 4 or 5 more in T. aclis.',
+		14 '14. Density of cephalic border nodes (minimum distance between adjacent nodes) . 0: Separated by less than node diameter, 1: Separated by approximately node diameter, 2: Separated by more than node diameter.',
+		15 '15. Definition of nodes . 0: Weakly defined, 1: Strongly defined.',
+		16 '16. Tubercles more strongly defined posteriorly than anteriorly . 0: Absent, 1: Present, 2: Entirely absent or effaced anteriorly.',
+		17 '17. Border nodes more strongly defined anteriorly or absent posteriorly . 0: Absent, 1: Present.',
+		18 '18. Unpaired sagittal anterior border node. 0: Absent, 1: Present.',
+		19 '19. Nodes inside posterolateral border furrow. 0: Absent, 1: Present. A single pairs of low nodes are located inside the posterolateral angle of the cephalic border in Meniscuchus menetus and M. nanus. These differ from the nodes recognised by Character 12 above by being separated from the border by a clear furrow. The homology of these two types of nodes cannot be demonstrated (although I consider it likely) and they are here treated as distinct pending further investigation. Öpik (1975: p. 30) compared the nodes of Meniscuchus type to those found in Bolboparia, which are here regarded as homologous with the border nodes of other taxa. However, contrary to Öpik?s assertion, the nodes of Bolboparia are clearly located on the cephalic border (see, e.g., Rasetti 1966: pl. 5, figs. 1, 4, 6, 13) and not inside it.',
+		20 '20. Cephalic border furrow effaced. 0: Absent, 1: Present.',
+		21 '21. Width of anterior border (sag.) in dorsal view as a proportion of cephalic length (sag.). 0: <0.10, 1: = 0.1-0.15, 2: = 0.15-0.2, 3: = 0.2-0.25, 4: => 0.25.',
+		22 '22. Border expanded sagittally so that a line perpendicular to the axis may cut the border furrow in four places. 0: Absent, 1: Present.',
+		23 '23. Degree of sagittal border expansion (width of border in dorsal view, sag., compared to width of border, exsag.) . 0: Very small (less than 1.2 time exsag. width), 1: Small (1.2 to 1.5 times exsag. width), 2: Moderate (between 1.5 and 2 times exsag. width), 3: Large (greater than twice exsag. width).',
+		24 '24. Anterolateral cephalic border crescentic in dorsal view. 0: Absent (border slightly, i.e., <= 1.2 times, wider sagittally than at 45 degrees, border as wide sagittally as at 45 degrees, or narrower sagittally than at 45 degrees), 1: Present (border at least 1.2 times wider sagittally than at 45 degrees).',
+		25 '25. Degree of expansion of crescentic anterior cephalic border (width of border in dorsal view, sag., as a proportion of width of border at 45o between axis and posterior cephalic margin) . 0:1.2-1.5, 1: 1.51-1.9, 2: > 1.9.',
+		26 '26. Cephalic border narrower (exsag.) anteriorly than posteriorly in dorsal view. 0: Absent, 1: Present.',
+		27 '27. Anterolateral cephalic border downsloping in lateral view. 0: Absent, 1: Present.',
+		28 '28. Pair of pores in anterolateral cephalic border. 0: Absent, 1: Present. ',
+		29 '29. Shape of cephalon (sagittal length, excluding glabellar or occipital spines, as a proportion of maximum width in dorsal view). 0: <= 0.649, 1: 0.65-0.749, 2: 0.75-0.849, 3: >= 0.85.',
+		30 '30. Anterior margin of cephalon truncated in dorsal view. 0: Absent, 1: Present.',
+		31 '31. Outline of cephalon two-phased (as described by Öpik 1975: p. 30). 0: Absent, 1: Present.',
+		32 '32. Shape of cephalic outline in dorsal view. 0: Semicircular (maximum width in posterior 0.25 of length), 1: Rounded (maximum width approximately at cephalic mid-length).',
+		33 '33. Width of cephalic border furrow (sag., in dorsal view). 0: Narrow (half or less than width of cephalic border), 1: Moderate (approximately equal in width to cephalic border), 2: Wide (over 1.5 times width of cephalic border).',
+		34 '34. Pre-glabellar field. 0: Absent (glabella reaches anterior border furrow), 1: Present.',
+		35 '35. Sagittal pre-glabellar furrow . 0: Absent, 1: Present.',
+		36 '36. Width of sagittal pre-glabellar furrow . 0: Wide (greater than or equal to half the width of the anterior glabellar lobe), 1: Moderate (approximately half the width of the anterior glabellar lobe), 2: Narrow (less than half the width of the anterior glabellar lobe).',
+		37 '37. Anterior genae crossed by transverse furrow at the position of the anterior termination of the glabella. 0: Absent, 1: Present. A faint furrow is present in Mallagnostus desideratus (USNM 18327), that is similar to the stronger furrows seen in Ladadiscus limbatus (see Rushton 1966) and Jinghediscus nummularius (see Xiang and Zhang 1985: pl. 1, fig. 1).',
+		38 '38. Anterior genae with prominent caecal network. 0: Absent, 1: Present. ',
+		39 '39. Genae independently convex in anterior view, i.e., genae reach maximum height (dorsoventrally) adaxial to glabellar furrows rather than smoothly slope down to border furrow. 0:Absent, 1: Present.',
+		40 '40. Genae overhanging border anterolaterally in dorsal view. 0: Absent, 1: Present. Whilst the border furrow is effaced in Analox, the course of the furrow around the posterolateral corner of the cephalon shows that in this genus too the border is probably covered dorsally by the genae. The non-effaced posterolateral portion of the border furrow runs for a short distance under the convexity of the lateral margin of the cephalon (see Rasetti 1966: pl. 6, figs. 3, 7).',
+		41 '41. Facial sutures. 0: Present, 1: Absent.',
+		42 '42. Palpebral lobes. 0: Present, 1: Absent.',
+		43 '43. Palpebral lobes strongly elevated above genae . 0: Present, 1: Absent.',
+		44 '44. Palpebral furrows . 0: Present, 1: Absent.',
+		45 '45. Width of palpebral furrows . 0: Narrow, 1: Wide (subequal in width to palpebral lobes in dorsal view).',
+		46 '46. Length of palpebral lobes . 0: Short (max. length of lobes less than 0.2 of the sag. length of cephalon, in dorsal view), 1: Moderate (0.2-0.29 of length of cephalon), 2: Long (0.3 or more of length of cephalon).',
+		47 '47. Shape of palpebral lobes (length of lobe as a proportion of width of lobe, in dorsal view) . 0: 1-1.9, 1: 2-2.9, 2: 3-3.9, 3: 4-4.9, 4: 5-5.9, 5: 6+.',
+		48 '48. Anteroposterior position of palpebral lobes(distance from base of cephalon to midpoint of lobes as a proportion of length of cephalon, in dorsal view) . 0: < 0.3, 1: 0.3-0.39, 2: 0.4-0.49, 3: >= 0.5.',
+		49 '49. Lateral position of palpebral lobes . 0: At cephalic border (external margin of palpebral lobe in contact with cephalic border furrow, in dorsal view), 1: Inside cephalic border.',
+		50 '50. Angle of palpebral lobes to sagittal line . 0: Parallel or subparallel, 1: Angled inwards (>15 degrees).',
+		51 '51. Eye ridges. 0: Absent, 1: Very weak, 2: Well defined.',
+		52 '52. Width of eye ridges . 0: Wide (maximum width greater than half maximum width of palpebral lobes), 1: Narrow (less than half maximum width of palpebral lobes).',
+		53 '53. Length of glabella (sag. distance from base of cephalon to anterior termination of the glabella) as a proportion of sag. cephalic length (excluding anterior border), in dorsal view. 0: < 0.65, 1: 0.651-0.75, 2: 0.751-0.85, 3: 0.851-0.95, 4: > 0.95.',
+		54 '54. Maximum width of glabella as a proportion of maximum width of cephalon (trans., in dorsal view). 0: < 0.2, 1: 0.2-0.29, 2: 0.3-0.39, 3: => 0.4.',
+		55 '55. Cephalic axial furrows effaced on external surface. 0: Absent, 1: Present.',
+		56 '56. Form of occipital ring. 0: Vertical, 1: Angled posteriorly.',
+		57 '57. Posterior of glabella inflated. 0: Absent, 1: Dorsally, 2: Posterodorsally.',
+		58 '58. Form of SO. 0: Approximately even width across entire axis, 1: Weaker medially than laterally, 2: Divided.',
+		59 '59. Length of divided SO furrows . 0: Long, 1: Short.',
+		60 '60. SO furrows bifid. 0: Absent, 1: Present.',
+		61 '61. Weak furrow crosses posterodorsal glabellar expansion dorsally . 0: Absent, 1: Present.',
+		62 '62. SO evenly effaced on external surface. 0: Absent, 1: Moderately effaced, 2: Entirely effaced.',
+		63 '63. SO consisting of pits isolated from axial furrows connected by narrow (sag.) furrow. 0: Absent, 1: Present.',
+		64 '64. Occipital spine or node. 0: Absent, 1: Present.',
+		65 '65. Cranidial spine (following Jell 1975: p. 4): 0: Absent, 1: Present.',
+		66 '66. Form of cranidial spine . 0: Long and strongly directed posteriorly, 1: Short and posterodorsally directed.',
+		67 '67. Occipital ring with strongly convex posterior margin compared to anterior margin. 0: Absent, 1:Present.',
+		68 '68. Basal lobes divided from median band of occipital ring. 0: Absent, 1: Present.',
+		69 '69. Pre-occipital glabellar spine, node or ridge (in holaspid). 0: Absent, 1: Present.',
+		70 '70. Long glabellar spine angled posterodorsally. 0: Absent, 1: Present.',
+		71 '71. Lateral furrows indicated by rounded pits isolated from axial furrows. 0: Absent, 1: Present.',
+		72 '72. S2 furrows entirely effaced. 0: Absent, 1: Present.',
+		73 '73. S2 furrows trans-glabellar. 0: Absent, 1: Weakly, 2: Strongly.',
+		74 '74. S3 furrows entirely effaced. 0: Absent, 1: Present.',
+		75 '75. S3 furrows trans-glabellar. 0: Absent, 1: Weakly, 2: Strongly.',
+		76 '76. Trans-glabellar S2 and S3 furrows merged medially . 0: Absent, 1:Present.',
+		77 '77. Anterior glabella lobe expanded laterally (maximum width of lobe greater than posterior width of lobe). 0: Present, 1: Absent.',
+		78 '78. Anterior termination of glabella pointed. 0: Absent, 1: Present.',
+		79 '79. Anterior termination of glabella truncated: 0: Absent, 1: Present.',
+		80 '80. Angle of posterior axial furrows. 0: Strongly convergent anteriorly, 1, Weakly convergent or parallel, 2: Divergent anteriorly.',
+		81 '81. Number of thoracic segments. 0: 3, 1: 2. Coding of all thoracic characters for Opsidiscus microspinus and Macannaia maladensis is based on the similar taxa Opsidiscus brevicaudatus (Jell 1975: p. 78, pl. 26, figs. 1-2, pl. 28, figs. 4-8), and Macannaia stenorhachis (Jell 1975: p. 73, pl. 25, figs. 1-14), respectively.',
+		82 '82. Long axial spine on posterior thoracic segment. 0: Absent, 1: Present.',
+		83 '83. Thoracic axial spine geniculate . 0: Absent, 1: Present.',
+		84 '84. Axial tubercles on thoracic segments. 0: Absent, 1: Present.',
+		85 '85. Anterior thoracic segment with long pleural spines. 0: Absent, 1: Present. ',
+		86 '86. Shape of pygidium (maximum width of pygidium as proportion of sag. length of pygidium, in dorsal view). 0: Long (<= 1.4), 1: Intermediate (1.41-1.7), 2: Wide (>= 1.71)',
+		87 '87. Width of pygidial border and furrow as a proportion of length of pygidium (sag., in dorsal view). 0: Very narrow (less than 0.05), 1: Narrow (0.05-0.09), 2: Wide (0.1-0.14), 3: Very wide (=> 0.15).',
+		88 '88. Pygidial border furrow effaced. 0: Absent, 1: Present.  ',
+		89 '89. Width of pygidial border increases posteriorly. 0: Absent, 1: Present.',
+		90 '90. Pygidial border with pair of dorsally directed marginal spines. 0: Absent, 1: Present. ',
+		91 '91. Pygidial border with segmental spines or serrations. 0: Absent, 1: Present. The ventrally directed spines of Serrodiscus-like pygidia (see Jell in Bengtson et al. 1990, Rasetti 1966: p. 9) and the laterally directed border spines of other taxa (e.g., Hebediscina sardoa Rasetti, 1972: pl. 7, figs. 5-20), which have a wide distribution amongst polymerids, are treated as homologous since both are likely to reflect the primitive segmentation of the pygidium.',
+		92 '92. Pygidial border spines all visible in dorsal view . 0: Absent, 1: Present.  the situation in Leptochilodiscus, where the posteriormost spine pair is visible in dorsal view but other spines are directed ventrally (see Rasetti 1967, Bassett et al. 1976), is not considered to be homologous to that in other taxa. In Leptochilodiscus, the posterior spines are visible in dorsal view due not to their orientation with respect to the border but due to an upturning of the posterior part of the pygidial border.',
+		93 '93. Pygidial border doublure expanded and directed ventrally. 0: Absent, 1: Present. This recognises the potential homology between the vertically directed spines of Serrodiscus and similar genera, and the ?cuff? of Meniscuchus, Analox and Bathydiscus (see Öpik 1975: p.22). This is supported by the somewhat intermediate situation in Litometopus.',
+		94 '94. Doublure expanded around entire margin, with smooth or denticulate edge. 0: Absent, 1:Present.',
+		95 '95. Pygidial border lowered postaxially. 0: Absent, 1: Present.',
+		96 '96. Pygidial border turned upwards postaxially. 0: Absent, 1: Present. These two distinctive modifications of the pygidial border were recognised by Jell (1975: p. 86)',
+		97 '97. Pygidial axial furrows effaced externally. 0: Absent, 1: Present.',
+		98 '98. Width of pygidial axis as a proportion of maximum width of pygidum. 0: < 0.25, 1: 0.25-0.29, 2: 0.3-0.34, 3: 0.35-0.39, 4: >= 0.4.',
+		99 '99. Pygidial axis short (less than 0.9 of the length of pygidium excluding border): 0: Absent, 1:Present.',
+		100 '100. Pygidial axis reaches border furrow. 0: Absent, 1: Present.',
+		101 '101. Pygidial axis overhangs border or border furrow posteriorly. 0: Absent, 1: Present.',
+		102 '102. Number of segments in pygidial axis, excluding terminal part. 0: 3, 1: 4, 2: 5, 3: 6, 4: 7, 5: 8, 6:9, 7: 10, 8: 11, 9: > 11. In Delgadella lenaicus, the number of rings can be coded, despite effacement of the furrows,because the segments are indicated by clear muscle scars. The number of segments in Dicerodiscus follows Jell?s (1997: p. 389) observation of 3 pairs of pleural furrows, which appear to cover the length of the pygidium.',
+		103 '103. Pygidial ring furrows (transaxial furrows) entirely effaced. 0: Absent, 1: Present.',
+		104 '104. Pygidial ring furrows  (transaxial furrows) effaced medially. 0: Absent, 1: Present.',
+		105 '105. Lateral margins of pygidial axis convex in dorsal view. 0: Absent, 1: Present.',
+		106 '106. Broad-based spine on more than one segment of pygidial axis, or encroaching on other segments. 0: Absent, 1: Present.',
+		107 '107. Angle of broad-based spine on pyigidial axis . 0: Approximately vertical (greater than 70 degrees from horizontal), 1: Posterodorsally directed (30 to 60 degrees from horizontal), 2: Posteriorly directed (less than 30 degrees).',
+		108 '108. Position of broad-based spine on pyigidial axis . 0: Anterior (less than 1/3 of axis length from anterior margin of pygidium), 1: Median (1/3-2/3 axis length), 2: Terminal.',
+		109 '109. Broad-based terminal spine incorporates terminal piece of pygidial axis . 0: Absent, 1: Present.',
+		110 '110. Segmental spines or nodes on pygidial axis. 0: Absent, 1: Present.',
+		111 '111. Pygidial pleural furrows. 0: Present, 1: Absent.',
+		112 '112. Strength of pygidial pleural furrows . 0: Strongly incised (deep furrows), 1: Weakly incised (relatively wide but shallow), 2: Faint (very narrow and shallow markings which do not interrupt pleural convexity).',
+		113 '113. Pygidial interpleural furrows. 0: Present, 1: Absent.',
+		114 '114. Pygidial pleurae overhang border and border furrow posterolaterally in dorsal view. 0, Absent, 1, Present.',
+		115 '115. Pygidial pleurae crossed by raised ridges that converge abaxially. 0: Absent, 1: Present. ',
+		116 '116. Punctate sculpture. 0: Absent, 1: Present.',
+		117 '117. Prominent tuberculate sculpture. 0: Absent, 1, Present.',
+		118 '118. Thoracic axis divided into lateral and median lobes. 0: Absent, 1: Present.',
+		119 '119. Articulating half-ring of anterior thoracic segment. 0: Present, 1: Absent.',
+		120 '120. Posterior part of pygidial axis unsegmented. 0: Absent, 1: Present.',
+		121 '121. Posterior margin of pygidium with pair of broad-based posteriorly directed spines. 0: Absent, 1: Present. ',
+		122 '122. Anterior glabella effaced compared to posterior glabella. 0: Absent, 1: Present. ',
+		123 '123. Thoracic axis more than half the width of the thoracic segment. 0: Absent, 1: Present. ',
+		124 '124. Postaxial furrow: Absent (0), present (1)',
+		125 '125. Pygidial border, thickened corners: absent (0), present (1)',
+		126 '126. Transverse depression in the posteroaxis: absent (0), present (1)',
+		127 '127. Pygidial lobes in the first ring: absent (0), present (1)',
+		128 '128. Basal lobes, morphology: simple (0), elongate, entire (1), elongate, divided (2)',
+		129 '129. Terminal axial node in the posteroaxis: absent (0), present (1)' ; 
+	MATRIX
+	Tsunyidiscus                          (0 1)0(0 1)0?(0 1)00??(0 1)(0 1)(2 3)0100(0 1)00(1 2)(0 1)0(0 1)0000(1 2 3)000(0 1)10?0000001(0 1)02(0 2 5)00?(0 1)?(2 3)(0 1)012(0 1)?01(0 1 2)000-0011001010000(0 1)00?00(0 1 2)(0 1 2)000(0 1)1000000(0 1)00(1 2 3 4)(0 1)(0 1)00---(0 1)(0 1)(0 2)10000000000-000-0
+	Neocobboldia_dentata                  1--0-100--00-----00000-12000200020--00?000?00111000-120000-0-0000-100001010-101100-?0230001100000300010000---01-10000000000-0?--0
+	Abakolia_minutus                      1--0-1010200-----000(1 2)0-1100010000111001011--------0-(1 2)1012201?0001000?000001-110101000110000-00000000050000---10010000000000-000-0
+	Abakolia_pauca                        1--0-100--00-----000(2 3)111000010000110000011--------11(2 3)10122?100001000?000001-1001?????220000-000001000(3 4)0000---10010000??000?-000-0
+	Acidiscus_birdi                       00011200--011200000010-110003000010-000011--------0-220011-0-0110-001000010-0001?????0100010100002000(0 8)000---11-10000??000??--?-??
+	Acidiscus_theristes                   00111200--011100000020-100003000010-000011--------0-(1 2)20000-0-0110-001000010-00010??100(1 2)0001010000(1 2)000(7 8)0001?0-11-10000000000-000-0
+	Acimetopus_bilobatus                  0000-200--00-----000(1 2)0-100003000010-000011--------0-320120-000100-00110020210001?????000000-0000030015001100-01-10001??000?-000-0
+	Alaskadiscus_spinosus                 1--0-100--00-----00000-0-000100020--0000000002(2 3)20011220122001000100000010?0-100110-002100011000002100(2 3)11?110-00210000000000-000-0
+	Analox_bipunctata                     1--0-100--00-----001413???00300?00--001111--------0-3(1 2)0120-001100-00110010110000?????000000-11000(2 3)00050010---01-11010??000?-000-0
+	Bathydiscus_dolichometopus            0100-100--00-----0001110-010310000--000011--------0-4(2 3)010200-0000-000001010-1002?????0(1 2)0000-111004100?1010---01-10000??000?-000-0
+	Bolboparia_superba                    0000-200--0100020?00212???0020000110001111--------0-(1 2)20000-0-0100-001000000-1100?????00000101000020009?00100-01-11001??000?-000-0
+	Calodiscus_lobatus                    1--0-000--00-----00010-0-000(1 2)000(1 2)0--00001????0030111(2 3)(1 2)0000-0-0000-1000001010?0010????1(2 3)00011000003000(1 2)0000---00010000000000-000-0
+	Morocconus_notabilis                  1--0-100--00-----001??????10(1 2)000?10-000?11--------0-(1 2)31100-0-2000-000001010-100000-00001000-000014010?1010---01-10010000000-000-0
+	Chelediscus_acifer                    0000-2011000-----00000-0-010(2 3)0010112000011--------0-120120-000000-010001002-110010-00000000-110004000(2 3)0010---11-10000000000-000-0
+	Chelediscus_chathamensis              00?0-1011100-----00010-0-010(2 3)0010112000011--------0-(1 2)20120-0000?0-01?001001-1100???????0?00-11000300020010---11-10000??000?-000-0
+	Cobboldites_comleyensis               1--0-100--00-----00010-10000100000--000011--------0-430?0???-2000-?00001010-10000????100000-00000(3 4)01041110---01-11010000000-000-0
+	Cobboldites_itsariensis               1--0-100--00-----00010-10000(1 2)00000--000011--------0-(3 4)(2 3)0100-0-(1 2)000-000001010-1001?????000000-000003010?10?0---01-11000??000?-000-0
+	Dawsonia_bohemicus                    1--0-1012200-----00020-10000100000--001011--------0-2101220?0000110000000?0-11011????210000-00000300120000---00010001000000-000-0
+	Dawsonia_dawsoni                      1--0-1012200-----00030-10000(1 2)00000--001011--------0-2101220?0000110000000?0-110110-00110000-00000100130000---00010001000000-000-0
+	Delgadella_amouslekensis              1--0-100--00-----00000-0-0001000110-00000011-1?1000-331?0???-2?00-?00001010-0110?????010000-00001(2 3)000?1000---01-10000??000?-000-0
+	Delgadella_caudatus                   1--0-100--00-----00010-120003000110-00000011-23(1 2)000-?31?0???-2?00-?00001010-?11100-00010000-000011000?1000---01-10000000000-000-0
+	Delgadella_lenaicus                   1--0-100--00-----00000-100002000110-00000011-1?1000-331000-0-2000-100001010-011000-00010000-00001?000(1 7)000---01-11000000000?-000-0
+	Dicerodiscus_tsunyiensis              1--10100--00-----00030-11000010020--0000101001010110220000-0-(1 2)010-10?0010?0-1110???????0000-00000??000???0---?00?0000??000?-000-0
+	Egyngolia_obtusa                      1--0-100--00-----00000-10000(1 2)000(1 2)11100100000000201111(1 2)01221110001?00?010001-101100-?0220000-00000100030000---1000?000000000-000-0
+	Egyngolia_willochra                   1--0-100--00-----000211110001000111100100000001(1 2)0?111(1 2)012211100011000010001-1011?????2(1 2)0001100000100030000---10200000??000?-000-0
+	Egyngolia_zaicevi                     1--0-100--00-----00000-0-0002000211100?011--------11110122111000??00?010001-?011???????????????????????????????????00????0?-000?0
+	Ekwipagetia_marginata                 1--0-100--10-----00020-10000200010--0010001001(2 3)10011(1 2)2012200100010000000000-1?01?????(1 2)10001100000(2 3)0002010112000200000??000?-000-0
+	Ekwipagetia_plicofimbria              1--0-100--10-----00020-0-100(2 3)00010--001000100(1 2)2000111(1 2)012200100010000000000-1001?????110001100000(2 3)0001100112000200000??000?-000-0
+	Eodiscus_borealis                     1--0-1012(1 2)00-----00010-1000020001112001011-------00-1101220??0001000?000000-110100-10110000-00000100030000---10010000000000-000-0
+	Eodiscus_scanicus                     1000-1010100-----00000-0-000(1 2)0001112001011-------00-11012201000010000000001-11010??00110000-000001000(6 7 8)0000---11-10010000000-000-0
+	Hebediscina_blagonravovi              1--0-100--00-----00010-0-?00(1 2)000211?0010001?0(1 2)?(2 3)00101101220010001?00?00000?-1001?????130001100000100020000---1?2?0000??000?-000-0
+	Hebediscina_sardoa                    1--0-100--00-----00021010000(2 3)00020--0000000002110020(1 2)1012201000010000000000-1001?????0(1 2)0001100000(2 3)00020000---10100000??000?-000-0
+	Hebediscina_yuqingensis               1--0-10???00-----000(2 3)1011000200011100010001001(1 2)10011(1 2)10122?1000011000000000-1001?????020001100000200040000---10100000??000?-000-0
+	Hebediscus_attleborensis              1--0-100--00-----00020-120003???10--00000001-112?1(1 2)0230000-0-2010-000001010-1011??????20000-00001?010?10?0---01-10000??000?-000-0
+	Helepagetia_bitruncula                ??????????????????????????????????????????????????0-2(1 2)012200000010000000001-1101?????(1 2)10000-0000020010000122110110001??000?-000-0
+	Jinghediscus_nummularius              ??????????????????????????????????????????????????0-120120-001000-00?00?002-0000?????030100-000004100(8 9)1010---01-10000??000?-000-0
+	Kiskinella_cristata                   1--0-1012200-----00040-1200010000110001000101111001131012200?000??000001010-1000?????010000-00000100130000---00010000??000?-000-0
+	Korobovia_ocellata                    1--0-100--00-----00010-0-000(1 2)00020--0010000000130111210000-0-0000-100001002-1001?????130001100000(3 4)00010000---10010100??000?-000-0
+	Lenadiscus_unicus                     0000-100--00-----00010-10000(2 3)000010-0100000?0100112000012??0?0001000000????-0001?????1(2 3)0010-00000(2 3)10010100---01-10000??000?-000-0
+	Leptochilodiscus_punctulatus          1--0-110--00-----00000-0-101(2 3)100010-000011--------0-320100-0-0000-100001010-0101?????000001010010(3 4)000(6 7)1110---01-11010??000?-000-0
+	Leptochilodiscus_succinctus           1--0-110--010?02000000-0-100(2 3)10000--000111--------0-4(2 3)1100-0-0110-000001010-110110-00000001010011(3 4)000(8 9)1010---11-11010000000-000-0
+	Litometopus_longispinus               0010-200--00-----00020-11010100000--000011--------0-420101-0-0000-000001010-0001?????1100010110003000?1010---01-10010??000?-000-0
+	Luvsanodiscus_gammatus                1--0-100--00-----00010-11000200020--00000011-22100102(2 3)0000-0-1010-100000000-101100-00120001100000200040100---00101000000000-000-0
+	Macannaia_maladensis                  1--0-1010200-----000(1 2)0-11000(2 3)000111200100011-1(3 4)10011(1 2)101221?100011000000000-110111100120000-0000010013010112010200000000000-000-0
+	Mallagnostus_desideratus              1--0-100--00-----00010-???003001010-100011--------0-020?0???-2?00-000001010-1001?????0?????????????????????????????00????0?-000-0
+	Mallagnostus_limbatus                 1--0-100--00-----00010-0-100(2 3)001110-100011--------0-110100-0-0000-00?001010-10010????030100-00000(2 3)100(0 7)010---01-10000??000??-000-0
+	Mallagnostus_llarenai                 1--0-100--0112020000(1 2)0-0-000(2 3)001010-000011--------0-120100-0-0000-001000000-1001?????030100-00000(2 3)?00(7 8)0010---11-10000000000-000-0
+	Meniscuchus_menetus                   1--0-100--00-----010(2 3)0-11000201000--001111--------113201220000000-00100020200000?????010000-11100(3 4)01140000---11-10000??000?-000-0
+	Meniscuchus_nanus                     1--0-100--00-----01021112000301000--001111--------0-3201220000000-00?00010100000?????000000-???00401040000---11-10000??000?-000-0
+	Limbadiscus_dilata                    1--0-100--00-----00021110000(2 3)000111000100011-1?100101(1 2)0??2?????00-?00001010-1001?????130000-00000200030000---??2?0000??000?-000-0
+	Limbadiscus_incita                    1--0-100--00-----000412100003?0?11100010001001?100??2(1 2)0001?0-(1 2)?00-100001010-1001?????030000-000001010(3 4)0000---?0(1 2)10000??000?-000-0
+	Neopagetina_rjonsnitzkii              1--0-1010200-----000(1 2)1211000100011110010001001(3 4)2001121012211000011000000001-1?01?????110000-00000000040000---10000000??000?-000-0
+	Ninadiscus_strobulatus                1--0-100--0101101100(3 4)1112000(1 2)00000--001111--------0-3(1 2)0120-000000-00?00010201000?????00000?0??000(1 2)001(0 7)000---11-11000??000??-000-0
+	Oodiscus_subgranulatus                01010200--00-----00000-0-0103100010-000011--------0-33012(1 2)-000000-000001010-1002?????020000-000003100?1010---01-10000??000?-000-0
+	Opsidiscus_bilobatus                  1--0-1011100-----00010-0-10011000111001010?1012(1 2)10111101220??0001000?000002-1101?????1(1 2)0000-000001000(1 2)0000---10110000??000?-000-0
+	Opsidiscus_longispinus                1--0-100--00-----00000-0-1000100011000101001010(1 2)101110012200000010000001002-1002???????????????????????????????????00????0?-000-0
+	Opsidiscus_microspinus                1--0-1011(1 2)00-----00010-110001100011(1 2)0010101102?11011(1 2)1012200000010000000001-110111100(1 2)10000-00000100010000---10110000000000-000-0
+	Pagetia_bootes                        1--0-1011200-----00020-10000200001120010001101?1001-12012200000010000000001-110111100110000-000001001(2 3)000122101-10000000000-000-0
+	Pagetia_prolata                       1--0-0011210-----000(1 2)0-1100010000111001000110131001-11012200000010000000001-110111100110000-00000100?(1 2)000122110200000000000-000-0
+	Pagetia_aspinosa                      1--0-1011200-----00020-10000200001120010001101?1001-12012200000010000000001-110111100110000-000001001(2 3)000122101-10000000000-000-0
+	Pagetia_resseri                       1--0-1011200-----00020-10000200001120010001101?1001-12012200000010000000001-110111100110000-000001001(2 3)000122101-10000000000-000-0
+	Pagetides_elegans                     1--0-0010200-----000(2 3)1111000(2 3)00011110010001001(3 4)1001-2(1 2)012211000011000000001-1101?1100110000-00000100040000---10200000000000-000-0
+	Pagetides_fragum                      1--0-1010(1 2)00-----000211110002000111000100011-11(1 2)001-2(1 2)012210000011000000000-1101?????110000-00000100030000---10000000??000?-000-0
+	Pseudocobboldia_pulchra               1--0-100--00-----00020-11000100010--00001000000200103(1 2)0000-0-0000-000001010-1000?????(1 2)20001100000(2 3)?0000100---002?0000??000?-000-0
+	Runcinodiscus_index                   1--0-100--011200000000-100003000110-000011--------0-331100-0-2000-000001010-0000?????0000010100014000(6 7)1010---01-11000??000?-000-0
+	Semadiscus_sollennis                  1--0-100--00-----00020-120002000110-000011--------0-320100-0-0010-000001010-0001???????????????????????????????????00????0?-?????
+	Serrodiscus_ctenoa                    0000-100--011200100010-0-000200000--000011--------0-(3 4)20100-0-(1 2)000-000001010-000100-00000001110000(3 4)00050110---01-11000000000-000-0
+	Serrodiscus_daedalus                  1--0-100--0120100100(2 3)0-110002001010-000011--------0-(2 3)(1 2)01220000000-00110020200000?????020100-00000?000(0 7)000---?1-10000??000??-000-0
+	Serrodiscus_gravestocki               1--0-100--012111000020-11000300010--000011--------0-320121-000000-00110020200000?????000001110000(3 4)000(5 6)00?100-?1-1?000??000?-000-0
+	Serrodiscus_speciosus                 1--0-100--013(1 2)01000020-120002000110-000011--------0-320100-0-1000-0000001?10000000-000100011100003000(6 7)0000---11-10000000000-000-0
+	Sinodiscus_shipaiensis                1--0-100--00-----00000-0-000100010--0000000001130120310000-0-0000-0000002020000000-00120000-00000(3 4)10010000---00000001000000-000-0
+	Sinodiscus_subquadratus               1--0-100--00-----00000-0-000100010--0000000002230120(2 3)(1 2)0000-0-0000-00000020200001?????130000-00000(3 4)10010000---00000000??000?-000-0
+	Sinopagetia_jinnanensis               1--0-1011200-----00030-12000200001100010001102?2001?2201220000000-000001010-1000?????010000-00000100020000---01-10000??000?-000-0
+	Stigmadiscus_stenometopus             0100-100--00-----00010-100001000010-000011--------0-2(1 2)0111-0-0110-001010000-0001???????0?011100003???(0 9)011?1-10010000??000??-000-0
+	Tannudiscus_altus                     1--0-100--00-----00010-0-010(2 3)001010-000011--------0-(2 3)(2 3)0120-000000-00?000002-0001?????030100-00000(2 3)000?1000---01-10000??000?-000-0
+	Tannudiscus_balanus                   0100-100--00-----0001110-110310100--000011--------0-(2 3)30120-000000-001001002-000100-10030100-00000(3 4)000(4 5)0110---01-10000000000-000-0
+	Tchernyshevioides_ninae               0010-100--00-----0002100-000000000--0000000001130120320000-0-0010-100000000-1000?????2(1 2)0000-00000100030000---00010000??000?-000-0
+	Weymouthia_nobilis                    1--0-100--0112?2000010-1000030001?0-000011--------0-??1?0???-2??0-?00001010-??0?00-?002000??????1?????10?0---01-10000000000-000-0
+	Yukonia_intermedia                    1--0-100--00-----00000-0-000000010--0010100010030111(1 2)1012200000010000001010-110100-012(2 3)0001100000(1 2)100(1 2 3)0101?0-00(1 2)00000000000-000-0
+	Yukonides_lacrinus                    1--0-1011000-----00010-0-0002000(1 2)0--00001000100200111101221100001?000000000-1001?????120001100000(1 2)100(2 3 4)0000---10200000??000?-000-0
+	Acadagnostus_syrma                    0100-000--00-----00020-1101031012112000011--------0-120000-000000-010000101000111011023010110011020100011120000-10000101001100100
+	Itagnostus_oepiki                     0100-000--00-----00010-100103001010-000011--------0-120100-000000-0100000020100110-10230100-00000400001011?0001-10000100001000001
+	Archaeagnostus_primigeneus            1--0-000--00-----0002000-1103000010-000011--------0-220020-000000-?10001001-10111????020100-01001410001000---01-10000??100?000000
+	Redeagnostus_ferox                    1--0-000--00-----0001000-0103000010-000011--------0-210010-000000-?10001002-10011010023000000100121000111101001-10000111100000000
+	Pseudoperonopsis_bifidus              1--0-000--00-----0003000-0103101110-000011--------0-110010-000000-010001001-10111????21000010100140000110111001-10000??110?011000
+	Pentagnostus_brighamensis             1--0-000--00-----00000-100102100010-000011--------0-220-20-000000-0100001100100110110210000-0000040000001101010-1--00101001000101
+	Peronopsis_montis                     1--0-000--00-----00000-100103001010-000011--------0-220-00-000000-010000002-100110010000000-00000411101011?1001-10000111001011000
+	Peronopsis_amplaxis                   1--0-000--00-----00010-111103001110-000011--------0-220-10-00000000100010010000010000230100-01001400001010---00-10000111001000000
+	Itagnostus_interstricta               0100-000--00-----00010-100102001010-000011--------0-120100-000000-0100010010100110-10230100-00000400001011?0001-10000101011110000
+	Quadragnostus_depressa                0100-000--00-----0001000-0103001010-000011--------0-120020-000000-010001001-01011????21010010100021000100110001-10000??010?001000
+	Diplorrhina_cuneifera                 0100-000--00-----0002020-0103001010-000011--------0-220010-000000-010001002-10011????110100-0100040101011100001-10000??100?011000
+	Gratagnostus_latus                    0100-000--00-----0001020-0103101010-000011--------0-020010-000000-010001001-10111????12010010100040100101111011-10000??100?011000
+	'Peronopsis (Svenax) egenus'          1--0-000--00-----0001020-0103000010-000011--------0-220020-000000-010001002-10101????12010010100140100100001001-10000??100?000100
+	Baltagnostus_rakuroensis              ?????????????????????????????????????????????????????????????????????????????????????23010010100040100101001001-10011??110?0110?0
+	'Peronopsis (Vulgagnostus) longinqua' 11000000--00-----00020-0-0103001010-000011--------0-120010-000000-010000001-00001????23010010100040100101001001-10011??11??010000
+	Ammagnostus_jegorovae                 0--0-010--00-----00020-0-0103001110-000011--------0-230010-000000-010001002-00011????230100-0100040100101101001-10000??100?010000
+	Pentagnostus_bonnerensis              1--0-000--00-----00000-0-0102000010-000011--------0-220-10-0000?0-?10000100010011????210000-00000401000110---0021--00??000?000100
+	'Peronopsis (Svenax) pusillus'        0000-000--00-----0001000-0103100110-010011--------0-210000-000000-011011002-10011????120100-0100121000101101001-10000??101?000000
+	Itagnostus_gaspensis                  1--0-000--00-----000102101103001010-000011--------0-320010-000000-010001001-00001????11010010100021000101101001-10000?0110?000000
+	Acadagnostus_acadica                  1--0-000--00-----000200010103000110-000011--------0-230010-000000-010001002-01011????23010110100041000100011001-10000??100?100100
+	'Peronopsis (Proacadagnostus) normata'1100-000--00-----000300110103001110-000011--------0-330020-000000-010001002-10111????03010011100040000111111001-10000??100?110100
+	Peronopsis_segmenta                   ?????????????????????????????????????????????????????????????????????????????????????12000110000021000100120000210000??11??1101?1
+	Peronopsis_integer                    ???0-000--00-----00000-100103000110-000011--------0-220-10-000000-?10000002-100110000010100-00000400001010--001-10000111011000000
+	Peronopsis_roddyi                     1--0-000--00-----00000-0-0103101110-000011--------0-220120-000000-011000002-100110-00020000-00000410000111?0001-10000111011000000
+	Triplagnostus_gibbus                  0010-000--00-----00000-0-01031010112000011--------0-220120-000000-011000002-110111010020000-0000031000001110001-10000111101000110
+	Agnostus_pisiformis                   1000-010--00-----00020-0-01030012112000011--------0-220110-000000-010001001-110110010120000-0000030000010001001-10000??1001000100
+	Doryagnostus_incertus                 1100-010--00-----00020-1001020000112000011--------0-120010-000000-010000001-01001????010100-0000031000101101001-10000??110?101010
+	Diplagnostus_planicauda               0000-0112000-----00010-0-01031012112010011--------0-320000-010000-010000101010111????130100-1010020100101101001-10000??100?000110
+	Clavagnostus_repandus                 0--0-000--10-----00020-0-0103001010-000011--------0-220000-000000-011001010-10011????020100-1010030100001101001-10000??111?001000
+	Glyptagnostus_reticulatus             0--0-0012200-----00000-0-01030010112110011--------0-010010-000000-010001002-01011????100000-0000001000000100000-00111??000?100110
+	Ptychagnostus_praecurrens             0--0-010--00-----00000-0-01030010112000011--------0-210000-000000-010001001-010110010010100-1100021000101100000-10000111000000110
+	Condylopyge_amitina                   0000-000--00-----00010-0-0103101010-000011--------0-330120-000010-011001002-000110-10030100-0000041000111100-01-10000111001000100
+	Pleuroctenium_granulatum              0--0-000--00-----00010-0-0103000010-000011--------0-330120-000000-010000002-000110-10030100-0000041000111100-01-10000111001000100
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 129;
+
+END;
+
+BEGIN NOTES;
+
+	TEXT  TAXON = 83 TEXT = Archaeagnostus_primigeneus;
+	TEXT  TAXON = 84 TEXT = Redeagnostus_ferox_IIa;
+	TEXT  TAXON = 85 TEXT = Pseudoperonopsis_bifidus_IIb;
+	TEXT  TAXON = 86 TEXT = Pentagnostus_brighamensis_mIII;
+	TEXT  TAXON = 87 TEXT = Peronopsis_montis_Va;
+	TEXT  TAXON = 88 TEXT = Peronopsis_amplaxis_Va;
+	TEXT  TAXON = 89 TEXT = Itagnostus_interstricta_Vb;
+	TEXT  TAXON = 90 TEXT = Quadragnostus_depressa_VI;
+	TEXT  TAXON = 91 TEXT = Diplorrhina_cuneifera_VII;
+	TEXT  TAXON = 92 TEXT = Gratagnostus_latus_VIII;
+	TEXT  TAXON = 93 TEXT = 'P (Svenax) egenus IX';
+	TEXT  TAXON = 94 TEXT = Baltagnostus_rakuroensis_Xa;
+	TEXT  TAXON = 95 TEXT = P_Vulgagnostus_longinqua_Xa;
+	TEXT  TAXON = 96 TEXT = Ammagnostus_jegorovae_Xb;
+	TEXT  TAXON = 97 TEXT = Pentagnostus_bonnerensis_mXII;
+	TEXT  TAXON = 98 TEXT = P_Svenax_pusillus_XIII;
+	TEXT  TAXON = 99 TEXT = Itagnostus_gaspensis_XIVa;
+	TEXT  TAXON = 100 TEXT = Acadagnostus_acadica_XIVb;
+	TEXT  TAXON = 101 TEXT = P_Proacadagnostus_normata_XIVb;
+	TEXT  TAXON = 102 TEXT = Peronopsis_segmenta_mXVI;
+	TEXT  TAXON = 103 TEXT = Peronopsis_integer;
+	TEXT  TAXON = 104 TEXT = Peronopsis_roddyi;
+	TEXT  TAXON = 105 TEXT = Triplagnostus_gibbus;
+	TEXT  TAXON = 106 TEXT = Agnostus_Agnostus_pisiformis;
+	TEXT  TAXON = 107 TEXT = Doryagnostus_incertus;
+	TEXT  TAXON = 108 TEXT = Diplagnostus_planicauda;
+	TEXT  TAXON = 109 TEXT = Clavagnostus_repandus;
+	TEXT  TAXON = 110 TEXT = Glyptagnostus_reticulatus;
+	TEXT  TAXON = 111 TEXT = Ptychagnostus_praecurrens;
+	TEXT  TAXON = 112 TEXT = Condylopyge_amitina;
+	TEXT  TAXON = 113 TEXT = Pleuroctenium_granulatum;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 129;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1651354692504;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 2386873994218558018;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 920863074917276625;
+			mqVersion 360;
+			checksumv 0 3 238368221 null  getNumChars 129 numChars 129 getNumTaxa 113 numTaxa 113   short true   bits 1023   states 1023   sumSquaresStatesOnly 2528474.0 sumSquares 2528474.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 153;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1275 663;
+			setLocation 622 124;
+			setFont Gadget;
+			setFontSize 14;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			showTaxa #2386873994218558018 #mesquite.lists.TaxonList.TaxonList;
+			tell It;
+				setTaxa #2386873994218558018;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.TaxonListCurrPartition.TaxonListCurrPartition;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1122 591;
+					setLocation 622 124;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.ColorTaxon.ColorTaxon;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.lists.TaxonListAnnotPanel.TaxonListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #920863074917276625 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 287;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1122 591;
+					setLocation 622 124;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

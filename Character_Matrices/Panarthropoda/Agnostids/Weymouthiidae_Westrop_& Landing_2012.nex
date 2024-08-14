@@ -1,0 +1,182 @@
+#NEXUS
+[written Sun Apr 24 19:44:57 CDT 2022 by Mesquite  version 3.6 (build 917) at EAS-6BCEC7.local/10.0.1.82 ()]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=19;
+	TAXLABELS
+		Meniscusus_menetus Acidiscus_birdi Acidiscus_hexacanthus Acidiscus_theristes Litometopus_longispinus Leptochilodiscus_punctulatus Leptochilodiscus_succinctus Runcinodiscus_index Serrodiscus_bellimarginatus Serrodiscus_ctenoa Serrodiscus_subclavatus Serrodiscus_speciosus Serrodiscus_mackenziensis Serrodiscus_daedalus Serrodiscus_gravestocki Stigmadiscus_stenometopus Stigmadiscus_gibbosus Bolboparia_elongata Bolboparia_canadensis 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=25;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7";
+	MATRIX
+	Meniscusus_menetus            011100?0000?0000000000010
+	Acidiscus_birdi               023?011201111110011021100
+	Acidiscus_hexacanthus         023?011201121010011021110
+	Acidiscus_theristes           1???011201121110011023120
+	Litometopus_longispinus       1???00??021110000002?0330
+	Leptochilodiscus_punctulatus  1???1120010?2010001220231
+	Leptochilodiscus_succinctus   1???10?0000?20001012?02?1
+	Runcinodiscus_index           1???10??000?21101012101?0
+	Serrodiscus_bellimarginatus   14421111010?1110001012120
+	Serrodiscus_ctenoa            1???00?0000?11000011?0100
+	Serrodiscus_subclavatus       1???00??010?11000010?4110
+	Serrodiscus_speciosus         1???10??000?1110001110120
+	Serrodiscus_mackenziensis     144210?0000?1110001011120
+	Serrodiscus_daedalus          012100?0000?01100?10101??
+	Serrodiscus_gravestocki       012100?0000?01000010111?0
+	Stigmadiscus_stenometopus     033?0110110?2010?????????
+	Stigmadiscus_gibbosus         033?02?0110?2010?????????
+	Bolboparia_elongata           033?20?201111211010025140
+	Bolboparia_canadensis         033?20?201111211011025140
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 25;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 25;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1650847497873;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 4679475223395516858;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 5452429448818374113;
+			mqVersion 360;
+			checksumv 0 3 447819721 null  getNumChars 25 numChars 25 getNumTaxa 19 numTaxa 19   short true   bits 63   states 63   sumSquaresStatesOnly 6162.0 sumSquares 6162.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 153;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 852 513;
+			setLocation 8 25;
+			setFont Gadget;
+			setFontSize 14;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #5452429448818374113 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 699 441;
+					setLocation 8 25;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

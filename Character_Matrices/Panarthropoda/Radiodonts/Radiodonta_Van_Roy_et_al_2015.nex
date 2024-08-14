@@ -1,0 +1,424 @@
+#NEXUS
+[written Tue Dec 08 23:31:36 CST 2020 by Mesquite  version 3.61 (build 927) at EAS-392515.local/127.0.0.1]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=33;
+	TAXLABELS
+		Opabinia_regalis Caryosyntrips_serratus Anomalocaris_kunmingensis Amplectobelua_stephenensis Amplectobelua_symbrachiata Lyrarapax_unguispinus Anomalocaris_canadensis Anomalocaris_saron 'Anomalocaris cf. saron <Nevada>' 'Anomalocaris <Balang sp.>' Paranomalocaris_multisegmentalis 'Anomalocaris cf. canadensis <Emu Bay>' Anomalocaris_pennsylvanica Tamisiocaris_borealis Anomalocaris_briggsi 'Hurdiidae <sp. Fezouata appendage>' Peytoia_nathorsti Schinderhannes_bartelsi 'cf. Peytoia <sp. Balang>' Hurdia_victoria 'Hurdia cf. victoria <Utah>' Stanleycaris_hirpex 'Hurdia <sp. B Burgess ROM>' 'Hurdia <sp. B Utah>' Aegirocassis_benmoulae Cucumericrus_decoratus Chengjiangocaris_kunmingensis Caenorhabditis_elegans Priapulus_caudatus Aysheaia_pedunculata Kerygmachela_kierkegaardi Pambdelurion_whittingtoni Olenoides_serratus 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  'Matrix in file "Radiodonta_Van_Roy_et_al_2015.nex"';
+	DIMENSIONS  NCHAR=62;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5";
+	CHARSTATELABELS 
+		1 Head_sclerotization /  unsclerotized bearing_one_or_more_sclerotized_elements,
+		2 Head_size /  small enlarged,
+		3 Eyes /  absent small_and_simple 'large, compound',
+		4 Eye_stalks /  absent present,
+		5 Preoral_scleral_plate /  absent present,
+		6 Mouth_direction /  anterior ventral posterior,
+		7 'Mouth: sclerotized oral plates arranged in a radial array' /  absent present,
+		8 'Mouth: scleral plates overlapping' /  not_overlapping 'overlapping in a wheel-shaped or pineapple slice array, with enlarged anterior, posterior and lateral plates',
+		9 'Mouth: toothplate arrangement' /  'symmetrical, tetraradiate' 'asymmetrical, triradiate',
+		10 'Mouth: external surface' /  smooth 'bearing sharp, tooth-like protuberances',
+		11 'Mouth: accessory oral plates or spines inside primary oral ring' /  absent present,
+		12 'Body: division of external surface' /  undivided bearing_annuli divided_into_segments,
+		13 Body_shape /  cylindrical 'broad anteriorly and tapering posteriorly, maximum width of trunk anteriorly about 300% width of tail',
+		14 'Body: relative length of segments' /  segments_subequal_along_length_of_body 'posterior segments reduced, anterior segments 150% or more length of posterior segments',
+		15 'Body: sclerotization' /  unsclerotized bearing_a_series_of_overlapping_dorsal_plates,
+		16 Gut /  'simple, straight' bearing_a_series_of_lateral_diverticula,
+		17 Paired_lateral_appendages /  absent present,
+		18 Frontal_limb_structure /  annulated broken_into_discrete_articles_or_segments 19 13_or_fewer 14_or_more,
+		19 'Number of appendage pairs (limbs or flap pairs, including frontal appendage)',
+		20 Exites /  absent present,
+		21 'Dorsal flaps associated with setal blades/exites' /  absent present,
+		22 Antenna /  absent present,
+		23 Anteriormost_appendage_sclerotization /  soft composed_of_sclerotized_segments_separated_by_membranes_,
+		24 'Frontal appendage: number of articles' /  14_or_more_ 13_or_fewer,
+		25 'Frontal appendage: ventral spines' /  absent present,
+		26 'Frontal appendage: length of distal articles' /  elongate_ short_and_closely_packed_relative_to_proximal_segments_,
+		27 'Frontal appendage: curvature' /  straight_or_downcurved_proximally_ 'with a dorsal kink near articles 2/3 ',
+		28 'Frontal appendage: orientation of terminal spine' /  terminal_spine_hooked_down_ terminal_spine_hooked_upward_,
+		29 'Frontal appendage: terminal segments bearing distally projecting dorsal spines' /  absent_ present,
+		30 'Frontal appendage: form of dorsal spines on terminal segments' /  short_and_robust_ 'long and needle-like ',
+		31 'Frontal appendage: form of ventral spines' /  short_ 'elongate, length exceeding article diameter  ',
+		32 'Frontal appendage: longest spine borne on article 2' /  absent_ present,
+		33 'Frontal appendage: width of ventral spines' /  narrow_ 'anteroposteriorly expanded, platelike ',
+		34 'Frontal appendage: ventral spines: variability in width along length of appendage' /  subequal_to_or_narrower_in_width_than_proximal_spines_ ventral_spines_become_broader_distally_,
+		35 'Frontal appendage: ventral spines: orientation of proximal ventral spines' /  _proximal_spines_directed_ventrally 'proximal spines directed forwards by 45 degrees or more to oppose tip of appendage, forming a claw ',
+		36 'Frontal appendage: ventral spines: hypertrophied pincer spine' /  absent_ present,
+		37 'Frontal appendage: ventral spines: auxiliary spines ' /  absent_ present_on_anterior_edge_of_one_or_more_ventral_spines,
+		38 'Frontal appendage: ventral spines:arrangement of anterior auxiliary spines' /  radiating_ pectinate_,
+		39 'Frontal appendage: ventral spines: curvature of distal tips' /  straight_or_weakly_curved_ 'hooked forward, talon-like ' 'strongly hooked forward, tips forming a 90 degree angle with the base of the spine',
+		40 'Frontal appenadge: ventral spines: auxiliary spines: modal number of anterior auxiliary spines' /  none_ one_ two three four_or_five six_or_more,
+		41 'Frontal appendage: ventral spines: auxiliary spines: orientation of anterior auxiliary spines' /  directed_distally_towards_tip_of_ventral_spines_ directed_anteriorly_towards_tip_of_ventral_spines_,
+		42 'Frontal appendage: ventral spines: auxiliary spines: presence on posterior edge of ventral spines' /  absent_ present_on_one_or_more_ventral_spines_,
+		43 'Frontal appendage: ventral spines: auxiliary spines: number of posterior auxiliary spines' /  'one (single) ' two_or_more,
+		44 'Frontal appendage: ventral spines: relative length of adjacent spines' /  adjacent_spines_similar 'alternating (long-short-long, etc.)',
+		45 'Frontal appendage: ventral spines: relative length of lateral and medial spines' /  subequal medial_spine_reduced_relative_to_lateral_spine,
+		46 'Frontal appendage: ventral spines: curvature' /  straight_or_curved_anteriorly all_ventral_spines_curve_towards_base_of_appendage 'proximal ventral spines curve towards base, but more distal spines do not',
+		47 'Frontal appendage: ventral spines: auxiliary spines: serial distribution ' /  auxiliary_spines_on_numerous_ventral_spines auxiliary_spines_on_only_one_proximal_article,
+		48 Trunk_limb_sclerotisation /  soft sclerotized,
+		49 Trunk_limb_morphology /  annulated_lobopod flap segmented_walking_limb 50 subequal_along_length_of_body anterior_flaps_about_twice_as_long_as_posterior_flaps 51 confined_laterally 'present dorsally ("on back")',
+		50 Dorsal_flap_length,
+		51 'Setal blades: distribution',
+		52 'Setal blades: fusion' /  unfused fused_across_the_back,
+		53 Transverse_rods_in_flaps /  absent 'present, transversely oriented',
+		54 'Tail: tailfan' /  absent present,
+		55 construction_of_tailfan /  small_fluke_consisting_of_a_single_pair_of_flaps 'large fan, consisting of multiple pairs of flaps' 56 absent present,
+		56 'Tail: furcae/streamers',
+		57 'dorsal flaps/exites fused with trunk limbs into biramous appendage' /  unfused fused,
+		58 lateral_carapace_elements /  absent present,
+		59 shape_of_central_or_only_carapace_element /  oval_or_rounded elongate triangular 60 covering_the_head extending_in_front_of_the_head 61 absent,
+		60 extent_of_central_or_only_carapace_element,
+		61 cephalic_tergites_fused_into_cephalic_shield,
+		62 labrum ; 
+	MATRIX
+	Opabinia_regalis                       0021010????200011011100?1???0-000???0????0?0??-??10001100----0
+	Caryosyntrips_serratus                 ????????????????11????1010000-0000000?0??0?000-???????????????
+	Anomalocaris_kunmingensis              ????????????????11????1010?0100?00101?0000?1?00???????????????
+	Amplectobelua_stephenensis             ????????????????11????1?11?0100?0011110000?0001???????????????
+	Amplectobelua_symbrachiata             102??1??????110?111100101110100000111000011100101-101111000000
+	Lyrarapax_unguispinus                  1021011????211011111001?1?1???0?0011110????1?0001-10?11?000000
+	Anomalocaris_canadensis                1021011111021101111100101010100100001001010100001-101110000000
+	Anomalocaris_saron                     102101111??21?0?1111001010101111000010020111?0001-101111000000
+	'Anomalocaris cf. saron <Nevada>'      ????????????????11????1010101001000010030111?00???????????????
+	'Anomalocaris <Balang sp.>'            ????????????????11????1?1?1???01000010030101?00???????????????
+	Paranomalocaris_multisegmentalis       ????????????????11????101000100?000010040111?00???????????????
+	'Anomalocaris cf. canadensis <Emu Bay>'????????????????11????1010??1001000010020111?00???????????????
+	Anomalocaris_pennsylvanica             ????????????????11????1010?0100100000-0----100-???????????????
+	Tamisiocaris_borealis                  11??????????????11???01010??1?10000011050110010??????????00000
+	Anomalocaris_briggsi                   ????????????????11????1010101?1?000011050110010???????????????
+	'Hurdiidae <sp. Fezouata appendage>'   ????????????????11????1?10?0101?10??111{4 5}00?0?00???????????????
+	Peytoia_nathorsti                      112101110002110111111011100010101000111{4 5}10?01000111110-00?{1 2}000
+	Schinderhannes_bartelsi                ?121?11????211??11?1?011110???101000111{4 5}10?0100???1??101?0??00
+	'cf. Peytoia <sp. Balang>'             ????????????????11????11110010101000??1????0?00???????????????
+	Hurdia_victoria                        1121?11100121?0?11111011110110101100111{4 5}10?0100011101100012100
+	'Hurdia cf. victoria <Utah>'           ?????1?10?1?????11????1111010-101100111{4 5}1000100???????????????
+	Stanleycaris_hirpex                    ????????????????11????1111011010100011241000100???????????????
+	'Hurdia <sp. B Burgess ROM>'           ????????????????11????1111010-1010001?2?1000120???????????????
+	'Hurdia <sp. B Utah>'                  ????????????????11????1111?10-101000112{4 5}1000120???????????????
+	Aegirocassis_benmoulae                 11??01?????2110?11?110111100??1010000-10-1101010111110-0011100
+	Cucumericrus_decoratus                 ??????????????0?1??11??????????????????????????00???1???0?????
+	Chengjiangocaris_kunmingensis          1021120----211101111011100?-0------------------12-00-0-010?011
+	Caenorhabditis_elegans                 000-000---000-000--00-----------------------------------------
+	Priapulus_caudatus                     000-000---010-000--00-----------------------------------------
+	Aysheaia_pedunculata                   000?000---?100001000000?1???0-0?00??0?0??0?0?1-00------------0
+	Kerygmachela_kierkegaardi              0010000---?100011001100?1???0-0000000?0??0?0?0-0000000-10----0
+	Pambdelurion_whittingtoni              00??0110???100011001100?1???0-0?00?00?0??0?0?0-0000000-?0----0
+	Olenoides_serratus                     1120120----21010111101100??-0------------------12-00-0-110?011
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	OPTIONS DEFTYPE = UNORD POLYTCOUNT = MINSTEPS;
+	TYPESET * UNTITLED   =  unord:  1- 2 4- 5 7- 38 41- 56 58- 62, ord:  3-6\3 39- 40 57;
+TYPESET default   =  unord:  1- 2 4- 5 7- 38 41- 56 58- 62, ord:  3-6\3 39- 40 57;
+
+END;
+
+BEGIN NOTES;
+
+	TEXT  TAXON = 9 TEXT = Anomalocaris_cf_saron_Nevada;
+	TEXT  TAXON = 10 TEXT = Anomalocaris_Balang;
+	TEXT  TAXON = 12 TEXT = Anomalocaris_cf_canadensis_Emu_Bay;
+	TEXT  TAXON = 16 TEXT = Fezouata_hurdiid_appendage;
+	TEXT  TAXON = 19 TEXT = cf_Peytoia_Balang;
+	TEXT  TAXON = 21 TEXT = Hurdia_cf_victoria_Utah;
+	TEXT  TAXON = 23 TEXT = Hurdia_sp_B_Burgess_ROM;
+	TEXT  TAXON = 24 TEXT = Hurdia_sp_B_Utah;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 62;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1607491896524;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 3384097773910604906;
+			tell It;
+				setDefaultOrder  5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 0 1 2 3 4 32;
+				attachments ;
+			endTell;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 6399989973815152519;
+			mqVersion 361;
+			checksumv 0 3 3252275103 null  getNumChars 62 numChars 62 getNumTaxa 33 numTaxa 33   short true   bits 2305843009213694015   states 63   sumSquaresStatesOnly 19448.0 sumSquares -9.2233720368547564E18 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1 errorReportedDuringRun;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1535 916;
+			setLocation 8 23;
+			setFont Gadget;
+			setFontSize 14;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.trees.BasicTreeWindowCoord.BasicTreeWindowCoord;
+		tell It;
+			makeTreeWindow #3384097773910604906  #mesquite.trees.BasicTreeWindowMaker.BasicTreeWindowMaker;
+			tell It;
+				suppressEPCResponse;
+				setTreeSource  #mesquite.trees.DefaultTrees.DefaultTrees;
+				setAssignedID 11212.1607490603041.2117557602917176337;
+				getTreeWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1435 844;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.trees.BasicTreeWindowMaker.BasicTreeWindow.arrow;
+					endTell;
+					setActive;
+					getTreeDrawCoordinator #mesquite.trees.BasicTreeDrawCoordinator.BasicTreeDrawCoordinator;
+				tell It;
+					suppress;
+					setTreeDrawer  #mesquite.trees.SquareLineTree.SquareLineTree;
+					tell It;
+						setNodeLocs #mesquite.trees.NodeLocsStandard.NodeLocsStandard;
+						tell It;
+							branchLengthsToggle off;
+							toggleScale on;
+							toggleBroadScale off;
+							toggleCenter on;
+							toggleEven on;
+							setFixedTaxonDistance 0;
+						endTell;
+						setEdgeWidth 4;
+						showEdgeLines on;
+						orientRight;
+					endTell;
+					setBackground White;
+					setBranchColor Black;
+					showNodeNumbers off;
+					showBranchColors on;
+					labelBranchLengths off;
+					centerBrLenLabels on;
+					showBrLensUnspecified on;
+					showBrLenLabelsOnTerminals on;
+					setBrLenLabelColor 0 0 255;
+					setNumBrLenDecimals 6;
+					setSelectedTaxonHighlightMode 1;
+					desuppress;
+					getEmployee #mesquite.trees.BasicDrawTaxonNames.BasicDrawTaxonNames;
+					tell It;
+						setColor Black;
+						setTaxonNameStyler  #mesquite.trees.NoColorForTaxon.NoColorForTaxon;
+						toggleShadePartition off;
+						toggleShowFootnotes on;
+						toggleNodeLabels on;
+						toggleCenterNodeNames off;
+						toggleShowNames on;
+						namesAngle ?;
+					endTell;
+				endTell;
+					setTreeNumber 1;
+					setTree '(28,(29,(30,(31,(32,(33,(1,((26,27),(2,((11,((9,10),((13,(8,12)),(7,(3,(6,(4,5))))))),((14,15),(16,(17,(25,(19,(18,((20,21),(22,(23,24)))))))))))))))))))<> <> <  setBetweenBits = selected >;';
+					setDrawingSizeMode 0;
+					toggleLegendFloat on;
+					scale 0;
+					toggleTextOnTree off;
+					togglePrintName off;
+					showWindow;
+				endTell;
+				desuppressEPCResponse;
+				getEmployee #mesquite.trees.ColorBranches.ColorBranches;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.trees.SearchTreeToolAssistant.SearchTreeToolAssistant;
+				tell It;
+					getEmployee #mesquite.trees.TreeValueUsingMatrix.TreeValueUsingMatrix;
+					tell It;
+						getEmployee #mesquite.parsimony.TreelengthForMatrix.TreelengthForMatrix;
+						tell It;
+							getEmployee #mesquite.parsimony.ParsCharSteps.ParsCharSteps;
+							tell It;
+								setModelSource  #mesquite.parsimony.CurrentParsModels.CurrentParsModels;
+							endTell;
+						endTell;
+						getEmployee #mesquite.charMatrices.CharMatrixCoordIndep.CharMatrixCoordIndep;
+						tell It;
+							setCharacterSource #mesquite.charMatrices.StoredMatrices.StoredMatrices;
+							tell It;
+								setDataSet #6399989973815152519;
+							endTell;
+						endTell;
+					endTell;
+				endTell;
+				getEmployee #mesquite.ornamental.BranchNotes.BranchNotes;
+				tell It;
+					setAlwaysOn off;
+				endTell;
+				getEmployee #mesquite.ornamental.ColorTreeByPartition.ColorTreeByPartition;
+				tell It;
+					colorByPartition off;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocDoubles.DrawTreeAssocDoubles;
+				tell It;
+					setOn on;
+					toggleShow consensusFrequency;
+					toggleShow bootstrapFrequency;
+					toggleShow posteriorProbability;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					setDigits 4;
+					setThreshold ?;
+					writeAsPercentage off;
+					toggleCentred off;
+					toggleHorizontal on;
+					toggleWhiteEdges on;
+					toggleShowOnTerminals on;
+					setFontSize 10;
+					setOffset 0  0;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocStrings.DrawTreeAssocStrings;
+				tell It;
+					setOn on;
+					toggleCentred on;
+					toggleHorizontal on;
+					setFontSize 10;
+					setOffset 0  0;
+					toggleShowOnTerminals on;
+				endTell;
+				getEmployee #mesquite.trees.TreeInfoValues.TreeInfoValues;
+				tell It;
+					panelOpen false;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #6399989973815152519 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 301;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1435 844;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames off;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

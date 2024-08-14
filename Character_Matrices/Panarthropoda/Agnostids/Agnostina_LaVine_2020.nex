@@ -1,0 +1,226 @@
+#NEXUS
+[written Tue Apr 26 10:37:57 CDT 2022 by Mesquite  version 3.6 (build 917) at Wagners_Dark_Tower/10.0.1.87]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=51;
+	TAXLABELS
+		Acmarhachis_typicalis Agnostus_pisiformis Agnostotes_orientalis Ammagnostus_simplexiformis Arthrorhachis_tarda Aspidagnostus_laevis Agnostardis_amplinatis Barrandagnostus_barrandei Clavagnostus_repandus Condylopyge_carinata Condylopyge_rex Corrugatagnostus_morea Cotalagnostus_lens Diplagnostus_planicauda Doryagnostus_incertus Doryagnostus_wasatchensis Eoagnostus_roddyi Euagnostus_opimus Eurudagnostus_grandis Galbagnostus_galba Geragnostus_sidenbladhi Glyptagnostus_reticulatus Goniagnostus_nathorsti Hadragnostus_modestus Homagnostus_captiosus Hypagnostus_brevifrons Hypagnostus_parvifrons Itagnostus_interstricta Kormagnostus_simplex Lejopyge_laevigata Linguagnostus_kjerulfi Lotagnostus_americanus Neoagnostus_bilobus Oedorhachis_typicalis Oidalagnostus_trispinifer Pentagnostus_brighamensis 'Pentagnostus (Meragnostus) segmenta' Peronopsis_integer Peratagnostus_orientalis Pleuroctenium_granulatum Proagnostus_bulbus Sulcatagnostus_securiger Ptychagnostus_atavus Ptychagnostus_praecurrens Quadragnostus_clarus Quadrahomagnostus_subquadratus Rhodotypiscus_nasonis Trinodus_elspethi Triplagnostus_gibbus Utagnostus_songae Utagnostus_trispinulus 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=79;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9";
+	MATRIX
+	Acmarhachis_typicalis                10021201210012201011001011011000000001131112112210010?00?0101100210211000?00200
+	Agnostus_pisiformis                  0?11?200211113211011001011010110000001020?01100010010?00?0001110210011000?00200
+	Agnostotes_orientalis                10011200311112221001002111111202001001020?02112210110?0111101210210012001110300
+	Ammagnostus_simplexiformis           1003131020?01321101100001000?010000001130?00000010110?00?1110100110011000?00200
+	Arthrorhachis_tarda                  1003131030?001210012000010011100000001030?01111111030?00?3000013210201000?00010
+	Aspidagnostus_laevis                 102113003110132?00?101101101110000010114111001101001121112101100220111001?11101
+	Agnostardis_amplinatis               10110200311112201010001011010010011001121100101210011200?2001011210110000?00300
+	Barrandagnostus_barrandei            10111100310212201011002110110012001001020?02111211020?00?0000112210201000?00200
+	Clavagnostus_repandus                1023120020?0122?00?100101001100000000113111000001101110102100201210012000?00201
+	Condylopyge_carinata                 0?10?30110?100201120101011010200010001030?02112111111200?000111120?112000?00300
+	Condylopyge_rex                      1013130100?100201121101011010200010001030?02112110111200?000111120?111000?00300
+	Corrugatagnostus_morea               1022111130?212220002000011111100000001020?02112111020?00?3000013211201000?00110
+	Cotalagnostus_lens                   10121310?0?00?1?0???00??010111100000120310001002101010010000111110?011000?00100
+	Diplagnostus_planicauda              1001120031111222100100211110?001111002040?0111101112100100101111210010001210200
+	Doryagnostus_incertus                0?02?20021101210101100101100?010001001021100100111011100?2101012110001000?00200
+	Doryagnostus_wasatchensis            0?21?20021111210111100001100?010001001021100100111011000?2101111110011000?00200
+	Eoagnostus_roddyi                    0?13?20020?01120111100000100?010000010031010100101110?00?000111210?002000?00200
+	Euagnostus_opimus                    0?21?20020?01120101100000101001000?011031110100111011000?2101111110010000?00300
+	Eurudagnostus_grandis                0?12?20030?212211020000011010111010000020?02112110010?00?0001012211001000?00000
+	Galbagnostus_galba                   1002131030?002210012000011011100000002030?01111111130?00?30011132??201000?00010
+	Geragnostus_sidenbladhi              1020121120?012210011002010011101000002020?01111011120?00?3000113210001000?00210
+	Glyptagnostus_reticulatus            0?03?10031112222100000201111000210000100110211221001120112001012210001000?00300
+	Goniagnostus_nathorsti               10120200211112201121001011110212001001011102102211111100?2101111210112000?00300
+	Hadragnostus_modestus                0?02?310211013211111000011011010000001120?01101010120?00?1111200210010000?00200
+	Homagnostus_captiosus                0?02?100310212201011001010210011000001020?02101211110?00?0100211211211000?00100
+	Hypagnostus_brevifrons               1012111020?0011210110000010110100000110210001002111210010000111210?002000?00200
+	Hypagnostus_parvifrons               1013121030?012121001000001011010000011131110100?11110?010000111110?011000?00201
+	Itagnostus_interstricta              1011130020?011201111000011010010000001031110100101121000?000111110?010000?00200
+	Kormagnostus_simplex                 0?12?41020?01221100100??0000?010000012130?00000000120?00?1110100110011000?00100
+	Lejopyge_laevigata                   111310003110102?00?000??0100?0100010110111001002111110010200111110?011100?00200
+	Linguagnostus_kjerulfi               10011300210113211001002111111101111001041111111111121210?0001112220100000?10100
+	Lotagnostus_americanus               0?03?200210212201111001010110112010001010?0211211011100110001111210211000?00200
+	Neoagnostus_bilobus                  10221311211202210012000010011100000001030?01111211130?00?3000113210001000?00011
+	Oedorhachis_typicalis                10221310210013221000002011111101110101140?0111111010100100101110220011001110100
+	Oidalagnostus_trispinifer            10001400211012201200000011111001110102130?1101121112121111111200220111011110200
+	Pentagnostus_brighamensis            1011120020?012201110000011010011000001020?02101011021000?000111110?010000?00200
+	'Pentagnostus (Meragnostus) segmenta'1011130020?012201011000011010000000001031112100011121000?0001111211010000?00200
+	Peronopsis_integer                   1012120020?01120111100001000?000000011020?00100011121000?010011210?001000?00200
+	Peratagnostus_orientalis             1012111020?0011?000100??010110100000110210001002111210010200111210?002100?00200
+	Pleuroctenium_granulatum             0?12?21020?00122111010011100?200010001010?02112110111200?110111220?101000?00100
+	Proagnostus_bulbus                   1002131021101222111100001101111000?002130?00000010110?00?1111100210111000?00200
+	Sulcatagnostus_securiger             10010211211012200011001011111200001002120?01100010020?0111111200220011000?00200
+	Ptychagnostus_atavus                 10130100211113201121001011110212001001011102102211121000?000111120?011000?00200
+	Ptychagnostus_praecurrens            10110200211011201110001011010211000001021102102210121000?210111220?001000?00200
+	Quadragnostus_clarus                 1022120131111321201100211110?001000001031110100110011000?0001111210111000?00101
+	Quadrahomagnostus_subquadratus       10221311210101111110011011010101000001140?11111000011000?100110010?010000?00200
+	Rhodotypiscus_nasonis                1021120031011210101100101100?010000001011100100110011100?2101012110001000?00300
+	Trinodus_elspethi                    1022131130?001210012000010011100000001030?01111111030?00?1000113210000000?00010
+	Triplagnostus_gibbus                 11130111211012201011000011010001001001021102102211111000?210111120?011000?00200
+	Utagnostus_songae                    1002130031001321100001101111010000000104111001001112100101001112210001000?00201
+	Utagnostus_trispinulus               1101130020?012200000011010011100000101131110001010011000?1100101220011000?00301
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	OPTIONS DEFTYPE = unord PolyTcount = MINSTEPS;
+	TYPESET * UNTITLED   =  unord:  1- 79;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 79;
+END;
+
+BEGIN NOTES;
+
+	TEXT  TAXON = 7 TEXT = Agnostardis_amplinatus;
+
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1650987477436;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 7698464583908431842;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 2294422152590548994;
+			mqVersion 360;
+			checksumv 0 3 2345356630 null  getNumChars 79 numChars 79 getNumTaxa 51 numTaxa 51   short true   bits 31   states 31   sumSquaresStatesOnly 22738.0 sumSquares 22738.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 202;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1359 798;
+			setLocation 8 25;
+			setFont Gadget;
+			setFontSize 16;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #2294422152590548994 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 313;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1157 726;
+					setLocation 8 25;
+					setFont Gadget;
+					setFontSize 16;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

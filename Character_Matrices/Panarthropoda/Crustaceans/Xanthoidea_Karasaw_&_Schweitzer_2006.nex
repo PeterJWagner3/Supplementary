@@ -1,0 +1,230 @@
+#NEXUS
+[MacClade 4.08 registered to Peter Wagner, Field Museum of Natural History]
+
+
+BEGIN MacCladeStart;
+	Extended;
+END;
+
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=45 NCHAR=71;
+
+[!Karasawa, H. & C. E. Schweitzer. 2006. A new classification of the Xanthoidea sensu lato (Crustacea: Decapoda: Brachyura) based on phylogenetic analysis and traditional systematics and evaluation of all fossil Xanthoidea sensu lato.  Contributions to Zoology, 75 (1/2) 23-73.]
+	FORMAT SYMBOLS= " 0 1 2 3 4 5 6 7" MISSING=? GAP=- ;
+
+MATRIX
+[                              10        20        30        40        50        60        70  ]
+[                              .         .         .         .         .         .         .   ]
+
+Leptodius             00000000000100010000000011110111110011000000000001001000000110001010100
+Etisus                00000000000100110000000011110111110011000000000001001000001110001010100
+Panopeus              000000000001000000000000111101111100110000000000(01)00(01)1000000100001110100
+Euphrosynoplax        00000000000100000000000011110111110011000000100000011000000110001010100
+Domecia               00000010001110000001000000110211110011000000000000001000001100000010100
+Trapezia              10000010101100000000000011110211110011000000000000011000001100000010100
+Tetralia              11100111101100000000000000110211110011000000000000011000001100000010100
+Halimede              00000000000100000000100000000111110011101100010000001000000100101021100
+Pilumnus              00000000000100000000000000000111110011100100010000001000000120101021100
+Eriphia               00001010010110100000000000000111110011000000000010001000000000000000000
+Ozius                 00001010000100100000000000000211110011000000000010001000000000000000010
+Menippe               00001010000110100000000000000211000011010000000010001000000000000000010
+Mathildella           00100000000110000000001000111211111011100000000000011010000021000000000
+Eucrate               00101000000100000000111000001211111111100100010100011100000110000020100
+Carcinoplax           01101110000111000000001000001211111111100100110(01)00011110000000010000000
+Psopheticus           01101110000111000000001000001211111111100100110100011100000000010000000
+Carinocarcinoides     011011100001110000??001011111211111111100101010100011100000????????????
+Chasmocarcinus        00101111101111011100001111111211111111100111110100011110000000000000100
+Hexapinus             00101111101111110100000111111211111111100100010100001000010000000010100
+Chaceon               (01)00000(01)000010100000000100011111111(01)011100100(01)001100111(01)(01)000021000000000
+Carcinus              010100000001000(01)0000001011110111111011100101011100011110000021000010101
+Carpilius             0(01)000110001101100000000010110200000010000000000010100100000010000000010
+Platyxanthus          00000000000110110000000000000(12)111100110000000000(01)0001000000000000000000
+Nectocarcinus         100000000001100000000010001101111100111001010111000111111000(12)1000000000
+Pilumnoides           (01)0000000000110000000000000000100000000000000000000101000000000000010100
+Eucratopsis           00000000000100000000000011110111110011000000100000001000000100001110100
+Homalaspis            00000100000100110000000000000211110011000000000000001000000000000000000
+Pseudozius            00001010000110100000000000000211110011000000000010001000000100000010100
+Epixanthus            00001010000100100000000000000211110011000000000010001000000000000000010
+Hypothalassia         10000000000110100000000000000211110011000000000010001000000000000000000
+Myomenippe            00001010000110100000000000000211000011010000000010(01)01000000000000000010
+Dacryopilumnus        01101011110110100000000000000211000011000000000000101000000000000000010
+Progeryon             10(01)000(01)0000110000000001000001011111111000000000010011000000000000000000
+Heteroplax            00101000000100000000111000001211111111100100110100011100000110000020100
+Raymanninus           00000000000101000000001000111111111111100101011110011110000021000000000
+Benthochascon         11010000000110000010001000110111111111100101011110011111100021000000000
+Bathynectes           00000000000100000010001000111111111111100101011110011111100021000000101
+Necora                00000000000100000010001011111111111111100101011110011111100021000010101
+Liocarcinus           11010000000100000010001011110111111111100101011100011111100021000010101
+Trogloplax            001011111011110?100?001111111211111111100111110100011100000000000000000
+Palaeoxanthopsidae    000000(01)00001010000??00000000001?1000(01)1001(01)00000?1000?????0?????????????
+Tumidocarcinidae      (01)00000100011000000??000000000011??00010?110000?010010100000????????????
+Harpactoxanthopsis    000000100011010000??000011110010100001001100000010000100000????????????
+Cancer                01010000000000000000000011110100000000100100000000001000000000000000100
+Romaleon              01010000000000000000100011110100000000100100000000001000000000000000100
+;
+END;
+
+
+BEGIN SETS;
+	TAXSET  Analyses  =  1-21;
+	TAXSET  Exclude  =  22-45;
+END;
+
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+	TYPESET * UNTITLED  = unord: 1-71;
+END;
+
+
+BEGIN TREES;
+
+	TRANSLATE
+		1	Leptodius,
+		2	Etisus,
+		3	Panopeus,
+		4	Euphrosynoplax,
+		5	Domecia,
+		6	Trapezia,
+		7	Tetralia,
+		8	Halimede,
+		9	Pilumnus,
+		10	Eriphia,
+		11	Ozius,
+		12	Menippe,
+		13	Mathildella,
+		14	Eucrate,
+		15	Carcinoplax,
+		16	Psopheticus,
+		17	Carinocarcinoides,
+		18	Chasmocarcinus,
+		19	Hexapinus,
+		20	Chaceon,
+		21	Carcinus,
+		22	Carpilius,
+		23	Platyxanthus,
+		24	Nectocarcinus,
+		25	Pilumnoides,
+		26	Eucratopsis,
+		27	Homalaspis,
+		28	Pseudozius,
+		29	Epixanthus,
+		30	Hypothalassia,
+		31	Myomenippe,
+		32	Dacryopilumnus,
+		33	Progeryon,
+		34	Heteroplax,
+		35	Raymanninus,
+		36	Benthochascon,
+		37	Bathynectes,
+		38	Necora,
+		39	Liocarcinus,
+		40	Trogloplax,
+		41	Palaeoxanthopsidae,
+		42	Tumidocarcinidae,
+		43	Harpactoxanthopsis,
+		44	Cancer,
+		45	Romaleon
+	;
+	TREE Fig._1 =  [&R] ((44,45),((22,(43,(41,42))),(25,(((8,9),((5,(7,6)),((3,26),(4,(1,2))))),(((27,23),(30,((28,10),((11,29),(32,(12,31)))))),(33,(((14,34),((15,16),(17,(19,(18,40))))),(13,(20,(35,((24,36),(37,(38,(21,39))))))))))))));
+	TREE  * Ingroup_Strat_Rooted =  [&R] (13,((20,21),((14,((15,16),(17,(19,18)))),((10,(11,12)),((8,9),((5,(7,6)),(3,(4,(1,2)))))))));
+
+END;
+
+
+BEGIN NOTES;
+
+	TEXT  TAXON=5 TEXT= Earlier_members_of_Domeciidae;
+	TEXT  TAXON=4 TEXT= Earlier_members_of_Pseudorhombilidae;
+	TEXT  TAXON=23 TEXT= Pelaeus_in_Platyxanthidae;
+	TEXT  TAXON=39 TEXT= 'Polybiinae,_Portunidae';
+	TEXT  TAXON=38 TEXT= 'Polybiinae,_Portunidae';
+	TEXT  TAXON=21 TEXT= 'Carcininae,_Portunidae';
+	TEXT  TAXON=37 TEXT= 'Polybiinae,_Portunidae';
+	TEXT  TAXON=36 TEXT= 'Carcininae,_Portunidae';
+	TEXT  TAXON=24 TEXT= 'Carcininae,_Portunidae';
+	TEXT  TAXON=35 TEXT= Portunidae;
+	TEXT  TAXON=20 TEXT= Geryonidae;
+	TEXT  TAXON=19 TEXT= Hexapodidae;
+	TEXT  TAXON=40 TEXT= 'Trogloplacinae,_Goneplacidae';
+	TEXT  TAXON=18 TEXT= 'Charsmocarcininae,_Goneplacidae';
+	TEXT  TAXON=17 TEXT= 'Carinocarcinoidinae,_Goneplacidae';
+	TEXT  TAXON=16 TEXT= 'Goneplacinae,_Goneplacidae';
+	TEXT  TAXON=15 TEXT= 'Goneplacinae,_Goneplacidae';
+	TEXT  TAXON=34 TEXT= 'Euryplacinae,_Goneplacidae';
+	TEXT  TAXON=14 TEXT= 'Euryplacinae,_Goneplacidae';
+	TEXT  TAXON=13 TEXT= 'Mathidellinae,_Goneplacidae';
+	TEXT  TAXON=33 TEXT= Goneplacidae;
+	TEXT  TAXON=32 TEXT= 'Dacryopilumninae,_Eriphiidae';
+	TEXT  TAXON=31 TEXT= 'Menippinae,_Eriphiidae';
+	TEXT  TAXON=12 TEXT= 'Menippinae,_Eriphiidae';
+	TEXT  TAXON=30 TEXT= 'Menippinae,_Eriphiidae';
+	TEXT  TAXON=29 TEXT= 'Oziinae,_Eriphiidae';
+	TEXT  TAXON=17 TEXT= 'Oligocene_for_this_genus;_Bicarinocarcinus_is_Eocene';
+	TEXT  TAXON=19 TEXT= 'Eocene;_earlier_members_of_family';
+	TEXT  TAXON=13 TEXT= Earlier_family_members;
+END;
+
+
+BEGIN MacClade;
+	Version 4.0  87;
+	LastModified -845295206;
+	FileSettings  '1' '1' '72' '1';
+	Singles 000;
+	Editor 00011001111111100100010010 '0' '24' Gadget '12' '162' '1' all;
+	EditorPosition  '126' '542' '903' '571';
+	TreeWindowPosition  '44' '423' '874' '1024';
+	ListWindow Characters open Gadget '12' '402' '727' '270' '321' 000;
+	ListWindow Taxa closed Gadget '12' '97' '927' '661' '307' 100000000;
+	ListWindow Trees closed Gadget '12' '50' '10' '134' '387' ;
+	ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow ExSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow TaxSets closed Gadget '12' '50' '10' '134' '185' ;
+	ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490' ;
+	ChartWindowPosition  '52' '30' '818' '1380';
+	StateNamesSymbols closed Gadget '12' '10' '44' '678' '203' '435';
+	WindowOrder  List Characters;
+	OtherSymbols &/ 00 ?-;
+	Correlation  '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile  '2';
+	ExportHTML _ MOSS  '100' 110000;
+	PrettyPrint 10;
+	EditorToolsPosition  '934' '854' '115' '165';
+	TreeToolsPosition  '716' '9' '126' '138';
+	TreeWindowProgram 10;
+	TreeWindow 0000;
+	Continuous  '0' '3' 1;
+	Calculations 1000101;
+	SummaryMode  '0' '0' 0;
+	Charts  Arial '12' (normal) 0010;
+	NexusOptions  '0' '0' '50' 001011001;
+	TipLabel  '1';
+	TreeFont  Gadget '12' (normal);
+	TreeShape  1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors  '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth  '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax  '0';
+	TraceAllChangesDisplay  '1' 1;
+	BarsOnBranchesDisplay  '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation  '3' 1;
+	PrintTree  10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Geneva '9' (normal) Geneva '10' (normal) Geneva '9' (normal) Geneva '9' (normal) Geneva '9' (bold ) Geneva '9' (normal) Geneva '9' (normal) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '0' '0' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 00;
+	TreeTools  '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools  '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign  '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools  '1';
+END;
