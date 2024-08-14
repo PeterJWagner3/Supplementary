@@ -1,0 +1,375 @@
+#NEXUS
+[written Mon Nov 23 19:37:15 CST 2020 by Mesquite  version 3.61 (build 927) at EAS-392515.local/127.0.0.1]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=26;
+	TAXLABELS
+		Antropora_leucocypha Cupuladria_monotrema Cupuladria_collyrida Cupuladria_veracruxiensis Cupuladria_pacificiensis Cupuladria_pervagata Cupuladria_cheethami Cupuladria_biporosa Cupuladria_exfragminis Cupuladria_floridensis Cupuladria_colonensis Cupuladria_dominicana Cupuladria_incognata Cupuladria_planissima Cupuladria_multesima Cupuladria_surinamensis Cupuladria_panamensis Cupuladria_gigas Discoporella_scutella Discoporella_peltifera Discoporella_bocasdeltoroensis Discoporella_terminata Discoporella_triangula Discoporella_marcusorum Discoporella_cookae 'Discoporella <DASP32>' 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=57;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9 A B C D E F G H J K M N P Q R S T U V W X Y Z a b c d";
+	MATRIX
+	Antropora_leucocypha            20030C002400000000220000000000000000000000000000000000000
+	Cupuladria_monotrema            022224002200422564222224420000002444623442422324222242200
+	Cupuladria_collyrida            026022002200422564202224420000002246225222222534222222402
+	Cupuladria_veracruxiensis       022022002200422564222224420200002234422222222544222222600
+	Cupuladria_pacificiensis        022224002400422564222224420000002444925442222544222222600
+	Cupuladria_pervagata            022224002400422564212224420000002444724442422444222222600
+	Cupuladria_cheethami            122226300920422564222224220000002862C25642422242222222600
+	Cupuladria_biporosa             264524002400422564222224420000002444A25742422544222222600
+	Cupuladria_exfragminis          02222A002400422564222224420000002444825542422544222222600
+	Cupuladria_floridensis          46272A002400422564222224420000003444d25742642764222222600
+	Cupuladria_colonensis           662924002410422564222224420000004642d22742642654222222600
+	Cupuladria_dominicana           242424002400422564222224420000002554B25742642544222222600
+	Cupuladria_incognata            024221002200422564202224420000002244525442222544222226C00
+	Cupuladria_planissima           024020002200422564202224420000002224325222222544222224A00
+	Cupuladria_multesima            048220002200422564202224420000002244525442222544222224800
+	Cupuladria_surinamensis         022226102620422564222224420000000000000000000000000006B00
+	Cupuladria_panamensis           056226222740622762222224420000000000000000000000000008C00
+	Cupuladria_gigas                684B28002540622964222224420000000000000000000000000008C00
+	Discoporella_scutella           023226002004422564002224922026000000000000000000000000042
+	Discoporella_peltifera          022226312004422564002224822046000000000000000000000000042
+	Discoporella_bocasdeltoroensis  022226002002422354002224622026600000000000000000000000020
+	Discoporella_terminata          022026002004322244002224722044520000000000000000000000062
+	Discoporella_triangula          022026002004222224002222822022400000000000000000000000082
+	Discoporella_marcusorum         0222260020044224640022248220663200000000000000000000000A0
+	Discoporella_cookae             264528002004422564002224A220862200000000000000000000000A0
+	'Discoporella <DASP32>'         065246002006422564002224C22046400000000000000000000000082
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 57;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 57;
+END;
+
+BEGIN TREES;
+	Title Published;
+	ID 0175f7e576302;
+	LINK Taxa = Taxa;
+	TRANSLATE
+[0] 		1 Antropora_leucocypha,
+[1] 		2 Cupuladria_monotrema,
+[2] 		3 Cupuladria_collyrida,
+[3] 		4 Cupuladria_veracruxiensis,
+[4] 		5 Cupuladria_pacificiensis,
+[5] 		6 Cupuladria_pervagata,
+[6] 		7 Cupuladria_cheethami,
+[7] 		8 Cupuladria_biporosa,
+[8] 		9 Cupuladria_exfragminis,
+[9] 		10 Cupuladria_floridensis,
+[10] 		11 Cupuladria_colonensis,
+[11] 		12 Cupuladria_dominicana,
+[12] 		13 Cupuladria_incognata,
+[13] 		14 Cupuladria_planissima,
+[14] 		15 Cupuladria_multesima,
+[15] 		16 Cupuladria_surinamensis,
+[16] 		17 Cupuladria_panamensis,
+[17] 		18 Cupuladria_gigas,
+[18] 		19 Discoporella_scutella,
+[19] 		20 Discoporella_peltifera,
+[20] 		21 Discoporella_bocasdeltoroensis,
+[21] 		22 Discoporella_terminata,
+[22] 		23 Discoporella_triangula,
+[23] 		24 Discoporella_marcusorum,
+[24] 		25 Discoporella_cookae,
+[25] 		26 'Discoporella <DASP32>';
+	TREE Figure_11 = (1,(((9,(5,((6,(7,(8,((10,11),12)))),(2,((((13,15),14),3),4))))),(16,(17,18))),(21,((24,25),(19,(20,(26,(22,23))))))))[% ] [% ] [%  setBetweenBits = selected ];
+
+END;
+
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1606181835389;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 346521544949694982;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 2106740167302058577;
+			mqVersion 361;
+			checksumv 0 3 289812491 null  getNumChars 57 numChars 57 getNumTaxa 26 numTaxa 26   short false   bits 68719484927   states 68719484927   sumSquaresStatesOnly 1.23470224E8 sumSquares 1.23470224E8 longCompressibleToShort false usingShortMatrix false   NumFiles 1 NumMatrices 1 errorReportedDuringRun;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1239 701;
+			setLocation 8 23;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.trees.BasicTreeWindowCoord.BasicTreeWindowCoord;
+		tell It;
+			makeTreeWindow #346521544949694982  #mesquite.trees.BasicTreeWindowMaker.BasicTreeWindowMaker;
+			tell It;
+				suppressEPCResponse;
+				setTreeSource  #mesquite.trees.StoredTrees.StoredTrees;
+				tell It;
+					setTreeBlock 1;
+					setTreeBlockID 0175f7e576302;
+					toggleUseWeights off;
+				endTell;
+				setAssignedID 1136.1606181516095.386583329530441856;
+				getTreeWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1139 629;
+					setLocation 8 23;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.trees.BasicTreeWindowMaker.BasicTreeWindow.arrow;
+					endTell;
+					setActive;
+					getTreeDrawCoordinator #mesquite.trees.BasicTreeDrawCoordinator.BasicTreeDrawCoordinator;
+				tell It;
+					suppress;
+					setTreeDrawer  #mesquite.trees.SquareLineTree.SquareLineTree;
+					tell It;
+						setNodeLocs #mesquite.trees.NodeLocsStandard.NodeLocsStandard;
+						tell It;
+							branchLengthsToggle off;
+							toggleScale on;
+							toggleBroadScale off;
+							toggleCenter on;
+							toggleEven on;
+							setFixedTaxonDistance 0;
+						endTell;
+						setEdgeWidth 4;
+						showEdgeLines on;
+						orientRight;
+					endTell;
+					setBackground White;
+					setBranchColor Black;
+					showNodeNumbers off;
+					showBranchColors on;
+					labelBranchLengths off;
+					centerBrLenLabels on;
+					showBrLensUnspecified on;
+					showBrLenLabelsOnTerminals on;
+					setBrLenLabelColor 0 0 255;
+					setNumBrLenDecimals 6;
+					setSelectedTaxonHighlightMode 1;
+					desuppress;
+					getEmployee #mesquite.trees.BasicDrawTaxonNames.BasicDrawTaxonNames;
+					tell It;
+						setFont Gadget;
+						setColor Black;
+						setTaxonNameStyler  #mesquite.trees.NoColorForTaxon.NoColorForTaxon;
+						toggleShadePartition off;
+						toggleShowFootnotes on;
+						toggleNodeLabels on;
+						toggleCenterNodeNames off;
+						toggleShowNames on;
+						namesAngle ?;
+					endTell;
+				endTell;
+					setTreeNumber 1;
+					setDrawingSizeMode 0;
+					toggleLegendFloat on;
+					scale 0;
+					toggleTextOnTree off;
+					togglePrintName off;
+					showWindow;
+				endTell;
+				desuppressEPCResponse;
+				getEmployee #mesquite.trees.ColorBranches.ColorBranches;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.trees.SearchTreeToolAssistant.SearchTreeToolAssistant;
+				tell It;
+					getEmployee #mesquite.trees.TreeValueUsingMatrix.TreeValueUsingMatrix;
+					tell It;
+						getEmployee #mesquite.parsimony.TreelengthForMatrix.TreelengthForMatrix;
+						tell It;
+							getEmployee #mesquite.parsimony.ParsCharSteps.ParsCharSteps;
+							tell It;
+								setModelSource  #mesquite.parsimony.CurrentParsModels.CurrentParsModels;
+							endTell;
+						endTell;
+						getEmployee #mesquite.charMatrices.CharMatrixCoordIndep.CharMatrixCoordIndep;
+						tell It;
+							setCharacterSource #mesquite.charMatrices.StoredMatrices.StoredMatrices;
+							tell It;
+								setDataSet #2106740167302058577;
+							endTell;
+						endTell;
+					endTell;
+				endTell;
+				getEmployee #mesquite.ornamental.BranchNotes.BranchNotes;
+				tell It;
+					setAlwaysOn off;
+				endTell;
+				getEmployee #mesquite.ornamental.ColorTreeByPartition.ColorTreeByPartition;
+				tell It;
+					colorByPartition off;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocDoubles.DrawTreeAssocDoubles;
+				tell It;
+					setOn on;
+					toggleShow consensusFrequency;
+					toggleShow bootstrapFrequency;
+					toggleShow posteriorProbability;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					setDigits 4;
+					setThreshold ?;
+					writeAsPercentage off;
+					toggleCentred off;
+					toggleHorizontal on;
+					toggleWhiteEdges on;
+					toggleShowOnTerminals on;
+					setFontSize 10;
+					setOffset 0  0;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocStrings.DrawTreeAssocStrings;
+				tell It;
+					setOn on;
+					toggleCentred on;
+					toggleHorizontal on;
+					setFontSize 10;
+					setOffset 0  0;
+					toggleShowOnTerminals on;
+				endTell;
+				getEmployee #mesquite.trees.TreeInfoValues.TreeInfoValues;
+				tell It;
+					panelOpen false;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #2106740167302058577 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 243;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1139 629;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+
