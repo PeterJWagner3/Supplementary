@@ -1,0 +1,222 @@
+#NEXUS
+[written Mon Mar 14 14:13:15 CDT 2022 by Mesquite  version 3.6 (build 917) at Wagners_Dark_Tower/10.0.1.87]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=58;
+	TAXLABELS
+		Aglaspella Aglaspis Alalcomenaeus Australaglaspis Beckwithia Buenaspis Burgessia Cheloniellon Chinese_taxon Chlupacaris Chraspedops Cindarella Cyclopites Dicranocaris Duslia Emeraldella Eoredlichia Eurypterida Flobertia Fortiforceps Glypharthrus Haikoucaris Helmetia Jiangfengia Kodymirus Kuamaia Kwanyinaspis Leanchoilia Liwia Marrella Martinssonia Mimetaster Misszhouia Naraoia_compacta Naraoia_spinosa Nebalia Neostrabops Nettapezoura Olenoides Pseudoarthron Pycnogonida Quasimodaspis Rebachiella Retifacies Saperion Sidneyia Sinoburius Skioldia Soomaspis Squamacula Tariccoia Tegopelte Tremaglaspis Triopus Uarthrus Weinbergina Xandarella Yohoia 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=82;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8";
+	MATRIX
+	Aglaspella        ?????????????????11-00000-10?00-1011011111?1000000000010021010?---101100-10-00-000
+	Aglaspis          1--04??11????????11-00000-10000-111011111101000000000011021010?---101100-10-00-000
+	Alalcomenaeus     0112400010---0-2110100000-00400-0-01000011010000000000000-00001---110010000-00-00-
+	Australaglaspis   ????????1????????11-00000-?0000-10110?0111?10000000000?0?21010?---100101-10-0?-001
+	Beckwithia        ?????????????????11-00000-10?00-1110001111?10000000?00001??010?---100100-?0-00-00?
+	Buenaspis         ????????????????????00000-10?00-0-02000011?10000100000000-00011?000------00-00010-
+	Burgessia         1--0400010---0-000----000-10400-0-02000001000020000000000-00001---100100-00-0--00-
+	Cheloniellon      1--0511010---0-1111-00000-10100-0-0200101101000001001100001110?---120000-01110-01-
+	Chinese_taxon     ?????????????????11-00000-10?00-1010011111?200???00?0110????10?---10?000-?0-00-10?
+	Chlupacaris       ?????????????????11-?0000-10100-1??2?0?111???0??000000?00?1??0?---100000-10-00-001
+	Chraspedops       ?????????????????11-00000-10?00-1011011111?100000000001002?010?---100101-?0-00-00?
+	Cindarella        1--0500011001111010000000-10100-0-01000011110021000100000-001110010------00-00000-
+	Cyclopites        ?????????????????11-00000-10?00-1002000111?1000000000010021010?---100100-10-00-00?
+	Dicranocaris      ?????????????????????0000-?0?00-0-01000011?10000000000000211001---110010100-0?-00-
+	Duslia            1????????????????????0000-?0?00-0-12000011?1000001001100001110?---120000-0110?-01-
+	Emeraldella       1--041001100110110----000-10000-0-01000011010000000000100011101---100100-01000-00-
+	Eoredlichia       1--0400111000101111-10000-1030111010000111020000000001000-001110000------00-00011-
+	Eurypterida       0201611004---0-0111-00010-1040101001001011010000000000000311001---100100-00-00-00-
+	Flobertia         ????????1????????11-00000-10000-10?2001111?100000?0000100??0?0????????????0?00?00?
+	Fortiforceps      0201400010---0-1010100000-00400-0-02000011010000000000000-00001---100000000-0?-00-
+	Glypharthrus      ?????????????????11-00000-10?00-1000111111?1000000000011021010?---101100-10-0--001
+	Haikoucaris       0101400010---0-2010100000-00400-0-01000011010000000000000-00001---100010-00-00-00-
+	Helmetia          ????4????????????1000?000-11210-0-01000011020000011000000-?00110110------00-000?0-
+	Jiangfengia       0001400010---0-1010100000-?0400-0-01000011010000000000000-00001---100000-00-0?-00-
+	Kodymirus         ?????????????????11-00000-10000-0-11001011?10000000000001-?010?---101100-00-00-00-
+	Kuamaia           1--0?00?11011100110001000-11210-0-01000011020000011001000-000110110------00-000?0-
+	Kwanyinaspis      1--0?00?11000101110001000-10000-1011000011020000010000000??010?---100000-?0-00-?0?
+	Leanchoilia       0112400010---0-2110?00000-00400-0-01000011010000000000000-00101---100010-00-0--00-
+	Liwia             1--0?00?11???1?????????00-?0?0??0-01000011010010100000000-?00111010------00-0?100-
+	Marrella          1--021-012---0--00----000-00?00-0-030000010000200000-0000-00000---100000-00-0--00-
+	Martinssonia      1--0500012---0--10--00000000400-0-01000001000020000000000311000---13000--00-0--00-
+	Mimetaster        1--0311012---0--010000000-00100-0-030000010000200000-0000-00000---100000-00-0--00-
+	Misszhouia        1--0500111101111110000000-10110-0-020000100-2000100000000-00-110000------00-00?00-
+	Naraoia_compacta  1--0500111101111110000000-10100-0-020000100-2000100000000-00-110000------00-00?00-
+	Naraoia_spinosa   1--0500111000111110000000-10100-0-000000100-2000100000000-00-110010------00-00?00-
+	Nebalia           1--0500012---0--110100001100400-0-01000001000020000000000211000---13000--00-0--00-
+	Neostrabops       ?????????????????11-00000-?0?00-0-02000011?10000010000000?0?10??????????????1?-00?
+	Nettapezoura      ?????????0---0?1?????0000-?0?00-0-01000011?10000000000000111001---110000100-0?-00-
+	Olenoides         1--0400111001101111-10000-1030111010001111020000000001000-000110010------00-00-11-
+	Pseudoarthron     ?????????????????????000???0??0-0-02000011?10000010011000?0?00?????????????????01?
+	Pycnogonida       020171100----0-0011-00010-00400-0-0-0000010000000000-0000?11100---100000-00----00-
+	Quasimodaspis     ?????????????????11-00000-10?00-1011000111?10000000001?00??010?---100000-?0-00-?0?
+	Rebachiella       1--0500012---0--110100001100400-0-01000001000020000000000211000---13000--00-0--00-
+	Retifacies        1--0400?13---101110000000-10000-0-00000011010000000000000-00111001100100-00-00000-
+	Saperion          1--0?0??11011100010001000-11210-0-0-0000100-11--001000000-00-110000------00-00?00-
+	Sidneyia          1--011-013??-100110000000-1000??0-01000011010000000000000211101---110000001002-00-
+	Sinoburius        1--0500011???10??10001100-10100-0-00000011010021000100000-000110110------00-00000-
+	Skioldia          1--0?00?11???10??10001000-11210-0-0-000011?-11--001000000-00-110000------00-00?00-
+	Soomaspis         ?????????????????????0000-10?00-0-02000011?10010100000000-000111000------00-01110-
+	Squamacula        1--010-010---0-110--00000-10000-0-01000011010000000000000-001110000------00-02000-
+	Tariccoia         ?????????????????????0000-10?00-0-02000011?10010100000000-000111000------00-01100-
+	Tegopelte         1--0?00?1???????0100??000-11210-0-0-000010?-?1--00?000000-00-110000------00-00?00-
+	Tremaglaspis      ?????????????????0--?0000-10100-0-02000111?1000000000110021100?---10?000-10-00-001
+	Triopus           ?????????????????0--00000-?0?00-0-12000011?1000001001100001110?---120000-0??1?-01-
+	Uarthrus          ?????????????????11-00000-10?00-???1001111?10000000000?0021010?---100100-10-00-000
+	Weinbergina       0201611004---0-0111-00010-1040101001000011010000000001000211001---100000-00-00-01-
+	Xandarella        1--0700011101111110000100-10100-0-01000011110021000100000-001010?10------00-00000-
+	Yohoia            0101400010---0-1010100000-00400-0-01000011010000000000000211001---100000-00-00-00-
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	OPTIONS DEFTYPE = unord PolyTcount = MINSTEPS;
+	TYPESET * UNTITLED   =  unord:  1- 82;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 82;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1647285195249;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 2563572705308215386;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 2399355010281037657;
+			mqVersion 360;
+			checksumv 0 3 3250757532 null  getNumChars 82 numChars 82 getNumTaxa 58 numTaxa 58   short true   bits 255   states 255   sumSquaresStatesOnly 65040.0 sumSquares 65040.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 202;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1449 872;
+			setLocation 86 550;
+			setFont Gadget;
+			setFontSize 16;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #2399355010281037657 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1247 800;
+					setLocation 86 550;
+					setFont Gadget;
+					setFontSize 16;
+					getToolPalette;
+					tell It;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+
