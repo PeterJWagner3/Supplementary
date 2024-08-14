@@ -1,0 +1,736 @@
+#NEXUS
+[written Mon Apr 15 22:34:45 CDT 2024 by Mesquite  version 3.70 (build 940) at EAS-F094C0.local/127.0.0.1]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=35;
+	TAXLABELS
+		Acanthoceras Cunningtoniceras Conlinoceras Paraconlinoceras Dunveganoceras Tarrantoceras Plesiacanthoceras Neocardioceras Watinoceras Calycoceras Eucalycoceras Pseudocalycoceras Nigericeras Euomphaloceras Morrowites Kamerunoceras Pseudaspidoceras Romaniceras Metoicoceras Spathites Mammites Vascoceras Neoptychites Fagesia Infabricaticeras Rubroceras Choffaticeras Hourcquia Cibolaites Collignoniceras Barroisiceras Hoplitoides Coilopoceras Prionocyclus Sumitomoceras 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Discrete_Characters;
+	DIMENSIONS  NCHAR=50;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8";
+	CHARSTATELABELS 
+		1 Degree_of_involution,
+		2 Whorl_shape,
+		3 'Shell inflation (thickness ration)',
+		4 Whorl_expansion_rate,
+		5 Aperture_overlap_with_previous_whorl,
+		6 Position_of_maximum_aperture_width,
+		7 Adult_whorl_section_sh8pe,
+		8 Ventral_width,
+		9 Dimorphism,
+		10 Keel,
+		11 Rib_spacing,
+		12 Adult_ventral_tubercle_type,
+		13 Adult_ventral_tubercle_presence,
+		14 Adult_umbilical_tubercle_type,
+		15 Adult_umbilical_tubercle_presence,
+		16 Adult_IVL_tubercle_type,
+		17 Adult_IVL_tubercle_presence,
+		18 Adult_OVL_tubercle_type,
+		19 Adult_OVL_tubercle_presence,
+		20 Adult_most_prominent_tubercle_location,
+		21 Ventral_migration_of_umbilical_tubercle,
+		22 Juvenile_ventral_tubercle_type,
+		23 Juvenile_ventral_tubercle_presence,
+		24 Juvenile_umbilical_tubercle_type,
+		25 Juvenile_umbilical_tubercle_presence,
+		26 Juvenile_IVL_tubercle_type,
+		27 Juvenile_IVL_tubercle_presence,
+		28 Juvenile_OVL_tubercle_type,
+		29 Juvenile_OVL_tubercle_presence,
+		30 Juvenile_most_prominent_tubercle,
+		31 Suture_complexity,
+		32 Division_of_external_saddle,
+		33 Division_of_lateral_lobe,
+		34 Division_of_lateral_saddle,
+		35 Division_of_first_U_saddle,
+		36 Symmetry_in_lateral_saddle,
+		37 Symmetry_in_first_U_saddle,
+		38 Symmetry_in_lateral_lobe,
+		39 Lateral_saddle_shape,
+		40 First_U_saddle_shape,
+		41 External_saddle_height,
+		42 First_U_saddle_height,
+		43 External_lobe_depth_vs._lateral_lobe_depth,
+		44 Later_saddle_deepest_element,
+		45 First_U_saddle_deepest_element,
+		46 Skew_of_lateral_saddle,
+		47 Constriction_of_lateral_saddle,
+		48 External_saddle_height,
+		49 Lateral_saddle_height,
+		50 First_U_saddle_position_relative_to_lateral_saddle_position ; 
+	MATRIX
+	Acanthoceras       00000000000000000000000000000000000(0 1)00000000000000
+	Cunningtoniceras   000000000050000000000(0 1)0(0 1)030(0 1)00220001?0022000011000
+	Conlinoceras       000000320040000-1(0 1 2)11000000000221201010123000110200
+	Paraconlinoceras   030002??0054100-1(0 1 2)1101000(0 1)0(0 1)02110011010110001?0100
+	Dunveganoceras     0000003010400-11000-0-1000000(0 2)10100110003010010000
+	Tarrantoceras      000000300010100-121(1 2)10000000020(0 1)000100(1 2)(0 1)3000010000
+	Plesiacanthoceras  000000(2 3)01050000(2 3)02100-100000022?1000?0022120010200
+	Neocardioceras     000000?0101010010-12110-12010110100100113?02010001
+	Watinoceras        000003??1020000(2 3)021(0 1 2)1-100100021?1?0?0002????2?0??2
+	Calycoceras        0320103?0020000-10021-10001-13232000000(0 1)50(0 1)0000000
+	Eucalycoceras      00000???1010100-111??0010-000213100110023000020001
+	Pseudocalycoceras  000000??00201(0 2)02021110000-0002110001000230010(0 1 2)0001
+	Nigericeras        0000001?1030000-1002100(0 1)0(0 2)0(0 1)0(0 3)0101?0??2??0?0?0000?
+	Euomphaloceras     0320003000?51-040(0 1)10010002020001010010103001100000
+	Morrowites         032011401030000200001-110-010(0 3)2001011022??01001010
+	Kamerunoceras      ???0?05?1040100201100-100(0 1)0(0 1)020?20?(0 1)?00?20?01(0 1)0?00
+	Pseudaspidoceras   00000300103000020??01-1001000001010(0 1)11222023000210
+	Romaniceras        0000050000401000011(0 1)10000-000222201000003210100001
+	Metoicoceras       220010120020000(1 2)0(0 2)1(0 1)1-10(0 1)10002021001000232200(0 1)0001
+	Spathites          2020202000?00-1?1?0(0 1)--1(0 1)0(0 1)000(2 3)1(0 1)10?01010200010020(0 1)
+	Mammites           00001180000000000001?-1(0 1)0-00030?100010013010010000
+	Vascoceras         2000103?1040000-10021-10101-1312100111222010000200
+	Neoptychites       1020236000600-1-100-1-1-101-1-11201110123020100?10
+	Fagesia            0420104300400-0-10021-11101-1300010010223013000010
+	Infabricaticeras   23211???1030000300021-10001-131?0001100(0 1)???1110??1
+	Rubroceras         04010?(3 4)?00600001000011000(0 2)0??010010110113001010200
+	Choffaticeras      1110207110600-1-100---1-110-101?0001010??320000?0(0 1 2)
+	Hourcquia          20005080114?1003000010000?????200201112?400(0 2)001?21
+	Cibolaites         000010801140100200021000001003101001000?31?001010?
+	Collignoniceras    300000300130100(3 5)0(2 3)1(0 1)0000010001202000100?3120000202
+	Barroisiceras      0200007??140100300001001010-110?0011010?41?0100?1(0 1)
+	Hoplitoides        1100237100600-1-100---1-101-112?3411?12?302?101?20
+	Coilopoceras       2102207110600-1-100---10(0 1)0122-233321112?312?101100
+	Prionocyclus       000002(0 2)00140000(2 4)0(1 2)1000000(0 1)000(0 2)202011100?31(0 2)0000?00
+	Sumitomoceras      0000051?0010100-12121-100-010011?010100?0010110000
+
+;
+
+END;
+BEGIN CHARACTERS;
+	TITLE  Continuous_Characters;
+	DIMENSIONS  NCHAR=2;
+	FORMAT DATATYPE = CONTINUOUS GAP = - MISSING = ?;
+	MATRIX
+	Acanthoceras        ? ?
+	Cunningtoniceras    ? ?
+	Conlinoceras        ? ?
+	Paraconlinoceras    ? ?
+	Dunveganoceras      ? ?
+	Tarrantoceras       ? ?
+	Plesiacanthoceras   ? ?
+	Neocardioceras      ? ?
+	Watinoceras         ? ?
+	Calycoceras         ? ?
+	Eucalycoceras       ? ?
+	Pseudocalycoceras   ? ?
+	Nigericeras         ? ?
+	Euomphaloceras      ? ?
+	Morrowites          ? ?
+	Kamerunoceras       ? ?
+	Pseudaspidoceras    ? ?
+	Romaniceras         ? ?
+	Metoicoceras        ? ?
+	Spathites           ? ?
+	Mammites            ? ?
+	Vascoceras          ? ?
+	Neoptychites        ? ?
+	Fagesia             ? ?
+	Infabricaticeras    ? ?
+	Rubroceras          ? ?
+	Choffaticeras       ? ?
+	Hourcquia           ? ?
+	Cibolaites          ? ?
+	Collignoniceras     ? ?
+	Barroisiceras       ? ?
+	Hoplitoides         ? ?
+	Coilopoceras        ? ?
+	Prionocyclus        ? ?
+	Sumitomoceras       ? ?
+
+;
+
+END;
+BEGIN LABELS;
+	TAXAGROUPLABEL Outgroup;
+	TAXAGROUPLABEL Ingroup;
+
+	CHARGROUPLABEL Shell;
+	CHARGROUPLABEL Adult;
+	CHARGROUPLABEL Juvenile;
+	CHARGROUPLABEL Sutures;
+	CHARGROUPLABEL ShellAdultSuture;
+	CHARGROUPLABEL ShellJuvenile;
+	CHARGROUPLABEL AdultSuture;
+	CHARGROUPLABEL ShellAdult;
+
+
+END;
+
+BEGIN SETS;
+	TAXPARTITION * UNTITLED  =  Outgroup :  1, Ingroup :  2- 35;
+
+	CHARPARTITION * UNTITLED  (CHARACTERS = Discrete_Characters) =  Shell :  1- 9, Adult :  10- 21, Juvenile :  22- 30, Sutures :  31- 50;
+	CHARPARTITION Basic  (CHARACTERS = Discrete_Characters) =  Shell :  1- 9, Adult :  10- 21, Juvenile :  22- 30, Sutures :  31- 50;
+	CHARPARTITION Rate_Partitions_Juvenile  (CHARACTERS = Discrete_Characters) =  ShellAdultSuture :  1- 21 31- 50, Juvenile :  22- 30;
+	CHARPARTITION Rate_Partitions_AdultSuture  (CHARACTERS = Discrete_Characters) =  ShellJuvenile :  1- 9 22- 30, AdultSuture :  10- 21 31- 50;
+	CHARPARTITION Rate_Partitions_Juvenile_Sutures  (CHARACTERS = Discrete_Characters) =  ShellAdult :  1- 21, Juvenile :  22- 30, Sutures :  31- 50;
+	CHARPARTITION Rate_Partitions_Solo  (CHARACTERS = Discrete_Characters) =  Shell :  1- 9, Adult :  10- 21, Juvenile :  22- 30, Sutures :  31- 50;
+
+END;
+
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED  (CHARACTERS = Discrete_Characters)  =  unord:  1- 50;
+TYPESET * UNTITLED  (CHARACTERS = Continuous_Characters)  =  Squared:  1- 2;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED  (CHARACTERS = Discrete_Characters)  =  'Mk1 (est.)':  1- 50;
+ProbModelSet * UNTITLED  (CHARACTERS = Continuous_Characters)  =  Brownian_default:  1- 2;
+END;
+
+BEGIN NOTES;
+
+	CHARACTERS = Discrete_Characters TAXA = Taxa;
+	SU  C = 1 N = selected B = TRUE;
+	SU  C = 2 N = selected B = TRUE;
+	SU  C = 3 N = selected B = TRUE;
+	SU  C = 4 N = selected B = TRUE;
+	SU  C = 5 N = selected B = TRUE;
+	SU  C = 6 N = selected B = TRUE;
+	SU  C = 7 N = selected B = TRUE;
+	SU  C = 8 N = selected B = TRUE;
+	SU  C = 9 N = selected B = TRUE;
+	SU  C = 10 N = selected B = TRUE;
+	SU  C = 11 N = selected B = TRUE;
+	SU  C = 12 N = selected B = TRUE;
+	SU  C = 13 N = selected B = TRUE;
+	SU  C = 14 N = selected B = TRUE;
+	SU  C = 15 N = selected B = TRUE;
+	SU  C = 16 N = selected B = TRUE;
+	SU  C = 17 N = selected B = TRUE;
+	SU  C = 18 N = selected B = TRUE;
+	SU  C = 19 N = selected B = TRUE;
+	SU  C = 20 N = selected B = TRUE;
+	SU  C = 21 N = selected B = TRUE;
+	SU  C = 22 N = selected B = TRUE;
+	SU  C = 23 N = selected B = TRUE;
+	SU  C = 24 N = selected B = TRUE;
+	SU  C = 25 N = selected B = TRUE;
+	SU  C = 26 N = selected B = TRUE;
+	SU  C = 27 N = selected B = TRUE;
+	SU  C = 28 N = selected B = TRUE;
+	SU  C = 29 N = selected B = TRUE;
+	SU  C = 30 N = selected B = TRUE;
+	SU  C = 31 N = selected B = TRUE;
+	SU  C = 32 N = selected B = TRUE;
+	SU  C = 33 N = selected B = TRUE;
+	SU  C = 34 N = selected B = TRUE;
+	SU  C = 35 N = selected B = TRUE;
+	SU  C = 36 N = selected B = TRUE;
+	SU  C = 37 N = selected B = TRUE;
+	SU  C = 38 N = selected B = TRUE;
+	SU  C = 39 N = selected B = TRUE;
+	SU  C = 40 N = selected B = TRUE;
+	SU  C = 41 N = selected B = TRUE;
+	SU  C = 42 N = selected B = TRUE;
+	SU  C = 43 N = selected B = TRUE;
+	SU  C = 44 N = selected B = TRUE;
+	SU  C = 45 N = selected B = TRUE;
+	SU  C = 46 N = selected B = TRUE;
+	SU  C = 47 N = selected B = TRUE;
+	SU  C = 48 N = selected B = TRUE;
+	SU  C = 49 N = selected B = TRUE;
+	SU  C = 50 N = selected B = TRUE;
+
+	CHARACTERS = Continuous_Characters TAXA = Taxa;
+
+END;
+
+BEGIN TREES;
+	Title Old_Trees;
+	ID 018ee4f8a5ac2;
+	LINK Taxa = Taxa;
+	TRANSLATE
+[0] 		1 Acanthoceras,
+[1] 		2 Cunningtoniceras,
+[2] 		3 Conlinoceras,
+[3] 		4 Paraconlinoceras,
+[4] 		5 Dunveganoceras,
+[5] 		6 Tarrantoceras,
+[6] 		7 Plesiacanthoceras,
+[7] 		8 Neocardioceras,
+[8] 		9 Watinoceras,
+[9] 		10 Calycoceras,
+[10] 		11 Eucalycoceras,
+[11] 		12 Pseudocalycoceras,
+[12] 		13 Nigericeras,
+[13] 		14 Euomphaloceras,
+[14] 		15 Morrowites,
+[15] 		16 Kamerunoceras,
+[16] 		17 Pseudaspidoceras,
+[17] 		18 Romaniceras,
+[18] 		19 Metoicoceras,
+[19] 		20 Spathites,
+[20] 		21 Mammites,
+[21] 		22 Vascoceras,
+[22] 		23 Neoptychites,
+[23] 		24 Fagesia,
+[24] 		25 Infabricaticeras,
+[25] 		26 Rubroceras,
+[26] 		27 Choffaticeras,
+[27] 		28 Hourcquia,
+[28] 		29 Cibolaites,
+[29] 		30 Collignoniceras,
+[30] 		31 Barroisiceras,
+[31] 		32 Hoplitoides,
+[32] 		33 Coilopoceras,
+[33] 		34 Prionocyclus,
+[34] 		35 Sumitomoceras;
+	TREE Mertz_2017 = (1,(2,((13,(15,17)),((21,(5,(20,10))),((35,(3,(18,(16,(4,14))))),(6,(11,(12,((7,(9,19)),8)))))))))[% ] [% ] [%  setBetweenBits = selected ];
+
+END;
+
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1713238485880;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 6302212606640174028;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 6228563055491243037;
+			tell It;
+				setSelected  1 -  50;
+				attachments ;
+			endTell;
+			mqVersion 370;
+			checksumv 0 3 519585822 null  getNumChars 50 numChars 50 getNumTaxa 35 numTaxa 35   short true   bits 511   states 511   sumSquaresStatesOnly 313525.0 sumSquares 313525.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 2;
+			mqVersion;
+			setID 1 2902756378171861207;
+			mqVersion 370;
+			checksumv 1 3 2700512952 null  numChars 2   numItems 1   min 1.7975133655488295E308   max 1.7975133655488295E308   sumSquares 0.0   NumFiles 1 NumMatrices 2;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 99;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 933 689;
+			setLocation -43 34;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			showTaxa #6302212606640174028 #mesquite.lists.TaxonList.TaxonList;
+			tell It;
+				setTaxa #6302212606640174028;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.TaxonListCurrPartition.TaxonListCurrPartition;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 834 617;
+					setLocation -43 34;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.ColorTaxon.ColorTaxon;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.lists.TaxonListAnnotPanel.TaxonListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.trees.BasicTreeWindowCoord.BasicTreeWindowCoord;
+		tell It;
+			makeTreeWindow #6302212606640174028  #mesquite.trees.BasicTreeWindowMaker.BasicTreeWindowMaker;
+			tell It;
+				suppressEPCResponse;
+				setTreeSource  #mesquite.trees.DefaultTrees.DefaultTrees;
+				setAssignedID 1037.1713233790683.3390683399735334860;
+				getTreeWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 834 617;
+					setLocation -43 34;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.trees.BasicTreeWindowMaker.BasicTreeWindow.arrow;
+					endTell;
+					setActive;
+					getTreeDrawCoordinator #mesquite.trees.BasicTreeDrawCoordinator.BasicTreeDrawCoordinator;
+				tell It;
+					suppress;
+					setTreeDrawer  #mesquite.trees.SquareLineTree.SquareLineTree;
+					tell It;
+						setNodeLocs #mesquite.trees.NodeLocsStandard.NodeLocsStandard;
+						tell It;
+							branchLengthsToggle off;
+							toggleScale on;
+							toggleBroadScale off;
+							toggleCenter on;
+							toggleEven on;
+							setFixedTaxonDistance 0;
+						endTell;
+						setEdgeWidth 4;
+						showEdgeLines on;
+						orientRight;
+					endTell;
+					setBackground White;
+					setBranchColor Black;
+					showNodeNumbers off;
+					showBranchColors on;
+					labelBranchLengths off;
+					centerBrLenLabels on;
+					showBrLensUnspecified on;
+					showBrLenLabelsOnTerminals on;
+					setBrLenLabelColor 0 0 255;
+					setNumBrLenDecimals 6;
+					setSelectedTaxonHighlightMode 1;
+					desuppress;
+					getEmployee #mesquite.trees.BasicDrawTaxonNames.BasicDrawTaxonNames;
+					tell It;
+						setColor Black;
+						setTaxonNameStyler  #mesquite.trees.NoColorForTaxon.NoColorForTaxon;
+						toggleShadePartition off;
+						toggleShowFootnotes on;
+						toggleNodeLabels on;
+						toggleCenterNodeNames off;
+						toggleShowNames on;
+						namesAngle ?;
+					endTell;
+				endTell;
+					setTreeNumber 1;
+					setTree '(1,(2,((13,(15,17)),((21,(5,(20,10))),((35,(3,(18,(16,(4,14))))),(6,(11,(12,((7,(9,19)),8)))))))))<> <> <  setBetweenBits = selected >;';
+					setDrawingSizeMode 0;
+					toggleLegendFloat on;
+					scale 0;
+					toggleTextOnTree off;
+					getInfoPanel;
+					tell It;
+						btspOpen true;
+						apOpen false;
+					endTell;
+					toggleInfoPanel off;
+					togglePrintName off;
+					showWindow;
+				endTell;
+				desuppressEPCResponse;
+				getEmployee #mesquite.trees.ColorBranches.ColorBranches;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.trees.SearchTreeToolAssistant.SearchTreeToolAssistant;
+				tell It;
+					getEmployee #mesquite.trees.TreeValueUsingMatrix.TreeValueUsingMatrix;
+					tell It;
+						getEmployee #mesquite.parsimony.TreelengthForMatrix.TreelengthForMatrix;
+						tell It;
+							getEmployee #mesquite.parsimony.ParsCharSteps.ParsCharSteps;
+							tell It;
+								setModelSource  #mesquite.parsimony.CurrentParsModels.CurrentParsModels;
+							endTell;
+						endTell;
+						getEmployee #mesquite.charMatrices.CharMatrixCoordIndep.CharMatrixCoordIndep;
+						tell It;
+							setCharacterSource #mesquite.charMatrices.StoredMatrices.StoredMatrices;
+							tell It;
+								setDataSet #6228563055491243037;
+							endTell;
+						endTell;
+					endTell;
+				endTell;
+				getEmployee #mesquite.ornamental.BranchNotes.BranchNotes;
+				tell It;
+					setAlwaysOn off;
+				endTell;
+				getEmployee #mesquite.ornamental.ColorTreeByPartition.ColorTreeByPartition;
+				tell It;
+					colorByPartition off;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocDoubles.DrawTreeAssocDoubles;
+				tell It;
+					setOn on;
+					toggleShow consensusFrequency;
+					toggleShow bootstrapFrequency;
+					toggleShow posteriorProbability;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					setDigits 4;
+					setThreshold ?;
+					writeAsPercentage off;
+					toggleCentred off;
+					toggleHorizontal on;
+					toggleWhiteEdges on;
+					toggleShowOnTerminals on;
+					setFontSize 10;
+					setOffset 0  0;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocStrings.DrawTreeAssocStrings;
+				tell It;
+					setOn on;
+					toggleCentred on;
+					toggleHorizontal on;
+					setFontSize 10;
+					setOffset 0  0;
+					toggleShowOnTerminals on;
+				endTell;
+				getEmployee #mesquite.trees.TreeInfoValues.TreeInfoValues;
+				tell It;
+					panelOpen false;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #6228563055491243037 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 834 617;
+					setLocation -43 34;
+					setFont Gadget;
+					setFontSize 12;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleColorOnlyTaxonNames off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+			showDataWindow #2902756378171861207 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 834 617;
+					setLocation -43 34;
+					setFont Gadget;
+					setFontSize 16;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleColorOnlyTaxonNames off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.cont.ItemsEditorForInfoPanel.ItemsEditorForInfoPanel;
+				tell It;
+					panelOpen false;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			showCharacters #6228563055491243037 #mesquite.lists.CharacterList.CharacterList;
+			tell It;
+				setData 0;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.DefaultCharOrder.DefaultCharOrder;
+					newAssistant  #mesquite.lists.CharListInclusion.CharListInclusion;
+					newAssistant  #mesquite.lists.CharListPartition.CharListPartition;
+					newAssistant  #mesquite.parsimony.CharListParsModels.CharListParsModels;
+					newAssistant  #mesquite.lists.CharacterStats.CharacterStats;
+				tell It;
+					toggleSelectedOnly off;
+				endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 834 617;
+					setLocation -43 34;
+					setFont Gadget;
+					setFontSize 16;
+					getToolPalette;
+					tell It;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.CharListAnnotPanel.CharListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

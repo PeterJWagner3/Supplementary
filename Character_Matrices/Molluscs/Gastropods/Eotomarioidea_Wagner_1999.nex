@@ -1,0 +1,951 @@
+#NEXUS
+[written Tue Dec 01 17:21:16 CST 2020 by Mesquite  version 3.61 (build 927) at EAS-392515.local/127.0.0.1]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=178;
+	TAXLABELS
+		'Clathrospira "laflinensis"' Semizona_glindmeyeri Clathrospira_euconica Mourlonia_maritima Clathrospira_?trochiformis Ptychonema_desideratum Ptychonema_marocanum Mourlonia_hotzi Clathrospira_elliptica Clathrospira_inflata Cataschisma_convexa Clathrospira_conica Clathrospira_subconica Clathrospira_amouguerana Eotomaria_canalifera Eotomaria_dryope Eotomaria_labrosa Eotomaria_larvata Eotomaria_supracingulata Liospira_decipens Liospira_subconcava Liospira_progne Paraliospira_mundula Liospira_angustata Brachytomaria_kiari Paraliospira_angulatum Eotomaria_elevata Liospira_micula Eotomaria_notablis ?_Palaeoschisma_globosa Brachytomaria_baltica Brachytomaria_kindlei Semizona_bella Paraliospira_aff._angulatum Paraliospira_rugata Brachytomaria_semele Brachytomaria_striata Clathrospira_thraivensis Eotomaria_rupestris Pseudocryptaenia_majewski Clathrospira_cf._glindmeyeri Cataschisma_exquisita Globispira_prima Pleurorima_wisbeyensis Eocryptaulina_filitexta Conotoma_claustrata ?_Conotoma_bispiralis Crenilunula_limata Crenilunula_hallei Liospira_marklandensis Phanerotrema_jugosum Ulrichospira_similis Brachytomaria_papillosa Brachytomaria_aff._furcata Phanerotrema_lloydi 'Brachytomaria "laquetta"' Phanerotrema_lindstroemi Phanerotrema_dolia Phanerotrema_calliaudi Phanerotrema_australis Ulrichospira_othemensis Phanerotrema_vitellia Phanerotrema_occidens Conotoma_glandifromis Oriostoma_dispar Stenoloron_aequilatera Prosolarium_procerum Epiptychia_potens Stenoloron_shelvensis Eocryptaulina_helcinia Stenoloron_biformis Stenoloron_angulifer Stenoloron_voluta Stenoloron_bohemica 'Stenoloron "pollens"' Stenoloron_subaequilatera Stenoloron_pollens Stenoloron_minor 'Bembexia <spiny sp.>' Bembexia_sulcomarginata Genuspira_nodosa Pleurorima_pragensis Pleurorima_migrans Pleurorima_moydartensis Pleurodima_aratula Leptozone_esthetica Ptycomphalina_vesiculosa Pleurorima_famula Tragatoma_extensa Coelozone_verna Euryzone_connulastus Bicarina_coluber Balbinipleura_bohemica Mourlonia_subglobosa Umbotropis_mesoni Euryzone_delphinuloides Bicarina_vittatum Mourlonia_hoffmanni Ptychomphalina_aurorae '"Serpulospira" <sp. Tassell 1982>' Euryzone_burdekinensis Euryzone_nummularis Mourlonia_vicinalis Mourlonia_velutinoides Oehlertia_scutulata Oehlertia_gradata Oehertia_cancellata Oehlertia_pioni Oehlertia_senilis Porcellia_sinistrosa Porcellia_aberrans Zlatokonia_eximia Umbotropis_albicans Anarconcha_pulchra Vladanella_avia Chlupacispira_spinosa Bembexia_sp. Agnesia_elegans Agnesia_dentatolimata Alaskiella_medfraensis Quadricarina_glabrobasis 'Quadricarina <n. sp. A>' Porcellia_denayi Paraporcellia_rohri Porcellia_striata Porcellia_costata Porcellia_spinosa Porcellia_cornuarietis Porcellia_bifida Porcellia_primordialis Porcellia_kindlei Arizonella?_conoidea Buechelia_tyrellii Buechelia_aff._tyrellii Buechelia_goldfussi Buechelia_bronni Goldfussoceras_circanalis Schizostoma_radiata Pleuronotus_decewi '"Bathmospira" "michiganensis"' Euryzone_infranodosa Manitobiella_goniostoma Euryzone_onoi Wisconsinella_clelandi Bembexia_crenostriata '? Bembexia <Perigny sp.>' Bembexia_defrancei Shansiella_catenulata Shansiella_rotundata Bembexia_procteri Spinulrichospira_cheeneetnukens ?_Dictyobembix_orbignyii ?_Dictyobembix_beaumontii Mourlonia_undulata Mourlonia_semilaevis ?_Bembexia_neapolitana Frillbeastia_queenslandica Denayella_lomandarensis Catantostoma_clathratum Euconospira?_longdalei Ninbingia_robertsi Westralospira_dickinsi Hespieriella_cannigensis Euryzone_hullensis Playfordia_australis Tasselliana_australis Mourlonia_teicherti Baylea_teicherti 'Porcellia <Virgin Hill sp.>' Euconospira_nodosa '? Shansiella <Virgin Hill sp.>' 'Turritoma cf. acrea <ornate sp.>' Taeniospira_stclair Hormotoma_?_simulatrix Turritoma_acrea Turritoma_cf._acrea Turritoma_?_anna Eoangyomphalus_klapperi 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=232;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9 A B C D E F G H J K L M N P Q R";
+	CHARSTATELABELS 
+		1 Sinus /  _ Absent Present,
+		2 Sinus_Depth_Symmetry /  _ Right_side_sharper Symmetrical Left_side_sharper,
+		3 R._Sinus_Depth /  _0� 10� 20� 30� 40� 50� 60� 70�,
+		4 L._Sinus_Depth /  _0� 10� 20� 30� 40� 50� 60� 70�,
+		5 Sinus_Width_Symmetry /  _ Right_Wider Symmetric Left_Wider,
+		6 R._Sinus_Width /  _ Just_Above_SK Bn._SK_and_RR At_RR Above_RR,
+		7 L._Sinus_Width /  At_Selenizone Just_Below_SK Bn._SK_and_LR At_LR Bn._LR_and_Base,
+		8 Sinus_Curve_Sym /  _ Left_More_Acute Symmetric Left_More_Obtuse,
+		9 R._Sinus_Curve /  _ Plateau Straight Continuous Hyperbolic,
+		10 L._Sinus_Curve /  _ Plateau Straight Continuous Hyperbolic,
+		11 Wrinkled_Right_Sinus /  _ Absent Present,
+		12 Sinuate_Right_Ramp /  _ Absent Present,
+		13 Degree_of_RR_Sinuousity /  _ 'Weak_[Curved]' Moderate 'Strong_[Nearly_Half_Circle]',
+		14 Sinuate_Left_Side /  _ Absent Present,
+		15 Crenulated_Aperture /  _ Absent Present,
+		16 Sigmoidal_Aperture /  _ Absent Aperture_stretches_forward Aperture_stretches_backward,
+		17 Sigmoidal_Development /  _ Slight_Stretch Strong_Stretch,
+		18 Growth_Line_Symmetry /  _ LR_GLs_Stronger Symmetric RR_GLs_Stronger,
+		19 RR_GL_Prominence /  _ Not_Visible Weak Fine_Sharp Strong Extremely_Strong,
+		20 LR_GL_Strength /  _ Not_Visible Weak Fine_Sharp Strong Extremely_Strong,
+		21 �_Growth_Line /  Stronger_on_Adult No_� Stronger_on_Juveniles,
+		22 Change_in_GL_Spacing /  Further_on_Final_Whorl Consistent Closer_on_Final_Whorls,
+		23 Imbricated_Growth_Lines /  _ Absent Weak Moderate Strong Extremely_Strong,
+		24 Imbricated_Nodes /  _ Absent Present,
+		25 Imbrication_Ontogeny /  _ Consistent Becoming_less_prominent Disappearing,
+		26 Basal_Growth_Lines /  Weaker_than_Others Same_as_Others Stronger_than_Others,
+		27 'GL''s around Selenizone' /  Stronger Same Weaker,
+		28 Juvenile_Selenizone /  _ Absent Present,
+		29 Adult_Selenizone /  _ Absent Present,
+		30 Selenizone_Position /  _ At_Sinus_Apex Below_Sinus,
+		31 Selenizone_Width /  _ '�_=_02.5�' '�_=_05�' '�_=_10�' '�_=_15�' '�_=_20�' '�_=_25�' '�_=_30�',
+		32 Peripheral_Lirae /  _ Absent Present,
+		33 P._L._Type /  _ Round Sharp Squared,
+		34 Asymmetrical_PL_Strength /  _ 'Upper\Right_Stronger' Same_Strength 'Lower\Left_Stronger',
+		35 P._L._Strength /  _ Extremely_Weak Weak Moderate Strong Extremely_Strong,
+		36 Frilled_RPL /  _ Absent Present,
+		37 Frilled_LPL /  _ Absent Present,
+		38 Frilled_Strength /  _ Weak Strong,
+		39 Undulating_RPL /  _ Absent Present,
+		40 Undulating_LPL /  _ Absent Present,
+		41 Medial_Keel /  _ Absent Present,
+		42 MK_Type /  _ Rounded Sharp Flange Squared_Ridge Dull_Lump,
+		43 MK_Strength /  _ Very_Weak Weak Moderate Strong Very_Strong Extremely_Strong,
+		44 �MK_Strength /  _ Becomes_Weaker No_� Becomes_Stronger,
+		45 'Ontogenetic Zig-Zag' /  _ Absent 'Migrates_Down,_then_Jumps_Up',
+		46 MK_Tubes /  _ Absent Present,
+		47 Imbricated_MK /  _ Consistent Flares_Periodically,
+		48 Selenizone_Prominence /  _ None Slight Strong,
+		49 Selenizone_Ontogeny /  Becomes_stronger No_major_change Major_reduction Loss_of_Selenizone,
+		50 Slit /  _ Absent Present,
+		51 Slit_Depth /  _ 'Shallow_(�20�)' 'Moderate_(20�-45�)' 'Deep_(�45�)' 'Really_Deep_(�90�)',
+		52 Slit_Continuity /  _ Discontinuous Continuous,
+		53 'Slit:Selenizone' /  _ Subsuming_Selenizone Within_Selenizone Thinner_than_Selenizone,
+		54 Lira_Within_Selenizone /  _ Absent Two_Bordering_Slit,
+		55 Slit_Ontogeny /  _ Present_throughout Absent_on_gerontic_whorls,
+		56 Trema_on_Final_Whorl /  _ Absent Present,
+		57 Lunulae_Shape /  Shallow_Concentric Concentric 'Zipper-Like' '\-shaped' 'V-shaped' Kinked Straight,
+		58 Lunulae_Strength /  _ 'Weaker_than_GL''s' 'Same_as_GL''s' 'Stronger_than_GL''s',
+		59 Strong_Lunulae_Type /  _ Stronger_and_Concentric Serrated,
+		60 Ont_�_Imbrications /  _ Juvenile_Only Constant_Throughout,
+		61 Ont_�_in_Sel_Strength /  _ Decreasing_Prominence None Increasing_Prominence,
+		62 'Bilineate -> Monolineate' /  _ Bilineate_Only 'Bilineate_->_Monolineate',
+		63 Sel_Attitude /  _ Parallel_to_� Curving_Adapically,
+		64 Sel_Symmetry /  Entirely_on_L._Ramp Asymmetrical_on_L._Ramp Bisects_Whorl Asymmetrical_on_R._Ramp Entirely_on_R._Ramp,
+		65 �_Sel_Symmetry /  _ No_Change 'On_R.R_->_Symmetrical',
+		66 MW_Channel /  _ Absent Present,
+		67 Channel_Strength /  _ Weak Strong,
+		68 Inner_Margin_Shape_at_PB /  _ Same_as_Outer_Margin Rounder_than_Outer_Margin,
+		69 Swellings_either_side_of_Seleni /  _ Absent Present_on_Either_Side Present_on_Alveozone_Only,
+		70 Exhalent_Position /  �_�_140� �_�_130� �_�_120� �_�_110� �_�_100� �_�_90� �_�_80� �_�_70� �_�_60� �_�_50� �_�_40� �_�_30� �_�_20� �_�_10� �_�_0� '�_�_-10�' '�_�_-20�' '�_�_-30�',
+		71 Shape_Symmetry /  _ Right_Rounder Symmetric Left_Rounder,
+		72 Right_Ramp_Shape /  Acute Globular Convex Slightly_Convex Flat Slightly_Concave Concave,
+		73 �_RR_Shape /  _ More_Concave Remains_appx._Same More_Convex,
+		74 'R:L Width' /  _ 'R:_Longer' Symmetric 'R:_Contracted',
+		75 RR_Length /  less_than_20� apx._20� apx._30� apx._40� apx._50� apx._60� apx._70� apx._80� apx._90� apx._100� apx._110� apx._120� apx._130�,
+		76 Alveozone_Length /  less_than_20� apx._20� apx._30� apx._40� apx._50� apx._60� apx._70� apx._80� apx._90� apx._100� apx._110� apx._120� apx._130�,
+		77 'R:L Projection' /  _ Right_Higher Symmetric Left_Higher,
+		78 RR_Projection /  20�_or_less apx._20� apx._30� apx._40� apx._50� apx._60� apx._70� apx._80� apx._90� apx._100� apx._110� apx._120�,
+		79 LR_Projection /  20�_or_less apx._20� apx._30� apx._40� apx._50� apx._60� apx._70� apx._80� apx._90� apx._100� apx._110� apx._120�,
+		80 Swollen_Right_Side /  _ Absent Present,
+		81 Degree_of_Swelling /  _ Weak Moderate Strong Very_Strong,
+		82 �_RR_Swelling /  _ Always_Acute 'Acute_->_Obtuse' Always_Obtuse,
+		83 �Right_Ramp /  _ Consistent 'Rounder,_Shorter',
+		84 RR_Carina /  _ Absent Present,
+		85 R.R.C._Strength /  _ 'Weak_(no_prominence)' 'Moderate_(less_prominent_than_S' 'Strong_(as_prominent_as_SK)' 'Very_Strong_(more_prominent_tha',
+		86 R.R.C._Type /  _ Lumpish Thin_Thread Round_Lira Sharp_Thread,
+		87 �_R.R.C._Strength /  _ Absent Becomes_Weaker Becomes_Sharper,
+		88 Channeled_RC /  _ Absent Present,
+		89 RRC_Location /  _ @_90�_from_SK @_45�_from_SK @_30�_from_SK,
+		90 RRC_Attitude /  Adapical_Hook 'Perp_RR_("straight_up")' 'Abapical_hook_(toward_SK)',
+		91 Serrated_RRC /  _ Thread Serrated,
+		92 Serration_Strength /  _ Slight_Oscillations Strong_Nodes Projecting_Nodes,
+		93 Serration_Early_Ontogeny /  _ Consistent Increasing_Strength,
+		94 Serration_Late_Ont0geny /  _ Consistent Decreasing_Strength,
+		95 Sutural_Lirum /  _ Absent Present,
+		96 SC_Strength /  _ Weak Moderate Strong Very_Strong,
+		97 �_SC_Swelling /  _ Always_Acute 'Acute_->_Obtuse' Always_Obtuse,
+		98 Suture /  _ Oblique Acute,
+		99 Acuteness_of_Suture /  _ Acute Attenuated,
+		100 Curve_Back_at_Suture /  _ Absent Present,
+		101 Left_Ramp_Shape /  Acute Globular Convex Slightly_Convex Flat Concave,
+		102 Swollen_Left_ /  Gill_Channel '"' '/' _ Absent Present,
+		103 �_of_Swelling /  _ Weak Moderate Strong Very_Strong,
+		104 Left_Ramp_Carina /  _ Absent Present,
+		105 L.R._Carina_Type /  Dull_Swelling Thick_Contusion Sharp_Thread Frill Square_Thread,
+		106 L.R._Carina_Strength /  _ Weak 'Moderate_(~_Selenizone)' Strong Very_Strong,
+		107 �_LRC_strength /  _ Fading_on_older_whorls Constant Becomes_stronger,
+		108 Serrated_LRC /  _ Thread Serrated,
+		109 Serration_Strength /  _ 'Weak_(undulated)' Small_Nodes Large_Nodes,
+		110 Serration_Pattern /  _ Half_Node_Half_Thread Large_Nodes_with_short_intermitant_space '3:2_pattern_"locking"_suture',
+		111 Serration_Ontogeny /  _ Constant Fades_on_Older_Whorls,
+		112 2nd_LRC_above_main /  _ Absent Present,
+		113 2nd_LRC_below_main /  _ Absent Present,
+		114 Tubes_in_2nd_LRC_Above /  _ Absent Present,
+		115 Channeled_LRC /  _ Absent Present,
+		116 Frilled_L.R._Carina /  _ 'Peg_(simply_projects)' 'Frill_(covers_next_whorl)' 'Hyperextended_Frill_(covers_next_whorl_plus)',
+		117 Frill_Bordered_by_Lirae /  _ Absent Present,
+		118 Crenulated_Frill /  _ Absent Present,
+		119 Channeled_Frill /  _ Absent Present,
+		120 Frill_Projection /  _ Behind_Aperture Parallel_to_Aperture In_Front_of_Aperture,
+		121 'Hood-Like Frill' /  _ Absent Present,
+		122 L.R._Carina_Tubes /  _ Absent Present,
+		123 '�LS: expansion of LR' /  _ Absent 'Changes_->_More_Triangular_Form',
+		124 Columella_Thickness /  Thinner_than_Rest_of_Shell No_different Thicker_than_Rest_of_Shell Much_Thicker 'P._tropidophora-like',
+		125 Extent_of_Thickness /  _ Top_Only Columella_Only Columella_and_Base Base_Only,
+		126 Umbilical_Carina /  _ Absent Present,
+		127 Umb._Carina_Type /  _ Thickened_Base Channeled_Swelling Sharp_Thread Rounded_Thread Peg,
+		128 Umb._Carina_Prominence /  _ Very_Weak Weak Strong Projecting Strongly_Projecting,
+		129 �_Umb._Carina /  _ Constant Becomes_Weaker Becomes_Stronger,
+		130 Umb._Carina_Position /  _ 'Beneath_Inner_Margin_(apx._120�_from_sinus)' 'Middle_of_Whorl_(apx._90_from_sinus)' 'Beneath_Outer_Margin_(apx._60�_from_sinus)',
+		131 'Columella / Base Angle' /  _45�_or_less greater_45� greater_60� greater_75� greater_90� greater_105� greater_120� greater_135� greater_150�,
+		132 'Columella Shape (Front)' /  _ Rounded Flattened 'Concave_(T._shumardi-like)',
+		133 Curved_Columella /  _ Straight Curved,
+		134 �_Curvature /  _ Slightly Strongly,
+		135 Inner_Margin_Columella_Shape /  _ 'arch_@_half-circle' arch_@_obtuse_ellipse straight arch_@_acute,
+		136 Outer_Margin_Columella_Shape /  _ Rounder_than_IM Same_as_IM Straighter_than_IM,
+		137 �Margin_Shape /  _ None Rounder,
+		138 Columella_Attitude /  �_�_0� �_�_0� �_�_15� �_�_30� �_�_45� �_�_60� �_�_75� �_�_90� �_�_105� �_�_120�,
+		139 Columellar_fold /  _ Absent Present,
+		140 Siphon /  _ Absent Slight_Twist Strong_Siphon,
+		141 Columella_Lira /  _ Absent Present,
+		142 Columella_Callous /  _ Lira Callous,
+		143 Callus_Orientation /  _ Projects_straight_back_into_umbilicus Folded_Back_into_Umbilicus,
+		144 Extent_of_Callus_Funicle /  _ Fills_Umbilicus Partly_Fills_Umbilicus,
+		145 Callus_Ontogeny /  _ No_Major_Change Increases_Prominence,
+		146 Columellal_Channel /  _ Absent Present,
+		147 Parietal_Inductura /  _ Absent Thin__Incomplete Thin Same_as_Shell Thicker_than_Shell,
+		148 Inductura_Projection /  _ Parallel_to_Aperture Projects_in_Front_of_Aperture,
+		149 Projection_Type /  _ Spread_In Concentrated_Strip Filling_umbilicus Mid_section_extended_forward_slightly,
+		150 Flaring_Aperture /  _ Absent Weak Strong,
+		151 Reflected_Col_Lip /  _ Absent Present,
+		152 Funicle /  _ Absent Present,
+		153 Columella_Fills_Umbilicus /  _ Absent Fills_Umbilicus Continguous_w._Previous_Whorl Folds_back_into_Umbilicus,
+		154 Whole_Ap._Inclined /  _ Radial Tangential,
+		155 Whole_Aperture_InAn /  _ InAn_�_10� InAn_�_20� InAn_�_30� InAn_�_40� InAn_�_50� InAn_�_60�,
+		156 Inclined_Left_Half /  _ Absent Present,
+		157 Left_InAn /  InAn_�_0� InAn_�_10� InAn_�_20� InAn_�_30� InAn_�_40� InAn_�_50� InAn_�_60�,
+		158 Inclined_Right_Half /  _ Absent Present,
+		159 Right_InAn /  _ InAn_�_10� InAn_�_20� InAn_�_30� InAn_�_40� InAn_�_50� InAn_�_60�,
+		160 Reverse_InAn /  _ Absent Present,
+		161 Posterior_Projection /  _ Absent Present,
+		162 Magnitude_of_Posterior_Projecti /  _ '�_�_-10�' '�_�_-20�' '�_�_-30�' '�_�_-40�' '�_�_-50�',
+		163 Anterior_Projection /  _ Absent Present,
+		164 Magnitude_of_Anterior_Projecti /  _ '�_=_10�' '�_=_20�' '�_=_30�' '�_=_40�' '�_=_50�' '�_=_60�',
+		165 Adapical_Inclination_of_RR /  _ Absent Present,
+		166 Degree_of_Inclination /  _ InAn_�_10� InAn_�_20� InAn_�_30� InAn_�_40�,
+		167 Basal_Shape /  _ Straight Curved Crenulated,
+		168 �_Curved_Base /  _ Weakly 'Moderate_(Indicating_a_curving_back,_probably_for_foot)' 'Strongly_(typically_reflect_one_type_of_siphon)',
+		169 Ont._Rotation_of_Aperture /  _ Absent 'Counter-Clockwise_Rotation' Clockwise_Rotation,
+		170 Mag._of_Rotation /  _ 'Small_(<30�)' 'Great_(>30�)',
+		171 Expansion /  _ 'E_<_.05_(Extremely_Low)' '.05_<_E_<_.10_(Very_Low)' '.10_<_E_<_.15_(Low)' '.15_<_E_<_.20_(Moderate)' '.20_<_E_<_.25_(High)' 'E_>_.25_(Very_High)' 'E_>1.0_(Extremely_High)',
+		172 �_Expansion /  _ Negative_�E None Positive_�E Positive_�E_to_Negative_�E,
+		173 Curvature /  'Open-Coiling' 'K_<_0.5_(Extremely_Low)' '0.5_<_K_<_0.55_(Very_Low)' '0.55_<_K_<_0.65_(Low)' '0.65_<_K_<_0.75_(Moderate)' '0.75_<_K_<_0.85_(High)' '0.85_<_K_<_0.95_(Very_High)' 'K_>_0.95_(Extremely_High))',
+		174 Continuous_�K /  _ Negative_�K '�K_=_0' Positive_�K,
+		175 Basic_Curvature /  _ Dextral Sinistral,
+		176 Punctuated_Change_in_Curvature /  _ Absent Sudden_Reversal,
+		177 Anisostrophy /  _ Isostrophic Anisostrophic,
+		178 '"' /  '"' '/' 'High_(Negative)' 'Moderate_(Negative)' 'Low_(Negative)' Nearly__Planispiral Low Moderate High Very_High Extremely_High,
+		179 Early_�T /  _ Negative_�T Isometric Positive_�T,
+		180 Timing_Negative_�T /  _ Early_Only Continuous,
+		181 Timing_Positive_�T /  _ Early_Only Continuous,
+		182 Magnitude_Early_Positive_�T /  _ 'Small_(Lower_Suture)' 'Large_(Opens_Coiling)',
+		183 Late_�T /  _ 'ƶ_<_0' 'ƶ_=_0' 'ƶ_>_0',
+		184 Style_of_Late_�T /  _ Gradual Punctuated,
+		185 Magnitude_Late_�T /  _ 'Slight_(Lowers_Suture)' 'Great_(Open_Coiling)',
+		186 Gerontic_Uncoiling /  _ Absent Present,
+		187 Septation /  _ Absent Septate Complete_Infilling,
+		188 Basal_Ornament /  _ Absent Present,
+		189 Basal_Orn._Density /  _ 1_per_20� 1_per_10� 1_per_5� 1_per_1�,
+		190 BO_Width /  _ @_0.5� @_1� @_2� @_4�,
+		191 BO_Prominence /  _ None Weak Moderate Strong,
+		192 Basal_Orn._Consistency /  _ Uniform Stronger_Higher Stronger_Lower Highest_Strongest '2_:_1_:_2',
+		193 L.W._Ornament /  _ Absent Present,
+		194 L.W._Orn._Density /  _ 1_per_20� 1_per_10� 1_per_5� 1_per_1�,
+		195 LRO_Width /  _ @_0.5� @_1� @_2� @_4�,
+		196 LRO_Relief /  _ None Weak Moderate Strong,
+		197 L.W._Orn._Consistency /  _ Uniform Stronger_Higher Stronger_Lower Highest_Strongest '2_:_1_:_2' Strongest_in_the_Middle,
+		198 LR_Orn._Pattern /  _ Even_strength Every_other_one_stronger,
+		199 RR_Ornament /  _ Absent Present On_Upper_Half_only,
+		200 RRO_Density /  _ 1_per_20� 1_per_10� 1_per_5� 1_per_1�,
+		201 RRO_Width /  _ @_0.5� @_1� @_2� @_4�,
+		202 RRO_Relief /  _ None Weak Moderate Strong,
+		203 RRO_Gen._Pattern /  _ Uniform Stronger_toward_Middle Stronger_at_Top,
+		204 RR_Orn._Spec._Pattern /  _ Even_strength Every_other_one_stronger Paired_at_top,
+		205 Ont._�_RR_Orn /  _ Constant Fades_Gradually Fades_Abruptly,
+		206 Orn._Type /  _ Local_Thickenings Changes_in_Aperture_Shape,
+		207 Transverse_Ornament /  _ Radial Transverse,
+		208 Transverse_Ornament_Type /  _ Thin_Threads Rugose_Undulations,
+		209 Selenizone_Ornament /  _ Absent Present,
+		210 Carrier_Shell /  _ No_scars Scars,
+		211 Size /  'Micro_(<10_mm3)' 'Small_(10_-_100_mm3)' 'Moderate_(100_-_1000_mm3)' 'Large_(1000_-_10000_mm3)' 'Huge_(>10000_mm3)',
+		212 Protoconch /  _ Orthocone Coiled,
+		213 Protoconch_Coiling_Axis /  _ Same_as_Teleoconch 90�_from_Teleoconch,
+		214 Different_Protoconch_Translation /  _ Planispiral 'Translation_like_Adults_(or_grades_into_adult_coiling)',
+		215 Bulbous_Cap /  _ Absent Present,
+		216 Initial_Protoconch_Size /  _ Small Large,
+		217 Dimorphic_Coiling /  _ Absent Present,
+		218 Degree_of_Dimorphism /  _ Weak Strong,
+		219 Dimorphic_Flaring_of_UC_spines /  _ Consistent Strong_every_60�_vs._Weak_every_2GLs,
+		220 Dimorphic_Ornament /  _ Absent Present,
+		221 Operculum_Type /  _ Accretionary Spiral,
+		222 Operculum_Construction /  _ Solid Fibrous,
+		223 Accretion_away_from_the_Apertur /  _ 'Very_Little_(Angle_>160�)' 'Moderate_(Angle_Apx._90�)' 'Strong_(Angle_Apx._45�)',
+		224 Prong /  _ Absent Present,
+		225 FKA /  Early_Cambrian Middle_Cambrian Late_Cambrian Early_Tremadoc Late_Tremadoc Early_Arenig Middle_Arenig Late_Arenig Llanvirn Llandeilo Early_Caradoc Middle_Caradoc Late_Caradoc Ashgill Early_Llandovery Late_Llandovery Early_Wenlock Late_Wenlock Early_Ludlow Late_Ludlow Pridoli Lockhovian Pragian Emsian Eifelian Givetian_or_later,
+		226 FKA2 /  PreFrasnian Frasnian Fammenian Tournaisian Visean,
+		227 LKA /  Early_Cambrian Middle_Cambrian Late_Cambrian Early_Tremadoc Late_Tremadoc Early_Arenig Middle_Arenig Late_Arenig Llanvirn Llandeilo Early_Caradoc Middle_Caradoc Late_Caradoc Ashgill Early_Llandovery Late_Llandovery Early_Wenlock Late_Wenlock Early_Ludlow Late_Ludlow Pridoli Lockhovian Pragian Emsian Eifelian Givetian,
+		228 Taxon /  Pelagielloid Helcionelloid Tergomyan Onychochiliid Hypseloconoid Bellerophontoid Pleurotomarioid Murchisonioid Euomphaloid Macluritoid Subulitioid Loxonematoid Trochoid Pseudophoroid Trochonematoid Microdomatoid Craspedostomatoid Anomphalaloid,
+		229 Family /  Eotomariidae Gosseletinidae Lophospiridae Luciellidae Murchisonidae Phanerotrematidae Plethospiridae Raphistomatidae Sinuopeidae Oriostomatidae Porcellidae Portlockidae Trochonematidae Holopeidae Loxonematidae Meekospiridae Microdomatidae Pseudozygopleuridae Subulitidae,
+		230 Genus,
+		231 R,
+		232 Genus ; 
+	MATRIX
+	'Clathrospira "laflinensis"'       234513323311-111-2331111-112214222311-111------111---1-112--21131211142421732551--11----------1--1-141-1------------------1221----411-3211111----121-?2111-2{2 3}1-11-221-1-1-324211263-212--1?1----1-----1---------113?????1---????50660-??
+	Semizona_glindmeyeri               232611323311-111-2441131-1122151--------2243111311---1-112--2-121211121221833461--11----------1--1-141-21121---11-1------111-1----311-3212111----131-11111-242511-221-1-1-324211263-212--111----1-----1---------113??????---????80860-??
+	Clathrospira_euconica              233513323311-111-2331111-112214222311-111------111---1-112--21131?-1142421441631--121311111---1--1-141-1------------------1231----411-3212111----131-11111-211-11-211-1-1-324211263-2?2--111----1-----1---------113??????---????80860-??
+	Mourlonia_maritima                 234613323311-111-2331111-112216222211-111------111---1-112--211211-1162221631621--11----------1--1-121-1------------------1221----411-3211111----121-12111-221-11-221-1-1-325211263-212--111----1-----1---------113?????1---????80D60-??
+	Clathrospira_?trochiformis         234513323311-111-2331111-112214222411-111------111---1-112--21131211162421742551--11----------1--1-141-1------------------1231----411-3211111----121-11111-221-11-221-1-1-325211263-212--111----1-----1---------113?????1---????80960-??
+	Ptychonema_desideratum             236712223311-111-2331111-112214212411-111------11212213111--211211-1182221543561--11----------1--1-121-1------------------11-1----411-2211111----131-11111-211-11-2?1-1-1-325211263-212--1?1----1-----1---------112?????????????808??-??
+	Ptychonema_marocanum               236713223311-111-2221111-112214212111-111------11212213111--211211-1182221543551--11----------1--1-121-1------------------11-1----411-2211111----131-11111-221-11-211-1-1-325211263-212--111----1-----1---------111?????1???????808??-??
+	Mourlonia_hotzi                    232511323311-111-2441111-112215223211-111------111---1-102--211411-1132421843561--11----------1--1-141-1------------------11-1----411-3212111----131-11111-221-11-221-1-1-324211263-212--111----1-----1---------112?????????????90???-??
+	Clathrospira_elliptica             234613323311-111-2331111-112214222211-111------111---1-112--21121211152221631531--11----------1--1-121-1------------------1221----411-3211111----121-12111-231-11-221-1-1-324211263-212--111----1-----221111111-113212211---????90D60-??
+	Clathrospira_inflata               234613323311-111-2331111-112214222211-111------111---1-112--21121211152221631531--11----------1--1-121-1------------------1221----411-3211111----121-12111-231-11-221-1-1-324211263-212--111----1-----1---------113?????1---????90A60-??
+	Cataschisma_convexa                233413323311-111-2331111-112215212211-111------?11---1-112--211211-1162121732441--11----------1--1-111-1------------------1221----311-2212111----1???11111-222211-211-1-1-425211263-212--111----1-----1---------112??????---????A0D60-??
+	Clathrospira_conica                234513323311-111-2331111-112214232411-111------111---1-112--211312-1152421642551--11----------1--1-141-1-----------------11231----411-3212111----131-11111-221-11-221-1-1-325211263-212--111----1-----1---------112?????1---????A0D60-??
+	Clathrospira_subconica             234513323311-111-2331111-112214232411-111------11211211112--211212-1152421642551--11----------1--1-1(2 4)1-1-----------------11231----411-3211111----131-11111-221-11-221-1-1-325211263-212--1124111231111241111111-212?????1---????A0B60-??
+	Clathrospira_amouguerana           236713223311-111-2331111-112215222111-111------112?2211111--211211-1152231642551--11----------1--1-121-1------------------1321----411-3312111----131-11111-221-11-211-1-1-325211263-212--111----1-----1---------112?????1???????A0C60-??
+	Eotomaria_canalifera               234513313311-111-2331111-112214232411-111------111---1-112--21141211122421551551--122121111---1--1-141-1------------------1231----411-3214111----131-11111-221-11-221-1-1-325211253-212--111----1-----1---------112?????1---????A0A60-??
+	Eotomaria_dryope                   232513313311-111-2331111-112215232411-111------111---1-112--21141211142421541631--121321111---1--1-141-21121---11-1------11221----411-3212111----131-11111-211-11-211-1-1-324211253-212--111----1-----1---------112?????1---????A0B60-??
+	Eotomaria_labrosa                  234513313311-111-2331111-112213222311-111------111---1-112--21141211123421551541--122121111---1--1-121-1------------------1321----411-2114111----131-11141-221-11-231-1-1-425211251-212--111----1-----1---------112?????1---????A0A60-??
+	Eotomaria_larvata                  234513313411-111-2441111-112214232411-111------111---1-112--21141221132421543451--122121111---1--1-141-1------------------1231----511-2314111----13??11111-231-11-241-1-1-324211242---2--111----1-----1---------111?????1---????A0B60--?
+	Eotomaria_supracingulata           234613313411-111-2441111-112214232511-111------111---1-112--21141221132421543451--122121111---1--1-141-1------------------1231----511-2314111----111-11111-231-11-251-1-1-324211242---2--111----1-----1---------113?????1---????A0B60--?
+	Liospira_decipens                  234523313311-111-2221111-112213222311-111------111---1-112--211311-1123421761321--121111111---1--1-121-1------------------1331----511-2114111----131-11141-211-11-231-1-1-424211251-212--111----1-----1---------1112??211---????A0B67-??
+	Liospira_subconcava                234523323311-111-2221111-112213222111-111------111---1-112--2-1311-1123521761321--121111111---1--1-141-1------------------1321----511-2114111----132111241-211-11-251-1-1-424211251-212--111----1-----1---------111?????1---????A0B67-??
+	Liospira_progne                    234523323311-111-2221111-112213222111-111------11212211111--21131211133421532331--121111111---1--1-121-1------------------1231----511-2114111----1323112?1-211-11-251-1-1-424211253-212--111----1-----1---------112?????1---????A0C67-??
+	Paraliospira_mundula               234513313411-111-2441111-112215232411-111------111---1-112--21141221153412533451--123312111---1--1-141-21121---11-2-------13323311511-2313111----141-11141-231-11-251-1-1-324211242---2--111----1-----1---------111?????1---????B0C67--?
+	Liospira_angustata                 234523323311-111-2221111-112213222111-111------11??--1?1----211311-1123421531321--121111111---1--1-121-1------------------11-1----511-2114111----13??11211-1-1-1211-1-1-1-424211251-212--111----1-----1---------112?????1---????B0B67-??
+	Brachytomaria_kiari                232513323311-111-2331111-112215222311-111------111---1-112--211211-1172221651651--121311111---1--1-121-1------------------1221----411-2211111----13??11111-222111-211-1-1-325211263-212--111----1-----1---------112?????1---????B0D65-??
+	Paraliospira_angulatum             233522313411-111-2441111-112214232411-111------111---1-112--21141221162411533451--12231-111---1--1-141-21121---11-2-------12323311511-2312111----131-11111-231-11-241-1-1-324211242---2--111----1-----1---------111?????1---????B0D67--?
+	Eotomaria_elevata                  23(3 4)433323311-111-2331111-112214222311-111------111---1-112--211311-1183523351731--123411211---1--21151-22121---11-1------11231----211-3211111----111-11121-222111-211-1-1-425211263-212--111----1-----1---------111?????1---????C0C60-??
+	Liospira_micula                    233523323311-111-2221111-112213222111-111------11212211111--211311-1123421762221--121111111---1--1-241-1------------------1221----511-2113111----1323112?1-221-11-251-211-424211252---2--1123111231111241111111-11121?211---????C0D67--?
+	Eotomaria_notablis                 234513313411-111-2441111-112214232311-111------111---1-112--21141211142221551421--121321111---1--1-121-21121---11-2------11231----411-2212111----131-11111-211-1211-1-1-1-324211253-212--111----1-----1---------112?????1---????C0C61-??
+	?_Palaeoschisma_globosa            232433323311-111-2331111-112214222311-111------111---1-112--211311-1183423351651--123311211---1--1-141-1------------------1231----411-2211111----131-11111-222111-211-1-1-425211263-212--111----1-----1---------112?????1---????C0C60-??
+	Brachytomaria_baltica              221121123311-111-2551111-112215222511-111------111---1-11312211211-1162222631651--11----------1--1-141-1------------------1331----311-3211111----131-11111-1---11-1-1-1-1-225211263-212--111----1-----1---------112?????1---????C0D65-??
+	Brachytomaria_kindlei              232423323311-111-2441111-112215222411-111------111---1-112--211211-1172222551651--122411111---1--1-121-22221---11-1------11231----411-3211111----131-11111-222111-221-1-1-325211263-212--111----1-----1---------112?????1---????C0D65-??
+	Semizona_bella                     232611323311-111-2441131-1122151--------2243111311---1-112--2-121211121421833461--11----------1--1-141-21121---11-1------111-1----311-3212111----131-11111-242611-221-1-1-324211263-212--111----1-----1-------22113??????---????D0D60-??
+	Paraliospira_aff._angulatum        232522323311-111-2441111-112215232511-111------111---1-112--21141221142211633451--122312111---1--1-121-21121---11-2-------12323311511-2314111----141-11111-211-11-211-1-3-324211242---2--111----1-----1---------113?????1---????D0D67--?
+	Paraliospira_rugata                233522323311-111-2442131-112215232511-111------111---1-112--21141221162411533451--123312111---1--1-121-21121---11-2-------133?????511-231211?----131-11141-231-11-251-1-1-324211242---2--111----1-----1---------111?????1---????D0D67--?
+	Brachytomaria_semele               222223323311-111-2441111-112215222511-111------111---1-11312211211-11(6 7)2222551651--122411211---1--1-121-22221---11-1------11231----411-3211111----131-11111-2-1-11-1-1-1-1-325211263-212--111----1-----1---------112?????1---????D0D65-??
+	Brachytomaria_striata              222222223311-111-2551111-112215222511-111------111---1-11312211211-1192223451751--121211111---1--1-141-21121---11-1------11331----311-3211111----13??11111-1-1-11-1-1-1-1-325211263-212--111----1-----1---------112?????1---????D0D65-??
+	Clathrospira_thraivensis           234433323311-111-2331111-112214222311-111------111---1-112--211311-1163523351641--121411211---1--21141-22121---11-1------11231----311-2212111----111-11121-222111-211-1-1-325211263-212--111----1-----1---------111?????1---????D0D60-??
+	Eotomaria_rupestris                234412313411-111-2331111-112213222411-111------11212211112--21141221182221533451--12131-111---1--1-121-1------------------12223311311-2212111----131-11111-211-11-221-1-3-324211252---2--1?1----1-----1---------111?????1---????D0D60--?
+	Pseudocryptaenia_majewski          232432313311-111?2221112-112215222211-111------11????1?1??--211412111722?1631651---2331-2121111--1-141-1------------------12223311311-2212111----13??11111-211-11-221-1-3-324211242---2--111----1-----1---------11021?211---????D0D60--?
+	Clathrospira_cf._glindmeyeri       234511323311-111-2441111-11221(5 6)222411-112243111311---1-112--22121?-1131221853451--121111111---1--1-141-21121---11-1------111-1----311-3212111----131-11111-221-11-221-1-1-324211263-212--111----1-----1---------113??????---????80860-??
+	Cataschisma_exquisita              234212223311-111-2331111-112215212211-111------21212211111--211211-1122121833561--11----------1--1-111-1------------------11-1----311-3212111----111-11111-232111-1-1-1-1-425211262---2--11241112411112411111121212?????1---????D0H61--?
+	Globispira_prima                   221312223311-111-2331121-112214212211-111------21222211111--211211-11212217325523311----------1--1-121-1------------------11-1----311-2212111----131-11111-232211-221-1-1-525211262---2--1124111241111241111111-212?????1---????F0L61--?
+	Pleurorima_wisbeyensis             232412223311-111-2331111-112214212211-111------21212211111--211211-11212218324521311----------1--1-121-1------------------11-1----311-2212111----111-11111-232211-221-1-1-525211262---2--1124111241111241111111-212?????1---????F0F61--?
+	Eocryptaulina_filitexta            215212123311-111-2331111-112213222211-111------112?2211111--211411-1162221733561--11----------1--1-211-1------------------11-1----511-22121121---1???11111-211-11?211-1-1-324211252---2--111----1-----1---------11121?211---????F0F61--?
+	Conotoma_claustrata                232511123311-111-2331111-1122142215221111------111---1-11312211111-1141221832331--11----------1--1-141-1------------------1221----511-2211111----121-11111-221-11-211-1-1-225211263-212--1123111231111231111111-212?????1---????F0G60-??
+	?_Conotoma_bispiralis              232511123311-111-2331111-112214221411-111------111---1-11312211111-1151221632551--11----------1--1-141-1------------------1221----511-2211111----121-11111-221-11-211-211-225211263-212--11?????1-----1----------12?????1---????F0G60-??
+	Crenilunula_limata                 231411123311-111-2441111-1122132215222111------1121121112312211111-1111221933341--11--11------1--1-141-1------------------1221----511-2214111----121-11111-222311-231-1-1-324211253-212--1123332233321233311111-11??????1---????F0H63-??
+	Crenilunula_hallei                 231411123311-111-2441111-1122142215222111------1121121112312212111-1111221923341--11----------1--1-141-1------------------1221----511-2213111----121-11111-222311-221-1-1-324211263-212--1122231223311223311111-213?????1---????F0L63-??
+	Liospira_marklandensis             232523323311-111?2221111?112213122111-111------112???11111--211311-1133421762221--121111111---1--1-211-1------------------1221----511-2113111----1323112?1-221-11-251-211-424211252---2--111----1-----1---------11121?211---????G0?67--?
+	Phanerotrema_jugosum               222221123311-121-2441111-112213222511-111------11??--1?11312211311-1161223451751--122211111---1--21141-1------------------1331----311-3113111----141-11111-221-11-1-1-1-1-425211263---32111231212322111---------112?????1---????E0F65-??
+	Ulrichospira_similis               222222223311-111-2331111-112214222311-111------11??--1?112--211211-1192423451741--121411211---1--1-141-22121---11-1------11221----311-3211111----131-1???1-1-1-1?-?-1-1-1-225211262---2--111----1-----1---------11??????1---????E0F65--?
+	Brachytomaria_papillosa            222222223311-111-2551111-112215222511-111------211---1-11312211211-1192223451751--122411111---1--1-141-22221---11-1------11331----311-3211111----131-11111-2-1-11-1-1-1-1-325211263-212--111----1-----1---------112?????1---????D0E65-??
+	Brachytomaria_aff._furcata         232422223311-111-2441111-112213222311-111------111---1-112--211211-1173223341761--123421211---1--1-121-22321---11--------11231----411-2212111----131-11111-232211-221-1-1-42(4 5)1112511212--111----1-----1---------113?????1---????F0H60-??
+	Phanerotrema_lloydi                223323323311-111-2331111-112214222311-111------11212211112--211211-1192223451741--121211211---1--1-121-22121---11-1------11221----311-3211111----131-12111-1-1-11-1-1-1-1-225211262---2--1122121222211222211111-11??????1---????F0K65--?
+	'Brachytomaria "laquetta"'         232422223311-111-2441111-112213222311-111------111---1-112--211211-1183223341761--123411211---1--1-121-22321---11--------11231----311-3211111----131-11111-222111-211-1-1-425211263-212--111----1-----1---------113?????1---????G0G62-??
+	Phanerotrema_lindstroemi           222221123311-121-2441111-112213222511-111------1121211111312211311-1162213451651--121211111---1--21141-1------------------1331----321-2113111----141-11121-221-11-1-1-1-1-424211253--132111232112322111---------114?????1---????G0G65-??
+	Phanerotrema_dolia                 223321123311-121-2441111-112216222311-111------11??--1?113122113-1-1171223561(5 6)51--123211111---1--21141-1------------------1221----311-3212111----141-?2111-231-11-1-1-1-1-425211272---2--11222212233111---------111?????1---????K0K65--?
+	Phanerotrema_calliaudi             221121123311-121-2441111-112212222411-111------212?2211112--211111-1181223561651--11----------1--1-121-1------------------13?1----3???3??1111----1???11111-222111-1-1-1-1-425211263-213211123221232212233312111-113?????????????N?N6?-??
+	Phanerotrema_australis             221121123311-121-2441111-112212222411-111------11222111112--211311-1162223761651--1???????????1--1-121-1------------------1231----411-311111?????1???11111-222311-111-1-1-425211263-212--1124221242211142211111-112?????????????M0M65-??
+	Ulrichospira_othemensis            222222223311-111-2331111-112214222311-111------11212211112--211211-1172423651641--11----------1--1-141-1------------------1221----311-3211111----131-1???1-1-1-1?-?-1-1-1-225211262---2--111----1-----1---------11??????1---????G0G65--?
+	Phanerotrema_vitellia              222221123311-111-2441111-112213222311-111-------11---1-112--211311-1181223471641--11----------1--1-121-1------------------1231----311-2211111----131-11111-222111-211-1-1-425211263-212--111----1-----1---------113?????1---????G0K76-??
+	Phanerotrema_occidens              222221123311-121-2441111-112213222511-111------11????1?11312211311-1171223561651--122211111---1--1-141-1------------------1331----311-3111111----141-11111-221-11-211-1-1-425211263-212--11232212322111---------112?????1---????H0K65-??
+	Conotoma_glandifromis              231321123311-111-2331111-1122132214221111------111---1-112--211111-1131221832441--11----------1--1-121-1------------------1221----311-3211111----111-11211-1-2111-221-1-1-126211263-212--1123111231111231111111-212?????1---????J0K60-??
+	Oriostoma_dispar                   213231333111-111-2331111-112212222311-111------112222111?1?-22141211162222772441--11----------1--1-121-1------------------1??2----411-2214111----141-11111-1-1-1221-1-1-1-3232112(3 4)11112--111----1-----1---------112?????1---????G0GC9-??
+	Stenoloron_aequilatera             215312123311-111-2441111-112212222411-111------21212211112--21141211141121843321--11----------1--1-221-1------------------11-1----511-2213111----14??11111-201-1211-1-221-324211252---2--111----1-----1---------?13?????1---????H0K61--?
+	Prosolarium_procerum               231411123311-111-2441111-1122132215222111------1121121112312211111-1111221923331--11----------1--1-141-1------------------1221----611-2214111----121-1111?-242311-221-1-1-324211263-212--11233312333112433111122213?????1---????J0L63-??
+	Epiptychia_potens                  231512123311-111-2441111-1122132225212221------112?2211122--211111-1111521813431--11----------1--1-141-1------------------11-1----811-2213111----121-1111?-252411-221-1-1-525211263-212--111----1-----2422111122213?????1-------N0N6?-??
+	Stenoloron_shelvensis              213212223311-111-2331111-112212222311-111------11212211111--21141211143222552551--122111111---1--1-111-1------------------11-1----411-1213111----141-11111-211-1211-1-211-324211252---2--111----1-----1---------11221?211---????F0G61--?
+	Eocryptaulina_helcinia             222412223311-111-2331111-112213222111-111------21212211111--211411-1182221432461--11----------1--1-221-1------------------11-1----411-22121121---121-11111-211-11-211-1-1-324211252---2--111----1-----1----------11?????1---????F0H61--?
+	Stenoloron_biformis                232412123311-111-2331111-112213222311-111------111---1-112--211411-1163422231751--123311111---1--1-141-1------------------11-14211411-21131121---13??11111-22211211-1-211-325211263-212--11231112311111---------112?????1---????F0H60-??
+	Stenoloron_angulifer               213211123311-111-2331111-112212222311-111------11212211111--21141211153422332(5 6)51--123311111---1--1-141-(1 2)2221---11---------11-24312411-11121121---141-11111-212-1211-1-211-324211262---2--111----2133211---------112?????1---????J0JC9--?
+	Stenoloron_voluta                  213232333111-111-2331111-112212222311-111------112222111-1--22141211163222551551--122311111---1--1-211-1------------------1??1----411-2213111----141-11111-1-1-1211-1-1-1-324211252---2--11211112111111---------112?????1---????J0K61--?
+	Stenoloron_bohemica                215312323311-111-2441111-112212222411-111------11222211112--21241211151121733521--11----------1--1-221-1------------------11-1----511-2213111----12??11111-201-1211-1-221-314211252---2--111----1-----1---------113211211---????J0L60--?
+	'Stenoloron "pollens"'             214212123311-111-2441111-112212222311-111------11222211111--21141211143122552551--11----------1--1-211-1------------------11-1----511-1213111----122111111-201-1211-1-221-324211252---2--111----1-----1---------112211211---????J0L61--?
+	Stenoloron_subaequilatera          230211122211-111-2441111-112212222311-111------112?2211111--211211-1151222552551--11----------1--1-221-1------------------11-1----511?121?11?????????11??1-201-1211-1-2211324211253-212--111----1-----1---------113?????????????M0?61-??
+	Stenoloron_pollens                 214212123311-111-2441111-112211222311-111------112322111?1--211411-1152122552551--11----------1--1-211-1------------------11-1----411-1214111----132111111-201-1231-1-221-324211253-212--111----1-----1---------?12211211???????N0N61-??
+	Stenoloron_minor                   221111122211-111-2441111-112212222311-111------11222211111--211411-1151222552551--11----------1--1-121-1------------------11-1----511-1212111----122111111-201-1211-1-221-324211253-212--111----1-----1---------112?????1---????Q0Q61-??
+	'Bembexia <spiny sp.>'             213011123311-111-2331111-112213222411-111------112?2211112--211211-1152422442881--1234113122111--1-141-2222223111-1-------1221----411-3211111----121-12111-1-2311-221-211-526211263-212--1?222321-----1---------113?????????????P0P60-??
+	Bembexia_sulcomarginata            213311223311-111-2441111-112212222311-111------11212211111--211411-1362211752331--122221311---2221-121-1------------------1321----611-2112111----121-11141-1-1-11-221-221-42521126111-2--111----1-----1---------113211211---????Q0Q60-??
+	Genuspira_nodosa                   213111123311-111-2331111-112213222311-111------11222211111--211411-1362211522551--123221211---2221-121-1------------------1321----611-2112111----121-11141-1-1-11-221-221-42521126111-321111----1-----1---------112211211---????Q0Q60-??
+	Pleurorima_pragensis               232312223311-111-2331121-112216212311-111------11222211111--211211-11212218334523311----------1--1-121-1------------------1221----311-2212111----141-11111-232111-221-1-1-524211262---2--1124111241111241111111-213?????1---????J0L61--?
+	Pleurorima_migrans                 232311223311-111-2331121-112216212211-111------21222211111--211211-11212218334621311----------1--1-121-1------------------1221----311-2212111----141-11111-232111-221-1-1-525211263-212--1124111241111241111111-213?????1---????K0L61-??
+	Pleurorima_moydartensis            232311223311-111-2331121-112216212211-111------21212211111--211211-11212218334621311----------1--1-121-1------------------1221----311-2212111----141-11111-232111-221-1-1-525211263-212--1122331223311241111111-213?????1---????K0L76-??
+	Pleurodima_aratula                 232511122211-111-2441131-112213212311-111------112?2211111--21121211113221A334621-11----------1--1-111-1------------------1211----8?1-2213111----1???11111-232411-231-1-1-324311253-212--1122211222212222212111-212?????1???????N??6?-??
+	Leptozone_esthetica                231411123311-111-2331121-112213212111-111------111-----111--21131211142221833431--11----------1--1-121-1------------------1221----411-3212111----131-11211-212311-231-1-31524211262---2--1123111231111231111111-212?????1???????N0N6?--?
+	Ptycomphalina_vesiculosa           232311112211-111-2441111-11?214222311-111------111?2211112--211211-1152221762551--11----------1--1-121-1------------------11-1----4??????1111----13??1?111-222311-1-1-1?1-426211263-212--1?1----1-----1---------111?????????????N??6?-??
+	Pleurorima_famula                  2323112233121111-2331121-112216212211-111------21222211111--211211-11412218334621311----------1--1-121-1------------------1??1----3??-2212111----141-11111-232111-221-1-1-525211263-212--1124111241111241111111-213?????1---????N0N61-??
+	Tragatoma_extensa                  233412223311-111-2441121-112216212311-111------111-----111--211311-11712217624421311----------1--1-141-1------------------11-1----111-2214111----141-11111-231-11-221-1-1-523211272---2--111----1-----1---------112?????1---????J0L61--?
+	Coelozone_verna                    232411223311-111-2441111-112216212311-111------11212211112--211311-11211218323323311----------1--1-141-1------------------1211----511-2212111----141-11111-241-11-231-1-1-523211243-212--111----1-----1---------113?????1---????K0L61-??
+	Euryzone_connulastus               232311223311-111-2441121-112216212311-111------11212211111--211311-11211218333523311----------1--1-121-1------------------1211----511-2212111----141-11111-231-11-221-1-1-523211253-212--111----1-----1---------112?????1---????K0L61-??
+	Bicarina_coluber                   231412123311-111-2331111-11?217212111-111------112?221?111--211211-1162223462551--11----------1--1-111-1-------------------??1----3?1-1214111----141-11111-1-1-11-241-1-1-222211232---2--121----1-----1---------113?????????????N0N??--?
+	Balbinipleura_bohemica             224421123311-111-2441111-112213222311-111------11212211111--211411-1152222552551--1234?1211---2221-121-22221---11-1------11231----511?2??3111----141-11111-232111-221-221-325211263-212--111----1-----1---------111211211???????N0N60-??
+	Mourlonia_subglobosa               232312123311-111-2331111-112211222111-111------11232211111--211311-1172222552551--11----------1--1-221-1------------------11-1----411-2212111----13??111122221-1221-1-211-324211253?212--111----1-----1---------111?????1???????P0P??-??
+	Umbotropis_mesoni                  232212123311-111-2221111-112216212111-111------112?22111??--211311-1183221423451--11----------1--1-?11-1------------------12-1----411-3211111----11--1111???????????1-??1-4151112612--2--1?1----1-----1---------111?????????????P0P??-??
+	Euryzone_delphinuloides            232511123311-111-2331111-112217212311-111------21222211111--211211-11612218334523311----------1--1-221-1------------------11-1----611-3213111----131-11111-241-11-241-211-523211253-212--1124111241111241111111-213211211---????Q0Q61-??
+	Bicarina_vittatum                  225521123311-111-2331111-112217212111-111------112?2211111--211211-11612217534523311----------1--1-221-1------------------11-1----611-1214111----141-11111-231-11-261-??1-5232112311--2--111----1-----1---------112?????????????Q?Q?????
+	Mourlonia_hoffmanni                231211123311-111-2331111-112216212311-111------11222211111--211211-11112118333623311----------1--1-121-1------------------11-1----311-2213111----13??11111-241-11-231-1-1-524211253-212--111----1-----1---------112?????1---????Q0Q60-??
+	Ptychomphalina_aurorae             231311123311-111-2441111-112216212311-111------11222211111--211211-11112212334521311----------1--1?121-22121---11-1-------1231----411-2113111----141-11111-232111?221-1-1-525211263-212--111----1-----1---------112?????1---????Q0Q60-??
+	'"Serpulospira" <sp. Tassell 1982>'1-------------11-2221111-1122171--------1------112222111?1--211211-1162222442441--11----------1--1-121-1-------------------1-1----411-1213111----141-11111-1-1-11-1-1-??1-222211252---2--121----1-----1----------11?????1???????P0P??--?
+	Euryzone_burdekinensis             221121123311-111-2221111-112217212211-111------112?2211111--211211-1182221533451--11----------1--1-121-1------------------11-1----411-2214111----141-11111-2?1-11-211-211-423211233---2--121----1-----1---------111?????1---????R0R??--?
+	Euryzone_nummularis                232421122211-111-2221121-112226223111-111------112?2111111--211211-1151221763451--11----------1--1-121-1------------------11-1----511-1213111----13??11111-1-1-11-221-1-1-526211253-212--111----221111221111111-11121121????????R0R??-??
+	Mourlonia_vicinalis                233622223311-111-2221111-112216212211-111------112?22111?1--211211-1142221853451--11----------1--1-121-1------------------11-1----511-2213111----1???11111-1-1-11-231-211-524211253?212--111----1-----1---------111211211-??????R0??????
+	Mourlonia_velutinoides             232312123311-111-2331111-112212222211-111------11242211111--211211-1121131943461--11----------1--1-121-1------------------1??????????????????????????????1-222211-231-1-1-52521125???????1?23211232211223212111?112?????????????????????
+	Oehlertia_scutulata                231511123311-111-2331111-112215222311-111------11212321142--211211-1272221923671--1?----------1--1-121-1-----------------112322211311-2111111----11??11111-222211-211-1-1-325211263-212--1124111241111241111111-212?????1---????F0G60-??
+	Oehlertia_gradata                  231511123311-111-2441131-112215222311-111------11212321142--211211-1262421923571--1?----------1--1-141-1------------------12322211311-2111111----11??11111-222211-2-1-1-1-326211263-212--1124111241111241111111-212?????1---????J0K60-??
+	Oehertia_cancellata                231(4 5)11123311-111-2441131-112214222311-111------11222321142--211211-1262421(5 6)33671--1?----------1--1-141-1------------------1221----311-2211111----121-11111-231-11-211-1-1-126211273-??2--1124211242211242211111-211?????1---????J0K60-??
+	Oehlertia_pioni                    231311133111-111-3321111-112214222311-111------112?2121162--211211-1252221743451--1?----------1--1-121-1------------------12223211411-3211111----11--11111?1-2211-221-1-1-324111263?212--111----1-----1---------111?????????????P0P??-??
+	Oehlertia_senilis                  231511123311-111-2441131-112214222311-111------112?2321112--211211-1242421A33571--1?----------1--1-141-1------------------12324211311-4213111----11??11111-222211-221-1-31326211263-212--11221111-----221111211-112?????1---????N0N60-??
+	Porcellia_sinistrosa               221122221111-111-2331111-112211222211-111------1123221111{1 2}--211211?1152222882551--11----------1--1?121?1------------------11-1----411-2216111----131-11111-1-1-1221?1-1-313231112311112--1124111241111241111111-112211??1---????K0K6A-??
+	Porcellia_aberrans                 221121122211-111-2331111-1?2211222211-111------112?2221111--211211-1152222882551--11----------1--1-121-1------------------11-1----4?222216111----13??11111-1-1-1231-1-1-??3231112311--2--1124111241111241111111-112?????1???????N0N6A-??
+	Zlatokonia_eximia                  221122221111-111-2331111-122211223211-111------112?2221111--211211-1152422882551--11----------1--2-141-1------------------11-1----411-2216111----1???11111-1-1-1231-1-1-1-323111233-112--1123111231111231111111-112211211---????N?N6A-??
+	Umbotropis_albicans                222221223311-111-2221111-112213222111-111------21212211111--211411-1172221631531--11----------1--1-221-1------------------11-1----511-2212111----14??11111-211-11-221-1-1-323211242---2--111----1-----1---------111?????1---????N0N61--?
+	Anarconcha_pulchra                 231211112211-111-2441111-1111--------------------1-----112-------1-116222??????1--11----------1--1-121-1------------------1221----411-211?111----141-11111-212311-1-1-1-1-326211263-112--2?1----1-----1---------111?????????????N0N6?-??
+	Vladanella_avia                    234212112211-111-1441111-111211222211-111------111-----112--211211-11?222??????1--11----------1--1-121-1-------------------??????????????????????????????1-222411-??1-??1-326211263-112--1?1----1-----1---------11121121????????N????-??
+	Chlupacispira_spinosa              214311112311-111-3541111-012213222411-111------112??211111--211211-1152221642771--121121311---1--1-121-22221---1221------11221----311-2212111----141-12111-1-1-11-211-211-425211253-212--1?1----1-----1---------11021121????????P0P6L-??
+	Bembexia_sp.                       212112133211-111-2441111-112214222311-111------11212211112--211211-1153421623471--122411311---1--1-221-22221---11-1-------12-1----411-3211111----131-11112?22211211-1-211-536211263-212--1?241111-----1---------111?????????????P0P??-??
+	Agnesia_elegans                    233531423311-111-2441111-112213222311-111------112?2211111--211011-1142421921631--11----------1--1-141-1------------------11-1----511-3214111----131-11111-1-1-1221?1-1-1-3252112111--2--1123311233211233211111-21121???????????Q0Q6?-??
+	Agnesia_dentatolimata              233431023311-111-2441111-112213222211-111------112?221?112--211011-1141221931431--11----------1--1-141-1------------------11-1----511-3214111----131-11111-1-1-1211-1-1-1-3252112111--2--111----2211111-------1-111?????????????R0R?????
+	Alaskiella_medfraensis             23?53?423311-111-2441111-112214222411-111------11????1?112--211011-?142421921631--11----------1--1-141-1------------------10?1----511-3214111----1???11111-1-1-1221?1-1-1-3252112111--2--1123211232211232211111-?1121???????????Q0Q6?-??
+	Quadricarina_glabrobasis           232312123311-111-3421111-112215222311-111------11222321142--211211-1252221743451--1?----------1--1-121-1------------------12222211311-3111111----11??11111-1-2311-211-1-1-325211262---2--111----1-----1---------112211211---????Q0Q60--?
+	'Quadricarina <n. sp. A>'          232312123311-111-3421111-112215222311-111------11222321142--211211-1252221743451--1?----------1--1-121-1------------------12222211311-3111111----11??11111-1-2311-211-1-1-325211262---2--111----1-----1---------112211211---????Q0Q60--?
+	Porcellia_denayi                   221122221111-111-23311421122211222211-111------11232211111--211211-1152222882551--1211111121111--1-121-2111231111-1------111-1----411-2216111----131-11111-1-1-1221-1-1-??3232112311--2--1123111231111231111111-112?????1---????Q0Q6A-??
+	Paraporcellia_rohri                221122221111-111-25511521122211222211-111------11232211111--211211-1152222882551--1211111121111--1-121-2111231111-1------111-1----411-2216111----131-11111-1-1-1231-1-1-??3231112311--2--111----1-----1---------112?????1---????Q0Q6A-??
+	Porcellia_striata                  221122221111-111-2441111-122211222211-111------11232211111--211211-1152222882551--11----------1--1-121-1------------------11-1----411-2216111----131-11111-1-1-1221-1-1-??32321123????2--111----1-----1---------112?????1---????R0R?????
+	Porcellia_costata                  221122221111-111-24411122112211222311-111------11232211111--211211-1152222882551--1211111123111--1-121-2112231111-1------11???????411-2216111----1???1???1-1?1?1221-1-1-??3232112211212--111----1-----1---------112?????1???????R0R?????
+	Porcellia_spinosa                  221122221111-111-255111221?2211222211-111------11232211111--211211-1152222882551--121111111---1--1-121-21121---11-1------111-1----411-2216111----131-11111-1-1-1231-1-1-313232112311--2--111----1-----1---------112?????1---????Q0Q6A-??
+	Porcellia_cornuarietis             221122221111-111-255111221?2212222211-111------11232211111--211211-1152222882551--121111111---1--1-121-21121---11-1------111-1----411-2216111----131-11111-1-1-1231-1-1-3132321122111-2--111----1-----1---------112?????1---????Q0R6A-??
+	Porcellia_bifida                   221122221111-111-2331111-122212222211-111------11232211111--211211-1152222882551--121131111---1--1-121-21131---11-1------111-1----411-2216111----131-11111-1-1-1241-1-1-313231112211112--111----1-----1---------112?????1---????R0-6A-??
+	Porcellia_primordialis             221122221111-111-2442111-122211222211-111------11232211111--211211-1252222882331--11----------1--1-121-1------------------11-1----411-2216111----131-11111-1-1-11-221-1-313231112211112--1123321233231233221111-112?????1---????R0-6A-??
+	Porcellia_kindlei                  221122221111-111-2441112212?212222211-111------112??2?11?1--211211-1152222882551--1211111122121--1-221-2111231211-1------111-1----511-2216111----141-11111-1-1-1231-1-1-??32311123?-?????111----241111241111111-112?????1???????R0?6A-??
+	Arizonella?_conoidea               222212123311-111-2221111-?12213232211-111------11????1?1??--211311-1153421933461-?11----------1--1-121-1------------------1321----622-3213111----13231122221-1-11-??1-1-214251112512--2--111----1-----1---------112?????????????P0P??-??
+	Buechelia_tyrellii                 215323333211-111-2221111-112213222111-111------112?2211111--211211-1183431641321--121211111---1--21121-1------------------1321----32?-3312111----121-11121-241-11-1-1-2321425211263-212--111----1-----1---------1132?1211---????Q0Q67-??
+	Buechelia_aff._tyrellii            216423323311-111-2221111-112213223111-121------112?2211111--211211-1183431641321--121211111---1--21121-1------------------1321----32?-3312111----121-11121-241-11-1-1-2321425211263-212--111----1-----1---------113211211---????Q0R67-??
+	Buechelia_goldfussi                216523333211-111-3221111-112212223211-121------11222211132--211411-1273431751321--11----------1--21121-1------------------1321----32?-3112111----131-11121-231-11-1-1-2321425211263-212--111----1-----1---------1132???1????????Q0Q67-??
+	Buechelia_bronni                   216323313411-111-2221111-112212222211-111------112?2211132--211411-1183431851321--11----------1--21121-1------------------1321----32?-3112111----13??11121-231-1??????2321425211263?212--111----1-----212211111?112?????????????????????
+	Goldfussoceras_circanalis          ????2??????????????????????????????????????????????????????????????1171231761321--11----------1--1-?21-1------------------11-2331131??3??3111----13??11111-??1-1????????21423211253?212--121----1-----1---------113?????????????????????
+	Schizostoma_radiata                232423323311-11212331111-212212222211-112232112102??11-142--2-121211141231861431--11----------1--1-141-1------------------11-2331141213217111----131-11111-1-1-11-221-1-21323211222---2--121----1-----1---------112?????????????Q0??????
+	Pleuronotus_decewi                 233513323311-111-2441111-212214222311-111------11212212111--211211-1163513781431--11----------1--1-141-1------------------11-2221231214214111----151-1111221-1-11-261-1-22314211223-11121121----1-----1---------113?????1???????R0??????
+	'"Bathmospira" "michiganensis"'    223322223311-111-2441111-112213221211-111------112?2211112--211111-1152211751321--122211111---1--21121-1------------------1321----321-2113111----141-11111-231-11-1-1-1-1-425211263--1321111----1-----1---------114?????1---????Q0Q67-??
+	Euryzone_infranodosa               233512123311-111-2221111-112215222211-111--------2?2211111--211111-1163521721431--11----------1--1-141-1------------------11-22112312-2213111----141-1111231-1-11-241-1-2142421125????12?121----1-----1---------114?????1???????R0??????
+	Manitobiella_goniostoma            233512123311-111-2221111-112215221211-111--------2?2211111--211111-1163521721431--11----------1--1-141-1------------------11-22112312-2213111----141-1111231-1-11-241-1-2142421125????12?121----1-----1---------114?????1???????R0??????
+	Euryzone_onoi                      233412123311-111-2331121-212216222111-111------11212211111--211211-1162423371541--11----------1--1-141-1------------------11-22212312-3214111----141-1111221-1-11-241-1-1-314211243-213211?1----1-----1---------113?????????????????????
+	Wisconsinella_clelandi             223312123311-111-2331111-112216222311-111------11222211111--211211-1142431641541--11----------1--1-141-1------------------11-22112312-2215111----141-11112?????11-241-1-21314211253-112--1?1----??????1---------112?????????????Q0Q?????
+	Bembexia_crenostriata              213311223311-111-2442111-112212222311-111------112?2211111--211411-13622?1752331--122221311---2221-121-1------------------1321----611-????11?----????????1-1-1-11-221-221-42521126?-?-2--111----1-----1---------113211211---????Q0Q60-??
+	'? Bembexia <Perigny sp.>'         215313223311-111-2441111-112223222411-111------11????1?112--211211-1152221432661--1234112121112221-?21-22221---11-1------11221----611-3212111----1???11111-1-1-11-231-211-425211263-212--111----1-----1---------112211211---????Q0Q60-??
+	Bembexia_defrancei                 215312123311-111-2331111-112214222311-111------112?2211112--211211-1152421322661--123411211---2221-241-22221---11-1------11221----411-3211111----131-11111-1-1-11-231-211-326211263-212--111----1-----1---------111?????1---????Q0Q60-??
+	Shansiella_catenulata              214131123311-111-2441111-112214222311-111------112?2211111--211311-1172221532661--1???????1---1--1-121-?????---???--------1221----411-2212111----1???11111?1?2311-221-211-325211263-212--1122331223321223311111-112211?11---????Q0Q6B-??
+	Shansiella_rotundata               233512223311-111-2441111-112214222311-11211311111????1?1?1--211211-1163222442661--123411211---1--1-121-1------------------1221----411-2212111----131-11111-1-2211-1-1-1-1-525211253-212--1123321232221232211111-112?????????????R???????
+	Bembexia_procteri                  215311123311-111-2441111-012214222411-112113111111---1-112--211211-1152222552661--122411311---1--1-221-22121---11-1------11221----411-3212111----131-12111-1-2211-1-1-211-526211263-212--111----1-----1---------113211211-??????Q0Q60-??
+	Spinulrichospira_cheeneetnukens    230121122211-111-2441111-112214212311-111------11????1?111--211211-1143412552661--121321211---1--1-121-22321---1221------11221----511-2213111----131-12111-1-1-11-231-211-425211263-212--111----1-----1---------111?????????????Q0Q6?-??
+	?_Dictyobembix_orbignyii           233412123311-111-2441121-012213222311-111------112?2211112--211211-1142221843461--1????????---1--1-121-?????---???--------1221----411-221211?----131-11111-212311-221-1-1-525211263-212--1123331233321223311111-112211?11---????R0R60-??
+	?_Dictyobembix_beaumontii          211012022211-111-24411121112213222311-111------112?2211111--211211-1142221933461--1????????---1--1-121-22221---11-1------11221----521-221211?----131-11141-212211-221-211-526211263-112--11223311-----223312111-112?????????????R0R?????
+	Mourlonia_undulata                 234512123311-111-2221111-112217222211-111------112?22111131-211211-1162211631651--11----------1--1-121-1------------------11-1----411-1213111----121-11111-212211-221-1-1-524211263-111111123221232211233211111-112?????1???????R0R?????
+	Mourlonia_semilaevis               232512123311-111-2221111-112217222221-111------112?2211112--211211-1163221541641--122431211---1--1-121-1------------------11-1----411-1212111----131-11111-212111-231-1-1-525211263-112--1123211232111232111111-112?????????????R0R?????
+	?_Bembexia_neapolitana             214312123311-111-2441111-122223222411-111------112?2211112--211411-1162421632551--1224112121112221-241-22221---11-1------11221----411-2211111----131-11141-211-11-221-211-326211263-212--1123332231111221111111-112?????1---????R0R60-??
+	Frillbeastia_queenslandica         232512112311-111-2441111-?122132233122121------112?2211111--211411-1153421533451--1224313122111--1-121-222?1---11-1------11???????411-3212111----1???1???????1-11-2?1-211-426311263-1-2--1?1----1-----1---------112?????????????R0R??-??
+	Denayella_lomandarensis            233412123311-111-2221111-112214213111-111------11????1?1?1--211211-11534216314321311----------1--21121-1------------------1321----322?4312111----131-11121-221-11-221-1-1-425211253-212--111----1-----1---------111?????????????R0R??-??
+	Catantostoma_clathratum            233412023311-111-3321111-112213222311-111------111---1-212--211211-1172121632551--11----------1--1-111-1------------------11-1----411-2212111----141-11111-222211-221-221-42521127???????2122321233211233211111-112?????1---????R0??????
+	Euconospira?_longdalei             234513123311-111-2331111-112213222211-111------11????1?111--211411-1103221813361--11----------1--1-121-1------------------11-1----711-2214111----141-11111-1-1-11-221-1-1-325211263-112--1123331233312233212111-111?????????????R0??????
+	Ninbingia_robertsi                 221121122211-111-2551111-112212222211-111------11232211111--211211-1152222772331--11----------1--1-221-1------------------11-1----511-3212111----141-11111-1-1-1241-1-1-1-33321123111?2--111----1-----1---------113?????????????R1???-??
+	Westralospira_dickinsi             213431133211-111-2441111-112213222311-112112111112?221?112--211211-1152221643451--121111211---1--1-121-1------------------1221----311-2311111----141-11111-232412?1-1-2-1-326211273-212--11?????221111211111111-111?????????????R1???-??
+	Hespieriella_cannigensis           215331321111-111-2441111-112212212111-111------112?221?111--211411-1172221853361--11----------1--1-?21-1------------------11-1----611-3215111----141-11111-1-1-11-211-1-1-42621122111?2--11222212321111-----2-1-11121???????????R1???-??
+	Euryzone_hullensis                 233412123311-111-2331111-112217212211-111------11212211111--211211-11824217534522311----------1--1-141-1------------------11-22321411-2212111----141-11111-221-11-221-1-1-425211253-212--11232112211211-------1-113?????1???????R1???-??
+	Playfordia_australis               233612123311-111-2331111-112211222211-111------112?221?111--211111-1142421731431--11----------1--1-221-1------------------11?1----511-2213111----141-11111-212411-211-1-1-326211252-212--111----1-----1---------112?????????????R1???-??
+	Tasselliana_australis              232712123311-111-2331111-112213212111-111------112?221?111--211111-11512216534621311----------1--1-121-1------------------1221----411-2211111----131-11111-232211-1-1-1-1-425211263-212--1123211232111232111111-112?????1???????R1???-??
+	Mourlonia_teicherti                232412222211-111-34311111212212222311-111------112?2211112--211211-1142222551641--11----------1--1-121-1------------------11-1----411-2212111----131-11111-21231221-1-221-325211252-212--1122221222212222232111-111?????????????R1???-??
+	Baylea_teicherti                   224421123311-111-2331111-212212222311-111------112?2211111--211311-1183423271861--11----------1--1-121-1------------------1221----411-2212111----131-11111-212111-1-1-1-1-425211253-212--112?22?223311223311111-????????????????R1???-??
+	'Porcellia <Virgin Hill sp.>'      222222221111-111-2441111-112211222211-111------11232211111--211211-1152222882551--121111111---1--1-121-21111---11-1------111-1----411-2216111----1???11111-1-1-1221-1-1-1-33321123111-2--111----223211223211111-112?????1???????R2???-??
+	Euconospira_nodosa                 232512123311-111-24411121112211222311-111------11????1-112--211211-1112421823471--11----------1--1-141-1------------------11-1----811-3214111----1???11111?22231231-1-1-1-425211263-212--1122421224212234212111-111?????1???????R2???-??
+	'? Shansiella <Virgin Hill sp.>'   232421123311-111-24411111112215222311-112112111112?221?111--211211-1142221733451--11----------1--1-221-1------------------1221----511-2213111----13??11111-231-11-211-1-1-325211253-212--1122321233212233212111-111?????1???????R2???-??
+	'Turritoma cf. acrea <ornate sp.>' 224423323311-111-2331111-112216222311-111------111---1-112--211(1 2)21-11422216(5 6)16521311-------???-??1-121-1------------------1221----411-2211111----131-12111-1-1-11-1-1-1-1-126211273-212--1123221232211132211111-111?????1---????50574-??
+	Taeniospira_stclair                224423323311-111-2441111-112216212211-111------111---1-112--211211-1152221(5 6)426621311-------???-??1-12211------------------1221----411-2211111----131-12111-1-1-11-1-1-1-1-325211273-212--111----1-----1---------112?????1---????30468-??
+	Hormotoma_?_simulatrix             224423323311-111-2221111-112216212211-111------111---1-112--211211-11522216526621311-------???-??1-12211------------------1221----411-2211111----131-12111-1-1-11-1-1-1-1-126211273-212--111----1-----1---------112?????1---????40574-??
+	Turritoma_acrea                    234513323311-111-2331111-11221(6 7)222311-111------111---1-112--211311-1142421832661--11-------???-??1-141-1------------------1221----311-3211111----13??12111-1-1-11-1-1-1-1-126211273-212--11?----?-----1---------112?????1---????50574-??
+	Turritoma_cf._acrea                224423323311-111-2221111-112216212211-111------211---1-112--221211-11432225526621311-------???-??1-12211------------------1221----411-2211111----131-12111-1-1-11-1-1-1-1-126211273-212--1?1----1-----1---------111?????1---????50574-??
+	Turritoma_?_anna                   233533423311-111-2221111-112215212211-111------111---1-111--111211-11422226(5 6)1541--11-------???-??1-121-1------------------1221----311-3211111----131-12111-1-1-11-1-1-1-1-126211282---2--111----1-----1---------111?????1---????50574--?
+	Eoangyomphalus_klapperi            2??????????1-1??-????1?1-?1??????2?????????????????????1???????????1?E????????????????????????????????????-?---????????????????????11-????1??----?????????-?-?-?????1-????12521125?-??2--1?1----1-----1---------113?????1---????Q0Q67-??
+
+;
+
+END;
+BEGIN MacCladeStart;
+	Extended;
+
+END;
+BEGIN SETS;
+	CHARSET Bookkeeping   =   225 227- 230;
+
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS DEFTYPE = unord PolyTcount = MAXSTEPS;
+	TYPESET * UNTITLED   =  unord:  1- 232;
+TYPESET Standard   =  unord:  1- 2 5-8\3 9- 30 32- 42 44- 74 77-80\3 81- 130 132- 137 139- 154 156- 161 163 165- 232, ord:  3- 4 6- 7 31 43 75- 76 78- 79 131 138 155 162 164;
+TYPESET UNTITLED   =  unord:  1- 2 5-8\3 9- 12 14- 30 32- 34 36- 42 44- 50 52- 69 71 73- 74 77-80\3 81- 84 86- 100 102- 127 129- 130 132- 137 139- 154 156 158 160- 161 163 165 167- 170 172 174- 177 179- 210 212- 217 219- 224 226- 232, ord:  3- 4 6- 7 13 31 35 43 51 70 72-75\3 76 78- 79 85 101 128-131\3 138 155 157 159-162\3 164 166 171 173 178 211 218 225;
+TYPESET wagner_types   =  unord:  1- 2 5-8\3 9- 12 14- 30 32- 34 36- 42 44- 50 52- 69 71 73- 74 77-80\3 81- 84 86- 100 102- 127 129- 130 132- 135 137 139- 154 156 158 160- 161 163 165 167- 170 172 174- 177 179- 210 212- 217 219- 224 226- 232, ord:  3- 4 6- 7 13 31 35 43 51 70 72-75\3 76 78- 79 85 101 128-131\3 136 138 155 157 159-162\3 164 166 171 173 178 211 218 225;
+
+	EXSET CambUninfor  =  11 17 21 36 46 52 -  53 64 -  65 73 85 -  87 105 -  106 115 -  120 122 -  123 125 129 -  130 136 152 156 -  159 164 170 172 189 -  190 192 200 -  201 204 206 209 212 214 216 230;
+EXSET UNTITLED  =  230;
+EXSET UNTITLED  =  230;
+
+	WTSET * UNTITLED  =  1: 1 -  224, 0.0: 225 -  232 ;
+WTSET CambrianWt  =  100: 1 -  2 5 8 -  11 16 -  17 19 21 23 26 29 32 -  33 35 -  36 41 -  43 46 48 50 52 -  53 57 -  58 61 -  66 71 73 80 -  82 84 -  87 98 102 -  106 115 -  120 122 -  130 135 140 -  141 146 -  148 150 -  156 158 -  161 163 -  164 167 169 -  170 172 174 177 179 187 189 -  190 192 199 -  201 204 206 209 211 -  212 214 216 230 232, 10: 3 -  4 75, 25: 6 -  7 131, 1: 12 -  15 18 20 22 24 -  25 27 -  28 30 34 37 -  40 44 -  45 47 49 51 54 -  56 59 -  60 67 -  70 74 77 83 88 -  97 99 -  100 107 -  114 121 132 -  134 137 139 142 -  145 149 165 -  166 168 171 173 175 -  176 178 180 -  186 188 191 193 -  198 202 -  203 205 207 -  208 210 213 215 217 -  224 226 -  227 229 231, 33: 31 31 162, 50: 72 72 101 136 157, 9: 76 76 78 -  79, 14: 138 138, 0: 225 225 228;
+WTSET Step  =  1: 1 -  231, 100: 232;
+WTSET Balance  =  100: 1 -  2 5 8 -  11 15 -  17 19 21 23 26 29 32 -  33 35 -  36 38 41 -  44 46 -  48 50 52 -  53 57 -  58 61 -  67 71 73 -  74 77 80 -  82 84 -  88 98 100 102 -  106 115 -  130 135 140 -  142 146 -  148 150 -  156 158 -  161 163 -  164 167 169 -  170 172 174 177 179 187 189 -  190 192 199 -  201 204 206 -  207 209 211 -  212 214 216 230 232, 10: 3 -  4 75, 25: 6 -  7 131, 1: 12 -  14 18 20 22 24 -  25 27 -  28 30 34 37 39 -  40 45 49 51 54 -  56 59 -  60 68 -  70 83 89 -  97 99 107 -  114 132 -  134 137 139 143 -  145 149 165 -  166 168 175 -  176 180 -  186 188 191 193 -  198 202 -  203 205 208 210 213 215 217 -  224 226 229 231, 33: 31 31 162, 50: 72 72 101 136 157, 9: 76 76 78 -  79, 14: 138 138 178, 20: 171 171, 17: 173 173, 0: 225 225 227 -  228;
+WTSET UNTITLED  =  100: 1 -  2 5 8 11 -  13 15 -  21 23 -  26 29 -  30 32 -  33 35 -  36 38 41 -  42 44 46 -  48 50 52 -  54 57 -  69 71 73 -  74 77 80 -  84 86 -  91 98 -  100 102 -  106 108 112 115 -  127 129 -  130 132 -  134 137 140 -  144 146 -  148 150 -  154 156 158 160 -  161 163 165 -  170 172 174 177 179 182 187 189 -  190 192 199 -  201 204 -  207 209 -  210 212 214 216 -  218 232, 8: 3 -  4 70, 25: 6 -  7 155 157 162 164 211, 50: 9 -  10 51 85 128 135 -  136 159, 1: 14 14 22 27 -  28 34 37 39 -  40 45 49 55 -  56 92 -  97 107 109 -  111 113 -  114 139 145 149 175 -  176 180 -  181 183 -  186 188 191 193 -  198 202 -  203 208 213 215 219 -  224 226 231, 20: 31 31 43 171, 17: 72 72 101 131 173, 6: 75 -  76, 7: 78 78, 9: 79 79, 14: 138 138 178, 0: 225 225 227 -  230;
+WTSET UNTITLED  =  100: 1 -  2 5 8 11 -  13 15 -  21 23 -  26 29 -  30 32 -  33 35 -  36 38 41 -  42 44 46 -  48 50 52 -  54 57 -  69 71 73 -  74 77 80 -  84 86 -  91 98 -  100 102 -  106 108 112 115 -  127 129 -  130 132 -  134 137 140 -  144 146 -  148 150 -  154 156 158 160 -  161 163 165 -  170 172 174 177 179 182 187 189 -  190 192 199 -  201 204 -  207 209 -  210 212 214 216 -  218 232, 8: 3 -  4 70, 25: 6 -  7 155 157 162 164 211, 50: 9 -  10 51 85 128 135 -  136 159, 1: 14 14 22 27 -  28 34 37 39 -  40 45 49 55 -  56 92 -  97 107 109 -  111 113 -  114 139 145 149 175 -  176 180 -  181 183 -  186 188 191 193 -  198 202 -  203 208 213 215 219 -  224 226 231, 20: 31 31 43 171, 17: 72 72 101 131 173, 6: 75 -  76, 7: 78 78, 9: 79 79, 14: 138 138 178, 0: 225 225 227 -  230;
+WTSET Balanced  =  100: 1 -  2 5 8 11 -  13 15 -  21 23 -  26 29 -  30 32 -  33 35 -  36 38 41 -  42 44 46 -  48 50 52 -  54 57 -  69 71 73 -  74 77 80 -  84 86 -  91 98 -  100 102 -  106 108 112 115 -  127 129 -  130 132 -  134 137 140 -  144 146 -  148 150 -  154 156 158 160 -  161 163 165 -  170 172 174 177 179 182 187 189 -  190 192 199 -  201 204 -  207 209 -  210 212 214 216 -  218 232, 8: 3 -  4 70, 25: 6 -  7 155 157 162 164 211, 50: 9 -  10 51 85 128 135 -  136 159, 1: 14 14 22 27 -  28 34 37 39 -  40 45 49 55 -  56 92 -  97 107 109 -  111 113 -  114 139 145 149 175 -  176 180 -  181 183 -  186 188 191 193 -  198 202 -  203 208 213 215 219 -  224 226 231, 20: 31 31 43 171, 17: 72 72 101 131 173, 6: 75 -  76, 7: 78 78, 9: 79 79, 14: 138 138 178, 0: 225 225 227 -  230;
+WTSET Balanced?  =  100: 1 -  2 5 8 11 -  30 32 -  42 44 -  50 52 -  55 57 -  69 71 73 -  74 77 80 -  84 86 -  100 102 -  127 129 -  130 132 -  134 137 140 -  144 146 -  154 156 158 160 -  161 163 165 -  170 172 174 -  177 179 -  210 212 -  224 232, 8: 3 -  4 70, 25: 6 -  7 155 157 162 164 211, 50: 9 -  10 51 85 128 135 -  136 159, 20: 31 31 43 171, 1: 56 56 139 145, 17: 72 72 101 131 173, 6: 75 -  76, 7: 78 78, 9: 79 79, 14: 138 138 178, 0: 225 -  231;
+
+END;
+
+BEGIN NOTES;
+
+	TEXT  TAXON = 1 TEXT = 'Fix_1975_id_-_invalid_name';
+	TEXT  TAXON = 2 TEXT = Based_on_Rohr_1994_J._Paleo;
+	TEXT  TAXON = 6 TEXT = from_Horny_1997;
+	TEXT  TAXON = 7 TEXT = from_Horny_1997;
+	TEXT  TAXON = 8 TEXT = 'USNM_253130-2_(distorted_silicified_specimens_from_Rohr_1980)';
+	TEXT  TAXON = 14 TEXT = 'NM_2654-7_(from_Horny_1997)';
+	TEXT  TAXON = 31 TEXT = Mo._70711;
+	TEXT  TAXON = 32 TEXT = GSC_N8505;
+	TEXT  TAXON = 33 TEXT = 'Based_on_Ebbestad_1999;_RM_Mo._151976-7';
+	TEXT  TAXON = 39 TEXT = 'Based_on_Mo._25196,_25197,_25914_from_the_Boda_Ls.;_originally_identified_by_me_as_Eocryptaenia_singularis?';
+	TEXT  TAXON = 94 TEXT = 'Originally_Macluritella_smithville_sp._(probably_equivalent_to_Maclurea_ponderosus_Billings_1865_[see_Rohr_&_Measures_2001]).';
+	TEXT  TAXON = 98 TEXT = 'Was_Teiichispira;_probably_the_same_as_M._crenulata_(see_Rohr_&_Measures_2001)';
+	TEXT  TAXON = 100 TEXT = 'Y�_1993;_based_on_stratigraphic_material_at_QM';
+	TEXT  TAXON = 114 TEXT = 'Was_Malayaspira_annulata;_based_on_stratigraphic_material_from_USNM_&_Rohr_&_Measures_2001;';
+	TEXT  TAXON = 135 TEXT = 'Horny_1997_pl._13_7-10_(NM_S_2644-5)';
+	TEXT  TAXON = 136 TEXT = 'Horny_1997_pl._14_1-9_(NM_S_2646-9)';
+	TEXT  TAXON = 145 TEXT = 'Cotypes_examined_(&_sp._recoded):_GSC_1263_(type_lot,_with_2_shells_&_several_opercula)';
+	TEXT  TAXON = 158 TEXT = Based_on_Late_Ordovician_material;
+
+	TEXT   CHARACTER = 3 TEXT = 'Angle_of_"retreat"_into_SK';
+	TEXT   TAXON = 145 CHARACTER = 3 TEXT = was_20�;
+
+	TEXT   CHARACTER = 6 TEXT = 'Recoded_this_for_palaozygopleurids:_follow_suit_elsewhere';
+
+	TEXT   CHARACTER = 9 TEXT = L._Sinus_not_coded_because_of_persistent_symmetry;
+
+	TEXT   CHARACTER = 12 TEXT = As_on_Raphistoma;
+	TEXT   TAXON = 131 CHARACTER = 12 TEXT = It_is_present_on_some_specimens;
+
+	TEXT   CHARACTER = 14 TEXT = 'As_on_Ptychocaulus_-_not_the_same_as_euomphalid_stretch_at_base_of_LR';
+	TEXT   TAXON = 145 CHARACTER = 14 TEXT = '*might*_be_weakly_present;_definite_on_one_part_of_the_best_one,_but_that_looks_distorted_(?injury_repair)_with_a_groove';
+
+	TEXT   CHARACTER = 15 TEXT = 'Shown_by_zig-zagging_of_GLs';
+
+	TEXT   CHARACTER = 16 TEXT = 'Formerly_"sigmoidal:_-_aperture_projects_strongly_in_middle_of_base_(~outer_periphery_on_Poleumita),_then_"falls_back"_to_LR.__What_this_should_measure_is_the_transition_between_the_base_&_the_LR';
+
+	TEXT   CHARACTER = 17 TEXT = As_on_Ptychocaulus;
+
+	TEXT   CHARACTER = 22 TEXT = Become_fainter_and_more_closely_packed;
+	TEXT   TAXON = 96 CHARACTER = 22 TEXT = double_check_this;
+
+	TEXT   CHARACTER = 24 TEXT = This_might_just_be_strongly_imbricated_growth_lines_imbricating_ornament;
+
+	TEXT   CHARACTER = 29 TEXT = Now_the_juvenile_and_adult_conditions_are_separated;
+
+	TEXT   CHARACTER = 32 TEXT = Outer_two_lira_of_the_trilineate_selenizone_assumed_to_be_synapomorphy_with_paired_lira_of_murchisonioids;
+
+	TEXT   CHARACTER = 34 TEXT = 'Was_Upper_(Right)_Only';
+
+	TEXT   TAXON = 7 CHARACTER = 35 TEXT = wide_but_almost_no_relief;
+	TEXT   TAXON = 8 CHARACTER = 35 TEXT = Upper_lirum;
+
+	TEXT   TAXON = 9 CHARACTER = 41 TEXT = Once_coded_as_present;
+	TEXT   TAXON = 33 CHARACTER = 41 TEXT = 'Was_present_and_considered_upper_PL_only_-_but_that_was_silly.';
+
+	TEXT   TAXON = 9 CHARACTER = 42 TEXT = 'Once_"sharp"';
+
+	TEXT   CHARACTER = 43 TEXT = Final_strength;
+	TEXT   TAXON = 9 CHARACTER = 43 TEXT = 'Once_"very_weak"';
+
+	TEXT   CHARACTER = 44 TEXT = 'On_adult_whorls;__if_SK_fades_in,_then_this_applies_to_changes_after_that_trend';
+	TEXT   TAXON = 9 CHARACTER = 44 TEXT = 'Once_"No_�"';
+
+	TEXT   TAXON = 9 CHARACTER = 46 TEXT = 'Once_"absent"';
+
+	TEXT   TAXON = 9 CHARACTER = 47 TEXT = 'Once_"consistent"';
+
+	TEXT   CHARACTER = 48 TEXT = '10/5/01_-_make_it_describe_the_swelling_bn._PLs_for_Hormotoma,_Pleurorima_and_like_species.__Also,_I_need_something_to_show_species_with_lunulae_regions_raised.';
+	TEXT   TAXON = 1 CHARACTER = 48 TEXT = formerly_slight;
+	TEXT   TAXON = 3 CHARACTER = 48 TEXT = formerly_slight;
+	TEXT   TAXON = 5 CHARACTER = 48 TEXT = formerly_slight;
+	TEXT   TAXON = 11 CHARACTER = 48 TEXT = 'was_none_-_check_this!';
+	TEXT   TAXON = 12 CHARACTER = 48 TEXT = formerly_slight;
+	TEXT   TAXON = 13 CHARACTER = 48 TEXT = formerly_slight;
+	TEXT   TAXON = 14 CHARACTER = 48 TEXT = None_at_all;
+	TEXT   TAXON = 15 CHARACTER = 48 TEXT = formerly_slight;
+	TEXT   TAXON = 16 CHARACTER = 48 TEXT = formerly_slight;
+	TEXT   TAXON = 17 CHARACTER = 48 TEXT = formerly_slight;
+	TEXT   TAXON = 18 CHARACTER = 48 TEXT = formerly_slight;
+	TEXT   TAXON = 19 CHARACTER = 48 TEXT = formerly_slight;
+	TEXT   TAXON = 20 CHARACTER = 48 TEXT = formerly_slight;
+	TEXT   TAXON = 21 CHARACTER = 48 TEXT = formerly_slight;
+	TEXT   TAXON = 22 CHARACTER = 48 TEXT = formerly_slight;
+	TEXT   TAXON = 23 CHARACTER = 48 TEXT = formerly_slight;
+	TEXT   TAXON = 24 CHARACTER = 48 TEXT = formerly_slight;
+	TEXT   TAXON = 25 CHARACTER = 48 TEXT = formerly_slight;
+	TEXT   TAXON = 26 CHARACTER = 48 TEXT = formerly_slight;
+	TEXT   TAXON = 28 CHARACTER = 48 TEXT = formerly_slight;
+	TEXT   TAXON = 29 CHARACTER = 48 TEXT = formerly_slight;
+	TEXT   TAXON = 30 CHARACTER = 48 TEXT = formerly_slight;
+	TEXT   TAXON = 31 CHARACTER = 48 TEXT = formerly_slight;
+	TEXT   TAXON = 32 CHARACTER = 48 TEXT = formerly_slight;
+	TEXT   TAXON = 34 CHARACTER = 48 TEXT = formerly_slight;
+	TEXT   TAXON = 35 CHARACTER = 48 TEXT = formerly_slight;
+	TEXT   TAXON = 36 CHARACTER = 48 TEXT = formerly_slight;
+	TEXT   TAXON = 37 CHARACTER = 48 TEXT = formerly_slight;
+
+	TEXT   CHARACTER = 49 TEXT = This_could_be_redundant_with_adult_vs._juvenile_characters_before;
+	TEXT   TAXON = 145 CHARACTER = 49 TEXT = 'might_become_weaker_-_hard_to_say_as_it_is_always_weak.';
+
+	TEXT   CHARACTER = 52 TEXT = as_denoted_by_the_relative_distances_between_lunulae_and_those_between_GLs;
+	TEXT   TAXON = 13 CHARACTER = 52 TEXT = 'Periodically_there;_filled_in_regularly';
+
+	TEXT   CHARACTER = 53 TEXT = 'Slits_and_selenizones_are_morphogenetically_separate_features,_contra_Knight_1940';
+
+	TEXT   CHARACTER = 54 TEXT = '"Shallow"_indicates_slit_too_shallow_to_leave_impression;__"Moderate"_is_deep_enough_to_leave_obvious_impression;__"Deep"_curves_back_90�_-_180�';
+
+	TEXT   CHARACTER = 55 TEXT = 'Some_slits_grew_periodically_(at_lower_frequency_than_growth_lines),_apparently_filling_up_entirely_at_times';
+
+	TEXT   CHARACTER = 57 TEXT = Includes_shape_of_GL�s_at_apex_when_there_is_no_selenizone;
+
+	TEXT   TAXON = 14 CHARACTER = 58 TEXT = Slightly_weaker;
+	TEXT   TAXON = 110 CHARACTER = 58 TEXT = 'Was_stronger,_deep_&_concave,_throughout';
+	TEXT   TAXON = 138 CHARACTER = 58 TEXT = 'Was_stronger,_deep_&_concave,_throughout';
+
+	TEXT   CHARACTER = 61 TEXT = 'This_describes_changes_in_prominence,_not_lirum_strength';
+
+	TEXT   CHARACTER = 70 TEXT = Recode_this_so_that_0�_is_||_to_coiling_axis_at_the_top_of_the_whorl;
+	TEXT   TAXON = 110 CHARACTER = 70 TEXT = was_20�;
+	TEXT   TAXON = 138 CHARACTER = 70 TEXT = was_20�;
+	TEXT   TAXON = 145 CHARACTER = 70 TEXT = probably_about_right;
+	TEXT   TAXON = 158 CHARACTER = 70 TEXT = 'was_70�,_but_it_is_more_asymmetrical_than_that';
+
+	TEXT   TAXON = 145 CHARACTER = 72 TEXT = 'was_flat_-_but_it_is_convex_really';
+
+	TEXT   TAXON = 14 CHARACTER = 73 TEXT = Note_that_early_whorls_have_flat_profile;
+
+	TEXT   CHARACTER = 77 TEXT = RECHECK_THIS_FOR_LOXONEMATOIDS!!!!;
+
+	TEXT   CHARACTER = 83 TEXT = Change_in_dimensions_over_ontogeny;
+
+	TEXT   CHARACTER = 89 TEXT = Recode_to_give_position_between_RR_top_and_SK;
+
+	TEXT   CHARACTER = 95 TEXT = check_this_for_consistency;
+
+	TEXT   CHARACTER = 98 TEXT = 'Sutureless_shells_coded_on_shape_at_that_approximate_region_(it�s_always_oblique)';
+
+	TEXT   TAXON = 79 CHARACTER = 100 TEXT = Well_illustrated_in_Heller_1954;
+
+	TEXT   TAXON = 144 CHARACTER = 104 TEXT = all_threads_assumed_to_be_ornament;
+	TEXT   TAXON = 145 CHARACTER = 104 TEXT = all_threads_assumed_to_be_ornament;
+	TEXT   TAXON = 158 CHARACTER = 104 TEXT = all_threads_assumed_to_be_ornament;
+
+	TEXT   TAXON = 100 CHARACTER = 106 TEXT = almost_lost_in_ornament;
+
+	TEXT   CHARACTER = 111 TEXT = This_is_independent_of_fading_of_the_LRC;
+
+	TEXT   CHARACTER = 119 TEXT = 'Additional_channel_making_the_frill_a_siphon,_as_on_Euomphalopterus';
+
+	TEXT   CHARACTER = 121 TEXT = Does_frill_cover_suture_of_next_whorl?;
+
+	TEXT   CHARACTER = 123 TEXT = 'Ontogenetic_change_in_left_side,_such_as_seen_on_macluritids';
+
+	TEXT   TAXON = 138 CHARACTER = 124 TEXT = was_no_different;
+	TEXT   TAXON = 153 CHARACTER = 124 TEXT = Recode_this;
+
+	TEXT   CHARACTER = 132 TEXT = 'Refers_to_Apertural_view_(flat_on_Cylconema);_also,_move_"reflected"_here_for_somewhat_flattened.';
+
+	TEXT   CHARACTER = 133 TEXT = 'This_refers_to_curvature_front-back-front,_not_relative_to_coiling_axis_on_planar_view';
+
+	TEXT   CHARACTER = 134 TEXT = 'curved_back_toward_apex_(i.e.,_"into"_the_shell)';
+
+	TEXT   CHARACTER = 139 TEXT = 'Simple,_single_strong_lirum_in_middle_of_columella';
+
+	TEXT   CHARACTER = 141 TEXT = Includeds_a_callous;
+	TEXT   TAXON = 113 CHARACTER = 141 TEXT = Double_check_this;
+
+	TEXT   CHARACTER = 145 TEXT = 'Added_for_Orecopia_applanatum_3/18/03';
+
+	TEXT   TAXON = 6 CHARACTER = 147 TEXT = might_simply_be_absent;
+	TEXT   TAXON = 14 CHARACTER = 147 TEXT = 'Clearly_thins_greatly_on_pl._13:1-2';
+
+	TEXT   CHARACTER = 149 TEXT = State_3_is_redundant_with_funicle;
+
+	TEXT   CHARACTER = 150 TEXT = 'I_don''t_think_this_is_real_anymore';
+
+	TEXT   CHARACTER = 152 TEXT = 'Umbilicus_filled_by_inductura,_not_columella;_should_be_united_with_chars146-7';
+
+	TEXT   CHARACTER = 153 TEXT = 'Where_columella_becomes_contiguous_with_prior_whorl;__not_a_callous';
+
+	TEXT   CHARACTER = 156 TEXT = 'Don''t_credit_inclination_due_to_projected_base';
+
+	TEXT   TAXON = 14 CHARACTER = 164 TEXT = Double_check_this;
+
+	TEXT   CHARACTER = 167 TEXT = This_could_be_an_artifact_of_aperture_inclination;
+
+	TEXT   CHARACTER = 168 TEXT = '"Weak"_means_a_slight_undulation;__"Moderate"_means_a_very_shallow_U;__"Strong"_means_a_U_with_depth_~1/3_width';
+
+	TEXT   CHARACTER = 169 TEXT = 'Don''t_confuse_this_with_differential_contraction_of_right_whorl;_also,_this_really_is_rotation_of_the_whole_aperture';
+	TEXT   TAXON = 145 CHARACTER = 169 TEXT = associated_with_expansion_of_whorl;
+
+	TEXT   TAXON = 145 CHARACTER = 172 TEXT = It_does_get_rounder;
+
+	TEXT   CHARACTER = 173 TEXT = 'Describe_how_whole_columella_curves_-_if_straight_and_no_umbilicus,_then_maxium.__If_round_with_umbilicus_bn._middle_and_base,_then_very_high_(etc.)';
+	TEXT   TAXON = 145 CHARACTER = 173 TEXT = 'D=15/25';
+
+	TEXT   CHARACTER = 174 TEXT = 'Relabeled_continuous_change_10/20/00_and_reflects_changes_in_degree_of_curvature,_not_direction';
+
+	TEXT   CHARACTER = 175 TEXT = 'Added_10/20/00_because_of_Scoliostoma';
+
+	TEXT   CHARACTER = 176 TEXT = 'Added_10/20/00_because_of_Scoliostoma';
+
+	TEXT   CHARACTER = 178 TEXT = '=_Mathematical_torsion;';
+
+	TEXT   CHARACTER = 179 TEXT = '"Punctuated"_is_misidentified_by_Bandel_(1992)_as_heterostrophy;__"Gradual"_shows_the_suture_"rising"_or_"sinking;_also,_Make_sure_that_this_character_is_coded_properly_for_"isometric"_taxa"';
+	TEXT   TAXON = 117 CHARACTER = 179 TEXT = late_only;
+	TEXT   TAXON = 133 CHARACTER = 179 TEXT = late_only;
+
+	TEXT   TAXON = 133 CHARACTER = 181 TEXT = was_continuous;
+
+	TEXT   CHARACTER = 182 TEXT = Increasing_T_can_simply_lower_the_suture_or_it_can_drastically_change_the_logarithmic_spiral;
+	TEXT   TAXON = 133 CHARACTER = 182 TEXT = was_lowers_suture;
+
+	TEXT   CHARACTER = 183 TEXT = 'This_means_a_shift_if_�T_-_if_it_already_is_increasing_(or_decreasing),_then_another_marked_change';
+
+	TEXT   CHARACTER = 186 TEXT = �_la_Anarconcha;
+
+	TEXT   TAXON = 145 CHARACTER = 187 TEXT = 'only_earliest_whorls,_though';
+
+	TEXT   TAXON = 145 CHARACTER = 188 TEXT = 'previously_absent,_but_basal_whorl_is_on_base!__11_threads_sl._stronger_than_selenizone_(weak_relief),_width_2X_space_bn.';
+
+	TEXT   TAXON = 100 CHARACTER = 189 TEXT = '5_threads_of_increasing_thickness;_wide_but_weak';
+
+	TEXT   TAXON = 145 CHARACTER = 193 TEXT = '33-37_weak_threads,_about_as_wide_as_space_bn_and_very_weak_relief.__Not_even_visible_on_one_specimen.';
+
+	TEXT   TAXON = 100 CHARACTER = 194 TEXT = two_wide_weak_threads;
+
+	TEXT   TAXON = 9 CHARACTER = 199 TEXT = Is_this_true?;
+
+	TEXT   TAXON = 100 CHARACTER = 200 TEXT = 'two_fine_threads_bn._RRC_&_suture;_another_5_bn._thread_&_SK';
+
+	TEXT   CHARACTER = 212 TEXT = 'Separated_simply_into_those_with_distinct_protoconch_morphs_and_those_without;__this_should_be_modified';
+	TEXT   TAXON = 9 CHARACTER = 212 TEXT = From_Dzik_1982;
+	TEXT   TAXON = 20 CHARACTER = 212 TEXT = 'Based_on_SEM''s_with_Roberto';
+	TEXT   TAXON = 28 CHARACTER = 212 TEXT = Visible_on_Type_Material;
+
+	TEXT   CHARACTER = 214 TEXT = Based_on_Shell_Volume;
+
+	TEXT   CHARACTER = 216 TEXT = '"Small"_denotes_microscopic_(<_0.5_mm);__"large"_reserved_for_those_with_clearly_visible_protoconchs';
+
+	TEXT   CHARACTER = 219 TEXT = See_Linsley_1968;
+
+	TEXT   CHARACTER = 220 TEXT = 'See_Linsley_1968_-_split_3/17/03';
+
+	TEXT   TAXON = 98 CHARACTER = 221 TEXT = 'Based_on_Rohr_&_Measures_2001_(for_M._crenulata)';
+
+	TEXT   TAXON = 145 CHARACTER = 224 TEXT = 'at_base_of_inner_margin;__muscle_scar_oblique_to_IM_(45�)at_the_top_of_IM';
+
+END;
+
+BEGIN MacClade;
+	Version 4.0 87;
+	LastModified -845306204;
+	FileSettings treewindow '1' '1' '225' '0';
+	Singles 110;
+	Editor 00011011111111100100010010 '0' '100' Gadget '12' '268' '1' all;
+	EditorPosition '234' '11' '835' '1017';
+	TreeWindowPosition '46' '6' '1131' '1870';
+	ListWindow Characters open Gadget '12' '51' '1189' '1018' '622' 000;
+	ListWindow Taxa open Gadget '12' '50' '25' '1086' '450' 100000000;
+	ListWindow Trees open Gadget '12' '50' '10' '440' '457';
+	ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '185' '234';
+	ListWindow ExSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow TaxSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '185' '234';
+	ChartWindowPosition '50' '30' '688' '964';
+	StateNamesSymbols open Gadget '12' '9' '50' '30' '186' '463';
+	WindowOrder Tree List Characters List Taxa List Trees States;
+	OtherSymbols & / 00 ? -;
+	Correlation '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile '2';
+	ExportHTML _ MOSS '100' 110000;
+	PrettyPrint 10;
+	CharLegendPosition '1004' '1775' '154' '85';
+	TreeLegendPosition '1070' '1677' '88' '93';
+	EditorToolsPosition '795' '1169' '115' '165';
+	TreeToolsPosition '607' '5' '126' '138';
+	TreeWindowProgram 10;
+	TreeWindow 0000;
+	Continuous '0' '3' 1;
+	Calculations 1000101;
+	SummaryMode '0' '0' 0;
+	Charts Arial '12' ( normal ) 0010;
+	NexusOptions '0' '0' '50' 001011001;
+	TipLabel '1';
+	TreeFont Gadget '10' ( normal );
+	TreeShape 1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax '0';
+	TraceAllChangesDisplay '1' 1;
+	BarsOnBranchesDisplay '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation '3' 1;
+	PrintTree 10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Gadget '9' ( normal ) Gadget '10' ( normal ) Gadget '9' ( normal ) Gadget '9' ( normal ) Gadget '9' ( bold ) Gadget '9' ( normal ) Gadget '9' ( normal ) '83' '115' '13' '45' '116' '148' '13' '45' '149' '181' '13' '45' '182' '214' '13' '45' '209' '47' '0' '0' '516' '456' '612' '35' '678' '35' '678' '288' '24' '35' '1' '1' '1' '1' '12' '0' '-39' '4' '-40' '0' '1' '2' '1' '8' '30' '30' '0' '2' 0100111000000001010100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 00;
+	TreeTools '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools '1';
+
+END;
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 232;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1606864877267;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 1428933559196946389;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 2086388012080268285;
+			mqVersion 361;
+			checksumv 0 3 351469267 null  getNumChars 232 numChars 232 getNumTaxa 178 numTaxa 178   short false   bits 2305843009280802815   states 67108863   sumSquaresStatesOnly 6.9468102414913744E16 sumSquares -9.1539039344402022E18 longCompressibleToShort false usingShortMatrix false   NumFiles 1 NumMatrices 1 errorReportedDuringRun;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1294 773;
+			setLocation 8 23;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			showTaxa #1428933559196946389 #mesquite.lists.TaxonList.TaxonList;
+			tell It;
+				setTaxa #1428933559196946389;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.TaxonListCurrPartition.TaxonListCurrPartition;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1194 701;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.ColorTaxon.ColorTaxon;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.lists.TaxonListAnnotPanel.TaxonListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #2086388012080268285 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1194 701;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 12;
+					getToolPalette;
+					tell It;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

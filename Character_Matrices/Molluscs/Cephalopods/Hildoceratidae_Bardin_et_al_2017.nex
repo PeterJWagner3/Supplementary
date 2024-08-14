@@ -1,0 +1,275 @@
+#NEXUS
+[written Thu Nov 17 22:37:44 CST 2022 by Mesquite  version 3.70 (build 940) at EAS-F094C0.local/127.0.0.1]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=105;
+	TAXLABELS
+		Asteroceras_obtusum Arieticeras_algovianum Arieticeras_amalthei Arieticeras_bertrandi Arieticeras_delcampanai Arieticeras_micrasterias Bouleiceras_nitescens Canavaria_canavarii Cleviceras_elegans Cleviceras_exaratum Canavaria_finitima Canavaria_gregalis Canavaria_haugi Canavaria_naxensis Canavaria_peloritana Canavaria_zancleana Emaciaticeras_archimedis Emaciaticeras_densiradiatum Emaciaticeras_emaciatum Emaciaticeras_falculum Emaciaticeras_gracile Emaciaticeras_imitator Emaciaticeras_levidorsatum Emaciaticeras_lottii Emaciaticeras_timaei Emaciaticeras_villae Fuciniceras_ambiguum Fuciniceras_brevispiratum Fuciniceras_brunvicense Fuciniceras_costicillatum Fuciniceras_crassiplicatum Fuciniceras_dilectum Fieldingiceras_fieldingi Fontanelliceras_fontanellense Fuciniceras_isseli Fuciniceras_lavinianum Fuciniceras_paradoxus Fuciniceras_portisi Frechiella_subcarinata Fuciniceras_volubile Fuciniceras_pantanelli Harpoceras_alternatus Hildoceras_bifrons Harpoceras_falciferum Hildoceras_laticosta Hildoceras_lusitanicum Hildaites_murleyi Hildoceras_semipolitum Harpoceras_serpentinum Harpoceras_strangewaysi Hildaites_subserpentinum Kohaticeras_razai Kohaticeras_rehmani Leptaleoceras_accuratum Lioceratoides_aradasi Lioceratoides_exapatus Leptaleoceras_guerrerense Leukadiella_helenae Leptaleoceras_insigne Leukadiella_ionica Leukadiella_morettinii Lioceratoides_naumachensis Leptaleoceras_ochocoense Lioceratoides_serotinus Leptaleoceras_ugdulenai Merlaites_clausus Matteiceras_geometricum Merlaites_gradatus Mercaticeras_mercati Matteiceras_nitescens Neolioceratoides_manzonii Nejdia_pseudogruneri Neolioceratoides_schopeni Orthildaites_douvillei Oxyparoniceras_oseuvicum Oxyparoniceras_otelemachi Ovaticeras_ovatum Protogrammoceras_argutus Paroniceras_helveticum Paroniceras_sternale Protogrammoceras_bassanii Protogrammoceras_bonarelii Protogrammoceras_celebratum Protogrammoceras_decoratum Protogrammoceras_diornatum Phymatoceras_elegans Protogrammoceras_ionicum Protogrammoceras_isselioides Protogrammoceras_kurrianum Pseudolioceras_boulbiense Pseudolioceras_lythense Protogrammoceras_marianii Protogrammoceras_normanianuum Protogrammoceras_occidentale Polyplectus_discoides Protogrammoceras_paltum Protogrammoceras_pejrei Praemercaticeras_forzanense Pseudomercaticeras_bayani Protogrammoceras_veliferum Renziceras_nausikaae Tiltoniceras_acutum Tiltoniceras_antiquum Tauromeniceras_elisa Tauromeniceras_nerina 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=35;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3";
+	MATRIX
+	Asteroceras_obtusum            0011?00000(0 1)101100101100000000000000
+	Arieticeras_algovianum         002(2 3)?000101101100101000010000000000
+	Arieticeras_amalthei           0021?000100??1100101100010000000000
+	Arieticeras_bertrandi          0022?000100??1100101100010000000000
+	Arieticeras_delcampanai        0022?000100??1100101100010000000000
+	Arieticeras_micrasterias       0033?000100??1100101100010000000000
+	Bouleiceras_nitescens          00320020100??1100101100000000011001
+	Canavaria_canavarii            002(1 2)?000101101100101100010000000000
+	Cleviceras_elegans             0211?000001(1 2)11200301101001000000100
+	Cleviceras_exaratum            0211?000001011200301101001000000100
+	Canavaria_finitima             0011?020101101100101000010000011000
+	Canavaria_gregalis             0023?020101101100101000000000011000
+	Canavaria_haugi                0033?020100??1100101000010000011000
+	Canavaria_naxensis             00(2 3)(2 3)?020100??1100101000010000011000
+	Canavaria_peloritana           0033?020100??1100101000010000010000
+	Canavaria_zancleana            0033?020101101100101000010000010000
+	Emaciaticeras_archimedis       01(2 3)3?000101101100101000010000000000
+	Emaciaticeras_densiradiatum    00???000100??11001010000?0000000000
+	Emaciaticeras_emaciatum        0033?000101101100101000010000000000
+	Emaciaticeras_falculum         0023?000101101100101000010000000000
+	Emaciaticeras_gracile          0022?000101101100101000010000000000
+	Emaciaticeras_imitator         0033?000101101100101100010000000000
+	Emaciaticeras_levidorsatum     00(1 2 3)3?000100??1100101000010000000000
+	Emaciaticeras_lottii           00(1 2 3)3?000101101100101000010000000000
+	Emaciaticeras_timaei           0033?000100??1100101000010000000000
+	Emaciaticeras_villae           0033?000101101100101100010000000000
+	Fuciniceras_ambiguum           0033?000100??1100211100000100000000
+	Fuciniceras_brevispiratum      0023?000100??1101111100000100000000
+	Fuciniceras_brunvicense        0011?000?01011200201100010000000000
+	Fuciniceras_costicillatum      0133?000100??1201211100000100000000
+	Fuciniceras_crassiplicatum     0033?000100??1101201100000?00000000
+	Fuciniceras_dilectum           0122?000000??1100?01100000100000000
+	Fieldingiceras_fieldingi       0022?0000011011001010000?0000000000
+	Fontanelliceras_fontanellense  0033?000?00??1100101100010000000000
+	Fuciniceras_isseli             01(1 2)(1 2)?000101011101211100000?00000000
+	Fuciniceras_lavinianum         0123?000100??1101211100000100000000
+	Fuciniceras_paradoxus          0021?000100??1101211100000100000000
+	Fuciniceras_portisi            0023?000?00??1100111100000?00000000
+	Frechiella_subcarinata         21(0 3)(0 3)20101310011000001000?0000001001
+	Fuciniceras_volubile           0112?000000??1100101100000100000000
+	Fuciniceras_pantanelli         0112?000000??1100101100000100000000
+	Harpoceras_alternatus          1131?000001012101301101001001000?00
+	Hildoceras_bifrons             0132?300101010101101100000000100000
+	Harpoceras_falciferum          2231?000001012201301101001001000100
+	Hildoceras_laticosta           0132?100101010011101100000000?00000
+	Hildoceras_lusitanicum         0132?200101010001101100000000100000
+	Hildaites_murleyi              0132?000101011001101200000000100010
+	Hildoceras_semipolitum         0132?200101010001101100000000100000
+	Harpoceras_serpentinum         1131?000001011201301101001001000100
+	Harpoceras_strangewaysi        1131?000001011201301101001001000100
+	Hildaites_subserpentinum       0132?000101011001101100000000100000
+	Kohaticeras_razai              01002010120??110010110?1?0000011001
+	Kohaticeras_rehmani            01002010120??110010110?1?0000011001
+	Leptaleoceras_accuratum        001(1 2 3)?000101101100101100010000000000
+	Lioceratoides_aradasi          0111?000001011200301101001001000000
+	Lioceratoides_exapatus         0111?000001011201301101001001000000
+	Leptaleoceras_guerrerense      001(1 2 3)?0001011010001011000?0000000000
+	Leukadiella_helenae            01332010120?01100101100000000001001
+	Leptaleoceras_insigne          0011?000100??1100101100010000000000
+	Leukadiella_ionica             013320101(0 2)1101100101100000000001001
+	Leukadiella_morettinii         01332010?20?011001011000?0000001001
+	Lioceratoides_naumachensis     0111?000?0101120130110?0?100?000000
+	Leptaleoceras_ochocoense       0011?000(0 1)01101100101100010000000000
+	Lioceratoides_serotinus        1111?00000101110130110100100(0 1)000000
+	Leptaleoceras_ugdulenai        0111?000100??1200101100010000000000
+	Merlaites_clausus              0031?03010111100?101100000010010000
+	Matteiceras_geometricum        0111?000000??1100101100000000000000
+	Merlaites_gradatus             0131?03010111100?101100000010010000
+	Mercaticeras_mercati           0132?00010111100?101200000000000000
+	Matteiceras_nitescens          0111?000000??1100101100000000000000
+	Neolioceratoides_manzonii      0132?000101011001101200000000000000
+	Nejdia_pseudogruneri           0111?00100101000000110100?00(0 1)000?0?
+	Neolioceratoides_schopeni      0133?000101011101101200000000000000
+	Orthildaites_douvillei         0131?00010?010111101100000000?00000
+	Oxyparoniceras_oseuvicum       2100?0000110000000001000?0000000001
+	Oxyparoniceras_otelemachi      2100?0000110000000001000?0000000001
+	Ovaticeras_ovatum              0111?00100101100010110100100(0 1)000100
+	Protogrammoceras_argutus       0111?00000101?200301111000001000000
+	Paroniceras_helveticum         2100?0000310000000001000?0000000001
+	Paroniceras_sternale           2100?000(0 1)310000000001000?0000000001
+	Protogrammoceras_bassanii      0111?000001011201301101000000000000
+	Protogrammoceras_bonarelii     01(2 3)(2 3)?000100??1101201100000000000000
+	Protogrammoceras_celebratum    0111?000000??1101201100000000000000
+	Protogrammoceras_decoratum     0011?00000101?200301111000000000000
+	Protogrammoceras_diornatum     0111?000100??1101201100000100000000
+	Phymatoceras_elegans           0132?030?00??1001101?000?0010010010
+	Protogrammoceras_ionicum       0011?000000??1100101100000000000000
+	Protogrammoceras_isselioides   011(1 2 3)?000101011200301100000000000000
+	Protogrammoceras_kurrianum     0111?000001011200301111000000000000
+	Pseudolioceras_boulbiense      1211?00000101?000201101001000000100
+	Pseudolioceras_lythense        1211?000001011000201101001000000100
+	Protogrammoceras_marianii      0111?000000??1100101100000100000000
+	Protogrammoceras_normanianuum  0111?000000??1101101100000100000000
+	Protogrammoceras_occidentale   0111?000000??1100101100000100000000
+	Polyplectus_discoides          1211?000001011200301101000000000100
+	Protogrammoceras_paltum        0111?000001011200301101001000000000
+	Protogrammoceras_pejrei        0011?000000???100101100000000000000
+	Praemercaticeras_forzanense    0132?000101??1100101100000000000000
+	Pseudomercaticeras_bayani      0133?03010111100?101100000010010000
+	Protogrammoceras_veliferum     0011?00000101?200301111000000000000
+	Renziceras_nausikaae           01320010120??1100101100000000001001
+	Tiltoniceras_acutum            0111?001001011000(0 3)0110?00?000000100
+	Tiltoniceras_antiquum          0111?001001011000(0 3)0110?00???0000100
+	Tauromeniceras_elisa           00231020100??1100101000000000011000
+	Tauromeniceras_nerina          00231020100??1100101000000100011000
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	OPTIONS DEFTYPE = unord PolyTcount = MINSTEPS;
+	TYPESET * UNTITLED   =  unord:  1- 35;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 35;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1668746264833;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 575788833655422022;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 1694200718563148818;
+			mqVersion 370;
+			checksumv 0 3 749876233 null  getNumChars 35 numChars 35 getNumTaxa 105 numTaxa 105   short true   bits 15   states 15   sumSquaresStatesOnly 15793.0 sumSquares 15793.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1 errorReportedDuringRun;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 925 637;
+			setLocation 8 38;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #1694200718563148818 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 216;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 825 565;
+					setLocation 8 38;
+					setFont Gadget;
+					setFontSize 12;
+					getToolPalette;
+					tell It;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleColorOnlyTaxonNames off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

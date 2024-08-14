@@ -1,0 +1,174 @@
+#NEXUS
+[MacClade 4.08 registered to Peter Wagner, Field Museum of Natural History]
+
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=27 NCHAR=18;
+
+[!Nützel, A., D. H. Erwin, & R. H. Mapes. 2000. Identity and phylogeny of the Late Paleozoic Subulitoidea (Gastropoda). Journal of Paleontology 74:575 - 598.
+
+Stratigraphic dates added from text and yours' truly....]
+	FORMAT SYMBOLS= " 0 1 2 3 4 5" MISSING=? GAP=- ;
+	CHARSTATELABELS
+		1  First_Whorl / Tightly_Coiled Open_Coiled,
+  2  Protoconch_Orientation / Orthostrophic Heterostrophic,
+  3  Protoconch_Whorls / Zero_to_Two Three_plus,
+  4  Apex_Shape / Blunt Acute Heliciform,
+  5  Protoconch_Ornament / Smooth Non_Collabral Collabral Smooth_with_Spiral,
+  6  Columellar_Folds / Distinct Indistinct Absent,
+  7  Fold_in_the_Outer_Lip / Present Absent,
+  8  Shape / Slender_Fusiform Fusiform Globose Asymmetrical 'High-Spired',
+  9  Teleoconch_Ornament / Smooth Axial_Ribs Spiral_Lirae Spiral_Furrows Pitted Spiral_Band_near_Suture,
+  10  'Subsutural Shoulder / Ramp' / Absent Present,
+  11  Growth_Lines / Straight_to_slightly_Opisthocyr Prosocyrt Sinuous,
+  12  Size / Less_than_10_mm Greater_than_10_mm,
+  13  Aperture_Width / Same_as_Height Elongate,
+  14  Anterior_Notch / Present Absent,
+  15  Sutures / Distinct_and_Impressed 'Indistinct,_Adpressed',
+  16  Whorl_Face_of_spire_whorls / Flat Gently_Inflated Strongly_Inflated,
+  17  Parietal_Inductura / Present Absent_or_Thin,
+  18  Base / Acute Broad
+		;
+
+MATRIX
+[                             10        20]
+[                             .         . ]
+
+Leptoptygma          ?????1110001000211
+Labridens            ?????0010001100210
+Procerithiopsis      ?????0141000000111
+Ischnoptygma         ?????01130?1000111
+Oxyspira             ?????2140000010(12)11
+Balbiniconcha        ?????01110010002?1
+Auriptygma           ?????11100010?0211
+Ianthinopsis         ?????11220?1010211
+Acteonina            ?????21121?0110010
+Bulimorpha           00?101110000100210
+Globozyga            ?0?1?1110000000211
+Soleniscus           001100110001100(12)10
+Strobeus             0011001(12)0001(01)00201
+Cylindritopsis       0011001(12)0000100201
+Meekospira           000002140001010(12)11
+Girtyspira           000002110110110111
+Ceraunocochlis       000002130000101010
+Globobulimorpha      0011011(12)1000000211
+Imogloba             101112120001010211
+'"Hemizyga"'         ?01112111000010211
+Pseurdozgyopleura    001122141000000000
+Orthonema            001232142020010011
+Cerithioides         001232140020010111
+Subulites            ?????110(05)001101110
+Fusispira            ?????111(024)001100211
+Cyrtospira           ?????1130001100210
+Hormotoma            ?????2110021010211
+;
+END;
+
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MAXSTEPS ;
+	TYPESET * UNTITLED  = unord: 1-18;
+	WTSET * UNTITLED  = 1: 1-18;
+END;
+
+
+BEGIN TREES;
+
+	TRANSLATE
+		1	Leptoptygma,
+		2	Labridens,
+		3	Procerithiopsis,
+		4	Ischnoptygma,
+		5	Oxyspira,
+		6	Balbiniconcha,
+		7	Auriptygma,
+		8	Ianthinopsis,
+		9	Acteonina,
+		10	Bulimorpha,
+		11	Globozyga,
+		12	Soleniscus,
+		13	Strobeus,
+		14	Cylindritopsis,
+		15	Meekospira,
+		16	Girtyspira,
+		17	Ceraunocochlis,
+		18	Globobulimorpha,
+		19	Imogloba,
+		20	'"Hemizyga"',
+		21	Pseurdozgyopleura,
+		22	Orthonema,
+		23	Cerithioides,
+		24	Subulites,
+		25	Fusispira,
+		26	Cyrtospira,
+		27	Hormotoma
+	;
+	TREE  * UNTITLED =  [&R] (7,(1,(13,(6,((5,(21,((22,23),(15,((9,17),16))))),(11,((14,(10,(2,12))),(18,((4,3),((19,8),20))))))))));
+
+END;
+
+
+BEGIN MacClade;
+	Version 4.0  87;
+	LastModified -845360967;
+	FileSettings treewindow  '1' '1' '19' '1';
+	Singles 010;
+	Editor 00011001111111100100010010 '0' '24' Gadget '12' '162' '1' all;
+	EditorPosition  '459' '363' '546' '1123';
+	TreeWindowPosition  '44' '44' '999' '1456';
+	ListWindow Characters closed Gadget '12' '268' '67' '253' '490' 000;
+	ListWindow Taxa closed Gadget '12' '50' '10' '491' '324' 100000000;
+	ListWindow Trees closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow ExSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow TaxSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490' ;
+	TextWindow AboutFile  '130' '105' '280' '445' Gadget '12' (normal) 1 ;
+	ChartWindowPosition  '52' '30' '818' '1380';
+	StateNamesSymbols closed Gadget '12' '10' '50' '30' '203' '220';
+	WindowOrder  Tree Text AboutFile;
+	OtherSymbols &/ 00 ?-;
+	Correlation  '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile  '2';
+	ExportHTML _ MOSS  '100' 110000;
+	PrettyPrint 10;
+	CharLegendPosition  '925' '1399' '99' '85';
+	TreeLegendPosition  '960' '1301' '64' '93';
+	EditorToolsPosition  '771' '46' '115' '165';
+	TreeToolsPosition  '716' '9' '126' '138';
+	TreeWindowProgram 10;
+	TreeWindow 0000;
+	Continuous  '0' '3' 1;
+	Calculations 0000001;
+	SummaryMode  '0' '0' 0;
+	Charts  Arial '12' (normal) 0010;
+	NexusOptions  '0' '0' '50' 001011001;
+	TipLabel  '1';
+	TreeFont  Gadget '12' (normal);
+	TreeShape  1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors  '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth  '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax  '0';
+	TraceAllChangesDisplay  '1' 1;
+	BarsOnBranchesDisplay  '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation  '3' 1;
+	PrintTree  10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Gadget '9' (normal) Gadget '10' (normal) Gadget '9' (normal) Gadget '9' (normal) Gadget '9' (bold ) Gadget '9' (normal) Gadget '9' (normal) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '32767' '-1' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 00;
+	TreeTools  '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools  '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign  '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools  '1';
+END;

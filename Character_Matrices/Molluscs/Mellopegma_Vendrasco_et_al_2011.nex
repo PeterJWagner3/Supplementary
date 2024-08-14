@@ -1,0 +1,151 @@
+#NEXUS
+[MacClade 4.08 registered to Peter Wagner, Field Museum of Natural History]
+
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=12 NCHAR=21;
+
+[!Vendrasco, M. J., A. V. Kouchinsky, S. M. Porter, and C. Z. Fernandez.  2011.  Phylogeny and escalation in Mellopegma and other Cambrian molluscs.  Palaeontologia Electronica 14:11A:1-44.]
+	FORMAT SYMBOLS= " 0 1 2 3 4 5 6" MISSING=? GAP=- ;
+	CHARSTATELABELS
+		1  Pegma / Absent Present,
+  2  Pegma_Development / Weak Strong Very_Strong,
+  3  Divided_shell / Absent Present,
+  4  Degree_of_coiling / None '<1_coil' '1+_coils',
+  5  Raised_aperture_lip / Absent 'Raised_lip_/_siphon',
+  6  Internal_shell_ridges / Absent_or_faint Present,
+  7  Curved_ventral_margin / Absent Present,
+  8  Number_of_shell_plates / One Two,
+  9  Lateral_compression / Absent Present,
+  10  'length:height' / '<1.5' �1.5,
+  11  Prismatic_layer / Absent Present,
+  12  Inner_laminar_layer / Absent Present,
+  13  Inner_calcite_layer / Absent Present,
+  14  Shell_pores / Absent Present,
+  15  'Spiny layer (lamello-fibrillar)' / Absent Present,
+  16  Stepwise_inner_layer / Absent Present,
+  17  'Calcitic semi-nacre' / Absent Present,
+  18  Prismatic_best_preserved_near_apex / Absent Present,
+  19  Loss_of_coiling / Absent 'Present_(creating_straight_margins)',
+  20  Aperture_Constriction / Absent Pinched_near_Inner_Margin,
+  21  Aperture_Shape / Anterior_Width_Greatest Posterior_Width_Greatest
+		;
+
+MATRIX
+[                                     10        20  ]
+[                                     .         .   ]
+
+Oelandiella_korobkovi        0-0101000110001001001
+Watsonella_crosbyi           101001111011?01101001
+Anabarella_plana             100101101011?01101001
+Pojetaia_runnegari           0-1001111011?00100001
+Fordilla_troyensis           0-1001111011?00100001
+Mellopegma_uslonicum         100011101111110010011
+Mellopegma_georginense       100011101111110010011
+Acanthotheca_junior          1100101010?1100010001
+Mellopegma_simesi            1100111010?1110010011
+Tuarangia_gravgaerdensis     ??10101010?1100000100
+Pseudomyona_queenslandica    ??10101010?1100000100
+Ribeiria_huckitta            1210101011????????100
+;
+END;
+
+
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+	TYPESET * UNTITLED  = unord: 1-21;
+	WTSET * UNTITLED  = 1: 1-21;
+END;
+
+
+BEGIN TREES;
+
+	TRANSLATE
+		1	Oelandiella_korobkovi,
+		2	Watsonella_crosbyi,
+		3	Anabarella_plana,
+		4	Pojetaia_runnegari,
+		5	Fordilla_troyensis,
+		6	Mellopegma_uslonicum,
+		7	Mellopegma_georginense,
+		8	Acanthotheca_junior,
+		9	Mellopegma_simesi,
+		10	Tuarangia_gravgaerdensis,
+		11	Pseudomyona_queenslandica,
+		12	Ribeiria_huckitta
+	;
+	TREE  * UNTITLED =  [&R] (1,(3,(2,((4,5),((12,(10,11)),(8,(9,(6,7))))))));
+
+END;
+
+
+BEGIN NOTES;
+
+	TEXT  TAXON=5 CHARACTER=2 TEXT= was_?;
+	TEXT  TAXON=4 CHARACTER=2 TEXT= was_?;
+	TEXT  TAXON=1 CHARACTER=2 TEXT= was_?;
+END;
+
+
+BEGIN MacClade;
+	Version 4.0  87;
+	LastModified -809722397;
+	FileSettings editor  '1' '1' '22' '1';
+	Singles 110;
+	Editor 00011011111111100100010010 '0' '120' Gadget '12' '190' '1' all;
+	EditorPosition  '44' '6' '308' '1799';
+	TreeWindowPosition  '46' '6' '985' '1630';
+	ListWindow Characters open Gadget '12' '95' '161' '253' '489' 000;
+	ListWindow Taxa open Gadget '12' '50' '25' '253' '357' 100000000;
+	ListWindow Trees closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow ExSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow TaxSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490' ;
+	ChartWindowPosition  '52' '30' '968' '1620';
+	StateNamesSymbols closed Gadget '12' '7' '505' '1417' '152' '220';
+	WindowOrder  Data List Taxa List Characters;
+	OtherSymbols &/ 00 ?-;
+	Correlation  '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile  '2';
+	ExportHTML _ MOSS  '100' 110000;
+	PrettyPrint 10;
+	EditorToolsPosition  '771' '46' '115' '165';
+	TreeToolsPosition  '866' '9' '126' '138';
+	TreeWindowProgram 10;
+	TreeWindow 0000;
+	Continuous  '0' '3' 1;
+	Calculations 0000001;
+	SummaryMode  '0' '0' 0;
+	Charts  Arial '12' (normal) 0010;
+	NexusOptions  '0' '0' '50' 001011001;
+	TipLabel  '1';
+	TreeFont  Gadget '12' (normal);
+	TreeShape  1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors  '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth  '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax  '0';
+	TraceAllChangesDisplay  '1' 1;
+	BarsOnBranchesDisplay  '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation  '3' 1;
+	PrintTree  10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Arial '12' (normal) Geneva '10' (normal) Arial '12' (normal) Arial '12' (normal) Arial '12' (bold ) Arial '12' (normal) Arial '12' (normal) '83' '115' '13' '45' '116' '148' '13' '45' '149' '181' '13' '45' '182' '214' '13' '45' '211' '47' '0' '0' '624' '456' '636' '35' '678' '35' '678' '288' '24' '35' '1' '1' '1' '1' '0' '4' '-39' '4' '-40' '0' '1' '2' '1' '8' '40' '40' '0' '2' 1000111000000001000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 00;
+	TreeTools  '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools  '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign  '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools  '1';
+END;

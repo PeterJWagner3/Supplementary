@@ -1,0 +1,177 @@
+#NEXUS
+[MacClade 4.08 registered to Peter Wagner, Field Museum of Natural History]
+
+
+BEGIN MacCladeStart;
+	Extended;
+END;
+
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=24 NCHAR=24;
+
+[!Mitchell, S. F.  2013.  Revision of the Antillocaprinidae Mac Gillavry (Hippuritida, Bivalvia) and their position within the Caprinoidea d�Orbigny.  Geobios 46:423-446.]
+	FORMAT SYMBOLS= " 0 1 2 3 4 5 6 7 8 9" MISSING=? GAP=- ;
+	CHARSTATELABELS
+		6  Ligament
+		;
+
+MATRIX
+[                                10        20     ]
+[                                .         .      ]
+
+Monopleura              000000001000000000000000
+Retha                   010000110000000000000000
+Amphitriscoelus         010000110000000012000000
+Coalcomana              010000110000000012100000
+Caprinuloidea           010000110000000012111001
+Kimbleia                010000110000000012110001
+Neokimbleia             010001110000000012110001
+Texicaprina             010000230000000012111001
+Youngicaprina           010001230000000012111001
+Curtocaprina            010101110000010012111001
+Icthyosarcolites        010101111001010012111001
+Pachytraga              010000310000000000000001
+Caprina                 010000310000000011000001
+Antillocaprina          010001001100000012111101
+Rotacaprina             010001001100100012111101
+Clinocaprina            010001001100100012111101
+Eosarcolites            011101221010000012111101
+Titanosarcolites        111111231010000012111101
+Caenosarcolites         111111221010000012111111
+Antillosarcolites       110101241100001012111101
+Parantillosarcolites    110101241100001012111101
+Alencasteria            110111241100001012111101
+Stellacaprina           010101241100001112111111
+Parasarcolites          110111241100001112111111
+;
+END;
+
+
+BEGIN MacCladeStart;
+
+
+	Extended;
+END;
+
+
+BEGIN SETS;
+	CHARSET  General_Morphology  =  1-5;
+	CHARSET  Ligament  =  6;
+	CHARSET  Myophores  =  7-8;
+	CHARSET  Teeth  =  9-14;
+	CHARSET  Additional_Toothlets  =  15-16;
+	CHARSET  Pallial_Glands  =  17-24;
+END;
+
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+	TYPESET * UNTITLED  = unord: 1-24;
+END;
+
+
+BEGIN TREES;
+
+	TRANSLATE
+		1	Monopleura,
+		2	Retha,
+		3	Amphitriscoelus,
+		4	Coalcomana,
+		5	Caprinuloidea,
+		6	Kimbleia,
+		7	Neokimbleia,
+		8	Texicaprina,
+		9	Youngicaprina,
+		10	Curtocaprina,
+		11	Icthyosarcolites,
+		12	Pachytraga,
+		13	Caprina,
+		14	Antillocaprina,
+		15	Rotacaprina,
+		16	Clinocaprina,
+		17	Eosarcolites,
+		18	Titanosarcolites,
+		19	Caenosarcolites,
+		20	Antillosarcolites,
+		21	Parantillosarcolites,
+		22	Alencasteria,
+		23	Stellacaprina,
+		24	Parasarcolites
+	;
+	TREE Default_ladder =  [&R] (1,(2,(3,(4,(5,(6,(7,(8,(9,(10,(11,(12,(13,(14,(15,(16,(17,(18,(19,(20,(21,(22,(23,24)))))))))))))))))))))));
+	TREE  * UNTITLED =  [&R] (((((((((((((((24,23),22),21),20),((18,19),17)),((15,16),14)),(8,9)),(10,11)),7),6),5),4),3),(12,13)),2);
+
+END;
+
+
+BEGIN NOTES;
+
+	TEXT  TAXON=5 TEXT= misspelled_Capinuloidea_in_text.;
+END;
+
+
+BEGIN MacClade;
+	Version 4.0  87;
+	LastModified -825866757;
+	FileSettings treewindow  '1' '25' '1' '0';
+	Singles 010;
+	Editor 00011011111111100100010010 '0' '72' Gadget '12' '188' '1' all;
+	EditorPosition  '87' '530' '529' '813';
+	TreeWindowPosition  '67' '381' '977' '1425';
+	ListWindow Characters closed Gadget '12' '494' '1253' '508' '517' 000;
+	ListWindow Taxa closed Gadget '12' '50' '10' '253' '323' 100000000;
+	ListWindow Trees closed Gadget '12' '50' '10' '134' '387' ;
+	ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow ExSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharSets closed Gadget '12' '50' '10' '134' '215' ;
+	ListWindow TaxSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490' ;
+	TextWindow AboutFile  '50' '25' '280' '445' Gadget '12' (normal) 1 ;
+	ChartWindowPosition  '52' '30' '818' '1380';
+	StateNamesSymbols closed Gadget '12' '19' '290' '921' '356' '417';
+	WindowOrder ;
+	OtherSymbols &/ 00 ?-;
+	Correlation  '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile  '2';
+	ExportHTML _ MOSS  '100' 110000;
+	PrettyPrint 10;
+	CharLegendPosition  '904' '1705' '88' '90';
+	TreeLegendPosition  '937' '1607' '88' '93';
+	EditorToolsPosition  '716' '1458' '115' '165';
+	TreeToolsPosition  '716' '9' '126' '138';
+	TreeWindowProgram 00;
+	TreeWindow 0000;
+	Continuous  '0' '3' 1;
+	Calculations 1000101;
+	SummaryMode  '0' '0' 0;
+	Charts  Arial '12' (normal) 0010;
+	NexusOptions  '0' '0' '50' 001011001;
+	TipLabel  '1';
+	TreeFont  Gadget '12' (normal);
+	TreeShape  1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors  '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth  '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax  '0';
+	TraceAllChangesDisplay  '1' 1;
+	BarsOnBranchesDisplay  '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation  '3' 1;
+	PrintTree  10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Gadget '12' (normal) Geneva '10' (normal) Gadget '12' (normal) Gadget '12' (normal) Gadget '12' (bold ) Gadget '12' (normal) Gadget '12' (normal) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '0' '2' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 10;
+	TreeTools  '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools  '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign  '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools  '1';
+END;

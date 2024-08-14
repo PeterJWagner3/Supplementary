@@ -1,0 +1,626 @@
+#NEXUS
+[written Fri Nov 03 14:16:46 CDT 2023 by Mesquite  version 3.70 (build 940) at eas-f094c0.unl.edu/10.73.224.114]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=67;
+	TAXLABELS
+		Anabarella_plana Watsonella_crossbyi Pseudomyona_queenslandica Ribeiria_junior Tuarangia_gravgaer Pojetaia_runnegari Fordilla_troyensis Tironucula_jugata Praenucula_faba Nuculoidea_pinguis Cardiolaria_beirensis Praeleda_subtilis Eritropis_peregrinata Ekstadia_tricarinata Nuculites_oblongatus Palaeoneilo_fecunda Ctenodonta_tennesseensis Tancrediopsis_gotlandica Acharax_trapezoides Redonia_bohemica Thoralia_languedociana 'Lyrodesma majus <adult>' 'Lyrodesma majus <juvenile>' 'Lyrodesma <sp. PJ 96>' Silurozodus_gotlandicus Cycloconcha_mediocardinalis Fortowensia_grandis Actinodonta_cuneata Nyassa_dorsata Tanaodon_louderbacki Noradonta_shergoldi 'Cycloconchidae <Genus A Johnston & Goodbody 1988>' 'Cycloconchidae  <Genus B Johnston & Goodbody 1988>' Montanaria_aff._honguedoensis Copidens_browni Ananterodonta_oret Babinka_prima Illionia_prisca 'Cycloconchidae <Genus C Johnston & Goodbody 1988>' Eodon_tenuistriata Modiomorpha_concentrica Evyana_baltica Colpomya_hugini Modiolopsis_modiolaris Whiteavesia_cincinnatiensis Modiolus_meeki Matheria_tener Metapadia_matapediensis Modiolodon_oviformis Cyrtodonta_saffordi Ortonella_hainesi Falcatodonta_costata Ambonychia_radiata Septimyalina_perattenuata Myodakryotus_deigryn Palaeolima_retifera Leiopecten_praerectangularis Pterinea_laevis Tolmaia_erugisulca 'Rhombopteriidae <nov. sp. Johnston 93>' 'Umburra cinefacta <adult>' Freja_fecunda Alytodonta_gibbosa Trecanolia_acincta Catamarcaia_chaschuilensis Cosmetodon_obsoletus Glyptarca_serrata 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=118;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9 A B C D E F G H J K L M N O P Q";
+	CHARSTATELABELS 
+118 Lifestyle /  Epifaunal Infaunal ; 
+	MATRIX
+	Anabarella_plana                                    5311111A11111136G626616441115164454215157487635477511531??56A73465554330605550ABC5337744411171116111156102005550011110
+	Watsonella_crossbyi                                 2211111A11111142602661111111411115101?1?7487635477511531??111111113111111111100001111151111171116221167113105450011120
+	Pseudomyona_queenslandica                           1352152C24142113D12111111111311111401?1??1?8746588611??1??2323111131111115312000011111511231??2111211671131054500?1120
+	Ribeiria_junior                                     5211111A11111136G62661644111516446421???7597635477511631??56A73465554330605550ABC5337744411??1111111156102005350011110
+	Tuarangia_gravgaer                                  1252{1 2}11A34112152852111111111311111201515?1??21?21?311??1??1111131111211111111000011122111231??2112211111DK7501111?1120
+	Pojetaia_runnegari                                  2252111A441111{1 2}18{0 5}2111111111311111111111{2 3}11121221{4 6}2111{2 7}1321111111117111D11111EGDE41111111111?11112211111DKA50111111120
+	Fordilla_troyensis                                  2211111A111111126021111111114111111F111131312122142221315211111111111121111110{1 2}1141111111111?11112211111DKA50111111120
+	Tironucula_jugata                                   4211111A11131513602111111111311111131111111?1122143111?1??24111{1 2}2114211118146{J L}7654113{1 3}113112?11??22111?2DL2501111?1?20
+	Praenucula_faba                                     2211111A11131{1 5}1300211111111122111113111111?1112214311121??1111121114211111111L76541132111112911112211122DL250111111221
+	Nuculoidea_pinguis                                  2211111A111311140021111111112211111P1{1 5}1{1 5}1111112214411131111111121114211111111L76541133111112911112212122DL250113111221
+	Cardiolaria_beirensis                               2211111A111315{1 2}2602111111111{3 4}11111101111111?112214311131111111131114311C11111P76541213111112?11??22111?2DL2501111?1?21
+	Praeleda_subtilis                                   2252111A54132522802111111111311111101111111?112214311131111111131114211111111P76541212111112?11??22111?2DL2501111?1?21
+	Eritropis_peregrinata                               2{1 2}11111A111331564041111111114111111H1111111?1122143111?1?11111131114211111111P765411{2 3}2111112?11??22111?2DL2501111?1?21
+	Ekstadia_tricarinata                                2211111A11131512H02111111111{3 4}111121011112122112234341133111111131114211111111P76541233111112911212211122DL250111111321
+	Nuculites_oblongatus                                2211111A111113151021111211114111121L11111111112234311362111111131114211111111P76541132111112611212211112DL250111111321
+	Palaeoneilo_fecunda                                 2211111A11111112602111111111411111161111111?1122143111?2111111121114{2 3}11{1 C}11111P7654112{2 3}111112211212211122DL250111111321
+	Ctenodonta_tennesseensis                            2211111A111321338081111111113111113K1111?1??11?2143111?1??1111121114211111111L00011166111112?11??2211122GP210111111?21
+	Tancrediopsis_gotlandica                            2211111A11112134P0811{1 2}2251112211113K1111111?122214311131111111131114211111111L76541163111112911112211122GP210111111?21
+	Acharax_trapezoides                                 2211111A11111334P087111111112211123K1B1B111?112214411431421111111161111111111H00011111111112211112212122GP210115111221
+	Redonia_bohemica                                    2111111A111311126021111111114111121N1111?1121111433111?1112123111111122311111D21141111113112?11??22111?2DL25011112?121
+	Thoralia_languedociana                              2211111A11132143{7 8}02111111111311111301111111?112214311131??1111111111112111111533242111111112?11??22111?2DL2501111??121
+	'Lyrodesma majus <adult>'                           2211111A11112155102111111111411112{2 3}M19291111112143311182111111111112112511111MB8A42111133112?11??2211122FO26011112?121
+	'Lyrodesma majus <juvenile>'                        2211111A11112155102111111111411111{2 3}M19291111112234311182111111111111112111111Q63332111111112?11??2211122FM26011112?121
+	'Lyrodesma <sp. PJ 96>'                             2211111A11112155102111111111411112{2 3}M192911111??14331118???2811111112112511111MB8A42111133112?11??2211122FO26011112?121
+	Silurozodus_gotlandicus                             2211111A111125{3 5}21021111111113111113B11113121112214322171111111111111112111111Q63131111111112?11??2211122FM260111122121
+	Cycloconcha_mediocardinalis                         2211111A11111112102111215111{3 4}11111161111???111?21{4 5}311?3111{2 3}{1 3}{1 2}{1 3}11111{1 2}112141323GB8A41111111112?11??22111?2DL25011112?121
+	Fortowensia_grandis                                 2211111A111311{2 4}5602111111111{3 4}1111110?????1?11132132111?1113{1 3}{1 2}{1 3}111111112141323G{0 B}3341111111112?11??22111?2DL25011112?121
+	Actinodonta_cuneata                                 2211111A111111{1 4}5102111??111141111110111121311122133111?111{3 4}{1 3}{1 8}{1 3}11111{1 2}112117424GB8A411111{1 3}1112?11??22111?2DL25011112?12?
+	Nyassa_dorsata                                      2211111A11111136{1 6}041121111114111121H1111???1112234311??1114873211112112211111FBAA41111231112611212211122DL25011112?121
+	Tanaodon_louderbacki                                2211111A11111136B041121111115111121H1111?1??11?144?111?1114{1 8}73211112112211111FBA3421111311126117122111?2DL25011112?121
+	Noradonta_shergoldi                                 2211111A111111366021111111114111121H1111?11?1121443111????2111111112112211111MBAA42111113112?11??22111?2DL25011112?121
+	'Cycloconchidae <Genus A Johnston & Goodbody 1988>' 2211111A111111325041121111114111111H111111??11?146?11??1??1111111112112511111{B F}B8A41111131112611712211122E125011112?12?
+	'Cycloconchidae  <Genus B Johnston & Goodbody 1988>'2211111A111121326041121111114111111H111111??11?143??????111111111111112211111B54342111111112?11712211122E125011112?12?
+	Montanaria_aff._honguedoensis                       2311111A111121{2 3}250{2 4}1112151114111111H11111133112143311181111111111111112211111B54341111131112911712211122J586011112?121
+	Copidens_browni                                     2211111A11111522102111111111411111101111???11122143111?1114873211112112111111FBAA41111133112?11??22111?2DL25011112?121
+	Ananterodonta_oret                                  2311111A111115{1 2}2{1 4}0111121511141111{1 2}1J?11111?11122143111?11143{4 5}3111112112111111FBAA41111131112?11??22111?2DL25011112?121
+	Babinka_prima                                       2211111A1113151{1 3}{1 6}02111111111{2 3}{1 2}1111101111214111121{4 6}341131111111111111122111111C4{1 2}{1 4}32111111112?11??22111?2E125011112?121
+	Illionia_prisca                                     2211111A11111521C041121251113111111041113134112216422131421111111111112111111060041111111112?11??22111?2E125011112?121
+	'Cycloconchidae <Genus C Johnston & Goodbody 1988>' 2211111A11112522{5 6}021112151114111111J311111411122143111?1112323111111112111131B6???2111131112?11112211122E125011112112?
+	Eodon_tenuistriata                                  2311111A111121{2 5}2{5 6}021112151114111121J311111311121343221{4 5}1112323111111112121223{B K}22141111131112911512211122JN260111121121
+	Modiomorpha_concentrica                             2211111A11{1 2}1{1 2}126{6 9}071115121114111111{4 8}{1 3}11121311121{1 4}4211131111111111111112111111411141111211112911112211122HQ76011112?12?
+	Evyana_baltica                                      2211111A111111266021115121114111111011111?41112214232331111111111111122111111121111111111112911112221322BD220111122120
+	Colpomya_hugini                                     2211111A111321{2 5}6H021111111114123111F111111{1 3}?112214?22131111111111111122111111821121111111112{2 9}11112221322AA428111122121
+	Modiolopsis_modiolaris                              2311111A111{1 3}{1 2}12640711111111141111118111111{1 2}111221321113{1 2}111111111121111111111000011111111112?11112221122AA521161122120
+	Whiteavesia_cincinnatiensis                         2311111A111{1 3}{1 2}32{5 6}4021111111114111111{4 8}3111???11122143111??111111111121111111111000011111111112?11112221222AA428111122120
+	Modiolus_meeki                                      2211111A111{1 3}{1 2}126407111111111411111181111?1332122142????1111111111121111111111000011111111112911122221122AA521161122120
+	Matheria_tener                                      2311111A11111126402111215111411111151111?1??11?2???????1??1111111111112111111O61341111111112??1??22212?2AA42?111122120
+	Metapadia_matapediensis                             2311111A111111164021112151114111111{8 H}1111????11?{1 2}142111????1111111111112111111O60041111111112??1??22212?2AA42?111122120
+	Modiolodon_oviformis                                2311111A111115124021111111114111121F1111?12211213{3 4}21?131111111111111112111111065141111111112?11112221222AA428111122120
+	Cyrtodonta_saffordi                                 2211111A11131512{4 H}011111111113111111E1111?1321121{1 4}4332??111375411111111211433426E141111213112?11??22212?2AA42?111122121
+	Ortonella_hainesi                                   2211111A11112552402111{1 2}1{1 5}1114111121F111121??11?1{3 4}4?????11133{5 7}3{1 2}11111112111111251241111231112?11??22212?2AA42{7 8}111122121
+	Falcatodonta_costata                                2255111A111315524021111111114111111D1323?1??11321{3 4}2111?1114373{1 2}11171111114334200011111111112?11??22212?2AA42?111122120
+	Ambonychia_radiata                                  12{1 5}{1 2}111A24211516E{0 1}141151211151111119132311332122511??15132475411111111221111126424111121121212?1122212?2AA42?111122120
+	Septimyalina_perattenuata                           1152111A242115162{0 3}61115121125142141{8 A}11111132211161111151111111111111112111111010041111211212221112221222AA42?111122120
+	Myodakryotus_deigryn                                {1 2}322{1 2}52C{2 4}{2 4}21151{1 2}D{1 5}111111121431111117162631?32121152221?1111111111111112111111051241111111??2?????2221??2AC2401?1122120
+	Palaeolima_retifera                                 1352152B2{2 3}211513D52111111114311111271323?1???1?????????1??1111111101111111111000011111111212{1 2}213122214?2K8910111122120
+	Leiopecten_praerectangularis                        1332232E2221111{2 5}F5211111121?3142111{A Q}1111?1???1?2???????1??1111111101111111111A00011111111212?2???22212?2AC240111122120
+	Pterinea_laevis                                     2232232B24211512{3 D}222111112124152111A1111?1?1211{1 2}132??1?111{3 4}873211112112211111EBAA4111121121222?1122212?2A{A B}4{2 3}?1?1122120
+	Tolmaia_erugisulca                                  2332252C24211526{2 E}1211111121241421{1 3}1A13361112211{1 2}122221311147{5 7}3213112112211111EBAA41111233212?????22212?2AB230121122120
+	'Rhombopteriidae <nov. sp. Johnston 93>'            2252152B24131512D511111112223152111G1331?1?32122132321?11137642111121121163343B8A41111213212?2???22212?2AA42?121122120
+	'Umburra cinefacta <adult>'                         2252152C24131512D111111112123142121G1111112121221323233111{3 4}76321{1 3}1121121163343B8A41111233?12??1??22212?2BF640141122121
+	Freja_fecunda                                       2152152B2413152{1 2}35{1 2}1111111113111112E111131311122142113?11147631111121121164349B86411112{1 3}1112?11??22213?2BF640141122121
+	Alytodonta_gibbosa                                  2252152B2413252230111111?1113111111D1222?13?1122142??1????477321111211211{6 7}4329B86411112{1 3}3112?11??22212?2BF640141122121
+	Trecanolia_acincta                                  1252152B441315123511111111113111112E?????1??11?2142111?1113793115116112A163349BAD42111211112?11??22212?2BF640141122121
+	Catamarcaia_chaschuilensis                          2252152B441?2??635?111111111{3 4}111121C1111?1??1122342??13???4{1 7}93215116112A16{3 4}339B8641111231?12?11??22212?2BD220141122121
+	Cosmetodon_obsoletus                                1122252D24233{1 3}263271111111214111112C0222?1??11?2143????1??4{1 7}43211116112A164349BAD42111211112911512221222BF340141122120
+	Glyptarca_serrata                                   1252152D241323563521111111114111111C1111?1??1112?33111??112{1 7}11111713112E16434{9 G}B8642111111112?11??22212?2?????111122121
+
+;
+
+END;
+BEGIN MacCladeStart;
+	Extended;
+
+END;
+BEGIN ASSUMPTIONS;
+	OPTIONS DEFTYPE = unord PolyTcount = MAXSTEPS;
+	TYPESET * UNTITLED   =  unord:  1- 118;
+
+END;
+
+BEGIN TREES;
+	Title 'Trees from "Early_Bivalvia_Carter_et_al_2001.nex"';
+	ID 01761d0d08f09;
+	LINK Taxa = Taxa;
+	TRANSLATE
+[0] 		1 Anabarella_plana,
+[1] 		2 Watsonella_crossbyi,
+[2] 		3 Pseudomyona_queenslandica,
+[3] 		4 Ribeiria_junior,
+[4] 		5 Tuarangia_gravgaer,
+[5] 		6 Pojetaia_runnegari,
+[6] 		7 Fordilla_troyensis,
+[7] 		8 Tironucula_jugata,
+[8] 		9 Praenucula_faba,
+[9] 		10 Nuculoidea_pinguis,
+[10] 		11 Cardiolaria_beirensis,
+[11] 		12 Praeleda_subtilis,
+[12] 		13 Eritropis_peregrinata,
+[13] 		14 Ekstadia_tricarinata,
+[14] 		15 Nuculites_oblongatus,
+[15] 		16 Palaeoneilo_fecunda,
+[16] 		17 Ctenodonta_tennesseensis,
+[17] 		18 Tancrediopsis_gotlandica,
+[18] 		19 Acharax_trapezoides,
+[19] 		20 Redonia_bohemica,
+[20] 		21 Thoralia_languedociana,
+[21] 		22 'Lyrodesma majus <adult>',
+[22] 		23 'Lyrodesma majus <juvenile>',
+[23] 		24 'Lyrodesma <sp. PJ 96>',
+[24] 		25 Silurozodus_gotlandicus,
+[25] 		26 Cycloconcha_mediocardinalis,
+[26] 		27 Fortowensia_grandis,
+[27] 		28 Actinodonta_cuneata,
+[28] 		29 Nyassa_dorsata,
+[29] 		30 Tanaodon_louderbacki,
+[30] 		31 Noradonta_shergoldi,
+[31] 		32 'Cycloconchidae <Genus A Johnston & Goodbody 1988>',
+[32] 		33 'Cycloconchidae  <Genus B Johnston & Goodbody 1988>',
+[33] 		34 Montanaria_aff._honguedoensis,
+[34] 		35 Copidens_browni,
+[35] 		36 Ananterodonta_oret,
+[36] 		37 Babinka_prima,
+[37] 		38 Illionia_prisca,
+[38] 		39 'Cycloconchidae <Genus C Johnston & Goodbody 1988>',
+[39] 		40 Eodon_tenuistriata,
+[40] 		41 Modiomorpha_concentrica,
+[41] 		42 Evyana_baltica,
+[42] 		43 Colpomya_hugini,
+[43] 		44 Modiolopsis_modiolaris,
+[44] 		45 Whiteavesia_cincinnatiensis,
+[45] 		46 Modiolus_meeki,
+[46] 		47 Matheria_tener,
+[47] 		48 Metapadia_matapediensis,
+[48] 		49 Modiolodon_oviformis,
+[49] 		50 Cyrtodonta_saffordi,
+[50] 		51 Ortonella_hainesi,
+[51] 		52 Falcatodonta_costata,
+[52] 		53 Ambonychia_radiata,
+[53] 		54 Septimyalina_perattenuata,
+[54] 		55 Myodakryotus_deigryn,
+[55] 		56 Palaeolima_retifera,
+[56] 		57 Leiopecten_praerectangularis,
+[57] 		58 Pterinea_laevis,
+[58] 		59 Tolmaia_erugisulca,
+[59] 		60 'Rhombopteriidae <nov. sp. Johnston 93>',
+[60] 		61 'Umburra cinefacta <adult>',
+[61] 		62 Freja_fecunda,
+[62] 		63 Alytodonta_gibbosa,
+[63] 		64 Trecanolia_acincta,
+[64] 		65 Catamarcaia_chaschuilensis,
+[65] 		66 Cosmetodon_obsoletus,
+[66] 		67 Glyptarca_serrata;
+	TREE UNTITLED = ((4,((3,(5,(6,(7,((41,(42,(43,(((47,48),(45,(44,46))),((49,(51,(50,52))),((53,54),((55,(56,57)),((58,59),(60,(61,(63,(62,(64,(65,(66,67))))))))))))))),(((26,(27,28)),((35,(36,(39,40))),((20,31),((29,30),(32,(33,34)))))),((37,38),((21,(25,((24)22)23)),((8,(9,(10,(18,(17,19))))),((14,(11,12)),(13,(15,16)))))))))))))2))1;
+
+END;
+
+
+BEGIN NOTES;
+
+	TEXT  TAXON = 32 TEXT = 'Bivalvia <Genus A Johnston & Goodbody 1988>';
+	TEXT  TAXON = 33 TEXT = 'Bivalvia  <Genus B Johnston & Goodbody 1988>';
+	TEXT  TAXON = 38 TEXT = Ilionia_prisca;
+	TEXT  TAXON = 39 TEXT = 'Bivalvia <Genus C Johnston & Goodbody 1988>';
+
+	TEXT   TAXON = 6 CHARACTER = 78 TEXT = 'Was_''I''';
+	TEXT   TAXON = 58 CHARACTER = 78 TEXT = 'Was_''I''';
+	TEXT   TAXON = 59 CHARACTER = 78 TEXT = 'Was_''I''';
+
+	TEXT   TAXON = 40 CHARACTER = 106 TEXT = 'Was_''T''';
+
+	TEXT   CHARACTER = 107 TEXT = 'Character_recoded_to_fit_MacClade_format:_A->4,_B->5,_D->6,_I->7,_M->8,_P->9,_Q->A';
+
+END;
+
+BEGIN MacClade;
+	Version 4.0 84;
+	LastModified -1139050458;
+	FileSettings treewindow '2' '2' '1' '1';
+	Singles 010;
+	Editor 0001101111111110010001001 '0' '72' Gadget '12' '270' '1' all;
+	EditorPosition '40' '4' '614' '1039';
+	TreeWindowPosition '46' '6' '794' '1517';
+	ListWindow Characters closed Gadget '12' '50' '25' '257' '465' 000;
+	ListWindow Taxa closed Gadget '12' '50' '10' '257' '358' 100000;
+	ListWindow Trees open Gadget '12' '50' '25' '134' '403';
+	ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow ExSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow TaxSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	ChartWindowPosition '50' '30' '688' '964';
+	StateNamesSymbols closed Gadget '12' '10' '50' '30' '240' '231';
+	WindowOrder Tree List Trees;
+	OtherSymbols & / 00 ? -;
+	Correlation '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile '2';
+	ExportHTML _ MOSS '100' 110000;
+	PrettyPrint 10;
+	CharLegendPosition '646' '1420' '175' '85';
+	TreeLegendPosition '733' '1324' '88' '93';
+	EditorToolsPosition '801' '46' '115' '165';
+	TreeToolsPosition '799' '5' '126' '138';
+	TreeWindowProgram 10;
+	TreeWindow 0000;
+	Continuous '0' '3' 1;
+	Calculations 1000101;
+	SummaryMode '0' '0' 0;
+	Charts Arial '12' ( normal ) 0010;
+	NexusOptions '0' '0' '50' 001011001;
+	TipLabel '1';
+	TreeFont Gadget '12' ( normal );
+	TreeShape 1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax '0';
+	TraceAllChangesDisplay '1' 1;
+	BarsOnBranchesDisplay '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation '3' 0;
+	PrintTree 10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Geneva '9' ( normal ) Geneva '10' ( normal ) Geneva '9' ( normal ) Geneva '9' ( normal ) Geneva '9' ( bold ) Geneva '9' ( normal ) Geneva '9' ( normal ) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '2685' '-23872' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 00;
+	TreeTools '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools '1';
+
+END;
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 118;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1699039006724;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 1082599314700630845;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 7536990431498637758;
+			mqVersion 370;
+			checksumv 0 3 3241626556 null  getNumChars 118 numChars 118 getNumTaxa 67 numTaxa 67   short false   bits 2305843009280802815   states 67108863   sumSquaresStatesOnly 8.264166151648812E15 sumSquares -6.640745224873956E20 longCompressibleToShort false usingShortMatrix false   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 168;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1669 832;
+			setLocation 0 34;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.trees.BasicTreeWindowCoord.BasicTreeWindowCoord;
+		tell It;
+			makeTreeWindow #1082599314700630845  #mesquite.trees.BasicTreeWindowMaker.BasicTreeWindowMaker;
+			tell It;
+				suppressEPCResponse;
+				setTreeSource  #mesquite.trees.StoredTrees.StoredTrees;
+				tell It;
+					setTreeBlock 1;
+					setTreeBlockID 01761d0d08f09;
+					toggleUseWeights off;
+				endTell;
+				setAssignedID 1005.1698962572158.2712329473865753931;
+				getTreeWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1569 760;
+					setLocation 0 34;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.trees.BasicTreeWindowMaker.BasicTreeWindow.reroot;
+					endTell;
+					getTreeDrawCoordinator #mesquite.trees.BasicTreeDrawCoordinator.BasicTreeDrawCoordinator;
+				tell It;
+					suppress;
+					setTreeDrawer  #mesquite.trees.SquareLineTree.SquareLineTree;
+					tell It;
+						setNodeLocs #mesquite.trees.NodeLocsStandard.NodeLocsStandard;
+						tell It;
+							branchLengthsToggle off;
+							toggleScale on;
+							toggleBroadScale off;
+							toggleCenter on;
+							toggleEven on;
+							setFixedTaxonDistance 0;
+						endTell;
+						setEdgeWidth 4;
+						showEdgeLines on;
+						orientRight;
+					endTell;
+					setBackground White;
+					setBranchColor Black;
+					showNodeNumbers off;
+					showBranchColors off;
+					labelBranchLengths off;
+					centerBrLenLabels on;
+					showBrLensUnspecified on;
+					showBrLenLabelsOnTerminals on;
+					setBrLenLabelColor 0 0 255;
+					setNumBrLenDecimals 6;
+					setSelectedTaxonHighlightMode 1;
+					desuppress;
+					getEmployee #mesquite.trees.BasicDrawTaxonNames.BasicDrawTaxonNames;
+					tell It;
+						setColor Black;
+						setTaxonNameStyler  #mesquite.trees.NoColorForTaxon.NoColorForTaxon;
+						toggleShadePartition off;
+						toggleShowFootnotes on;
+						toggleNodeLabels on;
+						toggleCenterNodeNames off;
+						toggleShowNames on;
+						namesAngle ?;
+					endTell;
+				endTell;
+					setTreeNumber 1;
+					setTree '(4,(3,(5,(6,(7,((41,(42,(43,(((47,48),(45,(44,46))),((49,(51,(50,52))),((53,54),((55,(56,57)),((58,59),(60,(61,(63,(62,(64,(65,(66,67)))))))))))))))<color = 5 >,(((26,(27,28)),((35,(36,(39,40))),((20,31),((29,30),(32,(33,34)))))),((37,38),((21,(((24)22)23,25)),((8,(9,(10,(18,(17,19))))),((14,(11,12)),(13,(15,16)))))))))))))<> <> <  setBetweenLong = color >;';
+					setDrawingSizeMode 0;
+					toggleLegendFloat on;
+					scale 0;
+					toggleTextOnTree off;
+					togglePrintName off;
+					showWindow;
+					newAssistant  #mesquite.ancstates.TraceCharOverTrees.TraceCharOverTrees;
+				tell It;
+					suppress ;
+					setHistorySource  #mesquite.ancstates.RecAncestralStates.RecAncestralStates;
+					tell It;
+						getCharacterSource  #mesquite.charMatrices.CharSrcCoordObed.CharSrcCoordObed;
+						tell It;
+							setCharacterSource #mesquite.charMatrices.StoredCharacters.StoredCharacters;
+							tell It;
+								setDataSet #7536990431498637758;
+							endTell;
+						endTell;
+						setMethod  #mesquite.parsimony.ParsAncestralStates.ParsAncestralStates;
+						tell It;
+							setModelSource  #mesquite.parsimony.CurrentParsModels.CurrentParsModels;
+							toggleMPRsMode off;
+						endTell;
+						toggleShowSelectedOnly off;
+					endTell;
+					setCharacter 118;
+					setTreeSource  #mesquite.trees.StoredTrees.StoredTrees;
+					tell It;
+						setTreeBlock 1;
+						setTreeBlockID 01761d0d08f09;
+						toggleUseWeights off;
+					endTell;
+					setNumTrees 100;
+					setDisplayMode  #mesquite.ancstates.ShadeStatesOnTree.ShadeStatesOnTree;
+					tell It;
+						toggleLabels off;
+						togglePredictions off;
+						toggleGray on;
+					endTell;
+					toggleShowLegend on;
+					toggleShowNodeAbsent off;
+					toggleShowEquivocal off;
+					setMode Count_Trees_with_Uniquely_Best_States;
+					setInitialOffsetX 72;
+					setInitialOffsetY 400;
+					setLegendWidth 142;
+					setLegendHeight 235;
+					desuppress ;
+				endTell;
+				endTell;
+				desuppressEPCResponse;
+				getEmployee #mesquite.trees.ColorBranches.ColorBranches;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.ornamental.BranchNotes.BranchNotes;
+				tell It;
+					setAlwaysOn off;
+				endTell;
+				getEmployee #mesquite.ornamental.ColorTreeByPartition.ColorTreeByPartition;
+				tell It;
+					colorByPartition off;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocDoubles.DrawTreeAssocDoubles;
+				tell It;
+					setOn on;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					setDigits 4;
+					setThreshold ?;
+					writeAsPercentage off;
+					toggleCentred off;
+					toggleHorizontal on;
+					toggleWhiteEdges on;
+					toggleShowOnTerminals on;
+					setFontSize 10;
+					setOffset 0  0;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocStrings.DrawTreeAssocStrings;
+				tell It;
+					setOn on;
+					toggleCentred on;
+					toggleHorizontal on;
+					setFontSize 10;
+					setOffset 0  0;
+					toggleShowOnTerminals on;
+				endTell;
+				getEmployee #mesquite.trees.TreeInfoValues.TreeInfoValues;
+				tell It;
+					panelOpen false;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #7536990431498637758 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 238;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1569 760;
+					setLocation 0 34;
+					setFont Gadget;
+					setFontSize 12;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleColorOnlyTaxonNames off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 1569 760;
+						setLocation 0 34;
+						setFont Gadget;
+						setFontSize 14;
+						getToolPalette;
+						tell It;
+							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
+						endTell;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			showCharacters #7536990431498637758 #mesquite.lists.CharacterList.CharacterList;
+			tell It;
+				setData 0;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.DefaultCharOrder.DefaultCharOrder;
+					newAssistant  #mesquite.lists.CharListInclusion.CharListInclusion;
+					newAssistant  #mesquite.lists.CharListPartition.CharListPartition;
+					newAssistant  #mesquite.parsimony.CharListParsModels.CharListParsModels;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1569 760;
+					setLocation 0 34;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.CharListAnnotPanel.CharListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

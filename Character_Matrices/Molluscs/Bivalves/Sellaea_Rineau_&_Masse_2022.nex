@@ -1,0 +1,21 @@
+#NEXUS
+BEGIN DATA;
+	DIMENSIONS  NTAX=14 NCHAR=8;
+	FORMAT SYMBOLS= " 0 1 2 3" MISSING=? GAP=- ;
+MATRIX
+Sellaea_cespitosa					01011011
+Sellaea_ciofaloi					1?12???1
+Sellaea_himerensis				01021011
+Sellaea_laticoncha				101????1
+Sellaea_orbignyi					1002?0?1
+Sellaea_pironae						100?0??1
+Sellaea_plagioptychoides	1?12?1?1
+Sellaea_sicula						1?00?1?1
+Sellaea_zitteli						11021011
+Sellaea_minuta						0001?000
+Sellaea_roemeri						100?1??1
+Sellaea_stryx							11000011
+Sellaea_aprutina					1?1?1??1
+Sellaea_distefanoi				110?1?11
+;
+end;

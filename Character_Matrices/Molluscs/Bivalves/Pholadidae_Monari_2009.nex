@@ -1,0 +1,183 @@
+#NEXUS
+[MacClade 4.08 registered to Peter Wagner, Field Museum of Natural History]
+
+
+BEGIN MacCladeStart;
+	Extended;
+END;
+
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=36 NCHAR=47;
+
+[!Monari, S.  2009.  Phylogeny and biogeography of pholadid Bivalve Barnea (Anchomasa) with considerations on the phylogeny of Pholadoidea.  Acta Palaeontologica Polonica 54:315-335.]
+	FORMAT SYMBOLS= " 0 1 2 3 4 5 6 7 8 9 A B C D E F" MISSING=? GAP=- ;
+
+MATRIX
+[                                         10        20        30        40        ]
+[                                         .         .         .         .         ]
+
+Talona                           012010011100-0100000---0--110000-00-01001000000
+Nipponopholas                    012010001101111000000--0--100000-00-----------0
+'Barnea (Barnea)'                012010001101011000000--1100--000-00-01001000000
+'Barnea (Umitakea)'              01-010001101111000000--1100--000-00-01001000000
+'Barnea (Anchomasa)'             0120100011011-1000000--1100--000-00-01001000000
+Cyrtopleuropsis                  012010011101111100000-------0--0-00-----------0
+'Cyrtopleura (Cyrtopleura)'      012010011101111100000--100101000-00-01001000000
+'Cyrtopleura (Scobinopholas)'    012010011101011100000--1001-1000-00-01001000000
+'Pholas (Monothyra)'             012011001101001100000--1101-0100-00-----------0
+'Pholas (Pholas)'                012011001101101100000--111100100-00-01001000000
+'Pholas (Thovana)'               012011001101001100000--111100100-00-01001000000
+Zirfaea                          012010001101101-10100--0--100000-00-01001000000
+Chaceia                          012010001101101010101010--100000-00-11001000000
+Penitella                        012010001101101010101010--10000-000-11001000000
+Parapholas                       0120100011111011101110-0--110110-00-11001000000
+Diplothyra                       012010001101111010101010--100110-00-11001000000
+'Martesia (Particoma)'           012010101201211010101010--100111000-11001000000
+'Martesia (Martesia)'            012010101-01211010101000--100110-00-11001000000
+Lignopholas                      012010101211211010101000--110--0-00-11001000000
+'Pholadidea (Hatasia)'           012010001101111010101010--100001000-11001000000
+'Pholadidea (Pholadidea)'        012010001101111010101010--110001000-11001000000
+Opertochasma                     012010001011211010211010--110101000-----------0
+Teredina                         0021100011012-1010201000--110-01000-----------0
+Netastoma                        002010001101110-10101-10--0--001-00-11000000000
+'Jouannetia (Jouannetia)'        002010001101110-10001110--0--001100-11000000000
+'Jouannetia (Pholadopsis)'       002010001101110-10001110--100001100-11000000000
+Xyloredo                         002010001201210-10200--0--110000-10-01110000110
+Xylophaga                        002010001201210-10100--0--110000-00-01110000110
+Xylopholas                       002010001201210-10100--0--110000-00-01110000112
+Kuphus                           102010001201211010100--0--0--000-11001111101001
+Teredora                         102110001201211011200--0--0--000-11001111111101
+'Teredo (Teredo)'                102110001201211011200--0--0--000-11001111111111
+Lyrodus                          102110001201211011200--0--0--000-11001111111111
+Nototeredo                       102110001201211011200--0--0--000-11101111111101
+'Bankia (Bankia)'                102110001201211011200--0--0--000-11101111111111
+Nausitora                        102110001201211011200--0--0--000-11101111111111
+;
+END;
+
+
+BEGIN SETS;
+	CHARSET  Soft_Tissue  =  37-47;
+	CHARSET  Shell_Accessory  =  21-36;
+	CHARSET  Normal_Shell  =  1-20;
+END;
+
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+	TYPESET * UNTITLED  = unord: 1-47;
+	EXSET * UNTITLED  =  3 5 9 37-47;
+END;
+
+
+BEGIN TREES;
+
+	TRANSLATE
+		1	Talona,
+		2	Nipponopholas,
+		3	'Barnea (Barnea)',
+		4	'Barnea (Umitakea)',
+		5	'Barnea (Anchomasa)',
+		6	Cyrtopleuropsis,
+		7	'Cyrtopleura (Cyrtopleura)',
+		8	'Cyrtopleura (Scobinopholas)',
+		9	'Pholas (Monothyra)',
+		10	'Pholas (Pholas)',
+		11	'Pholas (Thovana)',
+		12	Zirfaea,
+		13	Chaceia,
+		14	Penitella,
+		15	Parapholas,
+		16	Diplothyra,
+		17	'Martesia (Particoma)',
+		18	'Martesia (Martesia)',
+		19	Lignopholas,
+		20	'Pholadidea (Hatasia)',
+		21	'Pholadidea (Pholadidea)',
+		22	Opertochasma,
+		23	Teredina,
+		24	Netastoma,
+		25	'Jouannetia (Jouannetia)',
+		26	'Jouannetia (Pholadopsis)',
+		27	Xyloredo,
+		28	Xylophaga,
+		29	Xylopholas,
+		30	Kuphus,
+		31	Teredora,
+		32	'Teredo (Teredo)',
+		33	Lyrodus,
+		34	Nototeredo,
+		35	'Bankia (Bankia)',
+		36	Nausitora
+	;
+	TREE Strat_Rooted_1 =  [&R] (22,(23,(((27,(28,29)),(30,(31,(32,(33,(34,(35,36))))))),((26,(24,25)),(21,(20,((13,(14,(15,(16,(17,(18,19)))))),(12,(1,(2,((3,(4,5)),((6,(7,8)),(9,(10,11))))))))))))));
+	TREE  * Fossil_Only =  [&R] (22,(23,((28,(30,(32,(34,(35,36))))),((26,(24,25)),(21,(20,((13,(14,(15,18))),(12,((3,(4,5)),((7,8),(10,11)))))))))));
+
+END;
+
+
+BEGIN MacClade;
+	Version 4.0  87;
+	LastModified -828271669;
+	FileSettings treewindow  '1' '1' '48' '1';
+	Singles 000;
+	Editor 00011011111111100100010010 '0' '72' Gadget '12' '188' '1' all;
+	EditorPosition  '46' '6' '716' '597';
+	TreeWindowPosition  '46' '6' '969' '1425';
+	ListWindow Characters open Gadget '12' '494' '1253' '542' '517' 000;
+	ListWindow Taxa closed Gadget '12' '50' '10' '253' '377' 100000000;
+	ListWindow Trees closed Gadget '12' '50' '10' '134' '387' ;
+	ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow ExSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharSets open Gadget '12' '50' '10' '134' '193' ;
+	ListWindow TaxSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490' ;
+	TextWindow AboutFile  '50' '25' '280' '445' Gadget '12' (normal) 1 ;
+	ChartWindowPosition  '52' '30' '818' '1380';
+	StateNamesSymbols open Gadget '12' '19' '252' '777' '356' '417';
+	WindowOrder  Tree List Characters States Text AboutFile List CharSets;
+	OtherSymbols &/ 00 ?-;
+	Correlation  '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile  '2';
+	ExportHTML _ MOSS  '100' 110000;
+	PrettyPrint 10;
+	CharLegendPosition  '871' '1330' '209' '205';
+	TreeLegendPosition  '904' '1232' '88' '93';
+	EditorToolsPosition  '799' '2' '115' '165';
+	TreeToolsPosition  '716' '9' '126' '138';
+	TreeWindowProgram 00;
+	TreeWindow 0000;
+	Continuous  '0' '3' 1;
+	Calculations 1000101;
+	SummaryMode  '0' '0' 0;
+	Charts  Arial '12' (normal) 0010;
+	NexusOptions  '0' '0' '50' 001011001;
+	TipLabel  '1';
+	TreeFont  Gadget '12' (normal);
+	TreeShape  1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors  '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth  '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax  '0';
+	TraceAllChangesDisplay  '1' 1;
+	BarsOnBranchesDisplay  '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation  '3' 1;
+	PrintTree  10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Gadget '12' (normal) Geneva '10' (normal) Gadget '12' (normal) Gadget '12' (normal) Gadget '12' (bold ) Gadget '12' (normal) Gadget '12' (normal) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '0' '2' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 10;
+	TreeTools  '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools  '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign  '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools  '1';
+END;

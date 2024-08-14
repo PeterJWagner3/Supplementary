@@ -1,0 +1,155 @@
+#NEXUS
+[MacClade 4.08 registered to Peter Wagner, Field Museum of Natural History]
+
+
+BEGIN TAXA;
+	DIMENSIONS  NTAX=15;
+
+[!Merle, J. 2005. Jsowerbya, new genus of Muricidae (Mollusca: Gastropoda) from the Eocene of the Paris (France) and Hampshire (England) basins with a phylogenetic assessment of its Ocenebrine versus Ergalataxine affinities. Geobios 38:505-517.]
+	TAXLABELS
+	Paziella_cretacea
+	Paziella_dyscrita
+	Typhis_tubifer
+	Ocinebrina_aciculata
+	Ocenebra_erinaceus
+	Urosalpinx_cinerea
+	Muricopsis_cristata
+	Orania_fusulus
+	Ergalatax_obscura
+	Drupina_grossularia
+	Drupina_morum
+	Stramonita_haemastorna
+	Jsowerbya_sexdentata
+	Jsowerbya_depauperata
+	Jsowerbya_auversiensis;
+END;
+
+
+BEGIN CHARACTERS;
+	DIMENSIONS  NCHAR=22;
+	FORMAT SYMBOLS= " 0 1 2 3 4 5 6 7 8" MISSING=? GAP=- ;
+	CHARSTATELABELS
+		1  Aperture_and_siphonal_canal / open_siphonal_canal 'sealed_canal_siphonal_(Ocenebra_erinaceus-type)' 'peristome_encircled_and_sealed_siphonal_canal_(T._tubifer-type)',
+  2  Columellar_ornamentation / 'superficial_folds_(P._cretaceatype)' 'no_columellar_ornamentation_(Ocenebra-type)' 'tubercles_(Jsowerbya-type)' 'basal_folds_(S._haemastomatype)',
+  3  Shoulder_sinus / deep shallow,
+  4  Anal_sulcus / 'present_and_narrow_(O._fusulustype)' 'present_and_wide_(Jsowerbya-type).',
+  5  Cord_SP
+		;
+
+MATRIX
+[                                  10        20   ]
+[                                  .         .    ]
+
+Paziella_cretacea         0000000000000000000000
+Paziella_dyscrita         0100000000000100000000
+Typhis_tubifer            2100000000001000000000
+Ocinebrina_aciculata      1110010111000000011020
+Ocenebra_erinaceus        1110010111000000111201
+Urosalpinx_cinerea        0110010111000000011021
+Muricopsis_cristata       0210020221010020112100
+Orania_fusulus            0211111000100001012010
+Ergalatax_obscura         0211111000100001012010
+Drupina_grossularia       0311211000100011013010
+Drupina_morum             0311211000100011013010
+Stramonita_haemastorna    0311111010102001013012
+Jsowerbya_sexdentata      0212010111000100011010
+Jsowerbya_depauperata     0212010111000100012020
+Jsowerbya_auversiensis    0212010111000100011010
+;
+END;
+
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+	TYPESET * UNTITLED  = unord: 1-22;
+	WTSET * UNTITLED  = 1: 1-22;
+END;
+
+
+BEGIN TREES;
+
+	TRANSLATE
+		1	Paziella_cretacea,
+		2	Paziella_dyscrita,
+		3	Typhis_tubifer,
+		4	Ocinebrina_aciculata,
+		5	Ocenebra_erinaceus,
+		6	Urosalpinx_cinerea,
+		7	Muricopsis_cristata,
+		8	Orania_fusulus,
+		9	Ergalatax_obscura,
+		10	Drupina_grossularia,
+		11	Drupina_morum,
+		12	Stramonita_haemastorna,
+		13	Jsowerbya_sexdentata,
+		14	Jsowerbya_depauperata,
+		15	Jsowerbya_auversiensis
+	;
+	TREE  * UNTITLED =  [&R] (1,(2,(3,((8,(9,(12,(10,11)))),(7,((14,(13,15)),(6,(4,5))))))));
+
+END;
+
+
+BEGIN MacClade;
+	Version 4.0  87;
+	LastModified -812719454;
+	FileSettings treewindow  '1' '1' '23' '1';
+	Singles 010;
+	Editor 00011001111111100100010010 '0' '24' Gadget '12' '162' '1' all;
+	EditorPosition  '44' '6' '529' '813';
+	TreeWindowPosition  '46' '6' '714' '1148';
+	ListWindow Characters open Gadget '12' '50' '10' '134' '587' 000;
+	ListWindow Taxa closed Geneva '9' '50' '10' '241' '313' 100000000;
+	ListWindow Trees closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow ExSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow TaxSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490' ;
+	ChartWindowPosition  '52' '30' '818' '1380';
+	StateNamesSymbols open Gadget '12' '10' '44' '927' '203' '507';
+	WindowOrder  Tree States List Characters;
+	OtherSymbols &/ 00 ?-;
+	Correlation  '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile  '2';
+	ExportHTML _ MOSS  '100' 110000;
+	PrettyPrint 10;
+	CharLegendPosition  '587' '1053' '154' '85';
+	TreeLegendPosition  '653' '955' '88' '93';
+	EditorToolsPosition  '434' '1245' '115' '165';
+	TreeToolsPosition  '716' '9' '126' '138';
+	TreeWindowProgram 10;
+	TreeWindow 0000;
+	Continuous  '0' '3' 1;
+	Calculations 1000101;
+	SummaryMode  '0' '0' 0;
+	Charts  Arial '12' (normal) 0010;
+	NexusOptions  '0' '0' '50' 001011011;
+	TipLabel  '1';
+	TreeFont  Gadget '12' (normal);
+	TreeShape  1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors  '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth  '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax  '0';
+	TraceAllChangesDisplay  '1' 1;
+	BarsOnBranchesDisplay  '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation  '3' 1;
+	PrintTree  10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Gadget '9' (normal) Gadget '10' (normal) Gadget '9' (normal) Gadget '9' (normal) Gadget '9' (bold ) Gadget '9' (normal) Gadget '9' (normal) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '0' '28075' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 00;
+	TreeTools  '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools  '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign  '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools  '1';
+END;

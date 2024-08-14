@@ -1,0 +1,1026 @@
+#NEXUS
+
+    [ File output by Morphobank v3.0 (http://www.morphobank.org); 2024-07-19 13.19.35 ]
+
+    BEGIN TAXA;
+    DIMENSIONS NTAX=51;
+    TAXLABELS
+    		'Crassatella ponderosa'
+		'Astarte sulcata'
+		'Palaeocardita crenata'
+		'Claibornicardia alticostata'
+		'Rotundicardia rotunda'
+		'Kalelia multicostata'
+		'Glyptoactis hadra'
+		'Baluchicardia beaumonti'
+		'Purpurocardia purpurata'
+		'Darwinicardia patagonica'
+		'Darwinicardia angusticostata'
+		'Venericardia imbricata'
+		'Venericardia eudaedalea'
+		'Paraglans calcitrapoides'
+		'Arcturellina asperula'
+		'Cardiocardita ajar'
+		'Cardites antiquatus'
+		'Cardites partschii'
+		'Xenocardita lacunaris'
+		'Leuroactis pilsbryi'
+		'Pacificor mulleri'
+		'Megacardita jouanetti'
+		'Venericor planicosta'
+		'Neovenericor austroplata'
+		'Beguina semiorbiculata'
+		'Cardita variegata'
+		'Thecalia concamerata'
+		'Carditamera floridana'
+		'Byssomera affinis'
+		'Glans trapezia'
+		'Centrocardita aculeata'
+		'Kolmeris tehuelchana'
+		'Miodomeris cossmanni'
+		'Miodontiscus prolongatus'
+		'Pteromeris perplana'
+		'Scalaricardita scalaris'
+		'Scalaricardita chamaeformis'
+		'Vimentum dilectum'
+		'Coripia unidentata'
+		'Malarossia eos'
+		'Pleuromeris tridentata'
+		'Pleuromeris decemcostata'
+		'Oesterheldia cannada'
+		'Cyclocardia borealis'
+		'Cyclocardia compressa'
+		'Cyclocardia granulata'
+		'Cyclocardia moniliata'
+		'Cyclocardia awamoensis'
+		'Crassicardia crassidens'
+		'Coanicardita ventricosa'
+		'Hippocampocardia barbarensis'
+    ;
+    ENDBLOCK;
+
+    BEGIN CHARACTERS;
+	DIMENSIONS NCHAR=153;
+	FORMAT DATATYPE=STANDARD GAP=- MISSING=? SYMBOLS="01234567";
+	CHARLABELS
+		 [1] 'Number of radial ribs'
+		 [2] 'Mean size of adult shells (Length in mm)'
+		 [3] 'Outline in adult shells'
+		 [4] 'Outline in juvenile shells'
+		 [5] 'Elongation of outline in anterior-posterior direction'
+		 [6] 'Posterior-dorsal margin inclination'
+		 [7] 'Posterior-dorsal margin projection'
+		 [8] 'Posterior-ventral margin projection'
+		 [9] 'Anterior-ventral margin projection'
+		 [10] 'Posterior margin outline'
+		 [11] 'Anterior margin outline'
+		 [12] 'Anterior-dorsal corner'
+		 [13] 'Angle between posterior and dorsal margins'
+		 [14] 'Dorsal margin development'
+		 [15] 'Dorsal margin elongation'
+		 [16] 'Angle between posterior and ventral margins'
+		 [17] 'Radial rib projected between posterior and ventral margins angle'
+		 [18] 'Notch in posterior margin'
+		 [19] 'Byssal notch in ventral margin'
+		 [20] 'Presence of an incubatory chamber in females'
+		 [21] 'Presence of two morphotypes with different convexity (possible sexual dimorphism)'
+		 [22] 'Serrated posterior margin'
+		 [23] 'Shell thickness'
+		 [24] 'Umbones direction'
+		 [25] 'Umbones placement'
+		 [26] 'Umbonal area convexity'
+		 [27] 'Degree of umbo recurvature'
+		 [28] 'Umbonal outline in external view'
+		 [29] 'Umbonal outline in internal view'
+		 [30] 'Distance between umbos'
+		 [31] 'Presence of escutcheon'
+		 [32] 'Escutcheon width'
+		 [33] 'Escutcheon demarcation'
+		 [34] 'Sculpture of escutcheon'
+		 [35] 'Presence of lunule'
+		 [36] 'Lunule depth'
+		 [37] 'Lunule demarcation'
+		 [38] 'Sculpture of lunule'
+		 [39] 'Lunule outline'
+		 [40] 'Lunule convexity'
+		 [41] 'Lunule size'
+		 [42] 'Lunule symmetry'
+		 [43] 'Lunule projection'
+		 [44] 'Excavated lunule pushing the umbones'
+		 [45] 'Striated teeth'
+		 [46] 'Hinge size (Height)'
+		 [47] 'Internal resilifer'
+		 [48] 'Right anterior lateral teeth laminar'
+		 [49] 'Right anterior lateral teeth pustular'
+		 [50] 'Presence of anterior tooth (3a)'
+		 [51] 'Orientation of anterior tooth (3a)'
+		 [52] 'Prominence of anterior tooth (3a)'
+		 [53] 'Shape of anterior tooth (3a)'
+		 [54] 'Apex of anterior tooth (3a)'
+		 [55] 'Division of anterior tooth (3a)'
+		 [56] 'Posterior-ventral corner of middle tooth (3b) extension'
+		 [57] 'Shape of middle tooth (3b)'
+		 [58] 'Curvature of middle tooth (3b)'
+		 [59] 'Orientation of middle tooth (3b) (in degrees)'
+		 [60] 'Elevation of middle tooth (3b)'
+		 [61] 'Apex of middle tooth (3b)'
+		 [62] 'Fusion between anterior tooth (3a) and middle tooth (3b)'
+		 [63] 'Shape of posterior tooth (5)'
+		 [64] 'Orientation of posterior tooth (5) (in degrees)'
+		 [65] 'Elevation of posterior tooth (5)'
+		 [66] 'Apex of posterior tooth (5)'
+		 [67] 'Spacing between ventral extreme of posterior tooth (5) and hinge margin'
+		 [68] 'Ventral extreme of posterior tooth (5)'
+		 [69] 'Extension of posterior tooth (5)'
+		 [70] 'Higher tooth in the right hinge'
+		 [71] 'Ventral edge of right hinge'
+		 [72] 'Projection of right nymph margin'
+		 [73] 'Right posterior lateral teeth laminar'
+		 [74] 'Right posterior lateral teeth pustular'
+		 [75] 'Left anterior lateral teeth laminar'
+		 [76] 'Left anterior lateral teeth pustular'
+		 [77] 'Orientation of anterior tooth (2) (in degrees)'
+		 [78] 'Size relations of anterior tooth (2)'
+		 [79] 'Elevation of anterior tooth (2)'
+		 [80] 'Size of anterior tooth (2)'
+		 [81] 'Shape of anterior tooth (2)'
+		 [82] 'Lateral profile of anterior tooth (2)'
+		 [83] 'Orientation of posterior tooth (4b) (in degrees)'
+		 [84] 'Elevation of posterior tooth (4b)'
+		 [85] 'Curvature of posterior tooth (4b)'
+		 [86] 'Higher tooth in the left hinge'
+		 [87] 'Knob placed below ventral extreme of lunular margin'
+		 [88] 'Lateral profile of posterior tooth (4b)'
+		 [89] 'Left posterior lateral teeth laminar'
+		 [90] 'Left posterior lateral teeth pustular'
+		 [91] 'Comarginal sculpture'
+		 [92] 'Radial sculpture'
+		 [93] 'Dominant sculpture'
+		 [94] 'Comarginal lines'
+		 [95] 'Demarcation of comarginal lines'
+		 [96] 'Elevation of comarginal lines'
+		 [97] 'Comarginal lamellae'
+		 [98] 'Undulations'
+		 [99] 'Undulations in juvenile shell'
+		 [100] 'Type of radial sculpture'
+		 [101] 'Radial ribs width in adult shells'
+		 [102] 'Radial ribs width along valve surface (horizontal)'
+		 [103] 'Presence of accessory elements'
+		 [104] 'Morphology of accessory elements'
+		 [105] 'Accessory elements presence (vertical, across ontogeny)'
+		 [106] 'Accessory elements development (horizontal) in early stages'
+		 [107] 'Accessory elements development (horizontal) toward centre of valves'
+		 [108] 'Accessory elements proportions toward centre of valves'
+		 [109] 'Cross-section of radial ribs in adult shell'
+		 [110] 'Cross-section of radial ribs in juvenile shell'
+		 [111] 'Height of radial ribs'
+		 [112] 'Radial ribs in gerontic valve surface'
+		 [113] 'Extension of obsolete radial ribs in valve surface'
+		 [114] 'Smoothed radial ribs in some region of valve surface'
+		 [115] 'Radial ribs posteriorly inclined in cross-section'
+		 [116] 'Serrated flanks of radial ribs'
+		 [117] 'Stacked radial ribs on flanks'
+		 [118] 'Interspaces'
+		 [119] 'Interspaces width'
+		 [120] 'Cross-section of interspaces in adult shell'
+		 [121] 'Cross-section of interspaces in juvenile shell'
+		 [122] 'Seventh or eighth anterior radial rib more marked than the remaining'
+		 [123] 'Posterior area'
+		 [124] 'Fifth or sixth posterior radial rib'
+		 [125] 'Posterior-ventral prosocline radial ribs'
+		 [126] 'Presence of umbonal carinae towards posterior margin'
+		 [127] 'Presence of comarginal nodes'
+		 [128] 'Type of comarginal nodes in adult shell'
+		 [129] 'Size of comarginal nodes'
+		 [130] 'Separation between comarginal nodes along radial rib'
+		 [131] 'Cancelled aspect given by comarginal nodes and radial sculpture'
+		 [132] 'Development of comarginal nodes in post-juvenile shell (horizontal)'
+		 [133] 'Development of comarginal nodes in post-juvenile shell (vertical, across ontogeny)'
+		 [134] 'Presence of comarginal nodes in juvenile shell'
+		 [135] 'Comarginal nodes more marked around lunule'
+		 [136] 'Spiny nodes in juvenile shell'
+		 [137] 'Tubular nodes in posterior surface of valve'
+		 [138] 'Flat zone between anterior adductor muscle scar and anterior margin'
+		 [139] 'Prominence of adductor muscle scars'
+		 [140] 'Size of adductor muscle scars'
+		 [141] 'Placement of anterior adductor muscle scar'
+		 [142] 'Size relation between both adductor muscle scars'
+		 [143] 'Height of pallial line'
+		 [144] 'Intersection between pallial line and anterior adductor muscle scar'
+		 [145] 'Shape of pallial line'
+		 [146] 'Presence of ventral margin crenulations'
+		 [147] 'Correspondence of ventral margin crenulations'
+		 [148] 'Shape of crenulations'
+		 [149] 'Extreme tip of crenulations'
+		 [150] 'Extensions of crenulations toward valve inside'
+		 [151] 'Extension of crenulations on margins'
+		 [152] 'Size of crenulations on margins'
+		 [153] 'Radial ribs between crenulations on internal view'
+	;
+	STATELABELS
+		1
+		'without radial ribs'
+		'up to 15'
+		'from 16 to 20'
+		'from 21 to 25'
+		'from 26 to 30'
+		'from 31 to 37'
+		'more than 37 '
+		,
+		2
+		'up to 12'
+		'from 12 to 22'
+		'from 22 to 32'
+		'from 32 to 60'
+		'from 60 to 90'
+		'more than 90 '
+		,
+		3
+		'mytiliform/modioliform'
+		'obtuse triangular'
+		'quadrate'
+		'subtrigonal'
+		'subrectangular'
+		'subrounded (rotund in Heaslip, 1968)'
+		'rectangular'
+		,
+		4
+		'subrectangular'
+		'subquadrate'
+		'subtrigonal'
+		'subrounded'
+		,
+		5
+		'slightly developed'
+		'absent'
+		'strongly developed '
+		,
+		6
+		'absent'
+		'slight inclination (as in Coripia)'
+		'pronounced inclination (near to 45º from umbones, as in Miodomeris and Pteromeris)'
+		,
+		7
+		'absent'
+		'slightly projected'
+		'strongly projected (above the hinge line)'
+		,
+		8
+		'strongly projected'
+		'absent'
+		'slightly projected'
+		,
+		9
+		'absent'
+		'present'
+		,
+		10
+		'rounded'
+		'acuminated (acute with marked angle)'
+		'slightly truncated'
+		'vertically truncated'
+		,
+		11
+		'rounded'
+		'straight'
+		,
+		12
+		'softly marked'
+		'prominent'
+		,
+		13
+		'softly marked'
+		'strongly marked'
+		'absent'
+		,
+		14
+		'curved and descended'
+		'descended'
+		'regular (not included on other states)'
+		'straight'
+		,
+		15
+		'absent'
+		'present'
+		,
+		16
+		'absent (rounded angle)'
+		'present'
+		'strongly marked'
+		,
+		17
+		'absent'
+		'present (as in Schizocardita)'
+		,
+		18
+		'absent'
+		'present (as in Glans)'
+		,
+		19
+		'present (as in Beguina)'
+		'absent'
+		,
+		20
+		'absent'
+		'present'
+		,
+		21
+		'absent'
+		'present'
+		,
+		22
+		'absent'
+		'present (as in Glans)'
+		,
+		23
+		'not developed'
+		'slightly shell thickness'
+		'strongly shell thickness (as in Megacardita)'
+		,
+		24
+		'prosogyrous'
+		'slightly prosogyrous'
+		'orthogyrous'
+		'opysthogyrous '
+		,
+		25
+		'very anteriorly placed'
+		'at anterior third'
+		'subcentrally placed'
+		,
+		26
+		'regular (slightly rounded)'
+		'very low (nearly flat shells)'
+		'very high'
+		'moderately high'
+		,
+		27
+		'slightly recurved'
+		'recurved'
+		'strongly recurved'
+		,
+		28
+		'pointed'
+		'slightly rounded'
+		'strongly rounded'
+		,
+		29
+		'umbones not visible'
+		'umbones visible '
+		,
+		30
+		'in contact'
+		'minimum spacing'
+		'umbones far away '
+		,
+		31
+		'absent'
+		'present'
+		,
+		32
+		'narrow'
+		'wide'
+		'escutcheon absent'
+		,
+		33
+		'slightly marked'
+		'strongly marked'
+		,
+		34
+		'absent'
+		'present'
+		,
+		35
+		'present'
+		'absent'
+		,
+		36
+		'shallow'
+		'very deep'
+		,
+		37
+		'strongly marked by a groove'
+		'slightly marked'
+		,
+		38
+		'smooth'
+		'only comarginal lines'
+		'only radial lines'
+		'radial and comarginal lines'
+		,
+		39
+		'subovate'
+		'subrounded'
+		'inverted tear-shaped'
+		,
+		40
+		'flat'
+		'concave'
+		'convex'
+		'sinuous'
+		,
+		41
+		'small'
+		'regular'
+		'large'
+		,
+		42
+		'symmetric lunule'
+		'right lunule larger'
+		,
+		43
+		'absent'
+		'right lunule edge projected as a sheet'
+		,
+		44
+		'absent'
+		'present'
+		,
+		45
+		'absent'
+		'present'
+		,
+		46
+		'very reduced and short'
+		'regular'
+		'extended towards venter'
+		,
+		47
+		'present'
+		'absent'
+		,
+		48
+		'absent'
+		'two teeth'
+		,
+		49
+		'absent'
+		'present'
+		,
+		50
+		'very reduced'
+		'present'
+		'absent'
+		'limited to a small sheet adjacent to lunular margin'
+		,
+		51
+		'vertical'
+		'anterior'
+		'posterior'
+		'absent'
+		,
+		52
+		'little prominent'
+		'conspicuous'
+		'very developed'
+		'absent'
+		'very little prominent'
+		,
+		53
+		'elongate rectangular'
+		'pustular'
+		' curved rectangular'
+		'absent'
+		,
+		54
+		'resting on anterior side of middle tooth'
+		'not resting on anterior side of middle tooth'
+		,
+		55
+		'divided (shark tooth-like)'
+		'not divided'
+		,
+		56
+		'absent'
+		'present (as in Beguina and Cardita)'
+		,
+		57
+		'triangular with broad base'
+		'triangular with narrow base'
+		'scimitar-like'
+		,
+		58
+		'anterior side concave'
+		'anterior side convex'
+		'anterior side straight'
+		,
+		59
+		'0'
+		'from 0 to 30'
+		'from 30 to 35'
+		'from 35 to 45'
+		'from 45 to 90'
+		'90'
+		,
+		60
+		'constant'
+		'higher towards dorsal'
+		'higher towards ventral'
+		'higher at centre'
+		,
+		61
+		'not reaching the dorsal extreme of hinge'
+		'reaching the dorsal extreme of hinge'
+		,
+		62
+		'absent'
+		'present'
+		,
+		63
+		'straight'
+		'curved'
+		,
+		64
+		'more than 35'
+		'from 20 to 35'
+		'from 0 to 20'
+		'0'
+		,
+		65
+		'lower than other teeth'
+		'equals to other teeth'
+		,
+		66
+		'resting on posterior side of middle tooth'
+		'not resting on posterior side of middle tooth'
+		,
+		67
+		'present'
+		'absent'
+		,
+		68
+		'protruding from ventral edge of hinge'
+		'not protruding'
+		,
+		69
+		'not reaching the apex of middle tooth'
+		'reaching the apex of middle tooth'
+		'reaching the middle point of middle tooth'
+		,
+		70
+		'3b'
+		'3a'
+		'5'
+		,
+		71
+		'invaginated to dorsal'
+		'concave'
+		'straight'
+		'sinuous'
+		'wide and inverted ‘V’-shaped'
+		'irregular'
+		,
+		72
+		'absent'
+		'present'
+		'large '
+		,
+		73
+		'present'
+		'absent'
+		,
+		74
+		'present'
+		'absent'
+		,
+		75
+		'present'
+		'absent'
+		,
+		76
+		'absent'
+		'present'
+		,
+		77
+		'0'
+		'from 0 to 50'
+		'from 50 to 80'
+		'from 80 to 90'
+		'more than 90 '
+		,
+		78
+		'higher than wide'
+		'as high as wide'
+		'wider than high'
+		,
+		79
+		'higher towards ventral'
+		'higher towards dorsal'
+		'higher at centre'
+		'constant'
+		,
+		80
+		'very large'
+		'large'
+		'very reduced '
+		,
+		81
+		'subquadrate'
+		'subrectangular'
+		'subtriangular'
+		,
+		82
+		'hook-like outline'
+		'without hook-like outline'
+		,
+		83
+		'from 0 to 20'
+		'from 20 to 30'
+		'from 30 to 35'
+		'from 35 to 45'
+		'more than 45'
+		,
+		84
+		'higher towards ventral'
+		'higher towards dorsal'
+		'higher at centre'
+		,
+		85
+		'slightly curved'
+		'strongly curved'
+		'straight'
+		,
+		86
+		'4'
+		'2'
+		'equal height'
+		,
+		87
+		'present'
+		'absent'
+		,
+		88
+		'hook-like outline'
+		'without hook-like outline'
+		,
+		89
+		'present'
+		'absent'
+		,
+		90
+		'absent'
+		'present'
+		,
+		91
+		'present'
+		'absent'
+		,
+		92
+		'absent'
+		'present'
+		,
+		93
+		'comarginal'
+		'radial'
+		,
+		94
+		'present'
+		'absent'
+		,
+		95
+		'more marked anteriorly'
+		'equally marked throughout ontogeny'
+		,
+		96
+		'low'
+		'elevated'
+		,
+		97
+		'absent'
+		'present on posterior area (as in Xenocardita)'
+		,
+		98
+		'present'
+		'absent'
+		,
+		99
+		'limited to juvenile shell'
+		'not limited'
+		,
+		100
+		'entire radial ribs'
+		'fine radial ribs'
+		,
+		101
+		'very wide radial ribs in adult shells'
+		'not very wide radial ribs in adult shells'
+		,
+		102
+		'wider towards posterior'
+		'constant width along whole valve surface'
+		'wider towards anterior '
+		,
+		103
+		'absent'
+		'present '
+		,
+		104
+		'accesory elements absent'
+		'slopes, moderate'
+		'slopes, pronounced'
+		'terraces, moderate'
+		'terraces, pronounced '
+		,
+		105
+		'accessory elements absent'
+		'accessory elements present only in early stages'
+		'accessory elements present in all stages '
+		,
+		106
+		'accessory elements absent'
+		'equally developed in all radial ribs'
+		'more developed in anterior radial ribs '
+		,
+		107
+		'absent'
+		'equally developed in all radial ribs'
+		'less developed in anterior radial ribs'
+		'more developed in anterior radial ribs '
+		,
+		108
+		'absent'
+		'much smaller than central rib'
+		'more than medium width of central rib '
+		,
+		109
+		'subovate'
+		'subrectangular'
+		'subtriangular'
+		,
+		110
+		'subovate'
+		'subrectangular'
+		'subtriangular'
+		,
+		111
+		'very low'
+		'slightly elevated'
+		'elevated (wider than high)'
+		'high (strongly elevated, higher than wide) '
+		,
+		112
+		'persistent'
+		'obsolete'
+		,
+		113
+		'obsolete radial ribs absent'
+		'only at distal valve surface'
+		'towards middle of valve surface'
+		'more than middle of valve surface'
+		,
+		114
+		'never smoothed'
+		'anteriorly smoothed'
+		'posteriorly smoothed'
+		,
+		115
+		'absent'
+		'present (as in Carditamera radiata)'
+		,
+		116
+		'absent'
+		'present (as in Cardita variegata)'
+		,
+		117
+		'absent'
+		'present (as in Kolmeris tehuelchana)'
+		,
+		118
+		'present'
+		'absent'
+		,
+		119
+		'narrower than radial ribs'
+		'as wide as radial ribs'
+		'wider than radial ribs'
+		,
+		120
+		'V-shaped'
+		'U-shaped'
+		'subrectangular'
+		'inverted trapezoid'
+		'fine line'
+		,
+		121
+		'V-shaped'
+		'U-shaped'
+		'subrectangular'
+		'inverted trapezoid'
+		'fine line'
+		,
+		122
+		'absent'
+		'present'
+		,
+		123
+		'defined by thicker radial ribs than the remaining'
+		'defined by less thick radial ribs than the remaining'
+		'defined by a convexity change'
+		'absent'
+		,
+		124
+		'stronger than previous ones'
+		'equally developed than previous ones'
+		,
+		125
+		'absent'
+		'present'
+		,
+		126
+		'absent'
+		'present'
+		,
+		127
+		'absent'
+		'present'
+		,
+		128
+		'scales'
+		'smooth radial ribs'
+		'subrectangular nodes'
+		'reticulate valve surface'
+		'subrounded nodes'
+		'funginated nodes'
+		'saw-like nodes'
+		,
+		129
+		'large'
+		'small'
+		,
+		130
+		'regular'
+		'very close'
+		'without separation'
+		'very spaced'
+		'absent'
+		,
+		131
+		'absent'
+		'present'
+		'incipient'
+		'smooth radial ribs'
+		,
+		132
+		'equally developed throughout ontogeny'
+		'posteriorly marked'
+		'anteriorly marked'
+		,
+		133
+		'present throughout ontogeny'
+		'nodes disappearing in gerontic regions'
+		'nodes disappearing at the middle of valve'
+		'nodes disappearing before the middle of valve'
+		'smooth radial ribs'
+		,
+		134
+		'present'
+		'absent'
+		,
+		135
+		'absent'
+		'present'
+		,
+		136
+		'absent'
+		'present in all umbonal region'
+		'more developed towards anterior side of umbonal region'
+		,
+		137
+		'absent'
+		'present'
+		,
+		138
+		'absent'
+		'present'
+		,
+		139
+		'slightly marked'
+		'marked'
+		'strongly marked'
+		,
+		140
+		'regular'
+		'very large'
+		,
+		141
+		'displaced towards hinge margin'
+		'not displaced'
+		,
+		142
+		'posterior larger'
+		'anterior larger'
+		'equal'
+		,
+		143
+		'less than a fifth of total valve height'
+		'a fifth of total valve height'
+		'a quarter of total valve height '
+		,
+		144
+		'at middle of anterior adductor muscle scar'
+		'at posterior side of anterior adductor muscle scar'
+		,
+		145
+		'inclined towards posterior margin'
+		'uniform curve'
+		,
+		146
+		'absent'
+		'present'
+		,
+		147
+		'not corresponding to interspaces'
+		'corresponding to interspaces'
+		,
+		148
+		'subrectangular'
+		'subtriangular'
+		,
+		149
+		'truncated'
+		'rounded'
+		,
+		150
+		'gentle extended towards valve inside'
+		'limited to ventral edge'
+		,
+		151
+		'to dorsal side of posterior adductor muscle scar'
+		'reaching posterior adductor muscle scar'
+		'below posterior adductor muscle scar'
+		'to point of contact between posterior and ventral margins'
+		,
+		152
+		'much smaller crenulations on the anterior margin'
+		'crenulations equally developed along the whole margin'
+		'slightly smaller crenulations on the posterior margin'
+		'much smaller crenulations on the posteror margin'
+		,
+		153
+		'extreme tips of radial ribs not visible'
+		'extreme tips of radial ribs extending over the shell margin on internal view'
+		
+	;
+	MATRIX
+	'Crassatella ponderosa'		                 044110010300030100100021220001111101000321100201032400100153000200012050010040312?40201000000000000-----------------------?--00----------121?20001000131-
+	'Astarte sulcata'		                       012210010000030000101021210001100000100121100111032401100243100001010030010040312040011110000010001-----------------------0--00----------011?21011000111-
+	'Palaeocardita crenata'		                 32410002030013100110001112021110000000012110011003240110025310020001205001104030204021110001101101?01100000022200000001100?0100----------021?200011001111
+	'Claibornicardia alticostata'		           53410002020002010010100010111102--001112011011100010011000011012010110301110021020210011101111--01?01114211222200100000440?000140112000000100110111001020
+	'Rotundicardia rotunda'		                 42511001000002010010000010011102--001112011011100000011000011012010100101110021020212011101111--01?01100000012200000002110?000150112000000100110111101011
+	'Kalelia multicostata'		                  43521012030011000010001020011102--011110100011100110111000211012010110211110001020210011101111--01?00214213112100200000110?000140012000000100110111001020
+	'Glyptoactis hadra'		                     23410002020002010010000012221102--011112011011100020111000011012010100401110011120111001101111--01?01114211112200100000110?000120112000000100110111001020
+	'Baluchicardia beaumonti'		               32211001020002000010001012211102--001012011011100011111000011012010110001110021020112011101111--01?01114211222200000000000?000160010000000100110111001020
+	'Purpurocardia purpurata'		               32410001000002000010000010021102--011002200011100101010000311011010110301110301020210211101111--01?00111211112100200000110?000120110000000000121111001110
+	'Darwinicardia patagonica'		              32(3,5)3100(1,2)02000200001010001(0,2)011102--000012100011100000211000211012010110401110101010220011101111--01?01111212122200000001000?100140112000000000110111001011
+	'Darwinicardia angusticostata'		          31531001020002000010000010111102--001012000011100000211000211012010110401110111020220011101111--01?01111212122200000001000?100140112000000000110111001111
+	'Venericardia imbricata'		                42211001030012000010000020011102--001112000011100010011010111012010110201110001120112011101111--01?01112211112200000001110?100120010000000100110111111021
+	'Venericardia eudaedalea'		               51211001030012000010000020011102--001112000011100010011010111012010110201110201120112011101111--01?01112211112200000001110?100120010000000100110111111021
+	'Paraglans calcitrapoides'		              30211012030012000010000020011102--001002200010100020011000111012010110201110311120110011101111--01?01112211112200000001110?100120010000000100110111001021
+	'Arcturellina asperula'		                 41211001030012000010000020011102--001002200010100020011000111012010110201110311120112011101111--01?01112211112200000001110?100120010000000100110111111011
+	'Cardiocardita ajar'		                    31520001010003010010010220001102--001012000010100120011002311012010110201110303020210011101111--01?01112211122200000001110?100120010000000000100111001011
+	'Cardites antiquatus'		                   32420002020002010010000012211102--001012000011100233311000111012010110311110113120200011101111--01?01200000011200200000000?000120012000000100110111001120
+	'Cardites partschii'		                    31420002020002010010000012211102--001012000011100233311000111012010110301110113120200011101111--01?01200000011200200000000?000120012000000100110111001020
+	'Xenocardita lacunaris'		                 20211001020012010010001012121102--001012110011100020011002410001010110301110401120210011101111--11?011112111222000000021000000100300000000000110111001131
+	'Leuroactis pilsbryi'		                   553110020(1,2)0001010010001012111002--000020211012100102010020311010011110311110001010321011101111--01?01100000011012200000440?100110?30410001210120011001220
+	'Pacificor mulleri'		                     54211002020002000010001012111002--000002211012100111011020211010010110311110101010221011101111--01?01111110011011200000440?100110?30410001210110011001220
+	'Megacardita jouanetti'		                 23610002010023010010002002121102--000002111011100010011000111011010110311110100110100011101111--01?01211110012011200000420?100110?30400000210010011001220
+	'Venericor planicosta'		                  543110020(0,2)0001000010002012221002--000002211012100111011020211010010110321110101010221011101111--01?01111120011011200000420?100110?30410001210110011001220
+	'Neovenericor austroplata'		              35310002010021010010002002211102--000002011011100010011000111011010110311110101000121011101111--01?01211120011101200001320?100110?30410000210110011001210
+	'Beguina semiorbiculata'		                64000000000100100000000000001102--1?????????00100000010100001001011000001110000100000001101111--01?100000000000000000000000100140102000000000000011000110
+	'Cardita variegata'		                     32000000000100100000000000011102--000000000000100000110100001000010000001110100100000001101111--01?00000000000100001000000?000100000000000000000011000000
+	'Thecalia concamerata'		                  31000000000100000001000000011102--000000000000100020110100001000010000001111400010000001101111--01?00000000000100000001100?000100000000000000000011000000
+	'Carditamera floridana'		                 22400002010013110110010002121102--000010111000101120010000111012010010401011413120000211111111--01?01100000011200000001220?000120002000000000101011001111
+	'Byssomera affinis'		                     24400002010013110110010000121102--000010011000101120010000111002010010401011413120002211111111--01?01000000011100210000220?000120021000000000201011000111
+	'Glans trapezia'		                        20210002030013010110010002121102--001010100000100120010000111012010010401111413120000211101111--01?01100000000200000000110?100100020000000000200011000111
+	'Centrocardita aculeata'		                32210002030013010010010002111102--001010100000100120010000111012110010401111413120000211101111--01?01100000000200000000110?100100021000000000200011000111
+	'Kolmeris tehuelchana'		                  11121101000000000010000021001102--010100211001100020211002311000010110101110301120302011101111--01?012000000110000001003000100110?30410000000120111001110
+	'Miodomeris cossmanni'		                  20121201000000000010000021001102--0101002110011000200110003110000101101011103011203000111001001001?011000000010000000001000100110?30400000010110111001110
+	'Miodontiscus prolongatus'		              10111201000000000010000021011102--001100211001100020211100311000010110301110401120300011101111--01?011000000010000000001000100111?30400000010110111001110
+	'Pteromeris perplana'		                   10121201000000000010000021001102--010100211001100000011012311000010110101110301120300011101111--01?011000000110000000003400100110?30400000000110111001110
+	'Scalaricardita scalaris'		               30331001020021000010000020001102--001100211001100020011002311000010110101110303120222011101111--01?010000000010000000000000100121112000000000120111101110
+	'Scalaricardita chamaeformis'		           21331001020021000010000020001102--001100211001100020011002311000010110101110303120222011101111--01?010000000010000000000000100121112000000000120111101110
+	'Vimentum dilectum'		                     40431001020022000010000020011102--001100211001100020011002311000010110101110303120221011101111--01?01000000001000000000000?100121112000000000110111101110
+	'Coripia unidentata'		                    40(1,3)31101020001000010000020001102--001100211001100020011002311000010110101110303120222011101111--01?01000000001000000000000?100121112000000000120111101110
+	'Malarossia eos'		                        30331001000022000010001020001102--010100211011101024011000311000010100101011303120222011111111--01?01000000000100000000110?100120112000000000120111001010
+	'Pleuromeris tridentata'		                20321001010001000010000022001102--010100211001100020011002311000010110101110401110202011101111--01?011000000222000000000000100120010000000000110111101110
+	'Pleuromeris decemcostata'		              10321001010001000010000022001102--010100211001100020011002311000010110101110401120202011101111--01?011000000222000000000000100120010000000000110111001110
+	'Oesterheldia cannada'		                  31531001000022000010000013011102--000100200001100020111002311001010110101110403120220011101111--01?00100000002011200000000?1001(1,4)0102000001000110111001111
+	'Cyclocardia borealis'		                  33531001000022000010000010011102--010100200001100010111002311001010110(1,3)01110103120221011101111--01?00100000002011200000000?100110?02300001000110111101110
+	'Cyclocardia compressa'		                 21531001000022000010000010011102--010100200001100010111002311001010110101110103120221011101111--01?00100000002011200000000?100110?02300001000110111101110
+	'Cyclocardia granulata'		                 32531001000020000010000010011102--000101200001100004111002311001010110101110(2,3)03120320011101111--01?00100000002000200000000?1001(2,4)0102000001000120111001110
+	'Cyclocardia moniliata'		                 305310010(0,2)00(0,2)2000010000023011102--000102200001100120011002411001010110101110(1,2)03120220011101111--01?01100000002000200000200?1001(2,4)0102000000000110111001110
+	'Cyclocardia awamoensis'		                31531001000022000010000010011102--010110000001100010011012211001010110(1,3)01110103110220011101111--01?01100000000012200000000?100110102310001000110111101110
+	'Crassicardia crassidens'		               22531001020022000010001010011002--000110200001100111011002211001010110501110203120322011101111--01?00100000002012200000100?100110?02310001110120111001110
+	'Coanicardita ventricosa'		               31531001000022000010000010011102--010110200001100010111002311001010110301110103120222011101111--01?00100000002011200000000?100120102000001000110111101110
+	'Hippocampocardia barbarensis'		          21531012000002000010000010021102--001002000001100014111001110001010100001110403120122011101111--01?00100000000013200002100?10001-?02310001000100111011210
+    ;
+    ENDBLOCK;
+
+          BEGIN NOTES;
+      
+      [Attribute comments]
+            ENDBLOCK;
+            BEGIN ASSUMPTIONS;
+      TYPESET * UNTITLED = ord: 1 - 2 5 - 7 23 - 25 30 59 64 72 77 80 111 143 152, unord: 3 - 4 8 - 22 26 - 29 31 - 58 60 - 63 65 - 71 73 - 76 78 - 79 81 - 110 112 - 142 144 - 151 153;
+      ENDBLOCK;
+      

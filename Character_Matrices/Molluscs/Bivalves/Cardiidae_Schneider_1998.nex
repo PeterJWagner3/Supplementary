@@ -1,0 +1,385 @@
+#NEXUS
+[written Sat Dec 05 17:43:29 CST 2020 by Mesquite  version 3.61 (build 927) at EAS-392515.local/127.0.0.1]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=34;
+	TAXLABELS
+		Plagiocardium Maoricardium Ciliatocardium Profulvia Clinocardium Fuscocardium Keenocardium Yagudinella Serripes Papillicardium Parvicardium_siculum Parvicardium_exiguum Cerastobyssum Apiocardia Trigoniocardia Goniacardia Lunulicardia Corculum Fragum Microfragum Ctenocardia Americardia Goethemia Cerastoderma Hypanis Didacna Goniocardium Avicularium Byssocardium Hippopus Chametrachea Tridacna Persikima Schedocardia 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  'Matrix in file "Cardiidae_Schneider_1998.nex"';
+	DIMENSIONS  NCHAR=51;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9 A B C D E F G H";
+	CHARSTATELABELS 
+		1 Posterior_margin,
+		2 Beak_Gryr,
+		37 Intestine ; 
+	MATRIX
+	Plagiocardium         1?10111(1 2 3)0000000000001111???????????????????????????
+	Maoricardium          0011111300000000000011111000011000303200000000?0101
+	Ciliatocardium        111111020000000010001101100001110022320(0 1)10000010101
+	Profulvia             10111102000?000010001101???????????????????????????
+	Clinocardium          111000010001010010001201101001110032310(0 1)00100020100
+	Fuscocardium          11100001000?010010011201???????????????????????????
+	Keenocardium          101000000001010000000201101001110022310(0 1)001000?0100
+	Yagudinella           211000010001010010000201?????101???????????????????
+	Serripes              201000000010100000000201101101010022320010100010100
+	Papillicardium        1010010100000000000003110000001001303200000000?1100
+	Parvicardium_siculum  104000010000000100000312000000000140220000000??1100
+	Parvicardium_exiguum  104001010000000000000312000001100140120000000101100
+	Cerastobyssum         1040000100000000000013110000000001103200000001?1100
+	Apiocardia            1040010200000000011123131000011101213300010000?1100
+	Trigoniocardia        1040010100000000011123130000011101211300010000?1100
+	Goniacardia           104001010000000101112313???????????????????????????
+	Lunulicardia          1040010000000010000124041000011001411411000000?1100
+	Corculum              104001010000001010000405010000001141140001000021100
+	Fragum                004000030000000000012303?010001101141120010000?1100
+	Microfragum           10500101000000000000130301200(1 2)(1 2)011211210010000?1100
+	Ctenocardia           1050010200000000000013030100011011311200010000?1100
+	Americardia           1050010000000010000013030100011011311200010000?1100
+	Goethemia             10200021000000000000031110000000?030020000000200100
+	Cerastoderma          102000000000000000001311100000000003220010010000100
+	Hypanis               11300001000000000????3111000000000532200100100?0100
+	Didacna               11300001000000000????3111000000000532200100100?0100
+	Goniocardium          1040012(1 2)0000100000000312???????????????????????????
+	Avicularium           1040002?10101000????0?12???????????????????????????
+	Byssocardium          1040002?10102000????0?12???????????????????????????
+	Hippopus              1?40002?11202000????0?12?00010000053200000011011010
+	Chametrachea          1?40002?11302000????0?12?00010000053200000011011210
+	Tridacna              1?40002?11402000????0?12?00110000053200000011011210
+	Persikima             1?40002?11502000????0?12?00010000053200000011011210
+	Schedocardia          100101130000000000001000100001100004320100000000100
+
+;
+
+END;
+BEGIN MacCladeStart;
+	Extended;
+
+END;
+BEGIN SETS;
+	CHARSET Shell_Characters   =   1- 24;
+	CHARSET Soft_Anatomy   =   25- 50;
+	CHARSET Labial_Palp   =   25- 27;
+	CHARSET Ctenidia   =   28- 29;
+	CHARSET Foot   =   30- 32;
+	CHARSET Siphon_&_Tentacles   =   33- 36;
+	CHARSET Stomach   =   38- 45;
+	CHARSET Reproductive   =   46- 47;
+	CHARSET Other   =   48- 50;
+
+	CHARPARTITION * UNTITLED  =  Shell :  1- 24, 'Soft-Anatomy' :  25- 51;
+
+END;
+
+BEGIN ASSUMPTIONS;
+	OPTIONS DEFTYPE = unord PolyTcount = MINSTEPS;
+	TYPESET * UNTITLED   =  unord:  1- 51;
+
+	EXSET * UNTITLED  =  25 -  51;
+
+	WTSET * UNTITLED  =  1: 1 -  51 ;
+
+END;
+
+BEGIN TREES;
+	Title 'Trees from "Cardiidae_Schneider_1998.nex"';
+	ID 0176354553a812;
+	LINK Taxa = Taxa;
+	TRANSLATE
+[0] 		1 Plagiocardium,
+[1] 		2 Maoricardium,
+[2] 		3 Ciliatocardium,
+[3] 		4 Profulvia,
+[4] 		5 Clinocardium,
+[5] 		6 Fuscocardium,
+[6] 		7 Keenocardium,
+[7] 		8 Yagudinella,
+[8] 		9 Serripes,
+[9] 		10 Papillicardium,
+[10] 		11 Parvicardium_siculum,
+[11] 		12 Parvicardium_exiguum,
+[12] 		13 Cerastobyssum,
+[13] 		14 Apiocardia,
+[14] 		15 Trigoniocardia,
+[15] 		16 Goniacardia,
+[16] 		17 Lunulicardia,
+[17] 		18 Corculum,
+[18] 		19 Fragum,
+[19] 		20 Microfragum,
+[20] 		21 Ctenocardia,
+[21] 		22 Americardia,
+[22] 		23 Goethemia,
+[23] 		24 Cerastoderma,
+[24] 		25 Hypanis,
+[25] 		26 Didacna,
+[26] 		27 Goniocardium,
+[27] 		28 Avicularium,
+[28] 		29 Byssocardium,
+[29] 		30 Hippopus,
+[30] 		31 Chametrachea,
+[31] 		32 Tridacna,
+[32] 		33 Persikima,
+[33] 		34 Schedocardia;
+	TREE UNTITLED = (1,(2,(((3,4),((5,6),(7,(8,9)))),((10,((11,13),(12,((14,(15,16)),(((17,18),19),(20,(21,22))))))),(23,((24,(25,26)),(27,(28,(29,(30,(31,(32,33))))))))))));
+
+END;
+
+
+BEGIN NOTES;
+
+	TEXT  TAXON = 34 TEXT = the_outgroup_for_the_present_analysis_is_an_ancestor_with_conchological_states_taken_from_Schedocardia_and_anatomical_states_taken_from_Acanthocardia.;
+
+END;
+
+BEGIN MacClade;
+	Version 4.0 87;
+	LastModified -845452497;
+	FileSettings treewindow '1' '1' '35' '1';
+	Singles 010;
+	Editor 00011001111111100100010010 '0' '24' Gadget '12' '162' '1' all;
+	EditorPosition '139' '8' '969' '1630';
+	TreeWindowPosition '46' '6' '837' '1433';
+	ListWindow Characters closed Gadget '12' '50' '10' '712' '517' 000;
+	ListWindow Taxa open Gadget '12' '50' '25' '576' '337' 100000000;
+	ListWindow Trees closed Gadget '12' '50' '10' '276' '490';
+	ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow ExSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharSets closed Gadget '12' '57' '398' '219' '204';
+	ListWindow TaxSets closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490';
+	ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490';
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+	ChartWindowPosition '52' '30' '818' '1380';
+	StateNamesSymbols closed Gadget '12' '22' '96' '611' '407' '418';
+	WindowOrder List Taxa Tree;
+	OtherSymbols & / 00 ? -;
+	Correlation '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile '2';
+	ExportHTML _ MOSS '100' 110000;
+	PrettyPrint 10;
+	CharLegendPosition '562' '1065' '121' '96';
+	TreeLegendPosition '772' '1240' '88' '93';
+	EditorToolsPosition '399' '48' '115' '165';
+	TreeToolsPosition '716' '9' '126' '138';
+	TreeWindowProgram 00;
+	TreeWindow 0000;
+	Continuous '0' '3' 1;
+	Calculations 1000101;
+	SummaryMode '0' '0' 0;
+	Charts Arial '12' ( normal ) 0010;
+	NexusOptions '0' '0' '50' 001011011;
+	TipLabel '1';
+	TreeFont Gadget '12' ( normal );
+	TreeShape 1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax '0';
+	TraceAllChangesDisplay '1' 1;
+	BarsOnBranchesDisplay '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation '3' 1;
+	PrintTree 10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Gadget '9' ( normal ) Gadget '10' ( normal ) Gadget '9' ( normal ) Gadget '9' ( normal ) Gadget '9' ( bold ) Gadget '9' ( normal ) Gadget '9' ( normal ) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '0' '0' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 10;
+	TreeTools '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools '1';
+
+END;
+BEGIN LABELS;
+	CHARGROUPLABEL 'Soft-Anatomy' COLOR = (RGB 1 1 1) ;
+	CHARGROUPLABEL Shell COLOR = (RGB 1 1 1) ;
+
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 51;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1607211809695;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 5081897935811336319;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 8839648653985120404;
+			tell It;
+				setDefaultOrder  27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26;
+				attachments ;
+			endTell;
+			mqVersion 361;
+			checksumv 0 3 3627386812 null  getNumChars 51 numChars 51 getNumTaxa 34 numTaxa 34   short false   bits 63   states 63   sumSquaresStatesOnly 25821.0 sumSquares 25821.0 longCompressibleToShort true usingShortMatrix false   NumFiles 1 NumMatrices 1 errorReportedDuringRun;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1065 597;
+			setLocation 8 23;
+			setFont Gadget;
+			setFontSize 12;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #8839648653985120404 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 965 525;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 12;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			showCharacters #8839648653985120404 #mesquite.lists.CharacterList.CharacterList;
+			tell It;
+				setData 0;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.DefaultCharOrder.DefaultCharOrder;
+					newAssistant  #mesquite.lists.CharListInclusion.CharListInclusion;
+					newAssistant  #mesquite.lists.CharListPartition.CharListPartition;
+					newAssistant  #mesquite.parsimony.CharListParsModels.CharListParsModels;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 965 525;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 12;
+					getToolPalette;
+					tell It;
+						setTool mesquite.lists.CharacterList.CharacterListWindow.ibeam;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.CharListAnnotPanel.CharListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

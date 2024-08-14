@@ -1,0 +1,201 @@
+#NEXUS
+[written Fri Aug 14 17:52:17 CDT 2020 by Mesquite  version 3.6 (build 917) at Wagners_Dark_Tower/10.0.1.29]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=19;
+	TAXLABELS
+		Belloceras_milleri Buttsoceras_adamsi Cyptendoceras_ruedemanni Ellesmeroceras_cf._elongatum Kyminoceras_forresti Moridunoceras_castelli Palorthoceras_kayseri Polymeres_demetarum Protocycloceras_lamarcki '"Protocycloceras" cf. lamarcki' '"Protocycloceras" angustisiphonatum' '"Protocycloceras" hupehense' '"Protocycloceras" stefanini' Rhabdiferoceras_annuliferum Rudolfoceras_cornuoryx Semiannuloceras_abbeyense Slemmestadoceras_attavus Vassaroceras_henrietta Walcottoceras_monsensis
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=8;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4";
+	CHARSTATELABELS
+		1 cross_section,
+		2 ornamentation,
+		3 siphuncle_position,
+		4 siphuncle_diameter,
+		5 siphuncular_deposits,
+		6 connecting_ring_shape,
+		7 septal_distance,
+		8 suture_shape ; 
+	MATRIX
+	Belloceras_milleri                   31131322
+	Buttsoceras_adamsi                   32323232
+	Cyptendoceras_ruedemanni             32134112
+	Ellesmeroceras_cf._elongatum         12211212
+	Kyminoceras_forresti                 21121221
+	Moridunoceras_castelli               22223332
+	Palorthoceras_kayseri                22311232
+	Polymeres_demetarum                  22133312
+	Protocycloceras_lamarcki             21121122
+	'"Protocycloceras" cf. lamarcki'     21221222
+	'"Protocycloceras" angustisiphonatum'21311232
+	'"Protocycloceras" hupehense'        21321232
+	'"Protocycloceras" stefanini'        31134222
+	Rhabdiferoceras_annuliferum          32134332
+	Rudolfoceras_cornuoryx               11211111
+	Semiannuloceras_abbeyense            21121232
+	Slemmestadoceras_attavus             21111221
+	Vassaroceras_henrietta               11111211
+	Walcottoceras_monsensis              11111111
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 8;
+
+END;
+
+BEGIN NOTES;
+
+	TEXT  TAXON = 4 TEXT = 'Kobayashi�in Balashov (1955)';
+	TEXT  TAXON = 10 TEXT = 'in Balashov (1955)';
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 8;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1597445537628;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 7377057680048778522;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 2052086291714232354;
+			mqVersion 360;
+			checksumv 0 3 2924998649 null  getNumChars 8 numChars 8 getNumTaxa 19 numTaxa 19   short true   bits 30   states 30   sumSquaresStatesOnly 3752.0 sumSquares 3752.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState true false 202;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1456 773;
+			setLocation 8 23;
+			setFont Gadget;
+			setFontSize 16;
+			getToolPalette;
+			tell It;
+			endTell;
+			setActive;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #2052086291714232354 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 361;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 0 -72;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 16;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				hideWindow;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;

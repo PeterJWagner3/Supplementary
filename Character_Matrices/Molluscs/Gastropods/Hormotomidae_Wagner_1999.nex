@@ -1,0 +1,458 @@
+#NEXUS
+[written Tue Dec 01 17:23:34 CST 2020 by Mesquite  version 3.61 (build 927) at EAS-392515.local/10.0.1.51]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=43;
+	TAXLABELS
+		'Turritoma aff. acrea <ornate sp.>' Hormotoma_?_simulatrix Turritoma_acrea Turritoma_cf._acrea Turritoma_?_anna Eroicaspira_artemesia Hormotoma_confusa Straparollina_?_dubia Ectomaria_adelina 'Plethospira "cassina"' Eroicaspira_augustina Eroicaspira_zelleri Plethospira_cannonensis Plethospira_cassina Plethospira_ventricosa Straparollina_grandis Straparollina_turgida 'Eroicaspira <sp. Kobayashi 1959>' '? Plethospira <Coolibah Fm. sp.>' Ectomaria_callahanensis Straparollina_pelagica Ectomaria_prisca Hormotoma_gracilis Hormotoma_salteri Ectomaria_pagoda Omospira_laticincta Omospira_alexandra Eroicaspira_bellicincta Omospira_trentonensis Coelocaulus_insignis 'Ectomaria aff. pagoda <Alaskan Rohr 1988>' 'Ectomaria aff. prisca <Alaskan var. 1 Rohr 1988>' Ectomaria_laticarinata Ectomaria_nieszkowskii Loxonema_murryana Straparollina_erigione 'Straparollina <Zeehan sp.>' Spiroceus_excavata Spiroecus_girvanensis 'Hormotoma <Gordon Ls. sp.>' 'Rhabdostropha <Alaskan sp. Rohr 1988>' Rhabdostropha_primitiva 'Daidia aff. cerithioides <Alaskan sp. Rohr 1988>' 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=224;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9 A B C D E F G H J K L M N P Q R";
+	CHARSTATELABELS 
+		1 Sinus /  _ Absent Present,
+		2 Sinus_Depth_Symmetry /  _ Right_side_sharper Symmetrical Left_side_sharper,
+		3 R._Sinus_Depth /  _0� 10� 20� 30� 40� 50� 60� 70�,
+		4 L._Sinus_Depth /  _0� 10� 20� 30� 40� 50� 60� 70�,
+		5 Sinus_Width_Symmetry /  _ Right_Wider Symmetric Left_Wider,
+		6 R._Sinus_Width /  _ Just_Above_SK Bn._SK_and_RR At_RR Above_RR,
+		7 L._Sinus_Width /  At_Selenizone Just_Below_SK Bn._SK_and_LR At_LR Bn._LR_and_Base,
+		8 Sinus_Curve_Sym /  _ Left_More_Acute Symmetric Left_More_Obtuse,
+		9 R._Sinus_Curve /  _ Plateau Straight Continuous Hyperbolic,
+		10 L._Sinus_Curve /  _ Plateau Straight Continuous Hyperbolic,
+		11 Wrinkled_Right_Sinus /  _ Absent Present,
+		12 Sinuate_Right_Ramp /  _ Absent Present,
+		13 Degree_of_RR_Sinuousity /  _ 'Weak_[Curved]' Moderate 'Strong_[Nearly_Half_Circle]',
+		14 Sinuate_Left_Side /  _ Absent Present,
+		15 Crenulated_Aperture /  _ Absent Present,
+		16 Sigmoidal_Aperture /  _ Absent Aperture_stretches_forward Aperture_stretches_backward,
+		17 Sigmoidal_Development /  _ Slight_Stretch Strong_Stretch,
+		18 Growth_Line_Symmetry /  _ LR_GLs_Stronger Symmetric RR_GLs_Stronger,
+		19 RR_GL_Prominence /  _ Not_Visible Weak Fine_Sharp Strong Extremely_Strong,
+		20 LR_GL_Strength /  _ Not_Visible Weak Fine_Sharp Strong Extremely_Strong,
+		21 �_Growth_Line /  Stronger_on_Adult No_� Stronger_on_Juveniles,
+		22 Change_in_GL_Spacing /  Further_on_Final_Whorl Consistent Closer_on_Final_Whorls,
+		23 Imbricated_Growth_Lines /  _ Absent Weak Moderate Strong Extremely_Strong,
+		24 Imbricated_Nodes /  _ Absent Present,
+		25 Imbrication_Ontogeny /  _ Consistent Becoming_less_prominent Disappearing,
+		26 Basal_Growth_Lines /  Weaker_than_Others Same_as_Others Stronger_than_Others,
+		27 'GL''s around Selenizone' /  Stronger Same Weaker,
+		28 Juvenile_Selenizone /  _ Absent Present,
+		29 Adult_Selenizone /  _ Absent Present,
+		30 Selenizone_Position /  _ At_Sinus_Apex Below_Sinus,
+		31 Selenizone_Width /  _ '�_=_02.5�' '�_=_05�' '�_=_10�' '�_=_15�' '�_=_20�' '�_=_25�' '�_=_30�',
+		32 Peripheral_Lirae /  _ Absent Present,
+		33 P._L._Type /  _ Round Sharp Squared,
+		34 Asymmetrical_PL_Strength /  _ 'Upper\Right_Stronger' Same_Strength 'Lower\Left_Stronger',
+		35 P._L._Strength /  _ Extremely_Weak Weak Moderate Strong Extremely_Strong,
+		36 Frilled_RPL /  _ Absent Present,
+		37 Frilled_LPL /  _ Absent Present,
+		38 Frilled_Strength /  _ Weak Strong,
+		39 Undulating_RPL /  _ Absent Present,
+		40 Undulating_LPL /  _ Absent Present,
+		41 Medial_Keel /  _ Absent Present,
+		42 MK_Type /  _ Rounded Sharp Flange Squared_Ridge Dull_Lump,
+		43 MK_Strength /  _ Very_Weak Weak Moderate Strong Very_Strong Extremely_Strong,
+		44 �MK_Strength /  _ Becomes_Weaker No_� Becomes_Stronger,
+		45 'Ontogenetic Zig-Zag' /  _ Absent 'Migrates_Down,_then_Jumps_Up',
+		46 MK_Tubes /  _ Absent Present,
+		47 Imbricated_MK /  _ Consistent Flares_Periodically,
+		48 Selenizone_Prominence /  _ None Slight Strong,
+		49 Selenizone_Ontogeny /  Becomes_stronger No_major_change Major_reduction Loss_of_Selenizone,
+		50 Slit /  _ Absent Present,
+		51 Slit_Depth /  _ 'Shallow_(�20�)' 'Moderate_(20�-45�)' 'Deep_(�45�)' 'Really_Deep_(�90�)',
+		52 Slit_Continuity /  _ Discontinuous Continuous,
+		53 'Slit:Selenizone' /  _ Subsuming_Selenizone Within_Selenizone Thinner_than_Selenizone,
+		54 Lira_Within_Selenizone /  _ Absent Two_Bordering_Slit,
+		55 Slit_Ontogeny /  _ Present_throughout Absent_on_gerontic_whorls,
+		56 Trema_on_Final_Whorl /  _ Absent Present,
+		57 Lunulae_Shape /  Shallow_Concentric Concentric 'Zipper-Like' '\-shaped' 'V-shaped' Kinked Straight,
+		58 Lunulae_Strength /  _ 'Weaker_than_GL''s' 'Same_as_GL''s' 'Stronger_than_GL''s',
+		59 Strong_Lunulae_Type /  _ Stronger_and_Concentric Serrated,
+		60 Ont_�_Imbrications /  _ Juvenile_Only Constant_Throughout,
+		61 Ont_�_in_Sel_Strength /  _ Decreasing_Prominence None Increasing_Prominence,
+		62 'Bilineate -> Monolineate' /  _ Bilineate_Only 'Bilineate_->_Monolineate',
+		63 Sel_Attitude /  _ Parallel_to_� Curving_Adapically,
+		64 Sel_Symmetry /  Entirely_on_L._Ramp Asymmetrical_on_L._Ramp Bisects_Whorl Asymmetrical_on_R._Ramp Entirely_on_R._Ramp,
+		65 �_Sel_Symmetry /  _ No_Change 'On_R.R_->_Symmetrical',
+		66 MW_Channel /  _ Absent Present,
+		67 Channel_Strength /  _ Weak Strong,
+		68 Inner_Margin_Shape_at_PB /  _ Same_as_Outer_Margin Rounder_than_Outer_Margin,
+		69 Swellings_either_side_of_Seleni /  _ Absent Present_on_Either_Side Present_on_Alveozone_Only,
+		70 Exhalent_Position /  �_�_140� �_�_130� �_�_120� �_�_110� �_�_100� �_�_90� �_�_80� �_�_70� �_�_60� �_�_50� �_�_40� �_�_30� �_�_20� �_�_10� �_�_0� '�_�_-10�' '�_�_-20�' '�_�_-30�',
+		71 Shape_Symmetry /  _ Right_Rounder Symmetric Left_Rounder,
+		72 Right_Ramp_Shape /  Acute Globular Convex Slightly_Convex Flat Slightly_Concave Concave,
+		73 �_RR_Shape /  _ More_Concave Remains_appx._Same More_Convex,
+		74 'R:L Width' /  _ 'R:_Longer' Symmetric 'R:_Contracted',
+		75 RR_Length /  less_than_20� apx._20� apx._30� apx._40� apx._50� apx._60� apx._70� apx._80� apx._90� apx._100� apx._110� apx._120� apx._130�,
+		76 Alveozone_Length /  less_than_20� apx._20� apx._30� apx._40� apx._50� apx._60� apx._70� apx._80� apx._90� apx._100� apx._110� apx._120� apx._130�,
+		77 'R:L Projection' /  _ Right_Higher Symmetric Left_Higher,
+		78 RR_Projection /  20�_or_less apx._20� apx._30� apx._40� apx._50� apx._60� apx._70� apx._80� apx._90� apx._100� apx._110� apx._120�,
+		79 LR_Projection /  20�_or_less apx._20� apx._30� apx._40� apx._50� apx._60� apx._70� apx._80� apx._90� apx._100� apx._110� apx._120�,
+		80 Swollen_Right_Side /  _ Absent Present,
+		81 Degree_of_Swelling /  _ Weak Moderate Strong Very_Strong,
+		82 �_RR_Swelling /  _ Always_Acute 'Acute_->_Obtuse' Always_Obtuse,
+		83 �Right_Ramp /  _ Consistent 'Rounder,_Shorter',
+		84 RR_Carina /  _ Absent Present,
+		85 R.R.C._Strength /  _ 'Weak_(no_prominence)' 'Moderate_(less_prominent_than_S' 'Strong_(as_prominent_as_SK)' 'Very_Strong_(more_prominent_tha',
+		86 R.R.C._Type /  _ Lumpish Thin_Thread Round_Lira Sharp_Thread,
+		87 �_R.R.C._Strength /  _ Absent Becomes_Weaker Becomes_Sharper,
+		88 Channeled_RC /  _ Absent Present,
+		89 RRC_Location /  _ @_90�_from_SK @_45�_from_SK @_30�_from_SK,
+		90 RRC_Attitude /  Adapical_Hook 'Perp_RR_(�straight_up�)' 'Abapical_hook_(toward_SK)',
+		91 Serrated_RRC /  _ Thread Serrated,
+		92 Serration_Strength /  _ Slight_Oscillations Strong_Nodes Projecting_Nodes,
+		93 Serration_Early_Ontogeny /  _ Consistent Increasing_Strength,
+		94 Serration_Late_Ont0geny /  _ Consistent Decreasing_Strength,
+		95 Sutural_Lirum /  _ Absent Present,
+		96 SC_Strength /  _ Weak Moderate Strong Very_Strong,
+		97 �_SC_Swelling /  _ Always_Acute 'Acute_->_Obtuse' Always_Obtuse,
+		98 Suture /  _ Oblique Acute,
+		99 Acuteness_of_Suture /  _ Acute Attenuated,
+		100 Curve_Back_at_Suture /  _ Absent Present,
+		101 Left_Ramp_Shape /  Acute Globular Convex Slightly_Convex Flat Concave,
+		102 Swollen_Left_�Gill_Channel� /  _ Absent Present,
+		103 �_of_Swelling /  _ Weak Moderate Strong Very_Strong,
+		104 Left_Ramp_Carina /  _ Absent Present,
+		105 L.R._Carina_Type /  Dull_Swelling Thick_Contusion Sharp_Thread Frill Square_Thread,
+		106 L.R._Carina_Strength /  _ Weak 'Moderate_(~_Selenizone)' Strong Very_Strong,
+		107 �_LRC_strength /  _ Fading_on_older_whorls Constant Becomes_stronger,
+		108 Serrated_LRC /  _ Thread Serrated,
+		109 Serration_Strength /  _ 'Weak_(undulated)' Small_Nodes Large_Nodes,
+		110 Serration_Pattern /  _ Half_Node_Half_Thread Large_Nodes_with_short_intermitant_space '3:2_pattern_"locking"_suture',
+		111 Serration_Ontogeny /  _ Constant Fades_on_Older_Whorls,
+		112 2nd_LRC_above_main /  _ Absent Present,
+		113 2nd_LRC_below_main /  _ Absent Present,
+		114 Tubes_in_2nd_LRC_Above /  _ Absent Present,
+		115 Channeled_LRC /  _ Absent Present,
+		116 Frilled_L.R._Carina /  _ 'Peg_(simply_projects)' 'Frill_(covers_next_whorl)' 'Hyperextended_Frill_(covers_next_whorl_plus)',
+		117 Frill_Bordered_by_Lirae /  _ Absent Present,
+		118 Crenulated_Frill /  _ Absent Present,
+		119 Channeled_Frill /  _ Absent Present,
+		120 Frill_Projection /  _ Behind_Aperture Parallel_to_Aperture In_Front_of_Aperture,
+		121 'Hood-Like Frill' /  _ Absent Present,
+		122 L.R._Carina_Tubes /  _ Absent Present,
+		123 '�LS: expansion of LR' /  _ Absent 'Changes_->_More_Triangular_Form',
+		124 Columella_Thickness /  Thinner_than_Rest_of_Shell No_different Thicker_than_Rest_of_Shell Much_Thicker 'P._tropidophora-like',
+		125 Extent_of_Thickness /  _ Top_Only Columella_Only Columella_and_Base Base_Only,
+		126 Umbilical_Carina /  _ Absent Present,
+		127 Umb._Carina_Type /  _ Thickened_Base Channeled_Swelling Sharp_Thread Rounded_Thread Peg,
+		128 Umb._Carina_Prominence /  _ Very_Weak Weak Strong Projecting Strongly_Projecting,
+		129 �_Umb._Carina /  _ Constant Becomes_Weaker Becomes_Stronger,
+		130 Umb._Carina_Position /  _ 'Beneath_Inner_Margin_(apx._120�_from_sinus)' 'Middle_of_Whorl_(apx._90_from_sinus)' 'Beneath_Outer_Margin_(apx._60�_from_sinus)',
+		131 'Columella / Base Angle' /  _45�_or_less greater_45� greater_60� greater_75� greater_90� greater_105� greater_120� greater_135� greater_150�,
+		132 'Columella Shape (Front)' /  _ Rounded Flattened 'Concave_(T._shumardi-like)',
+		133 Curved_Columella /  _ Straight Curved,
+		134 �_Curvature /  _ Slightly Strongly,
+		135 Inner_Margin_Columella_Shape /  _ 'arch_@_half-circle' arch_@_obtuse_ellipse straight arch_@_acute,
+		136 Outer_Margin_Columella_Shape /  _ Rounder_than_IM Same_as_IM Straighter_than_IM,
+		137 �Margin_Shape /  _ None Rounder,
+		138 Columella_Attitude /  �_�_0� �_�_0� �_�_15� �_�_30� �_�_45� �_�_60� �_�_75� �_�_90� �_�_105� �_�_120�,
+		139 Columellar_fold /  _ Absent Present,
+		140 Siphon /  _ Absent Slight_Twist Strong_Siphon,
+		141 Columella_Lira /  _ Absent Present,
+		142 Columella_Callous /  _ Lira Callous,
+		143 Callus_Orientation /  _ Projects_straight_back_into_umbilicus Folded_Back_into_Umbilicus,
+		144 Extent_of_Callus_Funicle /  _ Fills_Umbilicus Partly_Fills_Umbilicus,
+		145 Callus_Ontogeny /  _ No_Major_Change Increases_Prominence,
+		146 Columellal_Channel /  _ Absent Present,
+		147 Parietal_Inductura /  _ Absent Thin__Incomplete Thin Same_as_Shell Thicker_than_Shell,
+		148 Inductura_Projection /  _ Parallel_to_Aperture Projects_in_Front_of_Aperture,
+		149 Projection_Type /  _ Spread_In Concentrated_Strip Filling_umbilicus Mid_section_extended_forward_slightly,
+		150 Flaring_Aperture /  _ Absent Weak Strong,
+		151 Reflected_Col_Lip /  _ Absent Present,
+		152 Funicle /  _ Absent Present,
+		153 Columella_Fills_Umbilicus /  _ Absent Fills_Umbilicus Continguous_w._Previous_Whorl Folds_back_into_Umbilicus,
+		154 Whole_Ap._Inclined /  _ Radial Tangential,
+		155 Whole_Aperture_InAn /  _ InAn_�_10� InAn_�_20� InAn_�_30� InAn_�_40� InAn_�_50� InAn_�_60�,
+		156 Inclined_Left_Half /  _ Absent Present,
+		157 Left_InAn /  InAn_�_0� InAn_�_10� InAn_�_20� InAn_�_30� InAn_�_40� InAn_�_50� InAn_�_60�,
+		158 Inclined_Right_Half /  _ Absent Present,
+		159 Right_InAn /  _ InAn_�_10� InAn_�_20� InAn_�_30� InAn_�_40� InAn_�_50� InAn_�_60�,
+		160 Reverse_InAn /  _ Absent Present,
+		161 Posterior_Projection /  _ Absent Present,
+		162 Magnitude_of_Posterior_Projecti /  _ '�_�_-10�' '�_�_-20�' '�_�_-30�' '�_�_-40�' '�_�_-50�',
+		163 Anterior_Projection /  _ Absent Present,
+		164 Magnitude_of_Anterior_Projecti /  _ '�_=_10�' '�_=_20�' '�_=_30�' '�_=_40�' '�_=_50�' '�_=_60�',
+		165 Adapical_Inclination_of_RR /  _ Absent Present,
+		166 Degree_of_Inclination /  _ InAn_�_10� InAn_�_20� InAn_�_30� InAn_�_40�,
+		167 Basal_Shape /  _ Straight Curved Crenulated,
+		168 �_Curved_Base /  _ Weakly 'Moderate_(Indicating_a_curving_back,_probably_for_foot)' 'Strongly_(typically_reflect_one_type_of_siphon)',
+		169 Ont._Rotation_of_Aperture /  _ Absent 'Counter-Clockwise_Rotation' Clockwise_Rotation,
+		170 Mag._of_Rotation /  _ 'Small_(<30�)' 'Great_(>30�)',
+		171 Expansion /  _ 'E_<_.05_(Extremely_Low)' '.05_<_E_<_.10_(Very_Low)' '.10_<_E_<_.15_(Low)' '.15_<_E_<_.20_(Moderate)' '.20_<_E_<_.25_(High)' 'E_>_.25_(Very_High)' 'E_>1.0_(Extremely_High)',
+		172 �_Expansion /  _ Negative_�E None Positive_�E Positive_�E_to_Negative_�E,
+		173 Curvature /  'Open-Coiling' 'K_<_0.5_(Extremely_Low)' '0.5_<_K_<_0.55_(Very_Low)' '0.55_<_K_<_0.65_(Low)' '0.65_<_K_<_0.75_(Moderate)' '0.75_<_K_<_0.85_(High)' '0.85_<_K_<_0.95_(Very_High)' 'K_>_0.95_(Extremely_High))',
+		174 Continuous_�K /  _ Negative_�K '�K_=_0' Positive_�K,
+		175 Basic_Curvature /  _ Dextral Sinistral,
+		176 Punctuated_Change_in_Curvature /  _ Absent Sudden_Reversal,
+		177 Anisostrophy /  _ Isostrophic Anisostrophic,
+		178 �Translation� /  'High_(Negative)' 'Moderate_(Negative)' 'Low_(Negative)' Nearly__Planispiral Low Moderate High Very_High Extremely_High,
+		179 Early_�T /  _ Negative_�T Isometric Positive_�T,
+		180 Timing_Negative_�T /  _ Early_Only Continuous,
+		181 Timing_Positive_�T /  _ Early_Only Continuous,
+		182 Magnitude_Early_Positive_�T /  _ 'Small_(Lower_Suture)' 'Large_(Opens_Coiling)',
+		183 Late_�T /  _ 'ƶ_<_0' 'ƶ_=_0' 'ƶ_>_0',
+		184 Style_of_Late_�T /  _ Gradual Punctuated,
+		185 Magnitude_Late_�T /  _ 'Slight_(Lowers_Suture)' 'Great_(Open_Coiling)',
+		186 Gerontic_Uncoiling /  _ Absent Present,
+		187 Septation /  _ Absent Septate Complete_Infilling,
+		188 Basal_Ornament /  _ Absent Present,
+		189 Basal_Orn._Density /  _ 1_per_20� 1_per_10� 1_per_5� 1_per_1�,
+		190 BO_Width /  _ @_0.5� @_1� @_2� @_4�,
+		191 BO_Prominence /  _ None Weak Moderate Strong,
+		192 Basal_Orn._Consistency /  _ Uniform Stronger_Higher Stronger_Lower Highest_Strongest '2_:_1_:_2',
+		193 L.W._Ornament /  _ Absent Present,
+		194 L.W._Orn._Density /  _ 1_per_20� 1_per_10� 1_per_5� 1_per_1�,
+		195 LRO_Width /  _ @_0.5� @_1� @_2� @_4�,
+		196 LRO_Relief /  _ None Weak Moderate Strong,
+		197 L.W._Orn._Consistency /  _ Uniform Stronger_Higher Stronger_Lower Highest_Strongest '2_:_1_:_2' Strongest_in_the_Middle,
+		198 LR_Orn._Pattern /  _ Even_strength Every_other_one_stronger,
+		199 RR_Ornament /  _ Absent Present On_Upper_Half_only,
+		200 RRO_Density /  _ 1_per_20� 1_per_10� 1_per_5� 1_per_1�,
+		201 RRO_Width /  _ @_0.5� @_1� @_2� @_4�,
+		202 RRO_Relief /  _ None Weak Moderate Strong,
+		203 RRO_Gen._Pattern /  _ Uniform Stronger_toward_Middle Stronger_at_Top,
+		204 RR_Orn._Spec._Pattern /  _ Even_strength Every_other_one_stronger Paired_at_top,
+		205 Ont._�_RR_Orn /  _ Constant Fades_Gradually Fades_Abruptly,
+		206 Orn._Type /  _ Local_Thickenings Changes_in_Aperture_Shape,
+		207 Transverse_Ornament /  _ Radial Transverse,
+		208 Transverse_Ornament_Type /  _ Thin_Threads Rugose_Undulations,
+		209 Selenizone_Ornament /  _ Absent Present,
+		210 Carrier_Shell /  _ No_scars Scars,
+		211 Size /  'Micro_(<10_mm3)' 'Small_(10_-_100_mm3)' 'Moderate_(100_-_1000_mm3)' 'Large_(1000_-_10000_mm3)' 'Huge_(>10000_mm3)',
+		212 Protoconch /  _ Orthocone Coiled,
+		213 Protoconch_Coiling_Axis /  _ Same_as_Teleoconch 90�_from_Teleoconch,
+		214 Different_Protoconch_Translation /  _ Planispiral 'Translation_like_Adults_(or_grades_into_adult_coiling)',
+		215 Bulbous_Cap /  _ Absent Present,
+		216 Initial_Protoconch_Size /  _ Small Large,
+		217 Dimorphic_Coiling /  _ Absent Present,
+		218 Degree_of_Dimorphism /  _ Weak Strong,
+		219 Dimorphic_Flaring_of_UC_spines /  _ Consistent Strong_every_60�_vs._Weak_every_2GLs,
+		220 Dimorphic_Ornament /  _ Absent Present,
+		221 Operculum_Type /  _ Accretionary Spiral,
+		222 Operculum_Construction /  _ Solid Fibrous,
+		223 Accretion_away_from_the_Apertur /  _ 'Very_Little_(Angle_>160�)' 'Moderate_(Angle_Apx._90�)' 'Strong_(Angle_Apx._45�)',
+		224 Prong /  _ Absent Present ; 
+	MATRIX
+	'Turritoma aff. acrea <ornate sp.>'               224423323311-111-2331111-112216222311-111------111---1-112--211(2 3)21-11522216(5 6)16521311----------1--1-121-1------------------1221----411-2211111----131-12111-1-1-11-1-1-1-1-126211273-213-11123221232211232211111-111??-??1---????
+	Hormotoma_?_simulatrix                            224423323311-111-2221111-112216212211-111------111---1-112--211211-11522216526621311----------1--1-12211------------------1221----411-2211111----131-12111-1-1-11-1-1-1-1-126211273-213-1111----1-----1---------112??-??1---????
+	Turritoma_acrea                                   234513323311-111-2331111-11221(6 7)222311-111------111---1-112--211311-1152421832661--11----------1--1-141-1------------------1221----311-3211111----13??12111-1-1-11-1-1-1-1-126211273-213-1111----1-----1---------112??-??1---????
+	Turritoma_cf._acrea                               224423323311-111-2221111-112216212211-11212-111211---1-112--321211-11532225526621311----------1--1-12211------------------1221----411-2211111----131-12111-1-1-11-1-1-1-1-126211273-213-11?1----1-----1---------111??-??1---????
+	Turritoma_?_anna                                  233533423311-111-2221111-112215212211-111------111---1-111--211211-11622226(5 6)1541--11----------1--1-121-1------------------1221----311-3211111----131-12111-1-1-11-1-1-1-1-126211282---2--111----1-----1---------111??-??1---????
+	Eroicaspira_artemesia                             234633413411-111-2331111-112216212211-111------211---1-112--211211-11632216516622311----------1--1-11221------------------1221----311-3211121----131-12111-1-1-11-1-1-1-1-126211283-213-1111----1-----1---------112??-??1---????
+	Hormotoma_confusa                                 234633323311-111-2221111-112216212211-111------111---1-112--211211-1162221652(5 6)621-11----------1--1-12211------------------1221----411-2211111----131-12111-1-1-11-1-1-1-1-126211273-213-1111----1-----1---------112??-??1---????
+	Straparollina_?_dubia                             224422223311-111-2221111-112214212211-11212-111311---1-112--321212111534226626621311----------1--1-14211------------------1221----411-2211111----131-12111-1-1-11-1-1-1-1-126211273-213-1111----1-----1---------112??-??1---????
+	Ectomaria_adelina                                 22(4 5)(4 5)23323311-111-2221111-112217222511-111------111---1-112--211211-1172423561531--121111111---1--1-141-21121---11-1------11231----311-3211111----131-12111-1-1-11-1-1-1-1-126211272---2--111----1-----1---------111??-??1---????
+	'Plethospira "cassina"'                           22(4 5)(4 5)23323311-111-2221111-112215222311-111------111---1-112--211211-1162423661541--121111111---1--1-141-21121---11-1------11231----411-3211111----131-12111-1-1-11-1-1-1-1-126211272---2--111----1-----1---------111??-??1---????
+	Eroicaspira_augustina                             234733413411-111-2221111-112215212211-111------211---1-112--211212111732216616(3 4)21311----------1--1-12211------------------1221----211-3211121----131-12111-1-1-11-1-1-1-1-126211272---2--111----1-----1---------113??-??1---????
+	Eroicaspira_zelleri                               233633413411-111-2221111-112216212211-111------211---1-112--311211-11632226617622311----------1--2111221------------------1221----211-3211121----131-1?111-1-1-11-1-1-1-1-126211283-213-1111----1-----1---------112??-??1---????
+	Plethospira_cannonensis                           223322223311-111-2221111-112215212211-111------111---1-112--211211-11722226617521311----------1--1-12211------------------1221----211-2211121----131-11121-1-1-11-1-1-2-1-326211273-213-1111----1-----1---------112??-??1---????
+	Plethospira_cassina                               223322223311-111-2221111-112215212211-111------111---1-112--211211-1162222661651--11----------1--1-121-1------------------1221----211-2211121----131-1112221-1-11-1-1-2-1-326211273-213-1111----1-----1---------113??-??1---????
+	Plethospira_ventricosa                            223322223311-111-2221111-112215212211-111------111---1-112--21121?-1172221661651--11----------1--1-121-1------------------1221----211-2211121----131-1112221-1-11-1-1-2-1-326211263-213-11122221222211222211111-113??-??1---????
+	Straparollina_grandis                             223322223311-111-2221111-112214212211-11112--11311---1-112--32121211183422(3 4)61741--11----------1--1-121-21121---11-1------11221----411-2211111----131-1111111-1-12-221-1-1-125211263-213-1111----1-----1---------112??-??1---????
+	Straparollina_turgida                             224421123311-111-2441111-112214212211-11212-111311---1-112--321211-11532237635623311----------1--1-12231------------------1221----411-2211111----141-1211211-1-11-1-1-1-1-426211273-213-1111----1-----1---------112??-??1---????
+	'Eroicaspira <sp. Kobayashi 1959>'                23(2 3)733413411-111-2221111-112215212211-111------211---1-1----211212111732216516(3 4)21311----------1--1-12211------------------1221----211-3211121----121-12111-1-1-11-1-1-1-1-126211272---2--1?1----1-----1---------113??-??1---????
+	'? Plethospira <Coolibah Fm. sp.>'                223322223311-111-2221111-112213212311-111------211---1-142--11121211173512661641--11----------1--21121-1-------------------231----211-2211121----131-1112211-1-11-1-1-2-1-326211263-213-1111----1-----1---------112?????1???????
+	Ectomaria_callahanensis                           223323323311-111-2221111-112217222511-111------111---1-112--211211-1172513561641--122421111---1--1-151-22121---11-1------11231----311-3211111----131-12111-1-1-11-1-1-1-1-2352112712--2-1111----1-----1---------112??-??1---????
+	Straparollina_pelagica                            221121123311-111-2221111-1122131-2------212-11-311---1-142--3-1212111A3423071751--11----------1--1-121-21121---11-1------112223311411-2211111----131-1111211-1-11-221-1-1-125211263-213-1111----1-----1---------112??-??1---????
+	Ectomaria_prisca                                  224423323311-111-2221111-112217222511-111------111---1-112--211211-1172423461541--11----------1--1-141-22221---11-1------11231----311-3211111----131-12111-1-1-11-1-1-1-1-126211182---2--111----1-----1---------111??-??1---????
+	Hormotoma_gracilis                                233733413411-111-2221111-112215212211-111------111---1-111--211211-11722234(5 6)1(5 6)41--11----------1--1-121-1------------------1221----311-3211111----131-12111-1-1-11-1-1-1-1-126211282---2--111----1-----1---------111??-??1---????
+	Hormotoma_salteri                                 233733413411-111-2221111-112215212211-112111111111---1-111--211211-1173423(4 5)(5 6)17(3 4)1--11----------1--21121-1------------------1221----311-3211111----131-12111-1-1-11-1-1-1-1-126211282---2--111----1-----1---------111??-??1---????
+	Ectomaria_pagoda                                  22(4 5)(4 5)23323311-111-2221111-112217222511-111------111---1-112--211211-1172423461541--121211211---1--1-141-22221---11-1------11231----311-3211111----131-12111-1-1-11-1-1-1-1-126211272---2--111----1-----1---------111??-??1---????
+	Omospira_laticincta                               222233321111-111-2221111-112215212211-111------111---1-112--211211-1192223261741--11----------1--11121-1------------------11-1----311-2211111----131-11111-1-1-11-1-1-1-1-226211273-213-1111----1-----1---------113??-??1---????
+	Omospira_alexandra                                233333433211-111-2221111-112215213211-111------111---1-112--211211-11A22232618(2 3)1--11----------1--1-121-1------------------1231----311-2211111----131-11111-1-1-11-1-1-1-1-226211273-213-1111----1-----1---------113??-??1---????
+	Eroicaspira_bellicincta                           234633413411-111-2221111-112215212211-111------111---1-112--211211-1182222451(5 6)(3 4)1--11----------1--1-121-1------------------1221----311-3211121----131-12111-1-1-11-1-1-1-1-126211273-213-1111----1-----1---------113??-??1---????
+	Omospira_trentonensis                             22(4 5)(4 5)33423311-111-2221111-112215212211-111------111---1-112--211211-1192222441(5 6)(3 4)1--11----------1--1-121-1------------------1221----311-3211111----131-11111-1-1-11-1-1-1-1-226211273-213-1111----1-----1---------112??-??1---????
+	Coelocaulus_insignis                              233513413411-111-2331111-112215212211-111------111---1-111--211211-1153221652661--11----------1--1-111-1212---------------1221----311-3312111----131-12111-1-1-11-1-1-1-1-126211272---2--111----1-----1---------1112?1?21---????
+	'Ectomaria aff. pagoda <Alaskan Rohr 1988>'       222223323311-111-2221111-112217222511-111------111---1-112--211211-1152422541541--123411211---1--1-141-22221---11-1------11231----311-1211111----141-12111-1-1-11-1-1-1-1-116211272---2--111----1-----1---------111??-??1---????
+	'Ectomaria aff. prisca <Alaskan var. 1 Rohr 1988>'224423323311-111-2221111-112217222511-111------111---1-112--211211-1172422552551--11----------1--1-141-22321---11-1------112323311311-3211111----131-12111-1-1-11-1-1-1-1-116211272---2--111----1-----1---------111??-??1---????
+	Ectomaria_laticarinata                            223323323311-111-2221111-112217222511-111------111---1-112--211211-1172513561631--11----------1--1-151-22121---11-1------11231----311-3211111----131-12111-1-1-11-1-1-1-1-2352112612--311111----1-----1---------111??-??1---????
+	Ectomaria_nieszkowskii                            224423323311-111-2221111-112217222511-111------111---1-112--211211-1172422551531--11----------1--1-141-22221---11-1------11231----311-3211111----121-12111-1-1-11-1-1-1-1-126211272---2--111----1-----1---------112??-??1---????
+	Loxonema_murryana                                 233433421111-111-2221111-1111--------------------1-----112-------1-1192223371751--11----------2111-121-1------------------11-1----311-2211111----141-11111-1-1-11-1-1-1-1-226211273-213-1111----1-----1---------112??-??1---????
+	Straparollina_erigione                            221122223311-111-2331111-1111--------------------1-----112-------1-??83223071751--11----------1--1-121-1------------------12423311411-1111111----111-1111211-1-11-121-1-1-125211252---1--111----1-----1---------11???-??1---????
+	'Straparollina <Zeehan sp.>'                      220022221111-111-2331111-1111--------------------1-----112-------1-1183223261751--123331211---1--1-111-22211-------------11231----421-2111111----131-1111241-1-11-1-1-1-1-226211263-213-1111----1-----1---------112?????1???????
+	Spiroceus_excavata                                222223321111-111-2221111-1111--------------------1-----112--211211-1192223351841--11----------1--21121-1------------------11-1----211-2211111----11--11131-1-1-11-1-1-1-1-116211273-213-11123111231111211111111-112??-??1---????
+	Spiroecus_girvanensis                             222223321111-111-2221111-112212112------212211-211---1-112--211211-1183513341861--1223121121111--21141-1-----------------111-1----211-2211111----11--11131-1-1-11-1-1-1-1-226211272---2--1123111231111211111111-112??-??1---????
+	'Hormotoma <Gordon Ls. sp.>'                      225533423311-111-2331111-112214222211-111------111---1-112--211211-1173221641541--11----------22121121-22321---11-1------11221----311-2211111----131-12111-1-1-11-1-1-1-1-226211273-21311111----1-----1---------113?????1???????
+	'Rhabdostropha <Alaskan sp. Rohr 1988>'           221133321111-111-2331111-1111--------------------1-----112-------1-1192223361951--11----------1--21121-1------------------11-1----211-2111111----1???11131-1-1-11-1-1-1-1-126211272---2--111----1-----211111111-112??-??1---????
+	Rhabdostropha_primitiva                           222233323311-111-2221111-1111--------------------1-----112-------1-1192223452551--11----------1--21121-1------------------11-1----311-2211111----11--11131-1-1-11-1-1-1-1-126211272---2--1122111221111211111111-112??-??1---????
+	'Daidia aff. cerithioides <Alaskan sp. Rohr 1988>'1----------1-111-2441111-1122121--------2222111111---1-112--2-121211183523281931--123311111---1--21121-22121---11-1------1124?????311-1111111----11--1113211-1-11-1-1-1-1-227211272---2--111----1-----1---------112??-??1---????
+
+;
+
+END;
+BEGIN MacCladeStart;
+	Extended;
+
+END;
+BEGIN ASSUMPTIONS;
+	OPTIONS DEFTYPE = unord PolyTcount = MAXSTEPS;
+	TYPESET * UNTITLED   =  unord:  1- 2 5- 8 11- 18 21- 69 71- 74 77-80\3 81- 154 156- 224, ord:  3- 4 9- 10 19- 20 70 75- 76 78- 79 155;
+TYPESET Standard   =  unord:  1- 2 5-8\3 9- 30 32- 42 44- 74 77-80\3 81- 130 132- 137 139- 154 156- 161 163 165- 224, ord:  3- 4 6- 7 31 43 75- 76 78- 79 131 138 155 162 164;
+TYPESET UNTITLED   =  unord:  1- 2 5-8\3 9- 12 14- 30 32- 34 36- 42 44- 50 52- 69 71 73- 74 77-80\3 81- 84 86- 100 102- 127 129- 130 132- 137 139- 154 156 158 160- 161 163 165 167- 170 172 174- 177 179- 210 212- 217 219- 224, ord:  3- 4 6- 7 13 31 35 43 51 70 72-75\3 76 78- 79 85 101 128-131\3 138 155 157 159-162\3 164 166 171 173 178 211 218;
+TYPESET wagner_types   =  unord:  1- 2 5-8\3 9- 12 14- 30 32- 34 36- 42 44- 50 52- 69 71 73- 74 77-80\3 81- 84 86- 100 102- 127 129- 130 132- 135 137 139- 154 156 158 160- 161 163 165 167- 170 172 174- 177 179- 210 212- 217 219- 224, ord:  3- 4 6- 7 13 31 35 43 51 70 72-75\3 76 78- 79 85 101 128-131\3 136 138 155 157 159-162\3 164 166 171 173 178 211 218;
+
+	EXSET * UNTITLED  = ;
+EXSET CambUninfor  =  11 17 21 36 46 52 -  53 64 -  65 73 85 -  87 105 -  106 115 -  120 122 -  123 125 129 -  130 136 152 156 -  159 164 170 172 189 -  190 192 200 -  201 204 206 209 212 214 216;
+EXSET UNTITLED  = ;
+EXSET UNTITLED  = ;
+
+	WTSET * UNTITLED  =  1: 1 -  2 5 8 11 -  18 21 -  69 71 -  74 77 80 -  100 102 -  154 156 -  224 , 0.33: 3 -  4 6 -  7 19 -  20, 0.5: 9 -  10 101 155, 0.2: 70 70 75 -  76, 0.25: 78 -  79;
+WTSET CambrianWt  =  100: 1 -  2 5 8 -  11 16 -  17 19 21 23 26 29 32 -  33 35 -  36 41 -  43 46 48 50 52 -  53 57 -  58 61 -  66 71 73 80 -  82 84 -  87 98 102 -  106 115 -  120 122 -  130 135 140 -  141 146 -  148 150 -  156 158 -  161 163 -  164 167 169 -  170 172 174 177 179 187 189 -  190 192 199 -  201 204 206 209 211 -  212 214 216, 10: 3 -  4 75, 25: 6 -  7 131, 1: 12 -  15 18 20 22 24 -  25 27 -  28 30 34 37 -  40 44 -  45 47 49 51 54 -  56 59 -  60 67 -  70 74 77 83 88 -  97 99 -  100 107 -  114 121 132 -  134 137 139 142 -  145 149 165 -  166 168 171 173 175 -  176 178 180 -  186 188 191 193 -  198 202 -  203 205 207 -  208 210 213 215 217 -  224 , 33: 31 31 162, 50: 72 72 101 136 157, 9: 76 76 78 -  79, 14: 138 138;
+WTSET Step  =  1: 1 -  224 ;
+WTSET Balance  =  100: 1 -  2 5 8 -  11 15 -  17 19 21 23 26 29 32 -  33 35 -  36 38 41 -  44 46 -  48 50 52 -  53 57 -  58 61 -  67 71 73 -  74 77 80 -  82 84 -  88 98 100 102 -  106 115 -  130 135 140 -  142 146 -  148 150 -  156 158 -  161 163 -  164 167 169 -  170 172 174 177 179 187 189 -  190 192 199 -  201 204 206 -  207 209 211 -  212 214 216, 10: 3 -  4 75, 25: 6 -  7 131, 1: 12 -  14 18 20 22 24 -  25 27 -  28 30 34 37 39 -  40 45 49 51 54 -  56 59 -  60 68 -  70 83 89 -  97 99 107 -  114 132 -  134 137 139 143 -  145 149 165 -  166 168 175 -  176 180 -  186 188 191 193 -  198 202 -  203 205 208 210 213 215 217 -  224 , 33: 31 31 162, 50: 72 72 101 136 157, 9: 76 76 78 -  79, 14: 138 138 178, 20: 171 171, 17: 173 173;
+WTSET UNTITLED  =  100: 1 -  2 5 8 11 -  13 15 -  21 23 -  26 29 -  30 32 -  33 35 -  36 38 41 -  42 44 46 -  48 50 52 -  54 57 -  69 71 73 -  74 77 80 -  84 86 -  91 98 -  100 102 -  106 108 112 115 -  127 129 -  130 132 -  134 137 140 -  144 146 -  148 150 -  154 156 158 160 -  161 163 165 -  170 172 174 177 179 182 187 189 -  190 192 199 -  201 204 -  207 209 -  210 212 214 216 -  218, 8: 3 -  4 70, 25: 6 -  7 155 157 162 164 211, 50: 9 -  10 51 85 128 135 -  136 159, 1: 14 14 22 27 -  28 34 37 39 -  40 45 49 55 -  56 92 -  97 107 109 -  111 113 -  114 139 145 149 175 -  176 180 -  181 183 -  186 188 191 193 -  198 202 -  203 208 213 215 219 -  224 , 20: 31 31 43 171, 17: 72 72 101 131 173, 6: 75 -  76, 7: 78 78, 9: 79 79, 14: 138 138 178;
+WTSET UNTITLED  =  100: 1 -  2 5 8 11 -  13 15 -  21 23 -  26 29 -  30 32 -  33 35 -  36 38 41 -  42 44 46 -  48 50 52 -  54 57 -  69 71 73 -  74 77 80 -  84 86 -  91 98 -  100 102 -  106 108 112 115 -  127 129 -  130 132 -  134 137 140 -  144 146 -  148 150 -  154 156 158 160 -  161 163 165 -  170 172 174 177 179 182 187 189 -  190 192 199 -  201 204 -  207 209 -  210 212 214 216 -  218, 8: 3 -  4 70, 25: 6 -  7 155 157 162 164 211, 50: 9 -  10 51 85 128 135 -  136 159, 1: 14 14 22 27 -  28 34 37 39 -  40 45 49 55 -  56 92 -  97 107 109 -  111 113 -  114 139 145 149 175 -  176 180 -  181 183 -  186 188 191 193 -  198 202 -  203 208 213 215 219 -  224 , 20: 31 31 43 171, 17: 72 72 101 131 173, 6: 75 -  76, 7: 78 78, 9: 79 79, 14: 138 138 178;
+WTSET Balanced  =  100: 1 -  2 5 8 11 -  13 15 -  21 23 -  26 29 -  30 32 -  33 35 -  36 38 41 -  42 44 46 -  48 50 52 -  54 57 -  69 71 73 -  74 77 80 -  84 86 -  91 98 -  100 102 -  106 108 112 115 -  127 129 -  130 132 -  134 137 140 -  144 146 -  148 150 -  154 156 158 160 -  161 163 165 -  170 172 174 177 179 182 187 189 -  190 192 199 -  201 204 -  207 209 -  210 212 214 216 -  218, 8: 3 -  4 70, 25: 6 -  7 155 157 162 164 211, 50: 9 -  10 51 85 128 135 -  136 159, 1: 14 14 22 27 -  28 34 37 39 -  40 45 49 55 -  56 92 -  97 107 109 -  111 113 -  114 139 145 149 175 -  176 180 -  181 183 -  186 188 191 193 -  198 202 -  203 208 213 215 219 -  224 , 20: 31 31 43 171, 17: 72 72 101 131 173, 6: 75 -  76, 7: 78 78, 9: 79 79, 14: 138 138 178;
+WTSET Balanced?  =  100: 1 -  2 5 8 11 -  30 32 -  42 44 -  50 52 -  55 57 -  69 71 73 -  74 77 80 -  84 86 -  100 102 -  127 129 -  130 132 -  134 137 140 -  144 146 -  154 156 158 160 -  161 163 165 -  170 172 174 -  177 179 -  210 212 -  224 , 8: 3 -  4 70, 25: 6 -  7 155 157 162 164 211, 50: 9 -  10 51 85 128 135 -  136 159, 20: 31 31 43 171, 1: 56 56 139 145, 17: 72 72 101 131 173, 6: 75 -  76, 7: 78 78, 9: 79 79, 14: 138 138 178;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 224;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1606865014624;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 298681367932179660;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 7482527612560237208;
+			mqVersion 361;
+			checksumv 0 3 4117749053 null  getNumChars 224 numChars 224 getNumTaxa 43 numTaxa 43   short false   bits 2047   states 2047   sumSquaresStatesOnly 7271516.0 sumSquares 7271516.0 longCompressibleToShort true usingShortMatrix false   NumFiles 1 NumMatrices 1 errorReportedDuringRun;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1149 785;
+			setLocation 8 23;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #7482527612560237208 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 171;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1049 713;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

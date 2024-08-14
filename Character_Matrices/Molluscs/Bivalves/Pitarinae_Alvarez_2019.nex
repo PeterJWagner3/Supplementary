@@ -1,0 +1,328 @@
+#NEXUS
+[written Sun Jul 31 19:39:00 CDT 2022 by Mesquite  version 3.6 (build 917) at EAS-6BCEC7.local/127.0.0.1 ()]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=30;
+	TAXLABELS
+		Dosinia_concentrica Marcia_opima Ruditapes_decussatus Ruditapes_philippinarum Polititapes_aureus Polititapes_virgineus Neotapes_undulata Irus_carditoides Protapes_gallus Katelysia_scalarina Tapes_literatus Retrotapes_antarcticus Retrotapes_robustus Retrotapes_newtoni Retrotapes_ninfasiensis Retrotapes_striatolamellatus Retrotapes_fuegoensis Retrotapes_navidadis Retrotapes_lenticularis Retrotapes_exalbidus Retrotapes_fuenzalidae Eurhomalea_rufa Frigichione_permagna Paleomarcia_tatei Eumarcia_fumigata Gomphinella_undulosa Notopaphia_elegans Atamarcia_sulcifera Paphia_rotundata Venerupis_corrugata 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=55;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9";
+	MATRIX
+	Dosinia_concentrica           3021100101011012121112100223231001100200100001000000000
+	Marcia_opima                  3120110121110312011004100100121001010011100000012012000
+	Ruditapes_decussatus          2121010020110402021000131223231030011010202001002001020
+	Ruditapes_philippinarum       2121010020111402001000131223231030010010202001002001020
+	Polititapes_aureus            3021000130011301001004100223231030010200200200002021001
+	Polititapes_virgineus         1120000130010402011013100002101030011010200210002011001
+	Neotapes_undulata             0120000120010112001013100223231020010210200201011000001
+	Irus_carditoides              2020000?2001?302011000120002001130011111202400002111201
+	Protapes_gallus               3122000131010412101114100100120021011001200301012000000
+	Katelysia_scalarina           0121000131010412020013103001020020020200200301012001101
+	Tapes_literatus               1120010130010402001000100001000030001012200200002011001
+	Retrotapes_antarcticus        1022100131112412021001102000003021011011100110002001000
+	Retrotapes_robustus           1122111131010412021004102000023021001200100110010001000
+	Retrotapes_newtoni            1121110131010412021013102000023021010200200110010001000
+	Retrotapes_ninfasiensis       1122100131010412021001102000023022001001000110000000000
+	Retrotapes_striatolamellatus  2122101131010412021001102000003022000001000110002000000
+	Retrotapes_fuegoensis         312111013101??12021003102000022021000200100110010000000
+	Retrotapes_navidadis          2022111131010412021001102001002021011000100110001000000
+	Retrotapes_lenticularis       3021101131110412021002122001023021000000103010000001000
+	Retrotapes_exalbidus          1021100131110412021001102001003021001001100110002000000
+	Retrotapes_fuenzalidae        1122101131010412?????3102000022021000201100110001001000
+	Eurhomalea_rufa               2022000120111202020003102223231010000010200010001001001
+	Frigichione_permagna          1121101?0101??120210?4102223231020000200000000012000000
+	Paleomarcia_tatei             10210?1???0??41?0?00?3100001?21020000200100100010000000
+	Eumarcia_fumigata             1121000?2110?3120??0?3100223230020010200200000011011001
+	Gomphinella_undulosa          1110100?0110?0110?10?4102223231020021200200000112010000
+	Notopaphia_elegans            2021011?3000?3021?11?0120001?11133021112211400002100201
+	Atamarcia_sulcifera           202100012101?111???0?3100001022021010200100100002011000
+	Paphia_rotundata              2221010?1110?111??10?5100001101030000200200201011000001
+	Venerupis_corrugata           2121010?2001?4020?10?0120223231030010110201111002000010
+
+;
+
+END;
+BEGIN CHARACTERS;
+	TITLE  Continuous_Characters;
+	DIMENSIONS  NCHAR=25;
+	FORMAT DATATYPE = CONTINUOUS GAP = - MISSING = ?;
+	MATRIX
+	Dosinia_concentrica            2.214843848 1.937517892 1.872738827 1.835056102 2.076276255 2.187520721 0.424249672 0.709952153 0.680168 0.272817583 0.442965545 1.012149781 0.969346632 0.847721299 0.278753601 1.207948759 0.68588132 1.261994985 2.654766653 0.490412559 0.568878569 2.059732748 2.079349251 2.220108088 0.914559411
+	Marcia_opima                   2.28780173 1.919078092 1.913813852 1.662757832 2.029383778 2.209515015 0.286306739 0.519374333 1.21387982 0.979796614 0.842392147 1.169751081 0.935043108 0.864121277 0.531478917 1.304960289 0.752845385 2.2032 1.3464 1.2852 0.9792 1.4076 2.0808 2.206825876 0.840132153
+	Ruditapes_decussatus           2.256878032 1.897627091 1.929418926 1.792391689 2.039697324 2.184691431 0.383907396 0.590691565 0.879390433 0.467970695 0.78122584 0.966829545 0.856142768 0.836267799 0.602059991 1.170261715 0.928528247 1.11392606 1.530347017 0.426831481 0.801610342 1.322136539 1.186799728 2.229596528 0.921801908
+	Ruditapes_philippinarum        2.24468936 1.904895788 1.946124619 1.836745966 2.056904851 2.201397124 0.432701822 0.519763082 0.81686037 0.320072817 0.692002564 0.939721605 0.883850335 0.84245471 0.633468456 1.172405651 0.954361641 1.476215408 2.437471952 0.514958863 0.78960359 1.922513089 1.544876589 2.223582462 0.942545583
+	Polititapes_aureus             2.273001272 1.908485019 2.015988105 1.769007871 2.066325925 2.200713734 0.395932225 0.448227688 0.84968196 0.462698788 0.547497148 0.732658855 0.889013894 0.826259028 0.662757832 1.104639092 0.779058988 1.432894737 2.060526316 0.580263158 0.793421053 2.25 1.196052632 2.19520755 0.870431597
+	Polititapes_virgineus          2.28254659 1.917330426 1.925999266 1.817344971 2.019808393 2.17801718 0.332473171 0.516178275 0.744472702 0.287374071 0.622838765 1.035779041 0.820137006 0.841716959 0.62324929 1.077439763 0.967906158 1.27228145 2.29989339 0.440405117 0.636140725 1.516950959 1.614818763 2.222716471 0.831491848
+	Neotapes_undulata              2.238046103 1.86332286 2.045322979 1.73239376 2.029383778 2.149219113 0.291484678 0.416287591 1.023481096 0.522878745 0.903089987 1.079181246 0.748943979 0.817340835 0.740362689 1.164192036 0.929418926 1.458361204 1.381605351 0.460535117 0.921070234 1.151337793 1.381605351 2.225309282 0.807203047
+	Irus_carditoides               2.267171728 1.908485019 1.886490725 1.857332496 1.995635195 2.1430148 0.556302501 0.479073143 0.726998728 0.522878745 0.552841969 1.132625565 0.77619055 0.890436125 0.591064607 1.017728767 1.0 0.830769231 1.557692308 0.519230769 0.519230769 1.453846154 1.973076923 2.235528447 0.788193189
+	Protapes_gallus                2.113943352 1.886490725 1.968482949 1.707570176 2.041392685 2.190331698 0.433937662 0.528142985 1.124938737 0.756961951 0.733732111 1.051152522 0.86973243 0.809094159 0.643452676 1.091770373 0.869666232 1.306097561 0.979573171 0.559756098 0.606402439 1.119512195 1.25945122 2.195899652 0.899099504
+	Katelysia_scalarina            2.290034611 1.851258349 1.986771734 1.86332286 2.120573931 2.212187604 0.407742836 0.466255279 0.95169532 0.499397649 0.823908741 0.823908741 0.901229244 0.893801473 0.505149978 1.356981401 0.943884058 1.924290999 2.150678175 0.679161529 0.905548705 1.358323058 0.905548705 2.214843848 0.862453122
+	Tapes_literatus                2.281790638 1.960629308 1.851258349 1.884606581 2.076761772 2.213074825 0.490002829 0.551710829 0.555547862 0.038918066 0.895264649 1.0 0.822179421 0.895093454 0.556302501 1.230448921 1.0 1.15 3.2 0.35 1.2 1.75 3.1 2.225309282 0.888850981
+	Retrotapes_antarcticus         2.261659304 1.979244778 1.903993826 1.945304422 2.113386207 2.229169703 0.254181681 0.68795566 0.894615228 0.476844128 0.906846277 1.253723883 0.940501152 0.900634955 0.477121255 1.274641978 0.881173429 1.811583012 2.382625483 0.702316602 1.173710074 1.466093366 2.564619165 2.215725665 0.909088191
+	Retrotapes_robustus            2.280464547 1.951823035 1.857332496 1.88536122 2.063708559 2.223755454 0.303013036 0.603295957 0.809185855 0.440557414 0.823084918 1.146707469 0.94407214 0.894198153 0.477121255 1.292427594 0.835184494 1.533851825 2.421147276 0.660312893 0.91618414 1.378403165 1.931415213 2.198657087 0.905578594
+	Retrotapes_newtoni             2.260071388 1.979244778 1.931966115 1.949390007 2.034762106 2.219235134 0.334406873 0.578417115 0.706248694 0.291698072 0.882432586 1.28770975 0.873547651 0.871811292 0.556302501 1.280322532 0.861399917 1.283190578 2.566381156 0.49143469 0.955567452 1.255888651 2.42987152 2.214843848 0.910172007
+	Retrotapes_ninfasiensis        2.26873394 1.986771734 1.823908741 2.022565828 2.124938737 2.253661021 0.276265365 0.67309142 0.819223621 0.596924592 0.791148938 1.137604084 0.953126997 0.905901493 0.51851394 1.256485658 0.82869216 1.641337386 2.482522796 0.984802432 0.707826748 1.138677812 1.538753799 2.203214259 0.990460013
+	Retrotapes_striatolamellatus   2.24468936 1.959041392 1.873126764 2.029383778 2.127104798 2.235528447 0.315793638 0.645741999 0.625508475 0.320053233 0.743588351 1.106224154 0.94055467 0.896437131 0.51851394 1.472609064 0.816684003 0.997065549 2.361471037 0.489786585 0.723018293 1.329420732 1.667606707 2.208620484 0.893184408
+	Retrotapes_fuegoensis          2.267171728 1.959041392 1.832508913 1.954242509 2.100370545 2.227886705 0.424532527 0.634436138 0.84703254 0.472573627 0.93305321 1.204119983 0.918385144 0.919698757 0.414973348 1.338818557 0.878821412 1.724123539 2.452086811 0.727963272 1.149415693 1.340984975 2.14557596 2.212187604 0.964756604
+	Retrotapes_navidadis           2.270678836 1.942008053 1.877946952 1.919078092 2.095750347 2.25446751 0.36902134 0.665124991 0.772731587 0.534159756 0.689210167 1.274927193 0.940690728 0.873476141 0.556302501 1.459392488 0.874444713 1.400338983 2.489491525 0.674237288 0.726101695 1.478135593 2.774745763 2.217483944 0.850011544
+	Retrotapes_lenticularis        2.290924559 1.957128198 1.919078092 1.960946196 2.113274692 2.22685757 0.35167331 0.648449272 0.81568357 0.545210673 0.761080855 1.104390111 0.945240626 0.884393114 0.414973348 1.334970671 0.80832668 1.236187982 1.916658431 0.680470449 0.782541016 1.372282072 1.757881992 2.212187604 1.09028311
+	Retrotapes_exalbidus           2.281446588 1.953803606 1.926155291 1.943584441 2.101309561 2.229053223 0.413539698 0.597505391 0.799670842 0.555403008 0.790307256 0.978852369 0.895465756 0.881596054 0.568201724 1.276422836 0.777899934 1.117982534 1.772411335 0.640794867 0.842577081 1.366120121 1.300677241 2.225309282 0.975446687
+	Retrotapes_fuenzalidae         2.29125782 1.91349596 1.922621672 1.982271233 2.127039973 2.223054413 0.342422681 0.643452676 0.851258349 0.431363764 0.851258349 1.190331698 0.924279286 0.880813592 0.397940009 1.264817823 0.806179974 1.094538462 1.544711538 0.423692308 0.591403846 0.838557692 1.297557692 2.190331698 0.889014397
+	Eurhomalea_rufa                2.262633605 1.859184501 1.849844475 1.841744398 2.07806624 2.199502018 0.460310909 0.653123774 0.900110253 0.613417137 0.954802045 1.14206073 0.867052267 0.848088766 0.322219295 1.128472629 0.912890225 1.327228916 1.67746988 0.645180723 1.078373494 1.188975904 1.631385542 2.244277121 0.88974654
+	Frigichione_permagna           2.282259483 1.94610823 1.986637396 1.8831502 2.037546012 2.196286749 0.255272505 0.73239376 0.62324929 0.491361694 0.62324929 1.136720567 0.959041392 0.875061263 0.278753601 1.338456494 0.785329835 0.703340484 1.680983757 0.513438553 1.146444989 2.764128103 3.79100521 2.181843588 0.93702462
+	Paleomarcia_tatei              2.259498314 1.860816964 1.967313918 1.828788748 2.042614885 2.21170775 0.146128036 0.643452676 ? ? 0.812913357 1.385606274 0.924279286 0.812913357 0.462397998 ? 0.86332286 ? ? ? 0.961980836 1.332219512 3.715181185 2.201397124 0.867206726
+	Eumarcia_fumigata              2.263517716 1.923399466 2.088809166 1.889525797 2.043047743 2.154789029 0.361727836 0.431363764 0.812913357 0.826074803 ? ? 0.851258349 0.851258349 0.672097858 1.033423755 ? 0.998526316 1.53 1.030736842 ? ? ? 2.214843848 0.929774832
+	Gomphinella_undulosa           2.255272505 1.869525063 2.040206628 1.605951158 1.989894564 2.155062619 0.278753601 0.342422681 1.0 0.230448921 0.230448921 0.949390007 0.886490725 0.785329835 0.51851394 1.322219295 0.72427587 1.454639175 1.447628866 0.245360825 0.418865979 2.455360825 2.206494845 2.187520721 1.187726336
+	Notopaphia_elegans             2.300812794 1.86266795 2.166282067 1.537693194 1.966986025 2.203522417 0.431363764 0.462397998 1.222716471 0.892094603 1.093421685 0.973127854 0.755874856 0.832508913 0.698970004 1.093421685 ? 2.09049505 1.249752475 0.977079208 1.431534653 1.158861386 1.090693069 2.238046103 0.800012251
+	Atamarcia_sulcifera            2.302525733 1.927421695 1.936312634 1.795532443 2.048053173 2.214631945 0.342422681 0.556302501 0.939519253 0.633468456 ? ? 0.897627091 0.851258349 0.643452676 1.283301229 ? 1.796426546 2.056778219 0.893874078 ? ? ? 2.198657087 0.953787894
+	Paphia_rotundata               2.228400359 1.86332286 2.041392685 1.814780146 1.975247941 2.184691431 0.380211242 0.591064607 1.11058971 0.447158031 0.792391689 1.004321374 0.716003344 0.86923172 0.69019608 1.385606274 0.857332496 1.405102041 1.086612245 0.309122449 1.03977551 1.676755102 1.695489796 2.209515015 0.550030991
+	Venerupis_corrugata            2.260071388 1.919078092 2.007747778 1.883831713 2.046456142 2.176467485 0.414973348 0.672097858 1.012837225 1.06069784 0.740362689 1.100370545 0.832508913 0.86923172 0.579783597 1.041392685 0.919078092 1.004628633 0.971689989 1.119913886 0.780645856 1.426243272 1.795156082 2.238046103 0.713264192
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED  (CHARACTERS = Character_Matrix)  =  unord:  1- 55;
+TYPESET * UNTITLED  (CHARACTERS = Continuous_Characters)  =  Squared:  1- 25;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED  (CHARACTERS = Character_Matrix)  =  'Mk1 (est.)':  1- 55;
+ProbModelSet * UNTITLED  (CHARACTERS = Continuous_Characters)  =  Brownian_default:  1- 25;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1659314340459;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 7197886153751143953;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 8056262942265844194;
+			mqVersion 360;
+			checksumv 0 3 152670131 null  getNumChars 55 numChars 55 getNumTaxa 30 numTaxa 30   short true   bits 63   states 63   sumSquaresStatesOnly 19167.0 sumSquares 19167.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 2;
+			mqVersion;
+			setID 1 5749689451086641448;
+			mqVersion 360;
+			checksumv 1 3 3101949134 null  numChars 25   numItems 1   min 0.038918066   max 3.79100521   sumSquares 1537.6771142396703   NumFiles 1 NumMatrices 2;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 153;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1260 608;
+			setLocation 8 25;
+			setFont Gadget;
+			setFontSize 14;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #8056262942265844194 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 182;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1107 536;
+					setLocation 8 25;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+			showDataWindow #5749689451086641448 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 206;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1107 536;
+					setLocation 8 25;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.cont.ItemsEditorForInfoPanel.ItemsEditorForInfoPanel;
+				tell It;
+					panelOpen false;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+
