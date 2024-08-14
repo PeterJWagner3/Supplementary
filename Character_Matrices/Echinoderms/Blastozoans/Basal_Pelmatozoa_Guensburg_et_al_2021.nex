@@ -1,0 +1,233 @@
+#NEXUS
+[written Mon Nov 09 15:12:57 CST 2020 by Mesquite  version 3.6 (build 917) at Wagners_Dark_Tower/10.0.1.29]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=25;
+	TAXLABELS
+		Stromatocystites_pentangularis Kailidiscus_chinensis Camptostroma_roddyi Totiglobus_lloydi Pseudedriophus_guensburgi Kinzercystis_durhami Lepidocystis_wanneri Gogia_kitchnerensis Rhopalocystis_destombesi Macrocystella_mairae Hemicosmites_pocillum Stephanocrinus_gemmiformis Eumorphocystis_multiporata Ceratocystis_perneri Aethocrinus_moorei Alphacrinus_mansfieldi Apektocrinus_ubaghsi Athenacrinus_broweri Carabocrinus_treadwelli Gaurocrinus_nealli Hybocrinus_nitidus Eknomocrinus_wahwahensi Proxenocrinus_inyoensis Glenocrinus_globularis Titanocrinus_sumralli 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=39;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5";
+	CHARSTATELABELS 
+		1 Left_and_right_somatocoels,
+		2 Podial_pores_or_basins,
+		3 Floor_plates_on_the_theca,
+		4 Floor_plates_in_appendages,
+		5 Ambulacral_cover_plates,
+		6 Medial_cover_plates,
+		7 Hinging_of_thecal_cover_plates,
+		8 Axial_orals,
+		9 Brachioles_,
+		10 Fixed_rays,
+		11 Respiratory_pores,
+		12 Thecal_base_circlet,
+		13 Dorsal_cup,
+		14 CD_interradius_elevation,
+		15 CD_interradial_gap_plate,
+		16 True_basals,
+		17 Secondary_median_groove,
+		18 True_radials,
+		19 True_arms,
+		20 True_arm_branching_pattern,
+		21 Brachials,
+		22 Extraxial_laterals,
+		23 Platelet_webs_at_branchings,
+		24 Fixed_brachials,
+		25 'Cup-like fixed brachials',
+		26 'One+ brachial pairs united',
+		27 Interradial_plate_fields,
+		28 CD_interradius,
+		29 'Radianal(s) and anal X plates',
+		30 Anibrachial_plate,
+		31 'Peduncle, stem, or stalk',
+		32 Stalk_or_stem_lumen,
+		33 Ray_length_on_theca,
+		34 Extraxial_orals,
+		35 Gonopore,
+		36 'Hydropore or hydropore-gonopore',
+		37 Pinnules,
+		38 Ray_branching_in_dorsal_cup,
+		39 Uniserial_posterior_plate_column ; 
+	MATRIX
+	Stromatocystites_pentangularis  000000000-00-0--0-0-----------0-0000---
+	Kailidiscus_chinensis           000-00000-10-0--0-0-----------0-0?00---
+	Camptostroma_roddyi             000000000000-0----1000--------0-0-00---
+	Totiglobus_lloydi               000000010-10-0----0-----------0-0000---
+	Pseudedriophus_guensburgi       000000010-11-0--0-0-----------2-00??---
+	Kinzercystis_durhami            11111-001-00-0--0-0-----------1-0000---
+	Lepidocystis_wanneri            11111-001-00-0--0-0-----------1-00??---
+	Gogia_kitchnerensis             11111-001-00-0--0-0-----------2-10??---
+	Rhopalocystis_destombesi        11111-011-04-00-0-0-----------3110??---
+	Macrocystella_mairae            1111?-011-13--0-0-0-----------3110?1---
+	Hemicosmites_pocillum           1111?-01?-33--0-0-0-----------311011---
+	Stephanocrinus_gemmiformis      1111?-011-15--0-0-0-----------311001---
+	Eumorphocystis_multiporata      11111-011-23-00-0-0-----------311000---
+	Ceratocystis_perneri            00--10000-00----101010100---000-00-----
+	Aethocrinus_moorei              00?001000112001111111000001110420?--000
+	Alphacrinus_mansfieldi          00?0010001120110?11211002111014200--001
+	Apektocrinus_ubaghsi            0000010001120001111010000-00104201--000
+	Athenacrinus_broweri            0000010001120110111211002111014200--001
+	Carabocrinus_treadwelli         00?-010001120011011110111121104201--000
+	Gaurocrinus_nealli              0-0?1-100112101111111110010100320?--111
+	Hybocrinus_nitidus              000001000110001111101111112110420102000
+	Eknomocrinus_wahwahensi         00??010001121001?1111000000000420?--000
+	Proxenocrinus_inyoensis         00001??001121011111111-00101014?0?--111
+	Glenocrinus_globularis          00??0110001?1001?1111010000000420?--000
+	Titanocrinus_sumralli           00?0011000020000111110100000004200--000
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 39;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 39;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1604956377975;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 4579687927327118235;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 2255808528198559433;
+			mqVersion 360;
+			checksumv 0 3 933946469 null  getNumChars 39 numChars 39 getNumTaxa 25 numTaxa 25   short true   bits 63   states 63   sumSquaresStatesOnly 6218.0 sumSquares 6218.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1 errorReportedDuringRun;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 203;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1290 718;
+			setLocation 590 69;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #2255808528198559433 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 179;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1087 646;
+					setLocation 590 69;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

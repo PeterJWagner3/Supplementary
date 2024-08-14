@@ -1,0 +1,334 @@
+#NEXUS
+[written Sat Nov 28 22:28:16 CST 2020 by Mesquite  version 3.61 (build 927) at EAS-392515.local/127.0.0.1]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=66;
+	TAXLABELS
+		Nucleolites_scutatus Apatopygus_recens Echinolampas_depressa Faujasia_apicalis Faujasia_rancheriana Hardouinia_bassleri Hardouinia_mortonis Australanthus_longianus Kassandrina_florescens Kassandrina_malayana Neolampas_rostellata Oligopodia_epigonus Petalobrissus_cubensis Pliolampas_elegantula Procassidulus_lapiscancri Petalobrissus_setifensis Rhynchopygus_arumaensis Rhynchopygus_macari Rhynchopygus_marmini Stigmatopygus_pulchellus Studeria_recens Cassidulus_briareus Cassidulus_californicus Cassidulus_caribaearum Cassidulus_ellipticus Cassidulus_falconensis Cassidulus_infidus Cassidulus_kieri Cassidulus_mitis Cassidulus_trojanus Eurhodia_australiae Eurhodia_baumi Eurhodia_calderi Eurhodia_cravenensis Eurhodia_holmesi Eurhodia_matleyi Eurhodia_morrisi Eurhodia_navillei Eurhodia_patelliformis Eurhodia_relicta Eurhodia_rugosa Eurhodia_thebensis Glossaster_sorigneti Glossaster_vasseuri Glossaster_welschi Paralampas_pileus Paralampas_rancureli Rhyncholampas_alabamensis Rhyncholampas_anceps Rhyncholampas_ayresi Rhyncholampas_carolinensis Rhyncholampas_chipolana Rhyncholampas_conradi Rhyncholampas_daradensis Rhyncholampas_ericsoni Rhyncholampas_evergladensis Rhyncholampas_globosa Rhyncholampas_gouldii Rhyncholampas_grignonensis Rhyncholampas_mexicana Rhyncholampas_pacifica Rhyncholampas_riveroi 'Rhyncholampas ? rodriguezi <a>' 'Rhyncholampas ? rodriguezi <r>' Rhyncholampas_sabistonensis Rhyncholampas_tuderi 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=98;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9";
+	CHARSTATELABELS 
+		1 Test_outline /  'subquadrate/round' oval elongate,
+		2 Test_edge /  'uniform, straight edges' 'curved, greatest middle',
+		3 Posterior_test_funneled /  no yes,
+		4 'Cross-section' /  Triangular Domed,
+		5 Peak_on_apical_disc /  absent present,
+		6 Test_edge_on_oral_region /  sharp round,
+		7 Oral_I5_concave /  no yes,
+		8 Aboral_slope /  flat slight_slope sharp_slope,
+		9 Posterior_truncated /  no yes,
+		10 Contour_of_oral_region /  flat midline_depressed concave_from_edge,
+		11 Oral_interambulacra_inflated /  no yes,
+		12 Apical_system_monobasal /  no yes,
+		13 Size_of_AS_in_TL /  large medium small,
+		14 Number_of_gonopores /  four three,
+		15 Gonopore_symmetry /  symmetric asymetric,
+		16 Ocular_placement /  between_gonopores beyond_gonopores,
+		17 Madreporic_plate_extended /  no yes,
+		18 Hydropores /  abundant few,
+		19 Largest_petal /  I_and_III I III,
+		20 Posterior_much_reduced /  no yes,
+		21 Petal_III_distal_shape /  wide convergent tapering,
+		22 Petal_III_poriferous /  both_straight 'inner straight, outer bowed' both_bowed,
+		23 Petal_III_width_poriferous /  very_wide wide narrow,
+		24 Petal_III_columns_podia /  equal unequal,
+		25 Petal_shape /  straight 'V-shaped' oval tulip leaf,
+		26 Anterior_paired_columns_podia /  equal few many,
+		27 Shape_posterior_petals /  uniform bowed,
+		28 Symmetry_posterior_petals /  not_asymmetric strong_asymmetry,
+		29 Posteior_petals_columns_podia /  equal unequal,
+		30 Outer_podia_shape /  'Slit-like' elongated round,
+		31 Primaries_interporiferous /  high low,
+		32 Primary_on_poriferous /  miliary sparse '3-5' 6_or_more,
+		33 Occluded_plates_end_petal /  absent present,
+		34 Expansion_beyond /  uniform slight strong,
+		35 Orientation_ambulacra_beyond /  curved straight,
+		36 Petal_expansion /  petal_greater same_width expansion_greater,
+		37 Shape_ambulacral_plates_beyond_petals /  wider_than_long 'squared/longer than wide',
+		38 Pores_beyond_petals /  near_or_at_suture between middle,
+		39 Periproct_position /  aboral_surface marginal oral_surface,
+		40 Aboral_lip /  absent_or_slight prominent,
+		41 Lateral_periproct_plates /  bent straight,
+		42 Periproct_wall_inside /  no yes,
+		43 Subanal_shelf /  no yes,
+		44 Periproct_orientation /  longitudinal equant transverse,
+		45 'Periproct tear-shaped' /  no yes,
+		46 Periproct_plating /  one_row two_rows 3_plates,
+		47 Anal_placement /  central aboral_edge,
+		48 Plates_beneath_periproct /  concave convex,
+		49 Min_plates_I5_until_periproct /  11_or_more 10 9 8 7 6 5,
+		50 Min_plates_framing_periproct /  10_or_more 9 8 7 6 5 4,
+		51 'Tubercles post-basicoronal' /  absent_or_few abundant,
+		52 NZ_5 /  absent reduced developed,
+		53 NZ5_width /  narrow wide,
+		54 I5_granular /  no yes,
+		55 Pits_on_naked_zone /  absent fine large,
+		56 Pits_on_basicoronal /  absent present,
+		57 NZ_III /  absent narrow wide,
+		58 Peristome_orientation /  transverse equant longitudinal,
+		59 Peristome_shape /  pentagonal oval,
+		60 Peristome_position /  central very_anterior,
+		61 Accretion_of_stereom /  low high,
+		62 Basicoronal_plate_depressed /  no yes,
+		63 bourrelet_5_bulged /  no yes,
+		64 Bourrelets_pointy /  no yes,
+		65 Bourrelet_toothlike /  no yes,
+		66 Bourrelet_5_poorly_developed /  no yes,
+		67 B1_4_narrower_than_b5 /  no yes,
+		68 Basicoronal_5_longer_than_wide /  no yes,
+		69 B5_longer_than_adjacent_plate /  no yes,
+		70 Edge_I5_basicoronal_wide /  yes no,
+		71 Size_basicoronal_1b_and_5a /  short 'medium-sized' enlarged,
+		72 Ambulacral_plate_shape /  'flush or wall-like' bent,
+		73 Ambulacral_basicoronal_depressed /  no yes,
+		74 Multiple_pores_first_plate /  no yes,
+		75 Buccal_pores /  absent reduced distinct,
+		76 Buccal_pores_to_phyllodes /  near far,
+		77 Second_pore_placement /  middle near_adradial_suture,
+		78 Ph_III_shape_outer_column /  straight barrel triangular,
+		79 Ph_II_IV_columns /  one scattered two,
+		80 Ph_II_IV_shape_outer_column /  rows_3 straight_or_barrel tapering,
+		81 Ph_II_IV_max_number /  11_or_more 8_to_10 5_to_7 up_to_4,
+		82 Ph_I_V_size /  long short,
+		83 Ph_I_V_max_number /  12_or_more 8_to_11 4_to_7,
+		84 Ph_I_V_arrangement_outer /  uniform scattered,
+		85 Ph_I_V_tapering /  no yes,
+		86 Ph_I_V_occluded /  absent_or_rare few many,
+		87 Ph_I_V_primary_tubercles /  absent distally,
+		88 Sphaeridia_location /  mainly_near_buccal_pores throughout_the_phyllodes,
+		89 Sphaeridia_pit /  open_pits concealed,
+		90 Sphaeridia_pit_reduced /  no yes,
+		91 Sphaeridia_number /  7_or_more up_to_6,
+		92 Plates_beyond_phyllodes /  transverse squared longitudinal,
+		93 Tubercles_size /  aboral_as_oral aboral_smaller,
+		94 Oral_tubercle_bosses_displaced /  no yes,
+		95 Blade_ophicephalous /  open_U 'semi-oval' oval,
+		96 Teeth_ophicephalous_distally /  coarse fine,
+		97 Shape_tridentate /  long_and_narrow short_and_broad,
+		98 Teeth_tridentate /  absent present ; 
+	MATRIX
+	Nucleolites_scutatus            000000010200(0 1)0000000?0101000000000(0 1)0000000000??00310-0000000000000000000010-00000000001000?000????
+	Apatopygus_recens               1100000002010001001000100000020000020000000000000010-000001000000001100001000000000001100000010100
+	Echinolampas_depressa           11110101010120000010021132001110121200201002021-53110000001000000010000001200001000100100000012000
+	Faujasia_apicalis               010110020001200000102210401000120212022010020??-6602110002000100110101111011121121201201001111????
+	Faujasia_rancheriana            110000010200100000202210401000030210002010020??-530211001100??01000000110021112201000201000211????
+	Hardouinia_bassleri             010010110200{0 1}00010002200401000??121(0 1)121000010??023?????0?20001001101102110201121011002010002??????
+	Hardouinia_mortonis             010010110200100010102210401000030210101000010??03302110021000100110110111011120201201100010211????
+	Australanthus_longianus         010100010201(1 2)00000000100200000021202020000000??021021001210001?0101111111021120131200001010211????
+	Kassandrina_florescens          100000010201100000000100200001010202020000000??0220210212000110100100001002012113120010?00?211????
+	Kassandrina_malayana            100000010201100001000100200001110202020000000000310210112000010100100001002012113120010?0002111000
+	Neolampas_rostellata            111101011211010101--------0---1-01021010000000015(3 4)00-000021001000101010110201201312001000012000110
+	Oligopodia_epigonus             1101010012010001010001103000020001021010010000004310-020021000000000010000201001212000100012000100
+	Petalobrissus_cubensis          110000010200200000001210301101010100100000000??01212100020001010001110010020122101000210000211????
+	Pliolampas_elegantula           11110100110111010010010000000101?000101010000??15311000002000000010101000020101131200110001101????
+	Procassidulus_lapiscancri       110000000200(0 1)01000211210401001020202001000010??13(5 6)02101122(0 1)010001101?1111011120111200200001211????
+	Petalobrissus_setifensis        110000011200{1 2}00000000210401001000200101000000??-620210?02000?010001110010020112101000210000?11????
+	Rhynchopygus_arumaensis         100000000200(1 2)0000000011030100101010010000??00??03312000021000000000110000020122111100210001201????
+	Rhynchopygus_macari             110000000200101000211210401001??020110100?120??1{1 2 3}{3 4}0210112210??00110111?100211221112001?00??211????
+	Rhynchopygus_marmini            1000000002001000002001{0 1}030000201010210110?120??1330210002210??0011011111101112013120120?0002?1????
+	Stigmatopygus_pulchellus        110000011200(1 2)00000202220401111??010200100?101??0{3 4}202110022000100101101111011120211101101010211????
+	Studeria_recens                 111101011211110100200100000001120202111000000??05510-00002000101010110010020121121200210001200????
+	Cassidulus_briareus             100100010201000000?002103100111101020011100201113402102020001010001000010020120111210000101211??1?
+	Cassidulus_californicus         11000001020110000?10{0 1}210010011??0102101110020??1?40210202000?00000100?01002012{0 1}111200?00?01211????
+	Cassidulus_caribaearum          1100000102010000001002103100110101020011100201114(1 2)021020200010000010000100201201212000001012111010
+	Cassidulus_ellipticus           2100000{0 1}0201{0 1}00000001110401001???10010100?120??1330210212200??010101?001002012?111{1 2}?0?0000?211????
+	Cassidulus_falconensis          110010010201200000101220411011020202011110020??13302101020001?11001000010020121101110100100211????
+	Cassidulus_infidus              10010001020100000010021031001211010200111002011133021020200010000010000100201201112000001011111011
+	Cassidulus_kieri                110101011201200000100210301001000102101010000??03302001020000000001000000020102111100100001101????
+	Cassidulus_mitis                11010001020100000000022031001111010200111002011133021010200010100010000100201201112100001002111011
+	Cassidulus_trojanus             110000010201100000101210311011021100001110020??12302102120001?10001000010020121111100100?00211????
+	Eurhodia_australiae             211000000201100000000100201001110101121001100??0410210212200??01010110010020121111100101000211????
+	Eurhodia_baumi                  11000001020120000010111040100012010010100?120??1320210212200??01010110010020112111100200000211????
+	Eurhodia_calderi                110000010201200000(1 2)0(0 1)10040110102110012100?120??02402102122000101010110010020112101000201000211????
+	Eurhodia_cravenensis            11110001120110000010121030100(1 2)11010010100?120??0{2 3}40210112200??010101?1010020112101100200000211????
+	Eurhodia_holmesi                11(0 1)10001120110000010021040100111010010100?120??04602101122000101010111010020112111100200000211????
+	Eurhodia_matleyi                110100?1020120000010121040110103110002100?120??0230210002200?101010111010020112101000201000211????
+	Eurhodia_morrisi                21110100110120000000011040110011120(1 2)00110?120??13302101022000101010110010020112101000201000211????
+	Eurhodia_navillei               11000001020120000010(1 2)210{3 4}0110{0 1}13110000100?120??0440210212200??010101?0010020112111100201000211????
+	Eurhodia_patelliformis          211000010101(0 1)00000(0 2)0(0 1)21040100101010012100?120??03(5 6)02102122000101010110010020112111100?0000?211????
+	Eurhodia_relicta                01010000120100000110020030100(1 2)1101001010011200005402101122101001010111010020121121200100001201??10
+	Eurhodia_rugosa                 200000000201200000100110401001110100101000120??12402102122000101010110010020122101000201000211????
+	Eurhodia_thebensis              200000010201?0000?101210{3 4}01?001??1?000100?120??1{1 2 3}{2 3 4}0210202200??01010110010020112111100201000211????
+	Glossaster_sorigneti            20000001020120000?200100{3 4}0100111?10010000?001??0300210212201??0101011101002012?111100???0??211????
+	Glossaster_vasseuri             200000010201200000201110{2 3}0100001010200000?001??03002102122010101010111010020112201000201000211????
+	Glossaster_welschi              110000?1020?200??020121040110003?21200000?001??0{1 2}0?2???02200??00100??1?1?0??112101100201000?11????
+	Paralampas_pileus               110000010201100000101210301001100202101010010??(0 1)320201002000?00000100000002010{0 1}121210010001201????
+	Paralampas_rancureli            110000011201100000001210301001000202101?10010??0430200102100??01001??1010020101121200?1000?200????
+	Rhyncholampas_alabamensis       01001001020110001010{1 2}210411010020101001110020??1?{3 4}0210102000?010001000010020121101000100100211????
+	Rhyncholampas_anceps            110000010201100000100210310011??0102?01110020??1{3 4}{3 4}0210202000?0000010000000201201212?0?00001211????
+	Rhyncholampas_ayresi            11010101100110001010(1 2)22041101103?100011110020??12302001020001?1100100001002012110111020010?211????
+	Rhyncholampas_carolinensis      11010101110110000010(0 1)210311011020100001110020??14302001020001?00001000000020101121100200?0?101????
+	Rhyncholampas_chipolana         0101000102011000101022204110110??201001110020??1{3 4}202101020001?110010000100201211111102?0100211????
+	Rhyncholampas_conradi           11110100110120000010021131101112?112001110020??1351200101000?000001010000020121111100110001201????
+	Rhyncholampas_daradensis        110001001201200000101210401011100101101110020??1520200102000?00000101?010020122111100200001111????
+	Rhyncholampas_ericsoni          010110020001100010?0122041101102?10(1 2)001110020??1{1 2}302110020001?11001000010020121111100100?0?211????
+	Rhyncholampas_evergladensis     11000001020100001010(1 2)220411010030101011110020??1250210102000101100100001002012111111010010?211????
+	Rhyncholampas_globosa           01011002100110001010122041101?021100001110020??11402110020001?11001000010020121111100100?0?211????
+	Rhyncholampas_gouldii           0101100(1 2)000110000010(0 1)22041101102?10(0 1)011110020??124021110200(0 1)1?11001000010020121121100100100211????
+	Rhyncholampas_grignonensis      110100011201000000100210311011000101001100020??1440200?02000100000101000012012?11111000010?211????
+	Rhyncholampas_mexicana          11000011020120000010222041101003?201011110020??14202101020011?11001000010020121101100?00???211????
+	Rhyncholampas_pacifica          110000010201(1 2)00000101220(3 4)1101002110201111002011132021010200010110010000100201211011102001002111010
+	Rhyncholampas_riveroi           110000010201{0 1}000?020?2204110100??100011110020??1{1 2 3}30210?020001?110010?001002012???1?10??0???211????
+	'Rhyncholampas ? rodriguezi <a>'010110021001000000101210311011031101011110020??1340210102000??00001000010020121121??0?00?0?211????
+	'Rhyncholampas ? rodriguezi <r>'1101100110011000001002103110110?110(0 1)001110020??13{3 4}0210102000??00001000010020121121100100100211????
+	Rhyncholampas_sabistonensis     11000001020110001000{1 2}22041101003?100011110020??1{2 3 4}{2 3 4}02101020011?100010?0010020121101110200100211????
+	Rhyncholampas_tuderi            110000011201200000101210{3 4}?00110002020?1010020??1330210102000?0000010?0000020102111100100?00211????
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 98;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 98;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1606624096835;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 6677943088180478674;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 3634853462137368706;
+			mqVersion 361;
+			checksumv 0 3 752721621 null  getNumChars 98 numChars 98 getNumTaxa 66 numTaxa 66   short true   bits 2305843009213694079   states 127   sumSquaresStatesOnly 96456.0 sumSquares -1.2451552249753944E20 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1085 637;
+			setLocation 8 23;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #3634853462137368706 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 172;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 985 565;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 12;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

@@ -1,0 +1,198 @@
+#NEXUS
+[written Mon Nov 30 21:22:21 CST 2020 by Mesquite  version 3.61 (build 927) at EAS-392515.local/10.0.1.51]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=30;
+	TAXLABELS
+		Archegonaster_pentagonus Jugiaster_speciosus Hudsonaster_narrawayi Promopalaeaster_magnificus Siluraster_perfectus Gordonaster_brassfieldensis Devonaster_eucharis Xenaster_margaritatus Calliasterella_mira Calliasterella_americana Compsaster_formosus Delicaster_enigmaticus Emphereaster_missouriensis Fandasterias_facetus Ambigaster_carnarvonensis Permaster_grandis Trichasteropsis_weismanni Noriaster_barberoi Carniaster_ochardi Superstesaster_promissor Pentasteria_kelleri Advenaster_inermis Tropidaster_pectinatus Terminaster_cancriformis Comptoniaster_basseti Plesiosolaster_moretonis Germanasterias_amplipapularia Argoviaster_occulutus Protremaster_uniserialis Noviaster_polyplax 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=70;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9";
+	MATRIX
+	Archegonaster_pentagonus       000000000001000000000000100000000100001000001000000000100100000000????
+	Jugiaster_speciosus            00000000001000000000000000000010101101000110110000000110101??000000110
+	Hudsonaster_narrawayi          0000000000000000101100000001010000010100101000101110011001001001101100
+	Promopalaeaster_magnificus     001000000010100000010000000100100011100000101010000000100100101110????
+	Siluraster_perfectus           0010000000000000100000000001010000011000001010100000011001001000101100
+	Gordonaster_brassfieldensis    0000000000100000100001001001010000011100101010101100011001011000001100
+	Devonaster_eucharis            0000000000100000101101000000010000010100101010011100001001000100100100
+	Xenaster_margaritatus          00100000?0?00000101101000001001010011100101010110001101001000100100100
+	Calliasterella_mira            11100011101001111111011011000100000101001010010011100010010100?0101?10
+	Calliasterella_americana       111000111?1001111111011011000100000101001010000011100010010010???01100
+	Compsaster_formosus            1?11101111100001101101?01100000110010100111110100001001001001010100?1?
+	Delicaster_enigmaticus         101000111??0000010110100100001000000101100001011110??01001110000001100
+	Emphereaster_missouriensis     001000111?100000101101001000011000010101001000101100101001010000111100
+	Fandasterias_facetus           00110010???01000101101?111010100000101001010000111000110010010????????
+	Ambigaster_carnarvonensis      00100011????0???101101?011000100000101001010000011100010010???00111100
+	Permaster_grandis              001000111?10000?101101?011000100000001001000100011100010010???00110110
+	Trichasteropsis_weismanni      001011111111101111110111110000011111001100101111110010100100101010??11
+	Noriaster_barberoi             00101011111101111011011011?000011?11110100??1100?????1100101000??0????
+	Carniaster_ochardi             001010111??10?111111011011?000011???010??0111010?????110010010????????
+	Superstesaster_promissor       11101011111101111011011011?001000001010??0???????????010010???0010111?
+	Pentasteria_kelleri            001010111111011110111100101010011?000100110010100001011011011000000?11
+	Advenaster_inermis             1010101111110111101111?010100001100?????????1????????11001001000000???
+	Tropidaster_pectinatus         10101011111101111111011011000100?00001000110101001010001000??000000?11
+	Terminaster_cancriformis       1110101111110111101101101100011010010101001001001110010100110000100?11
+	Comptoniaster_basseti          0010101111110111101101001010100110010100101010100001011001001000000011
+	Plesiosolaster_moretonis       11101011111101111011011011100001???1001110101100000???0?001100?000??11
+	Germanasterias_amplipapularia  1110111111101011101101111100001011110011001011011111000100110011100?11
+	Argoviaster_occulutus          1110111111101011101101111100001011110011001111001001010100111011100011
+	Protremaster_uniserialis       00101111?11111111111011011000100???1010110101100?????0??0?010000000???
+	Noviaster_polyplax             0010101111110111101111001010100110010100111010100011011001001000000011
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 70;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 70;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1606792941437;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 7478669369552577590;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 744767559655126405;
+			mqVersion 361;
+			checksumv 0 3 3315716253 null  getNumChars 70 numChars 70 getNumTaxa 30 numTaxa 30   short true   bits 3   states 3   sumSquaresStatesOnly 4456.0 sumSquares 4456.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1 errorReportedDuringRun;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1132 601;
+			setLocation 8 23;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #744767559655126405 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 173;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1032 529;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 12;
+					getToolPalette;
+					tell It;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

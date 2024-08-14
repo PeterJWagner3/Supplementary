@@ -1,0 +1,525 @@
+#NEXUS
+[written Fri Sep 04 09:50:29 CDT 2020 by Mesquite  version 3.6 (build 917) at Wagners_Dark_Tower/10.0.1.29]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=64;
+	TAXLABELS
+		Alphacrinus Apektocrinus Eknomocrinus Aethocrinus Cnemecrinus Adelphicrinus Archaetaxocrinus Celtocrinus Elpasocrinus Inyocrinus Pogonipocrinus Proexenocrinus Ramseyocrinus Compagicrinus Ibexocrinus Othneiocrinus Brechmocrinus 'Caleidocrinus (Huxleyocrinus)' Cefnocrinus Coralcrinus Delgadocrinus Fresnedacrinus Heviacrinus Hoplocrinus Iocrinus Isotomocrinus Maenillicrinus Margoiocrinus Merocrinus Morenacrinus Neoarchaeocrinus Pandoracrinus Perittocrinus Putilovocrinus Revalocrinus Schaldichocrinus Tetragonocrinus Trichinocrinus Tripatocrinus Vosekocrinus Anthracocrinus Carabocrinus Cotylacrinna Diabolocrinus Glyptocrinus Hybocrinus Palaeocrinus Paradiabolocrinus Pararchaeocrinus Porocrinus Triboloporus Illemocrinus Eoparisocrinus Gaurocrinus Hybocystites Glenocrinus Titanocrinus Rhopalocystis Merocrinus2 Echinosphaerites Eumorphocystis Protocrinites Glyptocystella Cheirocystis 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  'Matrix in file "MorphoBankT-D1stMatrix4a-3-6-15.nex"';
+	DIMENSIONS  NCHAR=132;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9 A B D E K Z";
+	MATRIX
+	Alphacrinus                    03001900000100---5500050110510011211121300001000-0-0-10---2392------????????????11?-------13000030055000171?1?0?2?2?0?000---50412811
+	Apektocrinus                   010019000001025615501151---501111111521(1 2)200010210000-1211131B7------???????????????-------13001061(0 1 2)--000001?1?0?2?2???000---?0?1?911
+	Eknomocrinus                   03201900100110---5501151---51?111111511110101?(2 3)10000----------1?10?????????????----???????1300?05--23000-41?1?1?2?0???010---?041?911
+	Aethocrinus                    020019000001025515510351---511111111211(0 1 3)000011010000-1201122B7------????????????120-------1300006--16000121111112211?900155150412811
+	Cnemecrinus                    03101900000100---5510251---51?0111115111?00011(0 1 2)10000----------1?1000???????????----???19??1300?03--25000131111112211??000---?0?1?811
+	Adelphicrinus                  02101800000000---5510051---510011111511(2 4)210010411000----------?????????????????----???????1300005--250001?1?0?0?0?0???010---?041?811
+	Archaetaxocrinus               021010000001025505511150---5011111115115000010001000-1200030B7------???????????????-------13000030022000161110002011??000---?0?1?811
+	Celtocrinus                    02201920100100---5?10?51---51??111115211111010011100----------?????????????????----???????130000211221001400110022????000---?041??11
+	Elpasocrinus                   011019000001025525521150---511111111020-----0--------1210122B0------????????????110-------13000050025000121?1?2?2?0???000---?041??11
+	Inyocrinus                     02101000000100---5?0??5-21051??22222??0-----0--------?????????------???????????????-------130000620??000??00000022????000---?0?1??11
+	Pogonipocrinus                 03001000000100---5500?5-110500022222120-----0--------?????????------????????????12?-------13000020024000140?1?0?2?????000---?041?811
+	Proexenocrinus                 03101001000102(0 2)?05510251---5000111115-112110112011011---------0?1000???????????----????0?11400002--0512211??????2?????000---50412811
+	Ramseyocrinus                  03001000000100---5?0005-000510011110210-----0--------10---0063------????????????1?1-------120000600250001422103322????000---?0?1?A11
+	Compagicrinus                  021019300001025505510151---511111111120-----0--------1210010B9------????????????12?-------13000050025000121?1?1?2?????000---?041?811
+	Ibexocrinus                    03001000000100---550005201051??12212210-----0--------10---0063------???????????????-------13000030025000141?0?0?0?????000---?041?811
+	Othneiocrinus                  02101000000100---5510051000510111212(0 2)20-----0--------10---??E3------???????????????-------1300?0200??122??1?0?0?2?????000---?0?1?811
+	Brechmocrinus                  020010000001025525502150---500011111110-----0--------123002?K?------????????????110-------13000062025000131?0?0?0?2???000---?041?811
+	'Caleidocrinus (Huxleyocrinus)'03101000000100---5520050001510011211120-----0--------10---00E3------????????????1?1-------130000200220001300111122????000---?0?1?811
+	Cefnocrinus                    0220143200010205?4500250---5100111115-121110112111111---------141011???????????----??????11400002--151611200110022?20?000---?041?811
+	Coralcrinus                    02101000000100---550?05-2105101222221?0-----0--------100001?E3------????????????1??-------130000420??0001?0?1?0?2?????000---?041?911
+	Delgadocrinus                  00001000000100---51--?52---51?0111112?0-----10001000----------?????????????????----???????1400?02--24022-200110022????000---?0?1?111
+	Fresnedacrinus                 0300100000010256(1 2)5522151---5011111115-1100001000-000-1211(0 1)20A3------????????????1?1-------130000?--130001?00111122??0?000---?041?911
+	Heviacrinus                    02001000000100---5500050---510011111020-----0--------10---3263------????????????1?1-------13000061025000130?1?1?2?1???000---?0?1?811
+	Hoplocrinus                    02101000000100---5520152---511111111120-----0--------110101?73------???????????2???-------130000600???0?0?????????????000---?001?811
+	Iocrinus                       02001900000100---5510051011510111211120-----0--------10---00E3------???????????4101-------1300005002500014111022221117000---?041?811
+	Isotomocrinus                  02001000000100---5520052110510011212210-----0--------10---1063------????????????121-------130000504250001?111022221???000---?041?811
+	Maenillicrinus                 01001000000100---5520052---510011111120-----0--------?????????------???????????????-------130000604250002?????????????000---?0?1?811
+	Margoiocrinus                  03101010000100---5510050011510111111220-----0--------10---00E3------????????????101-------130000600250001700111022???7000---?041?811
+	Merocrinus                     020010000001025505500050---510011211210-----0--------10---00E3------????????????1??-------130000600250001411000000000?000---?041?811
+	Morenacrinus                   020010000001025515510150---500011111220----10--------110102?D3------????????????120-------130000610?50002?11000000????000---?041?811
+	Neoarchaeocrinus               022010000001025515510251---50001111151112110112111011---------??????0????1???2?----40010??1400002--25161-40?1?0?2?1?0?000---5041?811
+	Pandoracrinus                  03001000000100---5500050---51?011111120-----0--------?????????------????????????11?-------130000420150001400110022??01000---?041?811
+	Perittocrinus                  0200190000010154155(0 1)2151---511111111020-----0--------1240(0 1)4?B3------???????????????-------130000??0???????1???????????101541?0?1?711
+	Putilovocrinus                 02001000000100---5520051---511111111??0-----0--------00-----??------???????????????-------1??0?0??????????????????????000---?0?1?811
+	Revalocrinus                   0??01000000100---5520052121511111211020-----0--------10---??ZZ------???????????????-------130000?20???0???????????????000---?0?1?811
+	Schaldichocrinus               02001000000100---5510051110510111211220-----0--------10---00E3------????????????1?1-------130000400250001411110022220?000---?041?811
+	Tetragonocrinus                52001000000100---5402042---8-0001101210-----0--------00-----ZZ------???????????????-------1100004202400023221133224405000---?0?1?A11
+	Trichinocrinus                 02001(0 4)301001021515510251---5000111115111011011001100----------131011???????????----???????1400002--05122110011222222??000---?041?811
+	Tripatocrinus                  01201000000100---5522052---5111131136-0-----0--------111000-BZ------0110??0?00220---------10-2------------????????????000---30012811
+	Vosekocrinus                   03101?00000100---5500?51---50??11111120-----0--------?????????------???????????????-------130000210230001411111122????000---?0?1?811
+	Anthracocrinus                 0320(0 1)6021001021524520250---50011111152111021110013113---------05100010000-031?-----41000311500002--01100120?1?0?2?????000---50412811
+	Carabocrinus                   022019100001024515510151110500011111020-----0--------120111-B-------0111100100010---------1300002--4300017111100221?0?100---40012811
+	Cotylacrinna                   0320(1 2)9021101021??4500251---40001111152111010111012011---------1310001?0022-3121----40010511500012--15161120111002211?5000---50412811
+	Diabolocrinus                  04101(1 8 9)321101021512510251---5000111115-11111011201100----------0000000?001121111----40112511400002--05161-10?1?0?2?1?0?000---50412811
+	Glyptocrinus                   01201930000100---5500051---51001111152112020112112012---------12101100002(1 2)23120----31010201500002--02112-200110022110?000---50412811
+	Hybocrinus                     01101000000100---5520152---511111111020-----0--------110100?BZ------0110100100020---------130000600--000-00000000011??000---30012811
+	Palaeocrinus                   022019000001024505510151---50001111102------0--------110102-BZ------0111112??0030---------130000100??0????0?1?0?2?1???100---40012811
+	Paradiabolocrinus              0320192210010215?2500251---3100111115-162010114111012---------5?10000000112???0----41012??1400?03???????-?????????????000---50412811
+	Pararchaeocrinus               0320193210010215?2500251---4000111115-121010112011011---------(0 1)5101100001123121----?1010311400002--25241-40011(0 1)(0 1)22110?000---50412811
+	Porocrinus                     022019300001025505510151---500011111020-----0--------113101-BZ------0111100200020---------130000610--000-00001(0 2)012????100---30012811
+	Triboloporus                   022019310001023??5510151---500013111020-----0--------113101?B3------0110100100030---------13?0?0??????????????????????100---?0012811
+	Illemocrinus                   021019000001025525520150---500011111020-----0--------1131032B3------011010020004110-------1300002002300013001122220??1000---40012811
+	Eoparisocrinus                 020010000001025505510151---500011111020-----0--------110102200------10000-0311-4110-------13000020023000140?1?0?1???0?000---50412811
+	Gaurocrinus                    0200(0 1)(0 1)0010(0 3)0025515510251---50001111151142110110211111---------20101110001203121----40003201400?02--25112-2001111222207000---50412811
+	Hybocystites                   03201000000100---5510151---511113113020-----0--------111000-8?------0110100300030---------110(0 2)006200-000-00?1?0?0?1???000---30012811
+	Glenocrinus                    0322190200201?-??????251---50??11111511?200011410000----------?5200-???????????----43000501300?05--340003311111122????000---?041?B11
+	Titanocrinus                   0112190000201?-??????251---50??11111511?204011211000--0-----ZZ??????????????????1???0009?11300106--25000141100000000??000---?041?B11
+	Rhopalocystis                  000010000001025425520351---5000111115-11100011210000----------0410000110102200020---------0---------------00100000004?011512011001-1
+	Merocrinus2                    031019000001025515510251---5000111115111?00011(0 1 2)10000----------1?1000???????????----???19??1300?03--25000131111112211??000---?0?1?811
+	Echinosphaerites               02221500001000--------0---------------1?20-20-----------------?001000110102100220---------0---------------55000022???5100---112007-0
+	Eumorphocystis                 01121(8 9)00001000--------0---------------1620-00-----------------5000010110102100020---------0---------------0?1?0?2?1?0?010---31010700
+	Protocrinites                  02221500001000--------0---------------1(1 3)10-20-----------------30010-0110102200020---------0---------------0?0?0?2?????010---012018-0
+	Glyptocystella                 01201930000100--------0---------------0-----0-----------------------0110101100070---------0---------------0000002200?-100---014015-0
+	Cheirocystis                   0(0 1)201930000100--------0---------------0-----0-----------------------0110101100070---------0---------------00000020004-100---014015-0
+
+;
+
+END;
+BEGIN TREES;
+	Title 'Trees from "MorphoBankT-D1stMatrix4a-3-6-15.nex"';
+	ID 01745134b6ca30;
+	LINK Taxa = Taxa;
+	TRANSLATE
+[0] 		1 Alphacrinus,
+[1] 		2 Apektocrinus,
+[2] 		3 Eknomocrinus,
+[3] 		4 Aethocrinus,
+[4] 		5 Cnemecrinus,
+[5] 		6 Adelphicrinus,
+[6] 		7 Archaetaxocrinus,
+[7] 		8 Celtocrinus,
+[8] 		9 Elpasocrinus,
+[9] 		10 Inyocrinus,
+[10] 		11 Pogonipocrinus,
+[11] 		12 Proexenocrinus,
+[12] 		13 Ramseyocrinus,
+[13] 		14 Compagicrinus,
+[14] 		15 Ibexocrinus,
+[15] 		16 Othneiocrinus,
+[16] 		17 Brechmocrinus,
+[17] 		18 'Caleidocrinus (Huxleyocrinus)',
+[18] 		19 Cefnocrinus,
+[19] 		20 Coralcrinus,
+[20] 		21 Delgadocrinus,
+[21] 		22 Fresnedacrinus,
+[22] 		23 Heviacrinus,
+[23] 		24 Hoplocrinus,
+[24] 		25 Iocrinus,
+[25] 		26 Isotomocrinus,
+[26] 		27 Maenillicrinus,
+[27] 		28 Margoiocrinus,
+[28] 		29 Merocrinus,
+[29] 		30 Morenacrinus,
+[30] 		31 Neoarchaeocrinus,
+[31] 		32 Pandoracrinus,
+[32] 		33 Perittocrinus,
+[33] 		34 Putilovocrinus,
+[34] 		35 Revalocrinus,
+[35] 		36 Schaldichocrinus,
+[36] 		37 Tetragonocrinus,
+[37] 		38 Trichinocrinus,
+[38] 		39 Tripatocrinus,
+[39] 		40 Vosekocrinus,
+[40] 		41 Anthracocrinus,
+[41] 		42 Carabocrinus,
+[42] 		43 Cotylacrinna,
+[43] 		44 Diabolocrinus,
+[44] 		45 Glyptocrinus,
+[45] 		46 Hybocrinus,
+[46] 		47 Palaeocrinus,
+[47] 		48 Paradiabolocrinus,
+[48] 		49 Pararchaeocrinus,
+[49] 		50 Porocrinus,
+[50] 		51 Triboloporus,
+[51] 		52 Illemocrinus,
+[52] 		53 Eoparisocrinus,
+[53] 		54 Gaurocrinus,
+[54] 		55 Hybocystites,
+[55] 		56 Glenocrinus,
+[56] 		57 Titanocrinus,
+[57] 		58 Rhopalocystis,
+[58] 		59 Merocrinus2,
+[59] 		60 Echinosphaerites,
+[60] 		61 Eumorphocystis,
+[61] 		62 Protocrinites,
+[62] 		63 Glyptocystella,
+[63] 		64 Cheirocystis;
+	TREE PAUP_1 = (60,(61,((58,(((((((((((1,((((7,14),8),((18,(20,27)),23)),((10,24),19))),16),(12,21)),(17,26)),6),11),4),(3,15)),2),(28,29)),(5,((9,(13,25)),22)))),(63,64))),62);
+	TREE 'Ingroup_Only' = (58,(((((((((((1,((((7,14),8),((18,(20,27)),23)),((10,24),19))),16),(12,21)),(17,26)),6),11),4),(3,15)),2),(28,29)),(5,((9,(13,25)),22))));
+
+END;
+
+
+BEGIN LABELS;
+	TAXAGROUPLABEL Ingroup COLOR = (RGB 1 1 1) ;
+	TAXAGROUPLABEL Outgroup COLOR = (RGB 1 1 1) ;
+	TAXAGROUPLABEL Alternative COLOR = (RGB 1 1 1) ;
+
+
+END;
+
+BEGIN SETS;
+	TAXPARTITION * UNTITLED  =  Ingroup :  1- 57, Outgroup :  58 60- 64, Alternative :  59;
+
+END;
+
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 132;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 132;
+END;
+
+BEGIN NOTES;
+
+	SU  C = 99 N = selected B = TRUE;
+
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1599231029302;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 8214532427895007132;
+			tell It;
+				setDefaultOrder  6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 3 63 0 1 2 4 5;
+				attachments ;
+			endTell;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 6390916778651693447;
+			tell It;
+				setSelected  99;
+				attachments ;
+			endTell;
+			mqVersion 360;
+			checksumv 0 3 3266650848 null  getNumChars 132 numChars 132 getNumTaxa 64 numTaxa 64   short false   bits 65535   states 65535   sumSquaresStatesOnly 1.1572546579E10 sumSquares 1.1572546579E10 longCompressibleToShort false usingShortMatrix false   NumFiles 1 NumMatrices 1 errorReportedDuringRun;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 175;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1516 755;
+			setLocation 0 31;
+			setFont Gadget;
+			setFontSize 14;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			showTaxa #8214532427895007132 #mesquite.lists.TaxonList.TaxonList;
+			tell It;
+				setTaxa #8214532427895007132;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.TaxonListCurrPartition.TaxonListCurrPartition;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1341 683;
+					setLocation 0 31;
+					setFont Gadget;
+					setFontSize 16;
+					getToolPalette;
+					tell It;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.ColorTaxon.ColorTaxon;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.lists.TaxonListAnnotPanel.TaxonListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.trees.BasicTreeWindowCoord.BasicTreeWindowCoord;
+		tell It;
+			makeTreeWindow #8214532427895007132  #mesquite.trees.BasicTreeWindowMaker.BasicTreeWindowMaker;
+			tell It;
+				suppressEPCResponse;
+				setTreeSource  #mesquite.trees.StoredTrees.StoredTrees;
+				tell It;
+					setTreeBlock 1;
+					setTreeBlockID 01745134b6ca30;
+					toggleUseWeights off;
+				endTell;
+				setAssignedID 4082.1599011059428.6934558932662490675;
+				getTreeWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1341 683;
+					setLocation 0 31;
+					setFont Gadget;
+					setFontSize 16;
+					getToolPalette;
+					tell It;
+						setTool mesquite.trees.BasicTreeWindowMaker.BasicTreeWindow.reroot;
+					endTell;
+					setActive;
+					getTreeDrawCoordinator #mesquite.trees.BasicTreeDrawCoordinator.BasicTreeDrawCoordinator;
+				tell It;
+					suppress;
+					setTreeDrawer  #mesquite.trees.SquareLineTree.SquareLineTree;
+					tell It;
+						setNodeLocs #mesquite.trees.NodeLocsStandard.NodeLocsStandard;
+						tell It;
+							branchLengthsToggle off;
+							toggleScale on;
+							toggleBroadScale off;
+							toggleCenter on;
+							toggleEven on;
+							setFixedTaxonDistance 0;
+						endTell;
+						setEdgeWidth 4;
+						showEdgeLines on;
+						orientUp;
+					endTell;
+					setBackground White;
+					setBranchColor Black;
+					showNodeNumbers off;
+					showBranchColors on;
+					labelBranchLengths off;
+					centerBrLenLabels on;
+					showBrLensUnspecified on;
+					showBrLenLabelsOnTerminals on;
+					setBrLenLabelColor 0 0 255;
+					setNumBrLenDecimals 6;
+					setSelectedTaxonHighlightMode 1;
+					desuppress;
+					getEmployee #mesquite.trees.BasicDrawTaxonNames.BasicDrawTaxonNames;
+					tell It;
+						setColor Black;
+						setTaxonNameStyler  #mesquite.trees.NoColorForTaxon.NoColorForTaxon;
+						toggleShadePartition off;
+						toggleShowFootnotes on;
+						toggleNodeLabels on;
+						toggleCenterNodeNames off;
+						toggleShowNames on;
+						namesAngle ?;
+					endTell;
+				endTell;
+					setTreeNumber 2;
+					setTree '(13,(37,(23,(((11,(10,20)),(32,(1,(27,(18,28))))),((21,((38,54),(31,(12,((41,43),(44,(49,(19,(45,48))))))))),((36,((25,26),(16,((6,57),(15,(29,(17,30))))))),(34,(33,((8,(7,(5,(4,(40,(22,(2,(3,56)))))))),((9,14),(53,(52,((51,(42,47)),(50,(58,(24,(46,(35,(39,55)))))))))))))))))));';
+					setDrawingSizeMode 0;
+					toggleLegendFloat on;
+					scale 0;
+					toggleTextOnTree off;
+					togglePrintName off;
+					showWindow;
+					newAssistant  #mesquite.ancstates.TraceCharacterHistory.TraceCharacterHistory;
+				tell It;
+					suspend ;
+					setDisplayMode  #mesquite.ancstates.ShadeStatesOnTree.ShadeStatesOnTree;
+					tell It;
+						toggleLabels off;
+						togglePredictions off;
+						toggleGray off;
+					endTell;
+					setHistorySource  #mesquite.ancstates.RecAncestralStates.RecAncestralStates;
+					tell It;
+						getCharacterSource  #mesquite.charMatrices.CharSrcCoordObed.CharSrcCoordObed;
+						tell It;
+							setCharacterSource #mesquite.charMatrices.StoredCharacters.StoredCharacters;
+							tell It;
+								setDataSet #6390916778651693447;
+							endTell;
+						endTell;
+						setMethod  #mesquite.parsimony.ParsAncestralStates.ParsAncestralStates;
+						tell It;
+							setModelSource  #mesquite.parsimony.CurrentParsModels.CurrentParsModels;
+							toggleMPRsMode off;
+						endTell;
+						toggleShowSelectedOnly off;
+					endTell;
+					setCharacter 1;
+					setMapping 1;
+					toggleShowLegend on;
+					setColorMode 0;
+					toggleWeights on;
+					setInitialOffsetX 3;
+					setInitialOffsetY -280;
+					setLegendWidth 142;
+					setLegendHeight 161;
+					resume ;
+				endTell;
+				endTell;
+				desuppressEPCResponse;
+				getEmployee #mesquite.trees.ColorBranches.ColorBranches;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.ornamental.BranchNotes.BranchNotes;
+				tell It;
+					setAlwaysOn off;
+				endTell;
+				getEmployee #mesquite.ornamental.ColorTreeByPartition.ColorTreeByPartition;
+				tell It;
+					colorByPartition off;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocDoubles.DrawTreeAssocDoubles;
+				tell It;
+					setOn on;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					setDigits 4;
+					setThreshold ?;
+					writeAsPercentage off;
+					toggleCentred off;
+					toggleHorizontal on;
+					toggleWhiteEdges on;
+					toggleShowOnTerminals on;
+					setFontSize 10;
+					setOffset 0  0;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocStrings.DrawTreeAssocStrings;
+				tell It;
+					setOn on;
+					toggleCentred on;
+					toggleHorizontal on;
+					setFontSize 10;
+					setOffset 0  0;
+					toggleShowOnTerminals on;
+				endTell;
+				getEmployee #mesquite.trees.TreeInfoValues.TreeInfoValues;
+				tell It;
+					panelOpen false;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #6390916778651693447 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1341 683;
+					setLocation 0 31;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

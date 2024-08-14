@@ -1,0 +1,378 @@
+#NEXUS
+[written Thu Dec 03 21:32:53 CST 2020 by Mesquite  version 3.61 (build 927) at EAS-392515.local/10.0.1.51]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=21;
+	TAXLABELS
+		Aethocrinus_moorei Alphacrinus_mansfieldi Apektocrinus_ubaghsi Athenacrinus_broweri Carabocrinus_treadwelli Hybocrinus_nitidus Eknomocrinus_wahwahensis Glenocrinus_globularis Titanocrinus_sumralli Stromatocystites_pentangularis Kailidiscus_chinensis Camptostroma_roddyi '''Totiglobus'' lloydi' Pseudedriophus_guensburgi Kinzercystis_durhami Lepidocystis_wanneri Gogia_kitchnerensis Rhopalocystis_destombesi Macrocystella_mairae Eumorphocystis_multiporata Ceratocystis_perneri
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Basal_Crinoidea_Guensberg_et_al_2020;
+	DIMENSIONS  NCHAR=34;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9";
+	MATRIX
+	Aethocrinus_moorei              00?0010001120011?1111001001110420?
+	Alphacrinus_mansfieldi          0??0010001120110?11211012111014200
+	Apektocrinus_ubaghsi            0000010001120001111010010-00104201
+	Athenacrinus_broweri            0000010001120110111211012111014200
+	Carabocrinus_treadwelli         0??-010001120011011110101121104201
+	Hybocrinus_nitidus              0000010001100011011011101121104201
+	Eknomocrinus_wahwahensis        0???010001121001?1111001000000420?
+	Glenocrinus_globularis          00??0110001?1001?1111011000000420?
+	Titanocrinus_sumralli           00?0011000020000111110110000004200
+	Stromatocystites_pentangularis  000000000-00-0--0-0-----------0-00
+	Kailidiscus_chinensis           000-00000-10-0--0-0-----------0-0?
+	Camptostroma_roddyi             000000000000-0----1000--------0-0-
+	Totiglobus_lloydi               000000010-10-0----0-----------0-00
+	Pseudedriophus_guensburgi       000000010-11-0--0-0-----------2-00
+	Kinzercystis_durhami            11111-001-00-0--0-0-----------1-00
+	Lepidocystis_wanneri            11111-001-00-0--0-0-----------1-00
+	Gogia_kitchnerensis             11111-001-00-0--0-0-----------2-10
+	Rhopalocystis_destombesi        11111-011-04-00-0-0-----------3110
+	Macrocystella_mairae            1111?-011-13--0-0-0-----------3110
+	Eumorphocystis_multiporata      11111-011-23-00-0-0-----------3110
+	Ceratocystis_perneri            00--10000-00----101010100---000--0
+
+;
+
+END;
+BEGIN SETS;
+	TAXPARTITION * UNTITLED  =  Ingroup :  1- 9, Outgroup :  10- 21;
+
+END;
+
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 34;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 34;
+END;
+
+BEGIN LABELS;
+	TAXAGROUPLABEL Ingroup COLOR = (RGB 1 1 1) ;
+	TAXAGROUPLABEL Outgroup COLOR = (RGB 1 1 1) ;
+
+
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1607052773854;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 1222550501466250864;
+			tell It;
+				setDefaultOrder  12 13 14 15 16 17 18 19 20 0 1 2 3 4 5 6 7 8 9 10 11;
+				attachments ;
+			endTell;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 6675101564451587428;
+			mqVersion 361;
+			checksumv 0 3 2735204207 null  getNumChars 34 numChars 34 getNumTaxa 21 numTaxa 21   short true   bits 31   states 31   sumSquaresStatesOnly 4250.0 sumSquares 4250.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 202;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1352 738;
+			setLocation 8 23;
+			setFont Gadget;
+			setFontSize 16;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			showTaxa #1222550501466250864 #mesquite.lists.TaxonList.TaxonList;
+			tell It;
+				setTaxa #1222550501466250864;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.TaxonListCurrPartition.TaxonListCurrPartition;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1150 666;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 12;
+					getToolPalette;
+					tell It;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.ColorTaxon.ColorTaxon;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.lists.TaxonListAnnotPanel.TaxonListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.trees.BasicTreeWindowCoord.BasicTreeWindowCoord;
+		tell It;
+			makeTreeWindow #1222550501466250864  #mesquite.trees.BasicTreeWindowMaker.BasicTreeWindowMaker;
+			tell It;
+				suppressEPCResponse;
+				setTreeSource  #mesquite.trees.DefaultTrees.DefaultTrees;
+				setAssignedID 10897.1607052738023.3661691639293308048;
+				getTreeWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1150 666;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 12;
+					getToolPalette;
+					tell It;
+						setTool mesquite.trees.SearchTreeToolAssistant.SearchTreeToolExtra.randomlyRotate;
+					endTell;
+					setActive;
+					getTreeDrawCoordinator #mesquite.trees.BasicTreeDrawCoordinator.BasicTreeDrawCoordinator;
+				tell It;
+					suppress;
+					setTreeDrawer  #mesquite.trees.SquareLineTree.SquareLineTree;
+					tell It;
+						setNodeLocs #mesquite.trees.NodeLocsStandard.NodeLocsStandard;
+						tell It;
+							branchLengthsToggle off;
+							toggleScale on;
+							toggleBroadScale off;
+							toggleCenter on;
+							toggleEven on;
+							setFixedTaxonDistance 0;
+						endTell;
+						setEdgeWidth 4;
+						showEdgeLines on;
+						orientRight;
+					endTell;
+					setBackground White;
+					setBranchColor Black;
+					showNodeNumbers off;
+					showBranchColors on;
+					labelBranchLengths off;
+					centerBrLenLabels on;
+					showBrLensUnspecified on;
+					showBrLenLabelsOnTerminals on;
+					setBrLenLabelColor 0 0 255;
+					setNumBrLenDecimals 6;
+					setSelectedTaxonHighlightMode 1;
+					desuppress;
+					getEmployee #mesquite.trees.BasicDrawTaxonNames.BasicDrawTaxonNames;
+					tell It;
+						setColor Black;
+						setTaxonNameStyler  #mesquite.trees.NoColorForTaxon.NoColorForTaxon;
+						toggleShadePartition off;
+						toggleShowFootnotes on;
+						toggleNodeLabels on;
+						toggleCenterNodeNames off;
+						toggleShowNames on;
+						namesAngle ?;
+					endTell;
+				endTell;
+					setTreeNumber 1;
+					setTree '(10,((11,(13,14)),(((15,16),(17,(19,(18,20)))),(12,(21,((8,9),(7,(3,(1,((2,4),(5,6)))))))))))<> <> <  setBetweenBits = selected >;';
+					setDrawingSizeMode 0;
+					toggleLegendFloat on;
+					scale 0;
+					toggleTextOnTree off;
+					togglePrintName off;
+					showWindow;
+				endTell;
+				desuppressEPCResponse;
+				getEmployee #mesquite.trees.ColorBranches.ColorBranches;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.trees.SearchTreeToolAssistant.SearchTreeToolAssistant;
+				tell It;
+					getEmployee #mesquite.trees.TreeValueUsingMatrix.TreeValueUsingMatrix;
+					tell It;
+						getEmployee #mesquite.parsimony.TreelengthForMatrix.TreelengthForMatrix;
+						tell It;
+							getEmployee #mesquite.parsimony.ParsCharSteps.ParsCharSteps;
+							tell It;
+								setModelSource  #mesquite.parsimony.CurrentParsModels.CurrentParsModels;
+							endTell;
+						endTell;
+						getEmployee #mesquite.charMatrices.CharMatrixCoordIndep.CharMatrixCoordIndep;
+						tell It;
+							setCharacterSource #mesquite.charMatrices.StoredMatrices.StoredMatrices;
+							tell It;
+								setDataSet #6675101564451587428;
+							endTell;
+						endTell;
+					endTell;
+				endTell;
+				getEmployee #mesquite.ornamental.BranchNotes.BranchNotes;
+				tell It;
+					setAlwaysOn off;
+				endTell;
+				getEmployee #mesquite.ornamental.ColorTreeByPartition.ColorTreeByPartition;
+				tell It;
+					colorByPartition off;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocDoubles.DrawTreeAssocDoubles;
+				tell It;
+					setOn on;
+					toggleShow consensusFrequency;
+					toggleShow bootstrapFrequency;
+					toggleShow posteriorProbability;
+					toggleShow consensusFrequency;
+					toggleShow posteriorProbability;
+					toggleShow bootstrapFrequency;
+					setDigits 4;
+					setThreshold ?;
+					writeAsPercentage off;
+					toggleCentred off;
+					toggleHorizontal on;
+					toggleWhiteEdges on;
+					toggleShowOnTerminals on;
+					setFontSize 10;
+					setOffset 0  0;
+				endTell;
+				getEmployee #mesquite.ornamental.DrawTreeAssocStrings.DrawTreeAssocStrings;
+				tell It;
+					setOn on;
+					toggleCentred on;
+					toggleHorizontal on;
+					setFontSize 10;
+					setOffset 0  0;
+					toggleShowOnTerminals on;
+				endTell;
+				getEmployee #mesquite.trees.TreeInfoValues.TreeInfoValues;
+				tell It;
+					panelOpen false;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #6675101564451587428 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 275;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1150 666;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 16;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;

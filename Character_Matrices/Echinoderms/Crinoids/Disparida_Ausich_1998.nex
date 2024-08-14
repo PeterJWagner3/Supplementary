@@ -1,0 +1,388 @@
+#NEXUS
+[written Thu Dec 03 21:23:28 CST 2020 by Mesquite  version 3.61 (build 927) at EAS-392515.local/127.0.0.1]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=45;
+	TAXLABELS
+		Acolocrinus Apodasmocrinus Calceocrinus 'Caleidocrinus (Caleidocrinus)' 'Caleidocrinus (Huxleyocrinus)' Cataraquicrinus Cincinnaticrinus Columbicrinus Cornucrinus Cremacrinus Daedalocrinus Difficilicrinus Doliocrinus Ectenocrinus Eustenocrinus Geraocrinus Glaucocrinus Hoplocrinus Hybocrinus Hybocystites Ibexocrinus Inyocrinus Iocrinus Isotomocrinus Maennilicrinus Ohiocrinus Othneiocrinus Paracremacrinus Pariocrinus Peltacrinus Penicillicrinus Peniculocrinus Praecursoricrinus Pultivocrinus Ramseyocrinus Revalocrinus Ristnacrinus Tetragonocrinus Tornatilicrinus Tripatocrinus Tryssocrinus Tunguskocrinus Virucrinus Vosekocrinus Pogonipocrinus
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Disparida_Ausich_1998;
+	DIMENSIONS  NCHAR=31;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9 A";
+	MATRIX
+	Acolocrinus                    0000030023010111140010611?10140
+	Apodasmocrinus                 100102000310021010007020(0 1)000020
+	Calceocrinus                   1011011011110220000000211211020
+	'Caleidocrinus (Caleidocrinus)'110111000210122000000021(1 2)121310
+	'Caleidocrinus (Huxleyocrinus)'110110000310021000000021(1 2)121320
+	Cataraquicrinus                1001020000100210000000(0 4)020001??
+	Cincinnaticrinus               1101020000100210000070402220111
+	Columbicrinus                  1101020003100210100030(2 3)(0 1)(1 2)000130
+	Cornucrinus                    1101140010100?20231220711011240
+	Cremacrinus                    1001011011110210010060211201020
+	Daedalocrinus                  1001020002100210000050(3 4)00000120
+	Difficilicrinus                1011020002100110?000???000?03?0
+	Doliocrinus                    1101020000100210?000?0?01200110
+	Ectenocrinus                   1001020000100210100070231000121
+	Eustenocrinus                  0000020000100220010001001201101
+	Geraocrinus                    11010(1 2)0002100210000040(1 2)01000030
+	Glaucocrinus                   1101000003100210000070100101020
+	Hoplocrinus                    11011000031001100000106110?0140
+	Hybocrinus                     1101100000100110000010611010140
+	Hybocystites                   110110000510011002(0 1)310611010340
+	Ibexocrinus                    1001020000100210000080(0 2 3 4)01010001
+	Inyocrinus                     0000010000?00??0000000011?1?000
+	Iocrinus                       1101120000100220000000(0 4)1(1 2)201100
+	Isotomocrinus                  1101020000100210000000402200100
+	Maennilicrinus                 11111100041002200000004????1130
+	Ohiocrinus                     1101020000100210000080412?00010
+	Othneiocrinus                  11010(1 2)0000100320100030(2 4)012?1030
+	Paracremacrinus                1111011011110210110060211?01320
+	Pariocrinus                    1101110000100220000000301201101
+	Peltacrinus                    1101110000100210000000(2 3 4)00201310
+	Penicillicrinus                10010200001002100000002?1?00110
+	Peniculocrinus                 0000020000100320000001(0 4)122000?1
+	Praecursoricrinus              110102000010021010003021(1 2)000130
+	Pultivocrinus                  1111120000100220?000?0?????11?0
+	Ramseyocrinus                  11111200121?14200000005233010?1
+	Revalocrinus                   11011000001002200000?0?????0???
+	Ristnacrinus                   0000020030100210000001(1 2)11500?10
+	Tetragonocrinus                1111120312100420020000(2 3 4)244011?1
+	Tornatilicrinus                110112000010021000007000(1 2)201000
+	Tripatocrinus                  11011400050000102312107????0140
+	Tryssocrinus                   11010?00000001100000714(0 1)(0 1)000121
+	Tunguskocrinus                 10010200031002100000001?11?0130
+	Virucrinus                     100002010010021001000000(0 1)201131
+	Vosekocrinus                   1111100003?00??00000002?0??1320
+	Pogonipocrinus                 0000020000?00??0000000212?0?000
+
+;
+
+END;
+BEGIN MacCladeStart;
+Extended;
+
+END;
+BEGIN ASSUMPTIONS;
+OPTIONS DEFTYPE = unord PolyTcount = MAXSTEPS;
+	TYPESET * UNTITLED   =  unord:  1- 31;
+
+	WTSET * UNTITLED  =  1: 1 -  31 ;
+
+END;
+
+BEGIN TREES;
+	Title 'Trees from "Disparida_Ausich_1998.nex"';
+	ID 01762bc63b7785;
+	LINK Taxa = Taxa;
+	TRANSLATE
+[0] 		1 Acolocrinus,
+[1] 		2 Apodasmocrinus,
+[2] 		3 Calceocrinus,
+[3] 		4 'Caleidocrinus (Caleidocrinus)',
+[4] 		5 'Caleidocrinus (Huxleyocrinus)',
+[5] 		6 Cataraquicrinus,
+[6] 		7 Cincinnaticrinus,
+[7] 		8 Columbicrinus,
+[8] 		9 Cornucrinus,
+[9] 		10 Cremacrinus,
+[10] 		11 Daedalocrinus,
+[11] 		12 Difficilicrinus,
+[12] 		13 Doliocrinus,
+[13] 		14 Ectenocrinus,
+[14] 		15 Eustenocrinus,
+[15] 		16 Geraocrinus,
+[16] 		17 Glaucocrinus,
+[17] 		18 Hoplocrinus,
+[18] 		19 Hybocrinus,
+[19] 		20 Hybocystites,
+[20] 		21 Ibexocrinus,
+[21] 		22 Inyocrinus,
+[22] 		23 Iocrinus,
+[23] 		24 Isotomocrinus,
+[24] 		25 Maennilicrinus,
+[25] 		26 Ohiocrinus,
+[26] 		27 Othneiocrinus,
+[27] 		28 Paracremacrinus,
+[28] 		29 Pariocrinus,
+[29] 		30 Peltacrinus,
+[30] 		31 Penicillicrinus,
+[31] 		32 Peniculocrinus,
+[32] 		33 Praecursoricrinus,
+[33] 		34 Pultivocrinus,
+[34] 		35 Ramseyocrinus,
+[35] 		36 Revalocrinus,
+[36] 		37 Ristnacrinus,
+[37] 		38 Tetragonocrinus,
+[38] 		39 Tornatilicrinus,
+[39] 		40 Tripatocrinus,
+[40] 		41 Tryssocrinus,
+[41] 		42 Tunguskocrinus,
+[42] 		43 Virucrinus,
+[43] 		44 Vosekocrinus,
+[44] 		45 Pogonipocrinus;
+	TREE UNTITLED = (45,(37,((22,(32,(15,43))),((3,(10,28)),(21,((16,(27,(33,(8,(1,(18,(19,(20,(40,9))))))))),((6,42),(31,((2,14),((11,12),(41,((13,(7,(26,24))),(17,(39,(23,((30,(4,(36,(5,44)))),(29,(25,(34,(35,38))))))))))))))))))));
+
+END;
+
+
+BEGIN NOTES;
+
+	TEXT  TAXON = 29 TEXT = '"';
+
+END;
+
+BEGIN MacClade;
+Version 4.0 87;
+LastModified -845280181;
+FileSettings treewindow '1' '1' '32' '1';
+Singles 010;
+Editor 00011001111111100100010010 '0' '24' Gadget '12' '162' '1' all;
+EditorPosition '95' '372' '716' '1051';
+TreeWindowPosition '46' '6' '847' '1390';
+ListWindow Characters closed Gadget '12' '50' '10' '253' '496' 000;
+ListWindow Taxa closed Gadget '12' '50' '10' '270' '380' 100000000;
+ListWindow Trees closed Gadget '12' '50' '10' '276' '490';
+ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490';
+ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+ListWindow ExSets closed Gadget '12' '50' '10' '276' '490';
+ListWindow CharSets closed Gadget '12' '50' '10' '276' '490';
+ListWindow TaxSets closed Gadget '12' '50' '10' '276' '490';
+ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490';
+ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490';
+ListWindow WtSets closed Gadget '12' '50' '10' '276' '490';
+ChartWindowPosition '52' '30' '818' '1380';
+StateNamesSymbols closed Gadget '12' '9' '50' '30' '148' '220';
+WindowOrder Tree;
+OtherSymbols & / 00 ? -;
+Correlation '0' '0' '1000' '0' '0' 10011010;
+Salmo 00000001;
+EditorFile '2';
+ExportHTML _ MOSS '100' 110000;
+PrettyPrint 10;
+CharLegendPosition '742' '1295' '132' '85';
+TreeLegendPosition '786' '1197' '88' '93';
+EditorToolsPosition '834' '95' '115' '165';
+TreeToolsPosition '716' '9' '126' '138';
+TreeWindowProgram 10;
+TreeWindow 0000;
+Continuous '0' '3' 1;
+Calculations 1000101;
+SummaryMode '0' '0' 0;
+Charts Arial '12' ( normal ) 0010;
+NexusOptions '0' '0' '50' 001011001;
+TipLabel '1';
+TreeFont Gadget '12' ( normal );
+TreeShape 1.0 1.0 0100;
+TraceLabels 0101;
+ChartColors '0' '0' '65535' '9' '0' 1;
+ChartBiggestSpot 1;
+ChartPercent 10;
+ChartBarWidth '10' 1;
+ChartVerticalAxis 10101;
+ChartMinMax '0';
+TraceAllChangesDisplay '1' 1;
+BarsOnBranchesDisplay '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+ContinuousBranchLabels 0;
+AllStatesBranchLabels 1;
+IndexNotation '3' 0;
+PrintTree 10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Gadget '9' ( normal ) Gadget '10' ( normal ) Gadget '9' ( normal ) Gadget '9' ( normal ) Gadget '9' ( bold ) Gadget '9' ( normal ) Gadget '9' ( normal ) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '25970' '29696' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+MatchChar 00 .;
+EntryInterpretation 01;
+ColorOptions 00;
+TreeTools '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+EditorTools '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+PairAlign '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+BothTools '1';
+
+END;
+BEGIN LABELS;
+	TAXAGROUPLABEL Ingroup COLOR = (RGB 1 1 1) ;
+
+
+END;
+
+BEGIN SETS;
+	TAXPARTITION * UNTITLED  =  Ingroup :  1- 45;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 31;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1607052208397;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 6498261432977402699;
+			tell It;
+				setSelected  1 -  45;
+				attachments ;
+			endTell;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 2861318718326739267;
+			mqVersion 361;
+			checksumv 0 3 2559254604 null  getNumChars 31 numChars 31 getNumTaxa 45 numTaxa 45   short true   bits 511   states 511   sumSquaresStatesOnly 308350.0 sumSquares 308350.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1237 881;
+			setLocation 8 23;
+			setFont Gadget;
+			setFontSize 12;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			showTaxa #6498261432977402699 #mesquite.lists.TaxonList.TaxonList;
+			tell It;
+				setTaxa #6498261432977402699;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.TaxonListCurrPartition.TaxonListCurrPartition;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1137 809;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 12;
+					getToolPalette;
+					tell It;
+					endTell;
+					setActive;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.ColorTaxon.ColorTaxon;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.lists.TaxonListAnnotPanel.TaxonListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #2861318718326739267 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1137 809;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 12;
+					getToolPalette;
+					tell It;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;

@@ -1,0 +1,214 @@
+#NEXUS
+[written Sat Nov 28 23:14:21 CST 2020 by Mesquite  version 3.61 (build 927) at EAS-392515.local/127.0.0.1]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=49;
+	TAXLABELS
+		Aganaster_gregarius Amphilepis_norvegica Amphilimna_olivacea Amphioplus_congensis Amphiura_chiajei Aplocoma_agassizi Aspiduriella_scutellata Aspiduriella_streichani Asteronyx_loveni Eirenura_papillata Euryale_aspera Gorgonocephalus_caputmedusae Hemieuryale_pustulata Histampica_duplicata Inexpectacantha_acrobatica Melusinaster_alissawhitegluzae Ophiacantha_bidentata Ophiactis_savignyi Ophiarachna_incrassata Ophienigma_spinilimbatum Ophiochiton_fastigatus Ophiochondrus_stelliger Ophiocopa_spatula Ophiocoma_echinata Ophiocomina_nigra Ophiocten_sericeum Ophioderma_longicauda Ophiodoris_malignus Ophiolepis_superba Ophioleuce_seminudum Ophiolimna_bairdi Ophiolycus_purpureus Ophiomusium_lymani Ophiomyces_delata Ophiomyxa_pentagona Ophionereis_porrecta Ophiopallas_paradoxa Ophiopholis_aculeata Ophioplax_lamellosa Ophiopsila_guineensis Ophioscolex_glacialis Ophiosparte_gigas Ophiotholia_spatifer Ophiothrix_fragilis Ophiotreta_valenciennesi Ophiozonella_longispina Ophiura_ophiura Palaeocoma_milleri Sigsbeia_murrhina
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=130;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9";
+	MATRIX
+	Aganaster_gregarius             010000?0--0000100211??00--?010132100??1??-?000??1100000001100000000000?0000-100000?00111101110020100000321101010-------10100010--0
+	Amphilepis_norvegica            11000000--00200022113100--002113200021201-100020110000010110000020001200010-101----1011110101001000001110001----111110001001---0-0
+	Amphilimna_olivacea             11000?030000110021103100--001114010001010-102020110200100110010120001200110-00020122011210112001000002120011----111110000001---0-1
+	Amphioplus_congensis            11011-00--0013??021????0--010103210001100-20203100130011010-000100001210010-100110120?1210101001000002120011----011110001001---113
+	Amphiura_chiajei                11000000--00102122121100--001111210011100-20203100130011000-000100001210010-10000012011210101001000002110011----011110001001---113
+	Aplocoma_agassizi               11001-?10000101010112000--?000132100??1?0-000000110000000110000100000100000-00001000001010111002300000112001----200001101000010--1
+	Aspiduriella_scutellata         000001?100002310000???00--?0101001100??0011?????11000000010-0000000000?0100-300400100010101000000100021301100111-------01100001--0
+	Aspiduriella_streichani         000001?100002210000?5000--00011001110??1111??2??????0010010-0001000000?0100-30040?100010101000000000001301100111-------010?0001--?
+	Asteronyx_loveni                3--11-20--00201002005010--00111300000?031-0002000102001?????002----11001102220030000000-0000000000000213110000??-------01??0300--1
+	Eirenura_papillata              1101??2211011210201?0000--01001411100?1101100010110000110110100010000001100-00010111011010112112010201112001----200012001000011--1
+	Euryale_aspera                  3--11-2100012010020150?0--001113000100?10-11000001021110100-002----110?1002101030000100-0000000000000203311001??-------01000300--1
+	Gorgonocephalus_caputmedusae    3--11-2300012010010?50?0--00211110110?03100102000102111?????001120011001102200030000100-001000000000020311000200-------01000300--1
+	Hemieuryale_pustulata           20100000--002010020????0--012111010001210-1020201101001001101011?00101?0000-00001000000-00102001310102113001----111100001000100--0
+	Histampica_duplicata            10000000--00102022113100--001114010000110-100020110100100110000000001210010-20001001011010102001001102120011----001010001001---101
+	Inexpectacantha_acrobatica      010001?10001001010113000--01111321000?110-1000201100000001101000010013?1011120011101000-11002002300220100001----200001201000112--2
+	Melusinaster_alissawhitegluzae  ?????????????????????????????????????????????????????0???????????????????????0?????0000-101000000000001301100100-------01010001--0
+	Ophiacantha_bidentata           11011-031001101010103000--002012010000230-100020110000000110100000001311010-20001101001011003202300010100001----200001201000112--2
+	Ophiactis_savignyi              11011-030000222002123100--001111210002120-2000210003001000101000210012?1001010000101001010102001001102120001----001010001001---103
+	Ophiarachna_incrassata          11011-011001001210102000--1020102110012101110100110000100110110111101302010-00011?00001010112002210032112001----200001101000210--1
+	Ophienigma_spinilimbatum        100000031000002022113110--002002010001130-202020110100110110100101001200010-20011101001010102001001002120001----001010001011---101
+	Ophiochiton_fastigatus          10010000--00100022123100--00211421100023012000201101001001100001200012?0010-20001012011110111001010202120001----111100001000113--3
+	Ophiochondrus_stelliger         11011-011001201010123000--012112010002100-1000201100000101101000000011?1011010021101001011003102300110100001----201001201000102--1
+	Ophiocopa_spatula               11001-010000031012113000--011013210002210-100020110000000110100001001311100-20001101001011103202300010100001----200001201010112--2
+	Ophiocoma_echinata              11011-011001001210112000--101010010002211-200131000400100110100111101302010-20001000001010102002010022100001----200001201010213--3
+	Ophiocomina_nigra               11011-011001001012113100--0021120110022310201100110000110110000100001301010-20011101001011101202000010100001----200001201010113--2
+	Ophiocten_sericeum              10000000--0000100211501211010014001000100110020111000000010-000110001200010-210100010012100012020100310311000300-------02000310--1
+	Ophioderma_longicauda           11011-011001001210121000--102010210001130-210100110000100110110111100002100-00001000011010112002210132112001----200001101000210--1
+	Ophiodoris_malignus             11001-00--0000002211310100001000210001210-200020110100100110000120001200010-10001112011110102001010102120001----101100001010113--3
+	Ophiolepis_superba              20001-00--00101102123110--000013010001210-20202011010010011000111000000?010-00001000011010101002210132120011----111100001000200--0
+	Ophioleuce_seminudum            10010001100100002011310100000013210001100-001010110000000110100112?00101010-30001101011010112112300201113001----200012001010111--0
+	Ophiolimna_bairdi               11011-021001001010113000--011012010000230-101020110000000110100002001211010-20011101001011101202000110100001----200011201000112--2
+	Ophiolycus_purpureus            11011-110001001010123000--002112210000031-1011001100001101100?1110?01201001110020101011011110000010100100001----200001101010111--1
+	Ophiomusium_lymani              20000000--0020100202501202010013110000200-102000110000000110000000000000000-000010000111100010021100001321101311-------10100010--0
+	Ophiomyces_delata               01011-03001------1120000--0000032111011201101010110100010111100000001201110-10000111001010111202010001112001----200012001000111--2
+	Ophiomyxa_pentagona             3--11-20--00001212112000--101010010000100-2100001100001101100001100000010010101----0001010110000310000112011----200001101000210--1
+	Ophionereis_porrecta            10011-00--0000002212310100001000210001210-200031100300100110101121001200010-10001013001110102001010002120001----101100001010113--3
+	Ophiopallas_paradoxa            10011-01100100102012310101010003210000210-002000110000100110100112100101011110001?01011010112112100201120001----200012001010111--0
+	Ophiopholis_aculeata            10101-021101102021104100--002111010002221-201131001300111010101121001201011110000103011010102001001022120011----201001001001---213
+	Ophioplax_lamellosa             10001-00--0000202012310100011013210001210-100020110100100110000120001200000-10001012011210101001010102120001----101100001010113--3
+	Ophiopsila_guineensis           11011-00--00103022113100--001110210001121-202031000300110110000120001200100-00041102011110110001000002110011----111110000011---0-1
+	Ophioscolex_glacialis           3--11-20--1------2103000--002012000002031-001110110000100110002----01201010-201----0011011110002010202100001----201000000010111--0
+	Ophiosparte_gigas               10011-10--000010021150121100201120100?031100020011000010010-000110001200100-210201010012100000020000020301100300-------02000300--1
+	Ophiotholia_spatifer            110???00--1------2120000--0000032111011201101010110100000111000000001201010-10000111001011111202010101112001----201010000000111--1
+	Ophiothrix_fragilis             111001030100200021104100--0020010102----2-101131001300111110100111001301012110020003011010102001001022120011----201001001001---203
+	Ophiotreta_valenciennesi        11011-011001101010103100--101013210001111-1011001100001001100001000013?1110-20001101011011101202000010100001----200001201000113--2
+	Ophiozonella_longispina         10000000--00101002123110--001013010001200-200021110200100110100111101200010-20001000011010112002310132133011----111100001000200--0
+	Ophiura_ophiura                 10000000--0010100211511212010014001001131110020011000000010-000110000100100-210000110112100011020100320011101300-------02000300--1
+	Palaeocoma_milleri              100????1100020100010501212010013110001100-1001??110000110110000110000000100-200000100010101010021101321311101300-------01100010--1
+	Sigsbeia_murrhina	              20100000--00201?020????0--?02011010020100-1?????????00101110101101010000100-31001?00010-10102001210102033001----111100001000100--0
+
+;
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 130;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 130;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1606626861856;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 1167019748362220573;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 1747880272294111726;
+			mqVersion 361;
+			checksumv 0 3 2829140144 null  getNumChars 130 numChars 130 getNumTaxa 48 numTaxa 48   short true   bits 63   states 63   sumSquaresStatesOnly 40695.0 sumSquares 40695.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1 errorReportedDuringRun;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1118 698;
+			setLocation 8 23;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #1747880272294111726 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 205;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1018 626;
+					setLocation 8 23;
+					setFont Gadget;
+					setFontSize 12;
+					getToolPalette;
+					tell It;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;

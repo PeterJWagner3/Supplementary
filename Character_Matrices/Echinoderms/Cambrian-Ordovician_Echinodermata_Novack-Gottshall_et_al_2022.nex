@@ -1,0 +1,1014 @@
+#NEXUS
+[written Sat Apr 02 15:12:00 CDT 2022 by Mesquite  version 3.6 (build 917) at EAS-6BCEC7.local/10.0.1.82 ()]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=366;
+	TAXLABELS
+		cf._Cambrocrinus Abludoglyptocrinus Acanthocystites Acolocrinus Acuticarpus Aethocrinus Aithriocrinus Akadocrinus Alanisicystis Alisocrinus Alphacrinus Ambonacrinus Amecystis Anatiferocystis Anedriophus Anisocrinus Anomalocrinus Anthracocrinus Anulocrinus Apektocrinus Apodasmocrinus Archaeocothurnus Archaeocrinus Archaepyrgus Archaetaxocrinus Argodiscus Aristocystites Aspidocarpus Astakocrinus Asteroblastus Astrocystites Asturicystis Atactocrinus Ateleocystites Aulechinus Balangicystis Balanocystites Barrandeocarpus Barroubiocystis Belemnocystites Belochthus Billingsocystis Bistomiacystis Bizarroglobus Blastoidocrinus Bockia Bothriocidaris Brechmocrinus Bromidechinus Bromidocystis Bromidocrinus Calceocrinus Caleidocrinus Calix Cambrocrinus Cambraster Cambroblastus Camptostroma Canadocystis Canistrocrinus Carabocrinus Cardiocystella Cardiocystites Carneyella Caryocystites Castericystis Cataraquicrinus Catervaparmaster Cefnocrinus Celtocrinus Ceratocystis Charactocrinus Chatsworthia Cheirocrinus Cheirocystis Chirocrinus Cigara Cincinnaticrinus Cleiocrinus Clidochirus Cnemidactis Cnemecrinus Coleicarpus Colpodecrinus Columbicrinus Columbocystis Comarocystites Compagicrinus Compsocrinus Conollia Coopericystis Coralcrinus Cornucrinus Cothurnocystis Cotylacrinna Courtessolea Crinerocrinus Cryptocrinites Cryptogoleus Ctenocystis Ctenoimbricata Cuniculocystis Cupulocrinus Cyathocystis Cyclocystoides Cystaster Dactylocystis Daedalocrinus Dalicrinus Davidocinctus Delgadocrinus Dendrocrinus Dendrocystites Deocrinus Diabolocrinus Diamphidiocystis Dibrachicystis Difficilicrinus Diplosphaeronis Doliocrinus Drepanocarpus Drymocrinus Dystactocrinus Echinoencrinites Echinosphaerites Ectenocrinus Edrioaster Edriodiscus Edriophus Eknomocrinus Elliptocinctus Embolaster Enoploura Eodimerocrinites Eoparisocrinus Eopatelliocrinus Eopetalocrinus Eopinnacrinus Estoniaster Estonocystis Etoctenocystis Eucystis Eukrinaster Eumorphocystis Euryeschatia Euspirocrinus Eustenocrinus Eustypocystis Felbabkacystis Foerstediscus Fombuenacrinus Fresnedacrinus Gaurocrinus Gillocystis Glaphocystis Glaucocrinus Glenocrinus Globoeocrinus Glyptocrinus Glyptocystella Gogia Goyacrinus Graciacystis Grammocrinus Grenprisia Guichenocarpos Guizhoueocrinus Gustabilicrinus Gyrocystis Habrotecrinus Hadrocystis Hadrodiscus Haimacystis Haplosphaeronis Haptocrinus Helicocystis Helicoplacus Hemicosmites Heviacrinus Holocystites Hoplocrinus Hudsonaster Hybocrinus Hybocystis Hypophiura Hystrichopsydrax Ibexocrinus Implicaticystis Inyocrinus Iocrinus Iowacystis Isorophus Isorophusella Isotomocrinus Jugiaster Jugoszovia Kailidiscus Kinzercystis Lagynocystis Lebetodiscus Lepidocalix Lepidocystis Lichenoides Lignanicystis Llanocystis Ludwigicinctus Luhocrinus Lyracystis Macrocystella Macrostylocrinus Macurdablastus Maennilicrinus Mandalacystis Maquoketocrinus Marjumicystis Meristoschisma Merocrinus Mesopalaeaster Mespilocystites Milonicystis Mitrocystella Morenacrinus Moroccodiscus Myeinocystites Nelegerocystis Neoarchaeocrinus Nevadaecystis Nicholsodiscus Nolichuckia Ohiocrinus Oklahomacystis Ophioxenikos Ortsaecrinus Othneiocrinus Ottawacrinus Pahvanticystis Palaeaster Palaeocrinus Palaeura Palaeocucumaria Parachaeocrinus Paracremacrinus Paradiabolocrinus Parasphaeronites Paredriophus Pareocrinus Parisocrinus Peltacrinus Pembrocystis Penicillicrinus Peniculocrinus Pentamerocrinus Periglyptocrinus Persiadiskos Petalocystites Phragmactis Phyrtosaster Picassocrinus Pirocystella Plasiacystis Platycystites Plethoschisma Pleurocystites Plicodendrocrinus Pogonipocrinus Polyplacus Ponticulocarpus Porocrinus Porosothyone Porosublastus Praecupulocrinus Praecursoricrinus Praepleurocystis Proanisocrinus Proexenocrinus Progyrocystis Promopalaeaster Protaster Protasterina Protaxocrinus Protocinctus Protocrinites Protocystites Protorophus Pseudedriophus Ptychocrinus Putilovocrinus Pycnocrinus Quadrocystis Quechuacrinus Quinquecaudex Ramseyocrinus Reteocrinus Reticulocarpos Rhaphanocrinus Rhenopyrgus Rhipidocystis Rhopalocystis Ridersia Ristnacrinus Rosfacrinus Rotasaccus Rozanovicystis Sanducystis Scalenocystis Schuchertia Schuchertocystis Scotiaecystis cf._Scotiaecystis Serendipocrinus Siluraster Simplococrinus Sinclairocystis Sinoeocrinus Sokkaejaecystis Sphaeronites Sprinkleocystis Stenaster Stibaraster Stichocystis Strabocystis Streptaster Stromatocystites Sucocystis Swataria Sygcaulocrinus Syringocrinus Taeniaster Tatonkacystis Tenuicrinus Tetragonocrinus Tetreucystis Tholocystis Thresherodiscus Titanocrinus Tornatilicrinus Totiglobus Trachelocrinus Triboloporus Trichinocrinus Tripatocrinus Trochocystites Trochocystoides Tryssocrinus Tunguskocrinus Turbanicystis Ubaghsicystis Undatacinctus Unibothriocidaris Urasterella Ursucrinus Velieuxicystis Villebrunaster Virucrinus Visocrinus Vizcainocarpus Vizcainoia Vyscystis Walcottidiscus Waucobella Wellerocystis Willmanocystis Wilsonicrinus Wudingeocrinus Xenocrinus Zygocycloides 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=413;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9 a";
+	CHARSTATELABELS 
+		1 Oral_surface_orientation / ,
+		2 Oral_surface_position / ,
+		3 Mobility,
+		4 Symmetry / ,
+		5 Position_of_periproct_to_peristome / ,
+		6 Mode_of_growth,
+		7 Direction_of_growth,
+		8 Oral_surface_shape,
+		9 Oral_surface_height,
+		10 Oral_surface_raised_to_a_pointed_summit,
+		11 'Oral surface in relation to body (theca/pelma/aboral covering)',
+		12 Oral_surface_reduced_to_a_edge_because_of_laterial_flattening,
+		13 Oral_surface_position,
+		14 Percent_of_body_surface_area_represented_by_oral_surface,
+		15 Peristomial_border,
+		16 Aboral_collar,
+		17 Oral_region_surrounded_by_ctenoid_plates,
+		18 'Ctenoid plates covered by large flat plates (as in Ctenoimbricata)',
+		19 'Extra row of plates along oral area on ventral surface (lateral plates in ctenocystoids)',
+		20 'Food groove on basal side of cover plates (as in Ctenocystis)',
+		21 Number_of_oral_openings,
+		22 Orals_plates_or_IIR_plates / ,
+		23 Peristomial_border_constructed_with_floor_plates,
+		24 Peristomial_border_floor_plates,
+		25 Peristomal_border_floor_plates,
+		26 Peristomial_border_constructed_with_orals,
+		27 IIR_or_oral_plates_have_podial_pores,
+		28 Oral_opening_constructed_with_thecal_plates,
+		29 'Oral opening surrounded with large membranous area (as in echinoids)',
+		30 Membranous_area_shape,
+		31 Plates_in_membranous_area,
+		32 Plates_in_membranous_area_structure,
+		33 Plates_in_membranous_area_size,
+		34 Plate_in_membranous_area_size_variation,
+		35 'Ten large plates proximal on membranous area (buccal plates)',
+		36 'Oral opening containing jaw apparatus (lantern)',
+		37 Jaw_apparatus_supported_by_skeletal_elements_within_body_cavity,
+		38 Size_of_jaw_apparatus,
+		39 Extension_of_jaw_apparatus,
+		40 Articulated_rotulae_plates_in_jaw_apparatus,
+		41 Primary_jaw_plate_shape,
+		42 Jaw_plates_contain_a_foramen,
+		43 'Capping elements of the jaw apparatus (epiphyses)  shape',
+		44 'Small spine-like teeth protruding into oral opening',
+		45 Oral_Opening_surrounded_by_large_bottom_feeding_tentacles,
+		46 'Tentacle/ tube foot number',
+		47 Tentacle_shape,
+		48 'Armored tentacles/tube feet',
+		49 Invertable_pharyngeal,
+		50 Calcareous_ring_surrounding_pharynx,
+		51 Calcareous_ring_elements_with_posterior_projection,
+		52 Calcerous_ring_elements_with_notch,
+		53 Calcareous_ring_elements_longer_than_wide,
+		54 Radial_and_interradial_calcareous_ring_elements_differ_in_size,
+		55 Number_of_oral_plates,
+		56 Shape_of_oral_plates,
+		57 Orals_taper_distally,
+		58 Orals_expand_distally,
+		59 Size_of_oral_plates,
+		60 Oral_1_shape,
+		61 'Oral 1 shape (height/width)',
+		62 Oral_2_shape,
+		63 Oral_3_shape,
+		64 Oral_4_shape,
+		65 Oral_5_shape,
+		66 Oral_6_shape,
+		67 Oral_7_shape,
+		68 Number_of_orals_or_IIR_in_CD,
+		69 O2_and_O5_outside_peristomial_border,
+		70 'Orals plates sutured to rigid theca/aboral covering',
+		71 Shape_of_oral_plate_in_cross_section,
+		72 Oral_plate_ornimentation,
+		73 Oral_plate_growth_rings,
+		74 Deltoid_body_on_orals,
+		75 Ambulacra,
+		76 BC_shared_ambulacra,
+		77 DE_shared_ambulacra,
+		78 A_ambulacra,
+		79 BC_ambulacra_bifurcate,
+		80 DE_ambulacra_bifurcate,
+		81 'Open ambulacra recumbent, extending beyond peristomial border',
+		82 Open_ambulacra_position,
+		83 Branching_recumbent_ambulacra,
+		84 Recumbant_ambulacra_curvature,
+		85 Type_of_recumbant_ambulacra_curvature,
+		86 Recumbant_ambulacral_curvature,
+		87 'A-ambulacral curving direction',
+		88 'B-ambulacral curving direction',
+		89 'C-ambulacral curving direction',
+		90 'D-ambulacral curving direction',
+		91 'E-ambulacral curving direction',
+		92 Recumbant_ambulacra_width,
+		93 Recumbant_ambulacra_shape,
+		94 'Non-oral surface plates between recumbant ambulacra',
+		95 Recumbant_ambulacra_position_on_theca,
+		96 Recumbant_ambulacra_length_on_theca,
+		97 BC_and_DE_shared_recumbant_ambulacra_differ_in_length,
+		98 'D-recumbant ambulacra reduced length',
+		99 Recumbant_ambulacra_extend_onto_pelma,
+		100 'Recumbant feeding appendages (brachioles)',
+		101 Recumbant_ambulacra_converge_to_form_a_globe,
+		102 'Ambulacral floor plates (supporting ambulacral groove)',
+		103 Ambulacral_Floor_plate_position,
+		104 Ambulacral_floor_plates,
+		105 Ambulacral_floor_plate_size,
+		106 Ambulacral_floor_plate_shape,
+		107 Ambulacral_floor_plate_position,
+		108 Ambulacral_floor_plates_epithecal,
+		109 Ambulacral_floor_plates_fused_to_form_body_wall,
+		110 Lancet_plates,
+		111 'Ambulacral floor plates modified containing basin to house tube feet (as in Asterozoa)',
+		112 Size_of_basin,
+		113 Form_of_basin,
+		114 Basin_sharing,
+		115 Shape_of_basin_bearing_plate,
+		116 Multiple_series_of_Floor_plates_aligned_with_basin_bearing_plates,
+		117 Number_of_series,
+		118 Number_of_series_decreases_distally,
+		119 Size_of_proximal_series,
+		120 Aligned_series_of_Floor_plates_reduced_to_narrow_virgals,
+		121 Aligned_Series_bearing_tube_feet,
+		122 Aligned_Series_bearing_spines,
+		123 Floor_plates_extend_to_both_oral_and_adoral_surfaces_forming_vertebra,
+		124 Floor_plates_develop_ball_and_socket_articulation,
+		125 Free_pinnules_extending_from_vertebrae,
+		126 Series_of_Floor_plates_wrap_around_primary_series_to_form_cover_plates,
+		127 'Articulated ambulacral plates not containing food groove (as in echinoids)',
+		128 Ambulacral_plate_construction,
+		129 Ambulacral_plate_pattern,
+		130 Biserial_ambulacral_plate_overlap,
+		131 Number_of_ambulacral_plate_columns,
+		132 Ambulacral_plate_size,
+		133 Primary_ambulacral_plate_shape,
+		134 Ambulacral_plate_sutures,
+		135 Ambulacral_plate_ornimentation,
+		136 Ambulacral_plates_perforation,
+		137 Ambulacral_plate_perforation_pattern,
+		138 'Imperforate plates form a distinctive column(s)',
+		139 Ambulacral_plate_perforation_type,
+		140 Perforations_shared_between_plates,
+		141 Number_of_plate_perforations,
+		142 Ambulacral_plate_perforation_position,
+		143 Ambulacral_plate_pattern,
+		144 Peristomial_cover_plates,
+		145 Peristomial_cover_plates_indistiguishable_from_ambulacral_cover_plates,
+		146 Peristomial_cover_plates_fixed,
+		147 CD_Primary_Peristomial_cover_plates,
+		148 Ambulacral_cover_plates,
+		149 Ambulacral_cover_plates_moveable_or_fixed,
+		150 Ambulacral_cover_plates_regularity,
+		151 Ambulacral_cover_plate_shape,
+		152 Biserial_Ambulacral_cover_plate_arrangement,
+		153 Ambulacral_cover_plate_size,
+		154 Ambulacral_cover_plate_position_with_oral_surface,
+		155 Series_of_cover_plates,
+		156 Closed_but_moveable_Ambulacral_cover_plate_orientation,
+		157 Ambulacral_cover_plate_spines,
+		158 Perradial_Line_for_moveable_cover_plates,
+		159 'Proximal Ambulacral cover plates (For moveable covers)',
+		160 Interambulacral_plates_on_oral_surface,
+		161 Interambulacral_oral_surface_plates,
+		162 'Interambulacral oral surface plates size (compared tp peristome)',
+		163 Interambulacral_oral_surface_plate_regularity,
+		164 Interambulacral_oral_surface_plate_shape,
+		165 Majority_Interambulacral_shape,
+		166 Interambulacral_plates_in_perfect_helical_orientation,
+		167 Interambulacral_plates_form_aligned_columns,
+		168 Number_of_aligned_columns,
+		169 Interambulacral_plates_constistantly_biserial,
+		170 Interambularcal_plates_consist_of_a_single_biseries,
+		171 Biserial_interambulacra,
+		172 Spine_type,
+		173 Moveable_spine_supported_by_a_boss,
+		174 Multiple_sizes_of_moveable_spines,
+		175 Primary_moveable_spine_position,
+		176 Primary_moveable_spine_shape_straight_or_curved,
+		177 'Primary moveable spine shape cylindrical, conical, or convex',
+		178 'Primary moveable spine cross-section shape',
+		179 Primary_moveable_spine_length,
+		180 Pediculariae,
+		181 Erect_feeding_appendage,
+		182 Facet_for_erect_feeding_structure,
+		183 Erect_feeding_appendages_on,
+		184 Erect_feeding_appendages_size,
+		185 Erect_feeding_appendage_without_extension_of_coelomic_canal,
+		186 Erect_feeding_appendage_without_extension_of_coelomic_canal_length,
+		187 Erect_feeding_appendage_without_extension_of_coelomic_canal_number,
+		188 Erect_feeding_appendage_without_extension_of_coelomic_canal_spiral,
+		189 Erect_feeding_appendage_without_extension_of_coelomic_canal_branching,
+		190 Erect_feeding_appendage_without_extension_of_coelomic_canal_structure,
+		191 Erect_feeding_appendages_with_extension_of_coelomic_canal,
+		192 'Number of erect feeding appendages with extension of coelomic canal (arms)',
+		193 Arms_branch,
+		194 Arm_branching_pattern,
+		195 Arm_braching,
+		196 Arms_pinnulate,
+		197 Arm_length,
+		198 Thecal_plates_in_arm,
+		199 Uniserial_arm_plates,
+		200 Biserial_arm_plates,
+		201 Appendage_bearing_peristome,
+		202 Scutulae,
+		203 'Co-opercula',
+		204 Aulacophore_width,
+		205 Aulacophore_length,
+		206 Proximal_aulacophore_construction,
+		207 Proximal_aulacophore_rings,
+		208 Length_of_proximal_region_in_relation_to_whole_aulacophore,
+		209 Width_of_proximal_region_in_relation_to_whole_aulacophore,
+		210 Stylocone,
+		211 Stylocone_shape,
+		212 Stylocone_spines,
+		213 Stylocone_blades,
+		214 Canals_on_stylocone,
+		215 Stylocone_orientation,
+		216 Stylocone_notch,
+		217 Distal_aulacophore_spines,
+		218 Distal_aulacophore_blade,
+		219 Distal_aulacophore_plate_shape,
+		220 Respiratory_openings,
+		221 Respiratory_openings_on_theca_type,
+		222 Respiratory_openings_on_oral_surface_type,
+		223 Humatopores,
+		224 Diplopores_cross_plate_boundaries,
+		225 'Elevated respiratory structures (as in rhombiferians)',
+		226 'Large respiratory openings on oral surface (spiracles)',
+		227 'Elongated row of pore openings along thecal margin (as in stylophorans)',
+		228 Type_of_elongated_row_of_pores,
+		229 'Calcified hydropore (madreporite)',
+		230 Madreporite_opening_location,
+		231 Genital_plates_with_single_perforation_surrounding_periproct,
+		232 Genital_slits,
+		233 Periproct_distinctive_opening,
+		234 Periproct_position_on_body,
+		235 Periproct_position_relative_to_peristome_or_ambulacra,
+		236 Periproct_position_on_interray,
+		237 Size_of_periproct,
+		238 'Large opening covered with large flap (operculum)',
+		239 Operculum_shape,
+		240 Operculum_ornamentation,
+		241 Anal_opening_border_on_oral_surface,
+		242 Anal_opening_on_theca,
+		243 Anal_opening_abutting_thecal_marginal_plates,
+		244 Anal_opening_within_marginal_plate_bilayer,
+		245 'Anal pyramid (valvular anal structure)',
+		246 Anal_pyramid_plating,
+		247 Anal_pyramid_construction,
+		248 Anal_pyramid_boarder,
+		249 Periproct_elongated_into_tubular_structure,
+		250 Anal_sac_plating,
+		251 Periproct_position_on_anal_sac,
+		252 Dominant_column_supporting_anal_sac,
+		253 Anal_sac_shape,
+		254 Spines_on_anal_sac,
+		255 'Recumbant ambulacra below rigid oral surface (tegmen)',
+		256 'Recumbant ambulacra below ridgid oral surface decalcified (or reduced in skeletonization)',
+		257 Recumbant_ambulacra_below_ridgid_oral_surface_branched,
+		258 Tegmen_plate_size,
+		259 Tegmen_organization,
+		260 Tegmen_plating,
+		261 'Ridgid oral surface (tegmen) heigh (height/width)',
+		262 Tegman_shape_in_profile,
+		263 Tegmen_plate_scupturing,
+		264 'Anal pyramid (valvular anal structure)',
+		265 Anal_pyramid_plating,
+		266 'Periproct position (include position of tube)',
+		267 Anal_tube,
+		268 Periprict_position_on_anal_tube,
+		269 Anal_tube_plating,
+		270 Anal_tube_Shape,
+		271 Anal_tube_height,
+		272 'Aboral covering not developed into a theca (as seen in cyclocystoids)',
+		273 Aboral_covering_not_develed_into_a_theca_plating,
+		274 Theca,
+		275 Thecal_construction,
+		276 Thecal_plate_addition,
+		277 Thecal_plates_inserted_surrounding_larger_plates,
+		278 Number_of_thecal_plates,
+		279 'Theca height/width',
+		280 Theca_profile,
+		281 Protrusions_at_base_of_theca,
+		282 'Thecal plate cross-section',
+		283 Thecal_plate_sculpturing,
+		284 Thecal_plate_sculpturing_pattern,
+		285 Growth_lines_on_thecal_plates,
+		286 Growth_lines_on_thecal_plates_pattern,
+		287 Sculpturing_at_base_of_Theca,
+		288 'Shape at base of theca (view 1)',
+		289 'Shape at base of theca (view 2)',
+		290 Number_of_circlets_in_theca,
+		291 Number_of_plates_in_circlet_at_base_of_theca,
+		292 'Shape of plates in the circlet at the base of the theca (width relative to height)',
+		293 Shape_of_plates_in_the_circlet_at_the_base_of_the_theca,
+		294 Plate_size_in_circlet_at_base_of_the_theca,
+		295 Number_of_plates_in_circlet_at_top_of_theca,
+		296 'Shape of plates in the circlet at the top of the theca (width relative to height)',
+		297 Shape_of_plates_in_the_circlet_at_the_top_of_the_theca,
+		298 'Shape of plates in the circlet at the top of the theca (regularity of plate shape)',
+		299 Plate_size_in_circlet_at_top_of_the_theca,
+		300 Plates_in_topmost_circlet_greatly_enlarged_surrounding_distal_recumbant_ambulacra,
+		301 Circlet_of_plates_below_top_circlet_of_plates,
+		302 Circlet_of_plates_below_top_circlet_of_plates,
+		303 Fulcrum_between_circlets,
+		304 'Circlet of plates below top circlet of plates (if not bottom circlet)',
+		305 'Number of plates in circlet below top circlet of plates (if not bottom circlet)',
+		306 Multiples_circlets_of_thecal_plates_in_line_with_arms_to_form_rays,
+		307 Medial_ray_ridge,
+		308 Number_of_circlets_between_lowermost_circlet_in_line_with_arms_and_base_of_theca,
+		309 Lowermost_circlet_plates_in_line_with_arm_interuption,
+		310 Number_of_plates_in_ray_above_the_lowermost_circlet_in_line_with_arms,
+		311 Rays_branch,
+		312 Number_of_branches,
+		313 Rays_brach_isotomously,
+		314 Interray_plates,
+		315 Interrays_depressed,
+		316 Interay_plates_between_ray_braches,
+		317 Interray_wider_in_CD_interray,
+		318 Thecal_plates_that_align_with_anal_sac,
+		319 Number_of_thecal_plates_that_align_with_anal_sac,
+		320 Number_of_circlets_below_lower_most_thecal_plate_that_aligns_with_anal_sac,
+		321 Thecal_plates_bear_ambulacral_groove,
+		322 Thecal_plates_bearing_ambulacral_groove_size,
+		323 Thecal_plates_bearing_ambulacral_groove_shape,
+		324 Position_of_groove_on_plate,
+		325 'Theca/body longitudinally flattened',
+		326 Direction_of_flattening,
+		327 Marginal_plates_differentiated_from_central_plates,
+		328 Marginal_plates_in_a_double_layer,
+		329 Size_of_marginal_plates_compared_to_central_plates,
+		330 Width_of_marginal_plates,
+		331 Marginal_plate_edge,
+		332 Marginal_plate_oral_edge,
+		333 'Central area consisting of spine-like plates',
+		334 Septal_ridge,
+		335 Zygal_skeletal_bar,
+		336 Internal_ctenoid_organ,
+		337 Marginal_appendages,
+		338 Number_of_marginal_appendages,
+		339 Marginal_appendages_moveable,
+		340 'Appendage built with plates continual with marginals (stele in Homostelea)',
+		341 Number_of_series_of_plate_in_stele,
+		342 Number_of_series_differ_on_opposite_sides_of_stele,
+		343 Stele_length,
+		344 Stele_cross_section_shape,
+		345 Central_series_of_plates_orientation_with_theca,
+		346 Stele_Promimal_margionals_shape,
+		347 Pelma,
+		348 Pelma_distictiveness,
+		349 Pelma_attitude,
+		350 Pelma_plating,
+		351 Pelma_width,
+		352 Pelma_construction,
+		353 Multiplated_pelma_plates,
+		354 'Proxistele (proximal column) construction',
+		355 'Proxistele (proximal column) heteromorphic',
+		356 'Heteromorphic with inner and outer columnals (as in rhombiferians)',
+		357 Columnal_shape_in_proxistele_columnals,
+		358 Latus_profile_in_proxistele,
+		359 Columnal_heightwidth_in_proxistele,
+		360 Branching_on_column_proxistele,
+		361 Column_changes_properties_along_length,
+		362 Holdfast,
+		363 Maringal_ring_circlets,
+		364 Marginal_ring_plate_size,
+		365 Marginal_ring_construction,
+		366 Marginal_ring_size,
+		367 Ambulacra_abut_marginal_ring,
+		368 'Robust submarginal ring (as in cyclocystoids)',
+		369 Marginal_ring_extending_to_both_oral_and_aboral_surface,
+		370 'Marginal ring teired (two different levels)',
+		371 Facets_on_submarginal_ring,
+		372 Number_of_facets_on_submarginal_ring,
+		373 'Distinctive thecal appendage not bearing food groove (stele in Homoiostelea)',
+		374 Stele_construction,
+		375 Stele_differentiated_into_regions,
+		376 Varying_number_of_plates_per_ring,
+		377 Comparing_proximal_distal,
+		378 Distal_stele_plating,
+		379 Size_of_stele_lumen,
+		380 Number_of_series_of_plates_in_proximal_region_of_stele,
+		381 Number_of_series_of_plates_in_stele_decrease_in_number_distally,
+		382 Stele_length,
+		383 Stele_cross_section_shape,
+		384 Stele_mesostele_flanged,
+		385 Stele_connected_to_pelma,
+		386 'Aboral covering mimics ambulacral pattern (as in asterozoans)',
+		387 Aboral_covering_shape,
+		388 'Aboral covering plating (imbricate or tesselated)',
+		389 'Aboral covering plating (regular or irregular)',
+		390 Aboral_covering_plate_articulation,
+		391 Aboral_covering_shape,
+		392 Aboral_covering_plates_size,
+		393 Aboral_covering_plate_number,
+		394 Aboral_covering_plates_ornimentation,
+		395 Aboral_covering_showing_pentameral_plating,
+		396 Raised_cone_in_central_area_of_aboral_covering,
+		397 Prominent_interradial_plates_on_aboral_covering,
+		398 Aboral_covering_with_marginal_plates,
+		399 Marginal_construction,
+		400 Marginal_size,
+		401 Marginal_plate_spines,
+		402 Aboral_covering_reduced_to_central_disk,
+		403 Central_disk_with_circlets,
+		404 Vermiform_aboral_covering,
+		405 Differentiated_ventral_sole,
+		406 Posterior_region_greatly_narrowed_and_elongated_as_a_tail,
+		407 Body_wall_ossicles_greatly_reduced_into_spicules,
+		408 'Wheel-shaped ossicles',
+		409 Spired_plates_or_tables_with_distinct_outgroth_perpendicular_to_plate_surface,
+		410 Spired_plates_with_distinctive_hooks,
+		411 Spicules_with_pores,
+		412 Body_wall_thickness,
+		413 Articulating_spines ; 
+	MATRIX
+	cf._Cambrocrinus    220??00???0003000-00??????0?0------0-------00--0-0----????????????????????1?????1??????????????0??000????????00--------0------0----------------????????????????0--------------------1??112?00?0---------0------------------???------0--0????????????????0-----0----------------0-111?1120?????-0?4?????13?00??00?0--------------0---0---------------------100101-01100001?----------0------------0-----------------0---------
+	Abludoglyptocrinus  2205010???0002100-00300----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----130--1?00-0------------------0----------0010?????????????????????????????????????0-111022201210-20?44120513000000001110210011110--0---0---------------------100101-?1002000?----------0------------0-----------------0---------
+	Acanthocystites     220??000000002000-00????????0------0-------00--0-0----????????????????????1?????10?????????????0??000????????00--------0------0----------------????10??????????0--------------------1??11010010---------0------------------10?------0--0????????????????0-----0----------------0-1100202010-0--0?-------------------------------0---0---------------------1?????---------?----------0------------0-----------------0---------
+	Acolocrinus         22050100000002100-00000----10------0-------00--?-0------------------------1001111010-------000---00000-------0----------------0----------------10?1????????????0--------------------11111020000---------0------------------13-----0---001110?0---0--0---0-----0----------------0-111001201710-22012231312000000000-----------1010---0---------------------100101-00-0000??----------0------------0-----------------0---------
+	Acuticarpus         00101200001003200-00000----00------0-------00--0-0------------------------1001--0--------------------0-------0----------------0----------------????10?????????00--------------------10120-----0---------1??2?10?010001?000113-----100-00??????????????????????0----------------0-1140221010-0-?0?-------------------------------0---1?102000001?0--0------0-------------------------0------------0-----------------0---------
+	Aethocrinus         22050100000002100-00?00----00------0-------00--?-0------------------------1??1110--------------------0-------0----------------0----------------????11010?00-0--0--------------------11120-----121000200-0------------------0----------00101010--0---0---1000100----------------0-011011001900-0002412031401001000113110--10--1300---0---------------------100113110-120010-----------------------0-----------------0---------
+	Aithriocrinus       2205010??00003100-000?0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----121100200-0------------------0--------0-0010???0--?---????0-----0----------------0-1110020000-0-00?14020312000010000--------------0---0---------------------100111-110000003----------0------------0-----------------0---------
+	Akadocrinus         220?0?00000002100-00???????00------0-------00--?-0----????????????????????1?????10?????????0?0--??000???????000--------0------0----------------??????????????????????00-------------1??11110000---------0------------------10-------??00101??0--?---????0-----0----------------0-1130100010-0-000-------------------------------0---0---------------------100101-?0-00000?----------0------------0-----------------0---------
+	Alanisicystis       210?000?001003100-00001??--00------0-------00--0-0------------------------1?????1000-------2?0?0??0001??????000--------0------0----------------1???1???????????0--------------------10111101010----------------------------10-------0--0111??0--20--11010-----0----------------0-110013201400--00-------------------------------0---0---------------------1101000--------5----------0------------0-----------------0---------
+	Alisocrinus         2205020???0002100-00??0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----140--1101-0------------------0--------??0010--------------------1????????????????0-1110211010-0-0004412050100000000111021111111---0---0---------------------100101-?1002000?----------0------------0-----------------0---------
+	Alphacrinus         2205010????003100-000??????00------0-------00--?-0----????????????????????1??1110--------------------?????????????????????????0----------------?????????????????????????????????????11120-----121400200-0------------------0--------??00101100--2---0---11?0000----------------0-111002100900-00004120316100010--0-10---------1010--0---------------------100101-1100200??----------0------------0-----------------0---------
+	Ambonacrinus        2205010??00002100-00??0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----131001200-0------------------0--------0-0010?????????????????????????????????????0-111022101910-22244???502110000101123110111110--0---0---------------------100101-0100200??----------0------------0-----------------0---------
+	Amecystis           10020200001103100-00010--1000------0-------00--0-0----501110022220121300001110000--------------------1001010000--------0------0----------------1???10110?10?0000--------------------11011?00010---------0------------------0--------0-00111120--0110111?0-----0----------------0-1110222110-1010323221123120110110--------------0---1010000000000--0------100101-?1100001?----------0------------0-----------------0---------
+	Anatiferocystis     00111200001003200-00000----00------0-------00--0-0------------------------1001--0--------------------0-------0----------------0----------------????1012??0?00?00--------------------10120-----0---------1??0201011000???0110--------0-00110-10---2111???0-----0----------------0-104011201210-003-------------------------------0---10102200000?0--0------0-------------------------0------------0-----------------0---------
+	Anedriophus         20050101100000000-0000100---0------0-------00--?-0------------------------111111110111001??200--00000100110-000--------0------0----------------100110120112100011100200-------------0--------------------------------------0--------0-00101000--1---10110-----0----------------0-0------------------------------------------------------------------------100014---------6100?10-----------------0-----------------0---------
+	Anisocrinus         2205020???0002100-00??0--??00------0-------00--0-0----????????????????????1??111?????????????????????0-------0----------------0----------------????10???????????????????????????????11120-----141000000-0------------------0--------0-00?????0--???????????????????????????????0-1110221010-0-?004????501000000001021211110001310---0---------------------100101-0100200??----------0------------0-----------------0---------
+	Anomalocrinus       22050100000002100-00200-----0------0-------00--0-0------------------------1111110--------------------0-------0----------------0----------------10111002012?-0--0--------------------11120-----121101200-0------------------0-0------??00101010--2---0---1200401100003100--0----0-1110021000-10-1004121306120010--0-----------1010---0---------------------100101-110100012----------0------------0-----------------0---------
+	Anthracocrinus      22050201?00002100-00300----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------1?1?100?????-0--0--------------------11120-----140--1100-0------------------0--------??0010--------------------1?100????0-21????0-1110221013110220442?050100000000112321201011---0---0---------------------100101-?1-02000?----------0------------0-----------------0---------
+	Anulocrinus         12020100000103100-00000----?0------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----111110200-0------------------0--------??001010?0--2---0---10?1?00----------------0-111002301700-00103002326120111--0-----------0--0---0---------------------101101-?1002000?----------0------------0-----------------0---------
+	Apektocrinus        22050100000002100-000??????00------0-------00--?-0----????????????????????1??1110--------------------1011100000--------0------0----------------????10120?0000000--------------------11120-----120--0200-0------------------0--------??001010?0--?---??????????0----------------0-111012001900-0024512051310-00000102140--10011000---0---------------------100101-1102200??----------0------------0-----------------0---------
+	Apodasmocrinus      2205010???0002100-00000----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----121001200-0------------------0----------001000?0--2---0---10?1000----------------0-1110020010-0-0021402030100000000101000--0---1010---0---------------------100111-11012000?----------0------------0-----------------0---------
+	Archaeocothurnus    00101200001003200-00000----00------0-------00--0-0------------------------1001--0--------------------0-------0----------------0----------------????101?0?00?0?00--------------------10120-----0---------1??1?0-?01??????00??????????0-00??????????????????????0----------------0-1140222100-0-103-------------------------------0---1?102200001?1000------0-------------------------0------------0-----------------0---------
+	Archaeocrinus       2205020???0002100-00300----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----13111121-20------------------0----------0010--------------------?????????????????0-1110222000-102204412001?00000000112321011011---0---0---------------------100101-?1002000?----------0------------0-----------------0---------
+	Archaepyrgus        22050000000001000-0001????0-0------0-------00--?-0----31010021111--00210001111111000-------230--0000010???0-000--------0------0----------------100010120011100010001000-------------0--------------------------------------0--------??00101010--1---10110-----0----------------0-0------------------------------------------------------------------------1100100--------6220000000--------------0-----------------0---------
+	Archaetaxocrinus    22050100000003100-00???????00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----131110100-0------------------0--------??001010?0--2---0---12?0?00----------------0-1110121010-0--0044121302000000001021110110001200---0---------------------100101-110000012----------0------------0-----------------0---------
+	Argodiscus          22050001000001010-00010--10-0------0-------00--?-0----?00000??000???13??001111111100-------300--00000100110-000--------0------0----------------100010120210101010100000-------------0--------------------------------------0--------0-001010?0--2---1???0-----0----------------0-0------------------------------------------------------------------------1000100--------5-----------------------0-----------------0---------
+	Aristocystites      10020001001103100-00010--1000------0-------00--0-0----501110011011120110001110000--------------------0-------0----------------0----------------????????????????0--------------------11211?0???0---------0------------------11101----0-00111010---1--10110-----0----------------0-1120212010-0-003-------------------------------0---0---------------------100104---------4----------0------------0-----------------0---------
+	Aspidocarpus        00111000001003200-00000----00------0-------00--0-0------------------------1001--0--------------------0-------0----------------0----------------????10120?00?0000--------------------10120-----0---------1??2?10001100?0010013-----0-??00110-10---21110110-----0----------------0-114111201710-003-------------------------------0---10100100010?0--0------0-------------------------0------------0-----------------0---------
+	Astakocrinus        2205010??00002100-00??0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10???????????????????????????????11120-----130--111-20------------------0--------0-00?????0--???????????????????????????????0-1110221010-0-2003402051201000000101011011001???0---0---------------------100101-?100?0???----------0------------0-----------------0---------
+	Asteroblastus       22050001110003100-00010--1000------0-------00--0-0----31112011111--00010001001111020-------00111-00001011010000--------0------0----------------????????????????0--------------------11001?2???0---------0------------------11100----0-00??????????????????????0----------------0-111022201900-21043120312000000020-----------0--0---0---------------------100101-?????????----------0------------0-----------------0---------
+	Astrocystites       22050101110001100-00011100000------0-------00--?-0----30000022222--00100001001111000-------23121-00001011210100--------0------0----------------10001012010000100--------------------0--------------------------------------132----0-0-00111000--20--11000-----0----------------0-111012201910-00014230311100110120--------------0---0---------------------100101-1000200??----------0------------0-----------------0---------
+	Asturicystis        10?1?2000001?3100-00000----10------0-------00--0-0------------------------1110001?0???-?-?-?2010??-000------------------------0----------------????1???????????0--------------------0--------------------------------------??-----??0--0?????120????????0-----0----------------0-1140222000-0--03-------------------------------10001010220000000--12?011?0-------------------------0------------0-----------------0---------
+	Atactocrinus        2205010??00002100-00??0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----1?????????0------------------0--------0-0010--------------------?????????????????0-111012101900-210?4120?????00000010231???10?0---0---0---------------------100101-???0?1???----------0------------0-----------------0---------
+	Ateleocystites      00121101001003200-00000----00------0-------00--0-0------------------------1001--0--------------------0-------0----------------0----------------????10110?1010000--------------------10120-----0---------11102110111200001000----------00110-10---21110010-----0----------------0-112111201800-203-------------------------------0---1?11020001001110------0-------------------------0------------0-----------------0---------
+	Aulechinus          00151001100000000-00100-----10100-01010?00?00--0-0------------------------1001111000-------100---0-010-------0----------------101100010100001000---0-----------10101200----10000000?0--------------------------------------0--------1000120-00------11000-----0----------------0-0------------------------------------------------------------------------0--------------------------------------0-----------------0---------
+	Balangicystis       22030100100001100-000??????00------0-------00--?-0----????????????????????1111001000-------2?0?-??00010?0?10000--------0------0----------------????1012???0?1?00--------------------1?021200110---------0------------------10?000---0--01?????????--??????????0----------------0-110012101900--0?-------------------------------0---0---------------------1001001--------0----------0------------0-----------------0---------
+	Balanocystites      00121100001003200-00000----00------0-------00--0-0------------------------1001--0--------------------0-------0----------------0----------------????????????????0--------------------10120-----0---------1??0?1?0111?01?1???13-----100-00110-10---21-1???0-----0----------------0-1120012010-0-003-------------------------------0---10102200010?0--0------0-------------------------0------------0-----------------0---------
+	Barrandeocarpus     00111101001003200-00000----00------0-------00--0-0------------------------1001--0--------------------0-------0----------------0----------------????1012??00?0?00--------------------10120-----0---------1??0?11?111200?10010--------0-00110-10---21110110-----0----------------0-112111001810-003-------------------------------0---10101100000?0--0------0-------------------------0------------0-----------------0---------
+	Barroubiocystis     220?0100000003100-00???????00------0-------00--0-0----????????????????????1?????10????????????????000????????00--------0------0----------------????????????????0--------------------1???1?????0---------0------------------0--------0--01?????????00????0-----0----------------0-111000201900--0023221324000010000--------------0---0---------------------100101-01101001?----------0------------0-----------------0---------
+	Belemnocystites     20121100001003100-00000----10------0-------00--0-0------------------------1001--0--------------------0-------0----------------0----------------????101????0?0?00--------------------10120-----160--0?1-00------------------0--------0-0011??10---210????0-----0----------------0-112011201??0-003-------------------------------0---1?10000000000--0------0-------------------------1????????????0-----------------0---------
+	Belochthus          20050001100000000-0000???---0------0-------00--?-0------------------------1111111000-------200--0000010????-000--------0------0----------------100010120010001010200000-------------0--------------------------------------0--------0-00101000--1---11010-----0----------------0-0------------------------------------------------------------------------110------------6310000000--------------0-----------------0---------
+	Billingsocystis     22030000001003100-00010--1000------0-------00--0-0----?0??1???????????1??01111001001?????--1??20??0001001111000--------0------0----------------????????????????0--------------------11011?????0---------0------------------0--------0-00111?00---0--????0-----0----------------0-110022211910-220-------------------------------0---0---------------------100101-???0000??----------0------------0-----------------0---------
+	Bistomiacystis      22000200001003100-00111000000------0-------00--0-0----50001122120112131110100011100100-11-132110-00000-------0----------------0----------------????101???0000?00--------------------11011?1??10---------0------------------0--------0-00111120--20--10110-----0----------------0-1120222019010010-------------------------------0---0---------------------100001-???0?????----------0------------0-----------------0---------
+	Bizarroglobus       20000001000000000-00001?0---0------0-------00--?-0------------------------1111111010-------200--0100010?0??0000--------0------0----------------1001101?001?100011000200-------------0--------------------------------------1-0------0-00101010--1---10000-----0----------------0-0------------------------------------------------------------------------110114---------6021-10000--------------0-----------------0---------
+	Blastoidocrinus     2?050101110001100-00011000000------0-------00--?-0----30000022222--00001001001111000-------20111-00001010010100--------0------0----------------1010111?????-0--0--------------------1?001020010---------0------------------13-----0-??00????????????????0-----0----------------0-111012201800-22024????121201200010-------------0---0---------------------100101-0100200??----------0------------0-----------------0---------
+	Bockia              22050000001003100-00010--1000------0-------00--0-0----5001102????202??120010011110?????????????0-00000-------00--------0------0----------------1???1???????????0--------------------11211?00110---------0------------------0--------0---111010---0--10110-----0----------------0-1100211?00010-0?-------------------------------0---0---------------------1?????---------?----------0------------0-----------------0---------
+	Bothriocidaris      00151001100000000-00000-----101110?100??0??00--1-0------------------------1001111000-------130---0-010-------0----------------111110101110000100---0-----------1111120100--11000000?0--------------------------------------0--------10?0120-00------0---0-----0----------------0-0------------------------------------------------------------------------0--------------------------------------0-----------------0---------
+	Brechmocrinus       22050100000003100-00?00----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????1011???0?0?00--------------------11120-----121000200-0------------------0--------0-00101010--2---0---100000?????????????????0-1110021000-0-00014120312110010000-----------1210---0---------------------100101-10-0200??----------0------------0-----------------0---------
+	Bromidechinus       00151001100000000-00000-----1???????????????0--0-0------------------------1001111000-------200---0-010-------0----------------101000001001000000---0-----------111112011010--------?0--------------------------------------0--------???0120-00------11?00-----0----------------0-0------------------------------------------------------------------------0--------------------------------------0-----------------0---------
+	Bromidocystis       22020?01100002100-00010--1000------0-------00--?-0----410110111111-11112101111111000-------12110000101011110000--------0------0----------------11001012000000000--------------------10011100010---------0------------------10-------0-00111100--20--1???0-----0----------------0-113021202910-000-----------000000--------------0---0---------------------100101-?0-0200??----------0------------0-----------------0---------
+	Bromidocrinus       22050201000002100-003?0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------1?1?110???0?-0--0--------------------11120-----140--1?1-00------------------0--------0-0010--------------------1?10002120-11??1?0-111022211810-1224301050100000000102331111000---0---0---------------------100101-?1022000?----------0------------0-----------------0---------
+	Calceocrinus        12020100000003100-00000----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----101110?00-0------------------0----------001011?0--2---0---1??1100----------------0-111001001110-01103202336120111--0-----------1010---0---------------------101101-???0?0001----------0------------0-----------------0---------
+	Caleidocrinus       2205010???0002100-00000----?0------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----121110200-0------------------0--------??001010?0--2---0---10?1?00----------------0-1110031010-0-00004020322110010--0-----------0--0---0---------------------100101-?0-12001?----------0------------0-----------------0---------
+	Calix               22040201001003100-00011001000------0-------00--0-0----30??10?-??-??2-?00001110111020-------20010000001001?00000---------------0----------------1100101?001?10000--------------------11011?0???0---------0------------------1110?----0-00111??0---?--????0-----0----------------0-111121102200-0004?13051?0001200?0--------------0---0---------------------110104---------0----------0------------0-----------------0---------
+	Cambrocrinus        22050100100003100-0000100--00------0-------00--0-0------------------------1111111000-------100?0000001001110000--------0------0----------------????????????????0--------------------11011?00010---------0------------------0--------0--0101000--1---1???0-----0----------------0-111010201900--0?44120523110110110--------------0---0---------------------100101-?1050001?----------0------------0-----------------0---------
+	Cambraster          21050201000001010-00010--10-0------0-------00--?-0----510010122121120310001111111000-------220--00100101100-000--------0------0----------------????10120?0?000010200300-------------0--------------------------------------0--------0-00101000--2---1?010-----0----------------0-0------------------------------------------------------------------------1001000--------6300110-----------------0-----------------0---------
+	Cambroblastus       2105?201100001100-00010--1000------0-------00--0-0----?0??1???????????11?01??1111000-------22121000001010010000--------0------0----------------????10110?22?0100--------------------0--------------------------------------0--------0-00??????????????????????0----------------0-111022201900-00?3?1?0???0000100?0--------------0---0---------------------1101001--------4----------0------------0-----------------0---------
+	Camptostroma        200?0000000001000-0000???---0------0-------00--?-0------------------------1??11110???????????0--??0001?????-000--------0------0----------------1???10??????????11200100-------------0--------------------------------------1-0------??00101??0--0---10100-----0----------------0-0------------------------------------------------------------------------1001000--------0-----------------------0-----------------0---------
+	Canadocystis        22000100001013100-00010--1000------0-------00--0-0----2100101-00-0-1-30300111000100110-0-0-20020100001001111000--------0------0----------------1???10??????????0--------------------11011?1???0---------0------------------0--------0-00111110---0--????0-----0----------------0-113012201110-000?12?2-----02200?0--------------0---0---------------------100?01-???0?????----------0------------0-----------------0---------
+	Canistrocrinus      2205020??00002100-00??0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10???????????????????????????????11120-----141101?02-0------------------0--------0-0010--------------------1?100????????????0-111022101200-1024302050100000000111121111111---0---0---------------------100101-0100100??----------0------------0-----------------0---------
+	Carabocrinus        22050100000002100-00010--1000------0-------00--0-0----30011101111--01101001111110--------------------0-------0----------------0----------------11001001000100000--------------------11120-----121000?00-0------------------132----0-0-00101000--2---10000-----0----------------0-111002201900--0014220304110010000-----------1200---0---------------------100101-?0-0000??----------0------------0-----------------0---------
+	Cardiocystella      00101200001003200-000011?--00------0-------00--0-0------------------------1001--0--------------------0-------0----------------0----------------???-1012???0?0?00--------------------10120-----0---------11002100110000?000213-----10--00110-10---21010000-----0----------------0-1140222040-0-003-------------------------------0---1?102000001?0--0------0-------------------------0------------0-----------------0---------
+	Cardiocystites      22020100001103100-0000???--?0------0-------00--?-0------------------------1001110--------------------101??10000--------0------0----------------????10??????????0--------------------1?011000010---------0------------------0--------??00????????????????0-----0----------------0-1110021010-0-003041?2?16120?10--0--------------0---1?10010001000--0------100101-?1102000?----------0------------0-----------------0---------
+	Carneyella          20000001000000000-0000100---0------0-------00--?-0------------------------11111110011111011100--00000101111-000--------0------0----------------100110121111101010201100-------------0--------------------------------------0--------0-00110000--1---11000-----0----------------0-0------------------------------------------------------------------------100------------6300010000--------------0-----------------0---------
+	Caryocystites       22030200001003100-00010--1000------0-------00--0-0----30111021121--1010??01111001100-------1001000000????????00--------0------0----------------????????????????0--------------------11211?0???0---------0------------------12---0---0---111010---1--10110-----0----------------0-1110202010-100004?03??160?01201?0--------------0---0---------------------100001-1??5200??----------0------------0-----------------0---------
+	Castericystis       10111001001003100-00000----10------0-------00--0-0------------------------1001--0--------------------0-------0----------------0----------------????1012???1?0?00--------------------1?120-----160--011-00------------------0--------0-00110-10---2--10010-----0----------------0-110121200310-003-------------------------------0---0---------------------0-------------------------11011011102000-----------------0---------
+	Cataraquicrinus     2205010??00003100-00000----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----121010200-0------------------0--------0-001010?0--2---0---1001000----------------0-1110020000-0-00004120422120010--0-----------1010---0---------------------100111-110220014----------0------------0-----------------0---------
+	Catervaparmaster    0015?200000001000000000-----0------0-------?0--0-0------------------------1001111000-------221---0-00101101-00111100---1100---0----------------0---0-----------0--------------------0--------------------------------------0--------1?0???????????????????????0----------------0-0------------------------------------------------------------------------0-------------------------0------------1011??0????010100-0---------
+	Cefnocrinus         2205020???0003100-00300----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10???????????????????????????????11120-----131001?02-0------------------0--------0-0010--------------------1????????0--1????0-11122310?210-2204????50000000000112311011111---0---0---------------------100101-0100000??----------0------------0-----------------0---------
+	Celtocrinus         2205020????002100-002?0--???0------0-------00--0-0------------------------1001110--------------------0-------0----------------0----------------????10???????????????????????????????10120-----1?1001200-0------------------0--------0-0011?0?0--22000---110000????????????1????0-111022101900-10?4?020?????0000??111??1?111??0--0---0---------------------100101-?10?10000----------0------------0-----------------0---------
+	Ceratocystis        0010?100001003200-00000----00------0-------00--0-0------------------------1001--0--------------------0------------------------0----------------????????????????0--------------------10120-----0---------11?2?0-0?1000??0???0--------0-00????????????????0-----0----------------0-112002401310-204-------------------------------0---1?110100010?1110------0-------------------------0------------0-----------------0---------
+	Charactocrinus      1?02010??00002100-00?00----00------0-------00--0-0------------------------10?1-10--------------------0-------?----------------0----------------????10???????????????????????????????11120-----101110200-0------------------0--------0-001011?0--2---0---1??1???????????????????0-1110024000-0-01402???226110221--0-----------1010---110-------------------101101-?????????----------0------------0-----------------0---------
+	Chatsworthia        20050001000000000-00010--10-0------0-------00--?-0----1000110-11---0-????01111111000-------200--00100101??0-000--------0------0----------------1100101100???1?010?0??00-------------0--------------------------------------0--------0-00101000--1---100?0-----0----------------0-0------------------------------------------------------------------------100014---------6220010-----------------0-----------------0---------
+	Cheirocrinus        22050100000003100-00010--1000------0-------00--0-0----510110011111121?20001111111000-------200101000010?1110000--------0------0----------------1???1???????????0--------------------1?011?????0---------0------------------12---0---0-00111110---1--????0-----0----------------0-111011211900-204232?041?1201201?0--------------0---0---------------------100101-?1142001?----------0------------0-----------------0---------
+	Cheirocystis        22020101000003100-00010--1000------0-------00--?-0----510110201111121101101111111011000000010110000001010100000--------0------0----------------11001012000000000--------------------11011010000---------0------------------12---0---0-00111120---1--????0-----0----------------0-111000301901020424021416110120110--------------0---0---------------------100101-01102001?----------0------------0-----------------0---------
+	Chirocrinus         1102010??00102100-00?00-----0------0-------00--0-0----????????????????????10?1-10--------------------0-------0----------------0----------------????10???????????????????????????????11120-----101110?00-0------------------0--------0-001011?0--?---0---1??????????????????????0-1110014000-0-??40????326120221--0-----------1010---110-------------------101101-?????????----------0------------0-----------------0---------
+	Cigara              220??20???????100-00??????0?0------0-------00--0-0----????????????????????1???????????????????????000????????00--------0------0----------------????????????????0--------------------?????????????????????------------------10?------0--0????????????????0-----0----------------0-1100210??800--00-------------------------------0---0---------------------1000????????????----------0------------0-----------------0---------
+	Cincinnaticrinus    22050100000003100-00000----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------10??1012020000000--------------------11120-----121000201-0------------------0--------??001010?0--2---0---1200300----------------0-1110010000-0--001412031101000010101000------1110---0---------------------100111-010020014----------0------------0-----------------0---------
+	Cleiocrinus         22050200000002100-00300----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------1110111??00?-0--0--------------------11120-----150--??01-0------------------0--------0-0010--------------------111011302????????0-1110220010-0-220440?051100000000112031410------0---0---------------------100101-110020012----------0------------0-----------------0---------
+	Clidochirus         2205010??00002100-00??0--??00------0-------00--0-0----???????????????????01??1110--------------------0-------0----------------0----------------????10???????????????????????????????11120-----121500100-0------------------0--------0-0010?0?0--?---0---1??????????????????????0-1110121010-0-00?3203?30101000012102110--0---1310---0---------------------100101-?0-0000??----------0------------0-----------------0---------
+	Cnemidactis         0015?100000001100-000111010-0------0-------10--0-0----31001022222--00111001001111000-------220---0-00101111-001110010010--0---0----------------0---????????????0--------------------0--------------------------------------0--------??0???????????????????????0----------------0-0------------------------------------------------------------------------0--------------------------------------10110???2???1?0?0-0---------
+	Cnemecrinus         22050101100002100-003?0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------1???10120??0?0000--------------------11120-----121110100-0------------------0--------0-0010--------------------1?0??????????????0-111002101900-0002414030300000010102000--10-2---0---0---------------------100101-11012000?----------0------------0-----------------0---------
+	Coleicarpus         00111001001003100-0000-----10------0-------00--?-0------------------------1001--0--------------------0-------0----------------0----------------????101?????10?00--------------------1?120-----160--021-00------------------0--------??0011?-10---2--10110-----0----------------0-1101212000-0-000-------------------------------0---0---------------------100104---------4----------110100??000010-----------------0---------
+	Colpodecrinus       2205020???0002100-00??0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10???????????????????????????????11120-----131400?00-0------------------12?--0---??00???????????????????????????????????????0-111021001900--044312030200000000102010--10-10--0---0---------------------100101-20-3200??----------0------------0-----------------0---------
+	Columbicrinus       2205010??00002100-00?00----00------0-------00--0-0---------------------------1110--------------------0-------0----------------0----------------????10???????????????????????????????11120-----12?????00-0------------------0--------0-001010?0--?---0---1??????????????????????0-1110021010-0-00004220322110010--0-----------1010---0---------------------100111-?????????----------0------------0-----------------0---------
+	Columbocystis       22000100001013100-00010--1000------0-------00--?-0----410110111112-11122001111111100-------10020000000-------0----------------0----------------????????????????0--------------------10211?0???0---------0------------------0--------0-00111010--20--???10-----0----------------0-1130112021010001421415121101201?0--------------0-------------------------100?0???????????----------0------------0-----------------0---------
+	Comarocystites      22020101001013100-00010--1000------0-------00--?-0----2010101-22-0-1-32000111011100101-111020010100001001110000--------0------0----------------????11120?00-0--11111000-------------11021200100---------0------------------10-------0-00111?10---0--10110-----0----------------0-112021204400--03-------------------------------0---100-----0000----------100101-?0-500002----------0------------0-----------------0---------
+	Compagicrinus       2205010???0003100-0000???--00------0-------00--0-0---------------------------1110--------------------0-------0----------------0----------------????10110?1200000--------------------11120-----121000200-0------------------10?------??0010?000--2---0---11?0000----------------0-111002001900--0214021314010110100-----------1200---0---------------------100101-10-1200??----------0------------0-----------------0---------
+	Compsocrinus        2205020???0002100-00??0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----140--1300-0------------------0--------??0010--------------------1????????????????0-1110222010-0-0004412050100000000111121?1111?---0---0---------------------100101-01002000?----------0------------0-----------------0---------
+	Conollia            1012?001100002101011000----00------0-------00----0------------------------0--------------------------0-------0----------------0----------------0---0--------------------------------0--------------------------------------0--------??00???-?0--????????0-----0----------------0-100022203a10--03-------------------------------0---1-0-----1000----------0-------------------------0------------------------------0---------
+	Coopericystis       10?21200001103100-00010--1000------0-------00--0-0----?0110??--1-???-111001110000--------------------1001100000--------0------0----------------????????????????0--------------------10011?00000---------0------------------12---1---0-0011??????????????0-----0----------------0-11302120190102042?221?131101201?0--------------0---100-----0000----------100101-?1102001?----------0------------0-----------------0---------
+	Coralcrinus         22050100000003100-00000----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----121010200-0------------------0--------0-001010?0--2---0---1?????0----------------0-1110020010-0-00014020311000000000-----------0--0---0---------------------100111-?100200??----------0------------0-----------------0---------
+	Cornucrinus         2?000101102001100-00000----10------0-------00--0-0------------------------111100100111-0-?-20121??0000-------0----------------0----------------11001012000100000--------------------0--------------------------------------0--------0-00111000---1--11?10-----0----------------0-1110023010-0-00002221336110110--0-----------10010100---------------------100101-?0-00000?----------0------------0-----------------0---------
+	Cothurnocystis      00101201001003200-0000-----00------0-------00--?-0------------------------1001--0--------------------0-------0----------------0----------------????????????????0--------------------10120-----0---------1??121000100010001113-----10??00?????0--????????0-----0----------------0-1140224010-0-004-------------------------------0---1-10201000101210------0-------------------------0------------0-----------------0---------
+	Cotylacrinna        22050100000002100-003?0--??00------0-------00--0-0----????????????????????1001110--------------------0-------0----------------0----------------110?1111??0?----0--------------------11120-----140--101-00------------------0--------0-0010--------------------1?10012110-11???00-111022101300-2204?12?501000010001023210110010--0---0---------------------100101-110020012----------0------------0-----------------0---------
+	Courtessolea        10021201000103101010000----00------0-------00--0-0------------------------0--------------------------0-------0----------------0----------------0---0--------------------------------0--------------------------------------0----------0011--0111-21-10010-----0----------------0-1140211020-0-003-----------------------------------1-10220100000--0------0-------------------------0------------------------------0---------
+	Crinerocrinus       2205010???000?100-00300----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----14????????0------------------0--------0-00??--------------------?????????????????0-111023?01900-22244040?????0000??1123?1111011---0---0---------------------100??1-?????????----------0------------0-----------------0---------
+	Cryptocrinites      22050101101003100-00010--1000------0-------00--0-0----400110012122-103???01001111020-------0001000000101?010000--------0------0----------------????????????????0--------------------11411?0???0---------0------------------0--------0---111??0---0--1???0-----0----------------0-1110?2211????1004?????????0??0??0--------------0---0---------------------1???????????????----------0------------0-----------------0---------
+	Cryptogoleus        20050001000000000-00001??---0------0-------00--?-0------------------------11111110010011--1100--0000010?110-000--------0------0----------------100010120000101010210000-------------0--------------------------------------0--------0-00101000--1---11010-----0----------------0-0------------------------------------------------------------------------110------------6320110000--------------0-----------------0---------
+	Ctenocystis         10121200001103101011000----00------0-------00----0------------------------1110001-00-------000--?--000-------0----------------0----------------0---0-----------0--------------------0--------------------------------------0--------0-00110-10---20110110-----0----------------0-1140213100-0-003-------------------------------0---1?11221110000--0------0-------------------------0------------0-----------------0---------
+	Ctenoimbricata      10121201000103101110000----00------0-------00----0------------------------0--------------------------0-------0----------------0----------------0---0--------------------------------0--------------------------------------0--------0-0011--?110-?00????0-----0----------------0-1140211000-0-003-----------------------------------1-10221010000--0------0-------------------------0------------------------------0---------
+	Cuniculocystis      220?0100000002100-00???????00------0-------00--0-0----????????????????????1?????10????????????????000????????00--------0------0----------------????????????????0--------------------10?11??0?10---------0------------------0--------0---111?10---1--1???0-----0----------------0-1110110?1900-?0?2?12??1?110??0??0--------------0---0---------------------100101-?110200??----------0------------0-----------------0---------
+	Cupulocrinus        22050101??0002100-000?0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10110?0000000--------------------11120-----121100200-0------------------0--------??001010?0--2---0---1??1?00----------------0-1110022010-0-00014220312110010000-----------1110---0---------------------100101-01000000?----------0------------0-----------------0---------
+	Cyathocystis        22050000000002100-00000-----0------0-------00--?-0------------------------1001111000-------230---00000-------0----------------0----------------100010120101002010110300-------------0--------------------------------------0--------0-00101010--1---11100-----0----------------0-0------------------------------------------------------------------------100012---------1-----------------------0-----------------0---------
+	Cyclocystoides      20050000000001000-0000???---0------0-------00--?-0------------------------1??1111020-------000--??00010??1?-000--------0------0----------------????10??????????1101130100-----------0--------------------------------------0----------00?????0--?---????0-----0----------------100------------------------------------------------------------------------100104---------61211111110-------------0-----------------0---------
+	Cystaster           20050001100000000-0000110---0------0-------00--?-0------------------------1111111000-------100--00000100100-000--------0------0----------------110010120110010010001200-------------0--------------------------------------0--------0-00110010--1---10010-----0----------------0-0------------------------------------------------------------------------100------------5-----------------------0-----------------0---------
+	Dactylocystis       22050001202000000--0010--1000------0-------00--0-0----????????????????????1??1111000-------20012?00011011010000--------0------0----------------????????????????11100200-------------11011020010---------0------------------1-100----0-0011???0---?--????0-----0----------------0-110003??????????----------------------------0--0---0---------------------100101-?????????----------0------------0-----------------0---------
+	Daedalocrinus       2205010???0003100-000?0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----121400201-0------------------0--------??001010?0--2---0---1??1?00----------------0-1110030010-0-00004120314110010--0-----------1010---0---------------------100101-?0-12001?----------0------------0-----------------0---------
+	Dalicrinus          2205020??00002100-003?0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????1????????????????????????????????111202----140--1?01-0------------------0--------0-0010?????????????????????????????????????0-1110221010-0-220440??5010000000011232111101?0--0---0---------------------100101-?????????----------0------------0-----------------0---------
+	Davidocinctus       10?1?201001113100-00000----10------0-------00--0-0------------------------11000-1?010--1---020?0---000------------------------0----------------????????????????0--------------------0--------------------------------------??----0??0-00?????100????????0-----0----------------0-114?22111400-104-------------------------------100?1010220000000--1??????0-------------------------0------------0-----------------0---------
+	Delgadocrinus       22050100??000?100-00???????00------0-------00--?-0----????????????????????1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----141300201-0------------------0----------00???????????????????????????????????????0-1110200000-0-0004001050200000000100?21110---????0--0---------------------100101-01000000?----------0------------0-----------------0---------
+	Dendrocrinus        2205010???0002100-000?0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10110?00?0?00--------------------11120-----121000200-0------------------0--------??001010?0--2---0---1??1?00----------------0-111002001900-00014220312110010100-----------1210---0---------------------100101-?0-12000?----------0------------0-----------------0---------
+	Dendrocystites      20101000001003100-0000-----10------0-------00--?-0------------------------1001--0--------------------0-------0----------------0----------------????10100?00?0000--------------------12120-----160--001-00------------------0--------0-0011--00---2--10100-----0----------------0-1101222000-0-003-------------------------------0---1-0-----0000---0------0-------------------------10001201111000-----------------0---------
+	Deocrinus           22050201000002100-003?0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------1?1?11??????-0--0--------------------11120-----15???1????0------------------0--------0-0010--------------------1?1??????????????0-111222111910-2204402052101000011102221301010---0---0---------------------100101-?????????----------0------------0-----------------0---------
+	Diabolocrinus       22050201100001100-00300----00------0-------00--?-0------------------------1??1110--------------------0-------0----------------0----------------10101111?010-0--0--------------------11120-----130--111-00------------------0----------0010--------------------1111113010-110???0-1110231020-0-1224412150100-00000102311011000----0--0---------------------100101-?10020001----------0------------0-----------------0---------
+	Diamphidiocystis    00?01100001013200-0000-----00------0-------00--0-0------------------------1001000--------------------0-------0----------------0----------------????????????????0--------------------10120-----0---------10020110010001000020--------0-0011??10---21111010-----0----------------0-1120131000-0-003-------------------------------0---10110200010?1010------0-------------------------0------------0-----------------0---------
+	Dibrachicystis      22020001000003100-000?????000------0-------00--0-0----????????????????????1110001000-------100?00-0001010210000--------0------0----------------110?1012???0?0?00--------------------1?020-----170--021-10------------------0--------0--0111010--20--???10-----0----------------0-100022211900--00-------------------------------0---0---------------------110103000-00001?----------0------------0-----------------0---------
+	Difficilicrinus     22050100000002100-00000----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----12???1?00-0------------------0--------0-001010?0--2---0---1?????0----------------0-1110020010-0-02204020322110010--0-----------1010---0---------------------100111-1??2?????----------0------------0-----------------0---------
+	Diplosphaeronis     22040201001003100-000?0--??00------0-------00--0-0----????????????????????1110110--------------------0-------0----------------0----------------1010????????????0--------------------11?11?0???0---------0------------------111??----0-00111010---1--10110-----0----------------0-1100?12000-0-003-------------------------------0---0---------------------110104---------2----------0------------0-----------------0---------
+	Doliocrinus         22050101200002100-00?0???--00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------1?1?11??????-?--?????????????????????11120-----121010200-0------------------0--------0-0010???0--?---??????????1?0???0?0????????0-1110120010-0-0002412031111000010101010--11-0???0---0---------------------100101-01002101?----------0------------0-----------------0---------
+	Drepanocarpus       0010?200001003200-00000----00------0-------00--0-0------------------------1001--0--------------------0-------0----------------0----------------????????????????0--------------------10120-----0---------1??1?00??10001?0???13-----100-00?????0---??-????0-----0----------------0-114021201????003-------------------------------0---1?102200001?1000------0-------------------------0------------0-----------------0---------
+	Drymocrinus         2205010??00002100-00000----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10???????????????????????????????11120-----121300200-0------------------0--------0-0010?0?0--?---0---1?????0----------------0-1110010010-0-00?14121321000000000-----------1010---0---------------------100111-0??0000??----------0------------0-----------------0---------
+	Dystactocrinus      2205010??00002100-00?00----?0------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10???????????????????????????????11120-----121300?01-0------------------0--------0-0010???0--?---????1??????????????????????0-1110011010-0-1001403030100000000101000--0---1010---0---------------------100111-?100200??----------0------------0-----------------0---------
+	Echinoencrinites    22050101001003100-00010--1000------0-------00--0-0----501110101012120110001111111010-------10010000000-------0----------------0----------------????????????????0--------------------10211?0???0---------0------------------12---0---0-00111100---2--????0-----0----------------0-111002201900-20423032322110120020--------------10010---------------------100101-?1102001?----------0------------0-----------------0---------
+	Echinosphaerites    22030001011003100-00010--1000------0-------00--0-0----30111001000--00210001110010--------------------????????00--------0------0----------------1???10????0??0?00--------------------1?211200010---------0------------------11-1?----0---111010---0--10110-----0----------------0-1100221014010-00-------------------------------0---0---------------------1001000--------5----------0------------0-----------------0---------
+	Ectenocrinus        22050100000002200-00000----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----121011202-0------------------0--------??001010?0--2---0---1201000----------------0-1110021000-0-00004020321110010--0-----------0--0---0---------------------100101-110010004----------0------------0-----------------0---------
+	Edrioaster          20050201102000010-00011?000-0------0-------00--?-0----510000211111121-120011111110011111011100--00000110001-000--------0------0----------------100110120110001011000200-------------0--------------------------------------0--------0-00101000--1---10100-----0----------------0-0------------------------------------------------------------------------1000000--------5-----------------------0-----------------0---------
+	Edriodiscus         20050001000001000-00001?0---0------0-------00--?-0------------------------1111111000-------100--00100101110-000--------0------0----------------11101001?112?0?010200100-------------0--------------------------------------0--------0-00101010--2---100?0-----0----------------110------------------------------------------------------------------------100114---------6310111100--------------0-----------------0---------
+	Edriophus           20050201102000000-0000100---0------0-------00--?-0------------------------11111110011100010300--00100001100-000--------0------0----------------100010120012101011210200-------------0--------------------------------------0--------0-00101000--1---10110-----0----------------0-0------------------------------------------------------------------------1100000--------???????????-------------0-----------------0---------
+	Eknomocrinus        22050101000002100-00??0--?000------0-------00--0-0----????????????????????1??111?????????????????????0-------0----------------0----------------????1????????????????????????????????11120-----121110?00-0------------------0--------0-0010--------------------1?00??2??0-210?000-1110232010-0-00234??13??11000010111110--11-0---0---0---------------------100101-1101200??----------0------------0-----------------0---------
+	Elliptocinctus      10?2?201001113100-00000----10------0-------00--0-0------------------------1110001?010----0-020001--000------------------------0----------------1???1???????????0--------------------0--------------------------------------???---0??0-00?????100???0????0-----0----------------0-1140222010-0-004-------------------------------10011010220100000--11101120-------------------------0------------0-----------------0---------
+	Embolaster          0015?000000001000-000110000-0------0-------10--0-0----31111011111--01-10001111111000-------220--00-00101111-001011010011010---0----------------0---0-----------11110200-------------0--------------------------------------0--------1?00??????????????????????0----------------0-0------------------------------------------------------------------------0--------------------------------------10110110111010000-0---------
+	Enoploura           00121101001003200-0000-----00------0-------00--?-0------------------------1001--0--------------------0-------0----------------0----------------100-10100100?0000--------------------10120-----0---------10022100110011000000--------??00111?20---2110---0-----0----------------0-112002101800-003--------------------------------0--1-11010001001110------0-------------------------0------------0-----------------0---------
+	Eodimerocrinites    2205010??00002100-00??0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----130--1?01-0------------------0--------0-0010--------------------?????????????????0-1110221?1210-?2?4????512??0000001021?1011001---0---0---------------------100101-?100200??----------0------------0-----------------0---------
+	Eoparisocrinus      22050101100003100-003?0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------111?1010001010100--------------------11120-----121000200-0------------------0--------0-0010--------------------1?10001?30-2101120-111001001900-00214220313010010000-----------1110---0---------------------100101-010020014----------0------------0-----------------0---------
+	Eopatelliocrinus    2205020???0002100-003?0--0?00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----130--1200-0------------------0--------??0010--------------------1????????????????01111012101900-0002202051100000001111011011101---0---0---------------------100101-110020003----------0------------0-----------------0---------
+	Eopetalocrinus      2?050?0??00003100-00??0--??00------0-------00--0-0----????????????????????1001110--------------------0-------0----------------0----------------????????????????0--------------------11120-----121610????0------------------0--------0-0010--------------------???????????????????????????????????????????????????????????????---0---0---------------------????????????????----------0------------0-----------------0---------
+	Eopinnacrinus       2205010???000?100-00???????00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----121001301-0------------------0--------??001010?0--0---0---1??1???????????????????0-1110021010-0-00214120302010010000-----------1110---0---------------------100101-?0-0200??----------0------------0-----------------0---------
+	Estoniaster         0015?000000001000-000??????-0------0-------00--0-0----????????????????????1001111000-------2001--0-00101111-0010?101??00------0----------------0---1011?-0?00?011????00----?????????0--------------------------------------0--------1001??????????????????????0----------------0-0------------------------------------------------------------------------0--------------------------------------10110101100011000-0---------
+	Estonocystis        22050001202000000--0010--1000------0-------00--0-0----50001020221??21110001111111000-------10012000011011110000--------0------0----------------????????????????111003010------------11011020010---------0------------------1-100----0-001110?0---0--1???0-----0----------------0-110003?0????????----------------------------0--0---0---------------------100001-?????????----------0------------0-----------------0---------
+	Etoctenocystis      1012120000010310101?000----10------0-------00--0-0------------------------1110001-00-------100--?0-000-------0----------------0----------------0---0-----------0--------------------0--------------------------------------0----------00110-?0---201????0-----0----------------0-1140212010-0--03-------------------------------0---1011120110000--0------0-------------------------0------------0-----------------0---------
+	Eucystis            21050101001003100-00010--1000------0-------00--0-0----501110111110120110001111111110-------00110000000-------0----------------0----------------1001????????????0--------------------11411?1???0---------0------------------11101----0-00111010--00--1???0-----0----------------0-1110122010-100030?222?23110010--0--------------10000---------------------110114---------2----------0------------0-----------------0---------
+	Eukrinaster         0015?200000001100-0000100---0------0-------10--0-0------------------------1001111000-------200---0-00101121-001000011000------0----------------0---0-----------11001200-------------0--------------------------------------0--------??01????????????????0-----0----------------0-0------------------------------------------------------------------------0--------------------------------------10110111310011100-0---------
+	Eumorphocystis      22000001000002100-00010--1000------0-------00--?-0----30012011111--01110001111111000-------20110000001011110000--------0------0----------------10001012000000000--------------------1243101001120--1110-0------------------11-000---0-00111000--20--10110-----0----------------0-110121211900-103-------------------------------0---0---------------------100101-?100200??----------0------------0-----------------0---------
+	Euryeschatia        20050001000000000-0000???---0------0-------00--?-0------------------------11111110011011111200--000001????0-000--------0------0----------------100010120211100011100200-------------0--------------------------------------0--------0-00101000--1---11??0-----0----------------0-0------------------------------------------------------------------------100014---------6320010-----------------0-----------------0---------
+	Euspirocrinus       22050100000002100-000?0--??00------0-------00--0-0----????????????????????1001110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----12?????00-0------------------0--------0-00101010--0---0---1200100----------------0-1110021010-0-00012021323110010000-----------1310---0---------------------100101-?????????----------0------------0-----------------0---------
+	Eustenocrinus       2205010??00003100-00?00----00------0-------00--0-0------------------------1??1010--------------------0-------0----------------0----------------????10??????????0--------------------11120-----111110200-0------------------0--------0-001010?0--2---0---1?0100?????????????????0-1110121010-0-0022424020110000000101000--0---1120---0---------------------100111-10-?000??----------0------------0-----------------0---------
+	Eustypocystis       220?0201001003100-00010--1000------0-------00--?-0----30000?11111--00010001?????0--------------------10?0??0000--------0------0----------------????10?????????00--------------------1?011200010---------0------------------0--------??00101?00--?---10??0-----0----------------0-1030112010-0-000?3130--------0--0--------------0---0---------------------100101-0000000??----------0------------0-----------------0---------
+	Felbabkacystis      220?0000001003100-0000100--00------0-------00--0-0------------------------1?????1000-------00010??000100?110000--------0------0----------------?????????????0?00--------------------11011000010---------0------------------10-------0-00111?00---0--????0-----0----------------0-1100222010-0-000-------------------------------0---0---------------------1100100--------?----------0------------0-----------------0---------
+	Foerstediscus       20000001000000000-00001?0---0------0-------00--?-0------------------------11111110010000000200--0000010???0-000--------0------0----------------110010120010100010200000-------------0--------------------------------------0--------0-00101010--1---11010-----0----------------0-0------------------------------------------------------------------------100------------6210010000--------------0-----------------0---------
+	Fombuenacrinus      22050100000002100-003?0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------101?110?????-0--?????????????????????11130-----140--1202-0------------------0--------0-0010--------------------1?1000111????????0-111032101900-22?44???50100000000112321101110---0---0---------------------100101-0100200??----------0------------0-----------------0---------
+	Fresnedacrinus      2?050100000003100-000?0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????1011???0?0?00--------------------11120-----121000200-0------------------0--------0-001010?0--2---0---1??100?????????????????0-1110121010-0-0022502230100000010112100--10-01210---0---------------------100101-0101200??----------0------------0-----------------0---------
+	Gaurocrinus         22050201000001100-003?0--??00------0-------00--0-0----????????????????????1111110--------------------0-------0----------------0----------------11101101?00?-0--0--------------------11120-----131001200-0------------------0----------0010--------------------1?10011110-01?1000-1112222010-0-0104400051100000000112321011111---0---0---------------------100101-?1022000?----------0------------0-----------------0---------
+	Gillocystis         00150001000001000-00000----01000---101?010?0100100------------------------1001110--------------------0-------0----------------100--1000110010010---0-----------10200200-------------0--------------------------------------0--------1000101?00--2---11000-----0----------------0-0------------------------------------------------------------------------0--------------------------------------0-----------------100000-000
+	Glaphocystis        22040201001003100-000110010-0------0-------00--0-0----3010101-00-112-210001110110--------------------1001110000---------------0----------------11001011001120000--------------------11011?0???0---------0------------------11101----0-00111010---1--10110-----0----------------0-1101232010-0-??0-------------------------------0---0---------------------110104---------?----------0------------0-----------------0---------
+	Glaucocrinus        22050100000002100-00?00----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10??????????????????????????????011120-----1212?0?00-0------------------0--------0-0010?0?0--?---0---???????????????????????0-1110031010-0-00004020306120010--0-----------???0---0---------------------100101-1101000??----------0------------0-----------------0---------
+	Glenocrinus         22050000000002100-00200----00------0-------00--?-0------------------------1??1110--------------------0-------0----------------0----------------1?1?11???00?-0--0--------------------11120-----121410?00-0------------------0--------??0010--------------------1?00003101020----0-113122101910-0004----5111000100010-3-0--10-10--0---0---------------------100101-1101200??----------0------------0-----------------0---------
+	Globoeocrinus       22050100100003100-00001?0--00------0-------00--0-0------------------------1111110--------------------1???????00--------0------0----------------110?10??????????0--------------------11011201010---------0------------------10?------0--0111?20--20--11000-----0----------------0-110022101200--00-------------------------------0---0---------------------1101001--------5----------0------------0-----------------0---------
+	Glyptocrinus        22050201000002100-003?0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------11101101?0??-0--0--------------------11120-----140--1102-0------------------0----------0010--------------------1?1001???0-?1????0-111022001900-2024402050100000000111121111111---0---0---------------------100101-010020003----------0------------0-----------------0---------
+	Glyptocystella      22050101100002100-00010--1000------0-------00--0-0----510000100010121322001111111010-------22120000001011210000--------0------0----------------10001011000010000--------------------10011010010---------0------------------12---0---0-00111110---1--11100-----0----------------0-111001201901020423132413121120110--------------0---0---------------------110101-011020010----------0------------0-----------------0---------
+	Gogia               22050200000003100-00001?0--00------0-------00--?-0------------------------1?????1000-------??000??0001???????00--------0------0----------------????10100?01?0000--------------------11011210000---------0------------------10?--------00111?00---0--100?0-----0----------------0-110121101110-000-------------------------------0---0---------------------1001001--------4----------0------------0-----------------0---------
+	Goyacrinus          2205010??00002100-003?0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10???????????????????????????????11120-----140--1202-0------------------0--------0-0010--------------------1????????????????0-111023111910-22?44???52100000001112311111111---0---0---------------------100101-0100200??----------0------------0-----------------0---------
+	Graciacystis        10110201001113100-00000----10------0-------00--0-0------------------------1110001?0101-1-0-220--11-000------------------------0----------------????????????????0--------------------0--------------------------------------10-------??00111-1101-01-????0-----0----------------0-114022201710-003-------------------------------10001010220000000--12100000-------------------------0------------0-----------------0---------
+	Grammocrinus        2205010??00003100-00000----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----12?????00-0------------------0--------0-001010?0--2---0---1?????0----------------0-111002?010-0-00004120301000010--0-----------1010---0---------------------100111-00-12001?----------0------------0-----------------0---------
+	Grenprisia          2205010???0002100-00??---??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10???????????????????????????????11120-----1210?0?00-0------------------0--------0-00101020--2---0---110000?????????????????0-1110120010-0-0022412031111000010102100--10011?10---0---------------------100101-1102000??----------0------------0-----------------0---------
+	Guichenocarpos      00111101001003200-00000----00------0-------00--0-0------------------------1001--0--------------------0-------0----------------0----------------????????????????0--------------------10120-----0---------11?0?11??11010?1???0--------0-00110-10---21-1???0-----0----------------0-1120011010-0-003-------------------------------0---10102200000?1010------0-------------------------0------------0-----------------0---------
+	Guizhoueocrinus     22050200000003100-00001?0--00------0-------00--?-0------------------------1111111000------???010000001???????00--------0------0----------------110?1012??10?0?00--------------------11011201010---------0------------------10-------0--0??????????????????????0----------------0-110120201300--00----------------------------0--0---0---------------------1101001--------5----------0------------0-----------------0---------
+	Gustabilicrinus     2205020??00002100-00???????00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------1???1????????????????????????????????11120-----140--1102-0------------------0--------0-0010--------------------1??0????4????????0-111022101900-1204422?50111000010102321111010---0---0---------------------102101-010020013----------0------------0-----------------0---------
+	Gyrocystis          10?10201001113100-00000----10------0-------00--0-0------------------------11000-1?010--1---02010---000------------------------0----------------110-1010?00000000--------------------0--------------------------------------???---0??0-0011--0120-00-11100-----0----------------0-114022201300--04-------------------------------10001010220000000--11001020-------------------------0------------0-----------------0---------
+	Habrotecrinus       2205020???0002100-00??0--???0------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10???????????????????????????????11120-----1211?0?00-0------------------13?----0-0-00?????0--???????????????????????????????0-11112??01900-202341123?611000010111010--10-????0---0---------------------100101-110120???----------0------------0-----------------0---------
+	Hadrocystis         22050100000002100-00010--1000------0-------00--0-0----511110111??0?21112101111111010-------22110000001010?10000--------0------0----------------1100101??000?0?00--------------------10011110010---------0------------------12---0---0---111110---1--11000-----0----------------0-111011101900-20023131?151101201?0--------------0---0---------------------100101-?1102001?----------0------------0-----------------0---------
+	Hadrodiscus         20050201000000000-00010--10-0------0-------00--?-0----?00121?0000??????0?0111111100101-0-1-200--0010010???0-000--------0------0----------------11001012011??0?010200200-------------0--------------------------------------0--------0-00101000--1---11000-----0----------------0-0------------------------------------------------------------------------110014---------6310010-----------------0-----------------0---------
+	Haimacystis         22020100000003100-00010--1000------0-------00--0-0----30101011111--101?000111000100111-0-1-20010000000-------00--------0------0----------------100010100000?0000--------------------11211?10010---------0------------------0--------0---111010---0--10100-----0----------------0-1110002010-??00303320232000010--0--------------0---11--------------------100101-01000000?----------0------------0-----------------0---------
+	Haplosphaeronis     21050201001003100-00010--1000------0-------00--0-0----501110010110120110001111111110-------00010000000-------0----------------0----------------1000????????????0--------------------11211?1??10---------0------------------11101----0-00111010--20--10100-----0----------------0-1110022010-0-003062?0-------10--0--------------0---0---------------------110114---------2----------0------------0-----------------0---------
+	Haptocrinus         2205010???0003100-00000----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10010?0100?00--------------------11120-----121400200-0------------------0--------??001010?0--2---0---1200000----------------0-1110020010-0-00004010311110010--0-----------0--0---0---------------------100111-?0-000014----------0------------0-----------------0---------
+	Helicocystis        22000201200001000-00010--1000------0-------00--?-0----500010210011120210?011111110011000000100--000001011210000--------0------0----------------????10010?0100?011010210-------------0--------------------------------------0--------0-00101000--1---11100-----0----------------0-1100010010-0-000-------------------------------0---0---------------------1001000--------4----------0------------0-----------------0---------
+	Helicoplacus        2100?001202010000-00001?0--00------0-------00--?-0------------------------11110010010101-1-10---0000010?130-000--------0------0----------------110010000001000011011310----0--------0--------------------------------------0----------00?????0--?---????0-----0----------------0-0------------------------------------------------------------------------1100000--------5-----------------------0-----------------0---------
+	Hemicosmites        22030101000003100-00010--1000------0-------00--0-0----1010100-11---0-110001111000--------------------0-------0----------------0----------------1010????????????0--------------------111?1?0???0---------0------------------12---0---0-00111110---1--????0-----0----------------0-111002211900-10413220522110120110--------------0---0---------------------100101-0??0?0???----------0------------0-----------------0---------
+	Heviacrinus         2205010?????0?100-00?0???--?0------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----1211?0200-000----------------0--------0-00??????????????????????0----------------0-1110021010-0--0?04020322000010--0-----------???0---0---------------------100101-01012000?----------0------------0-----------------0---------
+	Holocystites        22050001001003100-00010--1000------0-------00--0-0----500010221101020310001111111000-------10010000000-------0----------------0----------------????????????????0--------------------10211?0???0---------0------------------111100---0-00111000--20--????0-----0----------------0-1100222010-0-003-------------------------------0---0---------------------110104---------?----------0------------0-----------------0---------
+	Hoplocrinus         22050100000002100-000?0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----12????????0------------------0--------0-0010???0--??--??????????0----------------0-1110021010-0-00004120322120010--0-----------1000---0---------------------100101-00-0?00??----------0------------0-----------------0---------
+	Hudsonaster         0015?000000001000-00000-----0------0-------10--0-0------------------------1001111000-------320---0-00101110-0011?1?000-0------0----------------0---11110-00-0--1111130100-----------0--------------------------------------0--------1000??????????????????????0----------------0-0------------------------------------------------------------------------0--------------------------------------1011111111100---0-0---------
+	Hybocrinus          22050100000002100-00010--10-0------0-------00--?-0----30011001111--00120001111110--------------------0-------0----------------0----------------11001011000000000--------------------11120-----120--0100-0------------------0--------0-00101000--2---10110-----0----------------0-1110022010-0-00004221322120010--0-----------1100---0---------------------100101-10-000002----------0------------0-----------------0---------
+	Hybocystis          22000101000002100-00010--1000------0-------00--0-0----30111101111--00110001111111001110--1-10112001000-------0----------------0----------------11001011000110000--------------------11120-----100--0000-0------------------0--------0-00101000--2---10110-----0----------------0-1110022010-0-00004220322110010--0-----------11010000---------------------100101-?0-00000?----------0------------0-----------------0---------
+	Hypophiura          0015?000000001100-0000110---0------0-------00--?-0------------------------1001111000-------100---0-00100111-0010021000-0--11100----------------0---0-----------1100??00-------------0--------------------------------------0--------??0?0---------------------0----------------0-0------------------------------------------------------------------------0--------------------------------------12????????????????0---------
+	Hystrichopsydrax    20050001000000000-00001?0---0------0-------00--?-0------------------------1111111000-------??0--??000100???-000--------0------0----------------100010???0?????011001?00----0--------0--------------------------------------0--------??00101000--1---10110-----0----------------0-0------------------------------------------------------------------------100------------6320111100--------------0-----------------0---------
+	Ibexocrinus         2205010??00003100-00?00----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10???????????????????????????????10120-----121100200-0------------------0--------0-001010?0--20--0---1??????????????????????0-1110020000-0-00004120322010010--0-----------0--0---0---------------------100111-1100000??----------0------------0-----------------0---------
+	Implicaticystis     22040100001013100---010--1000------0-------00--0-0----2001102-33-1-1-310001110111000-------20020000001001110000--------0------0----------------????????????????0--------------------11011?0???0---------0------------------130----0-0-001????0--??--??????????0----------------0-111022204900-00342130513000?100?0--------------0---0---------------------100101-?????????----------0------------0-----------------0---------
+	Inyocrinus          22050100000003100-00000----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----121000200-0------------------0--------0-0010???0--?---??????????0----------------0-1110021000-0-00014120313110000100-----------???0---0---------------------100111-?0-0000??----------0------------0-----------------0---------
+	Iocrinus            2205010?000003100-00000----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----121100200-0------------------0--------0-00101010--2---0---1001100----------------0-111003001900-00204120314100010--0-----------1020---0---------------------100101-110220003----------0------------0-----------------0---------
+	Iowacystis          10111101001003100-0000-----10------0-------00--?-0------------------------1001--0--------------------0-------0----------------0----------------????10100?-000100--------------------11120-----160--011-00------------------0--------0-0011--10---2--10100-----0----------------0-1120112019010003--------------------------------0--1-11010000000--0------0-------------------------10001100110000-----------------0---------
+	Isorophus           20000001000000000-0000100---0------0-------00--?-0------------------------11111110011111011100--00000100100-000--------0------0----------------100010121101001010201000-------------0--------------------------------------0--------0-00101000--1---10100-----0----------------0-0------------------------------------------------------------------------100------------6200010000--------------0-----------------0---------
+	Isorophusella       20050001000000010-0000100---0------0-------00--?-0------------------------1111111000-------000--00000100110-000--------0------0----------------110010120101001010200000-------------0--------------------------------------0--------0-00101000--1---10100-----0----------------0-0------------------------------------------------------------------------100------------6300110000--------------0-----------------0---------
+	Isotomocrinus       2205010??00002100-00?00----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10???????????????????????????????11120-----121000200-0------------------0--------0-001010?0--2---0---1??100?????????????????0-1110021010-0-00004120323110010--0-----------1010---0---------------------100101-11022001?----------0------------0-----------------0---------
+	Jugiaster           0015?000000001100-000111000-0------0-------10--0-0----31001000000--00?10001--1111000-------1002--0-00101011-001110110000------0----------------0---????????????11001200-------------0--------------------------------------0--------??01??????????????????????0----------------0-0------------------------------------------------------------------------0--------------------------------------11101101111011100-0---------
+	Jugoszovia          1012?10110210210101?000----00------0-------00--0-0------------------------??????0--------------------0-------0----------------0----------------0---0-----------0--------------------0--------------------------------------0--------0-00?????0--????????0-----0----------------0-100022001????014-------------------------------0---1?11000100000--0------0-------------------------0------------0-----------------0---------
+	Kailidiscus         20050001000000000-000111101-0------0-------00--?-0----410010022111-11-000011111111010000000100--00000111111-000--------0------0----------------110010100002001011200200-------------0--------------------------------------0--------0-00101010--1---10010-----0----------------0-0------------------------------------------------------------------------110------------6100010000--------------0-----------------0---------
+	Kinzercystis        220?0001002002000-0000100---0------0-------00--?-0------------------------111111100121?????000--??000???????000--------0------0----------------11001001000?001011101200-------------10011110010---------0------------------1-0------0-00101000--2---11110-----0----------------0-0------------------------------------------------------------------------1000100--------5-----------------------0-----------------0---------
+	Lagynocystis        00110201001003200-0000-----00------0-------00--?-0------------------------1001--0--------------------0-------0----------------0----------------????????????????0--------------------10120-----0---------111000-0111200101020--------??00110-10---2110---0-----0----------------0-1140100000-0-00--------------------------------0---1-11020000010--0------0-------------------------0------------0-----------------0---------
+	Lebetodiscus        20000201000000000-00001??---0------0-------00--?-0------------------------11111110011011111200--00100100110-000--------0------0----------------100010120020100010200000-------------0--------------------------------------100------0-00101000--1---11010-----0----------------0-0------------------------------------------------------------------------110------------6200010000--------------0-----------------0---------
+	Lepidocalix         22040000001003100-00011001000------0-------00--0-0----2010200-00-0-1-210001110110--------------------1001010000--------0------0----------------10001012011??0000--------------------11011?0???0---------0------------------11100----0-00111000---0--10010-----0----------------0-1001212?3a10-???-------------------------------0---0---------------------??????????????????????????0------------0-----------------0---------
+	Lepidocystis        220?0001000002000-00001000--0------0-------00--?-0------------------------1111111000-------00---0?0001001?0-000--------0------0----------------100?1011010000?011001200-------------1?011110010---------0------------------1-0------??00101000--2---11010-----0----------------0-0------------------------------------------------------------------------1000100--------5-----------------------0-----------------0---------
+	Lichenoides         2105?100000002100-00001?0--00------0-------00--?-0------------------------1111111000-------100--0000010?0?10000--------0------0----------------11001011000??0001?001?00-------------1?011100000---------0------------------10-------??00????????????????0-----0----------------0-1110023010-0-00014122321000220000--------------0---0---------------------0-------------------------0------------0-----------------0---------
+	Lignanicystis       10?00201001113100-00000----10------0-------00--0-0------------------------1110001?0101-1---120--1--000------------------------0----------------0---0-----------0--------------------0--------------------------------------13-----10--0011--0100-00-10100-----0----------------0-114222200910-003-------------------------------10001010220000000--11111100-------------------------0------------0-----------------0---------
+	Llanocystis         2204?000000003100-00???????00------0-------00--0-0----????????????????????1110111?0???????????10??0001110??0000--------0------0----------------????10??0?0000000------0-------------11011?00?00---------0------------------10?------0--0??????????????????????0----------------0-1100211000-0--00-------------------------------0---0---------------------100101-01001001?----------0------------0-----------------0---------
+	Ludwigicinctus      10?1?200001113100-00000----10------0-------00--0-0------------------------11000-1?010--0---22010---000------------------------0----------------????????????????0--------------------0--------------------------------------0-----00-0-00?????120???-????0-----0----------------0-1140122000-0--04-------------------------------10011010220000000--1??????0-------------------------0------------0-----------------0---------
+	Luhocrinus          22050100?00003100-00010--1000------0-------00--0-0----3000?001111--00????01111111000-------100--0000010???10000--------0------0----------------????????????????0--------------------1??1120?010---------0------------------0--------0--0??????????--??????????0----------------0-113011101100--003311??????0??0??0-----------???0---0---------------------100101-?0-00001?----------0------------0-----------------0---------
+	Lyracystis          22030001100001100-0000???--10------0-------00--?-0------------------------1111001000-------200?000000????????00--------0------0----------------1?0?10112?0000?00--------------------11020-----10140021-00------------------10-------0--0111000---0--10??0-----0----------------0-110022111900--0?-------------------------------0---0---------------------1001001--------?----------0------------0-----------------0---------
+	Macrocystella       2?050100000002100-00010--1000------0-------00--0-0----511110011020?21??0?01111111010-------1001000000100??10000--------0------0----------------1???10??????????0--------------------11011?10010---------0------------------0--------0-00111110---1--????0-----0----------------0-111002201900-20023121412110120110--------------0---0---------------------100101-011020010----------0------------0-----------------0---------
+	Macrostylocrinus    22050201?00002100-003?0--??00------0-------00--0-0----????????????????????1111110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----130--1102-0------------------0--------??0010--------------------1????????????????0-1110220000-0-0024212132200000000111011011101---0---0---------------------100101-?1002000?----------0------------0-----------------0---------
+	Macurdablastus      22050100000002100-00010--0000------0-------00--?-0----30000012222--00110011001111000-------20101-0000????????10--------0------0----------------????????????????0--------------------1??01?????0---------0------------------143---0----00101000--2---????0-----0----------------0-1110030010-10002021213150011?0--0--------------0---0---------------------100?0???????????----------0------------0-----------------0---------
+	Maennilicrinus      2205010?000003100-0000???--00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----121000200-0------------------0--------??001????0--?0--0---??????0----------------0-111001001800--0204220332000010--0-----------0--0---0---------------------1???????????????----------0------------0-----------------0---------
+	Mandalacystis       22000100001103100-0001???1000------0-------00--?-0----01100--2--1---0????0100011100110-011023010-00001???????00--------0------0----------------????????????????0--------------------11011010010---------000----------------0--------0-??111?00--201-11110-----0----------------0-11200220?1011-03-------------------------------0---1010010000000--0------100101-010000012----------0------------0-----------------0---------
+	Maquoketocrinus     2205020??00002100-003?0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10???????????????????????????????11120-----13????????0------------------0--------0-0010--------------------1????????????????0-111022101900-2223412031200000000102311011000---0---0---------------------100101-???0?????----------0------------0-----------------0---------
+	Marjumicystis       220?0000001003100-0000???--00------0-------00--0-0------------------------1?????1??0-------20??0??000????????00--------0------0----------------110?1012?01??0?00--------------------10111100010---------0------------------0--------0--0??????????????????????0----------------0-1100212000-0--??-------------------------------0---0---------------------1101000--------5----------0------------0-----------------0---------
+	Meristoschisma      22050201110002100-00010--1000------0-------00--?-0----30111011111--00001001001111000-------23111000001010010000--------0------0----------------1000101?010??0000--------------------10001120000---------0------------------13-0---0-??00101000--0---????0-----0----------------0-111002200601002014120310000010000--------------0---0---------------------100101-0100200??----------0------------0-----------------0---------
+	Merocrinus          2205010??00003100-00??0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10???????????????????????????????11120-----121300200-0------------------0--------0-0010?0?0--?---0---1??040?????????????????0-1110030010-0-00014020302110010000-----------1210---0---------------------110111-00-000002----------0------------0-----------------0---------
+	Mesopalaeaster      0015?000000001000-00000-----0------0-------10--0-0------------------------1001111000-------320---0-00101100-0011101000-0------0----------------0---11110-0000--111112010---100000?000--------------------------------------0--------??00??????????????????????0----------------0-0------------------------------------------------------------------------0--------------------------------------101111011110110?0-0---------
+	Mespilocystites     2?050101002002100-00010--1000------0-------00--0-0----30110100000--001???01001111000-------22100000000-------?----------------0----------------????10120?00?0010--------------------1?301?????0---------0------------------0--------0-00101000--20--????0-----0----------------0-101002001800-00002001335001220--0--------------0---0---------------------100?????????????----------0------------0-----------------0---------
+	Milonicystis        00101100001003200-00000----00------0-------00--0-0------------------------1001--0--------------------0-------0----------------0----------------????????????????0--------------------10120-----0---------1??0?1??011201?0??????----??0-0011???0---???????0-----0----------------0-1140?1201710-003-------------------------------0---101?1110010?0--0------0-------------------------0------------0-----------------0---------
+	Mitrocystella       00121201001003200-00000----00------0-------00--0-0------------------------1001--0--------------------0-------0----------------0----------------????101?0?1010000--------------------10120-----0---------1111?11?110000?100?13-----100-00110?10---21-10010-----0----------------0-1040212000-0-003-------------------------------0---10101100010?0--0------0-------------------------0------------0-----------------0---------
+	Morenacrinus        2205010??00003100-002?0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????101????0?0?00--------------------11120-----121000200-0------------------0--------0-00101010--2---0---120000?????????????????0-1110021010-0-00014120312000010000-----------1110---0---------------------101111-10-02000?----------0------------0-----------------0---------
+	Moroccodiscus       2005?001100000000-0000???--00------0-------00--0-0------------------------1111111010-------2001-1000010?0?1-000--------0------0----------------11??1????0?????010000200-------------0--------------------------------------1-0------0-00??????????????????????0----------------110------------------------------------------------------------------------100114---------63211111110-------------0-----------------0---------
+	Myeinocystites      20111101001003100-0000-----10------0-------00--?-0------------------------1001--0--------------------0-------0----------------0----------------????10120?-000000--------------------10120-----160--001-00------------------0--------0-0011??10--210110100-----0----------------0-112012200100-003-------------------------------0---1?10010000000--0------100104---------4----------1000??1???0?00-----------------0---------
+	Nelegerocystis      10?10201000113100-00000----10------0-------00--0-0------------------------1110001?010?-1-?-220?11--000------------------------0----------------????????????????0--------------------0--------------------------------------??-----??0--011100111201-1???0-----0----------------0-1140221000-0--01----------------0--------------10001010220000000--10?0??20-------------------------0------------0-----------------0---------
+	Neoarchaeocrinus    2205020??00002100-00??0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10???????????????????????????????11120-----131001?1-00------------------0--------0-0010--------------------1?1??????????????0-11102210?0-0-1024412050000000000112321011011---0---0---------------------100101-?0-0200??----------0------------0-----------------0---------
+	Nevadaecystis       0010?201001003200-00000----00------0-------00--0-0------------------------1001--0--------------------0-------0----------------0----------------????10110?10?0000--------------------10120-----0---------1??1?110011000?100?13-----100-00?????0--????????0-----0----------------0-114022301910-003-------------------------------0---1?101010000????0------0-------------------------0------------0-----------------0---------
+	Nicholsodiscus      20050200000001000-00001?0---0------0-------00--?-0------------------------1??1111020-------000--??000100100-000--------0------0----------------????10??????????1?0???0??00----------0--------------------------------------0--------??00?????0--????????0-----0----------------1?0------------------------------------------------------------------------100114---------6120111?00--------------0-----------------0---------
+	Nolichuckia         220??00??0?003100-00???????00------0-------00--0-0----????????????????????1?????10????????????????000????????00--------0------0----------------????1012???0?0?00--------------------1??11200010---------0------------------0--------0--0????????????????0-----0----------------0-110022200411000?-------------------------------0---0---------------------100100?--------?----------0------------0-----------------0---------
+	Ohiocrinus          2205010???0003100-00000----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----121111200-0------------------0--------??001010?0--2---0---1200400----------------0-1110010010-0-0002412031100000000101010------0--0---0---------------------100111-?1002000?----------0------------0-----------------0---------
+	Oklahomacystis      22030100100012100-00010--1000------0-------00--0-0----200110111--1-10?120010100110010?-?-??20122100001011211000--------0------0----------------????10??????????0--------------------11011?2???0---------0------------------100------0-00111210--20--????0-----0----------------0-110022204910--03-------------------------------0---0---------------------1???????????????----------0------------0-----------------0---------
+	Ophioxenikos        0015?000000001100-0000100-0-0------0-------00--?-0------------------------1001111000-------22----0-00101011-001011?110010010000----------------0---0-----------11001?00-------------0--------------------------------------0--------??0?????????????????0-----0----------------0-0------------------------------------------------------------------------0--------------------------------------11100101????0---0-0---------
+	Ortsaecrinus        2205020??00002100-003?0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----130--1?01-0------------------0--------0-0010--------------------?????????????????0-111022111900-1023412000200000000112311011000---0---0---------------------100101-0100?000?----------0------------0-----------------0---------
+	Othneiocrinus       2205010??00003100-00??0--??-0------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10???????????????????????????????10120-----121011201-0------------------0--------0-001010?0--?---0---1?????0--------0-------0-1110021010-0-00014120301120000100-----------0--0---0---------------------100111-10-0000??----------0------------0-----------------0---------
+	Ottawacrinus        2215010???0003100-000?0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10110?0100?00--------------------11120-----121201200-0------------------0--------??001010?0--2---0---1000000----------------0-1110020000-0-0001412030100000000102100--10-01110---0---------------------100101-?0-1200??----------0------------0-----------------0---------
+	Pahvanticystis      201?1000001013100-00000----10------0-------00--0-0------------------------1001--0--------------------0-------0----------------0----------------????101????0?0?00--------------------1?130-----160--001-20------------------0--------0-00110-10---2--11?10-----0----------------0-1100212010-0-003-------------------------------0---0---------------------0-------------------------100010???0?100-----------------0---------
+	Palaeaster          0015?000000001000-00000-----0------0-------10--0-0------------------------1001111000-------320---0-00101100-001110011000------0----------------0---11120-00-0--110113011110---------0--------------------------------------0--------1000??????????????????????0----------------0-0------------------------------------------------------------------------0--------------------------------------1011011110000---0-0---------
+	Palaeocrinus        22050100000002100-00010--1000------0-------00--0-0----30010102222--01122001111110--------------------0-------0----------------0----------------100010?1?11?10?00--------------------11120-----1211?0100-0------------------13-----0-0-00101010--2---11100-----0----------------0-111002201900-0001412031201-010000-----------1100---0---------------------100101-10-00000?----------0------------0-----------------0---------
+	Palaeura            0015?200000001100-0000110---0------0-------10--0-0------------------------1001110--------------------101111-001000110000--10110----------------0---0-----------0--------------------0--------------------------------------0--------10010--?------------------0----------------0-0------------------------------------------------------------------------0--------------------------------------120?100??0000---100---------
+	Palaeocucumaria     10151011100003000-00000----00------0-------0110101??0?--------------------1001110--------------------0-------0----------------0----------------0---0-----------0--------------------0--------------------------------------0--------1000120-?0------????0-----0----------------0-0------------------------------------------------------------------------0--------------------------------------0-----------------100001??00
+	Parachaeocrinus     22050200100002100-00300-----0------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------1?1?111???1?-0--0--------------------11120-----13100121-10------------------0----------0010--------------------1?10?11110-21?0120-111023200900--2044???50100000000112221011011---0---0---------------------100101-?100200??----------0------------0-----------------0---------
+	Paracremacrinus     12020100000003100-00000----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10020??0?0000--------------------11120-----111200202-0------------------0----------001010?0--2---0---1??1?00----------------0-1110024010-0-01103102306120111--0-----------0--0---0---------------------101101-?0-020001----------0------------0-----------------0---------
+	Paradiabolocrinus   2205010??00002100-00??0--???0------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10???????????????????????????????11120-----130--1102-0------------------0--------0-00?0???0--?---???????????????????????????0-111023101900-22044???50111000010102311011111---0---0---------------------100101-010000???----------0------------0-----------------0---------
+	Parasphaeronites    22040200001003100-00010--1000------0-------00--0-0----?001101??????2??100010001110111?-????00010-?00000------0----------------0----------------?????????????????????????????????????11211?1???0---------0------------------11100----0-00111010---0--????0-----0----------------0-110?2?2?10-0-??3-------------------------------0---0---------------------110114---------?----------0------------0-----------------0---------
+	Paredriophus        21050201102000000-00001?0---0------0-------00--?-0------------------------1111111000-------300--0000010?0?1-000--------0------0----------------100010120020100011101200-------------0--------------------------------------0--------??001????0--?---????0-----0----------------0-0------------------------------------------------------------------------1000000--------5-----------------------0-----------------0---------
+	Pareocrinus         220?010?1?0003100-00??????0?0------0-------00--?-0----????????????????????1?????1??????????????????00????????00--------0------0----------------????????????????0--------------------1??012100?0---------0------------------0--------0--0????????????????0-----0----------------0-11000120?0-0--00-------------------------------0---0---------------------100101-?0-?000??----------0------------0-----------------0---------
+	Parisocrinus        22051100000003100-00000----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----121100200-0------------------0--------0-001010?0--2---0---1??1000----------------0-1110021010-0-00204420312100010--0-----------1010---0---------------------100101-1100200??----------0------------0-----------------0---------
+	Peltacrinus         2205010???0003100-00000----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10100??000000--------------------11120-----121000200-0------------------0----------001000?0--2---0---1??1?00----------------0-111002001900-00004020322100010--0-----------0--0---0---------------------100101-1100200??----------0------------0-----------------0---------
+	Pembrocystis        1012?20110010210101?000----00------0-------00--0-0------------------------??????0--------------------0-------0----------------0----------------0---0-----------0--------------------0--------------------------------------0--------0-00?????0--????????0-----0----------------0-1140212110-0-104-------------------------------0---1?112201100000-0------0-------------------------0------------0-----------------0---------
+	Penicillicrinus     2205010???0003100-00000----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----1211?0200-0------------------0----------001010?0--2---0---1?????0----------------0-1110020010-0-0001412131100000010101000--0---1010---0---------------------100101-00-00000?----------0------------0-----------------0---------
+	Peniculocrinus      22050100000003100-00000----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----121010200-0------------------0--------0-001010?0--2---0---1?01000----------------0-1110120000-0-0103413030100000000101010--0---1020---0---------------------100011-?102000??----------0------------0-----------------0---------
+	Pentamerocrinus     2?050100?00003100-00000----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----12?????00-0------------------0--------0-001010?0--0---0---1?????0----------------0-1110031010-0-21204040341110110--0-----------1010---0---------------------1001?1-?????????----------0------------0-----------------0---------
+	Periglyptocrinus    22050100000002100-003?0--??00------0-------00--0-0----????????????????????1111110--------------------0-------0----------------0----------------111011110010-0--?????????????????????11120-----130--121-00------------------0--------0-00?????????---??????????1?1001211????????0-111022101900-1000402051?12000010111021011111---0---0---------------------100?01-?????????----------0------------0-----------------0---------
+	Persiadiskos        20020001000001000-0000???---0------0-------00--?-0------------------------1111111010-------220--?0000101??0-000--------0------0----------------110?10101011?01010200000-------------0--------------------------------------0--------0-001010?0--1---100?0-----0----------------0-0------------------------------------------------------------------------110014---------6300110-----------------0-----------------0---------
+	Petalocystites      22000100001003100-00010--1000------0-------00--?-0----?110000????0-1?100001110000--------------------10????0000--------0------0----------------????????????????0--------------------11411210010---------0------------------0--------??00111100---010???10-----0----------------0-112001200310-003-------------------------------0---1010000000000--0------101101-?0-0000??----------0------------0-----------------0---------
+	Phragmactis         0015?200000001100-000111010-0------0-------00--0-0----31112000000--00112001001111000-------1001--0-00101111-00100000---0------0----------------0---????????????0--------------------0--------------------------------------0--------1000??????????????????????0----------------0-0------------------------------------------------------------------------0--------------------------------------10??????????11?00-0---------
+	Phyrtosaster        0015?200000001100-000111000-0------0-------00--0-0----30112011111--00100001001111000-------2001--0-00101111-001110011?00------0----------------0---1???????????0--------------------0--------------------------------------0--------??01??????????????????????0----------------0-0------------------------------------------------------------------------0--------------------------------------101111012???10100-0---------
+	Picassocrinus       2205010??00002100-00??0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----121000200-0------------------0--------0-0010???0--???????????????????????????????0-1110021010-0-00012120312000010000-----------1200---0---------------------100101-0100200??----------0------------0-----------------0---------
+	Pirocystella        22050100001003100-00010--1000------0-------00--0-0----51100001?112121-10001111111010-------100--000001010210000--------0------0----------------1?0?10110?0010000--------------------10011110010---------0------------------12---0---0-00111120---1--11110-----0----------------0-111002201900--0423031403120120110--------------0---0---------------------100101-011020010----------0------------0-----------------0---------
+	Plasiacystis        2?111000001023100-00000----10------0-------00--?-0------------------------1001--0--------------------0-------0----------------0----------------????1111??-0?0?00--------------------1?120-----160--00???0------------------0--------??00110-00---2--100?0-----0----------------0-1101212000-0-000-------------------------------0---0---------------------0-------------------------100101??11?000-----------------0---------
+	Platycystites       22021101200113100-00010--1000------0-------00--?-0----2000101-1--112-110001110001000-------10122100001001111000--------0------0----------------????10100?1??0000--------------------11011??0000---------0------------------0--------0-00111010--20--10110-----0----------------0-112002201310-000-------------------------------0---100-010000000--0------101101-?100?000?----------0------------0-----------------0---------
+	Plethoschisma       10?20100001103100-00010--1000------0-------00--0-0----1011001--0-1-1-301001110000--------------------1000?10000--------0------0----------------11001011000000000--------------------11011200010---------0------------------12---1---??00111020---1--11100-----0----------------0-112002211800--03-------------------------------0---100-----0000----------100101-?11020010----------0------------0-----------------0---------
+	Pleurocystites      10121201001103100-00110--1000------0-------00--?-0----2000201--1-102-110001110000--------------------1001110000--------0------0----------------110?10100??1?0?00--------------------10011200000---------0------------------12---1---0-00111020--211011110-----0----------------0-111002201900-00323022114100110120--------------0---1010010000000--0------100101-021020010----------0------------0-----------------0---------
+	Plicodendrocrinus   2205110???0002000-000?0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10110?0000000--------------------11120-----121001200-0------------------0--------??00101020--2---0---1100200----------------0-111002001900-00214120313110010100-----------1210---0---------------------100101-01012000?----------0------------0-----------------0---------
+	Pogonipocrinus      2205010???0003100-00000----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10110?0000?00--------------------11120-----121000200-0------------------0--------??001010?0--2---0---1200000----------------0-111002001200-1021412030100000000101000--0---???0---0---------------------100101-010020???----------0------------0-----------------0---------
+	Polyplacus          1100?001000010000-00001??---0------0-------00--0-0------------------------1111000--------------------1?1021-000--------0------0----------------????11120?11-0--11011310-------------0--------------------------------------0--------0-00?????????---????0-----0----------------0-0------------------------------------------------------------------------???????--------?-----------------------0-----------------0---------
+	Ponticulocarpus     0010?200001003200-00000----00------0-------00--0-0------------------------1001--0--------------------0-------0----------------0----------------????10120?10?0?00--------------------10120-----0---------1??221?0010001?000?13-----100-00?????0--????????0-----0----------------0-1140221010-00003-------------------------------0---1?102000001?1000------0-------------------------0------------0-----------------0---------
+	Porocrinus          22050101000002100-00010--1000------0-------00--?-0----30011011111--00120001111110--------------------0-------0----------------0----------------1001100??10?00?00--------------------11120-----120--0100-0------------------132--0-0---00101010--2---1???0-----0----------------0-111002101900-0021412031311-010100-----------1010---0---------------------100101-00-22001?----------0------------0-----------------0---------
+	Porosothyone        00151010000003100-00000----00------0-------012?0?10000--------------------1??1110--------------------0-------0----------------0----------------0---0-----------0--------------------0--------------------------------------0--------0-00120??0------????0-----0----------------0-0------------------------------------------------------------------------0--------------------------------------0-----------------1000000000
+	Porosublastus       2105010110?000100-000111?0000------0-------00--0-0----30012?11111--00123001111111000-------12020000001010200100--------0------0----------------10001010001010100--------------------0--------------------------------------0----------00??????????????????????0----------------0-111003000610-00?0?????02??0?10--0-----------0--0---0---------------------0-------------------------0------------0-----------------0---------
+	Praecupulocrinus    2205010???0003100-00??0--???0------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10100?00?010????????????---------11120-----121100200-0------------------0--------????1010?0--2---0---120100?????????????????0-1110021010-0-00014020314100010000-----------1210---0---------------------100101-01000001?----------0------------0-----------------0---------
+	Praecursoricrinus   2205010???0002100-00000----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----121000?00-0------------------0--------0-001010?0--2---0---1?????0----------------0-1110021010-0-00204220312120010--0-----------1010---0---------------------100101-?1022001?----------0------------0-----------------0---------
+	Praepleurocystis    10020100001103100-00010--1000------0-------00--0-0----2011000--2-112-110001110001000-------20010000001011210000--------0------0----------------11001012001010000--------------------10011?00010---------0------------------12---1---0-00111020---?101???0-----0----------------0-111022011901100323121313110120100--------------0---1010210000000--0------100101-011020010----------0------------0-----------------0---------
+	Proanisocrinus      2205020???0002100-00???????00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----131000100-0------------------0--------??0010???0--2---0---1?????0----------------0-111012101100--0032032302000000001021110110001210---0---------------------100101-?0-020???----------0------------0-----------------0---------
+	Proexenocrinus      2205010???0002100-003??????00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------1???1???????????0--------------------11120-----130--1202-0------------------0--------??0010--------------------1?100???00-2100010-111022101110--124402052200000000112311011101---0---0---------------------100101-?0-0?????----------0------------0-----------------0---------
+	Progyrocystis       10?20201001113100-00000----10------0-------00--0-0------------------------11000-1?010--1---020?0---000------------------------0----------------1???1???????????0--------------------0--------------------------------------???---0??0-0011??0100-01-1???0-----0----------------0-114022201000-004-------------------------------10001010220100000--1??????0-------------------------0------------0-----------------0---------
+	Promopalaeaster     0015?000000001000-0000???---0------0-------00--0-0------------------------1001111000-------320---0-00101100-001011000--0------0----------------0---11110-01-1--110113011110---------0--------------------------------------0--------1000??????????????????????0----------------0-0------------------------------------------------------------------------0--------------------------------------1011010130?00---0-0---------
+	Protaster           0015?000000001000-0000110---0------0-------00--0-0------------------------1001111000-------320---0-00101100-001110000--0------0----------------0---11110-00-0--111113011110---------0--------------------------------------0--------1000??????????????????????0----------------0-0------------------------------------------------------------------------0--------------------------------------1111011111?010000-0---------
+	Protasterina        0015?000002001000-0000???---0------0-------?0--0-0------------------------1001111000-------200---0-00101111-00111??00--0--10100----------------0---????????????11001300-------------0--------------------------------------0--------??000---------------------0----------------0-0------------------------------------------------------------------------0--------------------------------------1210000110000---100---------
+	Protaxocrinus       2205010???0002200-00??0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----121000100-0------------------0--------??001010?0--2---0---1100100----------------0-1110120000-0-0002202130100000010102300--10--1110---0---------------------100101-?0-0000??----------0------------0-----------------0---------
+	Protocinctus        10?2?201000113100-00000----10------0-------00--0-0------------------------1010-01?010--1---22010---000------------------------0----------------11??1?0??01??0?00--------------------0--------------------------------------0--------0--0?????100????????0-----0----------------0-1140212010-0--0?----------------0--------------10001010210000000--1210?020-------------------------0------------0-----------------0---------
+	Protocrinites       22050201100002100-00010--1000------0-------00--?-0----5001100002?0221112001111111010-------10112000000-------0----------------0----------------11001012001010000--------------------11111120010---------0------------------111000---0-00111010---2--10010-----0----------------0-113021201110-0000001---------0---0-------------10010---------------------100101-?100200??----------0------------0-----------------0---------
+	Protocystites       00101201001003200-00000----00------0-------00--0-0------------------------1001--0--------------------0-------0----------------0----------------????10120?1010000--------------------10120-----0---------110200-0110000000010--------0-00110?10---21-10100-----0----------------0-1140223110-0-104-------------------------------0---1?100000011?1100------0-------------------------0------------0-----------------0---------
+	Protorophus         20050001000000000-00010--10-0------0-------00--?-0----511110?2121??21??0001111111000-------220--0000010011?-000--------0------0----------------1?0?10????1??0?010100200-------------0--------------------------------------0--------0-00101000--0---10110-----0----------------0-0------------------------------------------------------------------------100024---------6320110-----------------0-----------------0---------
+	Pseudedriophus      21050201002000010-0001????0-0------0-------00--?-0----40111???1???-11302?01111111000-------300--000001011210000--------0------0----------------110010000012000010100200-------------0--------------------------------------0--------0-00101010--1---10?00-----0----------------0-0------------------------------------------------------------------------1000000--------5-----------------------0-----------------0---------
+	Ptychocrinus        2205020???0002100-003?0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----130--1102-0------------------0--------??0010--------------------1?100????????????0-111021101900-212440?052100000000112111011111---0---0---------------------100101-???0?0???----------0------------0-----------------0---------
+	Putilovocrinus      2?050100000003100-00000----00------0-------00--0-0------------------------1001110--------------------?????????????????????????0----------------????10??????????0--------------------11120-----12????????0------------------0--------0-00?????0--??????????????0----------------0-1110020010-0-00004230312000010--0-----------0--0---0---------------------100101-?????????----------0------------0-----------------0---------
+	Pycnocrinus         22050201000002100-003?0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------1110110?????-0--0--------------------11120-----131001102-0------------------0----------0010--------------------1?100?1??????????0-111022101900-2004402050100000000111021011111---0---0---------------------100101-010020003----------0------------0-----------------0---------
+	Quadrocystis        22050101100002100-00010--1000------0-------00--0-0----510100222220221322101111111010-------22100000001011010000--------0------0----------------10001011000010000--------------------10011?1???0---------0------------------12---1---0-00111120---1--????0-----0----------------0-111001201901020423031415111120110--------------0---0---------------------100101-01100001?----------0------------0-----------------0---------
+	Quechuacrinus       22050201?00002100-00??0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------1???1???????????0--------------------11120-----131000?00-0------------------10-------0-0010--------------------1?100????0-21?1??0-1110211010-0-0024412051100000000112321011101---0---0---------------------100101-11012001?----------0------------0-----------------0---------
+	Quinquecaudex       22050100000002100-00???????00------0-------00--?-0----????????????????????1??1110--------------------0-------0----------------0----------------????10111??0?0100--------------------11120-----121000200-0------------------0--------??001010?0--?---0---1100000----------------0-1110020010-0-0001412031200-010000-----------1210---0---------------------100101-10-120001----------0------------0-----------------0---------
+	Ramseyocrinus       2204010??00003100-00000----00------0-------00--0-0------------------------1??1010--------------------0-------0----------------0----------------????10??????????0--------------------11120-----111000200-0------------------0--------0-001010?0--2---0---1??1?00----------------0-1110020010-0-00102021211100010--0-----------1000---0---------------------100111-20-320003----------0------------0-----------------0---------
+	Reteocrinus         22050201?00002100-00300----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------1?1?110?????-0--0--------------------11120-----131110100-0------------------0----------0010--------------------10100???30-2100020-111022101900-2004401030200000000112111011102---0---0---------------------100101-310020012----------0------------0-----------------0---------
+	Reticulocarpos      0011?200001003200-00000----00------0-------00--0-0------------------------1001--0--------------------0-------0----------------0----------------????????????????0--------------------1?120-----0---------1??1?10001110000000??-----??0-00??????????????????????0----------------0-114?112?0700-???-------------------------------0---101100000?1????0------0-------------------------0------------0-----------------0---------
+	Rhaphanocrinus      2205020???0002100-003?0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----140--1100-0------------------0--------??0010--------------------1????????????????0-111012101900-1124????50100000000112321111111---0---0---------------------100101-?1002000?----------0------------0-----------------0---------
+	Rhenopyrgus         22050201100001110-0001????0-0------0-------00--?-0----31011011111--00100001111111100-------200--000001010?0-000--------0------0----------------10001012022010100--------------------0--------------------------------------0--------0-00101000--2---11?10-----0----------------0-0------------------------------------------------------------------------1000100--------5-----------------------0-----------------0---------
+	Rhipidocystis       22020200000103100-00000----10------0-------00--0-0------------------------111000101101-0-0-22010000000-------00--------0------0----------------10001012011001100--------------------12111?00000---------0------------------0--------0-001???????????????0-----0----------------0-1140101010-0-003-------------------------------0---1010000000000--0------100101-?????????----------0------------0-----------------0---------
+	Rhopalocystis       22050200000002100-00010--1000------0-------00--?-0----501010010010121100001111111010-------22110000001001110000--------0------0----------------10011012000000000--------------------11011110010---------0------------------100------??00111000---0--11100-----0----------------0-1110111010-0-0004001-31200000000102320--10-1---0---0---------------------100101-?0-00001?----------0------------0-----------------0---------
+	Ridersia            22050100000003100-00010--1000------0-------00--0-0----?1011??1001???112?001111111000-------20020000001???????00--------0------0----------------110010120110?0000--------------------10011?00010---------0------------------0--------0--0101010--0---11000-----0----------------0-111001201900-00?14220312000010120--------------0---0---------------------100101-01102001?----------0------------0-----------------0---------
+	Ristnacrinus        2205010???0003100-00?00----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10???????0?00--------------------11120-----121000200-0------------------0--------0-001010?0--2---0---1?????0----------------0-1110030010-0-01004110321010010--0-----------1010---0---------------------100111-01002000?----------0------------0-----------------0---------
+	Rosfacrinus         22050201000002100-003?0--??00------0-------00--0-0----????????????????????1111110--------------------0-------0----------------0----------------111011010020-0--0--------------------11120-----140--1?01-0------------------0--------0-0010--------------------1?10012010-0101200-1110211010-0-0024402050100000000102321111010---0---0---------------------100101-01-02001?----------0------------0-----------------0---------
+	Rotasaccus          0015?001?00001000-00000----01??????101?11100100100------------------------1001110--------------------100-21-001???0000-0------0----------------0---0-----------10000200-------------0--------------------------------------0--------10???????0--?---????0-----0----------------0-0------------------------------------------------------------------------0--------------------------------------0-----------------10?010-100
+	Rozanovicystis      10?1?200000112100-00000----10------0-------00--0-0------------------------1110001?00-------2201200-000------------------------0----------------????????????????0--------------------0--------------------------------------???---0??0--0?????121???-????0-----0----------------0-1140221000-0--0?----------------0--------------10001010220000000--???????0-------------------------0------------0-----------------0---------
+	Sanducystis         22040100000003100-00010--1000------0-------00--0-0----5101001100?2021302001110111000-------200000?00010???10000--------0------0----------------110010?20????0?00--------------------1?011100010---------0------------------0--------0--0111010--00--11110-----0----------------0-111000201901020013221312110010100-----------???0---0---------------------100101-01102001?----------0------------0-----------------0---------
+	Scalenocystis       20101100001013100-00000----10------0-------00--0-0------------------------1001000--------------------0-------0----------------0----------------0---10111?00?0100--------------------1?120-----160--001-00------------------0--------0-0011??20---2101???0-----0----------------0-112022201210-003-------------------------------0---1010020000000--0------0-------------------------1000111?110000-----------------0---------
+	Schuchertia         0015?000000001000-0000???---0------0-------10--0-0------------------------1001111000-------320---0-00101100-0010100????0------0----------------0---11120-00-0--1101130?????---------0--------------------------------------0--------??00??????????????????????0----------------0-0------------------------------------------------------------------------0--------------------------------------1110010110000---0-0---------
+	Schuchertocystis    2203??01101013100-00010--1000------0-------00--0-0----500000?1111??20310001110010--------------------0-------0----------------0----------------????????????????0--------------------10211?0???0---------0------------------13-----0-0-00??????????????????????0----------------0-110012201900-000----------------------------0--0---0---------------------100?????????????----------0------------0-----------------0---------
+	Scotiaecystis       00101200001003200-0000-----00------0-------00--?-0------------------------1001--0--------------------0-------0----------------0----------------100-1011000010000--------------------10120-----0---------100010000100000000113-----11??0011--00---200????0-----0----------------0-1140230010-0-014-------------------------------0---1-10220000101100------0-------------------------0------------0-----------------0---------
+	cf._Scotiaecystis   00101200001003200-00000----00------0-------00--0-0------------------------1001--0--------------------0-------0----------------0----------------????????????????0--------------------10120-----0---------1??2?1?00100???????13-----110-0011??10---00-1??00-----0----------------0-1040222100-0-103-------------------------------0---1?102200001????0------0-------------------------0------------0-----------------0---------
+	Serendipocrinus     22050100000002100-00010--1000------0-------00--0-0----3001?00?111--00110001001110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----1210?0?00-0------------------0--------0-00101000--0---0---1??1?00----------------0-1110021010-0-00004020302110010--0-----------1010---0---------------------100111-?100100??----------0------------0-----------------0---------
+	Siluraster          0015?100000001100-000111000-0------0-------00--0-0----31111011111--00110001001111000-------2001--0-00101011-001??0?000-0------0----------------0---11100?0000000--------------------0--------------------------------------0--------??0???????????????????????0----------------0-0------------------------------------------------------------------------0--------------------------------------10??????????1???0-0---------
+	Simplococrinus      2105020???0002100-003?0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------00---------------0----------------????10???????????????????????????????11120-----140--1102-0------------------0--------??0010--------------------1????????????????0-111022111900-1224411050100001000112331301111---0---0---------------------100101-?????????----------0------------0-----------------0---------
+	Sinclairocystis     22020201101013100-00010--1000------0-------00--0-0----2001001--2-??2-22200111000100100-0-0-201221?0001011111000--------0------0----------------????????????????0--------------------11011?????0---------0------------------100------0-00111010---0--????0-----0----------------0-110012204a00--03-------------------------------0---0---------------------1???????????????----------0------------0-----------------0---------
+	Sinoeocrinus        22050000001003100-0000100--00------0-------00--?-0------------------------1111111000-------10010000001011100000--------0------0----------------????10110?0000000--------------------1?011200010---------0------------------10-------??00111?10---0--11000-----0----------------0-110022201110-000-------------------------------0---0---------------------1101001--------4----------0------------0-----------------0---------
+	Sokkaejaecystis     00111200101003200-0000-----00------0-------00--?-0------------------------1001--0--------------------0-------0----------------0----------------100-10???2?????00--------------------10120-----0---------1??22100010001000120--------0-00110-20---2100---0-----0----------------0-114122400210-011----------------------------0--------102010001?13?0------0-------------------------0------------0-----------------0---------
+	Sphaeronites        21050001001003100000010--1000------0-------00--0-0----401111001122-0032000111111111101011-00001000-000-------0----------------0----------------100?????????????0--------------------11211?1???0---------0------------------11-01----0-00101010--0---1???0-----0----------------0-1100222110-0-203-------------------------------0---0---------------------110114---------2----------0------------0-----------------0---------
+	Sprinkleocystis     22040100101003100-00010--1?00------0-------00--0-0----50010011110012112??01110111000-------2001000000101??10000--------0------0----------------100010???????0?00--------------------1?011?0???0---------0------------------12---1---0-00111120---1--????0-----0----------------0-111001301111020223121426110220110-----------0--0---0---------------------100101-?110?0???----------0------------0-----------------0---------
+	Stenaster           0015?000000001000-0000???---0------0-------10--0-0------------------------1001111000-------330---0-00101100-001011000--0------0----------------0---111??-0?-?--1111130100-----------0--------------------------------------0--------??00??????????????????????0----------------0-0------------------------------------------------------------------------0--------------------------------------101111011???0---0-0---------
+	Stibaraster         0015?000000001100-000110000-0------0-------00--?-0----30111222222--00100001001111000-------230--00-00101101-001111111010010---0----------------0---0-----------0--------------------0--------------------------------------0--------??00?????????---0---0-----0----------------0-0------------------------------------------------------------------------0--------------------------------------101001111??011100-0---------
+	Stichocystis        22040100001003100-00010--1000------0-------00--0-0----501110120101121302001110111000-------21010000000-------00--------0------0----------------10011012000100000--------------------10211?0???0---------0------------------10-------0---111010---1--10100-----0----------------0-1110221?1900-?0???1?0?131101201?0--------------0---0---------------------100101-?????????----------0------------0-----------------0---------
+	Strabocystis        22020100000002100-00010101000------0-------00--?-0----511110222222221100101111111010-------10010000001011210000--------0------0----------------11001001?00?00100--------------------10011?1???0---------0------------------12---0---0-00111110--21--11110-----0----------------0-111011201901020423031411120220110--------------0---0---------------------100101-0110200??----------0------------0-----------------0---------
+	Streptaster         20050000000000000-0000100---0------0-------00--?-0------------------------10111110011011111100--10100100010-000--------0------0----------------100?10120120200011101200-------------0--------------------------------------0--------??00101000--1---11110-----0----------------0-0------------------------------------------------------------------------1000100--------6301010000--------------0-----------------0---------
+	Stromatocystites    20050001000001000-0000100---0------0-------00--?-0------------------------11111110010101110000--00000101001-000--------0------0----------------11001001?012102011200200-------------0--------------------------------------1-0------0-001010?0--2---10?10-----0----------------0-0------------------------------------------------------------------------100114---------5-----------------------0-----------------0---------
+	Sucocystis          10?10201001113100-00000----10------0-------00--0-0------------------------11000-1?010--1---10000---000------------------------0----------------11?01011?0?2?0000--------------------0--------------------------------------???---0??0-0011??0100001-10000-----0----------------0-1140221010-0-004-------------------------------10001010220000000--11111100-------------------------0------------0-----------------0---------
+	Swataria            0015?201000001100-000111001-0------0-------00--0-0----30102011111--00220001001111000-------2001--0-00101111-00100?100--0------0----------------0---????????????0--------------------0--------------------------------------0--------1000??????????????????????0----------------0-0------------------------------------------------------------------------0--------------------------------------1000110120000---0-0---------
+	Sygcaulocrinus      2205010??00002100-00?00----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----121300200-0------------------0--------0-0010?0?0--?---0---???????????????????????0-1110020010-0-00004220311110010--0-----------1010---0---------------------110111-01000101?----------0------------0-----------------0---------
+	Syringocrinus       20111201001023100-0000-----10------0-------00--?-0------------------------1001--0--------------------0-------0----------------0----------------????10120--000000--------------------11120-----160--001-00------------------0--------??0011???0---2100---0-----0----------------0-1140212010-0-003-------------------------------0---1?11110000000--0------0-------------------------10001010010100-----------------0---------
+	Taeniaster          0015?000002001000-0000???---0------0-------00--0-0------------------------1001111000-------200---0-00101111-001111?00--0--11100----------------0---????????????11001300-------------0--------------------------------------0--------10000---------------------0----------------0-0------------------------------------------------------------------------0--------------------------------------1210000110000---10----------
+	Tatonkacystis       2205?000001003000-00???????00------0-------00--0-0----????????????????????1??1111000-------????0??000????????00--------0------0----------------????10110??0???00--------------------1??20-----120--121-00------------------0--------0--0????????????????0-----0----------------0-112021201900-000-------------------------------0---0---------------------100101-00-00001?----------0------------0-----------------0---------
+	Tenuicrinus         2105010??00002100-00000----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----12?????00-0------------------0--------0-0010?0?0--?---0---???????????????????????0-1110011010-0-00004320332110010--0-----------1010---0---------------------100111-11020000?----------0------------0-----------------0---------
+	Tetragonocrinus     2203010??02003100-00000----00------0-------00--0-0------------------------1111000--------------------0-------0----------------0----------------????10??????????0--------------------12120-----101110200-0------------------0--------0-0010???0--?---??????????0----------------0-1110030010-0-004?3141-----0-----0-----------0--0---0---------------------100111-20-320002----------0------------0-----------------0---------
+	Tetreucystis        21040100001003100-00010--1000------0-------00--0-0----501110212110020?00001000110--------------------0-------0----------------0----------------????????????????0--------------------11211?1???0---------0------------------11101----0-00101010--20--????0-----0----------------0-111001200310-2040612?512110110--0--------------0---0---------------------0-------------------------0------------0-----------------0---------
+	Tholocystis         22050001101003100--0010--1000------0-------00--0-0----30112022222--001???01001111000-------??010-00000-------0----------------0----------------1?01????????????0--------------------11211?2???0---------0------------------11-00----0-00101000--20--10110-----0----------------0-11302220?????200-----300000-----0--------------0---0---------------------110114---------?----------0------------0-----------------0---------
+	Thresherodiscus     20020001000000100-0000100---0------0-------00--?-0------------------------1111111020-------100--00000100110-000--------0------0----------------110010010011101010100000-------------0--------------------------------------1-0------0-00101010--1---10000-----0----------------0-0------------------------------------------------------------------------100------------6210110000--------------0-----------------0---------
+	Titanocrinus        22050001100002100-003?0--??00------0-------00--0-0----????????????????????1??1110--------------------1010100000--------0------0----------------1?1?10110?10?0000--------------------11120-----1?1110100-0------------------0--------0-0010--------------------1?100?0030000----0-110120101910-000----------------11-33101101?---0---0---------------------100101-10-02001?----------0------------0-----------------0---------
+	Tornatilicrinus     2205010??00002100-00????????0------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10???????????????????????????????11120-----121400200-0------------------0--------0-001010?0--2---0---1??100?????????????????0-1110021010-0-0001402030110000000101000--0---1020---0---------------------100101-10-20001?----------0------------0-----------------0---------
+	Totiglobus          21050001202000000-00010--11-0------0-------00--?-0----501110011111021310001111111000-------300--00000101001-000--------0------0----------------110?10120011102010200200-------------0--------------------------------------0--------0-00101000--2---10010-----0----------------0-0------------------------------------------------------------------------100004---------5-----------------------0-----------------0---------
+	Trachelocrinus      2203??01201003100-000??????00------0-------00--0-0----????????????????????1?????0--------------------0-------0----------------0----------------????????????????0--------------------1??20-----120--121-00------------------0--------0-00??????????????????????0----------------0-1100222?00-0-00?----------------------------0--0---0---------------------100101-?1002000?----------0------------0-----------------0---------
+	Triboloporus        22050100000002100-00010--1000------0-------00--0-0----401110022220-10121001111110--------------------0-------0----------------0----------------100?1???????????0--------------------11120-----12????????0------------------13-----0-0-00101010--20--1???0-----0----------------0-111002201900-20214020313100010000-----------1110---0---------------------100101-?100?001?----------0------------0-----------------0---------
+	Trichinocrinus      2105010??00002100-003?0--???0------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----141311101-0------------------0--------??0010????????--???????????????????????????0-111022111110-22044???52100000001112321101101???0---0---------------------100101-01022000?----------0------------0-----------------0---------
+	Tripatocrinus       22030101200001100-00010--1000------0-------00--0-0----501111222222120110001111001000-------2010200000????????0????????????????0----------------????10??????????0--------------------0--------------------------------------0--------0-00101010--0---??????????0----------------0-111001201111000004220326121010--0-----------11010000---------------------100?01-?????????----------0------------0-----------------0---------
+	Trochocystites      10?10201000113100-00000----10------0-------00--0-0------------------------1110001?00-------100010--000------------------------0----------------????????????????0--------------------0--------------------------------------10----0--0-00?????1?????-????0-----0----------------0-1140221013?0-004-------------------------------10001010220000000--11001010-------------------------0------------0-----------------0---------
+	Trochocystoides     10?1?201000113100-00000----10------0-------00--0-0------------------------1110001?00-------200210--000------------------------0----------------11??1?11?01?10?00--------------------0--------------------------------------??-----??0-00?????100????????0-----0----------------0-1140222010-0-004-------------------------------10001010220000000--1???0100-------------------------0------------0-----------------0---------
+	Tryssocrinus        2205010???0002100-00?0???--00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10???????????????????????????????11120-----121400200-0------------------0--------0-001010?0------0---10?100?????????????????0-1110010000-0-00004120314110010--0-----------1010---0---------------------110101-110020012----------0------------0-----------------0---------
+	Tunguskocrinus      2?05010??00003100-00?00----00------0-------00--0-0------------------------1??1110--------------------0-------0----------------0----------------????10???????????????????????????????11120-----121000200-0------------------0--------0-001010?0--2---0---1??100?????????????????0-1110021010-0-00204310301110010--0-----------1010---0---------------------????????????????----------0------------0-----------------0---------
+	Turbanicystis       210?0201001002?00-00????????0------0-------00--?-0----????????????????????1?????10?????????1???0??000????????00--------0------0----------------????????????????????????????---------1??111010?0---------0------------------100------0--0111??0---0--11010-----0----------------0-110122101300-000-------------------------------0---0---------------------100114---------5----------0------------0-----------------0---------
+	Ubaghsicystis       220?0100?01002100-000???????0------0-------00--?-0----????????????????????111???????????????????????0????????00--------0------0----------------????????????????0--------------------1??11?000?0---------0------------------10-------0--0????????????????0-----0----------------0-113012101300--00322?0??????220??0-----------0--0---0---------------------100101-?0-000002----------0------------0-----------------0---------
+	Undatacinctus       10?1?201100113100-00000----10------0-------00--0-0------------------------1110001?0101-0-1-220001?-000------------------------0----------------????????????????0--------------------0--------------------------------------??-----??0--0?????1?????-????0-----0----------------0-1140122010-0-201-------------------------------10001010220000000--1??????0-------------------------0------------0-----------------0---------
+	Unibothriocidaris   00151001100000000-00000-----1??????1???????00--0-0------------------------1001111000-------130--0--010-------0----------------111021101001000100---0-----------0--------------------0--------------------------------------0--------???0120-?0------0---0-----0----------------0-0------------------------------------------------------------------------0--------------------------------------0-----------------0---------
+	Urasterella         0015?000000001000-00000-----0------0-------00--0-0------------------------1001111000-------320---0-00101100-0011000000-0------0----------------0---11120-00-0--1101130111100--------0--------------------------------------0--------1000??????????????????????0----------------0-0------------------------------------------------------------------------0--------------------------------------1011010120000---0-0---------
+	Ursucrinus          2205020???0002100-00??0--??00------0-------00--0-0----????????????????????1??111?????????????????????0-------0----------------0----------------????10???????????????????????????????11120-----140--1?01-0------------------0--------0-00???????????????????????????????????????0-111022101900-12?4????502000000001123211111110--0---0---------------------100101-0100?00??----------0------------0-----------------0---------
+	Velieuxicystis      220?0100000003100-00?1????000------0-------00--0-0----??1????????????1????1?????1?????????????????000????????00--------0------0----------------????????????????0--------------------1???1?????0---------0------------------0--------0--0111??0---1--10100-----0----------------0-111000101900--002312??1???0?10??0--------------0---0---------------------100101-01101001?----------0------------0-----------------0---------
+	Villebrunaster      0015?000000001000-0000100---0------0-------10--0-0------------------------1001111000-------100---0-00101010-00111100---1100---0----------------0---0-----------11111300-------------0--------------------------------------0--------??00??????????????????????0----------------0-0------------------------------------------------------------------------0--------------------------------------10101?11000010000-0---------
+	Virucrinus          22040200000003100-00000----00------0-------00--0-0------------------------1??0110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----111000200-0------------------0--------0-001010?0--2---0---1??1000----------------0-1110020010-0-00013120213110000100-----------0--0---0---------------------100111-1100210??----------0------------0-----------------0---------
+	Visocrinus          2?05020??00002100-003?0--??00------0-------00--0-0----????????????????????1??1110--------------------0-------0----------------0----------------????10??????????0--------------------11120-----14????????0------------------0--------0-0010--------------------?????????????????0-11102?1000-0-0204412051100000000112321111010---0---0---------------------100101-?????????----------0------------0-----------------0---------
+	Vizcainocarpus      00101201001003200-00000----00------0-------00--0-0------------------------1001--0--------------------0-------0----------------0----------------????101??????0?00--------------------10120-----0---------10010100011210000000----------00110?10---21-10100-----0----------------0-114022202500-003-------------------------------0---1?10120000100--0------0-------------------------0------------0-----------------0---------
+	Vizcainoia          220?0100101003100-000???????0------0-------00--?-0----????????????????????1110000--------------------1???????00--------0------0----------------????10?1?????1??0--------------------1??11200000---------0------------------0--------0--01????0--??????????????0----------------0-11?10210190??-0?----------------------------???0---0---------------------110111-???00101?----------0------------0-----------------0---------
+	Vyscystis           210??001100002100-000??????00------0-------00--?-0----????????????????????1?????10?????????1???0??0001???????00--------0------0----------------1???101100?0?0000--------------------11011101000---------0------------------1-0------0--0????????????????0-----0----------------0-100021100??0--0?-------------------------------0---0---------------------110?00?--------5----------0------------0-----------------0---------
+	Walcottidiscus      2?05020??00000000-00001??---0------0-------00--?-0------------------------1111111?011101?11100--??0001?1???-000--------0------0----------------????10?????2?0?010200?00-------------0--------------------------------------0--------??001????0--?---????0-----0----------------0-0------------------------------------------------------------------------110114---------6300010-----------------0-----------------0---------
+	Waucobella          1100?001000010000-00001??--00------0-------00--0-0------------------------1111001?011100-1-20---000001?1121-000--------0------0----------------????1011010211101101131110--0--------0--------------------------------------0--------0-00?????????---????0-----0----------------0-0------------------------------------------------------------------------???????--------?-----------------------0-----------------0---------
+	Wellerocystis       22000101102011100-00010--1000------0-------00--0-0----?00000?122-???110000111001101111-0--13212100000????????00--------0------0----------------1???1???????????0--------------------10?1??????0---------0------------------0--------0-001???????????????0-----0----------------101130122000-0-00022232?161101201?0--------------0---0---------------------100101-?????????----------0------------0-----------------0---------
+	Willmanocystis      00121101001003200-00000----00------0-------00--0-0------------------------1001--0--------------------0-------0----------------0----------------????????????????0--------------------10120-----0---------1??0?11??1120??????0----------0011??10---21110010-----0----------------0-112011201100-204-------------------------------0---1?110200000?11?0------0-------------------------0------------0-----------------0---------
+	Wilsonicrinus       21050100?00002100-003?0--???0------0-------00--0-0----????????????????????1??111?????????????????????0-------0----------------0----------------????10???????????????????????????????11120-----13???1????0------------------0--------0-00?????0--??--???????????????????????????0-111023101810-22244???50200000000102311011000???0---0---------------------100101-???2?????----------0------------0-----------------0---------
+	Wudingeocrinus      22000000000003100-00????????0------0-------00--?-0----????????????????????1?????????????????????????0????????00--------0------0----------------????????????????0--------------------1??112010?0---------0------------------0--------0--0??????????????????????0----------------0-110??110?????-0?-----------------------------------0---------------------110?000--------?----------0------------0-----------------0---------
+	Xenocrinus          22050200100001100-003?????000------0-------00--0-0----????????????????????1??1110--------------------0-------00--------0------0----------------????10??????????????????????---------11120-----140--121-0000------0------00-0--------0-0-101??0--?---???????????????????????????0-111022101200-?0043130521110000001111210111110--0---0---------------------100101-01032001?----------0------------0-----------------0---------
+	Zygocycloides       2005?200000001000-00001??---0------0-------00--?-0------------------------1??1111010-------000--??00010000?-000--------0------0----------------11?010?1?0???0?01?00??00-------------0--------------------------------------0--------??00????????????????0-----0----------------100------------------------------------------------------------------------100114---------6321111110--------------0-----------------0---------
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 413;
+
+
+	TYPESET * UNTITLED ( CHARACTERS = Morphology ) =  ord : 1 - 5 9 11 14 21 24 38 46 55 -56 59 61 -68 70 92 95 106 117 131 136 141 -142 151 -152 154 -156 159 162 168 184 186 -187 190 192 197 198 200 204 -205 208 -209 212 219 237 239 242 251 258 261 268 271 278 -279 290 -297 299 308 310 312 317 319 320 338 341 343 346 351 354 359 363 -364 372 377 -380 382 387 393 -394 399 , unord : 6 - 8 10 12 -13 15 -20 22 -23 25 -37 39 -45 47 -54 57 -58 60 69 71 -91 93 -94 96 -105 107 -116 118 -130 132 -135 137 -140 143 -150 153 157 -158 160 -161 163 -167 169 -183 185 188 -189 191 193 -196 199 201 -203 206 -207 210 -211 213 -218 220 -236 238 240 -241 243 -250 252 -257 259 -260 262 -267 269 -270 272 -277 280 -289 298 300 -307 309 311 313 -316 318 321 -337 339 -340 342 344 -345 347 -350 352 -353 355 -358 360 -362 365 -371 373 -376 381 383 -386 388 -392 395 -398 400 -413;
+	WTSET * UNTITLED ( CHARACTERS = Morphology ) =  1 : 1 -413;
+
+END;
+
+BEGIN NOTES;
+
+	TEXT  TAXON = 1 TEXT = cf._Cambrocrinus;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 413;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1648930320673;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 3819282313251838216;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 1174197704453867131;
+			mqVersion 360;
+			checksumv 0 3 2237630438 null  getNumChars 413 numChars 413 getNumTaxa 366 numTaxa 366   short true   bits 2047   states 2047   sumSquaresStatesOnly 2.4942329E7 sumSquares 2.4942329E7 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 153;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1067 653;
+			setLocation 8 175;
+			setFont Gadget;
+			setFontSize 14;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #1174197704453867131 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 914 581;
+					setLocation 8 175;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						getTable;
+						tell It;
+							rowNamesWidth 180;
+						endTell;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 914 581;
+						setLocation 8 175;
+						setFont Gadget;
+						setFontSize 14;
+						getToolPalette;
+						tell It;
+							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
+						endTell;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			showCharacters #1174197704453867131 #mesquite.lists.CharacterList.CharacterList;
+			tell It;
+				setData 0;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.DefaultCharOrder.DefaultCharOrder;
+					newAssistant  #mesquite.lists.CharListInclusion.CharListInclusion;
+					newAssistant  #mesquite.lists.CharListPartition.CharListPartition;
+					newAssistant  #mesquite.parsimony.CharListParsModels.CharListParsModels;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 914 581;
+					setLocation 8 175;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.CharListAnnotPanel.CharListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

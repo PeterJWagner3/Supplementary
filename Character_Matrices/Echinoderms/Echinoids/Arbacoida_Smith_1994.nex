@@ -1,0 +1,151 @@
+#NEXUS
+[MacClade 4.08 registered to Peter Wagner, Field Museum of Natural History]
+
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=26 NCHAR=26;
+
+[!Smith, A. B.  1994.  Triassic echinoids from Peru.  Palaeontographica Abteilung A 233:177 - 202.]
+	FORMAT SYMBOLS= " 0 1 2 3 4 5 6 7 8 9" MISSING=? GAP=_ ;
+
+MATRIX
+[                                      10        20       ]
+[                                      .         .        ]
+
+Miocidaris_keyscri            2000110011100100010????00?
+Lenticidaris_utahensis        200001001221000100?1001000
+Serpianotiaris_coava          0110001121100?00100111011?
+Cidarites_grandaevus          2000012002?100010001120000
+Triassicidaris                2000101022100120110110?00?
+Mesodiadema                   2000210012210001000????00?
+Paracidaris_subcoronata       2000101021100120110110000?
+Vinchuscanchaia_kieri         0?103020010011100101100001
+Triadocidaris_subsimilis      ???130113000111012?1100001
+Triadocidaris_venusta         01?13011211011?002?100000?
+Triadocidaris_giauens         ???13011211011?012?100000?
+Triadocidaris_imunita         20002100?221000?0?0????00?
+Mikrocidaris_pentagona        0??030010000112022?100000?
+Megaporocidaris_mariana       0102300100001120220100000?
+Levicidaris_zardini           0102300111101120021100000?
+Levicidaris_furlani           010230011100112002?100000?
+Levicidaris_pfaifferi         010230011010112002?100000?
+Zardinechinus_lancedel        0110300110101110021110000?
+Zardinechinus_regularis       01103001110011101201100001
+Zardinechinus_pulchellus      0110300112101110120110100?
+Zardinechinus_stanleyi        1?00300110001110121????00?
+Diademopsis_heberti           02002111121001210001201101
+Leurocidaris_montanaro        1?01011132111120021000?00?
+Triadocidaris_persimilis      01?1301131101110120100000?
+Paurocidaris_rinbianchi       0??010011000012001?100000?
+Parvicidaris_microapicalis    ???23001000?112000?10?0001
+;
+END;
+
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MAXSTEPS ;
+	TYPESET * UNTITLED  = unord: 1-26;
+	WTSET * UNTITLED  = 1: 1-26;
+END;
+
+
+BEGIN TREES;
+
+	TRANSLATE
+		1	Miocidaris_keyscri,
+		2	Lenticidaris_utahensis,
+		3	Serpianotiaris_coava,
+		4	Cidarites_grandaevus,
+		5	Triassicidaris,
+		6	Mesodiadema,
+		7	Paracidaris_subcoronata,
+		8	Vinchuscanchaia_kieri,
+		9	Triadocidaris_subsimilis,
+		10	Triadocidaris_venusta,
+		11	Triadocidaris_giauens,
+		12	Triadocidaris_imunita,
+		13	Mikrocidaris_pentagona,
+		14	Megaporocidaris_mariana,
+		15	Levicidaris_zardini,
+		16	Levicidaris_furlani,
+		17	Levicidaris_pfaifferi,
+		18	Zardinechinus_lancedel,
+		19	Zardinechinus_regularis,
+		20	Zardinechinus_pulchellus,
+		21	Zardinechinus_stanleyi,
+		22	Diademopsis_heberti,
+		23	Leurocidaris_montanaro,
+		24	Triadocidaris_persimilis,
+		25	Paurocidaris_rinbianchi,
+		26	Parvicidaris_microapicalis
+	;
+	TREE Figure_1 =  [&R] ((((((((((((((((((13,14),26),16),17),15),23),11),(10,12)),24),9),21),(19,20)),18),8),25),(6,(3,22))),((2,4),(5,7))),1);
+	TREE  * UNTITLED =  [&R] (((22,(((2,4))12)6),((5)7,(3,((9,24),(20,((8,(18,(21,(25,((17,(26,(13)14)),((((11,23))10)15)16))))))19))))))1;
+
+END;
+
+
+BEGIN MacClade;
+	Version 4.0  87;
+	LastModified -994289490;
+	FileSettings treewindow  '1' '1' '27' '1';
+	Singles 010;
+	Editor 00011001111111100100010010 '0' '24' Gadget '12' '100' '1' all;
+	EditorPosition  '45' '41' '954' '1630';
+	TreeWindowPosition  '46' '6' '839' '1390';
+	ListWindow Characters open Gadget '12' '50' '10' '253' '502' 000;
+	ListWindow Taxa closed Gadget '12' '50' '10' '273' '321' 100000000;
+	ListWindow Trees closed Gadget '12' '50' '25' '134' '387' ;
+	ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow ExSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow TaxSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490' ;
+	TextWindow AboutFile  '50' '25' '280' '445' Gadget '12' (normal) 1 ;
+	ChartWindowPosition  '50' '30' '688' '964';
+	StateNamesSymbols open Gadget '12' '10' '72' '958' '203' '227';
+	WindowOrder  Text AboutFile Tree States List Characters;
+	OtherSymbols &/ 00 ?_;
+	Correlation  '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile  '2';
+	ExportHTML _ MOSS  '100' 110000;
+	PrettyPrint 10;
+	CharLegendPosition  '734' '1295' '132' '85';
+	TreeLegendPosition  '778' '1197' '88' '93';
+	EditorToolsPosition  '703' '48' '115' '165';
+	TreeToolsPosition  '716' '9' '126' '138';
+	TreeWindowProgram 10;
+	TreeWindow 0000;
+	Continuous  '0' '3' 1;
+	Calculations 1000101;
+	SummaryMode  '0' '0' 0;
+	Charts  Arial '12' (normal) 0010;
+	NexusOptions  '0' '0' '50' 001011001;
+	TipLabel  '1';
+	TreeFont  Gadget '12' (normal);
+	TreeShape  1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors  '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth  '551' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax  '0';
+	TraceAllChangesDisplay  '1' 1;
+	BarsOnBranchesDisplay  '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation  '3' 0;
+	PrintTree  10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Geneva '9' (normal) Geneva '10' (normal) Geneva '9' (normal) Geneva '9' (normal) Geneva '9' (bold ) Geneva '9' (normal) Geneva '9' (normal) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '0' '0' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 10;
+	TreeTools  '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools  '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign  '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools  '1';
+END;

@@ -1,0 +1,32 @@
+#NEXUS
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=23 NCHAR=25 ;
+	FORMAT DATATYPE=STANDARD SYMBOLS=" 0 1 2 3 4 5 6 7 8 9" MISSING=? GAP=- ;
+MATRIX
+Nortonechinus_welleri								000002000000000000?000000
+Archaeocidaris_marmorcataractensis	?00?01211102010?211?21110
+Archaeocidaris_hemispinifera				0111011001020111210?0?1??
+Polytaxicidaris_dyeri								?11??1200102010111?10110?
+Polytaxicidaris_lirata							010101111102011111010110?
+Eotiaris_connorsi										???102201012010131?111101
+Eotiaris_keyserlingi								?????22011111102310111101
+Archaeocidaris_wortheni							000??12011020101210101100
+Archaeocidaris_agassizi							0????1210102110?210122100
+Archaeocidaris_blairi								000101200102010121010110?
+Archaeocidaris_rossica							000?003011021101211122100
+Archaeocidaris_immanis							1?11022??102?1?1210???1??
+Archaeocidaris_legrandensis					000101210102010121010110?
+Archaeocidaris_brownwoodensis				0001012011020101211122110
+Archaeocidaris_apheles							?0?101200112010?21010110?
+Archaeocidaris_whatleyensis					0001022111021101210?11110
+Lepidocidaris_squamosa							111?101010011101110001100
+Devonocidaris_primaevus							010111100000011011?00100?
+Archaeocidaris_ivanovi							000101200102010121012111?
+Archaeocidaris_mosquensis						?????1200102010121011111?
+Archaeocidaris_subwortheni					0001012011020101211?2211?
+Eotiaris_guadalupensis 							?????2201111110231?023101
+'? Eotiaris meurevillensis'					???2?2201011010231?10110?
+;
+
+END;
