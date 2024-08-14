@@ -1,0 +1,188 @@
+#NEXUS
+[MacClade 4.08 registered to Peter Wagner, Field Museum of Natural History]
+
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=45 NCHAR=28;
+
+[!Jim�nez-S�nchez, A., R. L. Anstey, and B. Azanza.  2010.  Description and phylogenetic analysis of Iberostomata fombuenensis new genus and species (Bryozoa, Ptilodictyina).  Journal of Paleontology 84:695-708.]
+	FORMAT SYMBOLS= " 0 1 2 3 4" MISSING=? GAP=- ;
+MATRIX
+[                                 10        20       ]
+[                                 .         .        ]
+
+Escharoporidae           (01)1001120(01)003110(01)0001111110(01)1
+Intraporidae             01101020000311(01)0000(01)(01)(01)101001
+Phragmopheridae          0110102010021110000011101100
+Rhinidictyidae           (01)11110(234)0(01)(01)021(01)0000(01)(01)(01)110(01)011
+Stictoporellidae         0110102000021101000(01)11010000
+Virgatellidae            0100?0(01)000011100000111101011
+Timanodictyidae          (01)(01)(01)(01)(01)(01)00000(01)0100100111101000
+Murengoloclemidae        (01)??00000000(0123)0?001001?0100000
+Mysticellidae            1??0004101120000000000100000
+Worthenoporidae          (01)10(01)101100110100000000100000
+Ptilodictya              0100113?00031100001100000011
+Clathropora              010011101003110(01)00001?000001
+Ensiphragma              0100113011031010000000001111
+Ensipora                 010011300101000000001?000011
+Insignia                 01001100(01)003110100010001(01)011
+Phaenopora               0100112000031101000100000011
+Phaenoporella            010011301?03110100001?010011
+Phyllodicya              01111020000?1100001111101000
+Prophyllodictya          011011200001110100001100(01)00(01)
+Stictoporellina          0110102000021101000(01)11010000
+Cricodictyum             011110200001110000101100(01)100
+Cystostictoporus         0111103000011000001111(01)01100
+Eopachydictya            011110?010021100001111101000
+Pachydictya              0111102010021000001111101000
+Sibiredictya             011(01)103001021100001011100000
+Stictopora               011110300001100000111100(01)0(01)1
+Stictoporella            0110102000021101000(01)11010000
+Trigonodictya            (01)111103000021100001111101000
+Amalgamoporus            011110200001100000(01)000011000
+Carinodictya             0111103000021100001(01)1110(01)00(01)
+Euridictya               011110201001110000011110(01)001
+Astrovidictya            0110102000011101000000001000
+Arthrophragma            0111102000010000101111101000
+Metadictya               1111102010010100000100101000
+Orectodictya             011110200002010100111110(01)000
+Pseudostictoporella      0110102000021101000111010001
+Goniotrypa               0110103001011100000011000001
+Amurodictya              0??000000001?101000011000000
+Coscinella               0110102010031100000111000001
+Intrapora                0110102000031110000100100001
+Junggarotrypa            (01)110104101011101000011000001
+Phragmophera             0110102010021110000011101100
+Stellatodictya           0111102100011100011011100000
+Iberostomata             0111102010011110011111100000
+Hypothetical_ancestor    0110102000031100000?111010?1
+;
+END;
+
+
+BEGIN SETS;
+	TAXSET  Outgroup  =  1-17;
+	TAXSET  Ingroup  =  18-44;
+END;
+
+
+BEGIN ASSUMPTIONS;
+	OPTIONS  DEFTYPE=unord PolyTcount=MINSTEPS ;
+END;
+
+
+BEGIN TREES;
+
+	TRANSLATE
+		1	Escharoporidae,
+		2	Intraporidae,
+		3	Phragmopheridae,
+		4	Rhinidictyidae,
+		5	Stictoporellidae,
+		6	Virgatellidae,
+		7	Timanodictyidae,
+		8	Murengoloclemidae,
+		9	Mysticellidae,
+		10	Worthenoporidae,
+		11	Ptilodictya,
+		12	Clathropora,
+		13	Ensiphragma,
+		14	Ensipora,
+		15	Insignia,
+		16	Phaenopora,
+		17	Phaenoporella,
+		18	Phyllodicya,
+		19	Prophyllodictya,
+		20	Stictoporellina,
+		21	Cricodictyum,
+		22	Cystostictoporus,
+		23	Eopachydictya,
+		24	Pachydictya,
+		25	Sibiredictya,
+		26	Stictopora,
+		27	Stictoporella,
+		28	Trigonodictya,
+		29	Amalgamoporus,
+		30	Carinodictya,
+		31	Euridictya,
+		32	Astrovidictya,
+		33	Arthrophragma,
+		34	Metadictya,
+		35	Orectodictya,
+		36	Pseudostictoporella,
+		37	Goniotrypa,
+		38	Amurodictya,
+		39	Coscinella,
+		40	Intrapora,
+		41	Junggarotrypa,
+		42	Phragmophera,
+		43	Stellatodictya,
+		44	Iberostomata,
+		45	Hypothetical_ancestor
+	;
+	TREE  * UNTITLED =  [&R] ((((((((((((18,(34,31)),((24,23),((25,(30,28)),35))),(44,43)),33),(26,22)),29),21),((38,19),32)),(41,37)),((27,20),36)),39),(40,42));
+
+END;
+
+
+BEGIN MacClade;
+	Version 4.0  87;
+	LastModified -820603511;
+	FileSettings  '1' '1' '26' '0';
+	Singles 010;
+	Editor 00011001111111100100010010 '0' '24' Gadget '12' '168' '1' all;
+	EditorPosition  '46' '6' '818' '1225';
+	TreeWindowPosition  '195' '-1223' '720' '1152';
+	ListWindow Characters open Gadget '12' '828' '186' '270' '321' 000;
+	ListWindow Taxa closed Gadget '12' '50' '25' '831' '314' 100000000;
+	ListWindow Trees closed Gadget '12' '50' '10' '134' '387' ;
+	ListWindow TypeSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow ExSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharSets closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow TaxSets closed Gadget '12' '50' '10' '134' '185' ;
+	ListWindow CharPartitions closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow CharPartNames closed Gadget '12' '50' '10' '276' '490' ;
+	ListWindow WtSets closed Gadget '12' '50' '10' '276' '490' ;
+	ChartWindowPosition  '52' '30' '686' '964';
+	StateNamesSymbols closed Gadget '12' '10' '50' '30' '148' '220';
+	WindowOrder  List Characters;
+	OtherSymbols &/ 00 ?-;
+	Correlation  '0' '0' '1000' '0' '0' 10011010;
+	Salmo 00000001;
+	EditorFile  '2';
+	ExportHTML _ MOSS  '100' 110000;
+	PrettyPrint 10;
+	EditorToolsPosition  '644' '27' '115' '165';
+	TreeToolsPosition  '648' '12' '126' '138';
+	TreeWindowProgram 00;
+	TreeWindow 0000;
+	Continuous  '0' '3' 1;
+	Calculations 1000101;
+	SummaryMode  '0' '0' 0;
+	Charts  Gadget '12' (normal) 0010;
+	NexusOptions  '0' '0' '50' 001011001;
+	TipLabel  '1';
+	TreeFont  Gadget '12' (normal);
+	TreeShape  1.0 1.0 0100;
+	TraceLabels 0101;
+	ChartColors  '0' '0' '65535' '9' '0' 1;
+	ChartBiggestSpot 1;
+	ChartPercent 10;
+	ChartBarWidth  '10' 1;
+	ChartVerticalAxis 10101;
+	ChartMinMax  '0';
+	TraceAllChangesDisplay  '1' 1;
+	BarsOnBranchesDisplay  '0' '0' '60000' '10000' '10000' '10000' '10000' '60000' '65000' '65000' '65000' '6' '1' 0000101;
+	ContinuousBranchLabels 0;
+	AllStatesBranchLabels 1;
+	IndexNotation  '3' 1;
+	PrintTree  10.00 '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' '2' Gadget '12' (normal) Geneva '10' (normal) Gadget '12' (normal) Gadget '12' (normal) Gadget '12' (bold ) Gadget '12' (normal) Gadget '12' (normal) '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '0' '1' '1' '1' '1' '0' '0' '-39' '4' '-40' '0' '1' '2' '1' '8' '0' '0' '0' '2' 1000111000000000000100000111000;
+	MatchChar 00 .;
+	EntryInterpretation 01;
+	ColorOptions 00;
+	TreeTools  '0' '5' '4' '0' '10' '4' '0' 00100111111101110;
+	EditorTools  '0' '0' '0' '1000' '0' '0' '6' '3' '0' 100000101110001;
+	PairAlign  '2' '2' '3' '2' '1' '1' '2' '1' '3' 1010;
+	BothTools  '1';
+END;
