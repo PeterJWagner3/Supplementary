@@ -1,0 +1,481 @@
+#NEXUS
+[written Tue Nov 12 14:51:54 CST 2024 by Mesquite  version 3.81 (build 955) at eas-f094c0.unl.edu/10.69.241.193]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=57;
+	TAXLABELS
+		Ambolostoma_baileyi Angioblastus_boliviensis Angioblastus_dotti Asterocrinus_benniei Brachyschisma_corrugatum Cryptoblastus_melo Codaster_acutus Cribroblastus_cornutus Cryptoschisma_schulzii Diploblastus_glaber Decaschisma_pulchellus Decemboblastus_melonoides Deliablastus_cumberlandensis Deltoblastus_permicus Deltoblastus_batheri Devonoblastus_whiteavesi Eleutherocrinus_cassadayi Elaeacrinus_verneuili Ellipticoblastus_ellipticus Granatocrinus_granulatus Globoblastus_norwoodi Hadroblastus_convexus Heteroschisma_alternatus Hydroblastus_herdyi Hyperoblastus_goldringae Iranoblastus_nodosus Lophoblastus_neglectus Leptoschisma_lorae Mesoblastus_crenulatus Metablastus_wortheni Monadoblastus_granulosus Monoschizoblastus_rofei Nucleocrinus_elegans Notoblastus_brevispinus Orbiblastus_hoskyni Orophocrinus_stelliformis Pentremitidea_paillettei Perittoblastus_liratus Phaenoblastus_caryophyllatus Placoblastus_obovatus Pleuroschisma_lycorias Polydeltoideus_enodatus Poroblastus_granulosus Pterotoblastus_gracilis Pentremites_godoni Pentremites_pulchellus Pinguiblastus_tushanensis Sagittoblastus_wanneri Schizoblastus_sayi Sinopetaloblastus_jinxingae Tanaoblastus_roemeri Timoroblastus_coronatus_constrictus Tricoelocrinus_woodmani Troosticrinus_reinwardti Stephanocrinus_angulatus Cupulocorona_gemmiformis Cheirocystis_fultonensis 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Character_Matrix;
+	DIMENSIONS  NCHAR=80;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9 A B C D E F G H J K M N P Q R S T U V W X Y Z a b c d e f g h j k m n p q r s t u v w x y";
+	CHARSTATELABELS 
+		1 PPCP_sutured_to_theca /  Absent Present,
+		2 PPCP_size_&_differentiation /  Small_&_Undifferentiated Large_&_Differentiated,
+		3 PPCP_arrangement_on_oral_surface /  'Plates are flat/flush with surface' Places_are_elevated_above_summit_surface,
+		4 'Distal amb L:W relationship' /  'Length > Width ' 'Length >> Width' 'Width > Length ',
+		5 Proximal_amb_length /  Short_and_restricted_adorally 'Elongate, thin extension ',
+		6 Main_food_groove_placement /  'Oral-oral suture to Floor plates' 'O-O to Lancet' 'O-O to Lancet & FP',
+		7 Ambulacral_outline /  Parallel_sided Lanceolate Oblanceolate Rhombiform,
+		8 'Shape of ambulacra, proximal to distal in lateral view' /  Straight Convex,
+		9 'Abaxial surface of ambulacra, perpendicular to primary body axis ' /  Flat Concave Convex,
+		10 Interambulacral_shape_in_summit_view /  Flat Concave Convex,
+		11 Ambulacral_position_with_respect_to_surrounding_thecal_plates /  Below 'In-line' Above,
+		12 Reduced_D_ambulacrum /  Absent Present,
+		13 Ambulacra_recumbent /  Absent Present,
+		14 Lateral_food_grooves_curve /  Straight Adorally Aborally,
+		15 Ratio_of_plates_surrounding_the_ambulacra /  'Radial > Oral ' 'Radial = Oral ' 'Radial < Oral ',
+		16 Lancet_shape /  'Button, circular' 'Restricted, elongate' Extends_for_entire_amb,
+		17 Lancet_interaction_with_ambulacral_floor_plates /  Floor_plates_overlab_lancet_completely Partial_exposure_of_lancet Lancet_exposed_for_length_of_ambulacra,
+		18 Lancet_plate_is_a_facetal_plate /  Absent Present,
+		19 Oral_and_radial_plate_overlap /  Oral_plates_overlap_radial_plates Oral_plates_abut_radial_plates radial_plates_overlap_oral_pltes,
+		20 Relative_size_comparison_of_oral_and_radial_plates /  Oral_plates_are_larger_than_radial_plates Oral_plates_are_approximately_equal_in_size_to_radial_plates Oral_plates_are_smaller_than_radial_plates,
+		21 Oral_and_radial_suture_shape /  Flat 'V-shaped' Lobate,
+		22 Oral_plate_body /  Absent Present,
+		23 Oral_plate_crest /  Absent Present,
+		24 Oral_plate_septum /  Absent Present,
+		25 Oral_plate_growth_lines /  'Straight-fine growth lines' 'Straight-coarse growth lines' Wavy_growth_lines,
+		26 'Oral plate ornamentation, surface modification' /  None_present Nodes_in_linear_arrays 'Nodes in random orientation, no clear pattern ' Large_protrusions_along_ambulacra,
+		27 'Oral plates project above the summit/oral surface' /  Flat_on_the_surface Raised_above_the_surface_,
+		28 Spiracles_penetrate_the_oral_plate_body /  Absent Present,
+		29 Oral_plate_1 /  Absent Present,
+		30 Oral_plate_1_borders_anus /  Absent Present,
+		31 Oral_plate_7 /  Absent Present,
+		32 Oral_plate_7_possesses_a_hood_or_extension_away_from_the_surface_created_by_surrounding_thecal_plates /  Absent Present,
+		33 Oral_plate_6 /  Absent Present_and_fused Present_and_split,
+		34 Oral_plate_6_exposure_in_anal_area /  'Hidden, not exposed' Exposed_in_anal_area Exposed_and_elongate,
+		35 Anus_bordered_by /  O1_and_O7 'O1, O7, and O6' 'O1, O7, and ambulacral plating ',
+		36 'Radial-oral plate sutures' /  Flat_suture Recessed_suture_,
+		37 'Radial sinus development, the sinus holds the ambulacra and often has a defined end at the aboral most end of the sinus' /  No_development_at_aboral_most_end Development_of_lip_or_extension_of_radial_plate Sinus_extends_far_from_thecal_axis_and_has_a_projection_at_the_aboral_end_of_sinus_,
+		38 Radial_plate_growth_lines /  'Straight-fine growth lines' 'Straight-coarse growth lines' Wavy,
+		39 'Radial plate ornamentation, surface modification' /  None_present Nodes_in_linear_arrays 'Nodes in random orientation, no clear pattern',
+		40 'Radial prongs, extensions of the radial sinus that protrude from the summit and body axis' /  Absent Present,
+		41 'Radial plates project above the summit/oral surface' /  Absent Present,
+		42 The_widest_portion_of_the_radial_plate /  Limbs Ambulacral_sinus_end Middle_of_plate,
+		43 Radial_plates_project_below_the_basal_plate_circlet /  Absent Present,
+		44 Secondary_thickening_on_radial_plates /  Absent Present,
+		45 Position_of_azygous_basal_plate /  AB DE,
+		46 Secondary_thickening_around_stem_facet /  Absent Present,
+		47 'Basal-radial plate suture' /  Flat Recessed,
+		48 'Basal-radial relative size ' /  'B>R' 'B=R' 'B<R',
+		49 Basal_circlet_orientation /  Flat 'Invaginated/concave' In_line_with_thecal_plates Small_angle Large_angle,
+		50 'Basal plate ornamentation, surface modification' /  None_present Nodes_in_linear_arrays 'Nodes in random orientation, no clear pattern ',
+		51 Distal_basal_shape_from_basal_view /  Circular Triangular Pentagonal,
+		52 Endothecal_respiratory_structures /  Absent Present,
+		53 Exothecal_respiratory_structures /  Absent Present,
+		54 Number_of_respiratory_fields /  8_fields 9_fields 10_fields_,
+		55 Respiratory_structures_exposed_above_ambulacral_floor_plates /  Absent Present,
+		56 Hydrospire_slits /  Absent Present,
+		57 Hydrospire_pores /  Absent Poorly_developed 'Well-developed ',
+		58 Coronal_canals /  Absent Present,
+		59 Spiracle_development /  None Underdeveloped 'Well-developed ',
+		60 'Non-anal side spiracle manifestation' /  Single Paired,
+		61 Anus_position_with_spiracles /  Separate Confluent,
+		62 Spiracle_shape /  Tear_drop 'Bean-shaped' Circular Elliptical,
+		63 Hydrospire_pore_location /  Between_floor_plates_and_radial_or_oral_plate Pore_punctures_radial_or_oral_plate_,
+		64 Hydrospire_pores_extend_for_the_duration_of_the_ambulacra /  Absent Present,
+		65 Number_of_hydrospire_pores_per_floor_plate_set /  One Two 'Three+',
+		66 Hydrospire_slit_length_in_comparison_to_ambulacral_length /  'Slit(s) extend for 50% or more of ambulacral length' 'Slit(s) extend for approximately 50% of ambulacral length' 'Slit(s) extend for less than 50% of ambulacral length',
+		67 Placement_of_hydrospire_slit /  'Slit(s) are situated on oral and radial plates subequally' 'Slit(s) are situated primarily on oral plates (>50%)' 'Slit(s) are situated primarily on radial plates (>50%)',
+		68 Hydrospire_slit_exposure /  Concealed_by_floor_plates Partially_exposed Completely_exposed_,
+		69 Number_of_hydrospire_slits_per_field /  '1-3' '4-6' '7+',
+		70 Number_of_hydrospire_folds_per_field /  1 '2-3' '3+',
+		71 Change_in_hydrospire_folds_per_field_depending_on_location_in_theca /  Absent Present,
+		72 Anal_area_hydrospires_differ_from_other_fields /  No_hydrospires No_difference Reduction_of_hydrospires,
+		73 Hydrospire_occupation_of_thecal_space /  Little Moderate Full,
+		74 Hydrospire_cleft_enlargement /  Absent Present,
+		75 Hydrospire_fold_to_spiracle_transitions_through_theca /  No_shifts 1_shift 2_or_more_shifts_,
+		76 Individual_folds_reach_the_exterior_of_the_theca /  Absent Present,
+		77 Stem_sutured_to_basals /  Absent Present,
+		78 Columnal_type /  Heteromorphic Homeomorphic,
+		79 Widest_part_of_theca /  Summit Middle Base,
+		80 Ridges_that_extend_from_ambulacral_sinus_across_radials_and_basal /  Absent Present ; 
+	MATRIX
+	Ambolostoma_baileyi                  ???1012(0 1)22001(0 1)122021111??0101111??2(0 1)0?000100???????1?200202013010?????????????10
+	Angioblastus_boliviensis             ???010112210111200?21100?01011??0?001?1002000?122?01?011000??????0021?????????10
+	Angioblastus_dotti                   ???010100210112200021100?01011??0?001?1002000?122?01???1000???????????????????10
+	Asterocrinus_benniei                 ???0(0 1)0212201110200?21111?00011????00??200100??0222?1?0?10?11?3?????????0??????00
+	Brachyschisma_corrugatum             ???0001121201102(0 2)0(0 2)2(0 1)111100?1(0 1)1011102100010?0?123?11?001000??????0211??2??????00
+	Cryptoblastus_melo                   ???100002100110210221111?000111020210?100010001210?1?200202113001????10100100?10
+	Codaster_acutus                      ???010210010111200?21111??0011?00??00??0020?0?022?11?001000??????0022?????????00
+	Cribroblastus_cornutus               ???100002100110200221111?0101111??00?000010????20??1?2002021130?0?????????????10
+	Cryptoschisma_schulzii               ???211310110110220121111??00???00?201000010000022?01?0011010?3?????0?21021211?00
+	Diploblastus_glaber                  ???100002(1 2)1011020022(1 2)11102001111201?10000100000?3001?200202(0 1)0(0 1)010????10110100?10
+	Decaschisma_pulchellus               ???0000(0 1)(0 2)000110200?2(0 1)111?0(0 1)011(0 1)0111010000100000220(0 1)1?2(0 1)10010(0 1)1???0(0 2)(0 2)(1 2)???????0?00
+	Decemboblastus_melonoides            ???10000222011?20002111100101111???01020??0????????1?200202103010???????????1?10
+	Deliablastus_cumberlandensis         ???1000022101102002211????00???111110?1000?????20??1???0202???010?????????????10
+	Deltoblastus_permicus                11110111210011222020(1 2)111?01011110?0(0 1)0?000110??021?01?200202?00000????1020010??20
+	Deltoblastus_batheri                 111101112100112210201111?01011110?000?000110??021?01??00202?0?000?????????????20
+	Devonoblastus_whiteavesi             ???1020020201102002011?10000111?20201000010?0?024?11?200202010010?????????????10
+	Eleutherocrinus_cassadayi            ???100002211110200221111?0001110202010000100000?3011?200202012010???????????0?10
+	Elaeacrinus_verneuili                11010000221011220000211120(0 1)01111221112000(0 1)10000(1 2)1?01?2002021(0 1)(0 3)010???????????0?(0 1)0
+	Ellipticoblastus_ellipticus          ???1020020101102102211110101111020200?100010?0?21?01?2002?2012110????0011000??10
+	Granatocrinus_granulatus             ???1??002?201?12?0?221??010???10????1?100110???21?01???0202???010???????????1110
+	Globoblastus_norwoodi                ???100002220110200221111?001111020?11?100110?0021001?200202012101???????????0?10
+	Hadroblastus_convexus                ???000(0 1)(0 1)2020111200?(1 2)1111?0001111???(0 1)0000010000022?11?(0 2)(0 1)1000??????0(0 2)(1 2)2??2????0?10
+	Heteroschisma_alternatus             ???00000201011020002?111?00011????101000010000022001?011001??????00?(1 2)???????0?00
+	Hydroblastus_herdyi                  ???1002001001102002211110010111121201000010000022011?2002?2103010????2???1100?10
+	Hyperoblastus_goldringae             ???100002(1 2)101102002211110000111???2010000100?0023?(0 1)1?201202010010???????????0?10
+	Iranoblastus_nodosus                 ???10000010011220000211103?0111?0?01?0000010?0?21?01?2002?21121?1?????????????10
+	Lophoblastus_neglectus               ???000212210110200011111?10011110??110?0010?0?024?01?200202100010?????????????10
+	Leptoschisma_lorae                   ???00011200011020022?111??101010111?1?00011?0?012?11?211101??????0212?????????10
+	Mesoblastus_crenulatus               ???100002(0 2)(1 2)0110200222111010011??20?0101001(0 1)000(0 1)20?01?200202113002???????????0?20
+	Metablastus_wortheni                 ???000000(0 1)00110200221111??10111021101000010000020011120121110(1 3)010???????????0?11
+	Monadoblastus_granulosus             ???1010021201?0200222111010?111?0?0110110010???2???1??00202???0?0?????????????10
+	Monoschizoblastus_rofei              ???100002010112200001111?10011110?010?10001000?21?01?2002?2113010????0010000??10
+	Nucleocrinus_elegans                 11010000221011220000211120001110221112000110?0021001?200202103010?????????????10
+	Notoblastus_brevispinus              ???0101102201112?0?2?111??0011100?0?0??1010?0?020?01?2?1000?????????????????0?00
+	Orbiblastus_hoskyni                  ???10000221011020021111100001110??001010001???021?01?200202103010?????????????10
+	Orophocrinus_stelliformis            ???112202110110220221111?000111(0 1)0?001?0001000002(2 3)001?201001103???(1 2)(0 2)2?2??????0?(0 1)0
+	Pentremitidea_paillettei             ???000212100110200(1 2)2?111?0(0 1)0111?1110100001(0 1)000003?01?0(0 1)12010?10100(0 2)1(1 2)???????0?00
+	Perittoblastus_liratus               ???1000021101102002211111010111?211111?0010?0?120?01?2002021?0010?????????????10
+	Phaenoblastus_caryophyllatus         ???002112200112220220111??(0 1)01110??0010000100000(0 2)2?(0 1)1?2110020?0???0211???????0?10
+	Placoblastus_obovatus                ???1000021201122000021?10000??1?221112000110???21?01??00202???010?????????????10
+	Pleuroschisma_lycorias               ???100002100110200221111??1?11??21101000010?????2??1?211001??????0212?????????10
+	Polydeltoideus_enodatus              ???000010100101200221111??1?1?1021?01000110?0?002?11?211000??????0212??2??????00
+	Poroblastus_granulosus               ???102002010111210221111010011110?011010001?0??20?01?2002021?3011?????????????10
+	Pterotoblastus_gracilis              ???010211120110200?21111??1011??0?001011110?0?022?01?001000??????2021??0??????00
+	Pentremites_godoni                   ???102212100111220211111000011100?20200001000(0 1)024001?200202010010????2?211200120
+	Pentremites_pulchellus               ???10221220011022021111?00001110??201000010001022001?200202010010????11221200?20
+	Pinguiblastus_tushanensis            ???0000022?0110200021111?00011??20101120010001023211?20?2?2103000?????????????20
+	Sagittoblastus_wanneri               ???210110200112200?21111?01011??0?010010020?0?021?01?000000113???212??????????10
+	Schizoblastus_sayi                   ???102002110112200?01111010011110?0010100110?0?20?01?200202110010???????????0?10
+	Sinopetaloblastus_jinxingae          ???10121?210110220?21111??001110??20010001000??21??1?20?2?21130???????????????10
+	Tanaoblastus_roemeri                 ???102002010110210221111?10011112010101000000?120101?2002?2113101?????????????10
+	Timoroblastus_coronatus_constrictus  ???010002100110200020111?11011110?000011020000020??1?211000?0????1120?????????00
+	Tricoelocrinus_woodmani              ???10000010011020022011100?0111021102000010000?22011??0?2?10??010?????????????21
+	Troosticrinus_reinwardti             ???100000000110200221111??0011102010000001000002201112012111130?0020????????0?01
+	Stephanocrinus_angulatus             110?1?0000?001?0?1220100?010111???000?101200000221101??0010?????????????????0?11
+	Cupulocorona_gemmiformis             ??00??0?02000??0?122?11???1?1010?????0?0120000??2?1?1????1????????????????????1?
+	Cheirocystis_fultonensis             0000??112??001???0??????000?101???????????????????010????0????????????????????1?
+
+;
+
+END;
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 80;
+
+END;
+
+BEGIN NOTES;
+
+	TEXT  TAXON = 20 TEXT = Was_Granatocrinus_granulosus;
+
+	TEXT   CHARACTER = 23 TEXT = Or;
+
+END;
+
+BEGIN LABELS;
+	TAXAGROUPLABEL Ingroup COLOR = (RGB 1.0 1.0 1.0) ;
+	TAXAGROUPLABEL Outgroup COLOR = (RGB 1.0 1.0 1.0) ;
+
+	CHARGROUPLABEL respiratory_structures COLOR = (RGB 0.2 1.0 0.2) ;
+	CHARGROUPLABEL Feeding COLOR = (RGB 1.0 1.0 1.0) ;
+	CHARGROUPLABEL Theca COLOR = (RGB 1.0 1.0 1.0) ;
+	CHARGROUPLABEL Oral COLOR = (RGB 1.0 1.0 1.0) ;
+	CHARGROUPLABEL Respiratory COLOR = (RGB 1.0 1.0 1.0) ;
+	CHARGROUPLABEL Periproct COLOR = (RGB 1.0 1.0 1.0) ;
+	CHARGROUPLABEL Attachment COLOR = (RGB 1.0 1.0 1.0) ;
+	CHARGROUPLABEL Reproduction COLOR = (RGB 1.0 1.0 1.0) ;
+
+
+END;
+
+BEGIN SETS;
+	CHARSET Attachment   =   45- 51 77- 78;
+	CHARSET Feeding   =   1- 14 16- 18;
+	CHARSET Oral_Plate_Circlet   =   19- 27 29- 34;
+	CHARSET Periproct_Area   =   35;
+	CHARSET Radial_Plate_Circlet   =   36- 43;
+	CHARSET Respiratory   =   28 52- 76;
+	CHARSET Thecal_Characters_General   =   15 44 79- 80;
+
+	TAXPARTITION * UNTITLED  =  Ingroup :  1- 54, Outgroup :  55- 57;
+
+	CHARPARTITION * UNTITLED  =  Feeding :  1- 14 16- 18, Theca :  15 44 79- 80, Oral :  19- 27 29- 34, Respiratory :  28 52- 76, Periproct :  35, Reproduction :  36- 43, Attachment :  45- 51 77- 78;
+	CHARPARTITION RevBayes  =  Feeding :  1- 14 16- 18, Theca :  15 44 79- 80, Oral :  19- 27 29- 34, Respiratory :  28 52- 76, Periproct :  35, Reproduction :  36- 43, Attachment :  45- 51 77- 78;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 80;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1731444715011;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 7597410993901272679;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 4193372657957079263;
+			mqVersion 381;
+			checksumv 0 3 1280099540 null  getNumChars 80 numChars 80 getNumTaxa 57 numTaxa 57   short true   bits 31   states 31   sumSquaresStatesOnly 17959.0 sumSquares 17959.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 270;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1496 630;
+			setLocation 77 293;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			showTaxa #7597410993901272679 #mesquite.lists.TaxonList.TaxonList;
+			tell It;
+				setTaxa #7597410993901272679;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.TaxonListCurrPartition.TaxonListCurrPartition;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1226 558;
+					setLocation 77 293;
+					setFont Gadget;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+					endTell;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.ColorTaxon.ColorTaxon;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.lists.TaxonListAnnotPanel.TaxonListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #4193372657957079263 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					getTable;
+					tell It;
+						rowNamesWidth 264;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1226 558;
+					setLocation 77 293;
+					setFont Franklin_Gothic_Medium;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleColorOnlyTaxonNames off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+					getInfoPanel;
+					tell It;
+						btspOpen true;
+						apOpen true;
+						fpOpen true;
+					endTell;
+					toggleInfoPanel on;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesEditor.StateNamesEditor;
+				tell It;
+					makeWindow;
+					tell It;
+						getTable;
+						tell It;
+							rowNamesWidth 219;
+						endTell;
+						setExplanationSize 30;
+						setAnnotationSize 20;
+						setFontIncAnnot 0;
+						setFontIncExp 0;
+						setSize 1226 558;
+						setLocation 77 293;
+						setFont SanSerif;
+						setFontSize 10;
+						getToolPalette;
+						tell It;
+							setTool mesquite.categ.StateNamesEditor.StateNamesWindow.ibeam;
+						endTell;
+						rowsAreCharacters on;
+						toggleConstrainChar on;
+						toggleConstrainCharNum 3;
+						togglePanel off;
+						toggleSummaryPanel off;
+					endTell;
+					showWindow;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			showCharacters #4193372657957079263 #mesquite.lists.CharacterList.CharacterList;
+			tell It;
+				setData 0;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.DefaultCharOrder.DefaultCharOrder;
+					newAssistant  #mesquite.lists.CharListInclusion.CharListInclusion;
+					newAssistant  #mesquite.lists.CharListPartition.CharListPartition;
+					newAssistant  #mesquite.parsimony.CharListParsModels.CharListParsModels;
+					newAssistant  #mesquite.lists.CharSetMembershipListAsst.CharSetMembershipListAsst;
+					getTable;
+					tell It;
+						rowNamesWidth 305;
+					endTell;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1226 558;
+					setLocation 77 293;
+					setFont Franklin_Gothic_Medium;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.lists.CharacterList.CharacterListWindow.arrow;
+					endTell;
+					setActive;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.CharListAnnotPanel.CharListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		getEmployee  #mesquite.charMatrices.ManageCharsets.ManageCharsets;
+		tell It;
+			showList 0 #mesquite.lists.CharSetList.CharSetList;
+			tell It;
+				setData 0;
+				getWindow;
+				tell It;
+					useTargetValue off;
+					setTargetValue ;
+					newAssistant  #mesquite.lists.CharSetListNum.CharSetListNum;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1226 558;
+					setLocation 77 293;
+					setFont Franklin_Gothic_Medium;
+					setFontSize 14;
+					getToolPalette;
+					tell It;
+						setTool mesquite.lists.lib.DataSpecsListWindow.arrow;
+					endTell;
+				endTell;
+				showWindow;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+
